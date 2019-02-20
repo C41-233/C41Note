@@ -1,0 +1,1 @@
+/var/log/messages 系统日志
