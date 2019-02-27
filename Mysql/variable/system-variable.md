@@ -1,21 +1,21 @@
 # 系统变量
 
-### 特殊
+## 特殊
 特殊系统变量前面不需要使用`@@`。
 
-###### CURRENT_DATE
+##### CURRENT_DATE
 *DATE R*  
 >当前系统日期。
 
-###### CURRENT_TIME
+##### CURRENT_TIME
 *TIME R*
 >当前系统时间。
 
-###### CURRENT_TIMESTAMP
+##### CURRENT_TIMESTAMP
 *TIMESTAMP R*
 >当前系统时间戳。
 
-###### CURRENT_USER
+##### CURRENT_USER
 *CHAR R*
 >当前用户。
 
