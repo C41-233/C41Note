@@ -1,6 +1,7 @@
 # 系统变量
 
 ## 特殊
+
 特殊系统变量前面不需要使用`@@`。
 
 #### CURRENT_DATE
@@ -19,62 +20,40 @@
 *CHAR R*
 >当前用户。
 
-### 配置
-<table>
-	<tr>
-		<th>TIME_ZONE</th>
-		<td>CHAR</td>
-		<td>时区</td>
-		<td>W</td>
-	</tr>
-	<tr>
-		<th>VERSION</th>
-		<td>CHAR</td>
-		<td>MySQL的版本号</td>
-		<td>R</td>
-	</tr>
-</table>
+## 配置
 
-### 语法
-<table>
-	<tr>
-		<th>FT_BOOLEAN_SYNTAX</th>
-		<td>CHAR</td>
-		<td>可以和布尔查找一起用的运算符</td>
-		<td>W</td>
-	</tr>
-	<tr>
-		<th>LOWER_CASE_TABLES_NAME</th>
-		<td>INTEGER</td>
-		<td>表名和数据库名的大小写敏感性
-		<br/>0：大小写敏感
-		<br/>1：大小写敏感，保存时全部转换为小写
-		<br/>2：大小写不敏感，保存时不转换</td>
-		<td>W</td>
-	</tr>
-</table>
+#### TIME_ZONE
+*CHAR W*
+>时区。
+		
+#### VERSION
+*CHAR R*
+>MySQL的版本号。
 
-### 事务
-<table>
-	<tr>
-		<th>AUTOCOMMIT</th>
-		<td>BOOL</td>
-		<td>是否开启事务自动提交</td>
-		<td>W</td>
-	</tr>
-	<tr>
-		<th>INNODB_LOCK_WAIT_TIMEOUT</th>
-		<td>INTEGER</td>
-		<td>事务等待锁的最长时间（单位为秒）</td>
-		<td>R</td>
-	</tr>
-	<tr>
-		<th>TX_ISOLATION</th>
-		<td>CHAR</td>
-		<td>默认的事务隔离级别</td>
-		<td></td>
-	</tr>
-</table>
+## 语法
+#### FT_BOOLEAN_SYNTAX
+*CHAR W*
+>可以和布尔查找一起用的运算符。
+		
+#### LOWER_CASE_TABLES_NAME
+*INTEGER W*
+>表名和数据库名的大小写敏感性  
+>0：大小写敏感  
+>1：大小写敏感，保存时全部转换为小写  
+>2：大小写不敏感，保存时不转换  
+
+## 事务
+#### AUTOCOMMIT
+*BOOL W*
+是否开启事务自动提交
+		
+#### INNODB_LOCK_WAIT_TIMEOUT
+*INTEGER R*
+事务等待锁的最长时间（单位为秒）
+		
+#### TX_ISOLATION
+*CHAR*
+默认的事务隔离级别
 
 ### 全文索引
 <table>
