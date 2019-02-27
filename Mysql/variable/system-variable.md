@@ -1,5 +1,9 @@
 # 系统变量
 
+系统变量不区分大小写。
+
+---
+
 ## 特殊
 
 特殊系统变量前面不需要使用`@@`。
@@ -29,6 +33,17 @@
 #### VERSION
 *CHAR R*
 >MySQL的版本号。
+
+## 字符集
+#### CHARACTER_SET_CLIENT
+
+#### CHARACTER_SET_CONNECTION
+
+#### CHARACTER_SET_DATABASE
+
+#### CHARACTER_SET_RESULTS
+
+#### CHARACTER_SET_SERVER
 
 ## 语法
 #### FT_BOOLEAN_SYNTAX
