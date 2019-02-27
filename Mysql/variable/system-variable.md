@@ -2,32 +2,22 @@
 
 ### 特殊
 特殊系统变量前面不需要使用`@@`。
-<table>
-	<tr>
-		<th>CURRENT_DATE</th>
-		<td>DATE</td>
-		<td>当前系统日期</td>
-		<td>R</td>
-	</tr>
-	<tr>
-		<th>CURRENT_TIME</th>
-		<td>TIME</td>
-		<td>当前系统时间</td>
-		<td>R</td>
-	</tr>
-	<tr>
-		<th>CURRENT_TIMESTAMP</th>
-		<td>TIMESTAMP</td>
-		<td>当前系统时间戳</td>
-		<td>R</td>
-	</tr>
-	<tr>
-		<th>CURRENT_USER</th>
-		<td>CHAR</td>
-		<td>当前用户</td>
-		<td>R</td>
-	</tr>
-</table>
+
+###### CURRENT_DATE
+*DATE R*  
+>当前系统日期。
+
+###### CURRENT_TIME
+*TIME R*
+>当前系统时间。
+
+###### CURRENT_TIMESTAMP
+*TIMESTAMP R*
+>当前系统时间戳。
+
+###### CURRENT_USER
+*CHAR R*
+>当前用户。
 
 ### 配置
 <table>
