@@ -29,6 +29,22 @@
 	</tr>
 </table>
 
+### 配置
+<table>
+	<tr>
+		<th>TIME_ZONE</th>
+		<td>CHAR</td>
+		<td>时区</td>
+		<td>W</td>
+	</tr>
+	<tr>
+		<th>VERSION</th>
+		<td>CHAR</td>
+		<td>MySQL的版本号</td>
+		<td>R</td>
+	</tr>
+</table>
+
 ### 语法
 <table>
 	<tr>
@@ -70,6 +86,28 @@
 	</tr>
 </table>
 
+### 全文索引
+<table>
+	<tr>
+		<th>FT_MAX_WORD_LEN</th>
+		<td>INTEGER</td>
+		<td>可以包含在一个全文本索引中的单词最大长度，默认为84</td>
+		<td>W</td>
+	</tr>
+	<tr>
+		<th>FT_MIN_WORD_LEN</th>
+		<td>INTEGER</td>
+		<td>可以包含在一个全文本索引中的单词最小长度，默认为4</td>
+		<td>W</td>
+	</tr>
+	<tr>
+		<th>FT_STOPWORD_FILE</th>
+		<td>CHAR</td>
+		<td>包含停词的文件的名字</td>
+		<td>W</td>
+	</tr>
+</table>
+
 ### 其他
 <table>
 	<tr>
@@ -103,24 +141,6 @@
 		<th>FOREIGN_KEY_CHECKS</th>
 		<td>BOOL</td>
 		<td>是否开启外键约束检查</td>
-		<td>W</td>
-	</tr>
-	<tr>
-		<th>FT_MAX_WORD_LEN</th>
-		<td>INTEGER</td>
-		<td>可以包含在一个全文本索引中的单词最大长度，默认为84</td>
-		<td>W</td>
-	</tr>
-	<tr>
-		<th>FT_MIN_WORD_LEN</th>
-		<td>INTEGER</td>
-		<td>可以包含在一个全文本索引中的单词最小长度，默认为4</td>
-		<td>W</td>
-	</tr>
-	<tr>
-		<th>FT_STOPWORD_FILE</th>
-		<td>CHAR</td>
-		<td>包含停词的文件的名字</td>
 		<td>W</td>
 	</tr>
 	<tr>
@@ -169,17 +189,5 @@
 		<td>CHAR</td>
 		<td>默认存储引擎</td>
 		<td>W</td>
-	</tr>
-	<tr>
-		<th>TIME_ZONE</th>
-		<td>CHAR</td>
-		<td>时区</td>
-		<td>W</td>
-	</tr>
-	<tr>
-		<th>VERSION</th>
-		<td>CHAR</td>
-		<td>MySQL的版本号</td>
-		<td>R</td>
 	</tr>
 </table>
