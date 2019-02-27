@@ -4,25 +4,25 @@
 特殊系统变量前面不需要使用`@@`。
 <table>
 	<tr>
-		<th class="sp">CURRENT_DATE</th>
+		<th>CURRENT_DATE</th>
 		<td>DATE</td>
 		<td>当前系统日期</td>
 		<td>R</td>
 	</tr>
 	<tr>
-		<th class="sp">CURRENT_TIME</th>
+		<th>CURRENT_TIME</th>
 		<td>TIME</td>
 		<td>当前系统时间</td>
 		<td>R</td>
 	</tr>
 	<tr>
-		<th class="sp">CURRENT_TIMESTAMP</th>
+		<th>CURRENT_TIMESTAMP</th>
 		<td>TIMESTAMP</td>
 		<td>当前系统时间戳</td>
 		<td>R</td>
 	</tr>
 	<tr>
-		<th class="sp">CURRENT_USER</th>
+		<th>CURRENT_USER</th>
 		<td>CHAR</td>
 		<td>当前用户</td>
 		<td>R</td>
