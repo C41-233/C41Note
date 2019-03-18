@@ -8,49 +8,49 @@
 
 特殊系统变量前面不需要使用`@@`。
 
-#### CURRENT_DATE
+- #### CURRENT_DATE
 *DATE R*  
 >当前系统日期。
 
-#### CURRENT_TIME
+- #### CURRENT_TIME
 *TIME R*
 >当前系统时间。
 
-#### CURRENT_TIMESTAMP
+- #### CURRENT_TIMESTAMP
 *TIMESTAMP R*
 >当前系统时间戳。
 
-#### CURRENT_USER
+- #### CURRENT_USER
 *CHAR R*
 >当前用户。
 
 ## 配置
 
-#### TIME_ZONE
+- #### TIME_ZONE
 *CHAR W*
 >时区。
 		
-#### VERSION
+- #### VERSION
 *CHAR R*
 >MySQL的版本号。
 
 ## 字符集
-#### CHARACTER_SET_CLIENT
+- #### CHARACTER_SET_CLIENT
 
-#### CHARACTER_SET_CONNECTION
+- #### CHARACTER_SET_CONNECTION
 
-#### CHARACTER_SET_DATABASE
+- #### CHARACTER_SET_DATABASE
 
-#### CHARACTER_SET_RESULTS
+- #### CHARACTER_SET_RESULTS
 
-#### CHARACTER_SET_SERVER
+- #### CHARACTER_SET_SERVER
 
 ## 语法
-#### FT_BOOLEAN_SYNTAX
+- #### FT_BOOLEAN_SYNTAX
 *CHAR W*
 >可以和布尔查找一起用的运算符。
 		
-#### LOWER_CASE_TABLES_NAME
+- #### LOWER_CASE_TABLES_NAME
 *INTEGER W*
 >表名和数据库名的大小写敏感性  
 >0：大小写敏感  
@@ -58,62 +58,62 @@
 >2：大小写不敏感，保存时不转换  
 
 ## 事务
-#### AUTOCOMMIT
+- #### AUTOCOMMIT
 *BOOL W*
 >是否开启事务自动提交。
 		
-#### INNODB_LOCK_WAIT_TIMEOUT
+- #### INNODB_LOCK_WAIT_TIMEOUT
 *INTEGER R*
 >事务等待锁的最长时间（单位为秒）。
 		
-#### TX_ISOLATION
+- #### TX_ISOLATION
 *CHAR*
 >默认的事务隔离级别。
 
 ## 全文索引
 		
-#### FT_MAX_WORD_LEN
+- #### FT_MAX_WORD_LEN
 *INTEGER W*
 >可以包含在一个全文本索引中的单词最大长度，默认为84。
 		
-#### FT_MIN_WORD_LEN
+- #### FT_MIN_WORD_LEN
 *INTEGER W*
 >可以包含在一个全文本索引中的单词最小长度，默认为4。
 		
-#### FT_STOPWORD_FILE
+- #### FT_STOPWORD_FILE
 *CHAR W*
 >包含停词的文件的名字。
 
 ## 其他
 		
-#### AUTO_INCREMENT_OFFSET
+- #### AUTO_INCREMENT_OFFSET
 *INTEGER W*
 >自增字段的起始值。
 		
-#### AUTO_INCREMENT_INCREMENT
+- #### AUTO_INCREMENT_INCREMENT
 *INTEGER W*
 >自增字段的增量值。
 		
-#### CONCURRENT_INSERT
+- #### CONCURRENT_INSERT
 *INTEGER W*
 >并发插入模式。  
 >0：不允许并发。  
 >1：当表中无碎片时，在一个进程读表时，另一个进程在尾部并发插入。  
 >2：无论表中是否有碎片，，在一个进程读表时，另一个进程都在尾部并发插入。
 		
-#### EVENT_SCHEDULER
+- #### EVENT_SCHEDULER
 *BOOL W*
 >是否开启调度器。
 		
-#### FOREIGN_KEY_CHECKS
+- #### FOREIGN_KEY_CHECKS
 *BOOL W*
 >是否开启外键约束检查。
 		
-#### GROUP_CONCAT_MAX_LEN
+- #### GROUP_CONCAT_MAX_LEN
 *INTEGER W*
 >GROUP_CONCAT结果的字符串长度。
 		
-#### SQL_MODE
+- #### SQL_MODE
 *CHAR W*
 >SQL模式，用逗号分隔的常量列表。
 >- ANSI：使用标准SQL语法。
@@ -128,16 +128,16 @@
 >- STRICT_TRANS_TABLES：不允许非法日期和超过字段长度限制的数据。
 >- TRANDITIONAL：传统严格校验模式。
 		
-#### SQL_SELECT_LIMIT
+- #### SQL_SELECT_LIMIT
 *INTEGER W*
 >select语句结果最大行数。
 		
-#### SQL_SELECT_MODE
+- #### SQL_SELECT_MODE
 		
-#### SQL_WARNINGS
+- #### SQL_WARNINGS
 *BOOL W*
 >错误的insert语句是否应该返回一条警告，默认为FALSE。
 		
-#### STORAGE_ENGINE
+- #### STORAGE_ENGINE
 *CHAR W*
 >默认存储引擎。
