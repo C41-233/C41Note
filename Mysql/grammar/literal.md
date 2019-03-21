@@ -50,7 +50,7 @@
 ### 浮点直接量
 
 > `float-literal`  
-*[decimal-literal](#小数直接量)* {**E** | **e**}  *[integer-literal](整型直接量)*
+*[decimal-literal](#小数直接量)* {**E** | **e**}  *[integer-literal](#整型直接量)*
 
 浮点直接量表示单精度浮点数，小数直接量后跟一个指数。
 
