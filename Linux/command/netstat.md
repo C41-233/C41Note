@@ -30,6 +30,7 @@ Display summary statistics for each protocol.
 
 `netstat {--help|-h}`
 
+## 参数
 
 ### <address_family_options>
 - `-4`
@@ -84,3 +85,50 @@ Display summary statistics for each protocol.
 - `--wide` 同`-W`。
 - `--protocol=family` 同`-A`。
 
+## 输出列
+
+### Proto
+使用的协议。(tcp, udp, udpl, raw)
+
+### Recv-Q
+Established:  The count of bytes not copied by the user program connected to this socket.  
+
+Listening: The current syn backlog.
+
+### Send-Q
+Established: The count of bytes not acknowledged by the remote host.  
+
+Listening: The  maximum size of the syn backlog.
+
+### Local Address
+Address and port number of the local end of the socket.  Unless the --numeric (-n) option is specified, the socket address is resolved to its canonical host name (FQDN), and the port number is translated into the corresponding service name.
+
+### Foreign Address
+Address and port number of the remote end of the socket.  Analogous to "Local Address".
+
+### State
+The state of the socket. Since there are no states in raw mode and usually no states used in UDP and UDPLite, this column may be left blank. Normally this can be one of several values:
+
+- ESTABLISHED The socket has an established connection.
+
+- SYN_SENT The socket is actively attempting to establish a connection.
+
+- SYN_RECV A connection request has been received from the network.
+
+- FIN_WAIT1 The socket is closed, and the connection is shutting down.
+
+- FIN_WAIT2 Connection is closed, and the socket is waiting for a shutdown from the remote end.
+
+- TIME_WAIT The socket is waiting after close to handle packets still in the network.
+
+- CLOSE The socket is not being used.
+
+- CLOSE_WAIT The remote end has shut down, waiting for the socket to close.
+
+- LAST_ACK The remote end has shut down, and the socket is closed. Waiting for acknowledgement.
+
+- LISTEN The socket is listening for incoming connections.  Such sockets are not included in the output unless you specify the --listen‐ing (-l) or --all (-a) option.
+
+- CLOSING Both sockets are shut down but we still don't have all our data sent.
+
+- UNKNOWN The state of the socket is unknown.
