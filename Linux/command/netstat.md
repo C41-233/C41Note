@@ -55,7 +55,7 @@ Display summary statistics for each protocol.
 - `--unix`  同`-x`。
 - `--x25`
 
-### <options>
+### \<options\>
 - `-a` Show both listening and non-listening sockets.  With the --interfaces option, show interfaces that are not up
 - `-c` This will cause netstat to print the selected information every second continuously.
 - `-e` Display additional information.  Use this option twice for maximum detail.
