@@ -136,7 +136,7 @@
     1. sz 上传
 
 - DNS
-    1. nslookup DNS查询
+    1. [nslookup DNS查询](nslookup.md)
 
 - 传输
     1. [curl 数据传输](curl.md)
