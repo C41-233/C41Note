@@ -120,6 +120,7 @@
     1. [ifconfig 网络配置](ifconfig.md)
     1. ifdown 禁用网络设备
     1. ifup 启动网络设备
+    1. [netstat 查看网络状况](netstat.md)
     1. ping 测试主机连通性
     1. [route 路由表管理](route.md)
     1. traceroute 路由跟踪
