@@ -136,6 +136,7 @@
     1. sz 上传
 
 - DNS
+    1. [dig DNS查询](dig.md)
     1. [nslookup DNS查询](nslookup.md)
 
 - 传输
