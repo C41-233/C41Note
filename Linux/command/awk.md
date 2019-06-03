@@ -255,6 +255,6 @@ awk '!/^\s$/{print $0}'
 删除空行。
 
 ```Shell
-awk '{sum+=$1};END{print sum}'
+awk '{sum+=$1}END{print sum}'
 ```
 按行求和。
