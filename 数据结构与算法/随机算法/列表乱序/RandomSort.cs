@@ -1,7 +1,11 @@
-for (var i = 0; i < data.Count; i++)
+//原址乱序
+public static void RandomSort<T>(List<T> data)
 {
-	var to = RandomRange(i, data.Count); //随机选取范围[i, data.Count)
-	var tmp = data[to];
-	data[to] = data[i];
-	data[i] = tmp;
+	for (var i = 0; i < data.Count; i++)
+	{
+		var to = RandomRange(i, data.Count); //随机选取范围[i, data.Count)
+		var tmp = data[to];
+		data[to] = data[i];
+		data[i] = tmp;
+	}
 }
