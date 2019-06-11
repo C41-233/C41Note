@@ -3,12 +3,6 @@
 > `literal`  
 *numeric-literal* | *alphanumeric-literal* | *temporal-literal* | *boolean-literal* | *hexadecimal-literal*
 
-> `numeric-literal`  
-*integer-literal* | *decimal-literal* | *float-literal* | *bit-literal*
-
-> `temporal-literal`  
-*date-literal* | *time-literal* | *datetime-literal* | *timestamp-literal* | *year-literal*
-
 > `digit`  
 **0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9**
 
@@ -31,6 +25,9 @@
 
 ## 数值型直接量
 
+> `numeric-literal`  
+*integer-literal* | *decimal-literal* | *float-literal* | *bit-literal*
+
 ### 整型直接量
 
 > `integer-literal`  
@@ -47,7 +44,7 @@
 
 数字位数的总数叫做精度，小数点后的位数叫做刻度。
 
-例如：`49` `18.47` `-3400` `18.` `-.47`。
+例如：`49`、`18.47`、`-3400`、`18.`、`-.47`。
 
 ### 浮点直接量
 
@@ -56,7 +53,7 @@
 
 浮点直接量表示单精度浮点数，小数直接量后跟一个指数。
 
-例如：`-34E2` `0.16E4` `4E-3` `2e-2`
+例如：`-34E2`、`0.16E4`、`4E-3`、`2e-2`
 
 ### 位直接量
 > `bit-literal`  
@@ -67,7 +64,7 @@
 
 位直接量写成字符形式，最多可以有64位。
 
-例如：`B'1001'` `b'11111'`
+例如：`B'1001'`、`b'11111'`
 
 ## 十六进制直接量
 
@@ -80,7 +77,7 @@
 
 十六进制直接量直接表示二进制数值。
 
-例如：`x'41'` `X'3B'` `0x41`
+例如：`x'41'`、`X'3B'`、`0x41`
 
 ## 布尔直接量
 
@@ -105,12 +102,15 @@ TRUE值为1，FALSE值为0。
 
 ## 日期时间型直接量
 
+> `temporal-literal`  
+*date-literal* | *time-literal* | *datetime-literal* | *timestamp-literal* | *year-literal*
+
 ### 日期直接量
 
 > `date-literal`  
 **'** *date-literal-body* **'**  
 | **"** *date-literal-body* **"**  
-| *year* *month* *day*
+| *year-month-day*
 
 > `date-literal-body`  
 *year* *splitter* *month* *splitter* *day*
@@ -146,7 +146,9 @@ TRUE值为1，FALSE值为0。
 > `time-literal`  
 **'** *time-literal-body* **'**  
 **"** *time-literal-body* **"**  
-{*integer*[**.** *integer*]  
+{*second*[**.** *integer*]  
+{*minute-second*[**.** *integer*]  
+{*hour-minute-second*[**.** *integer*]  
 
 > `time-literal-body`  
 [*day*] *hour* *splitter* *minute* [*splitter* *second* [**.** *microsecond*]]  
@@ -160,7 +162,7 @@ TRUE值为1，FALSE值为0。
 
 写作字符串直接量时，用引号括起来，时、分、秒间用`:`、`-`、`/`、`@`、`%`分隔，微妙前加`.`。
 
-当只包含一个部分时，表示秒。例如：`23:59:59`、`14:00`、`14`、`00:00:00.000013`
+当只包含一个部分时，表示秒。例如：`“23:59:59”`、`‘14:00’`、`“14”`、`‘00:00:00.000013’`
 
 写作整型直接量时，最后两个数字解释为秒，倒数第三第四个数字解释为分，前面其余数字解释为时。
 
@@ -170,7 +172,7 @@ TRUE值为1，FALSE值为0。
 - `14` 00:00:14 
 - `000000.000013` 00:00:00.000013
 
-可以在小时前指定天数。
+可以在小时前指定天数，此時必須用字符串直接量。
 
 例如：
 - `"10 10:00:00"` 10天又10小时 
