@@ -153,7 +153,7 @@ TRUE值为1，FALSE值为0。
 [*hour* *splitter* *minute* *splitter*] *second*  
 [*day*] *hour*  
 
-> `splitter`
+> `splitter`  
 **:** | **-** | **/** | **@** | **%**
 
 时间直接量由时、分、秒、微妙组成。
@@ -178,4 +178,4 @@ TRUE值为1，FALSE值为0。
 
 时间直接量的有效范围是-838:59:59到838:59:59。
 
-inset语句忽略时间直接量的微秒部分。
+INSERT语句忽略时间直接量的微秒部分。
