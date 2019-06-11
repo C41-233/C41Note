@@ -186,8 +186,8 @@ INSERT语句忽略时间直接量的微秒部分。
 ### 日期时间直接量
 
 > `datetime-literal`  
-'*datetime-literal-body*'  
-| "*datetime-literal-body*"  
+**'** *datetime-literal-body* **'**  
+| **"** *datetime-literal-body* **"**  
 | *year-month-day-hour-minute-second*
 
 > `datetime-literal-body`  
@@ -202,3 +202,24 @@ INSERT语句忽略时间直接量的微秒部分。
 例如：`'1980-12-08 23:59:59.999999'`
 
 年份的有效范围为1000到9999之间。
+
+### 时间戳直接量
+> `timestamp-literal`
+**'** *timestamp-literal-body* **'**  
+| **"** *timestamp-literal-body* **"**  
+| *year-month-day-hour-minute-second*
+
+> `timestamp-literal-body`  
+*year-month-day*  
+| *year-month-day* *hour*  
+| *year-month-day* *hour* **:** *minute*  
+| *year-month-day* *hour* **:** *minute* **:** *second*  
+| *year-month-day* *hour* **:** *minute* **:** *second* **.** *microsecond*
+
+合并日期直接量与时间直接量构成时间戳直接量。
+
+例如：`'1980-12-08 23:59:59.999999'`
+
+年份的有效范围为1970至2037之间。
+
+时间戳直接量支持时区，存储时被转换为UTC时间。
