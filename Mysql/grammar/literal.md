@@ -204,7 +204,7 @@ INSERT语句忽略时间直接量的微秒部分。
 年份的有效范围为1000到9999之间。
 
 ### 时间戳直接量
-> `timestamp-literal`
+> `timestamp-literal`  
 **'** *timestamp-literal-body* **'**  
 | **"** *timestamp-literal-body* **"**  
 | *year-month-day-hour-minute-second*
