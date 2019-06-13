@@ -11,4 +11,5 @@
     1. [字面直接量](expression/literal.md)
 	1. 运算符
 		1. [算术运算符](expression/arithmetic-operator.md)
+		1. [逻辑运算符](expression/logical-operator.md)
 	1. [表达式](expression)
