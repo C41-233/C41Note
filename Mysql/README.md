@@ -8,4 +8,5 @@
 1. 配置
     1. [系统变量](variable/system-variable.md)
 1. 表达式与数据类型
-    1. [字面直接量](grammar/literal.md)
+    1. [字面直接量](expression/literal.md)
+	1. [表达式](expression)
