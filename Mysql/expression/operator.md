@@ -63,7 +63,7 @@
 ## 谓词运算符
 
 > `predicate-expression`  
-*scalar-expression* {**>**|**<**|**>=**|**<=**|**=**|**!=**|**<>**} {**ALL** | **ANY** | **SOME**} (*select-statement*)
+*scalar-expression* {**>** | **<** | **>=** | **<=** | **=** | **!=** | **<>**} {**ALL** | **ANY** | **SOME**} (*select-statement*)
 
 - `ALL`	条件满足子查询所有行
 - `SOME`/`ANY`	条件满足子查询任一行
@@ -81,3 +81,10 @@ FROM players
 WHERE birth_date>ANY(SELECT birth_date FROM players)
 ```
 查找非最老的球员号码、名字、生日。
+
+## BETWEEN运算符
+
+> `between-expression`  
+*scalar-expression* [**NOT**] **BETWEEN** *scalar-expression* **AND** *scalar-expression*
+
+BETWEEN运算符判断一个值是否在给定区间内，`A BETWEEN B AND C`等价于`(A>=B) AND (A<=C)`。
