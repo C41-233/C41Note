@@ -9,9 +9,23 @@
     1. [系统变量](variable/system-variable.md)
 1. 表达式与数据类型
     1. [字面直接量](expression/literal.md)
-	1. 运算符
-		1. [算术运算符](expression/arithmetic-operator.md)
-		1. [逻辑运算符](expression/logical-operator.md)
-		1. [位运算符](expression/bit-operator.md)
-		1. [字符串运算符](expression/char-operator.md)
+		1. 数值型直接量
+			1. 整型直接量
+			1. 小数直接量
+			1. 浮点直接量
+			1. 位直接量
+		1. 十六进制直接量
+		1. 布尔直接量
+		1. 字符串直接量
+		1. 日期时间型直接量
+			1. 日期直接量
+			1. 时间直接量
+			1. 日期时间直接量
+			1. 时间戳直接量
+			1. 年直接量
+	1. [运算符](expression/operator.md)
+		1. 算术运算符
+		1. 逻辑运算符
+		1. 位运算符
+		1. 字符串运算符
 	1. [表达式](expression)
