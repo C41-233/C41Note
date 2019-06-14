@@ -13,4 +13,5 @@
 		1. [算术运算符](expression/arithmetic-operator.md)
 		1. [逻辑运算符](expression/logical-operator.md)
 		1. [位运算符](expression/bit-operator.md)
+		1. [字符串运算符](expression/char-operator.md)
 	1. [表达式](expression)
