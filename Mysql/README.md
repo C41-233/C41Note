@@ -30,4 +30,5 @@
 		1. 空值运算符
 		1. 谓词运算符
 		1. BETWEEN运算符
+		1. EXISTS运算符
 	1. [表达式](expression)
