@@ -88,3 +88,10 @@ WHERE birth_date>ANY(SELECT birth_date FROM players)
 *scalar-expression* [**NOT**] **BETWEEN** *scalar-expression* **AND** *scalar-expression*
 
 BETWEEN运算符判断一个值是否在给定区间内，`A BETWEEN B AND C`等价于`(A>=B) AND (A<=C)`。
+
+## EXISTS运算符
+
+> `exists-expression`  
+[**NOT**] **EXISTS** *select-statement*
+
+EXISTS运算符进行一次表子查询，如果是空集返回FALSE，否则返回TRUE。
