@@ -1,0 +1,64 @@
+# 最大公约数
+
+辗转相除法（欧几里得算法），用于求两个正整数的最大公约数（最大公因子）。
+
+## 算法描述
+设正整数a和b
+1. r = a%b。若r==0，返回b。
+1. a = b，b = r，执行步骤1。
+
+#### 示例
+
+求100与120的最大公约数。
+
+a | b | r
+---|---|---
+| 100	| 120 | 100 |
+| 120 | 100 | 20 |
+| 100 | 20 | 0 |
+
+b=20即所求最大公约数。
+
+## 证明
+
+设正整数a和b，令b<a，用gcd(a,b）表示a和b的最大公约数，r=a%b，k=a/b。
+
+即证，gcd(a,b)=gcd(b,r）。
+
+令c=gcd(a,b），设a=mc，b=nc。
+
+∴ r=a-kb=mc-knc=(m-kn)c。
+
+∴ c也是r的因数。
+
+∴ m-kn与n互素。否则，可设m-kn=xd，n=yd（d>1），则m=kn+xd=kyd+xd=(ky+x)d，a=mc=(ky+x)dc，b=nc=ycd，故a与b最大公约数成为cd，而非c，与前面结论矛盾。
+
+∴ gcd(b,r)=c，即gcd(a,b)=gcd(b,r）。
+
+证毕。
+
+## 实现
+
+``` JAVA
+public static long gcd(long a, long b){
+	long r = a%b;
+	while(r!=0){
+		a = b;
+		b = r;
+		r = a%b;
+	}
+	return b;
+}
+```
+
+``` JAVA
+public static long gcd(long a, long b){
+	long r;
+	do{
+		r = a%b;
+		a = b;
+		b = r;
+	}while(r!=0);
+	return a;
+}
+```
