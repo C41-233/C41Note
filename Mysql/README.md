@@ -22,12 +22,12 @@
 			1. 日期时间直接量
 			1. 时间戳直接量
 			1. 年直接量
-	1. [运算符]
-		1. 算术运算符(expression/base-operator.md#算术运算符)
-		1. 逻辑运算符(expression/base-operator.md#逻辑运算符)
-		1. 位运算符(expression/base-operator.md#位运算符)
-		1. 字符串运算符(expression/base-operator.md#字符串运算符)
-		1. 空值运算符(expression/base-operator.md#空值运算符)
+	1. 运算符
+		1. [算术运算符](expression/base-operator.md#算术运算符)
+		1. [逻辑运算符](expression/base-operator.md#逻辑运算符)
+		1. [位运算符](expression/base-operator.md#位运算符)
+		1. [字符串运算符](expression/base-operator.md#字符串运算符)
+		1. [空值运算符](expression/base-operator.md#空值运算符)
 		1. 谓词运算符
 		1. BETWEEN
 		1. EXISTS
