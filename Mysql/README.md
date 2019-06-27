@@ -28,7 +28,7 @@
 		1. [位运算符](expression/base-operator.md#位运算符)
 		1. [字符串运算符](expression/base-operator.md#字符串运算符)
 		1. [空值运算符](expression/base-operator.md#空值运算符)
-		1. 谓词运算符
+		1. [谓词运算符](expression/predicate-expression.md)
 		1. BETWEEN
 		1. EXISTS
 		1. IN
