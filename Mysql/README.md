@@ -8,20 +8,20 @@
     1. [系统变量](variable/system-variable.md)
 1. 表达式与数据类型
     1. [字面直接量](expression/literal.md)
-		1. 数值型直接量
-			1. 整型直接量
-			1. 小数直接量
-			1. 浮点直接量
-			1. 位直接量
-		1. 十六进制直接量
-		1. 布尔直接量
-		1. 字符串直接量
-		1. 日期时间型直接量
-			1. 日期直接量
-			1. 时间直接量
-			1. 日期时间直接量
-			1. 时间戳直接量
-			1. 年直接量
+		1. [数值型直接量](expression/literal.md#数值型直接量)
+			1. [整型直接量](expression/literal.md#整型直接量)
+			1. [小数直接量](expression/literal.md#小数直接量)
+			1. [浮点直接量](expression/literal.md#浮点直接量)
+			1. [位直接量](expression/literal.md#位直接量)
+		1. [十六进制直接量](expression/literal.md#十六进制直接量)
+		1. [布尔直接量](expression/literal.md#布尔直接量)
+		1. [字符串直接量](expression/literal.md#字符串直接量)
+		1. [日期时间型直接量](expression/literal.md#日期时间型直接量)
+			1. [日期直接量](expression/literal.md#日期直接量)
+			1. [时间直接量](expression/literal.md#时间直接量)
+			1. [日期时间直接量](expression/literal.md#日期时间直接量)
+			1. [时间戳直接量](expression/literal.md#时间戳直接量)
+			1. [年直接量](expression/literal.md#年直接量)
 	1. 运算符
 		1. [算术运算符](expression/base-operator.md#算术运算符)
 		1. [逻辑运算符](expression/base-operator.md#逻辑运算符)
