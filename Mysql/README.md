@@ -2,7 +2,8 @@
 
 1. 工具链
     1. [mysql](mysql.md)
-    1. [mysqld](mysqld.md)
+    1. mysqld
+    1. [mysqldump](mysqldump.md)
 1. 配置
     1. [HELP语句](grammar/help-statement.md)
     1. [系统变量](variable/system-variable.md)
