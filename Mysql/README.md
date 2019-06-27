@@ -29,9 +29,9 @@
 		1. [字符串运算符](expression/base-operator.md#字符串运算符)
 		1. [空值运算符](expression/base-operator.md#空值运算符)
 		1. [谓词运算符](expression/predicate-expression.md)
-		1. BETWEEN
-		1. EXISTS
-		1. IN
-		1. LIKE
-		1. MATCH
+		1. [BETWEEN](expression/between-expression.md)
+		1. [EXISTS](expression/exists-expression.md)
+		1. [IN](expression/in-expression.md)
+		1. [LIKE](expression/like-expression.md)
+		1. [MATCH](expression/match-expression.md)
 	1. [表达式](expression)
