@@ -1,0 +1,6 @@
+# git
+
+把本地所有标记为skip worktree的文件取消标记。
+``` SHELL
+git ls-files -v | grep -i ^S | cut -c 3- | tr '\012' '\000' | xargs -0 git update-index --no-skip-worktree
+```
