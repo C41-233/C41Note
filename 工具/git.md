@@ -25,7 +25,7 @@ $ git init
 ```
 
 #### add
-添加文件。
+将文件添加到暂存区。
 ``` SHELL
 $ git add test.txt
 ```
