@@ -25,10 +25,16 @@ $ git init
 ```
 
 #### add
-将文件添加到暂存区。
+将文件的修改添加到暂存区。
 ``` SHELL
 $ git add test.txt
 ```
+
+add既可以用于增加文件到暂存区，也可以用于修改文件到暂存区。
+
+add的对象是文件的修改，因此：
+- `修改文件 -> git add -> 修改文件 -> git commit` 结果只提交了第一次修改
+- `修改文件 -> git add -> 修改文件 -> git add -> git commit` 合并了两次修改提交
 
 #### commit
 提交文件。
