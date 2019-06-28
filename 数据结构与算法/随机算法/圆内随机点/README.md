@@ -1,4 +1,10 @@
 ``` C#
+public struct Vector
+{
+    public double X;
+    public double Y;
+}
+
 public static Vector RandomPositionInCircle(Vector center, double radius)
 {
     var r = Math.Sqrt(RandomRange(0, 1)) * radius;
