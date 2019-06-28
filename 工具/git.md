@@ -1,5 +1,11 @@
 # git
 
+## 概念
+#### 版本号
+版本号由SHA1计算，命令指定的版本号在没有歧义时可以只提供前几位。
+
+HEAD表示当前版本，HEAD\^表示上一个版本，HEAD\^^表示上上个版本，HEAD~100表示上第100个版本。
+
 ## 配置
 
 #### config
@@ -11,8 +17,10 @@ $ git config --global user.email "email"
 ## 仓库
 
 #### init
-将目录初始化为仓库，pwd在当前目录中。
+初始化仓库。
+
 ``` SHELL
+# 将目录初始化为仓库，pwd在当前目录中。
 $ git init
 ```
 
@@ -38,6 +46,30 @@ $ git status
 查看本地未提交文件修改。
 ``` SHELL
 $ git diff test.txt
+```
+
+#### log
+查看历史日志。
+``` SHELL
+# 查看完整提交历史日志。
+$ git log
+
+# 查看简要提交历史记录，每条记录占一行。
+$ git log --pretty-online
+```
+
+#### reflog
+查看所有分支的操作记录。
+
+``` SHELL
+$ git reflog
+```
+
+#### reset
+版本回退。
+
+``` SHELL
+$ git reset --hard 104fa
 ```
 
 ## 工作树
