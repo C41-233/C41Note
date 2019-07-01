@@ -104,6 +104,27 @@ $ git reset --hard 104fa
 $ git checkout -- test.txt
 ```
 
+## 远程库
+
+#### remote
+将本地库与远程库关联。
+
+``` SHELL
+$ git remote add origin git@<server>:<path>/<repositoty>.git
+$ git remote add origin git@github.com::c41/test.git
+```
+
+#### push
+将本地库的内容推送到远程。
+
+``` SHELL
+# 将本地库分支master推送到远程。
+$ git push origin master
+
+# 第一次推送时需要参数-u，使得本地分支master与远端分支master关联。
+$ git push -u origin master
+```
+
 ## 工作树
 
 #### update-index
