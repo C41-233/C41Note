@@ -78,6 +78,15 @@ $ git reflog
 $ git reset --hard 104fa
 ```
 
+#### checkout
+
+撤销文件在工作区的修改，即恢复到最近一次`git commit`或`git add`的状态。
+
+``` SHELL
+# 撤销文件在工作区的修改。
+$ git checkout -- test.txt
+```
+
 ## 工作树
 
 #### update-index
