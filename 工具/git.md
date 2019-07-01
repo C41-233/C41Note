@@ -111,6 +111,47 @@ $ git reset --hard 104fa
 $ git checkout -- test.txt
 ```
 
+## 分支
+
+#### branch
+
+查看当前分支。
+
+``` SHELL
+$ git branch
+```
+
+创建分支。
+
+``` SHELL
+$ git branch demo
+```
+
+删除分支。
+
+``` SHELL
+$ git branch -d demo
+```
+
+#### checkout
+
+切换分支。
+``` SHELL
+# 切换到分支demo。
+$ git checkout demo
+
+# 创建并切换到分支demo。
+$ git checkout -b demo
+```
+
+#### merge
+合并指定分支到当前分支。
+
+``` SHELL
+# 合并分支demo到当前分支。
+$ git merge demo
+```
+
 ## 远程库
 
 #### remote
