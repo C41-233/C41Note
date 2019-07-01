@@ -76,23 +76,6 @@ $ git status
 $ git diff test.txt
 ```
 
-#### log
-查看历史日志。
-``` SHELL
-# 查看完整提交历史日志。
-$ git log
-
-# 查看简要提交历史记录，每条记录占一行。
-$ git log --pretty-online
-```
-
-#### reflog
-查看所有分支的操作记录。
-
-``` SHELL
-$ git reflog
-```
-
 #### reset
 版本回退。
 
@@ -147,9 +130,38 @@ $ git checkout -b demo
 #### merge
 合并指定分支到当前分支。
 
+普通方式合并指以一次commit的方式合并。
+
+Fast forward合并指直接修改当前分支指针到目标分支版本，历史记录中没有合并记录。当目标分支版本高于当前分支时适用。
+
 ``` SHELL
 # 合并分支demo到当前分支。
 $ git merge demo
+
+# 以普通方式合并分支，禁用Fast forward。
+$ git merge --no-ff -m "comment" demo
+```
+
+## 日志
+
+#### log
+查看历史日志。
+``` SHELL
+# 查看完整提交历史日志。
+$ git log
+
+# 查看简要提交历史记录，每条记录占一行。
+$ git log --pretty=oneline
+
+# 查看分支合并图。
+$ git log --graph
+```
+
+#### reflog
+查看所有分支的操作记录。
+
+``` SHELL
+$ git reflog
 ```
 
 ## 远程库
