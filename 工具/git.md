@@ -12,6 +12,13 @@
 
 HEAD表示当前版本，HEAD\^表示上一个版本，HEAD\^^表示上上个版本，HEAD~100表示上第100个版本。
 
+#### repository
+表示一个远端仓库。
+
+`git@<server>:<path>/<repositoty>.git`
+
+例如：`git@github.com:c41/test.git`
+
 ## 配置
 
 #### config
@@ -110,12 +117,19 @@ $ git checkout -- test.txt
 将本地库与远程库关联。
 
 ``` SHELL
-$ git remote add origin git@<server>:<path>/<repositoty>.git
-$ git remote add origin git@github.com::c41/test.git
+$ git remote add origin git@github.com:c41/test.git
 ```
 
 #### push
 将本地库的内容推送到远程。
+
+#### clone
+克隆远程库到本地，当前目录为根目录上一层。
+
+``` SHELL
+# 克隆远端库test，本地会创建目录test。
+$ git clone git@github.com:c41/test.git
+```
 
 ``` SHELL
 # 将本地库分支master推送到远程。
