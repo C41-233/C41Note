@@ -189,15 +189,36 @@ $ git merge --no-ff -m "comment" demo
 
 #### log
 查看历史日志。
+
+不带参数时，按照提交时间列出所有的更新，最近的更新排在最上面，包含完整版本号、Author、Date、注释。
+
+- `-<n>` 仅显示最近的n次提交。
+- `-p` 展开每次提交的修改。
+- `--graph` 显示分支合并图。
+- `--pretty=<type>` 显示格式。
+    - `format:"<format>"` 格式化显示。
+        | 选项 | 描述 |
+        |---|---|
+        | %H | 完整版本号 |
+        | %h | 摘要版本号 |
+        | %T | tree的完整版本号 |
+        | %t | tree的摘要版本号 |
+        | %P | parent的完整版本号 |
+        | %p | parent的摘要版本号 |
+        | %an | author |
+        | %ae | author的邮箱 |
+        | %ad | author修订日期 |
+        | %ar | author修订日期，按多久以前的方式显示 |
+        | %cn | committer |
+        | %ce | committer的邮箱 |
+        | %cd | committer提交日期 |
+        | %cr | committer提交日期，按多久以前的方式显示 |
+        | %s | 注释 |
+    - `oneline` 每个提交在一行显示。
+- `--stat` 仅显示简要的增改行数统计。
+
 ``` SHELL
-# 查看完整提交历史日志。
-$ git log
-
-# 查看简要提交历史记录，每条记录占一行。
-$ git log --pretty=oneline
-
-# 查看分支合并图。
-$ git log --graph
+$ git log --pretty=oneline --graph
 ```
 
 #### reflog
