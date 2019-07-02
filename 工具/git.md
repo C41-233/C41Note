@@ -94,6 +94,37 @@ $ git reset --hard 104fa
 $ git checkout -- test.txt
 ```
 
+#### stash
+
+保存工作区修改。
+
+``` SHELL
+$ git stash
+```
+
+查看stash列表。
+
+``` SHELL
+$ git stash list
+```
+
+以最近stash恢复工作区修改，并删除。
+
+``` SHELL
+$ git stash pop
+```
+
+指定恢复的stash（不会删除）。
+
+``` SHELL
+$ git stash apply stash@{0}
+```
+
+删除指定的stash。
+``` SHELL
+$ git stash drop stash@{0}
+```
+
 ## 分支
 
 #### branch
