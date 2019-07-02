@@ -197,23 +197,21 @@ $ git merge --no-ff -m "comment" demo
 - `--graph` 显示分支合并图。
 - `--pretty=<type>` 显示格式。
     - `format:"<format>"` 格式化显示。
-        | 选项 | 描述 |
-        |---|---|
-        | %H | 完整版本号 |
-        | %h | 摘要版本号 |
-        | %T | tree的完整版本号 |
-        | %t | tree的摘要版本号 |
-        | %P | parent的完整版本号 |
-        | %p | parent的摘要版本号 |
-        | %an | author |
-        | %ae | author的邮箱 |
-        | %ad | author修订日期 |
-        | %ar | author修订日期，按多久以前的方式显示 |
-        | %cn | committer |
-        | %ce | committer的邮箱 |
-        | %cd | committer提交日期 |
-        | %cr | committer提交日期，按多久以前的方式显示 |
-        | %s | 注释 |
+        - `%H` 完整版本号
+        - `%h` 摘要版本号 
+        - `%T` tree的完整版本号 
+        - `%t` tree的摘要版本号 
+        - `%P` parent的完整版本号 
+        - `%p` parent的摘要版本号 
+        - `%an` author 
+        - `%ae` author的邮箱 
+        - `%ad` author修订日期 
+        - `%ar` author修订日期，按多久以前的方式显示 
+        - `%cn` committer 
+        - `ce` committer的邮箱 
+        - `%cd` committer提交日期 
+        - `%cr` committer提交日期，按多久以前的方式显示 
+        - `%s` 注释 
     - `oneline` 每个提交在一行显示。
 - `--stat` 仅显示简要的增改行数统计。
 
