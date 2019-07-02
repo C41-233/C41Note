@@ -208,7 +208,7 @@ $ git merge --no-ff -m "comment" demo
         - `%ad` author修订日期 
         - `%ar` author修订日期，按多久以前的方式显示 
         - `%cn` committer 
-        - `ce` committer的邮箱 
+        - `%ce` committer的邮箱 
         - `%cd` committer提交日期 
         - `%cr` committer提交日期，按多久以前的方式显示 
         - `%s` 注释 
