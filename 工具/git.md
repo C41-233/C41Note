@@ -144,7 +144,11 @@ $ git branch demo
 删除分支。
 
 ``` SHELL
+# 删除已合并分支。
 $ git branch -d demo
+
+# 删除未合并分支。
+$ git branch -D demo
 ```
 
 #### checkout
@@ -198,6 +202,16 @@ $ git reflog
 ## 远程库
 
 #### remote
+查看远程库信息。
+
+``` SHELL
+# 查看远程库信息。
+$ git remote
+
+# 查看更详细的远程库信息。
+$ git remote -v
+```
+
 将本地库与远程库关联。
 
 ``` SHELL
@@ -207,20 +221,20 @@ $ git remote add origin git@github.com:c41/test.git
 #### push
 将本地库的内容推送到远程。
 
+``` SHELL
+# 将本地库分支master推送到远程仓库origin。
+$ git push origin master
+
+# 第一次推送时需要参数-u，使得本地分支master与远端分支master关联。
+$ git push -u origin master
+```
+
 #### clone
 克隆远程库到本地，当前目录为根目录上一层。
 
 ``` SHELL
 # 克隆远端库test，本地会创建目录test。
 $ git clone git@github.com:c41/test.git
-```
-
-``` SHELL
-# 将本地库分支master推送到远程。
-$ git push origin master
-
-# 第一次推送时需要参数-u，使得本地分支master与远端分支master关联。
-$ git push -u origin master
 ```
 
 ## 工作树
