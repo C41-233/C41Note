@@ -151,6 +151,11 @@ $ git branch -d demo
 $ git branch -D demo
 ```
 
+将本地分支与远程分支关联。
+``` SHELL
+$ git branch --set-upstream-to=origin/demo demo
+```
+
 #### checkout
 
 切换分支。
@@ -160,6 +165,9 @@ $ git checkout demo
 
 # 创建并切换到分支demo。
 $ git checkout -b demo
+
+# 拉取远程分支demo，创建并切换到本地分支demo（这一步不会关联本地分支与远程分支）
+$ git checkout -b demo origin/demo
 ```
 
 #### merge
@@ -227,6 +235,13 @@ $ git push origin master
 
 # 第一次推送时需要参数-u，使得本地分支master与远端分支master关联。
 $ git push -u origin master
+```
+
+#### pull
+拉取远程内容到本地库。
+
+``` SHELL
+git pull
 ```
 
 #### clone
