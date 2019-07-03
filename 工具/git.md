@@ -199,8 +199,15 @@ $ git rebase
 不带参数时，按照提交时间列出所有的更新，最近的更新排在最上面，包含完整版本号、Author、Date、注释。
 
 - `-<n>` 仅显示最近的n次提交。
-- `-p` 展开每次提交的修改。
+- `-p` 按补丁格式显示每个更新之间的差异。
+- `--abbrev-commit` 仅显示摘要版本号。
+- `--after=<time>` 同`--since`。
+- `--author=<author>` 限制指定author的提交。
+- `--before=<time>` 同`--util`。
+- `--committer=<committer>` 限制指定committer的提交。
 - `--graph` 显示分支合并图。
+- `--name-only` 仅在提交信息后显示已修改的文件清单。
+- `--name-status` 显示新增、修改、删除的文件清单。
 - `--pretty=<type>` 显示格式。
     - `format:"<format>"` 格式化显示。
         - `%H` 完整版本号
@@ -219,10 +226,14 @@ $ git rebase
         - `%cr` committer提交日期，按多久以前的方式显示 
         - `%s` 注释 
     - `oneline` 每个提交在一行显示。
-- `--stat` 仅显示简要的增改行数统计。
+- `--relative-date` 使用较短的相对时间显示。
+- `--shortstat` 只显示行数修改统计。
+- `--since=<time>` 限制指定时间之后的日志。
+- `--stat` 显示每次更新的文件修改统计信息。
+- `--util=<time>` 限制指定时间之前的日志。
 
 ``` SHELL
-$ git log --pretty=oneline --graph
+$ git log --pretty=oneline --graph --abbrev-commit
 ```
 
 #### reflog
