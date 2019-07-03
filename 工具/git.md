@@ -3,9 +3,11 @@
 ## 概念
 
 #### 工作区、暂存区
-本地工作的目录是工作区。
+工作区是本地的工作目录。
 
-暂存区是未提交修改。
+暂存区（Stage、Index）是用户保存未提交的修改。
+
+仓库目录是`.git`，保存项目的元数据和对象数据库。
 
 文件有以下状态：
 - 已修改：文件有修改，但没有进入暂存区。
@@ -317,11 +319,14 @@ git pull
 ```
 
 #### clone
-克隆远程库到本地，当前目录为根目录上一层。
+克隆远程库到本地，当前目录为根目录上一层。支持https、git、ssh等协议。
 
 ``` SHELL
 # 克隆远端库test，本地会创建目录test。
-$ git clone git@github.com:c41/test.git
+$ git clone https://github.com/c41/test.git
+
+# 克隆远端库test，指定本地目录。
+$git clone https://github.com/c41/test.git work
 ```
 
 ## 标签
