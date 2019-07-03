@@ -185,6 +185,12 @@ $ git merge demo
 $ git merge --no-ff -m "comment" demo
 ```
 
+#### rebase
+
+``` SHELL
+$ git rebase
+```
+
 ## 日志
 
 #### log
@@ -261,6 +267,58 @@ $ git push -u origin master
 
 ``` SHELL
 git pull
+```
+
+## 标签
+
+标签与某个commit关联。如果关联的commit在多个分支中，则每个分支都可以看到该标签。
+
+#### tag
+查看当前所有标签列表。
+``` SHELL
+$ git tag
+```
+
+在当前分支创建标签。创建的标签在本地库中，需要主动推送到远程库。
+
+``` SHELL
+# 在当前分支的当前版本创建标签。
+$ git tag v1.0
+
+# 在当前分支的指定版本创建标签。
+$ git tag v1.0 f13c522
+
+# 在当前分支的指定版本创建标签，包含说明。
+$ git tag -a v1.0 -m "comment" f13c522
+```
+
+推送本地标签到远程库。
+
+``` SHELL
+# 推送指定标签
+$ git push origin v1.0
+
+# 推送所有标签
+$ git push origin --tags
+```
+
+删除标签。
+``` SHELL
+$ git tag -d v1.0
+```
+
+删除远程库标签。
+
+``` SHELL
+# 先删除本地标签，然后推送到远程
+$ git tag -d v1.0
+$ git push origin :refs/tags/v1.0
+```
+
+#### show
+查看标签信息。
+``` SHELL
+$ git show v1.0
 ```
 
 #### clone
