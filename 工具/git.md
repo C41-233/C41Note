@@ -28,10 +28,33 @@ HEAD表示当前版本，HEAD\^表示上一个版本，HEAD\^^表示上上个版
 
 ## 配置
 
+配置文件有三个级别：
+1. 系统配置，git全局的配置，整个系统有效。位于`/etc/gitconfig`，通过`--system`选项配置。
+1. 全局配置，针对每个用户的配置，位于`~/.gitconfig`或`~/.config/git/config`，通过`--global`选项配置。
+1. 仓库配置，针对每个仓库的配置。位于`<repo>/.git/config`。
+
+| 配置 | 描述 |
+|---|---|
+| core.editor | 文本编辑器 |
+| user.name | 用户名 |
+| user.email | 邮箱 |
+
 #### config
+
+初始配置账户信息。
+
 ``` SHELL
-$ git config --global user.name "username"
-$ git config --global user.email "email"
+$ git config --global user.name c41
+$ git config --global user.email c41@example.com
+```
+
+查看配置。
+``` SHELL
+# 查看所有配置列表。
+$ git config --list
+
+# 查看指定配置。
+$ git config user.name
 ```
 
 ## 仓库
