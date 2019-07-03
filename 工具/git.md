@@ -57,6 +57,12 @@ $ git config --list
 $ git config user.name
 ```
 
+查看帮助信息。
+``` SHELL
+$ git help <verb>
+$ git <verb> --help
+```
+
 ## 仓库
 
 #### init
@@ -310,6 +316,14 @@ $ git push -u origin master
 git pull
 ```
 
+#### clone
+克隆远程库到本地，当前目录为根目录上一层。
+
+``` SHELL
+# 克隆远端库test，本地会创建目录test。
+$ git clone git@github.com:c41/test.git
+```
+
 ## 标签
 
 标签与某个commit关联。如果关联的commit在多个分支中，则每个分支都可以看到该标签。
@@ -360,14 +374,6 @@ $ git push origin :refs/tags/v1.0
 查看标签信息。
 ``` SHELL
 $ git show v1.0
-```
-
-#### clone
-克隆远程库到本地，当前目录为根目录上一层。
-
-``` SHELL
-# 克隆远端库test，本地会创建目录test。
-$ git clone git@github.com:c41/test.git
 ```
 
 ## 工作树
