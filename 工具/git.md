@@ -115,18 +115,44 @@ add的对象是文件的修改，因此：
 - `修改文件 -> git add -> 修改文件 -> git add -> git commit` 合并了两次修改提交。
 
 #### rm
-删除文件。
+删除文件，即从已跟踪文件列表中删除。
 
 ``` SHELL
+# 删除文件，同时会删除本地目录的文件。
 $ git rm test.txt
+
+# 如果文件已暂存，必须用-f参数。
+$ git rm -f test.txt
 ```
 
 从目录中删除原始文件后，使用`git add`和`git rm`是一样的。
 
+删除多个文件，*需要转义防止shell展开。
+``` SHELL
+$ git rm log/\*.log
+```
+
+删除已跟踪的文件，但不删除本地文件。
+
+``` SHELL
+$ git rm --cached README
+```
+
 #### commit
 将暂存区的所有内容提交到当前分支。
+
 ``` SHELL
+# 启动文本编辑器输入注释。
+$ git commit
+
+# 指定注释内容。
 $ git commit -m "comment"
+```
+
+可以跳过`git add`一次性提交已修改文件。
+
+``` SHELL
+$ git commit -a -m "comment"
 ```
 
 #### status
@@ -150,7 +176,15 @@ $ git status -s
 #### diff
 查看本地已修改文件的修改差异。
 ``` SHELL
+# 查看所有已修改文件的差异。
+$ git diff
+
+# 查看指定文件的差异。
 $ git diff test.txt
+
+# 查看所有已暂存文件的差异。
+$ git diff --cached
+$ git diff --staged
 ```
 
 #### reset
