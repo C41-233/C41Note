@@ -66,6 +66,33 @@ $ git help <verb>
 $ git <verb> --help
 ```
 
+#### .gitignore
+
+正则模式：
+- `*` 匹配0个或多个任意字符
+- `[abc] [a-z]` 匹配任意一个范围内的字符
+- `?` 匹配一个任意字符
+
+``` gitignore
+# 忽略所有以.a结尾的文件
+*.a
+
+# 不忽略lib.a文件
+!lib.a
+
+# 忽略当前目录下的TODO文件，不包含子目录
+/TODO
+
+# 忽略build目录下的所有文件
+build/
+
+# 忽略doc目录下所有以.txt结尾的直接子文件
+doc/*.txt
+
+# 递归忽略doc目录下所有以.pdf结尾的文件
+doc/**/*.pdf
+```
+
 ## 仓库
 
 #### init
