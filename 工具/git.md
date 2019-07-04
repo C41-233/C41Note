@@ -138,6 +138,13 @@ $ git rm log/\*.log
 $ git rm --cached README
 ```
 
+#### mv
+重命名（移动）文件。
+``` SHELL
+# 将README.md重命名为README。
+$ git README.md README
+```
+
 #### commit
 将暂存区的所有内容提交到当前分支。
 
@@ -317,6 +324,7 @@ $ git rebase
 - `--before=<time>` 同`--util`。
 - `--committer=<committer>` 限制指定committer的提交。
 - `--graph` 显示分支合并图。
+- `--grep` 仅显示指定关键字的提交。
 - `--name-only` 仅在提交信息后显示已修改的文件清单。
 - `--name-status` 显示新增、修改、删除的文件清单。
 - `--pretty=<type>` 显示格式。
