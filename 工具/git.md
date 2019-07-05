@@ -205,7 +205,13 @@ $ git diff --staged
 版本回退。
 
 ``` SHELL
+# 回退到指定版本。
 $ git reset --hard 104fa
+```
+
+取消暂存的文件。
+``` SHELL
+$ git reset HEAD test.txt
 ```
 
 #### checkout
