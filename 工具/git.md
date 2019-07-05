@@ -162,6 +162,13 @@ $ git commit -m "comment"
 $ git commit -a -m "comment"
 ```
 
+补充提交，即将暂存区的文件重新提交，代替第一次提交。用于弥补遗漏的暂存文件。
+``` SHELL
+$ git commit -m "old commit"
+$ git add a_file
+$ git commit -m "new commit" --amend
+```
+
 #### status
 查看仓库状态。包括已修改文件、未跟踪文件、当前分支。
 
