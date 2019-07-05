@@ -66,6 +66,13 @@ $ git help <verb>
 $ git <verb> --help
 ```
 
+配置命令别名。
+``` SHELL
+$ git config --global alias.br branch
+$ git config --global alias.unstage 'reset HEAD --'
+$ git config --global alias.last 'log -1 HEAD'
+```
+
 #### .gitignore
 
 正则模式：
