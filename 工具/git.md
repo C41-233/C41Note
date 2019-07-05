@@ -22,12 +22,16 @@
 
 HEAD表示当前版本，HEAD\^表示上一个版本，HEAD\^^表示上上个版本，HEAD~100表示上第100个版本。
 
-#### repository
-表示一个远端仓库。
+#### 仓库
+表示一个远端仓库。支持https、git、ssh等协议。
 
 `git@<server>:<path>/<repositoty>.git`
 
-例如：`git@github.com:c41/test.git`
+例如：`git@github.com:c41/test.git`。
+
+#### 提交对象、分支、HEAD
+
+[Git-分支-分支简介](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%AE%80%E4%BB%8B)
 
 ## 配置
 
@@ -113,11 +117,12 @@ $ git init
 #### add
 - 将已修改文件添加到暂存区。
 - 将未跟踪文件添加到暂存区并标记为已跟踪。
+- 
 ``` SHELL
-$ git add test.txt
+$ git add test1.txt test2.txt
 ```
 
-add的对象是文件的修改，因此：
+add的对象是文件的快照，因此：
 - `修改文件 -> git add -> 修改文件 -> git commit` 结果只提交了第一次修改。
 - `修改文件 -> git add -> 修改文件 -> git add -> git commit` 合并了两次修改提交。
 
@@ -343,6 +348,7 @@ $ git rebase
 - `--author=<author>` 限制指定author的提交。
 - `--before=<time>` 同`--util`。
 - `--committer=<committer>` 限制指定committer的提交。
+- `--decorate` 查看提交对象。
 - `--graph` 显示分支合并图。
 - `--grep` 仅显示指定关键字的提交。
 - `--name-only` 仅在提交信息后显示已修改的文件清单。
@@ -437,7 +443,7 @@ $ git pull
 ```
 
 #### clone
-克隆远程库到本地，当前目录为根目录上一层。支持https、git、ssh等协议。
+克隆远程库到本地，当前目录为根目录上一层。
 
 clone以后自动关联远程库名称为origin。
 
