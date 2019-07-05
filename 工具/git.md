@@ -29,8 +29,6 @@ HEAD表示当前版本，HEAD\^表示上一个版本，HEAD\^^表示上上个版
 
 例如：`git@github.com:c41/test.git`。
 
-#### 提交对象、分支、HEAD
-
 [Git-分支-分支简介](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%AE%80%E4%BB%8B)
 
 ## 配置
@@ -272,7 +270,11 @@ $ git stash drop stash@{0}
 
 #### branch
 
-查看当前分支。
+查看分支列表，以*标记当前分支。
+
+- `-v` 查看每个分支的最后一次提交。
+- `--merged` 查看已经合并到当前分支的分支。
+- `--no-merged` 查看未合并到当前分支的分支。
 
 ``` SHELL
 $ git branch
@@ -316,15 +318,15 @@ $ git checkout -b demo origin/demo
 #### merge
 合并指定分支到当前分支。
 
-普通方式合并指以一次commit的方式合并。
+提交合并指以一次commit的方式合并。当不存在冲突时，git会自动创建一个提交。
 
-Fast forward合并指直接修改当前分支指针到目标分支版本，历史记录中没有合并记录。当目标分支版本高于当前分支时适用。
+Fast forward合并指直接修改当前分支指针到目标分支版本，历史记录中没有合并记录。当目标分支版本是当前分支版本的直接上游时适用。
 
 ``` SHELL
 # 合并分支demo到当前分支。
 $ git merge demo
 
-# 以普通方式合并分支，禁用Fast forward。
+# 以提交方式合并，禁用Fast forward。
 $ git merge --no-ff -m "comment" demo
 ```
 
