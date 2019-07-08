@@ -392,6 +392,8 @@ $ git reflog
 
 ## 远程库
 
+跟踪分支：与远程分支关联的本地分支。
+
 #### remote
 查看远程库信息。
 
@@ -399,6 +401,7 @@ $ git reflog
 $ git remote
 $ git remote -v
 $ git remote show origin
+$ git ls-remote origin
 ```
 
 将本地库与远程库关联。
@@ -423,22 +426,25 @@ $ git remote rm origin
 将本地库的内容推送到远程。
 
 ``` SHELL
-# 将本地库分支master推送到远程仓库origin。
+# 将本地库分支master推送到远程分支origin/master。
 $ git push origin master
 
 # 第一次推送时需要参数-u，使得本地分支master与远端分支master关联。
 $ git push -u origin master
+
+# 将本地分支fix推送到远程分支origin/patch
+$ git push origin fix:patch
 ```
 
 #### fetch
-拉取远程内容到本地库。不会自动合并、切换分支或修改本地工作区。
+拉取远程内容到本地库，更新本地数据库。不会自动合并、切换分支或修改本地工作区。
 
 ``` SHELl
 $ git fetch origin
 ```
 
 #### pull
-拉取并合并远程分支到当前本地分支。
+拉取并合并远程分支到当前本地跟踪分支。
 
 ``` SHELL
 $ git pull
