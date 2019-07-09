@@ -1,50 +1,37 @@
-# MATCH运算符
+# REGEXP/RLIKE运算符
 
-> `match-expression`  
-**MATCH** (*column-reference* [, *column-reference*]*) **AGAINST** (*scalar-expression* [*search-type*])
+> `regexp-expression`  
+*scalar-expression* [**NOT**] {**REGEXP**|**RLIKE**} *regexp-pattern*
 
-> `column-reference`  
-[[*database-name* **.**]*table-name* **.**]*column-name*
+REGEXP表达式本身是一个标量表达式，返回BOOL值，用于判断指定字符串是否满足模式。
 
-> `search-type`  
-**IN NATURAL LANGUAGE MODE**  
-| [**IN NATURAL LANGUAGE MODE**] **WITH QUERY EXPANSION**   
-| **IN BOOLEAN MODE**
-
-MATCH表达式本身是一个标量表达式，返回INTEGER值，用于判断指定字符串是否在文本中。如果返回0，表示不存在；非0的结果是该单词的相关性。
-
-要使用MATCH表达式，相关的表必须使用MyISAM引擎，且相关的列需要创建FULLTEXT索引。
-
-IN NATURAL LANGUAGE MODE 自然语言查找
-（默认）自然语言查找。在该模式下，停词被忽略，在超过50%的行中出现的单词被视为停词。
-
-自然语言查找会按照相关性进行递减排序。
-
-例如：
-``` SQL
-SELECT bookno, title
-FROM books
-WHERE MATCH(title) AGAINST ('design')
-```
-
-获取书名中包含单词design的图书的号码和书名。
-
-#### IN BOOLEAN MODE 
-布尔查找。在该模式下，停词不会被忽略。
-
-可以在所查找的单词上指定修饰符：
-
-| 模式 | 描述 |
-|---|---|
-| +data | 包含单词data |
-| -data | 不包含单词data |
-| >data	| 包含单词data，并提高50%的相关性 |
-| <data	| 不包含单词data，并减少50%的相关性 |
-| () | 嵌套 |
-| ~data	| 包含单词data，并使相关性为负 |
-| data*	| 以单词data开头 |
-| "data data data" | 短语data data data |
-
-#### [IN NATURAL LANGUAGE MODE] WITH QUERY EXPANSION 
-
-带有子查询扩展的自然语言查找。先进行自然语言查找，然后对查找结果再次进行自然语言查找。
+#### 正则模式
+- `^`	值的开始
+- `$`	值的末尾
+- `[abc]`	如果方括号内指定字符出现
+- `[a-z]`	如果a-z范围内的字符出现
+- `[^a-z]`	如果a-z范围内的字符没有出现
+- `.`	随机字符
+- `*`	之前的内容出现0次、1次或多次
+- `()`	把一个字母集合定义为一组
+- `+`	出现1次或多次
+- `?`	出现0次或多次
+- `{n}`	出现n次
+- `{a,b}`	至少出现a次，至多出现b次。可以省略a或b
+- `|`	左边或右边的内容出现
+- `[[.x.]]`	如果规则出现
+- `[[:<:]]`	一个单词的开始
+- `[[:>:]]`	一个单词的结束
+- `[[:x:]]`	字符类中的一个出现，x可以是以下之一： 
+    - `alnum` 字母或数字 
+    - `alpha` 字母 
+    - `blank` 空白字符 
+    - `cntrl` 控制字符 
+    - `digit` 数字 
+    - `graph` 图形字符 
+    - `lower` 小写字母 
+    - `print` 可打印字符 
+    - `punct` 标点符号 
+    - `space` 空白、制表、换行、回车 
+    - `upper` 大写字母 
+    - `xdigit` 十六进制数字
