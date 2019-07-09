@@ -35,4 +35,5 @@
 		1. [IN](expression/in-expression.md)
 		1. [LIKE](expression/like-expression.md)
 		1. [MATCH](expression/match-expression.md)
+		1. [REGEXP/RLIKE](expression/regexp-expression.md)
 	1. [表达式](expression)
