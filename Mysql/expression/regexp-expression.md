@@ -33,5 +33,5 @@ REGEXP表达式本身是一个标量表达式，返回BOOL值，用于判断指�
     - `print` 可打印字符 
     - `punct` 标点符号 
     - `space` 空白、制表、换行、回车 
-    - `upper` 大写字母 
+    - `upper` 大写字母
     - `xdigit` 十六进制数字

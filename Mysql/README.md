@@ -37,3 +37,4 @@
 		1. [MATCH](expression/match-expression.md)
 		1. [REGEXP/RLIKE](expression/regexp-expression.md)
 	1. [表达式](expression)
+		1. [CASE](expression/case-expression.md)
