@@ -38,3 +38,4 @@
 		1. [REGEXP/RLIKE](expression/regexp-expression.md)
 	1. [表达式](expression)
 		1. [CASE](expression/case-expression.md)
+		1. [日期时间表达式](expression/datatime-expression.md)
