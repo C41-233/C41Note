@@ -40,8 +40,4 @@ WHERE paymentno>5
 查找编号大于5的每次罚款，获得支付编号、支付日期及支付后7天的日期。
 对于复合间隔，要用引号，并且两个值之间用符合隔开。
 
-例如：
-
-``` SQL
-X + INTERVAL '4:2' HOUR_MINUTE 等价于 X + INTERVAL 4 HOUR + INTERVAL 2 MINUTE
-```
+例如：`X + INTERVAL '4:2' HOUR_MINUTE` 等价于 `X + INTERVAL 4 HOUR + INTERVAL 2 MINUTE`。

@@ -39,3 +39,4 @@
 	1. [表达式](expression)
 		1. [CASE](expression/case-expression.md)
 		1. [日期时间表达式](expression/datetime-expression.md)
+		1. [标量函数](scalar-function)
