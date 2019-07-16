@@ -2,7 +2,7 @@
 
 - [字符串](scalar-function-string.md)
 - [数值](scalar-function-number.md)
-- 日期时间
+- [日期时间](scalar-function-datetime.md)
 - 类型转换
 - 流程
 - XML
