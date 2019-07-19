@@ -5,5 +5,5 @@
 - [日期时间](scalar-function-datetime.md)
 - [类型转换](scalar-function-convert.md)
 - [流程](scalar-function-flow.md)
-- XML
+- [XML](scalar-function-xml.md)
 - SQL

@@ -38,7 +38,7 @@
 
 ## LOWER	
 
-`CHAR LOWER(CHAR string)	`
+`CHAR LOWER(CHAR string)`
 
 返回字符串的小写形式。
 
