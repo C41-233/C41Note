@@ -41,3 +41,4 @@
 		1. [日期时间表达式](expression/datetime-expression.md)
 		1. [标量函数](scalar-function)
 		1. [聚合函数](expression/aggregation-function.md)
+	1. [数据类型](datatype)
