@@ -7,6 +7,7 @@
     1. cut 文件行切割
     1. [diff 比较两个文件](diff.md)
     1. [diff3 比较三个文件](diff3.md)
+	1. [du 查看文件大小](du.md)
     1. egrep 扩展的文件检索
     1. file 辨识文件类型
     1. [grep 文件检索](grep.md)
@@ -50,7 +51,7 @@
 - 文件处理
     1. [awk 文本处理](awk.md)
     1. [dd 读取，转换并输出数据](dd.md)
-    1. sed 文本处理
+    1. [sed 文本处理](sed.md)
 
 ### 权限管理
 - 用户管理
