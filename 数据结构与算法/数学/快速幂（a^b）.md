@@ -8,7 +8,9 @@
 
 因为a<sup>2<sup>n+1</sup></sup> = a<sup>2\*2<sup>n</sup></sup> = a<sup>2<sup>n</sup></sup> \* a<sup>2<sup>n</sup></sup>，因此计算后一位通过前一位的底数平方可得。
 
-## C
+## 实现
+
+#### C
 ``` C
 double pow(double a, int n)
 {

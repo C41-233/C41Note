@@ -6,7 +6,9 @@
 
 a<sup>b</sup>%c = (a%c)<sup>b</sup>c
 
-## C
+## 实现
+
+#### C
 ``` C
 long long qmod(long long a, long long n, long long mod)
 {
