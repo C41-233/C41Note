@@ -9,7 +9,7 @@
 | *complex-type*  
 
 > `numeric-type`   
-| *[integer-type](interger-type.md)* | *decimal-type* | *float-type* | *bit-type*  
+| *[integer-type](integer-type.md)* | *decimal-type* | *float-type* | *bit-type*  
 
 > `complex-type`  
 | *enum-type*  
