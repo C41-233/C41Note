@@ -1,18 +1,18 @@
 # 整型数据类型
 
 > `integer-type`  
-**TINYINT** [ **(**width**)** ]  
-| **INT1** [**(**width**)**]  
-| **SMALLINT** [(width)]  
-| **INT2** [(width)]  
-| **MEDIUMINT** [(width)]  
-| **INT3** [(width)]  
-| **MIDDLEINT** [(width)]  
-| **INT** [(width)]  
-| **INTEGER** [(width)]  
-| **INT4** [(width)]  
-| **BIGINT** [(width)]  
-| **INT8** [(width)]  
+**TINYINT** [ **(** width **)** ]  
+| **INT1** [ **(** width **)** ]  
+| **SMALLINT** [ **(** width **)** ]  
+| **INT2** [ **(** width **)** ]  
+| **MEDIUMINT** [ **(** width **)** ]  
+| **INT3** [ **(** width **)** ]  
+| **MIDDLEINT** [ **(** width **)** ]  
+| **INT** [ **(** width **)** ]  
+| **INTEGER** [ **(** width **)** ]  
+| **INT4** [ **(** width **)** ]  
+| **BIGINT** [ **(** width **)** ]  
+| **INT8** [ **(** width **)** ]  
 | **BOOLEAN**  
 
 整数数据类型可以存储完整的整数，它们之间的区别在于可以容纳的范围。
