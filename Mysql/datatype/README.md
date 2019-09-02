@@ -7,9 +7,11 @@
 | *blob-type*  
 | *geometirc-type*  
 | *complex-type*  
-| *numeric-type*  
+
+> `numeric-type`   
 | *integer-type* | *decimal-type* | *float-type* | *bit-type*  
-| *complex-type*  
+
+> `complex-type`  
 | *enum-type*  
 | *set-type*  
 
