@@ -50,3 +50,6 @@
 		1. [字符串数据类型](datatype/string-type.md)
 		1. [日期时间数据类型](datatype/temporal-type.md)
 		1. [BLOB数据类型](datatype/blob-type.md)
+		1. 复合数据类型
+			1. [枚举数据类型](datatype/enum-type.md)
+			

@@ -12,7 +12,7 @@
 | *[integer-type](integer-type.md)* | *[decimal-type](decimal-type.md)* | *[float-type](float-type.md)* | *[bit-type](bit-type.md)*  
 
 > `complex-type`  
-| *enum-type*  
+| *[enum-type](enum-type.md)*  
 | *set-type*  
 
 `UNSIGNED`z修饰符作用于数值类型，使得数值是无符号的，因此不允许产生负值，原先的符号位作为数据位扩充。
