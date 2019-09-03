@@ -53,4 +53,3 @@
 		1. 复合数据类型
 			1. [枚举数据类型](datatype/enum-type.md)
 			1. [集合数据类型](datatype/set-type.md)
-		1. [SHOW COLUMN TYPES语句](grammar/show-column-types-statement.md)
