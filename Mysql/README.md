@@ -52,4 +52,5 @@
 		1. [BLOB数据类型](datatype/blob-type.md)
 		1. 复合数据类型
 			1. [枚举数据类型](datatype/enum-type.md)
+			1. [集合数据类型](datatype/set-type.md)
 			

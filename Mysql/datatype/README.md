@@ -13,7 +13,7 @@
 
 > `complex-type`  
 | *[enum-type](enum-type.md)*  
-| *set-type*  
+| *[set-type](set-type.md)*  
 
 `UNSIGNED`z修饰符作用于数值类型，使得数值是无符号的，因此不允许产生负值，原先的符号位作为数据位扩充。
 
