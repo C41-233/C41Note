@@ -65,3 +65,4 @@
 	1. 变量
 		1. [系统变量](variable/system-variable.md)
 		1. [用户变量](variable/user-variable.md)
+		1. [SET语句](grammar/set-statement.md)
