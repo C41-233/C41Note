@@ -8,6 +8,10 @@
 
 特殊系统变量前面不需要使用`@@`。
 
+<table>
+
+</table>
+
 - #### CURRENT_DATE
 *DATE R*  
 >当前系统日期。
