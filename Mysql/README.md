@@ -87,3 +87,4 @@
 			1. [SCHEMATA](meta/schemata-table.md) 数据库结构
 			1. [TABLES](meta/tables-table.md) 表结构
 			1. [VIEWS](meta/views-table.md) 视图结构
+			1. [COLUMNS](meta/columns-table.md) 视图结构
