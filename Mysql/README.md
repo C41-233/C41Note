@@ -74,3 +74,5 @@
 		1. [DROP DATABASE语句](grammar/drop-database-statement.md)
 		1. [SHOW CREATE DATABASE语句](grammar/show-create-database-statement.md)
 		1. [SHOW DATABASES语句](grammar/show-databases-statement.md)
+	1. 数据库操作
+		1. [DELIMITER语句](grammar/delimiter-statement.md)
