@@ -1,5 +1,9 @@
 # Mysql
 
+[MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)
+[MySQL 5.7 Reference Manual](https://dev.mysql.com/doc/refman/5.7/en/)
+[MySQL 5.6 Reference Manual](https://dev.mysql.com/doc/refman/5.6/en/)
+
 1. 工具链
     1. [mysql](mysql.md)
     1. mysqld
