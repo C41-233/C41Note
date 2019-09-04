@@ -82,3 +82,6 @@
 		1. [SHOW STATUS语句](grammar/show-status-statement.md)
 		1. [SOURCE语句](grammar/source-statement.md)
 		1. [USE语句](grammar/use-statement.md)
+	1. 元表
+		1. INFORMATION_SCHEMA
+			1. [SCHEMATA](meta/schemata-table.md) 数据库结构
