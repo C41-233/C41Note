@@ -10,7 +10,7 @@
     1. [mysqldump](mysqldump.md)
 1. 配置
     1. [HELP语句](grammar/help-statement.md)
-    1. [系统变量](variable/system-variable.md)
+    1. [系统变量](variable/system-variable-value.md)
 1. 表达式与数据类型
     1. [字面直接量](expression/literal.md)
 		1. [数值型直接量](expression/literal.md#数值型直接量)
@@ -60,3 +60,5 @@
 	1. [字符集和校对]
 		1. [SHOW CHARACTER SET语句](grammar/show-character-set-statement.md)
 		1. [SHOW COLLATION语句](grammar/show-collation-statement.md)
+	1. 变量
+		1. [系统变量](variable/system-variable.md)
