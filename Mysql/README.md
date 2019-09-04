@@ -77,3 +77,4 @@
 	1. 数据库操作
 		1. [DELIMITER语句](grammar/delimiter-statement.md)
 		1. [DO语句](grammar/do-statement.md)
+		1. [EXPLAIN语句](grammar/explain-statement.md)
