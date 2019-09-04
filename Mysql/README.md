@@ -73,3 +73,4 @@
 		1. [ALTER DATABASE语句](grammar/alert-database-statement.md)
 		1. [DROP DATABASE语句](grammar/drop-database-statement.md)
 		1. [SHOW CREATE DATABASE语句](grammar/show-create-database-statement.md)
+		1. [SHOW DATABASES语句](grammar/show-databases-statement.md)
