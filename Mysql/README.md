@@ -1,7 +1,9 @@
 # Mysql
 
 [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)
+
 [MySQL 5.7 Reference Manual](https://dev.mysql.com/doc/refman/5.7/en/)
+
 [MySQL 5.6 Reference Manual](https://dev.mysql.com/doc/refman/5.6/en/)
 
 1. 工具链
@@ -62,3 +64,4 @@
 		1. [SHOW COLLATION语句](grammar/show-collation-statement.md)
 	1. 变量
 		1. [系统变量](variable/system-variable.md)
+		1. [用户变量](variable/user-variable.md)
