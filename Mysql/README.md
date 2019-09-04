@@ -84,8 +84,11 @@
 		1. [USE语句](grammar/use-statement.md)
 	1. 元表
 		1. INFORMATION_SCHEMA
-			1. [SCHEMATA](meta/schemata-table.md) 数据库结构
-			1. [TABLES](meta/tables-table.md) 表结构
-			1. [VIEWS](meta/views-table.md) 视图结构
-			1. [COLUMNS](meta/columns-table.md) 视图结构
-			1. [STATISTICS](meta/statistics-table.md) 索引结构
+			1. 数据库结构
+				1. [SCHEMATA](meta/schemata-table.md) 数据库结构
+				1. [TABLES](meta/tables-table.md) 表结构
+				1. [VIEWS](meta/views-table.md) 视图结构
+				1. [COLUMNS](meta/columns-table.md) 视图结构
+				1. [STATISTICS](meta/statistics-table.md) 索引结构
+			1. 权限
+				1. [SCHEMA_PRIVILEGES](meta/schema_privileges-table.md) 数据库权限
