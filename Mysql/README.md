@@ -92,3 +92,4 @@
 				1. [STATISTICS](meta/statistics-table.md) 索引结构
 			1. 权限
 				1. [SCHEMA_PRIVILEGES](meta/schema_privileges-table.md) 数据库权限
+				1. [TABLE_PRIVILEGES](meta/table_privileges-table.md) 表权限
