@@ -80,3 +80,4 @@
 		1. [EXPLAIN语句](grammar/explain-statement.md)
 		1. [SHOW PROCESSLIST语句](grammar/show-processlist-statement.md)
 		1. [SHOW STATUS语句](grammar/show-status-statement.md)
+		1. [SOURCE语句](grammar/source-statement.md)
