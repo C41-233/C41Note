@@ -76,3 +76,4 @@
 		1. [SHOW DATABASES语句](grammar/show-databases-statement.md)
 	1. 数据库操作
 		1. [DELIMITER语句](grammar/delimiter-statement.md)
+		1. [DO语句](grammar/do-statement.md)
