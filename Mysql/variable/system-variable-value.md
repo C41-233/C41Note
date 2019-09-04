@@ -55,31 +55,31 @@
 
 <table>
     <tr>
-        <th>CHARACTER_SET_CLIENT</th>
+        <th>character_set_client</th>
         <td></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <th>CHARACTER_SET_CONNECTION</th>
+        <th>character_set_connection</th>
         <td></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <th>CHARACTER_SET_DATABASE</th>
+        <th>character_set_database</th>
         <td></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <th>CHARACTER_SET_RESULTS</th>
+        <th>character_set_results</th>
         <td></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <th>CHARACTER_SET_SERVER</th>
+        <th>character_set_server</th>
         <td></td>
         <td></td>
         <td></td>
@@ -91,13 +91,13 @@
 
 <table>
     <tr>
-        <th>FT_BOOLEAN_SYNTAX</th>
+        <th>ft_boolean_syntax</th>
         <td>CHAR</td>
         <td>可以和布尔查找一起用的运算符</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>LOWER_CASE_TABLES_NAME</th>
+        <th>lower_case_tables_name</th>
         <td>INTEGER</td>
         <td>
             表名和数据库名的大小写敏感性  
@@ -113,19 +113,19 @@
 
 <table>
     <tr>
-        <th>AUTOCOMMIT</th>
+        <th>autocommit</th>
         <td>BOOL</td>
         <td>是否开启事务自动提交</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>INNODB_LOCK_WAIT_TIMEOUT</th>
+        <th>innodb_lock_wait_timeout</th>
         <td>INTEGER</td>
         <td>事务等待锁的最长时间（单位为秒）</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>TX_ISOLATION</th>
+        <th>tx_isolation</th>
         <td>CHAR</td>
         <td>默认的事务隔离级别</td>
         <td>W</td>
@@ -136,19 +136,19 @@
 
 <table>
     <tr>
-        <th>FT_MAX_WORD_LEN</th>
+        <th>ft_max_word_len</th>
         <td>INTEGER</td>
         <td>可以包含在一个全文本索引中的单词最大长度，默认为84</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>FT_MIN_WORD_LEN</th>
+        <th>ft_min_word_len</th>
         <td>INTEGER</td>
         <td>可以包含在一个全文本索引中的单词最小长度，默认为4</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>FT_STOPWORD_FILE</th>
+        <th>ft_stopword_file</th>
         <td>CHAR</td>
         <td>包含停词的文件的名字，默认为4</td>
         <td>W</td>
@@ -159,19 +159,19 @@
 
 <table>
     <tr>
-        <th>AUTO_INCREMENT_OFFSET</th>
+        <th>auto_increment_offset</th>
         <td>INTEGER</td>
-        <td>自增字段的起始值</td>
+        <td>自增字段的默认起始值，默认为1</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>AUTO_INCREMENT_INCREMENT</th>
+        <th>auto_increment_increment</th>
         <td>INTEGER</td>
-        <td>自增字段的增量值</td>
+        <td>自增字段的默认增量值，默认为1</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>CONCURRENT_INSERT</th>
+        <th>concurrent_insert</th>
         <td>INTEGER</td>
         <td>>
             并发插入模式
@@ -182,25 +182,25 @@
         <td>W</td>
     </tr>
     <tr>
-        <th>EVENT_SCHEDULER</th>
+        <th>event_scheduler</th>
         <td>BOOL</td>
         <td>是否开启调度器</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>FOREIGN_KEY_CHECKS</th>
+        <th>foreign_key_checks</th>
         <td>BOOL</td>
         <td>是否开启外键约束检查</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>GROUP_CONCAT_MAX_LEN</th>
+        <th>group_concat_max_len</th>
         <td>INTEGER</td>
         <td>GROUP_CONCAT结果的字符串长度</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>SQL_MODE</th>
+        <th>sql_mode</th>
         <td>CHAR</td>
         <td>
             SQL模式，用逗号分隔的常量列表。
@@ -221,25 +221,25 @@
         <td>W</td>
     </tr>
     <tr>
-        <th>SQL_SELECT_LIMIT</th>
+        <th>sql_select_limit</th>
         <td>INTEGER</td>
         <td>select语句结果最大行数</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>SQL_SELECT_MODE</th>
+        <th>sql_select_mode</th>
         <td></td>
         <td></td>
         <td>W</td>
     </tr>
     <tr>
-        <th>SQL_WARNINGS</th>
+        <th>sql_warnings</th>
         <td>BOOL</td>
         <td>错误的insert语句是否应该返回一条警告，默认为FALSE</td>
         <td>W</td>
     </tr>
     <tr>
-        <th>STORAGE_ENGINE</th>
+        <th>storage_engine</th>
         <td>CHAR</td>
         <td>默认存储引擎</td>
         <td>W</td>
