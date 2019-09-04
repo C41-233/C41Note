@@ -70,3 +70,4 @@
 1. 数据库
 	1. 数据库管理
 		1. [CREATE DATABASE语句](grammar/create-database-statement.md)
+		1. [ALTER DATABASE语句](grammar/alert-database-statement.md)
