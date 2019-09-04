@@ -85,3 +85,5 @@
 	1. 元表
 		1. INFORMATION_SCHEMA
 			1. [SCHEMATA](meta/schemata-table.md) 数据库结构
+			1. [TABLES](meta/tables-table.md) 表结构
+			1. [VIEWS](meta/views-table.md) 视图结构
