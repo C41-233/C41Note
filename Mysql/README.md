@@ -67,3 +67,6 @@
 		1. [用户变量](variable/user-variable.md)
 		1. [SET语句](grammar/set-statement.md)
 		1. [SHOW VARIABLES语句](grammar/show-variables-statement.md)
+1. 数据库
+	1. 数据库管理
+		1. [CREATE DATABASE语句](grammar/create-database-statement.md)
