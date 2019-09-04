@@ -59,3 +59,4 @@
 			1. [集合数据类型](datatype/set-type.md)
 	1. [字符集和校对]
 		1. [SHOW CHARACTER SET语句](grammar/show-character-set-statement.md)
+		1. [SHOW COLLATION语句](grammar/show-collation-statement.md)
