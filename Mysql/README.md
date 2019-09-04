@@ -78,3 +78,5 @@
 		1. [DELIMITER语句](grammar/delimiter-statement.md)
 		1. [DO语句](grammar/do-statement.md)
 		1. [EXPLAIN语句](grammar/explain-statement.md)
+		1. [SHOW PROCESSLIST语句](grammar/show-processlist-statement.md)
+		1. [SHOW STATUS语句](grammar/show-status-statement.md)
