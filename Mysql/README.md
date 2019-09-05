@@ -93,3 +93,4 @@
 			1. 权限
 				1. [SCHEMA_PRIVILEGES](meta/schema_privileges-table.md) 数据库权限
 				1. [TABLE_PRIVILEGES](meta/table_privileges-table.md) 表权限
+				1. [COLUMN_PRIVILEGES](meta/column_privileges-table.md) 列权限
