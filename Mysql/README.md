@@ -101,3 +101,5 @@
 		1. 字符集和校对
 			1. [CHARACTER_SETS](meta/character-sets-table.md) 可用字符集
 			1. [COLLATIONS](meta/collations-table.md) 可用字符集校对
+	1. MYSQL
+		1. [USER](meta/user-table.md) 用户信息

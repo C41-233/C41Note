@@ -1,0 +1,54 @@
+# MYSQL.USER
+
+包含所有可用字符集。
+
+<table>
+	<thead>
+		<tr><th>列名</th><th>数据类型</th><th>描述</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Host</td><td>CHAR</td><td>用户所在的主机</td></tr>
+		<tr><td>User<td>CHAR</td><td>用户名</td></tr>
+		<tr><td>Password<td>CHAR</td><td>密码</td></tr>
+		<tr><td>Select_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Insert_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Update_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Delete_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Create_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Drop_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Reload_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Shutdown_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Process_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>File_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Grant_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>References_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Index_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Alter_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Show_db_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Super_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Create_tmp_table_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Lock_tables_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Execute_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Repl_slave_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Repl_client_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Create_view_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Show_view_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Create_routine_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Alter_routine_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Create_user_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Event_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Trigger_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>Create_tablespace_priv<td>ENUM('N','Y')</td><td></td></tr>
+		<tr><td>ssl_type<td>ENUM('','ANY','X509','SPECIFIED')</td><td></td></tr>
+		<tr><td>ssl_cipher<td>BLOB</td><td></td></tr>
+		<tr><td>x509_issuer<td>BLOB</td><td></td></tr>
+		<tr><td>x509_subject<td>BLOB</td><td></td></tr>
+		<tr><td>max_questions<td>INTEGER</td><td></td></tr>
+		<tr><td>max_updates<td>INTEGER</td><td></td></tr>
+		<tr><td>max_connections<td>INTEGER</td><td></td></tr>
+		<tr><td>max_user_connections<td>INTEGER</td><td></td></tr>
+		<tr><td>plugin<td>CHAR</td><td></td></tr>
+		<tr><td>authentication_string<td>CHAR</td><td></td></tr>
+		<tr><td>password_expired<td>ENUM('N','Y')</td><td></td></tr>
+	</tbody>
+</table>
