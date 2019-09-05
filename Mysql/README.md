@@ -96,5 +96,5 @@
 				1. [COLUMN_PRIVILEGES](meta/column-privileges-table.md) 列权限
 				1. [USER_PRIVILEGES](meta/user-privileges-table.md) 列权限
 			1. 字符集和校对
-				1. [CHARACTER_SETS] 可用字符集
-				1. [COLLATIONS] 可用字符集校对
+				1. [CHARACTER_SETS](meta/character-sets-table.md) 可用字符集
+				1. [COLLATIONS](meta/collations-table.md) 可用字符集校对
