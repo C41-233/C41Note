@@ -91,6 +91,7 @@
 				1. [COLUMNS](meta/columns-table.md) 视图结构
 				1. [STATISTICS](meta/statistics-table.md) 索引结构
 			1. 权限
-				1. [SCHEMA_PRIVILEGES](meta/schema_privileges-table.md) 数据库权限
-				1. [TABLE_PRIVILEGES](meta/table_privileges-table.md) 表权限
-				1. [COLUMN_PRIVILEGES](meta/column_privileges-table.md) 列权限
+				1. [SCHEMA_PRIVILEGES](meta/schema-privileges-table.md) 数据库权限
+				1. [TABLE_PRIVILEGES](meta/table-privileges-table.md) 表权限
+				1. [COLUMN_PRIVILEGES](meta/column-privileges-table.md) 列权限
+				1. [USER_PRIVILEGES](meta/user-privileges-table.md) 列权限
