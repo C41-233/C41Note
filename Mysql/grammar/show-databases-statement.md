@@ -1,7 +1,7 @@
 # SHOW DATABASES语句
 
-> `show-databases-statement`   
-**SHOW DATABASES** [**LIKE** *like-pattern*]
+###### show-databases-statement   
+> **SHOW DATABASES** [**LIKE** *like-pattern*]
 
 显示所有数据库列表。
 

@@ -1,7 +1,7 @@
 # CREATE DATABASE语句
 
-> `create-database-statement`  
-**CREATE DATABASE** [**IF NOT EXISTS**] *database-name* [[**DEFAULT**] {**CHARACTER SET** *charset-name* | **COLLATE** *collate-name*}]*
+###### create-database-statement  
+> **CREATE DATABASE** [**IF NOT EXISTS**] *database-name* [[**DEFAULT**] {**CHARACTER SET** *charset-name* | **COLLATE** *collate-name*}]*
 
 CREATE DATABASE语句用于创建数据库，所有的表都属于某个数据库。
 

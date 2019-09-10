@@ -1,7 +1,7 @@
 # SHOW COLLATION语句
 
-> `show-collation-statement`  
-**SHOW COLLATION** [**LIKE** *like-pattern*]
+###### show-collation-statement  
+> **SHOW COLLATION** [**LIKE** *like-pattern*]
 
 显示支持的所有字符集校对列表。
 

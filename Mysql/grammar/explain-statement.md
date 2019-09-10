@@ -1,7 +1,7 @@
 # EXPLAIN语句
 
-> `explain-statement`  
-**EXPLAIN** *sql-statement*
+###### explain-statement  
+> **EXPLAIN** *sql-statement*
 
 显示执行计划。
 

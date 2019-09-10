@@ -1,10 +1,10 @@
 # SET语句
 
-> `set-statement`  
-**SET** *variable-definition* [**,** *variable-definition*]\*
+###### set-statement  
+> **SET** *variable-definition* [**,** *variable-definition*]\*
 
-> `variable-definition`  
-{*user-variable* | *system-variable*} {**=** | **:=**} *scalar-expression*
+###### variable-definition  
+> {*user-variable* | *system-variable*} {**=** | **:=**} *scalar-expression*
 
 定义或设置变量的值。变量可以出现在任何标量表达式中。
 

@@ -1,7 +1,7 @@
 # DROP DATABASE语句
 
-> `drop-database-statement`  
-DROP DATABASE [IF EXISTS] database-name
+###### drop-database-statement  
+> DROP DATABASE [IF EXISTS] database-name
 
 
 DROP DATABASE语句用于删除数据库，数据库中的所有表也被删除。
