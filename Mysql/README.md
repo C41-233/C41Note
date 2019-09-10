@@ -103,3 +103,7 @@
 			1. [COLLATIONS](meta/collations-table.md) 可用字符集校对
 	1. MYSQL
 		1. [USER](meta/user-table.md) 用户信息
+		
+## 表
+1. 定义
+	1. [CREATE TABLE语句](grammar/create-table-statement.md)
