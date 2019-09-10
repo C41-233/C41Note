@@ -1,7 +1,7 @@
 # 整型数据类型
 
-> `integer-type`  
-**TINYINT** [ **(** width **)** ]  
+###### integer-type  
+> **TINYINT** [ **(** width **)** ]  
 | **INT1** [ **(** width **)** ]  
 | **SMALLINT** [ **(** width **)** ]  
 | **INT2** [ **(** width **)** ]  

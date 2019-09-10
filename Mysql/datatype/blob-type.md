@@ -1,7 +1,7 @@
 # BLOB数据类型
 
-> `blob-type`  
-| {**BINARY** | **VARBINARY** | **BLOB**} [*length*]  
+###### blob-type  
+> {**BINARY** | **VARBINARY** | **BLOB**} [*length*]  
 | **TINYBLOB**  
 | **MEDIUMBLOB**  
 | **LONG VARBINARY**  

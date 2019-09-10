@@ -1,7 +1,7 @@
 # 日期时间数据类型
 
-> `temporal-type`  
-| **DATE**  
+###### temporal-type  
+> **DATE**  
 | **DATETIME**  
 | **TIME**  
 | **TIMESTAMP**  

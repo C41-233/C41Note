@@ -1,18 +1,18 @@
 # 数据类型
 
-> `data-type`  
-*numeric-type* [**UNSIGNED** | **ZEROFILL** | **AUTO_INCREMENT** | **SERIAL DEFAULT VALUE**]*  
+###### data-type  
+> *numeric-type* [**UNSIGNED** | **ZEROFILL** | **AUTO_INCREMENT** | **SERIAL DEFAULT VALUE**]*  
 | *[alphanumeric-type](alphanumeric-type.md)* [{**CHARACTER SET** | **CHAR SET** | **CHARSET**} *charset-name* | **COLLATE** *collate-name*]*  
 | *[temporal-type](temporal-type.md)*  
 | *[blob-type](blob-type.md)*  
 | *geometirc-type*  
 | *complex-type*  
 
-> `numeric-type`   
-| *[integer-type](integer-type.md)* | *[decimal-type](decimal-type.md)* | *[float-type](float-type.md)* | *[bit-type](bit-type.md)*  
+###### numeric-type   
+> *[integer-type](integer-type.md)* | *[decimal-type](decimal-type.md)* | *[float-type](float-type.md)* | *[bit-type](bit-type.md)*  
 
-> `complex-type`  
-| *[enum-type](enum-type.md)*  
+###### complex-type  
+> *[enum-type](enum-type.md)*  
 | *[set-type](set-type.md)*  
 
 `UNSIGNED`z修饰符作用于数值类型，使得数值是无符号的，因此不允许产生负值，原先的符号位作为数据位扩充。

@@ -1,4 +1,4 @@
-#SHOW CHARACTER SET语句
+# SHOW CHARACTER SET语句
 
 ###### show-character-set-statement  
 > **SHOW CHARACTER SET** [**LIKE** *like-pattern*]

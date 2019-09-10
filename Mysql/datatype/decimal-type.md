@@ -1,6 +1,6 @@
 # 小数数据类型
 
-> `decimal-type`  
-{**DEC** | **DECIMAL** | **NUMERIC** | **FIXED**} [ **(** *precision* [**,** *scale*] **)** ]
+###### decimal-type  
+> {**DEC** | **DECIMAL** | **NUMERIC** | **FIXED**} [ **(** *precision* [**,** *scale*] **)** ]
 
 小数数据类型之间是同义词，后面可以显示指定精度和刻度。若没有指定刻度，默认为0。若都没有指定，则精度为10，刻度为0。精度必须在1到30之间。

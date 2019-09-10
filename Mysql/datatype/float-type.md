@@ -1,10 +1,10 @@
 # 浮点数据类型
 
-> `float-type`  
-**FLOAT** [ **(** *length* **)** | **(** *width* **,** *scale* **)** ]  
-**FLOAT4** [ **(** *width* **,** *scale* **)** ]  
-**REAL** [ **(** *width* **,** *scale* **)** ]  
-**DOUBLE** [**PRECISION**] [ **(** *width* **,** *scale* **)** ]
+###### float-type  
+> **FLOAT** [ **(** *length* **)** | **(** *width* **,** *scale* **)** ]  
+| **FLOAT4** [ **(** *width* **,** *scale* **)** ]  
+| **REAL** [ **(** *width* **,** *scale* **)** ]  
+| **DOUBLE** [**PRECISION**] [ **(** *width* **,** *scale* **)** ]
 
 浮点数据类型分为单精度浮点数（32位）和双精度浮点数（64位），通过指定长度值来指定类型：长度在0到24之间是单精度浮点数，长度在25到53之间是双精度浮点数。
 

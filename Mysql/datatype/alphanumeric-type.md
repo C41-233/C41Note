@@ -1,7 +1,7 @@
 # 字符串数据类型
 
-> `alphanumeric-type`  
-[**NATIONAL**] { {**CHAR** | **CHARACTER**} [**VARYING**] | **VARCHAR** } **(** *length* **)**  
+###### alphanumeric-type  
+> [**NATIONAL**] { {**CHAR** | **CHARACTER**} [**VARYING**] | **VARCHAR** } **(** *length* **)**  
 | {**NCHAR** [**VARYING**] | **TEXT**} **(** *length* **)**  
 | **TINYTEXT**  
 | **MEDIUMTEXT**  
