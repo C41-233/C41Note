@@ -107,3 +107,5 @@
 ## 表
 1. 定义
 	1. [CREATE TABLE语句](grammar/create-table-statement.md)
+	1. [DROP TABLE语句](grammar/drop-table-statement.md)
+	1. [RENAME TABLE语句](grammar/rename-table-statement.md)
