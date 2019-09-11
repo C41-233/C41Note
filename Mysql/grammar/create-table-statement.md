@@ -7,40 +7,31 @@
 > [*database-name* **.**]*table-name*
 
 ###### table-structure  
-> *table-schema*  
-| *table-content*  
-| *table-schema* *table-content*  
-| **LIKE** *table-reference*   
-| **(** **LIKE** *table-reference* **)**  
+> *[table-schema](#table-schema)*  
+| *[table-content](#table-content)*  
+| *[table-schema](#table-schema)* *[table-content](#table-content)*  
+| *[table-like-reference](#table-like-reference)*
 
-> `table-schema`  
-**(** *table-element* [**,** *table-element*]\*)  
+###### table-schema  
+> **(** *[table-element](#table-element)* [**,** *[table-element](#table-element)*]\*)
 
-> `table-content`  
-[**IGNORE** | **REPLACE**] [**AS**] *select-statement*  
+###### table-content  
+> [**IGNORE** | **REPLACE**] [**AS**] *select-statement*  
 
-> `table-element`    
-*column-name* *data-type* [[**NOT**] **NULL**] [**PRIMARY KEY** | **UNIQUE** [**KEY**] | **CHECK** *check-condition*] [**AUTO_INCREMENT**] [**DEFAULT** *value* | **COMMENT** *char*]\*  
-[**CONSTRAINT** [*constraint-name*]] {*primary-key* | *alternate-key* | *foreign-key* | **CHECK** *check-condition*}  
-{**UNIQUE** | **FULLTEXT** | **SPATIAL**} {**INDEX** | **KEY**} [*index-name*] [ **USING** {**BTREE** | **HASH**} ] (*sort-specification* [**,** *sort-specification*]\*)  
+###### table-element    
+> *column-name* *data-type* [[**NOT**] **NULL**]  
+[ **PRIMARY KEY** | **UNIQUE** [**KEY**] | **CHECK** *check-condition* ] [**AUTO_INCREMENT**]  
+[ **DEFAULT** *value* | **COMMENT** *alphanumeric-literal* ]\*  
+[ **CONSTRAINT** [*constraint-name*] ]  
+{ *[primary-key](#primary-key)* | *[alternate-key](#alternate-key)* | *[foreign-key](#foreign-key)* | **CHECK** *check-condition* }  
+{**UNIQUE** | **FULLTEXT** | **SPATIAL**} {**INDEX** | **KEY**} [*index-name*] [ **USING** {**BTREE** | **HASH**} ]  
+**(** *sort-specification* [**,** *sort-specification*]\* **)**  
 
-> `primary-key`  
-**PRIMARY KEY** [*index-name*] [{**USING** | **TYPE**} {**UNIQUE** | **FULLTEXT** | **SPATIAL**}] (*column-name* [**,** *column-name*]\*)  
+###### column-reference-group
+> **(** *column-name* [**,** *column-name*]\* **)**
 
-> `alternate-key`  
-**UNIQUE** [**INDEX** | **KEY**] [*index-name*] [ {**USING** | **TYPE**} {**UNIQUE** | **FULLTEXT** | **SPATIAL**} ] (*column-name* [**,** *column-name*]\*)  
-
-> `foreign-key`  
-**FOREIGN KEY** [*index-name*] (*column-name* [**,** *column-name*]\*)  
-**REFERENCES** *table-reference* (column-name [, column-name]*)  
-[  
-    ON {UPDATE|DELETE}  
-    {CASCADE | RESTRICT | SET NULL | NO ACTION | SET DEFAULT}  
-    [MATCH {FULL|PARTIAL|SIMPLE}]  
-]*  
-
-> `sort-specification`  
-*column-name* [**ASC** | **DESC**]  
+###### sort-specification  
+> *column-name* [**ASC** | **DESC**]  
 
 `CREATE TABLE`语句用于创建数据表。属于同一数据库的两张表不能同名，属于同一张表的两个列不能同名。表名或列名不能超过64个字符，只能包含数字、字母、_和$，且必须以字母或数字开头。保留字不能用于名字。可以用单引号括起表名，此时可以不以数字或字母开头，也可以使用保留字。设置SQL_MODE为ANSI_QUOTES时，双引号也起到这个作用。
 
@@ -58,11 +49,20 @@ DEFAULT指定了列的默认值，当新行没有为该列指定值时，就使�
 COMMENT为列添加注释说明，最长255字符。
 
 #### 表复制
+
+###### table-like-reference
+> **LIKE** *[table-reference](#table-reference)*   
+| **(** **LIKE** *[table-reference](#table-reference)* **)**  
+
 LIKE子句可以在创建表时复制一张已存在表的模式，此时新表的列、数据结构、完整性约束和索引与复制的表相同，但数据内容不会复制，因此新表是空的。LIKE子句可以放在括号中。
 
 通过AS子句也能复制表，此时SELECT语句的结果作为新表的数据内容。
 
 #### 主键
+
+###### primary-key  
+> **PRIMARY KEY** [*index-name*] [ {**USING** | **TYPE**} {**UNIQUE** | **FULLTEXT** | **SPATIAL**} ] *[column-reference-group](#column-reference-group)*  
+
 主键是表中的一列或多列，它们的值唯一，且任一部分不允许为空值。一张表只能有一个主键。
 
 可以使用PRIMARY KEY在列声明时指定主键。也可以在表完整性约束中声明主键，此时可以声明多个列构成主键。
@@ -70,20 +70,34 @@ LIKE子句可以在创建表时复制一张已存在表的模式，此时新表�
 MySQL自动为每个主键创建索引，默认情况下索引名为PRIMARY，可以显示指定主键的索引名。
 
 #### 替代键
+###### alternate-key  
+> **UNIQUE** [**INDEX** | **KEY**] [*index-name*] [ {**USING** | **TYPE**} {**UNIQUE** | **FULLTEXT** | **SPATIAL**} ] *[column-reference-group](#column-reference-group)*  
+
 替代键是表中的一列或多列，它们的值是唯一的。与主键不同，一张表可以有多个替代键，并且可以为空值。
 
 可以使用UNIQUE在列声明时指定替代键。也可以在表完整性约束中声明替代键，此时可以声明多个列构成替代键。
 
 #### 外键
+
+###### foreign-key  
+> **FOREIGN KEY** [*index-name*] *[column-reference-group](#column-reference-group)*  
+**REFERENCES** *[table-reference](#table-reference)* *[column-reference-group](#column-reference-group)*  
+[  
+&nbsp;&nbsp;&nbsp;&nbsp;**ON** {**UPDATE** | **DELETE**}  
+&nbsp;&nbsp;&nbsp;&nbsp;{**CASCADE** | **RESTRICT** | **SET NULL** | **NO ACTION** | **SET DEFAULT**}  
+&nbsp;&nbsp;&nbsp;&nbsp;[ **MATCH** {**FULL** | **PARTIAL** | **SIMPLE**} ]  
+]\*  
+
 外键是一种参考完整性约束，指明表与表之间的约束关系。只有InnoDB引擎支持外键。一个外键声明主要包含三部分，外键定义、参照表、参照表主键，其中外键定义和参照表主键必须一致。外键保证当前表的每一个非空外键都在被参考表中的主键出现。
 
 定义时可以指定参照动作，表示发生冲突时如何处置。ON UPDATE表示更新时的处置，ON DELETE表示删除时的处置，二者可以同时使用。
 
-RESTRICT	表示出现冲突时必须拒绝操作
-CASCAD	表示出现冲突的操作导致参照表（定义主键的表）的改变，即更新时参照表的外键也改变，删除时参照表的相应数据行也删除
-SET NULL	表示出现冲突后参照表的外键被设为空值。需要注意的是，即使外键被定义为NOT NULL，此时仍然会被设置为NULL
-SET DEFAULT	表示出现冲突后参照表的外键被设为默认值，只有默认值存在时才能如此定义
-NO ACTION	等价于RESTRICT
+- RESTRICT	表示出现冲突时必须拒绝操作
+- CASCAD	表示出现冲突的操作导致参照表（定义主键的表）的改变，即更新时参照表的外键也改变，删除时参照表的相应数据行也删除
+- SET NULL	表示出现冲突后参照表的外键被设为空值。需要注意的是，即使外键被定义为NOT NULL，此时仍然会被设置为NULL
+- SET DEFAULT	表示出现冲突后参照表的外键被设为默认值，只有默认值存在时才能如此定义
+- NO ACTION	等价于RESTRICT
+
 为了与其他SQL产品兼容，外键约束的MATCH子句允许存在，但会被忽略。
 
 #### 表完整性约束
