@@ -114,3 +114,5 @@
 	1. [SHOW CREATE TABLE语句](grammar/show-create-table-statement.md)
 	1. [SHOW TABLES语句](grammar/show-tables-statement.md)
 	1. [DESCRIBE语句](grammar/describe-statement.md)
+1. 查询
+	1. [SELECT语句](grammar/select-statement.md)
