@@ -1,7 +1,7 @@
 # 系统变量
 
-> `system-variable`  
-**@@**[{**SESSION** | **GLOBAL** | **LOCAL**}**.**] *variable-name*
+###### system-variable  
+> **@@**[{**SESSION** | **GLOBAL** | **LOCAL**}**.**] *variable-name*
 
 系统变量由MySQL引入和初始化。
 

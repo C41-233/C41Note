@@ -1,7 +1,7 @@
 # 用户变量
 
-> `user-variable`  
-**@** *variable-name*
+###### user-variable  
+> **@** *variable-name*
 
 用户定义的变量，可以作为标量表达式。使用SET语句来定义和初始化一个用户变量，随后便可使用这个变量。
 
