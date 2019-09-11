@@ -111,3 +111,4 @@
 	1. [RENAME TABLE语句](grammar/rename-table-statement.md)
 	1. [ALTER TABLE语句](grammar/alter-table-statement.md)
 	1. [SHOW COLUMNS语句](grammar/show-columns-statement.md)
+	1. [SHOW CREATE TABLE语句](grammar/show-create-table-statement.md)
