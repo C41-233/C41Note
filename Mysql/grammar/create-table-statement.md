@@ -4,7 +4,7 @@
 > **CREATE** [**TEMPORARY**] **TABLE** [**IF NOT EXISTS**] *[table-reference](#table-reference)* *[table-structure](#table-structure)* [*table-option*]\*  
 
 ###### table-reference  
-> [*database-name* **.**]*table-name*
+> [*database-name* **.**] *table-name*
 
 ###### table-structure  
 > *[table-schema](#table-schema)*  
