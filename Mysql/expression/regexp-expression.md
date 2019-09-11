@@ -1,7 +1,7 @@
 # REGEXP/RLIKE运算符
 
-> `regexp-expression`  
-*scalar-expression* [**NOT**] {**REGEXP**|**RLIKE**} *regexp-pattern*
+###### regexp-expression  
+> *scalar-expression* [**NOT**] {**REGEXP**|**RLIKE**} *regexp-pattern*
 
 REGEXP表达式本身是一个标量表达式，返回BOOL值，用于判断指定字符串是否满足模式。
 

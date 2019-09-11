@@ -1,10 +1,10 @@
 # 日期时间表达式
 
-> `datetime-expression`  
-*datetime* [**+**|**-**] **INTERVAL** *length* *interval-type*
+###### datetime-expression  
+> *datetime* [**+**|**-**] **INTERVAL** *length* *interval-type*
 
-> `interval-type`  
-**MICROSECOND**   
+###### interval-type  
+> **MICROSECOND**   
 | **SECOND**    
 | **MINUTE**    
 | **HOUR**    

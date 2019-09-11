@@ -1,6 +1,6 @@
 # LIKE运算符
-> `like-expression`  
-| *scalar-expression* [**NOT**] **LIKE** *like-pattern* [**ESCAPE** *character*]
+###### like-expression  
+> *scalar-expression* [**NOT**] **LIKE** *like-pattern* [**ESCAPE** *character*]
 
 LIKE表达式本身是一个标量表达式，返回BOOL值，用于判断指定字符串是否满足模式。
 

@@ -4,11 +4,11 @@
 
 不允许对聚合函数进行嵌套。
 
-> `aggregation-function`  
-**function-name** **(** [**DISTINCT** | **ALL**] *expression* **)**
+###### aggregation-function  
+> **function-name** **(** [**DISTINCT** | **ALL**] *expression* **)**
 
-> `count-function`  
-**COUNT** **(** [**DISTINCT** | **ALL**] {**\*** | *expression*} **)**
+###### count-function  
+> **COUNT** **(** [**DISTINCT** | **ALL**] {**\*** | *expression*} **)**
 
 ##### AVG	
 求一列的算术平均值。

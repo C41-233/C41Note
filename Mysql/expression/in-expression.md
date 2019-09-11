@@ -1,7 +1,7 @@
 # IN运算符
 
-> `in-expression`  
-*scalar-expression* [**NOT**] **IN** (*scalar-expression* [, *scalar-expression*]\*)
+###### in-expression  
+> *scalar-expression* [**NOT**] **IN** (*scalar-expression* [, *scalar-expression*]\*)
 | *row-expression* [**NOT**] **IN** (*row-expression* [, *row-expression*]\*)  
 | {*scalar-expression* | *row-expression*} [**NOT**] **IN** *select-statement*  
 

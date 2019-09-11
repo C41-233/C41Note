@@ -1,7 +1,7 @@
 # 谓词运算符
 
-> `predicate-expression`  
-*scalar-expression* {**>** | **<** | **>=** | **<=** | **=** | **!=** | **<>**} {**ALL** | **ANY** | **SOME**} (*select-statement*)
+###### predicate-expression  
+> *scalar-expression* {**>** | **<** | **>=** | **<=** | **=** | **!=** | **<>**} {**ALL** | **ANY** | **SOME**} (*select-statement*)
 
 - `ALL`	条件满足子查询所有行
 - `SOME`/`ANY`	条件满足子查询任一行

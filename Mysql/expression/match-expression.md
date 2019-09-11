@@ -1,13 +1,13 @@
 # MATCH运算符
 
-> `match-expression`  
-**MATCH** (*column-reference* [, *column-reference*]*) **AGAINST** (*scalar-expression* [*search-type*])
+###### match-expression  
+> **MATCH** (*column-reference* [, *column-reference*]*) **AGAINST** (*scalar-expression* [*search-type*])
 
-> `column-reference`  
-[[*database-name* **.**]*table-name* **.**]*column-name*
+###### column-reference  
+> [[*database-name* **.**]*table-name* **.**]*column-name*
 
-> `search-type`  
-**IN NATURAL LANGUAGE MODE**  
+###### search-type  
+> **IN NATURAL LANGUAGE MODE**  
 | [**IN NATURAL LANGUAGE MODE**] **WITH QUERY EXPANSION**   
 | **IN BOOLEAN MODE**
 

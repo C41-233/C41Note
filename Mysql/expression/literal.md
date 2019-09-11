@@ -1,10 +1,10 @@
 # literal 字面直接量
 
-> `literal`  
-*numeric-literal* | *alphanumeric-literal* | *temporal-literal* | *boolean-literal* | *hexadecimal-literal*
+###### literal  
+> *numeric-literal* | *alphanumeric-literal* | *temporal-literal* | *boolean-literal* | *hexadecimal-literal*
 
-> `digit`  
-**0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9**
+###### digit  
+> **0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9**
 
 字面直接量是可以直接写出的、固定不变的值。每个直接量都有一个特定的数据类型，但不是所有数据类型都有直接量。
 
@@ -25,18 +25,18 @@
 
 ## 数值型直接量
 
-> `numeric-literal`  
-*integer-literal* | *decimal-literal* | *float-literal* | *bit-literal*
+###### numeric-literal  
+> *integer-literal* | *decimal-literal* | *float-literal* | *bit-literal*
 
 ### 整型直接量
 
-> `integer-literal`  
-[**+** | **-**]*digit*+
+###### integer-literal  
+> [**+** | **-**]*digit*+
 
 ### 小数直接量
 
-> `decimal-literal`  
-[**+** | **-**]*digit*+[**.** *digit*+]   
+###### decimal-literal  
+> [**+** | **-**]*digit*+[**.** *digit*+]   
 | [**+** | **-**]*digit*+**.**  
 | [**+** | **-**]**.** *digit*+  
 
@@ -48,19 +48,19 @@
 
 ### 浮点直接量
 
-> `float-literal`  
-*[decimal-literal](#小数直接量)* {**E** | **e**}  *[integer-literal](#整型直接量)*
+###### float-literal  
+> *[decimal-literal](#小数直接量)* {**E** | **e**}  *[integer-literal](#整型直接量)*
 
 浮点直接量表示单精度浮点数，小数直接量后跟一个指数。
 
 例如：`-34E2`、`0.16E4`、`4E-3`、`2e-2`
 
 ### 位直接量
-> `bit-literal`  
-{**B** | **b**}**'** *bit-digit*+ **'**
+###### bit-literal  
+> {**B** | **b**}**'** *bit-digit*+ **'**
 
-> `bit-digit`  
-**0** | **1**
+###### bit-digit  
+> **0** | **1**
 
 位直接量写成字符形式，最多可以有64位。
 
@@ -68,12 +68,12 @@
 
 ## 十六进制直接量
 
-> `hexadecimal-literal`  
-{**X** | **x**}**'** *hexadecimal-digit*+ **'**  
+###### hexadecimal-literal  
+> {**X** | **x**}**'** *hexadecimal-digit*+ **'**  
 | **0x***hexadecimal-digit*+
 
-> `hexadecimal-digit`  
-**0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9** | **A** | **B** | **C** | **D** | **E** | **F** | **a** | **b** | **c** | **d** | **e** | **f**
+###### hexadecimal-digit  
+> **0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9** | **A** | **B** | **C** | **D** | **E** | **F** | **a** | **b** | **c** | **d** | **e** | **f**
 
 十六进制直接量直接表示二进制数值。
 
@@ -81,15 +81,15 @@
 
 ## 布尔直接量
 
-> `boolean-literal`  
-**TRUE** | **FALSE**
+###### boolean-literal  
+> **TRUE** | **FALSE**
 
 TRUE值为1，FALSE值为0。
 
 ## 字符串直接量
 
-> `alphanumeric-literal`  
-'*character* *'  
+###### alphanumeric-literal  
+> '*character* *'  
 | "*character* *"
 
 字符串直接量由0个或多个字符组成的序列，用单引号或双引号括起来。
@@ -102,21 +102,21 @@ TRUE值为1，FALSE值为0。
 
 ## 日期时间型直接量
 
-> `temporal-literal`  
-*date-literal* | *time-literal* | *datetime-literal* | *timestamp-literal* | *year-literal*
+###### temporal-literal  
+> *date-literal* | *time-literal* | *datetime-literal* | *timestamp-literal* | *year-literal*
 
 ### 日期直接量
 
-> `date-literal`  
-**'** *date-literal-body* **'**  
+###### date-literal  
+> **'** *date-literal-body* **'**  
 | **"** *date-literal-body* **"**  
 | *year-month-day*
 
-> `date-literal-body`  
-*year* *splitter* *month* *splitter* *day*
+###### date-literal-body  
+> *year* *splitter* *month* *splitter* *day*
 
-> `splitter`  
-**-** | **/** | **@** | **%**
+###### splitter  
+> **-** | **/** | **@** | **%**
 
 日期直接量由年、月、日组成，用来表示一个太阳历。
 
@@ -144,20 +144,20 @@ TRUE值为1，FALSE值为0。
 
 ### 时间直接量
 
-> `time-literal`  
-**'** *time-literal-body* **'**  
-**"** *time-literal-body* **"**  
-{*second*[**.** *integer*]  
-{*minute-second*[**.** *integer*]  
-{*hour-minute-second*[**.** *integer*]  
+###### time-literal  
+> **'** *time-literal-body* **'**  
+| **"** *time-literal-body* **"**  
+| {*second*[**.** *integer*]  
+| {*minute-second*[**.** *integer*]  
+| {*hour-minute-second*[**.** *integer*]  
 
-> `time-literal-body`  
-[*day*] *hour* *splitter* *minute* [*splitter* *second* [**.** *microsecond*]]  
-[*hour* *splitter* *minute* *splitter*] *second*  
-[*day*] *hour*  
+###### time-literal-body  
+> [*day*] *hour* *splitter* *minute* [*splitter* *second* [**.** *microsecond*]]  
+| [*hour* *splitter* *minute* *splitter*] *second*  
+| [*day*] *hour*  
 
-> `splitter`  
-**:** | **-** | **/** | **@** | **%**
+###### splitter  
+> **:** | **-** | **/** | **@** | **%**
 
 时间直接量由时、分、秒、微妙组成。
 
@@ -185,13 +185,13 @@ INSERT语句忽略时间直接量的微秒部分。
 
 ### 日期时间直接量
 
-> `datetime-literal`  
-**'** *datetime-literal-body* **'**  
+###### datetime-literal  
+> **'** *datetime-literal-body* **'**  
 | **"** *datetime-literal-body* **"**  
 | *year-month-day-hour-minute-second*
 
-> `datetime-literal-body`  
-*year-month-day*  
+###### datetime-literal-body  
+> *year-month-day*  
 | *year-month-day* *hour*  
 | *year-month-day* *hour* **:** *minute*  
 | *year-month-day* *hour* **:** *minute* **:** *second*  
@@ -204,13 +204,13 @@ INSERT语句忽略时间直接量的微秒部分。
 年份的有效范围为1000到9999之间。
 
 ### 时间戳直接量
-> `timestamp-literal`  
-**'** *timestamp-literal-body* **'**  
+###### timestamp-literal 
+> **'** *timestamp-literal-body* **'**  
 | **"** *timestamp-literal-body* **"**  
 | *year-month-day-hour-minute-second*
 
-> `timestamp-literal-body`  
-*year-month-day*  
+###### timestamp-literal-body  
+> *year-month-day*  
 | *year-month-day* *hour*  
 | *year-month-day* *hour* **:** *minute*  
 | *year-month-day* *hour* **:** *minute* **:** *second*  
@@ -225,8 +225,8 @@ INSERT语句忽略时间直接量的微秒部分。
 时间戳直接量支持时区，存储时被转换为UTC时间。
 
 ### 年直接量
-> `year-literal`  
-*digit*+  
+###### year-literal  
+> *digit*+  
 | **'** *digit*+ **'**    
 | **"** *digit*+ **"**  
 

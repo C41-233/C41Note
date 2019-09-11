@@ -1,7 +1,7 @@
 # 表达式 expression
 
-> `expression`  
-*scalar-expression* | *row-expression* | *table-expression*
+###### expression  
+> *scalar-expression* | *row-expression* | *table-expression*
 
 表达式根据特定的运算规则，计算出一个值。一个表达式的类型指的是该表达式运算的结果类型。
 

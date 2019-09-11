@@ -1,7 +1,7 @@
 # CASE表达式
 
-> `case-expression`  
-**CASE** *scalar-expression*   
+###### case-expression  
+> **CASE** *scalar-expression*   
 **WHEN** *scalar-expression* **THEN** *scalar-expression*  
 [**WHEN** *scalar-expression* **THEN** *scalar-expression*]*   
 [**ELSE** *scalar-expression*]   
