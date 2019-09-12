@@ -116,3 +116,7 @@
 	1. [DESCRIBE语句](grammar/describe-statement.md)
 1. 查询
 	1. [SELECT语句](grammar/select-statement.md)
+	1. [HANDLER语句](grammar/handler-statement.md)
+		1. [HANDLER OPEN语句](grammar/handler-statement.md#handler-open-statement)
+		1. [HANDLER READ语句](grammar/handler-statement.md#handler-read-statement)
+		1. [HANDLER CLOSE语句](grammar/handler-statement.md#handler-close-statement)
