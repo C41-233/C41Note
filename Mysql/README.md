@@ -123,3 +123,4 @@
 1. 更新
 	1. [INSERT语句](grammar/insert-statement.md)
 	1. [UPDATE语句](grammar/update-statement.md)
+	1. [REPLACE语句](grammar/replace-statement.md)
