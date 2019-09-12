@@ -5,8 +5,8 @@
 [*[into-clause](#into-clause)*]  
 [*[from-clause](#from-clause)* [*[index-hint](#index-hint)*]\* [*[where-clause](#where-clause)*] [*[group-by-clause](#group-by-clause)*] [*[having-clause](#having-clause)*]]  
 [*[union-clause](#union-clause)*]\*  
-[*order-by-clause*]  
-[*limit-clause*]  
+[*[order-by-clause](#order-by-clause)*]  
+[*[limit-clause](#limit-clause)*]  
 [**FOR UPDATE** | **LOCK IN SHARE MODE**]  
 [ **PROCEDURE ANALYSE** **(** [*max_elements* [**,** *max_mermoy*] **)** ]  
 
