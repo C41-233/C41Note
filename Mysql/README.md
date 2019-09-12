@@ -122,3 +122,4 @@
 		1. [HANDLER CLOSE语句](grammar/handler-statement.md#handler-close-statement)
 1. 更新
 	1. [INSERT语句](grammar/insert-statement.md)
+	1. [UPDATE语句](grammar/update-statement.md)
