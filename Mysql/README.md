@@ -120,3 +120,5 @@
 		1. [HANDLER OPEN语句](grammar/handler-statement.md#handler-open-statement)
 		1. [HANDLER READ语句](grammar/handler-statement.md#handler-read-statement)
 		1. [HANDLER CLOSE语句](grammar/handler-statement.md#handler-close-statement)
+1. 更新
+	1. [INSERT语句](grammar/insert-statement.md)
