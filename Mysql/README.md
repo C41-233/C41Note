@@ -125,3 +125,5 @@
 	1. [UPDATE语句](grammar/update-statement.md)
 	1. [REPLACE语句](grammar/replace-statement.md)
 	1. [DELETE语句](grammar/delete-statement.md)
+	1. [TRUNCATE语句](grammar/truncate-statement.md)
+	1. [LOAD DATA语句](grammar/load-data-statement.md)
