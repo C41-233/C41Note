@@ -127,3 +127,6 @@
 	1. [DELETE语句](grammar/delete-statement.md)
 	1. [TRUNCATE语句](grammar/truncate-statement.md)
 	1. [LOAD DATA语句](grammar/load-data-statement.md)
+	
+1. 维护
+	1. [ANALYZE TABLE语句](grammar/analyze-table-statement.md)
