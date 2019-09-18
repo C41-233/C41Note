@@ -131,3 +131,4 @@
 1. 维护
 	1. [ANALYZE TABLE语句](grammar/analyze-table-statement.md)
 	1. [BACKUP TABLE语句](grammar/backup-table-statement.md)
+	1. [CHECK TABLE语句](grammar/check-table-statement.md)
