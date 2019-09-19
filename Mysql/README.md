@@ -133,3 +133,4 @@
 	1. [BACKUP TABLE语句](grammar/backup-table-statement.md)
 	1. [CHECK TABLE语句](grammar/check-table-statement.md)
 	1. [CHECKSUM TABLE语句](grammar/checksum-table-statement.md)
+	1. [OPTIMIZE TABLE语句](grammar/optimize-table-statement.md)
