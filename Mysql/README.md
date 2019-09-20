@@ -140,3 +140,6 @@
 1. [存储引擎](engine.md)
 	1. [SHOW ENGINE语句](grammar/show-engine-statement.md)
 	1. [SHOW ENGINES语句](grammar/show-engines-statement.md)
+
+## 索引
+1. [CREATE INDEX语句](grammar/create-index-statement.md)
