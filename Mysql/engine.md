@@ -6,14 +6,14 @@
 
 | 存储引擎 | 描述 | 默认版本 | 事务 | XA | 保存点 |
 |---|---|---|---|---|---|
-| CVS | 使得数据存储在外部文件中，该文件拥有逗号隔开的值 | NO | NO | NO |
-| HEAP | 与MEMORY引擎相同 |  | NO | NO | NO |
 | InnoDB | 支持事务、外键、行锁定 | 5.0 | YES | YES | YES |
-| ISAM | 早期MySQL的默认引擎 |  | NO | NO | NO |
-| Memory | 数据驻留内存，而不存储在硬盘上，默认使用哈希索引。处理速度非常快，当数据库服务停止时，数据都被删除 |  | NO | NO | NO |
+| MyISAM | ISAM引擎扩展 | 3.23 | NO | NO | NO |
 | Merge | 合并视图。需要配合UNION和INSERT_METHOD子句 |  | NO | NO | NO |
-| MyISAM | ISAM引擎扩展 | 3.23	NO | NO | NO |
 | MRG_MyISAM |  |  | NO | NO | NO |
+| ISAM | 早期MySQL的默认引擎 |  | NO | NO | NO |
+| CVS | 使得数据存储在外部文件中，该文件拥有逗号隔开的值 | | NO | NO | NO |
+| HEAP | 与MEMORY引擎相同 |  | NO | NO | NO |
+| Memory | 数据驻留内存，而不存储在硬盘上，默认使用哈希索引。处理速度非常快，当数据库服务停止时，数据都被删除 |  | NO | NO | NO |
 
 # Merge存储引擎
 Merge存储引擎是一组MyISAM表的组合，这些MyISAM表结构必须完全相同。
