@@ -139,3 +139,4 @@
 	
 1. [存储引擎](engine.md)
 	1. [SHOW ENGINE语句](grammar/show-engine-statement.md)
+	1. [SHOW ENGINES语句](grammar/show-engines-statement.md)
