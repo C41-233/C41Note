@@ -138,3 +138,4 @@
 	1. [RESTORE TABLE语句](grammar/restore-table-statement.md)
 	
 1. [存储引擎](engine.md)
+	1. [SHOW ENGINE语句](grammar/show-engine-statement.md)
