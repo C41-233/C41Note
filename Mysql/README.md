@@ -181,3 +181,10 @@
 	1. [UNLOCK TABLE语句](grammar/unlock-table-statement.md)
 1. 隔离级别
 	1. [SET TRANSACTION语句](grammar/set-transaction-statement.md)
+1. 分布式事务
+	1. [XA COMMIT语句](grammar/xa-statement.md#xa-commit-statement)
+	1. [XA END语句](grammar/xa-statement.md#xa-end-statement)
+	1. [XA PREPARE语句](grammar/xa-statement.md#xa-prepare-statement)
+	1. [XA RECOVER语句](grammar/xa-statement.md#xa-recover-statement)
+	1. [XA ROLLBACK语句](grammar/xa-statement.md#xa-rollback-statement)
+	1. [XA START语句](grammar/xa-statement.md#xa-start-statement)
