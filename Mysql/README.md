@@ -145,3 +145,6 @@
 1. [CREATE INDEX语句](grammar/create-index-statement.md)
 1. [DROP INDEX语句](grammar/drop-index-statement.md)
 1. [SHOW INDEX语句](grammar/show-database-statement.md)
+
+## 视图
+1. [CREATE VIEW语句](grammar/create-view-statement.md)
