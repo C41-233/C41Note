@@ -176,3 +176,5 @@
 	1. [ROLLBACK语句](grammar/transaction-statement.md#rollback-statement)
 	1. [COMMIT语句](grammar/transaction-statement.md#commit-statement)
 	1. [SAVEPOINT语句](grammar/transaction-statement.md#savepoint-statement)
+1. 锁
+	1. [LOCK TABLE语句](grammar/lock-table-statement.md)
