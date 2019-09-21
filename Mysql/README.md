@@ -178,3 +178,4 @@
 	1. [SAVEPOINT语句](grammar/transaction-statement.md#savepoint-statement)
 1. 锁
 	1. [LOCK TABLE语句](grammar/lock-table-statement.md)
+	1. [UNLOCK TABLE语句](grammar/unlock-table-statement.md)
