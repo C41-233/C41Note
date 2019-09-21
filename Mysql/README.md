@@ -157,3 +157,6 @@
 1. [DROP USER语句](grammar/drop-user-statement.md)
 1. [RENAME USER语句](grammar/rename-user-statement.md)
 1. [SET PASSWORD语句](grammar/set-password-statement.md)
+
+## 权限
+1. [GRANT语句](grammar/grant-statement.md)
