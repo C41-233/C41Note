@@ -163,3 +163,6 @@
 1. [REVOKE语句](grammar/revoke-statement.md)
 1. [SHOW GRANTS语句](grammar/show-grants-statement.md)
 1. [SHOW PRIVILEGES语句](grammar/show-privileges-statement.md)
+
+## 预处理SQL
+1. [PREPARE语句](grammar/prepare-statement.md)
