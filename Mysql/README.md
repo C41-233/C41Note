@@ -154,3 +154,4 @@
 
 ## 用户
 1. [CREATE USER语句](grammar/create-user-statement.md)
+1. [DROP USER语句](grammar/drop-user-statement.md)
