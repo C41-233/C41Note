@@ -7,7 +7,7 @@
 [ **ALGORITHM** **=** {**MERGE** | **TEMPTABLE** | **UNDEFINED**} ]  
 **VIEW** *view-name*  
 [ **(** *column-name* [**,** *column-name*]\* **)** ]  
-**AS** *select-statement*  
+**AS** *[select-statement](select-statement.md)*  
 [ **WITH** [**CASCADED** | **LOCAL**] **CHECK OPTION** ]
 
 CREATE VIEW语句用于创建视图。
