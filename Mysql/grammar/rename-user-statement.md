@@ -7,6 +7,6 @@
 > *user* **TO** *user*
 
 ###### user
-> *username* [**@** *hostname*]
+> <*username* [**@** *hostname*]>
 
 RENAME USER语句用于修改用户名。

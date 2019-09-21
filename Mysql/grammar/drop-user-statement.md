@@ -4,6 +4,6 @@
 > **DROP USER** *user* [**,** *user*]\*
 
 ###### user
-> *username* [**@** *hostname*]
+> <*username* [**@** *hostname*]>
 
 DROP USER语句用于删除用户。

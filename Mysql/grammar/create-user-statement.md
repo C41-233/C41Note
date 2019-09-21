@@ -7,7 +7,7 @@
 > *user* [**IDENTIFIED BY** [**PASSWORD**] *password*]
 
 ###### user
-> *username* [**@** *hostname*]
+> <*username* [**@** *hostname*]>
 
 CREATE USER语句用于创建用户。用户名、主机和密码必须是字符串形式，即用引号包围。如果指定主机'localhost'，则表示本地主机。
 
