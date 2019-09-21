@@ -167,3 +167,4 @@
 ## 预处理SQL
 1. [PREPARE语句](grammar/prepare-statement.md)
 1. [EXECUTE语句](grammar/execute-statement.md)
+1. [DEALLOCATE语句](grammar/deallocate-statement.md)
