@@ -188,3 +188,7 @@
 	1. [XA RECOVER语句](grammar/xa-statement.md#xa-recover-statement)
 	1. [XA ROLLBACK语句](grammar/xa-statement.md#xa-rollback-statement)
 	1. [XA START语句](grammar/xa-statement.md#xa-start-statement)
+	
+## 过程式SQL
+1. 存储过程
+	1. [CREATE PROCEDURE语句](grammar/create-procedure-statement.md)
