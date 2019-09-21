@@ -156,3 +156,4 @@
 1. [CREATE USER语句](grammar/create-user-statement.md)
 1. [DROP USER语句](grammar/drop-user-statement.md)
 1. [RENAME USER语句](grammar/rename-user-statement.md)
+1. [SET PASSWORD语句](grammar/set-password-statement.md)
