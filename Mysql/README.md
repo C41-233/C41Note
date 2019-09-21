@@ -151,3 +151,6 @@
 1. [ALTER VIEW语句](grammar/alter-view-statement.md)
 1. [DROP VIEW语句](grammar/drop-view-statement.md)
 1. [SHOW CREATE VIEW语句](grammar/show-create-view-statement.md)
+
+## 用户
+1. [CREATE USER语句](grammar/create-user-statement.md)
