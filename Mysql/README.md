@@ -161,3 +161,4 @@
 ## 权限
 1. [GRANT语句](grammar/grant-statement.md)
 1. [REVOKE语句](grammar/revoke-statement.md)
+1. [SHOW GRANTS语句](grammar/show-grants-statement.md)
