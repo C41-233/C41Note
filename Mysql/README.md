@@ -149,3 +149,4 @@
 ## 视图
 1. [CREATE VIEW语句](grammar/create-view-statement.md)
 1. [ALTER VIEW语句](grammar/alter-view-statement.md)
+1. [DROP VIEW语句](grammar/drop-view-statement.md)
