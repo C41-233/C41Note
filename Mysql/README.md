@@ -193,3 +193,4 @@
 1. 存储过程
 	1. [CREATE PROCEDURE语句](grammar/create-procedure-statement.md)
 	1. [ALTER PROCEDURE语句](grammar/alter-procedure-statement.md)
+	1. [DROP PROCEDURE语句](grammar/drop-procedure-statement.md)
