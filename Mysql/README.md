@@ -195,3 +195,4 @@
 	1. [ALTER PROCEDURE语句](grammar/alter-procedure-statement.md)
 	1. [DROP PROCEDURE语句](grammar/drop-procedure-statement.md)
 	1. [CALL语句](grammar/call-statement.md)
+	1. [SHOW CREATE PROCEDURE语句](grammar/show-create-procedure-statement.md)
