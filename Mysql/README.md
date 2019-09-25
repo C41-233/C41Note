@@ -212,3 +212,4 @@
 
 1. 事件
 	1. [CREATE EVENT语句](grammar/create-event-statement.md)
+	1. [ALTER EVENT语句](grammar/alter-event-statement.md)
