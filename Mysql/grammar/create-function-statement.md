@@ -6,7 +6,7 @@
 **FUNCTION** *function-name*  
 **(** [*function-parameter* [**,** *function-parameter*]\*] **)**  
 **RETURNS** *[data-type](../datatype)*  
-*[function-characteristic](create-procedure-statement.md#function-characteristic)*\*  
+*[procedure-characteristic](create-procedure-statement.md#procedure-characteristic)*\*  
 *routine-body*  
 
 ###### user

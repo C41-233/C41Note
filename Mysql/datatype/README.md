@@ -6,7 +6,7 @@
 | *[temporal-type](temporal-type.md)*  
 | *[blob-type](blob-type.md)*  
 | *geometirc-type*  
-| *complex-type*  
+| *[complex-type](#complex-type)*  
 
 ###### numeric-type   
 > *[integer-type](integer-type.md)* | *[decimal-type](decimal-type.md)* | *[float-type](float-type.md)* | *[bit-type](bit-type.md)*  

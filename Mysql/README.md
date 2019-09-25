@@ -200,3 +200,4 @@
 	
 1. 存储函数
 	1. [CREATE FUNCTION语句](grammar/create-function-statement.md)
+	1. [ALTER FUNCTION语句](grammar/alter-function-statement.md)
