@@ -216,3 +216,5 @@
 	1. [DROP EVENT语句](grammar/drop-event-statement.md)
 	1. [SHOW CREATE EVENT语句](grammar/show-create-event-statement.md)
 	1. [SHOW EVENTS语句](grammar/show-events-statement.md)
+
+1. [过程式语句](grammar/routine-body.md)
