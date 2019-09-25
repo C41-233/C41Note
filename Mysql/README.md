@@ -207,3 +207,4 @@
 	
 1. 触发器
 	1. [CREATE TRIGGER语句](grammar/create-trigger-statement.md)
+	1. [DROP TRIGGER语句](grammar/drop-trigger-statement.md)
