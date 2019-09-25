@@ -209,3 +209,6 @@
 	1. [CREATE TRIGGER语句](grammar/create-trigger-statement.md)
 	1. [DROP TRIGGER语句](grammar/drop-trigger-statement.md)
 	1. [SHOW TRIGGERS语句](grammar/show-triggers-statement.md)
+
+1. 事件
+	1. [CREATE EVENT语句](grammar/create-event-statement.md)
