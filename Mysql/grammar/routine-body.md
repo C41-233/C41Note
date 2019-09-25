@@ -3,7 +3,7 @@
 ###### routine-body
 > [*label* **:**] **BEGIN** [*statement* **;**]\* **END** [*label*]
 
-statement
-sql-statement
-| routine-body
-| routine-statement
+###### statement
+> *sql-statement*  
+| *routine-body*  
+| *routine-statement*
