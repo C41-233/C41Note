@@ -203,3 +203,4 @@
 	1. [ALTER FUNCTION语句](grammar/alter-function-statement.md)
 	1. [DROP FUNCTION语句](grammar/drop-function-statement.md)
 	1. [SHOW CREATE FUNCTION语句](grammar/show-create-function-statement.md)
+	1. [SHOW FUNCTION STATUS语句](grammar/show-function-status-statement.md)
