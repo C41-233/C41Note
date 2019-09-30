@@ -16,8 +16,8 @@
 SELECT语句用于查询，是一个表表达式。
 
 可以在查询时显式加锁：
-- LOCK IN SHARE MODE	共享锁
-- FOR UPDATE	排他锁
+- LOCK IN SHARE MODE	共享意向锁，IS
+- FOR UPDATE	排他意向锁，IX
 
 ### SELECT子句
 ###### select-clause
