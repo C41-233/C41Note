@@ -99,6 +99,8 @@
 			1. [TABLE_PRIVILEGES](meta/table-privileges-table.md) 表权限
 			1. [COLUMN_PRIVILEGES](meta/column-privileges-table.md) 列权限
 			1. [USER_PRIVILEGES](meta/user-privileges-table.md) 列权限
+		1. InnoDB
+			1. [INNODB_LOCKS](meta/innodb_locks-table.md) 锁
 		1. 字符集和校对
 			1. [CHARACTER_SETS](meta/character-sets-table.md) 可用字符集
 			1. [COLLATIONS](meta/collations-table.md) 可用字符集校对

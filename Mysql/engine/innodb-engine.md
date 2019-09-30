@@ -65,3 +65,4 @@
 ##### 自增锁 auto-inc lock
 
 AUTO-INC锁是一种特殊的表级锁，发生涉及AUTO_INCREMENT列的事务性插入操作时产生。
+
