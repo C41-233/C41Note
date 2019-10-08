@@ -16,6 +16,8 @@
 
 ## 锁
 
+[不同SQL语句涉及的锁](https://dev.mysql.com/doc/refman/5.7/en/innodb-locks-set.html)
+
 ##### 共享锁、排他锁
 
 共享锁 shared (S) lock：读锁。允许其他事务加S锁，但不允许加X锁。
