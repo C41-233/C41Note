@@ -51,8 +51,7 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 - foreign_key_checks 是否开启外键约束检查
 - group_concat_max_len GROUP_CONCAT结果的字符串长度
 - sql_mode SQL模式
-- sql_select_limit SELECT语句结果最大行数。
-- sql_select_mode
+- sql_select_limit SELECT语句结果最大行数
 - sql_warnings 错误的INSERT语句是否应该返回一条警告
 - storage_engine 默认存储引擎
         
