@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|
 | [InnoDB](innodb-engine.md) | 支持事务、外键、行锁定 | 5.0 | YES | YES | YES |
 | MyISAM | ISAM引擎扩展 | 3.23 | NO | NO | NO |
-| (Merge)[merge-engine.md] | 合并视图。需要配合UNION和INSERT_METHOD子句 |  | NO | NO | NO |
+| [Merge](merge-engine.md) | 合并视图。需要配合UNION和INSERT_METHOD子句 |  | NO | NO | NO |
 | MRG_MyISAM |  |  | NO | NO | NO |
 | ISAM | 早期MySQL的默认引擎 |  | NO | NO | NO |
 | CVS | 使得数据存储在外部文件中，该文件拥有逗号隔开的值 | | NO | NO | NO |

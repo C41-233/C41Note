@@ -140,7 +140,7 @@
 	1. [REPAIR TABLE语句](grammar/repair-table-statement.md)
 	1. [RESTORE TABLE语句](grammar/restore-table-statement.md)
 	
-1. [存储引擎](engine)
+1. [存储引擎](engine/)
 	1. [INNODB](engine/innodb-engine.md)
 	1. [MERGE](engine/merge-engine.md)
 	1. [SHOW ENGINE语句](grammar/show-engine-statement.md)
