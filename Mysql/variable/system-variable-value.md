@@ -6,6 +6,8 @@
 
 通过[SHOW VARIABLES](../grammar/show-variables-statement.md)语句查询系统变量。
 
+BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
+
 ## 特殊
 
 特殊系统变量前面不需要使用`@@`。
