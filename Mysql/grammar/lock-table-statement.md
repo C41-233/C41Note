@@ -1,9 +1,9 @@
 # LOCK TABLE语句
 
 ###### lock-table-statement
-> **LOCK** **TABLE** lock-table
+> **LOCK** **TABLE** *lock-table*
 
-> **LOCK** **TABLES** lock-table [,lock-table]*
+> **LOCK** **TABLES** *lock-table* [**,** *lock-table*]\*
 
 ###### lock-table
 > *table-reference* [**AS** *name*]  
