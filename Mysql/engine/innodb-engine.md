@@ -83,6 +83,9 @@ AUTO-INC锁是一种特殊的表级锁，发生涉及AUTO_INCREMENT列的事务�
 
 InnoDb的默认级别是REPEATABLE READ。
 
+- 即时读（current read）：总是读取到最新的数据。
+- 一致性读（consistent read）：事务读取到数据的同一个快照，而不会因为其他数据的更新而改变。快照通过undo log构建。
+
 ##### READ UNCOMMITTED 未提交读
 会导致脏读。
 

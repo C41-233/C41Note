@@ -7,7 +7,7 @@
 [*[union-clause](#union-clause)*]\*  
 [*[order-by-clause](#order-by-clause)*]  
 [*[limit-clause](#limit-clause)*]  
-[**FOR UPDATE** | **LOCK IN SHARE MODE**]  
+[*[lock-option](#lock-option)*]  
 [ **PROCEDURE ANALYSE** **(** [*max_elements* [**,** *max_mermoy*] **)** ]  
 
 ###### table-reference  
@@ -15,11 +15,7 @@
 
 SELECT语句用于查询，是一个表表达式。
 
-可以在查询时显式加锁：
-- LOCK IN SHARE MODE	共享意向锁，IS
-- FOR UPDATE	排他意向锁，IX
-
-### SELECT子句
+## SELECT子句
 ###### select-clause
 > **SELECT** [*[select-option](#select-option)*]\* *[column-specification](#column-specification)* [**,** *[column-specification](#column-specification)*]\*  
 
@@ -48,7 +44,7 @@ SELECT语句用于查询，是一个表表达式。
 | SQL_BIG_RESULT | 提示优化器查询结果量小 |
 | STRAIGHT_JOIN | 必须按照FROM子句中出现的顺序来连接表 |
 
-### INTO子句
+## INTO子句
 ###### into-clause
 > **INTO** *[into-method](#into-method)*  
 
@@ -95,7 +91,7 @@ OPTIONALLY ENCLOSED BY用于设置字符串值的包围符号，ENCLOSED BY设�
 
 ESCAPED BY用于设置转义引导字符。
 
-### FROM子句
+## FROM子句
 ###### from-clause
 > **FROM** *[table-specification](#table-specification)* [**,** *[table-specification](#table-specification)*]*
 
@@ -153,7 +149,7 @@ WHERE birth_date>'1920-06-30'
 ##### 交叉联接 CROSS JOIN
 产生两表的笛卡尔积，两张表的记录都会显示。
 
-### 索引提示
+## 索引提示
 ###### index-hint
 {**USE** | **IGNORE** | **FORCE**} **INDEX** **(** *index-name* [**,** *index-name*]\* **)**
 
@@ -163,7 +159,7 @@ IGNORE INDEX子句用于强制不使用指定索引。
 
 FORCE INDEX子句用于强制使用指定索引。
 
-### WHERE子句
+## WHERE子句
 ###### where-clause
 > **WHERE** *where-condition*
 
@@ -204,7 +200,7 @@ WHERE playerno=(SELECT playerno FROM teams WHERE teams.playerno=matches.playerno
 
 在WHERE子句中，非0值表示TRUE，0值表示FALSE。
 
-### GROUP BY子句
+## GROUP BY子句
 ###### group-by-clause
 > **GROUP BY** *[group-column-specification](#group-column-specification)* [**,** *[group-column-specification](#group-column-specification)*]\* [**WITH ROLLUP**]
 
@@ -248,19 +244,19 @@ SELECT子句中指定的列必须是聚合函数的参数，或者在GROUP BY子
 
 WITH ROLLUP将多次聚合。
 
-### HAVING子句
+## HAVING子句
 ###### having-clause
 > **HAVING** *having-condition*
 
 HAVING子句用于对组进行筛选，在GROUP BY子句后执行。条件中可以包含聚合函数。
 
-### UNION子句
+## UNION子句
 ###### union-clause
 > **UNION** [**ALL** | **DISTINCT**] *[select-statement](#select-statement)*
 
 UNION子句用于对多个查询进行合并。默认去除重复行。
 
-### ORDER BY子句
+## ORDER BY子句
 ###### order-by-clause
 > **ORDER BY** *sort-specification* [**,** *sort-specification*]\*
 
@@ -276,9 +272,25 @@ NULL视为最小的值。
 
 可以指定列的顺序号码，号码从1开始。
 
-### LIMIT子句
+## LIMIT子句
 ###### limit-clause
 > **LIMIT** [ *offset* **,** ] *number*   
 | **LIMIT** *number* [ **OFFSET** *offset* ]
 
 LIMIT子句用于选取结果行的一部分。
+
+## Locking Read
+###### lock-option
+> **FOR UPDATE** | **LOCK IN SHARE MODE**  
+
+##### LOCK IN SHARE MODE	
+在查询时加共享意向锁（IS）。
+
+其他事务可以读相关的行，但在当前事务提交前不能写相关的行。
+
+如果相关行被其他事务修改且未提交，查询将等待事务完成。
+
+##### FOR UPDATE	
+在查询时加排他意向锁（IX）。
+
+其他事务在读写相关行时阻塞。注意在一致性读的情况下会忽略锁。
