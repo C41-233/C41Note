@@ -53,5 +53,5 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 - sql_mode SQL模式
 - sql_select_limit SELECT语句结果最大行数
 - sql_warnings 错误的INSERT语句是否应该返回一条警告
-- storage_engine 默认存储引擎
+- default_storage_engine 默认存储引擎
         
