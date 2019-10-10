@@ -2,7 +2,7 @@
 
 ###### alter-table-statement
 > **ALTER** [**IGNORE**] **TABLE** *[table-reference](#table-reference)*  
-{*[table-change](#table-change)* | *[column-change](#column-change)* | *constraint-change* | *index-change*}
+{*[table-change](#table-change)* | *[column-change](#column-change)* | *[constraint-change](#constraint-change)* | *[index-change](#index-change)*}
 
 ###### table-reference
 > [*database-name* **.**] *table-name*
@@ -11,10 +11,12 @@ ALTER TABLE语句用于更改表的结构。
 
 IGNORE选项使得出错时不会显示错误信息。
 
+更改表结构要求当前用户对表具有`ALTER`、`CREATE`、`INSERT`权限。
+
 ### 表变更
 ###### table-change
 > **RENAME** [**TO** | **AS**] *table-name*  
-*table-option*\*  
+*[table-option](create-table-statement#table-option)*\*  
 **CONVERT TO CHARACTER SET** {*charset-name* | **DEFAULT**} [**COLLATE** *collate-name*]  
 **ORDER BY** *[sort-specification](#sort-specification.md)* [**,** *[sort-specification](#sort-specification.md)*]\*  
 {**ENABLE** | **DISABLE**} **KEYS**  
