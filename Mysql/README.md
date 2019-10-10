@@ -15,6 +15,7 @@
 1. [HELP语句](grammar/help-statement.md)
 1. [系统变量](variable/system-variable/)
 1. [系统状态](variable/system-status-value.md)
+1. [日志](log.md)
 
 ## 表达式与数据类型
 1. [字面直接量](expression/literal.md)
