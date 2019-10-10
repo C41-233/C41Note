@@ -2,7 +2,7 @@
 
 ###### alter-event-statement
 > **ALTER**  
-[DEFINER = *user*]  
+[**DEFINER** **=** {*user-name* | **CURRENT_USER**}]  
 **EVENT** *event-reference*  
 **ON SCHEDULE** *[schedule-method](create-event-statement.md#schedule.method)*  
 [**RENAME TO** *event-name*]  
