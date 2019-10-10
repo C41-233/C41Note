@@ -6,6 +6,6 @@
 ###### function-reference
 > <[*database-name* **.**] *function-name*>
 
-ALTER FUNCTION语句为存储函数调整特征。
+ALTER FUNCTION语句为存储函数修改属性。
 
 当前用户必须对存储函数具有`ALTER ROUTINE`权限。

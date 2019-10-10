@@ -6,4 +6,6 @@
 ###### procedure-reference
 > <[*database-name* **.**] *procedure-name*>
 
-ALTER PROCEDURE语句为存储过程调整特征。
+ALTER PROCEDURE语句为存储过程修改属性。
+
+当前用户必须对存储过程具有`ALTER ROUTINE`权限。
