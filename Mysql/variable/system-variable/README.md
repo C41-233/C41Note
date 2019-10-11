@@ -77,27 +77,74 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<td>INTEGER</td>
 	</tr>
 	<tr>
+		<th>ft_boolean_syntax</th>
+		<td>可以和布尔查找一起用的运算符</td>
+		<td>CHAR</td>
+	</tr>
+	<tr>
+		<th>group_concat_max_len</th>
+		<td>GROUP_CONCAT结果的字符串长度</td>
+		<td>INTEGER</td>
+	</tr>
+	<tr>
+		<th><a href="lower_case_tables_name.md">lower_case_tables_name</a></th>
+		<td>表名和数据库名的大小写敏感性</td>
+		<td>INTEGER</td>
+	</tr>
+	<tr>
 		<th><a href="sql_mode.md">sql_mode</a></th>
 		<td>SQL模式</td>
 		<td>CHAR</td>
 	</tr>
+	<tr>
+		<th>sql_select_limit</th>
+		<td>SELECT语句结果最大行数</td>
+		<td>INTEGER</td>
+	</tr>
+	<tr>
+		<th>sql_warnings</th>
+		<td>错误的INSERT语句是否应该返回一条警告，默认为FALSE</td>
+		<td>BOOL</td>
+	</tr>
 </table>
 
-- ft_boolean_syntax 可以和布尔查找一起用的运算符
-- group_concat_max_len GROUP_CONCAT结果的字符串长度
-- lower_case_tables_name 表名和数据库名的大小写敏感性
-- sql_select_limit SELECT语句结果最大行数
-- sql_warnings 错误的INSERT语句是否应该返回一条警告
-   
 ##### 事务
-- autocommit 是否开启事务自动提交
-- innodb_lock_wait_timeout 事务等待锁的最长时间
-- tx_isolation 默认的事务隔离级别
+<table>
+	<tr>
+		<th><a href="autocommit.md">autocommit</a></th>
+		<td>是否开启事务自动提交</td>
+		<td>BOOL</td>
+	</tr>
+	<tr>
+		<th>innodb_lock_wait_timeout</th>
+		<td>事务等待锁的最长时间（单位为秒）</td>
+		<td>INTEGER</td>
+	</tr>
+	<tr>
+		<th>tx_isolation</th>
+		<td>默认的事务隔离级别</td>
+		<td>CHAR</td>
+	</tr>
+</table>
 
 ##### 全文索引
-- ft_max_word_len 可以包含在一个全文本索引中的单词最大长度
-- ft_min_word_len 可以包含在一个全文本索引中的单词最小长度
-- ft_stopword_file 包含停词的文件的名字
+<table>
+	<tr>
+		<th>ft_max_word_len</th>
+		<td>可以包含在一个全文本索引中的单词最大长度，默认为84</td>
+		<td>INTEGER</td>
+	</tr>
+	<tr>
+		<th>ft_min_word_len</th>
+		<td>可以包含在一个全文本索引中的单词最小长度，默认为4</td>
+		<td>INTEGER</td>
+	</tr>
+	<tr>
+		<th>ft_stopword_file</th>
+		<td>包含停词的文件名</td>
+		<td>CHAR</td>
+	</tr>
+</table>
 
 ##### 日志
 - log_error 

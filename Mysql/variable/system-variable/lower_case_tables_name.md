@@ -1,4 +1,5 @@
 # lower_case_tables_name
+
 > INTEGER
 
 表名和数据库名的大小写敏感性。
