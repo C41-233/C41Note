@@ -147,11 +147,34 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 </table>
 
 ##### 日志
-- log_error 
+<table>
+	<tr>
+		<th>log_error</th>
+		<td>错误日志的输出文件（标准输出下为<code>stderr</code>）</td>
+		<td>CHAR</td>
+	</tr>
+</table>
 
 ##### 其他
-- concurrent_insert 并发插入模式
-- event_scheduler 是否开启调度器
-- foreign_key_checks 是否开启外键约束检查
-- default_storage_engine 默认存储引擎
-        
+<table>
+    <tr>
+		<th><a href="concurrent_insert.md">concurrent_insert</a></th>
+		<td>并发插入模式</td>
+		<td>INTEGER</td>
+	</tr>
+	<tr>
+		<th>event_scheduler</th>
+		<td>是否开启调度器</td>
+		<td>BOOL</td>
+	</tr>
+	<tr>
+		<th>foreign_key_checks</th>
+		<td>是否开启外键约束检查</td>
+		<td>BOOL</td>
+	</tr>
+	<tr>
+		<th>default_storage_engine</th>
+		<td>默认存储引擎，默认值为<code>InnoDB</code></td>
+		<td>CHAR</td>
+	</tr>
+</table>
