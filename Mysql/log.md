@@ -11,7 +11,11 @@
 - 如果提供了相对目录，则输出到数据目录中。
 
 ## 通用查询日志（General Query Log）
-记录客户端连接与执行的语句。
+记录客户端连接、断开信息以及收到的SQL语句。
+
+语句按照从客户端收到的顺序记录，而非执行的顺序。
+
+默认关闭，通过`--general-log`选项开启。通过`--general-log-file`以及`--log-output`选项设置输出文件。
 
 ## 慢查询日志（Slow Query Log）
 记录花费时间超过`long_query_time`的查询。

@@ -8,7 +8,7 @@
 
 BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 
-特殊系统变量前面不需要使用`@@`。
+通过`SELECT @@<variable>`来查看系统变量的值。特殊系统变量前面不需要使用`@@`。
 
 ---
 
@@ -38,6 +38,11 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 
 ##### 配置
 <table>
+	<tr>
+		<th>datadir</th>
+		<td>数据目录（只读）</td>
+		<td>CHAR</td>
+	</tr>
 	<tr>
 		<th>time_zone</th>
 		<td>时区</td>
@@ -98,7 +103,7 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 	<tr>
 		<th><a href="sql_mode.md">sql_mode</a></th>
 		<td>SQL模式</td>
-		<td>CHAR</td>
+		<td>SET</td>
 	</tr>
 	<tr>
 		<th>sql_select_limit</th>
@@ -157,18 +162,38 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 ##### 日志
 <table>
 	<tr>
-		<th>log_error</th>
-		<td>错误日志的输出文件（标准输出下为<code>stderr</code>）</td>
+		<th>general_log</th>
+		<td>是否开启通用查询日志，默认为0</td>
+		<td>BOOL</td>
+	</tr>
+	<tr>
+		<th>general_log_file</th>
+		<td>通用查询日志输出文件</td>
 		<td>CHAR</td>
 	</tr>
 	<tr>
+		<th>log_error</th>
+		<td>错误日志的输出文件（只读）
+			<br/>输出到控制台时值为<code>stderr</code>
+		</td>
+		<td>CHAR</td>
+	</tr>
+	<tr>
+		<th>log_output</th>
+		<td>通用查询日志与慢查询日志的输出目标
+			<li>TABLE：输出到表
+			<li>FILE：输出到文件</li>
+			<li>NONE：不输出</li>
+		</td>
+		<td>SET</td>
+	</tr>
+	<tr>
 		<th>log_timestamps</th>
-		<td>日志时间戳使用的时区
+		<td>日志时间戳使用的时区（5.7.2+）
 			<li>UTC：默认值</li>
 			<li>SYSTEM：本地时区</li>
 		</td>
 		<td>ENUM</td>
-		<td>5.7.2</td>
 	</tr>
 </table>
 
