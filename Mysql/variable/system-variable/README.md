@@ -87,8 +87,12 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<td>INTEGER</td>
 	</tr>
 	<tr>
-		<th><a href="lower_case_tables_name.md">lower_case_tables_name</a></th>
-		<td>表名和数据库名的大小写敏感性</td>
+		<th>lower_case_tables_name</th>
+		<td>表名和数据库名的大小写敏感性
+            <li>0：大小写敏感</li>
+            <li>1：大小写敏感，保存时全部转换为小写</li> 
+            <li>2：大小写不敏感，保存时不转换</li>
+		</td>
 		<td>INTEGER</td>
 	</tr>
 	<tr>
@@ -116,14 +120,18 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<td>BOOL</td>
 	</tr>
 	<tr>
-		<th>innodb_lock_wait_timeout</th>
-		<td>事务等待锁的最长时间（单位为秒）</td>
-		<td>INTEGER</td>
-	</tr>
-	<tr>
 		<th>tx_isolation</th>
 		<td>默认的事务隔离级别</td>
 		<td>CHAR</td>
+	</tr>
+</table>
+
+##### InnoDB
+<table>
+	<tr>
+		<th>innodb_lock_wait_timeout</th>
+		<td>事务等待锁的最长时间（单位为秒）</td>
+		<td>INTEGER</td>
 	</tr>
 </table>
 
@@ -153,13 +161,26 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<td>错误日志的输出文件（标准输出下为<code>stderr</code>）</td>
 		<td>CHAR</td>
 	</tr>
+	<tr>
+		<th>log_timestamps</th>
+		<td>日志时间戳使用的时区
+			<li>UTC：默认值</li>
+			<li>SYSTEM：本地时区</li>
+		</td>
+		<td>ENUM</td>
+		<td>5.7.2</td>
+	</tr>
 </table>
 
 ##### 其他
 <table>
     <tr>
-		<th><a href="concurrent_insert.md">concurrent_insert</a></th>
-		<td>并发插入模式</td>
+		<th>concurrent_insert</th>
+		<td>并发插入模式
+		    <li>0：不允许并发</li>
+            <li>1：当表中无碎片时，在一个进程读表时，另一个进程在尾部并发插入  </li>
+            <li>2：无论表中是否有碎片，，在一个进程读表时，另一个进程都在尾部并发插入</li>
+		</td>
 		<td>INTEGER</td>
 	</tr>
 	<tr>
