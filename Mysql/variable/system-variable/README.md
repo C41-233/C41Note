@@ -157,6 +157,16 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 ##### 日志
 <table>
 	<tr>
+		<th>binlog_format</th>
+		<td>binlog的格式，默认为`STATEMENT`（5.7.7+），`ROW`（5.7.6-）
+			<li>ROW：基于数据行记录</li>
+			<li>STATEMENT：基于语句记录</li>
+			<li>MIXED：默认情况下基于STATEMENT，特殊情况下基于ROW</li>
+		</td>
+		<td>ENUM</td>
+		<td>G,S</td>
+	</tr>
+	<tr>
 		<th>general_log</th>
 		<td>是否开启通用查询日志，默认为0</td>
 		<td>BOOL</td>
