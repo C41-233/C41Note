@@ -34,6 +34,33 @@ binlog在一个事务完成前或语句执行后，且在锁被释放前立即�
 
 binlog中涉及的密码不会以明文输出。
 
+binlog有三种模式，基于语句（STATEMENT）、基于行数据（ROW）、混合模式（MIXED）。
+
+InnoDb的隔离级别为`READ_COMMITTED`或`READ_UNCOMMITED`时，只能使用基于行的binlog。
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>优点</th>
+            <th>缺点</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>STATEMENT</th>
+            <td>产生日志数据量少，备份恢复速度快</td>
+            <td>语句执行结果可能是不确定的
+            <br/>加锁时间长</td>
+        </tr>
+        <tr>
+            <th>ROW</th>
+            <td>数据变更的记录结果确定<br/>加锁时间短</td>
+            <td>当变更的行较多时产生更多日志</td>
+        </tr>
+    </tbody>
+</table>
+
 查看`log_bin`系统变量是否开启（与`--log-bin`不同）。
 
 通过`--log-bin`选项设置输出文件。
