@@ -12,15 +12,6 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 
 ---
 
-##### 特殊
-<table>
-	<tr>
-		<th>current_user</th>
-		<td>当前用户（只读）</td>
-		<td>CHAR</td>
-	</tr>
-</table>
-
 ##### 配置
 <table>
 	<tr>

@@ -1,5 +1,13 @@
 # 标量函数 - 数据库
 
+## CURRENT_USER	
+
+`CHAR CURRENT_USER()`
+
+`CHAR CURRENT_USER`
+
+返回当前登陆用户名。
+
 ## DATABASE	
 
 `CHAR DATABASE()`

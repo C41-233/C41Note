@@ -78,6 +78,7 @@
 - [UPDATEXML](scalar-function-xml.md#UPDATEXML)
 
 ### 数据库
+- [CURRENT_USER](scalar-function-database.md#CURRENT_USER)
 - [DATABASE](scalar-function-database.md#DATABASE)
 - [DEFAULT](scalar-function-database.md#DEFAULT)
 - [FOUND_ROWS](scalar-function-database.md#FOUND_ROWS)
