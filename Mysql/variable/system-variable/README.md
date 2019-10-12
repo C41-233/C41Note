@@ -172,6 +172,11 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<td>CHAR</td>
 	</tr>
 	<tr>
+		<th>log_bin</th>
+		<td>是否开启binlog（只读）</td>
+		<td>BOOL</td>
+	</tr>
+	<tr>
 		<th>log_error</th>
 		<td>错误日志的输出文件（只读）
 			<br/>输出到控制台时值为<code>stderr</code>
