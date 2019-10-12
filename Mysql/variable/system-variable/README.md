@@ -8,27 +8,12 @@
 
 BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 
-通过`SELECT @@<variable>`来查看系统变量的值。特殊系统变量前面不需要使用`@@`。
+通过`SELECT @@<variable>`来查看系统变量的值。
 
 ---
 
 ##### 特殊
 <table>
-	<tr>
-		<th>current_date</th>
-		<td>当前系统日期（只读）</td>
-		<td>DATE</td>
-	</tr>
-	<tr>
-		<th>current_time</th>
-		<td>当前系统时间（只读）</td>
-		<td>TIME</td>
-	</tr>
-	<tr>
-		<th>current_timestamp</th>
-		<td>当前系统时间戳（只读）</td>
-		<td>TIMESTAMP</td>
-	</tr>
 	<tr>
 		<th>current_user</th>
 		<td>当前用户（只读）</td>
@@ -42,6 +27,7 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<th>datadir</th>
 		<td>数据目录（只读）</td>
 		<td>CHAR</td>
+		<td>GLOBAL</td>
 	</tr>
 	<tr>
 		<th>time_zone</th>
@@ -175,6 +161,11 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<th>log_bin</th>
 		<td>是否开启binlog（只读）</td>
 		<td>BOOL</td>
+	</tr>
+	<tr>
+		<th>log_bin_basename</th>
+		<td>binlog文件名（只读）</td>
+		<td>CHAR</td>
 	</tr>
 	<tr>
 		<th>log_error</th>
