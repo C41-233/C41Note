@@ -207,6 +207,16 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<td>ENUM</td>
 		<td>G</td>
 	</tr>
+	<tr>
+		<th>sync_binlog</th>
+		<td>binlog刷新到磁盘的方式，默认为1
+			<li>0：不主动刷新到磁盘，依赖操作系统</li>
+			<li>1：每个事务提交前都刷新到磁盘</li>
+			<li>N：每N个事务提交组刷新到磁盘</li>
+		</td>
+		<td>INTEGER</td>
+		<td>G</td>
+	</tr>
 </table>
 
 ##### 其他
