@@ -259,6 +259,12 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<td>BOOL</td>
 		<td>G</td>
 	</tr>
+	<tr>
+		<th>slow_query_log_file</th>
+		<td>慢查询日志输出文件</td>
+		<td>CHAR</td>
+		<td>G</td>
+	</tr>
 </table>
 
 ### 其他

@@ -20,6 +20,8 @@
 ## 慢查询日志（Slow Query Log）
 记录花费时间超过`long_query_time`且至少检查超过`min_examined_row_limit`行的查询。
 
+通过选项`--slow-query-log`开启慢查询日志，通过`--slow-query-log-file`和`log_output`设置输出文件（默认为`<hostname>-slow.log`）。
+
 ## DDL Log
 记录DDL语句。
 
