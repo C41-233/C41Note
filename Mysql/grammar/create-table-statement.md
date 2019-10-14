@@ -20,12 +20,12 @@
 
 ###### table-element    
 > *column-name* *data-type* [[**NOT**] **NULL**]  
-[ **PRIMARY KEY** | **UNIQUE** [**KEY**] | **CHECK** *check-condition* ] [**AUTO_INCREMENT**]  
-[ **DEFAULT** *value* | **COMMENT** *alphanumeric-literal* ]\*  
-[ **CONSTRAINT** [*constraint-name*] ]  
 { *[primary-key](#primary-key)* | *[alternate-key](#alternate-key)* | *[foreign-key](#foreign-key)* | **CHECK** *check-condition* }  
-{**UNIQUE** | **FULLTEXT** | **SPATIAL**} {**INDEX** | **KEY**} [*index-name*] [ **USING** {**BTREE** | **HASH**} ]  
-**(** *sort-specification* [**,** *sort-specification*]\* **)**  
+[ **AUTO_INCREMENT** ]  
+[ **DEFAULT** *value* | **COMMENT** *alphanumeric-literal* ]\*  
+[ **CONSTRAINT** *constraint-name* ]  
+[ {**UNIQUE** | **FULLTEXT** | **SPATIAL**} {**INDEX** | **KEY**} *index-name* [ **USING** {**BTREE** | **HASH**} ]  
+[ **(** *[sort-specification](#sort-specification)* [**,** *[sort-specification](#sort-specification)*]\* **)** ]  
 
 ###### column-reference-group
 > **(** *column-name* [**,** *column-name*]\* **)**
@@ -99,6 +99,9 @@ MySQL自动为每个主键创建索引，默认情况下索引名为PRIMARY，�
 - NO ACTION	等价于RESTRICT
 
 为了与其他SQL产品兼容，外键约束的MATCH子句允许存在，但会被忽略。
+
+#### 自增键
+https://dev.mysql.com/doc/refman/5.7/en/innodb-auto-increment-handling.html
 
 #### 表完整性约束
 CHECK完整性约束保证在表变化时作检查。
