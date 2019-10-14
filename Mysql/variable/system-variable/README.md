@@ -12,7 +12,7 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 
 ---
 
-##### 配置
+### 配置
 <table>
 	<tr>
 		<th>datadir</th>
@@ -34,7 +34,7 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 	</tr>
 </table>
 
-##### 字符集
+### 字符集
 <table>
 	<tr>
 		<th>character_set_client</th>
@@ -50,7 +50,7 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 	</tr>
 </table>
 
-##### SQL
+### SQL
 <table>
 	<tr>
 		<th>auto_increment_offset</th>
@@ -106,7 +106,7 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 	</tr>
 </table>
 
-##### 事务
+### 事务
 <table>
 	<tr>
 		<th><a href="autocommit.md">autocommit</a></th>
@@ -122,7 +122,7 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 	</tr>
 </table>
 
-##### InnoDB
+### InnoDB
 <table>
 	<tr>
 		<th>innodb_lock_wait_timeout</th>
@@ -132,7 +132,7 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 	</tr>
 </table>
 
-##### 全文索引
+### 全文索引
 <table>
 	<tr>
 		<th>ft_max_word_len</th>
@@ -154,50 +154,8 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 	</tr>
 </table>
 
-##### 日志
+### 日志
 <table>
-	<tr>
-		<th>binlog_format</th>
-		<td>binlog的格式，默认为`STATEMENT`（5.7.7+），`ROW`（5.7.6-）
-			<li>ROW：基于数据行记录</li>
-			<li>STATEMENT：基于语句记录</li>
-			<li>MIXED：默认情况下基于STATEMENT，特殊情况下基于ROW</li>
-		</td>
-		<td>ENUM</td>
-		<td>G,S</td>
-	</tr>
-	<tr>
-		<th>general_log</th>
-		<td>是否开启通用查询日志，默认为0</td>
-		<td>BOOL</td>
-		<td>G</td>
-	</tr>
-	<tr>
-		<th>general_log_file</th>
-		<td>通用查询日志输出文件</td>
-		<td>CHAR</td>
-		<td>G</td>
-	</tr>
-	<tr>
-		<th>log_bin</th>
-		<td>是否开启binlog（只读）</td>
-		<td>BOOL</td>
-		<td>G</td>
-	</tr>
-	<tr>
-		<th>log_bin_basename</th>
-		<td>binlog文件名（只读）</td>
-		<td>CHAR</td>
-		<td>G</td>
-	</tr>
-	<tr>
-		<th>log_error</th>
-		<td>错误日志的输出文件（只读）
-			<br/>输出到控制台时值为<code>stderr</code>
-		</td>
-		<td>CHAR</td>
-		<td>G</td>
-	</tr>
 	<tr>
 		<th>log_output</th>
 		<td>通用查询日志与慢查询日志的输出目标
@@ -217,6 +175,46 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<td>ENUM</td>
 		<td>G</td>
 	</tr>
+</table>
+
+- 错误日志
+
+<table>
+	<tr>
+		<th>log_error</th>
+		<td>错误日志的输出文件（只读）
+			<br/>输出到控制台时值为<code>stderr</code>
+		</td>
+		<td>CHAR</td>
+		<td>G</td>
+	</tr>
+</table>
+
+- binlog
+
+<table>
+	<tr>
+		<th>binlog_format</th>
+		<td>binlog的格式，默认为`STATEMENT`（5.7.7+），`ROW`（5.7.6-）
+			<li>ROW：基于数据行记录</li>
+			<li>STATEMENT：基于语句记录</li>
+			<li>MIXED：默认情况下基于STATEMENT，特殊情况下基于ROW</li>
+		</td>
+		<td>ENUM</td>
+		<td>G,S</td>
+	</tr>
+	<tr>
+		<th>log_bin</th>
+		<td>是否开启binlog（只读）</td>
+		<td>BOOL</td>
+		<td>G</td>
+	</tr>
+	<tr>
+		<th>log_bin_basename</th>
+		<td>binlog文件名（只读）</td>
+		<td>CHAR</td>
+		<td>G</td>
+	</tr>
 	<tr>
 		<th>sync_binlog</th>
 		<td>binlog刷新到磁盘的方式，默认为1
@@ -229,7 +227,41 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 	</tr>
 </table>
 
-##### 其他
+- 通用查询日志
+
+<table>
+	<tr>
+		<th>general_log</th>
+		<td>是否开启通用查询日志，默认为0</td>
+		<td>BOOL</td>
+		<td>G</td>
+	</tr>
+	<tr>
+		<th>general_log_file</th>
+		<td>通用查询日志输出文件</td>
+		<td>CHAR</td>
+		<td>G</td>
+	</tr>
+</table>
+
+- 慢查询日志
+
+<table>
+	<tr>
+		<th>long_query_time</th>
+		<td>查询时间大于该值会记录至慢查询日志，默认为10</td>
+		<td>INTEGER</td>
+		<td>G,S</td>
+	</tr>
+	<tr>
+		<th>slow_query_log</th>
+		<td>是否开启慢查询日志，默认为`FALSE`</td>
+		<td>BOOL</td>
+		<td>G</td>
+	</tr>
+</table>
+
+### 其他
 <table>
     <tr>
 		<th>concurrent_insert</th>

@@ -18,7 +18,7 @@
 默认关闭，通过`--general-log`选项开启。通过`--general-log-file`以及`--log-output`选项设置输出文件。
 
 ## 慢查询日志（Slow Query Log）
-记录花费时间超过`long_query_time`的查询。
+记录花费时间超过`long_query_time`且至少检查超过`min_examined_row_limit`行的查询。
 
 ## DDL Log
 记录DDL语句。
