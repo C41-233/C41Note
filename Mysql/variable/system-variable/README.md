@@ -135,6 +135,12 @@ BOOL类型的变量可以设值`ON`/`OFF`、`TRUE`/`FALSE`、`1`/`0`。
 		<td>G</td>
 	</tr>
 	<tr>
+		<th>innodb_file_per_table</th>
+		<td>是否将InnoDb的表的元信息在每个文件，默认开启</td>
+		<td>BOOL</td>
+		<td>G</td>
+	</tr>
+	<tr>
 		<th>innodb_lock_wait_timeout</th>
 		<td>事务等待锁的最长时间（单位为秒）</td>
 		<td>INTEGER</td>
