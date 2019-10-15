@@ -4,9 +4,9 @@
 	<tr>
 		<th>innodb_autoinc_lock_mode</th>
 		<td>控制自增键插入模式，默认为1
-			<li>0：traditional</li>
-			<li>1：consecutive</li>
-			<li>2：interleaved</li>
+			<li>0：traditional，传统</li>
+			<li>1：consecutive，连续</li>
+			<li>2：interleaved，交错</li>
 		</td>
 		<td>INTEGER</td>
 		<td>G</td>
