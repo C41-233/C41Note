@@ -103,6 +103,11 @@ MySQL自动为每个主键创建索引，默认情况下索引名为PRIMARY，�
 #### 自增键
 https://dev.mysql.com/doc/refman/5.7/en/innodb-auto-increment-handling.html
 
+在InnoDb中，可以通过`innodb_autoinc_lock_mode`控制自增键的插入方式：
+- tradition（经典）：所有insert-like语句执行过程中获取表级auto-inc锁（非事务过程中），保证值分配的确定性、连续性、可重复性（主从复制一致），并发能力低。
+- consecutive（连续）：对simple-insert优化，一次性计算出插入个数并生成连续的插入值。auto_inc不需要等到语句结束，可以提前释放。这是InnoDb的默认值。
+- interleaved（交错）：不加auto_inc锁，并发性能高。同一个语句生成的值可能不连续。（对statement模式的主从复制是不安全的）
+
 #### 表完整性约束
 CHECK完整性约束保证在表变化时作检查。
 
