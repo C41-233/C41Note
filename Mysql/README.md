@@ -14,6 +14,8 @@
 ## 配置
 1. [HELP语句](grammar/help-statement.md)
 1. [系统变量](variable/system-variable/)
+	1. [通用系统变量](variable/system-variable/general-variables.md)
+	1. [InnoDb系统变量](variable/system-variable/innodb-variables.md)
 1. [系统状态](variable/system-status-value.md)
 1. [日志](log.md)
 

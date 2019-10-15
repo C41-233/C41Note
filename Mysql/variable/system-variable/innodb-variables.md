@@ -1,0 +1,36 @@
+# InnoDb系统变量
+
+<table>
+	<tr>
+		<th>innodb_autoinc_lock_mode</th>
+		<td>控制自增键插入模式，默认为1
+			<li>0：traditional</li>
+			<li>1：consecutive</li>
+			<li>2：interleaved</li>
+		</td>
+		<td>INTEGER</td>
+		<td>G</td>
+	</tr>
+	<tr>
+		<th>innodb_flush_log_at_trx_commit</th>
+		<td>控制InnoDb的日志刷到磁盘的速度，默认为1
+			<li>0：每秒一次生成日志并刷新到磁盘</li>
+			<li>1：每次事务提交时生成日志并刷新到磁盘</li>
+			<li>2：每次事务提交时生成日志，并每秒刷新到磁盘</li>
+		</td>
+		<td>INTEGER</td>
+		<td>G</td>
+	</tr>
+	<tr>
+		<th>innodb_file_per_table</th>
+		<td>是否将InnoDb的表的元信息在每个文件，默认开启</td>
+		<td>BOOL</td>
+		<td>G</td>
+	</tr>
+	<tr>
+		<th>innodb_lock_wait_timeout</th>
+		<td>事务等待锁的最长时间（单位为秒）</td>
+		<td>INTEGER</td>
+		<td>G,S</td>
+	</tr>
+</table>
