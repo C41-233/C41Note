@@ -153,3 +153,9 @@ InnoDb中的聚簇索引构成为：
 ##### 次级索引（Secondary Index）
 
 非聚簇索引都称为次级索引，次级索引指向了聚簇索引。
+
+## Doublewrite Buffer
+
+磁盘IO和文件系统IO存在最小单位，数据页通常大于这个值，刷盘时可能因断电导致page损坏。此时无法通过redo log来恢复，因为可能未在事务中修改的数据一并损坏了。
+
+InnoDb先将数据页写入Doublewrite Buffer（顺序写），再将数据刷到对应的磁盘（随机写）。
