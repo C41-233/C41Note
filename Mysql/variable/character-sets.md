@@ -22,11 +22,23 @@
 
 因历史遗留，`utf8`仅支持最多3字节的标准UTF8（所以不支持emoji），`utf8mb4`是支持最多4字节UTF8。
 
-校对的命名一般以字符集名开头，包含特定的比较规则名称。例如`latin1_bin`、`utf8mb4_general_ci`。
+校对的命名一般以字符集名开头，包含特定的比较规则名称以及后缀。例如`latin1_bin`、`utf8mb4_general_ci`。
 
-- `bin` 以二进制方式存储与比较。
-- `general_ci` 按照字符比较，不区分大小写。
-- `general_cs` 按照字符比较，区分大小写。
-- `unicode_ci` 按照unicode比较（例如`ß=ss`）
+`binary`字符集只包含`binary`校对，比较每个字节。
+
+后缀包含：
+- `_bin` 以字符的值比较。
+- `_ai` 方言无关。
+- `_as` 方言有关。
+- `_ci` 不区分大小写。
+- `_cs` 区分大小写。
+
+如果没有指定`_ai`和`_as`，则`_ci`同时表示`_ai`，`_cs`同时表示`_as`。
+
+比价规则包含：
+- `_general` 按照字符比较。
+- `_unicode` 按照unicode比较（例如`ß=ss`）。
+
+Unicode字符集可以指定UCA版本，没有指定时默认为4.0.0。例如`utf8_unicode_520_ci`指定UCA 5.2.0，`utf8_unicode_ci`指定UCA 4.0.0。
 
 数据库元表使用`utf8`字符集。

@@ -37,16 +37,16 @@
 		<td>G,S</td>
 	</tr>
 	<tr>
-		<th>character_set_client</th>
-		<td>客户端使用的字符集，默认为<code>utf8</code></td>
-		<td>CHAR</td>
-		<td>G,S</td>
-	</tr>
-	<tr>
 		<th>character_set_results</th>
 		<td>查询结果的字符集</td>
 		<td>CHAR</td>
 		<td>G,S</td>
+	</tr>
+	<tr>
+		<th>character_set_system</th>
+		<td>数据库元表使用的字符集，即`ut8`（只读）</td>
+		<td>CHAR</td>
+		<td>G</td>
 	</tr>
 </table>
 
