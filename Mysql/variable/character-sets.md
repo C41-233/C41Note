@@ -28,3 +28,5 @@
 - `general_ci` 按照字符比较，不区分大小写。
 - `general_cs` 按照字符比较，区分大小写。
 - `unicode_ci` 按照unicode比较（例如`ß=ss`）
+
+数据库元表使用`utf8`字符集。
