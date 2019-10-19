@@ -18,7 +18,7 @@ MySQL 5.7的默认值为<code>ONLY_FULL_GROUP_BY, STRICT_TRANS_TABLES, NO_ZERO_I
 	<tr><th>MAXDB</th><td>等价于<code>PIPES_AS_CONCAT, ANSI_QUOTES, IGNORE_SPACE, NO_KEY_OPTIONS, NO_TABLE_OPTIONS, NO_FIELD_OPTIONS, NO_AUTO_CREATE_USER</code></td></tr>
 	<tr><th>MSSQL</th><td>等价于<code>PIPES_AS_CONCAT, ANSI_QUOTES, IGNORE_SPACE, NO_KEY_OPTIONS, NO_TABLE_OPTIONS, NO_FIELD_OPTIONS</code></td></tr>
 	<tr><th>NO_AUTO_CREATE_USER</th><td></td></tr>
-	<tr><th>NO_AUTO_VALUE_ON_ZERO</th><td></td></tr>
+	<tr><th>NO_AUTO_VALUE_ON_ZERO</th><td>允许对AUTO_INCREMENT的列插入0（默认情况下插入0视为插入NULL）</td></tr>
 	<tr><th>NO_BACKSLASH_ESCAPES</th><td>反斜线作为普通字符</td></tr>
 	<tr><th>NO_DIR_IN_CREATE</th><td></td></tr>
 	<tr><th>NO_ENGINE_SUBSTITUTION</th><td></td></tr>
