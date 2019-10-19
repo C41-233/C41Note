@@ -9,16 +9,26 @@
 		<td>G</td>
 	</tr>
 	<tr>
-		<th>time_zone</th>
-		<td>时区</td>
-		<td>CHAR</td>
-		<td>G,S</td>
-	</tr>
-	<tr>
 		<th>version</th>
 		<td>MySQL的版本号（只读）</td>
 		<td>CHAR</td>
 		<td>G</td>
+	</tr>
+</table>
+
+### 时区
+<table>
+	<tr>
+		<th>lc_time_names</th>
+		<td>控制显示日期的语言</td>
+		<td>CHAR</td>
+		<td>G,S</td>
+	</tr>
+	<tr>
+		<th>time_zone</th>
+		<td>时区</td>
+		<td>CHAR</td>
+		<td>G,S</td>
 	</tr>
 </table>
 
