@@ -44,7 +44,7 @@ ENABLE KEYS和DISABLE KEYS子句只用于MyISAM引擎，分别用于开启和关
 ###### column-definition  
 > *column-name* *data-type* [[**NOT**] **NULL**]  
 [**PRIMARY KEY** | **UNIQUE** [**KEY**] | **CHECK** *check-condition*]  
-[**AUTO_INCREMENT**] [**DEFAULT** *value* | **COMMENT** *alphanumeric-literal*]*  
+[**AUTO_INCREMENT**] [**DEFAULT** *value* | **COMMENT** *string-literal*]*  
 
 ADD COLUMN子句用于添加一列，并填充空值（如果无法填充空值，则填充零值）。默认成为最后一列，可以显式指定添加位置。
 

@@ -5,13 +5,13 @@
 	<tr>
 		<th>datadir</th>
 		<td>数据目录（只读）</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G</td>
 	</tr>
 	<tr>
 		<th>version</th>
 		<td>MySQL的版本号（只读）</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G</td>
 	</tr>
 </table>
@@ -21,13 +21,13 @@
 	<tr>
 		<th>lc_time_names</th>
 		<td>控制显示日期的语言</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 	<tr>
 		<th>time_zone</th>
 		<td>时区</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 </table>
@@ -37,55 +37,55 @@
 	<tr>
 		<th>collation_connection</th>
 		<td>语句文本使用的校对</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 	<tr>
 		<th>collation_database</th>
 		<td>当前数据库的默认校对，默认为`latin1_swedish_ci`</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 	<tr>
 		<th>collation_server</th>
 		<td>服务器默认校对，默认为`latin1_swedish_ci`</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 	<tr>
 		<th>character_set_client</th>
 		<td>客户端使用的字符集，默认为<code>utf8</code></td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 	<tr>
 		<th>character_set_connection</th>
 		<td>语句文本使用的字符集，默认为<code>utf8</code></td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 	<tr>
 		<th>character_set_database</th>
 		<td>当前数据库的默认字符集，默认为<code>latin1</code></td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 	<tr>
 		<th>character_set_results</th>
 		<td>查询结果的字符集</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 	<tr>
 		<th>character_set_server</th>
 		<td>服务器默认字符集，默认为`latin1`</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 	<tr>
 		<th>character_set_system</th>
 		<td>数据库元表使用的字符集，即`ut8`（只读）</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G</td>
 	</tr>
 </table>
@@ -107,7 +107,7 @@
 	<tr>
 		<th>ft_boolean_syntax</th>
 		<td>可以和布尔查找一起用的运算符</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G</td>
 	</tr>
 	<tr>
@@ -157,7 +157,7 @@
 	<tr>
 		<th>tx_isolation</th>
 		<td>默认的事务隔离级别</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 </table>
@@ -179,7 +179,7 @@
 	<tr>
 		<th>ft_stopword_file</th>
 		<td>包含停词的文件名（只读）</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G</td>
 	</tr>
 </table>
@@ -215,7 +215,7 @@
 		<td>错误日志的输出文件（只读）
 			<br/>输出到控制台时值为<code>stderr</code>
 		</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G</td>
 	</tr>
 </table>
@@ -242,7 +242,7 @@
 	<tr>
 		<th>log_bin_basename</th>
 		<td>binlog文件名（只读）</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G</td>
 	</tr>
 	<tr>
@@ -269,7 +269,7 @@
 	<tr>
 		<th>general_log_file</th>
 		<td>通用查询日志输出文件</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G</td>
 	</tr>
 </table>
@@ -292,7 +292,7 @@
 	<tr>
 		<th>slow_query_log_file</th>
 		<td>慢查询日志输出文件</td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G</td>
 	</tr>
 </table>
@@ -324,7 +324,7 @@
 	<tr>
 		<th>default_storage_engine</th>
 		<td>默认存储引擎，默认值为<code>InnoDB</code></td>
-		<td>CHAR</td>
+		<td>STRING</td>
 		<td>G,S</td>
 	</tr>
 </table>

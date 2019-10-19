@@ -22,7 +22,7 @@
 > *column-name* *data-type* [[**NOT**] **NULL**]  
 { *[primary-key](#primary-key)* | *[alternate-key](#alternate-key)* | *[foreign-key](#foreign-key)* | **CHECK** *check-condition* }  
 [ **AUTO_INCREMENT** ]  
-[ **DEFAULT** *value* | **COMMENT** *alphanumeric-literal* ]\*  
+[ **DEFAULT** *value* | **COMMENT** *string-literal* ]\*  
 [ **CONSTRAINT** *constraint-name* ]  
 [ {**UNIQUE** | **FULLTEXT** | **SPATIAL**} {**INDEX** | **KEY**} *index-name* [ **USING** {**BTREE** | **HASH**} ]  
 [ **(** *[sort-specification](#sort-specification)* [**,** *[sort-specification](#sort-specification)*]\* **)** ]  
@@ -125,7 +125,7 @@ CHECK完整性约束保证在表变化时作检查。
 | UNION | 指定MERGE引擎合并的表名 | (<table-name> [, <table-name>]\*)  |
 | INSERT_METHOD | 指定MERGE引擎是否允许执行INSERT语句<br/>NO 不允许<br/>FIRST 添加到第一个表<br/>LAST 添加到最后一个表 | NO \| FIRST \| LAST |
 | AUTO_INCREMENT | 指定了自增列的起始值 | <integer-literal> |
-| COMMENT | 用于表的注释 | <alphanumeric-literal> |
+| COMMENT | 用于表的注释 | <string-literal> |
 | AVG_ROW_LENGTH | 指出每个数据行占用的平均字节长度估计值 | <integer-literal> |
 | MAX_ROWS | 指出了表的最大行数估计值 | <integer-literal> |
 | MIN_ROWS | 指出了表的最小行数估计值 | <integer-literal> |
@@ -136,7 +136,7 @@ CHECK完整性约束保证在表变化时作检查。
 | CHECK_SUM |  | 0 \| 1 |
 | DELAY_KEY_WRITE | 	 | 0 \| 1 |
 | PACK_KEYS	 |  | 0 \| 1 \| DEFAULT |
-| PASSWORD	 |  | <alphanumeric-literal> |
+| PASSWORD	 |  | <string-literal> |
 | RAID_TYPE	 |  | 1 \| STRIPED \| RAIDO |
 | RAID_CHUNKS |  | <integer-literal> |
 | RAID_CHUNKSIZE | 	 | <integer-literal> |

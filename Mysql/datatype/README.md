@@ -2,7 +2,7 @@
 
 ###### data-type  
 > *numeric-type* [**UNSIGNED** | **ZEROFILL** | **AUTO_INCREMENT** | **SERIAL DEFAULT VALUE**]*  
-| *[alphanumeric-type](alphanumeric-type.md)* [{**CHARACTER SET** | **CHAR SET** | **CHARSET**} *charset-name* | **COLLATE** *collate-name*]*  
+| *[string-type](string-type.md)* [{**CHARACTER SET** | **CHAR SET** | **CHARSET**} *charset-name* | **COLLATE** *collate-name*]*  
 | *[temporal-type](temporal-type.md)*  
 | *[blob-type](blob-type.md)*  
 | *geometirc-type*  

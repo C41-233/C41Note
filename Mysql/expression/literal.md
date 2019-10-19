@@ -1,7 +1,7 @@
 # literal 字面直接量
 
 ###### literal  
-> *numeric-literal* | *alphanumeric-literal* | *temporal-literal* | *boolean-literal* | *hexadecimal-literal*
+> *numeric-literal* | *string-literal* | *temporal-literal* | *boolean-literal* | *hexadecimal-literal*
 
 ###### digit  
 > **0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9**
@@ -15,7 +15,7 @@
     - 位 bit-literal
 - 十六进制 hexadecimal-literal
 - 布尔 boolean-literal
-- 字符串 alphanumeric-literal
+- 字符串 string-literal
 - 日期时间型 temporal-literal
     - 日期 date-literal
     - 时间 time-literal
@@ -88,7 +88,7 @@ TRUE值为1，FALSE值为0。
 
 ## 字符串直接量
 
-###### alphanumeric-literal  
+###### string-literal  
 > '*character* *'  
 | "*character* *"
 

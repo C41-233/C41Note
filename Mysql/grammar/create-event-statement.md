@@ -6,7 +6,7 @@
 **ON SCHEDULE** *schedule-method*  
 [**ON COMPLETION** [**NOT**] **PRESERVE*]  
 [**ENABLE** | **DISABLE**]  
-[**COMMENT** *alphanumeric-literal*]  
+[**COMMENT** *string-literal*]  
 **DO** *statement*  
 
 ###### event-reference

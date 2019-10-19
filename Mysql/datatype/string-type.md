@@ -1,6 +1,6 @@
 # 字符串数据类型
 
-###### alphanumeric-type  
+###### string-type  
 > [**NATIONAL**] {**CHAR** | **CHARACTER**} [**VARYING**] **(** *length* **)**  
 | [**NATIONAL**] **VARCHAR** **(** *length* **)**  
 | **NCHAR** [**VARYING**] **(** *length* **)**  

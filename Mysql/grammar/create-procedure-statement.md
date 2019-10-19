@@ -27,7 +27,7 @@ CREATE PROCEDURE语句用于创建存储过程。
 ###### procedure-characteristic
 | 特性 | 说明 |
 |---|---|
-| **COMMENT** *alphanumeric-literal* | 用于为存储过程添加注释信息 |
+| **COMMENT** *string-literal* | 用于为存储过程添加注释信息 |
 | **READ SQL DATA** | 存储过程只是查询数据 |
 | **MODIFIES SQL DATA** | 存储过程会添加、修改、删除数据 |
 | **LANGUAGE SQL** | 表示过程体包含SQL语法，而非其他语言 |
