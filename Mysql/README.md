@@ -68,6 +68,7 @@
 1. [字符集和校对](variable/character-sets.md)
 	1. [SHOW CHARACTER SET语句](grammar/show-character-set-statement.md)
 	1. [SHOW COLLATION语句](grammar/show-collation-statement.md)
+	1. [SET CHARSET语句](grammar/set-charset-statement.md)
 	1. [SET NAMES语句](grammar/set-names-statement.md)
 1. 变量
 	1. [系统变量](variable/system-variable.md)

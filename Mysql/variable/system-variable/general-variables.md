@@ -25,6 +25,12 @@
 ### 字符集与校对
 <table>
 	<tr>
+		<th>collation_connection</th>
+		<td>语句文本使用的校对</td>
+		<td>CHAR</td>
+		<td>G,S</td>
+	</tr>
+	<tr>
 		<th>collation_database</th>
 		<td>当前数据库的默认校对，默认为`latin1_swedish_ci`</td>
 		<td>CHAR</td>
@@ -39,6 +45,12 @@
 	<tr>
 		<th>character_set_client</th>
 		<td>客户端使用的字符集，默认为<code>utf8</code></td>
+		<td>CHAR</td>
+		<td>G,S</td>
+	</tr>
+	<tr>
+		<th>character_set_connection</th>
+		<td>语句文本使用的字符集，默认为<code>utf8</code></td>
 		<td>CHAR</td>
 		<td>G,S</td>
 	</tr>
