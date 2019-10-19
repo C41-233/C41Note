@@ -26,7 +26,7 @@ MySQL 5.7的默认值为<code>ONLY_FULL_GROUP_BY, STRICT_TRANS_TABLES, NO_ZERO_I
 	<tr><th>NO_KEY_OPTIONS</th><td></td></tr>
 	<tr><th>NO_TABLE_OPTIONS</th><td></td></tr>
 	<tr><th>NO_UNSIGNED_SUBTRACTION</th><td></td></tr>
-	<tr><th>NO_ZERO_DATE</th><td>禁止日期'0000-00-00'</td></tr>
+	<tr><th>NO_ZERO_DATE</th><td>禁止日期`'0000-00-00'`</td></tr>
 	<tr><th>NO_ZERO_IN_DATE</th><td>禁止月份或日期为0的日期</td></tr>
 	<tr><th>ONLY_FULL_GROUP_BY</th><td>GROUP BY严格符合聚合规则</td></tr>
 	<tr><th>ORACLE</th><td>等价于<code>PIPES_AS_CONCAT, ANSI_QUOTES, IGNORE_SPACE, NO_KEY_OPTIONS, NO_TABLE_OPTIONS, NO_FIELD_OPTIONS, NO_AUTO_CREATE_USER</code></td></tr>
