@@ -49,4 +49,17 @@ public struct Vector3
         return (float) angle;
     }
 
+    /*
+        根据向量绕y轴旋转的角度，获得对应的方向向量（xz平面）
+     */
+    public static Vector3 GetVectorByAngleY(float angle)
+    {
+        var radian = Math.PI / 180f * angle;
+        return new Vector3(
+            (float)Math.Sin(radian), 
+            0f, 
+            (float)Math.Cos(radian)
+        );
+    }
+
 }
