@@ -14,14 +14,6 @@ public struct Vector3
     }
 
     /*
-        计算向量的叉积（向量积）
-     */
-    public static Vector3 CrossProduct(Vector3 lhs, Vector3 rhs)
-    {
-        return new Vector3(lhs.Y * rhs.Z - lhs.Z * rhs.Y, lhs.Z * rhs.X - lhs.X * rhs.Z, lhs.X * rhs.Y - lhs.Y * rhs.X);
-    }
-
-    /*
         计算向量绕y轴旋转的角度，旋转方向为从z轴向x轴旋转（顺时针），z轴正方向为0
     */
     public float GetAngleY()
@@ -50,11 +42,26 @@ public struct Vector3
     }
 
     /*
+        从当前点出发，根据朝向与距离获得目标点
+    */
+    public Vector3 GetPoint(float angleY, float distance){
+        return this + GetVectorByAngleY(angleY) * distance;
+    }
+
+    /*
+        计算向量的叉积（向量积）
+     */
+    public static Vector3 CrossProduct(Vector3 lhs, Vector3 rhs)
+    {
+        return new Vector3(lhs.Y * rhs.Z - lhs.Z * rhs.Y, lhs.Z * rhs.X - lhs.X * rhs.Z, lhs.X * rhs.Y - lhs.Y * rhs.X);
+    }
+
+    /*
         根据向量绕y轴旋转的角度，获得对应的方向向量（xz平面）
      */
-    public static Vector3 GetVectorByAngleY(float angle)
+    public static Vector3 GetVectorByAngleY(float angleY)
     {
-        var radian = Math.PI / 180f * angle;
+        var radian = Math.PI / 180f * angleY;
         return new Vector3(
             (float)Math.Sin(radian), 
             0f, 
