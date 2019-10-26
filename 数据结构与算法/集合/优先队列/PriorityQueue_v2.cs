@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
+/* 最小堆 */
 public class PriorityQueue<T> : IEnumerable<T>
 {
 
