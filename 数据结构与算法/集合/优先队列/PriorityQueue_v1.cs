@@ -9,7 +9,7 @@ public class PriorityQueue<T> : IEnumerable<T>
 
     private readonly Comparison<T> comparison;
 
-    private T[] buffer;
+    private T[] buffer; //数组下标从1开始
 
     public int Count { get; private set; }
 
@@ -17,6 +17,20 @@ public class PriorityQueue<T> : IEnumerable<T>
     {
         this.comparison = comparison;
         buffer = new T[DefaultSize];
+    }
+
+    public PriorityQueue(T[] data, Comparison<T> comparison)
+    {
+        this.comparison = comparison;
+        Count = data.Length;
+        buffer = new T[Count + 1];
+
+        Array.Copy(data, 0, buffer, 1, Count);
+
+		for (var i = Count / 2; i >= 1; i--)
+		{
+			ShiftDown(i);
+		}
     }
 
     public void Enqueue(T value)
