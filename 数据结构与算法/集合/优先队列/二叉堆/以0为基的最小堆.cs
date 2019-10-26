@@ -10,7 +10,7 @@ public class PriorityQueue<T> : IEnumerable<T>
 
     private readonly Comparison<T> comparison;
 
-    private T[] buffer;
+    private T[] buffer; //数组下标从0开始
 
     public int Count { get; private set; }
 
