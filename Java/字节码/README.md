@@ -71,3 +71,29 @@
 - [0F CONSTANT_MethodHandle_info](constant_pool.md#CONSTANT_MethodHandle_info)
 - [10 CONSTANT_MethodType_info](constant_pool.md#CONSTANT_MethodType_info)
 - [12 CONSTANT_InvokeDynamic_info](constant_pool.md#CONSTANT_InvokeDynamic_info)
+
+
+## 访问标志
+表示该类或接口的访问描述符，由掩码组合。
+
+<table>
+	<thead>
+	<tr><th>名称</th><th>值</th><th>描述</th><th>所属</th></tr>
+	</thead>
+	<tr><td>ACC_PUBLIC</td><td>00 01</td><td>public</td><td>class interface</td></tr>
+	<tr><td>ACC_FINAL</td><td>00 10</td><td>final</td><td>class</td></tr>
+	<tr><td>ACC_SUPER</td><td>00 20</td><td>invokespecial</td><td>class interface</td></tr>
+	<tr><td>ACC_INTERFACE</td><td>02 00</td><td>interface</td><td>interface</td></tr>
+	<tr><td>ACC_ABSTRACT</td><td>04 00</td><td>abstract</td><td>class interface</td></tr>
+	<tr><td>ACC_SYNTHETIC</td><td>10 00</td><td>编译器生成</td><td>class interface</td></tr>
+	<tr><td>ACC_ANNOTATION</td><td>20 00</td><td>annotation</td><td>annotation</td></tr>
+	<tr><td>ACC_ENUM</td><td>40 00</td><td>enum</td><td>enum</td></tr>
+</table>
+
+没有设置`ACC_INTERFACE`标志的都被认为是class；设置`ACC_INTERFACE`标志的被认为是接口，同时必须设置`ACC_ABSTRACT`标志。
+
+`ACC_SUPER`标志与Sun的老版本Java编译器向后兼容。Sun当前版本的Java虚拟机中，invokespecial指令的语义比老版本中的更为严格。所有新版本的编译器都必须设置`ACC_SUPER`标志。所有新的Java虚拟机实现都必须实现更新的、更严格的invokespecial语义。Sun的老版本编译器产生class文件时，将`ACC_SUPER`标志设为0，即使设定了这个标志，Sun的老版本Java虚拟机也将忽略它。
+
+在access_flags中所有未使用的位都必须由编译器置0，而且Java虚拟机必须忽略它。
+
+## 类索引
