@@ -112,3 +112,20 @@ java.lang.Object没有父类，其父类常量引用索引为0。
 接口表前两个字节指出容量，然后每一项分别引用常量池中的接口（CONSTANT_Class_info）。
 
 这个数组只容纳那些直接出现在类声明的implements子句或者接口声明的extends子句中的父接口。接口按照在implements子句或extends子句中出现的顺序（从左到右）在这个数组存储。
+
+## 字段表
+
+字段表前两个字节指出容量，然后紧跟field_info数组。只有在源代码中由类或者接口声明了的字段才能在fields列表中列出。
+
+在字段表中，不列出从超类或者父接口继承而来的字段。另一方面，字段表可能会包含在对应的Java源文件中没有叙述的字段，这是因为Java编译器可能会在编译时向类或者接口添加字段。
+
+field_info结构如下：
+<table>
+	<tr><td>u2</td><td>access_flags</td><td>访问标志</td></tr>
+	<tr><td>u2</td><td>name_index</td><td>字段名称（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u2</td><td>descriptor_index</td><td>字段签名（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u2</td><td>attributes_count</td><td>属性表容量</td></tr>
+	<tr><td>attribute_info[attributes_count]</td><td>attributes</td><td>属性表</td></tr>
+</table>
+
+虚拟机能识别的字段属性有：ConstantValue，Deprecated，RuntimeInvisibleAnnotations，RuntimeVisibleAnnotations，Signature，Synthetic。
