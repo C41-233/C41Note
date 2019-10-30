@@ -15,11 +15,11 @@
 	<tr><td>u2</td><td><a href="#版本号">major_version</a></td><td>主版本号</td></tr>
 	<tr><td>u2</td><td>constant_pool_count</td><td>常量池容量</td></tr>
 	<tr><td>cp_info[constant_pool_count-1]</td><td><a href="11.html">constant_pool</a></td><td>常量池</td></tr>
-	<tr><td>u2</td><td><a href="12.html">access_flags</a></td><td>访问标志</td></tr>
-	<tr><td>u2</td><td><a href="13.html">this_class</a></td><td>类索引</td></tr>
-	<tr><td>u2</td><td><a href="13.html">super_class</a></td><td>父类索引</td></tr>
+	<tr><td>u2</td><td><a href="#访问标志">access_flags</a></td><td>访问标志</td></tr>
+	<tr><td>u2</td><td><a href="#类索引">this_class</a></td><td>类索引</td></tr>
+	<tr><td>u2</td><td><a href="#父类索引">super_class</a></td><td>父类索引</td></tr>
 	<tr><td>u2</td><td>interfaces_count</td><td>接口表容量</td></tr>
-	<tr><td>u2[interfaces_count]</td><td><a href="14.html">interfaces</a></td><td>接口表</td></tr>
+	<tr><td>u2[interfaces_count]</td><td><a href="#接口表">interfaces</a></td><td>接口表</td></tr>
 	<tr><td>u2</td><td>fields_count</td><td>字段表容量</td></tr>
 	<tr><td>field_info[fields_count]</td><td><a href="15.html">fields</a></td><td>字段表</td></tr>
 	<tr><td>u2</td><td>methods_count</td><td>方法表容量</td></tr>
@@ -53,7 +53,9 @@
 </table>
 
 ## 常量池
-常量池由`constant_pool_count`表示容量，常量池实际容量为`constant_pool_count-1`，编号为`1~constant_pool_count-1`。当引用常量池编号0时，表示不引用任何项。
+常量池由`constant_pool_count`表示容量，常量池实际容量为`constant_pool_count-1`，索引从1开始。
+
+当引用常量池编号0时，表示不引用任何项。
 
 常量池各个类型的结构不同，但都由第一个字节指出其类型。
 
@@ -97,3 +99,16 @@
 在access_flags中所有未使用的位都必须由编译器置0，而且Java虚拟机必须忽略它。
 
 ## 类索引
+引用常量池中的当前类（CONSTANT_Class_info)。
+
+## 父类索引
+引用常量池中的父类（CONSTANT_Class_info)。
+
+java.lang.Object没有父类，其父类常量引用索引为0。
+
+接口的父类是java.lang.Object。
+
+## 接口表
+接口表前两个字节指出容量，然后每一项分别引用常量池中的接口（CONSTANT_Class_info）。
+
+这个数组只容纳那些直接出现在类声明的implements子句或者接口声明的extends子句中的父接口。接口按照在implements子句或extends子句中出现的顺序（从左到右）在这个数组存储。
