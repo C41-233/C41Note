@@ -103,7 +103,7 @@ long常量。
 </table>
 
 ## CONSTANT_String_info
-字符串常量引用。
+字符串常量引用。本身不包含字符串数据部分，仅指向一个CONSTANT_Utf8_info。
 
 <table>
 	<tr><td>u1</td><td>tag</td><td>08</td></tr>
@@ -111,7 +111,7 @@ long常量。
 </table>
 
 ## CONSTANT_Utf8_info
-utf8编码的字符串字面常量。
+utf8编码的字符串。
 
 <table>
 	<tr><td>u1</td><td>tag</td><td>01</td></tr>
