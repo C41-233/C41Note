@@ -11,21 +11,21 @@
 ## 文件结构
 <table>
 	<tr><td>u4</td><td>magic</td><td>CA FE BA BE</td></tr>
-	<tr><td>u2</td><td><a href="#版本号">minor_version</a></td><td>次版本号</td></tr>
-	<tr><td>u2</td><td><a href="#版本号">major_version</a></td><td>主版本号</td></tr>
+	<tr><td>u2</td><td>minor_version</td><td><a href="#版本号">次版本号</a></td></tr>
+	<tr><td>u2</td><td>major_version</td><td><a href="#版本号">主版本号</a></td></tr>
 	<tr><td>u2</td><td>constant_pool_count</td><td>常量池容量</td></tr>
-	<tr><td>cp_info[constant_pool_count-1]</td><td><a href="11.html">constant_pool</a></td><td>常量池</td></tr>
-	<tr><td>u2</td><td><a href="#访问标志">access_flags</a></td><td>访问标志</td></tr>
-	<tr><td>u2</td><td><a href="#类索引">this_class</a></td><td>类索引</td></tr>
-	<tr><td>u2</td><td><a href="#父类索引">super_class</a></td><td>父类索引</td></tr>
+	<tr><td>cp_info[constant_pool_count-1]</td><td>constant_pool</td><td><a href="11.html">常量池</a></td></tr>
+	<tr><td>u2</td><td>access_flags</td><td><a href="#访问标志">访问标志</a></td></tr>
+	<tr><td>u2</td><td>this_class</td><td><a href="#类索引">类索引</a></td></tr>
+	<tr><td>u2</td><td>super_class</td><td><a href="#父类索引">父类索引</a></td></tr>
 	<tr><td>u2</td><td>interfaces_count</td><td>接口表容量</td></tr>
-	<tr><td>u2[interfaces_count]</td><td><a href="#接口表">interfaces</a></td><td>接口表</td></tr>
+	<tr><td>u2[interfaces_count]</td><td>interfaces</td><td><a href="#接口表">接口表</a></td></tr>
 	<tr><td>u2</td><td>fields_count</td><td>字段表容量</td></tr>
-	<tr><td>field_info[fields_count]</td><td><a href="15.html">fields</a></td><td>字段表</td></tr>
+	<tr><td>field_info[fields_count]</td><td>fields</td><td><a href="#字段表">字段表</a></td></tr>
 	<tr><td>u2</td><td>methods_count</td><td>方法表容量</td></tr>
-	<tr><td>method_info[methods_count]</td><td><a href="16.html">methods</a></td><td>方法表</td></tr>
+	<tr><td>method_info[methods_count]</td><td>methods</td><td><a href="#方法表">方法表</a></td></tr>
 	<tr><td>u2</td><td>attributes_count</td><td>属性表容量</td></tr>
-	<tr><td>attribute_info[attributes_count]</td><td><a href="17.html">attributes</a></td><td>属性表</td></tr>
+	<tr><td>attribute_info[attributes_count]</td><td>attributes</td><td><a href="#属性表">属性表</a></td></tr>
 </table>
 
 - [版本号（minor_version/major_version）](#版本号)
@@ -106,7 +106,7 @@
 
 java.lang.Object没有父类，其父类常量引用索引为0。
 
-接口的父类是java.lang.Object。
+接口的父类是`java.lang.Object`。
 
 ## 接口表
 接口表前两个字节指出容量，然后每一项分别引用常量池中的接口（CONSTANT_Class_info）。
@@ -125,7 +125,67 @@ field_info结构如下：
 	<tr><td>u2</td><td>name_index</td><td>字段名称（CONSTANT_Utf8_info）</td></tr>
 	<tr><td>u2</td><td>descriptor_index</td><td>字段签名（CONSTANT_Utf8_info）</td></tr>
 	<tr><td>u2</td><td>attributes_count</td><td>属性表容量</td></tr>
-	<tr><td>attribute_info[attributes_count]</td><td>attributes</td><td>属性表</td></tr>
+	<tr><td>attribute_info[attributes_count]</td><td>attributes</td><td><a href="#属性表">属性表</a></td></tr>
 </table>
 
+访问标志由如下掩码组成：
+<table>
+	<tr><td>ACC_PUBLIC</td><td>00 01</td><td>public</td></tr>
+	<tr><td>ACC_PRIVATE</td><td>00 02</td><td>private</td></tr>
+	<tr><td>ACC_PROTECTED</td><td>00 04</td><td>protected</td></tr>
+	<tr><td>ACC_STATIC</td><td>00 08</td><td>static</td></tr>
+	<tr><td>ACC_FINAL</td><td>00 10</td><td>final</td></tr>
+	<tr><td>ACC_VOLATILE</td><td>00 40</td><td>volatile</td></tr>
+	<tr><td>ACC_TRANSIENT</td><td>00 80</td><td>transient</td></tr>
+	<tr><td>ACC_SYNTHETIC</td><td>10 00</td><td>编译器生成</td></tr>
+	<tr><td>ACC_ENUM</td><td>40 00</td><td>enum</td></tr>
+</table>
+	
 虚拟机能识别的字段属性有：ConstantValue，Deprecated，RuntimeInvisibleAnnotations，RuntimeVisibleAnnotations，Signature，Synthetic。
+
+## 方法表
+方法表由前两个字节指出容量，然后紧跟method_info数组。方法表中只包括类或者接口中显式定义的方法。
+
+method_info结构如下：
+
+<table>
+	<tr><td>u2</td><td>access_flags</td><td>访问标志</td></tr>
+	<tr><td>u2</td><td>name_index</td><td>方法名称（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u2</td><td>descriptor_index</td><td>方法签名（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u2</td><td>attributes_count</td><td>属性表容量</td></tr>
+	<tr><td>attribute_info[attributes_count]</td><td>attributes</td><td><a href="#属性表">属性表</a></td></tr>
+</table>
+
+访问标志由如下掩码组成：
+
+<table>
+	<tr><td>ACC_PUBLIC</td><td>00 01</td><td>public</td></tr>
+	<tr><td>ACC_PRIVATE</td><td>00 02</td><td>private</td></tr>
+	<tr><td>ACC_PROTECTED</td><td>00 04</td><td>protected</td></tr>
+	<tr><td>ACC_STATIC</td><td>00 08</td><td>static</td></tr>
+	<tr><td>ACC_FINAL</td><td>00 10</td><td>final</td></tr>
+	<tr><td>ACC_SYNCHRONIZED</td><td>00 20</td><td>synchronized</td></tr>
+	<tr><td>ACC_BRIDGE</td><td>00 40</td><td>编译器生成（bridge）</td></tr>
+	<tr><td>ACC_VARARGS</td><td>00 80</td><td>方法带有变长参数</td></tr>
+	<tr><td>ACC_NATIVE</td><td>01 00</td><td>native</td></tr>
+	<tr><td>ACC_ABSTRACT</td><td>04 00</td><td>abstract</td></tr>
+	<tr><td>ACC_STRICT</td><td>08 00</td><td>strictfp</td></tr>
+	<tr><td>ACC_SYNTHETIC</td><td>10 00</td><td>编译器生成</td></tr>
+</table>
+
+编译器会产生的两种方法是`<clinit>`（类初始化方法）和`<init>`（实例构造方法）。
+
+虚拟机能识别的方法属性有：AnnotationDefault，Code，Deprecated，Exception，RuntimeInvisibleAnnotations，RuntimeInvisibleParameterAnnotations，RuntimeVisibleAnnotations，RuntimeVisibleParameterAnnotations，Signature，Synthetic。
+
+## 属性表
+
+属性表在字段表、方法表和Class文件最后都有使用。属性表前两个字节指出容量，然后紧跟attribute_info数组。
+
+attribute_info结构如下：
+
+<table>
+	<tr><td>u2</td><td>name</td><td>属性名称（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u4</td><td>length</td><td>属性数据字节数</td></tr>
+	<tr><td>u1[length]</td><td>info</td><td>属性数据</td></tr>
+</table>
+
