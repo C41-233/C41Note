@@ -2,18 +2,19 @@
 
 ## AnnotationDefault
 
-JDK1.5新增的属性，记录注解类元素的默认值。用于方法表。
+记录注解类元素的默认值。用于方法表。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>AnnotationDefault（Constant_UTF8_info）</td></tr>
 </table>
 
+JDK1.5+
+
 ## BootstrapMethods
 
-JDK1.7新增的属性，保存invoke dynamic指令引用的引导方法限定符。用于类。
+保存invoke dynamic指令引用的引导方法限定符。用于类。
 
 Java SE 7虚拟机规范规定，如果某个类文件结构的常量池中曾经出现过CONSTANT_InvokeDynamic_info类型的常量，那么这个类文件的属性表中必须存在一个明确的BootstrapMethods属性。
-
 
 <table>
 	<tr><td>u2</td><td>name</td><td>BootstrapMethods（Constant_UTF8_info）</td></tr>
@@ -29,6 +30,8 @@ bootstrap_method_info格式如下：
 	<tr><td>u2</td><td>bootstrap_argument_count</td><td>引导方法静态参数数量</td></tr>
 	<tr><td>u2[bootstrap_argument_count]</td><td>bootstrap_arguments</td><td>引导方法静态参数<br/>CONSTANT_String_info<br/>CONSTANT_Class_info<br/>CONSTANT_Integer_info<br/>CONSTANT_Long_info<br/>CONSTANT_Float_info<br/>CONSTANT_Double_info<br/>CONSTANT_MethodHandle_info<br/>CONSTANT_MethodType_info</td></tr>
 </table>
+
+JDK1.7+
 
 ## Code
 
@@ -179,7 +182,7 @@ local_variable_info结构如下：
 
 ## LocalVariableTypeTable
 
-JDK1.5新增的属性，使用特征签名代替描述符，为了引入泛型语法之后能描述泛型局部变量而添加。用于Code属性。
+使用特征签名代替描述符，为了引入泛型语法之后能描述泛型局部变量而添加。用于Code属性。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>LocalVariableTable（Constant_UTF8_info）</td></tr>
@@ -200,42 +203,52 @@ local_variable_info结构如下：
 
 泛型局部变量的有效范围是[start_pc, start_pc+length)。
 
+JDK1.5+
+
 ## RuntimeInvisibleAnnotations
 
-JDK1.5新增的属性，指定运行时不可见的注解。用于类、方法表、字段表。
+指定运行时不可见的注解。用于类、方法表、字段表。
 
 
 <table>
 	<tr><td>u2</td><td>name</td><td>RuntimeInvisibleAnnotations（Constant_UTF8_info）</td></tr>
 </table>
 
+JDK1.5+
+
 ## RuntimeInvisibleParameterAnnotations
 
-JDK1.5新增的属性，指定运行时不可见的参数注解。用于方法表。
+指定运行时不可见的参数注解。用于方法表。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>RuntimeInvisibleParameterAnnotations（Constant_UTF8_info）</td></tr>
 </table>
 
+JDK1.5+
+
 ## RuntimeVisibleAnnotations
 
-JDK1.5新增的属性，指定运行时可见的注解。用于类、方法表、字段表。
+指定运行时可见的注解。用于类、方法表、字段表。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>RuntimeVisibleAnnotations（Constant_UTF8_info）</td></tr>
 </table>
 
+JDK1.5+
+
 ## RuntimeVisibleParameterAnnotations
 
-JDK1.5新增的属性，指定运行时可见的参数注解。用于方法表。
+指定运行时可见的参数注解。用于方法表。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>RuntimeVisibleParameterAnnotations（Constant_UTF8_info）</td></tr>
 </table>
 
+JDK1.5+
+
 ## Signature
 
-JDK1.5新增的属性，支持泛型情况下的方法签名。用于类、方法表、字段表。
+支持泛型情况下的方法签名。用于类、方法表、字段表。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>Signature（Constant_UTF8_info）</td></tr>
@@ -243,13 +256,17 @@ JDK1.5新增的属性，支持泛型情况下的方法签名。用于类、方�
 	<tr><td>u2</td><td>signature_index</td><td>泛型签名（CONSTANT_Utf8_info）</td></tr>
 </table>
 
+JDK1.5+
+
 ## SourceDebugExtension
 
-JDK1.6新增的属性，存储额外的调试信息。用于类。
+存储额外的调试信息。用于类。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>SourceDebugExtension（Constant_UTF8_info）</td></tr>
 </table>
+
+JDK1.6+
 
 ## SourceFile
 
@@ -263,7 +280,7 @@ JDK1.6新增的属性，存储额外的调试信息。用于类。
 
 ## StackMapTable
 
-JDK1.6新增的属性，供新的类型检查验证器检查和处理目标方法的局部变量和操作数栈所需要的类型是否匹配，用于Code属性。
+供新的类型检查验证器检查和处理目标方法的局部变量和操作数栈所需要的类型是否匹配，用于Code属性。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>StackMapTable（Constant_UTF8_info）</td></tr>
@@ -271,6 +288,8 @@ JDK1.6新增的属性，供新的类型检查验证器检查和处理目标方�
 	<tr><td>u2</td><td>stack_map_frame_count</td><td>栈映射帧表长度</td></tr>
 	<tr><td>stack_map_frame_info[stack_map_frame_count]</td><td>stack_map_frame</td><td>栈映射帧表</td></tr>
 </table>
+
+JDK1.6+
 
 ## Synthetic
 标识类、方法或字段为编译器自动生成的，用于类、方法表、字段表。
