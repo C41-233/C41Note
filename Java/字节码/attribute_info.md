@@ -136,3 +136,146 @@ inner_access_flags掩码如下：
 	<tr><td>ACC_ENUM</td><td>40 00</td><td>enum</td></tr>
 </table>
 	
+## LineNumberTable
+
+源码行号与字节码指令的对应关系，用于Code属性。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>LineNumberTable（Constant_UTF8_info）</td></tr>
+	<tr><td>u4</td><td>length</td><td>长度</td></tr>
+	<tr><td>u2</td><td>line_number_table_count</td><td>行号表长度</td></tr>
+	<tr><td>line_number_info[line_number_table_count]</td><td>line_number_table</td><td>行号表</td></tr>
+</table>
+
+line_number_info结构如下：
+
+<table>
+	<tr><td>u2</td><td>start_pc</td><td>字节码索引</td></tr>
+	<tr><td>u2</td><td>line_number</td><td>源文件行号</td></tr>
+</table>
+
+## LocalVariableTable
+
+局部变量描述，用于Code属性。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>LocalVariableTable（Constant_UTF8_info）</td></tr>
+	<tr><td>u4</td><td>length</td><td>长度</td></tr>
+	<tr><td>u2</td><td>local_variable_table_count</td><td>局部变量池长度</td></tr>
+	<tr><td>local_variable_info[local_variable_table_count]</td><td>local_variable_table</td><td>局部变量池</td></tr>
+</table>
+
+local_variable_info结构如下：
+
+<table>
+	<tr><td>u2</td><td>start_pc</td><td>局部变量有效起始位置代码索引</td></tr>
+	<tr><td>u2</td><td>length</td><td>有效代码长度</td></tr>
+	<tr><td>u2</td><td>name</td><td>局部变量名（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u2</td><td>descriptor</td><td>局部变量签名（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u2</td><td>index</td><td>在本地变量表中的索引（4字节索引）</td></tr>
+</table>
+
+局部变量的有效范围是[start_pc, start_pc+length)。
+
+## LocalVariableTypeTable
+
+JDK1.5新增的属性，使用特征签名代替描述符，为了引入泛型语法之后能描述泛型局部变量而添加。用于Code属性。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>LocalVariableTable（Constant_UTF8_info）</td></tr>
+	<tr><td>u4</td><td>length</td><td>长度</td></tr>
+	<tr><td>u2</td><td>local_variable_table_count</td><td>泛型局部变量池长度</td></tr>
+	<tr><td>local_variable_info[local_variable_table_count]</td><td>local_variable_table</td><td>泛型局部变量池</td></tr>
+</table>
+
+local_variable_info结构如下：
+
+<table>
+	<tr><td>u2</td><td>start_pc</td><td>泛型局部变量有效起始位置代码索引</td></tr>
+	<tr><td>u2</td><td>length</td><td>有效代码长度</td></tr>
+	<tr><td>u2</td><td>name</td><td>泛型局部变量名（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u2</td><td>descriptor</td><td>泛型局部变量签名（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u2</td><td>index</td><td>在本地变量表中的索引（4字节索引）</td></tr>
+</table>
+
+泛型局部变量的有效范围是[start_pc, start_pc+length)。
+
+## RuntimeInvisibleAnnotations
+
+JDK1.5新增的属性，指定运行时不可见的注解。用于类、方法表、字段表。
+
+
+<table>
+	<tr><td>u2</td><td>name</td><td>RuntimeInvisibleAnnotations（Constant_UTF8_info）</td></tr>
+</table>
+
+## RuntimeInvisibleParameterAnnotations
+
+JDK1.5新增的属性，指定运行时不可见的参数注解。用于方法表。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>RuntimeInvisibleParameterAnnotations（Constant_UTF8_info）</td></tr>
+</table>
+
+## RuntimeVisibleAnnotations
+
+JDK1.5新增的属性，指定运行时可见的注解。用于类、方法表、字段表。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>RuntimeVisibleAnnotations（Constant_UTF8_info）</td></tr>
+</table>
+
+## RuntimeVisibleParameterAnnotations
+
+JDK1.5新增的属性，指定运行时可见的参数注解。用于方法表。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>RuntimeVisibleParameterAnnotations（Constant_UTF8_info）</td></tr>
+</table>
+
+## Signature
+
+JDK1.5新增的属性，支持泛型情况下的方法签名。用于类、方法表、字段表。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>Signature（Constant_UTF8_info）</td></tr>
+	<tr><td>u4</td><td>length</td><td>00 00 00 02</td></tr>
+	<tr><td>u2</td><td>signature_index</td><td>泛型签名（CONSTANT_Utf8_info）</td></tr>
+</table>
+
+## SourceDebugExtension
+
+JDK1.6新增的属性，存储额外的调试信息。用于类。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>SourceDebugExtension（Constant_UTF8_info）</td></tr>
+</table>
+
+## SourceFile
+
+记录源文件名称，用于类。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>SourceFile（Constant_UTF8_info）</td></tr>
+	<tr><td>u4</td><td>length</td><td>00 00 00 02</td></tr>
+	<tr><td>u2</td><td>sourcefile_index</td><td>源文件名（Constant_UTF8_info）</td></tr>
+</table>
+
+## StackMapTable
+
+JDK1.6新增的属性，供新的类型检查验证器检查和处理目标方法的局部变量和操作数栈所需要的类型是否匹配，用于Code属性。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>StackMapTable（Constant_UTF8_info）</td></tr>
+	<tr><td>u4</td><td>length</td><td>长度</td></tr>
+	<tr><td>u2</td><td>stack_map_frame_count</td><td>栈映射帧表长度</td></tr>
+	<tr><td>stack_map_frame_info[stack_map_frame_count]</td><td>stack_map_frame</td><td>栈映射帧表</td></tr>
+</table>
+
+## Synthetic
+标识类、方法或字段为编译器自动生成的，用于类、方法表、字段表。
+
+<table>
+	<tr><td>u2</td><td>name</td><td>Synthetic（Constant_UTF8_info）</td></tr>
+	<tr><td>u4</td><td>length</td><td>00 00 00 00</td></tr>
+</table>
