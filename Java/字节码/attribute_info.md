@@ -37,6 +37,8 @@ JDK1.7+
 
 Java字节码指令序列，用于方法表。
 
+[字节码参考](code.md)
+
 <table>
 	<tr><td>u2</td><td>name</td><td>Code（Constant_UTF8_info）</td></tr>
 	<tr><td>u4</td><td>length</td><td>长度</td></tr>
