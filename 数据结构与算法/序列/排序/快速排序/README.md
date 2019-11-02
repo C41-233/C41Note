@@ -1,5 +1,7 @@
 # 快速排序
 
+快速排序，又称划分交换排序。
+
 ## 算法描述
 
 在n个数的数组中，取定一个数作为基准，把小于等于它的数分划到它的左侧，把大于它的数分划到它的右侧，分划时原先元素的相对顺序可以保持不变，左右两侧可以为空。随后递归地对左右两侧进行划分。
@@ -33,7 +35,9 @@
     <tr><td>17 13 05 42 <strong>46</strong> <strong>94</strong> 55 70 82 100</td><td>基准</td></tr>
 </table>
 
-#### 2. 取最后一个数为基准（不稳定实现）
+#### 2. Lomuto partition scheme
+
+取最后一个数为基准，不稳定实现。
 
 不断把右侧小于等于基准的元素交换到左侧来。
 
@@ -157,7 +161,7 @@ private static void QuickSort<T>(T[] array, int start, int end, Comparison<T> co
 }
 ```
 
-#### 选取最后一个数为基准
+#### Lomuto partition scheme
 
 ##### C#
 ``` C#
