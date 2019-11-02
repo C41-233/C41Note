@@ -77,6 +77,47 @@ private static int Partition<T>(T[] array, int start, int end, Comparison<T> com
 }
 ```
 
+### Hoare partition scheme
+
+``` C#
+public static void QuickSort<T>(T[] array, Comparison<T> comparator)
+{
+    QuickSort(array, 0, array.Length - 1, comparator);
+}
+
+private static void QuickSort<T>(T[] array, int start, int end, Comparison<T> comparator)
+{
+    if (start < end)
+    {
+        var pivotPos = Partition(array, start, end, comparator);
+        QuickSort(array, start, pivotPos - 1, comparator);
+        QuickSort(array, pivotPos + 1, end, comparator);
+    }
+}
+
+private static int Partition<T>(T[] array, int start, int end, Comparison<T> comparator)
+{
+    var pivot = array[start + (end - start) / 2];
+    var i = start - 1;
+    var j = end + 1;
+    while (true)
+    {
+        do
+        {
+            i++;
+        } while (comparator(array[i], pivot) < 0);
+        do
+        {
+            j--;
+        } while (comparator(array[j], pivot) > 0);
+
+        if (i >= j)
+            return j;
+        Swap(ref array[i], ref array[j]);
+    }
+}
+```
+
 ### 三数中值（与最后一个数交换）
 
 ``` C#
