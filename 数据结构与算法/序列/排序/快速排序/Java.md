@@ -81,18 +81,3 @@ private static <T> int pivot(T[] array, int left, int right, Comparator<T> compa
     return center;
 }
 ```
-
-### 备注
-
-``` Java
-private static <T> void swap(T[] array, int left, int right)
-{
-    if(left==right){
-        return;
-    }
-    T temp = array[left];
-    array[left] = array[right];
-    array[right] = temp;
-}
-```
-

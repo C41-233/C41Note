@@ -172,14 +172,3 @@ private static int Pivot<T>(T[] array, int left, int right, Comparison<T> compar
     return center;
 }
 ```
-
-### 备注
-
-``` C#
-private static void Swap<T>(ref T x, ref T y)
-{
-    var tmp = x;
-    x = y;
-    y = tmp;
-}
-```
