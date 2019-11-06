@@ -22,7 +22,7 @@
 	- [堆排序](堆排序.md)
 - 归并排序
 	- [归并排序](归并排序.md)
-	- [TimSort](TimSort.md)
+	- [TimSort](TimSort)
 
 #### 基于值的排序
 - [计数排序](计数排序.md)
