@@ -43,18 +43,20 @@ Class文件结构不符合规范时，虚拟机应当抛出`java.lang.ClassForma
 		<tr><th>编译器</th><th>版本号（字节码）</th><th>版本号（十进制）</th></tr>
 	</thead>
 	<tbody>
-    	<tr><td>jdk1.7.0</td><td>00 00 00 32</td><td>51.0</td></tr>
-    	<tr><td>jdk1.7.0 -target 1.6</td><td>00 00 00 33</td><td>50.0</td></tr>
-    	<tr><td>jdk1.7.0 -target 1.4 -source 1.4</td><td>00 00 00 30</td><td>48.0</td></tr>
-    	<tr><td>jdk1.6.0</td><td>00 00 00 32</td><td>50.0</td></tr>
-    	<tr><td>jdk1.6.0 -target 1.5</td><td>00 00 00 31</td><td>49.0</td></tr>
-    	<tr><td>jdk1.6.0 -target 1.4 -source 1.4</td><td>00 00 00 30</td><td>48.0</td></tr>
-    	<tr><td>jdk1.5.0_</td><td>00 00 00 31</td><td>49.0</td></tr>
-    	<tr><td>jdk1.5.0 -target 1.4 -source 1.4</td><td>00 00 00 30</td><td>48.0</td></tr>
-    	<tr><td>jdk1.4</td><td>00 00 00 30</td><td>48.0</td></tr>
-    	<tr><td>jdk1.3</td><td>00 00 00 2F</td><td>47.0</td></tr>
-    	<tr><td>jdk1.2</td><td>00 00 00 2E</td><td>46.0</td></tr>
-    	<tr><td>jdk1.1</td><td>00 03 00 2D</td><td>45.3</td></tr>
+    	<tr><td>Java SE 8</td><td>00 00 00 32</td><td>52.0</td></tr>
+    	<tr><td>Java SE 7</td><td>00 00 00 32</td><td>51.0</td></tr>
+    	<tr><td>Java SE 7 -target 1.6</td><td>00 00 00 33</td><td>50.0</td></tr>
+    	<tr><td>Java SE 7 -target 1.4 -source 1.4</td><td>00 00 00 30</td><td>48.0</td></tr>
+    	<tr><td>Java SE 6</td><td>00 00 00 32</td><td>50.0</td></tr>
+    	<tr><td>Java SE 6 -target 1.5</td><td>00 00 00 31</td><td>49.0</td></tr>
+    	<tr><td>Java SE 6 -target 1.4 -source 1.4</td><td>00 00 00 30</td><td>48.0</td></tr>
+    	<tr><td>Java SE 5.0</td><td>00 00 00 31</td><td>49.0</td></tr>
+    	<tr><td>Java SE 5.0 -target 1.4 -source 1.4</td><td>00 00 00 30</td><td>48.0</td></tr>
+    	<tr><td>J2SE 1.4</td><td>00 00 00 30</td><td>48.0</td></tr>
+    	<tr><td>J2SE 1.3</td><td>00 00 00 2F</td><td>47.0</td></tr>
+    	<tr><td>J2SE 1.2</td><td>00 00 00 2E</td><td>46.0</td></tr>
+    	<tr><td>J2SE 1.1</td><td>00 03 00 2D</td><td>45.3</td></tr>
+    	<tr><td>J2SE 1.0.2</td><td></td><td>45.0 - 45.3</td></tr>
     </tbody>
 </table>
 
