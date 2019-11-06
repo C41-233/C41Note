@@ -115,7 +115,10 @@ long常量。
 </table>
 
 ## CONSTANT_Utf8_info
-utf8编码的字符串。
+
+使用MUTF-8编码的字符串（Modified UTF-8，非标准的utf8格式），具体编码方式参见 https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html#modified-utf-8。
+
+参考实现`java.io.DataInputStream`的`readUTF`和`java.io.DataOutputStream`的`writeUTF`。
 
 <table>
 	<tr><td>u1</td><td>tag</td><td>01</td></tr>
