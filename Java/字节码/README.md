@@ -9,6 +9,9 @@
 所有整型数据类型按照大端序存储，即高位字节在前，低位字节在后。
 
 ## 文件结构
+
+Class文件结构不符合规范时，虚拟机应当抛出`java.lang.ClassFormatError`。
+
 <table>
 	<tr><td>u4</td><td>magic</td><td>CA FE BA BE</td></tr>
 	<tr><td>u2</td><td>minor_version</td><td><a href="#版本号">次版本号</a></td></tr>
@@ -32,6 +35,9 @@
 - [常量池（constant_pool）](#常量池)
 
 ## 版本号
+
+虚拟机遇到不支持的版本号时，应当抛出`java.lang.UnsupportedClassVersionError`。
+
 <table>
 	<thead>
 		<tr><th>编译器</th><th>版本号（字节码）</th><th>版本号（十进制）</th></tr>
