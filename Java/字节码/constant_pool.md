@@ -10,6 +10,8 @@
 ## CONSTANT_Double_info
 double常量。
 
+占常量池2个位置。
+
 <table>
 	<tr><td>u1</td><td>tag</td><td>06</td></tr>
 	<tr><td>u8</td><td>bytes</td><td>double</td></tr>
@@ -61,6 +63,8 @@ int、short、char、byte、boolean常量。
 
 ## CONSTANT_Long_info
 long常量。
+
+占常量池2个位置。
 
 <table>
 	<tr><td>u1</td><td>tag</td><td>05</td></tr>

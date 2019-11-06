@@ -61,11 +61,13 @@ Class文件结构不符合规范时，虚拟机应当抛出`java.lang.ClassForma
 </table>
 
 ## 常量池
-常量池由`constant_pool_count`表示容量，常量池实际容量为`constant_pool_count-1`，索引从1开始。
+常量池由`constant_pool_count`表示容量，常量池实际容量为`constant_pool_count-1`，索引范围为[1, constant_pool_count-1]。
 
 当引用常量池编号0时，表示不引用任何项。
 
 常量池各个类型的结构不同，但都由第一个字节指出其类型。
+
+8字节的常量池表项（CONSTANT_Long_info、CONSTANT_Double_info）占2个位置，因此常量池的项数量实际可能少于constant_pool_count-1个。（对编译器不是强制的）
 
 - [01 CONSTANT_Utf8_info](constant_pool.md#CONSTANT_Utf8_info)
 - [03 CONSTANT_Integer_info](constant_pool.md#CONSTANT_Integer_info)
