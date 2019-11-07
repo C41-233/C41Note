@@ -187,6 +187,10 @@ line_number_info结构如下：
 	<tr><td>u2</td><td>line_number</td><td>源文件行号</td></tr>
 </table>
 
+作用域：code
+
+版本：1.0.2+
+
 ## LocalVariableTable
 
 局部变量描述，用于Code属性。
@@ -209,6 +213,10 @@ local_variable_info结构如下：
 </table>
 
 局部变量的有效范围是[start_pc, start_pc+length)。
+
+作用域：code
+
+版本：1.0.2+
 
 ## LocalVariableTypeTable
 
@@ -233,7 +241,9 @@ local_variable_info结构如下：
 
 泛型局部变量的有效范围是[start_pc, start_pc+length)。
 
-JDK1.5+
+作用域：code
+
+版本：5.0+
 
 ## RuntimeInvisibleAnnotations
 
@@ -244,7 +254,9 @@ JDK1.5+
 	<tr><td>u2</td><td>name</td><td>RuntimeInvisibleAnnotations（Constant_UTF8_info）</td></tr>
 </table>
 
-JDK1.5+
+作用域：class、field、method、code
+
+版本：5.0+
 
 ## RuntimeInvisibleParameterAnnotations
 
@@ -254,7 +266,9 @@ JDK1.5+
 	<tr><td>u2</td><td>name</td><td>RuntimeInvisibleParameterAnnotations（Constant_UTF8_info）</td></tr>
 </table>
 
-JDK1.5+
+作用域：method
+
+版本：5.0+
 
 ## RuntimeVisibleAnnotations
 
@@ -264,7 +278,9 @@ JDK1.5+
 	<tr><td>u2</td><td>name</td><td>RuntimeVisibleAnnotations（Constant_UTF8_info）</td></tr>
 </table>
 
-JDK1.5+
+作用域：class、field、method、code
+
+版本：5.0+
 
 ## RuntimeVisibleParameterAnnotations
 
@@ -274,7 +290,9 @@ JDK1.5+
 	<tr><td>u2</td><td>name</td><td>RuntimeVisibleParameterAnnotations（Constant_UTF8_info）</td></tr>
 </table>
 
-JDK1.5+
+作用域：method
+
+版本：5.0+
 
 ## Signature
 
