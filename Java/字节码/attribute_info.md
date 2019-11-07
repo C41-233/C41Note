@@ -2,7 +2,7 @@
 
 ## AnnotationDefault
 
-记录注解类元素的默认值。用于方法表。
+记录注解类元素的默认值。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>AnnotationDefault（Constant_UTF8_info）</td></tr>
@@ -14,7 +14,7 @@
 
 ## BootstrapMethods
 
-保存invoke dynamic指令引用的引导方法限定符。用于类。
+保存invoke dynamic指令引用的引导方法限定符。
 
 Java SE 7虚拟机规范规定，如果某个类文件结构的常量池中曾经出现过CONSTANT_InvokeDynamic_info类型的常量，那么这个类文件的属性表中必须存在一个明确的BootstrapMethods属性。
 
@@ -39,7 +39,7 @@ bootstrap_method_info格式如下：
 
 ## Code
 
-Java字节码指令序列，用于方法表。
+Java字节码指令序列。
 
 [字节码参考](code.md)
 
@@ -73,7 +73,7 @@ exception_info结构如下：
 
 ## ConstantValue
 
-由static final关键字定义的常量值，类型必须为基本类型或String，用于字段表。
+由static final关键字定义的常量值，类型必须为基本类型或String。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>ConstantValue（Constant_UTF8_info）</td></tr>
@@ -87,7 +87,7 @@ exception_info结构如下：
 
 ## Deprecated
 
-被声明为deprecated的类、方法、字段，用于类、方法表、字段表。
+被声明为deprecated的类、方法、字段。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>Deprecated（Constant_UTF8_info）</td></tr>
@@ -100,7 +100,7 @@ exception_info结构如下：
 
 ## EnclosingMethod
 
-局部类或匿名类，标识类所在的外围方法，用于类。
+局部类或匿名类，标识类所在的外围方法。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>EnclosingMethod（Constant_UTF8_info）</td></tr>
@@ -112,7 +112,7 @@ exception_info结构如下：
 
 ## Exceptions
 
-描述方法抛出的异常，即throws子句，用于方法表。
+描述方法抛出的异常，即throws子句。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>Exceptions（Constant_UTF8_info）</td></tr>
@@ -127,7 +127,7 @@ exception_info结构如下：
 
 ## InnerClasses
 
-记录内部类与外部类之间的关联，用于类。
+记录内部类与外部类之间的关联。
 
 如果一个类中定义了内部类，则编译器为它以及它包含的内部类生成InnerClasses属性。
 
@@ -171,7 +171,7 @@ inner_access_flags掩码如下：
 
 ## LineNumberTable
 
-源码行号与字节码指令的对应关系，用于Code属性。
+源码行号与字节码指令的对应关系。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>LineNumberTable（Constant_UTF8_info）</td></tr>
@@ -193,7 +193,7 @@ line_number_info结构如下：
 
 ## LocalVariableTable
 
-局部变量描述，用于Code属性。
+局部变量描述。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>LocalVariableTable（Constant_UTF8_info）</td></tr>
@@ -247,7 +247,7 @@ local_variable_info结构如下：
 
 ## RuntimeInvisibleAnnotations
 
-指定运行时不可见的注解。用于类、方法表、字段表。
+指定运行时不可见的注解。
 
 
 <table>
@@ -260,7 +260,7 @@ local_variable_info结构如下：
 
 ## RuntimeInvisibleParameterAnnotations
 
-指定运行时不可见的参数注解。用于方法表。
+指定运行时不可见的参数注解。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>RuntimeInvisibleParameterAnnotations（Constant_UTF8_info）</td></tr>
@@ -272,7 +272,7 @@ local_variable_info结构如下：
 
 ## RuntimeVisibleAnnotations
 
-指定运行时可见的注解。用于类、方法表、字段表。
+指定运行时可见的注解。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>RuntimeVisibleAnnotations（Constant_UTF8_info）</td></tr>
@@ -284,7 +284,7 @@ local_variable_info结构如下：
 
 ## RuntimeVisibleParameterAnnotations
 
-指定运行时可见的参数注解。用于方法表。
+指定运行时可见的参数注解。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>RuntimeVisibleParameterAnnotations（Constant_UTF8_info）</td></tr>
@@ -296,7 +296,7 @@ local_variable_info结构如下：
 
 ## Signature
 
-支持泛型情况下的方法签名。用于类、方法表、字段表。
+支持泛型情况下的方法签名。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>Signature（Constant_UTF8_info）</td></tr>
@@ -304,21 +304,25 @@ local_variable_info结构如下：
 	<tr><td>u2</td><td>signature_index</td><td>泛型签名（CONSTANT_Utf8_info）</td></tr>
 </table>
 
-JDK1.5+
+作用域：class、method、field
+
+版本：5.0+
 
 ## SourceDebugExtension
 
-存储额外的调试信息。用于类。
+存储额外的调试信息。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>SourceDebugExtension（Constant_UTF8_info）</td></tr>
 </table>
 
-JDK1.6+
+作用域：class
+
+版本：5.0+
 
 ## SourceFile
 
-记录源文件名称，用于类。
+记录源文件名称。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>SourceFile（Constant_UTF8_info）</td></tr>
@@ -326,9 +330,13 @@ JDK1.6+
 	<tr><td>u2</td><td>sourcefile_index</td><td>源文件名（Constant_UTF8_info）</td></tr>
 </table>
 
+作用域：class
+
+版本：1.0.2+
+
 ## StackMapTable
 
-供新的类型检查验证器检查和处理目标方法的局部变量和操作数栈所需要的类型是否匹配，用于Code属性。
+供新的类型检查验证器检查和处理目标方法的局部变量和操作数栈所需要的类型是否匹配。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>StackMapTable（Constant_UTF8_info）</td></tr>
@@ -337,12 +345,18 @@ JDK1.6+
 	<tr><td>stack_map_frame_info[stack_map_frame_count]</td><td>stack_map_frame</td><td>栈映射帧表</td></tr>
 </table>
 
-JDK1.6+
+作用域：code
+
+版本：6+
 
 ## Synthetic
-标识类、方法或字段为编译器自动生成的，用于类、方法表、字段表。
+标识类、方法或字段为编译器自动生成的。
 
 <table>
 	<tr><td>u2</td><td>name</td><td>Synthetic（Constant_UTF8_info）</td></tr>
 	<tr><td>u4</td><td>length</td><td>00 00 00 00</td></tr>
 </table>
+
+作用域：class、method、field
+
+作用域：1.1+
