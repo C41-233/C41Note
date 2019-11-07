@@ -67,6 +67,15 @@ exception_info结构如下：
 
 实际异常捕获代码是[start_pc, end_pc)部分，代码索引指从字节码开始的偏移量。
 
+虚拟机能识别的Code属性有：
+
+- [LineNumberTable](#LineNumberTable)
+- [LocalVariableTable](#LocalVariableTable)
+- [LocalVariableTypeTable](#LocalVariableTypeTable)
+- [RuntimeInvisibleAnnotations](#RuntimeInvisibleAnnotations)
+- [RuntimeVisibleAnnotations](#RuntimeVisibleAnnotations)
+- [StackMapTable](#StackMapTable)
+
 作用域：method
 
 版本：1.0.2+

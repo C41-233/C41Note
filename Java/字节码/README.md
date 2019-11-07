@@ -151,7 +151,14 @@ field_info结构如下：
 	<tr><td>ACC_ENUM</td><td>40 00</td><td>enum</td></tr>
 </table>
 	
-虚拟机能识别的字段属性有：ConstantValue，Deprecated，RuntimeInvisibleAnnotations，RuntimeVisibleAnnotations，Signature，Synthetic。
+虚拟机能识别的字段属性有：
+
+- [ConstantValue](attribute_info.md/#ConstantValue)
+- [Deprecated](attribute_info.md/#Deprecated)
+- [RuntimeInvisibleAnnotations](attribute_info.md/#RuntimeInvisibleAnnotations)
+- [RuntimeVisibleAnnotations](attribute_info.md/#RuntimeVisibleAnnotations)
+- [Signature](attribute_info.md/#Signature)
+- [Synthetic](attribute_info.md/#Synthetic)
 
 ## 方法表
 方法表由前两个字节指出容量，然后紧跟method_info数组。方法表中只包括类或者接口中显式定义的方法。
@@ -185,7 +192,17 @@ method_info结构如下：
 
 编译器会产生的两种方法是`<clinit>`（类初始化方法）和`<init>`（实例构造方法）。
 
-虚拟机能识别的方法属性有：AnnotationDefault，Code，Deprecated，Exception，RuntimeInvisibleAnnotations，RuntimeInvisibleParameterAnnotations，RuntimeVisibleAnnotations，RuntimeVisibleParameterAnnotations，Signature，Synthetic。
+虚拟机能识别的方法属性有：
+- [AnnotationDefault](attribute_info.md/#AnnotationDefault)
+- [Code](attribute_info.md/#Code)
+- [Deprecated](attribute_info.md/#Deprecated)
+- [Exceptions](attribute_info.md/#Exceptions)
+- [RuntimeInvisibleAnnotations](attribute_info.md/#RuntimeInvisibleAnnotations)
+- [RuntimeInvisibleParameterAnnotations](attribute_info.md/#RuntimeInvisibleParameterAnnotations)
+- [RuntimeVisibleAnnotations](attribute_info.md/#RuntimeVisibleAnnotations)
+- [RuntimeVisibleParameterAnnotations](attribute_info.md/#RuntimeVisibleParameterAnnotations)
+- [Signature](attribute_info.md/#Signature)
+- [Synthetic](attribute_info.md/#Synthetic)
 
 ## 属性表
 
@@ -201,24 +218,17 @@ attribute_info结构如下：
 	<tr><td>u1[length]</td><td>info</td><td>属性数据</td></tr>
 </table>
 
-- [AnnotationDefault](attribute_info.md/#AnnotationDefault)
+虚拟机能识别的类属性表有：
+
 - [BootstrapMethods](attribute_info.md/#BootstrapMethods)
-- [Code](attribute_info.md/#Code)
-- [ConstantValue](attribute_info.md/#ConstantValue)
 - [Deprecated](attribute_info.md/#Deprecated)
 - [EnclosingMethod](attribute_info.md/#EnclosingMethod)
-- [Exceptions](attribute_info.md/#Exceptions)
 - [InnerClasses](attribute_info.md/#InnerClasses)
-- [LineNumberTable](attribute_info.md/#LineNumberTable)
-- [LocalVariableTable](attribute_info.md/#LocalVariableTable)
-- [LocalVariableTypeTable](attribute_info.md/#LocalVariableTypeTable)
 - [RuntimeInvisibleAnnotations](attribute_info.md/#RuntimeInvisibleAnnotations)
-- [RuntimeInvisibleParameterAnnotations](attribute_info.md/#RuntimeInvisibleParameterAnnotations)
 - [RuntimeVisibleAnnotations](attribute_info.md/#RuntimeVisibleAnnotations)
-- [RuntimeVisibleParameterAnnotations](attribute_info.md/#RuntimeVisibleParameterAnnotations)
 - [Signature](attribute_info.md/#Signature)
 - [SourceDebugExtension](attribute_info.md/#SourceDebugExtension)
 - [SourceFile](attribute_info.md/#SourceFile)
-- [StackMapTable](attribute_info.md/#StackMapTable)
 - [Synthetic](attribute_info.md/#Synthetic)
+
 
