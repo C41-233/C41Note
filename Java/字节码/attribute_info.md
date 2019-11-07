@@ -77,7 +77,7 @@ exception_info结构如下：
 
 <table>
 	<tr><td>u2</td><td>name</td><td>ConstantValue（Constant_UTF8_info）</td></tr>
-	<tr><td>u4</td><td>length</td><td>00 00 00 02</td></tr>
+	<tr><td>u4</td><td>length</td><td>2</td></tr>
 	<tr><td>u2</td><td>constantvalue_index</td><td>常量索引<br/>CONSTANT_Integer_info<br/>CONSTANT_Long_info<br/>CONSTANT_Float_info<br/>CONSTANT_Double_info<br/>CONSTANT_String_info</td></tr>
 </table>
 
@@ -91,7 +91,7 @@ exception_info结构如下：
 
 <table>
 	<tr><td>u2</td><td>name</td><td>Deprecated（Constant_UTF8_info）</td></tr>
-	<tr><td>u4</td><td>length</td><td>00 00 00 00</td></tr>
+	<tr><td>u4</td><td>length</td><td>0</td></tr>
 </table>
 
 作用域：class、method、field
@@ -300,7 +300,7 @@ local_variable_info结构如下：
 
 <table>
 	<tr><td>u2</td><td>name</td><td>Signature（Constant_UTF8_info）</td></tr>
-	<tr><td>u4</td><td>length</td><td>00 00 00 02</td></tr>
+	<tr><td>u4</td><td>length</td><td>2</td></tr>
 	<tr><td>u2</td><td>signature_index</td><td>泛型签名（CONSTANT_Utf8_info）</td></tr>
 </table>
 
@@ -326,7 +326,7 @@ local_variable_info结构如下：
 
 <table>
 	<tr><td>u2</td><td>name</td><td>SourceFile（Constant_UTF8_info）</td></tr>
-	<tr><td>u4</td><td>length</td><td>00 00 00 02</td></tr>
+	<tr><td>u4</td><td>length</td><td>2</td></tr>
 	<tr><td>u2</td><td>sourcefile_index</td><td>源文件名（Constant_UTF8_info）</td></tr>
 </table>
 
@@ -354,7 +354,7 @@ local_variable_info结构如下：
 
 <table>
 	<tr><td>u2</td><td>name</td><td>Synthetic（Constant_UTF8_info）</td></tr>
-	<tr><td>u4</td><td>length</td><td>00 00 00 00</td></tr>
+	<tr><td>u4</td><td>length</td><td>0</td></tr>
 </table>
 
 作用域：class、method、field
