@@ -189,7 +189,9 @@ method_info结构如下：
 
 ## 属性表
 
-属性表在字段表、方法表和Class文件最后都有使用。属性表前两个字节指出容量，然后紧跟attribute_info数组。
+属性表在字段表、方法表和Class文件最后都有使用。
+
+属性表通过前2个字节引用的字符串来区分，然后4个字节指明数据长度，随后紧跟attribute_info数组。
 
 attribute_info结构如下：
 
@@ -205,7 +207,7 @@ attribute_info结构如下：
 - [ConstantValue](attribute_info.md/#ConstantValue)
 - [Deprecated](attribute_info.md/#Deprecated)
 - [EnclosingMethod](attribute_info.md/#EnclosingMethod)
-- [Exception](attribute_info.md/#Exception)
+- [Exceptions](attribute_info.md/#Exceptions)
 - [InnerClasses](attribute_info.md/#InnerClasses)
 - [LineNumberTable](attribute_info.md/#LineNumberTable)
 - [LocalVariableTable](attribute_info.md/#LocalVariableTable)

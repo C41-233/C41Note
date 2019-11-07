@@ -8,7 +8,9 @@
 	<tr><td>u2</td><td>name</td><td>AnnotationDefault（Constant_UTF8_info）</td></tr>
 </table>
 
-JDK1.5+
+作用域：method
+
+版本：1.5+
 
 ## BootstrapMethods
 
@@ -31,7 +33,9 @@ bootstrap_method_info格式如下：
 	<tr><td>u2[bootstrap_argument_count]</td><td>bootstrap_arguments</td><td>引导方法静态参数<br/>CONSTANT_String_info<br/>CONSTANT_Class_info<br/>CONSTANT_Integer_info<br/>CONSTANT_Long_info<br/>CONSTANT_Float_info<br/>CONSTANT_Double_info<br/>CONSTANT_MethodHandle_info<br/>CONSTANT_MethodType_info</td></tr>
 </table>
 
-JDK1.7+
+作用域：class
+
+版本：7+
 
 ## Code
 
@@ -63,6 +67,10 @@ exception_info结构如下：
 
 实际异常捕获代码是[start_pc, end_pc)部分，代码索引指从字节码开始的偏移量。
 
+作用域：method
+
+版本：1.0.2+
+
 ## ConstantValue
 
 由static final关键字定义的常量值，类型必须为基本类型或String，用于字段表。
@@ -73,6 +81,10 @@ exception_info结构如下：
 	<tr><td>u2</td><td>constantvalue_index</td><td>常量索引<br/>CONSTANT_Integer_info<br/>CONSTANT_Long_info<br/>CONSTANT_Float_info<br/>CONSTANT_Double_info<br/>CONSTANT_String_info</td></tr>
 </table>
 
+作用域：field
+
+版本：1.0.2+
+
 ## Deprecated
 
 被声明为deprecated的类、方法、字段，用于类、方法表、字段表。
@@ -82,6 +94,10 @@ exception_info结构如下：
 	<tr><td>u4</td><td>length</td><td>00 00 00 00</td></tr>
 </table>
 
+作用域：class、method、field
+
+范围：1.1+
+
 ## EnclosingMethod
 
 局部类或匿名类，标识类所在的外围方法，用于类。
@@ -90,16 +106,24 @@ exception_info结构如下：
 	<tr><td>u2</td><td>name</td><td>EnclosingMethod（Constant_UTF8_info）</td></tr>
 </table>
 
-## Exception
+作用域：class
+
+版本：5.0+
+
+## Exceptions
 
 描述方法抛出的异常，即throws子句，用于方法表。
 
 <table>
-	<tr><td>u2</td><td>name</td><td>Exception（Constant_UTF8_info）</td></tr>
+	<tr><td>u2</td><td>name</td><td>Exceptions（Constant_UTF8_info）</td></tr>
 	<tr><td>u4</td><td>length</td><td>长度</td></tr>
 	<tr><td>u2</td><td>exception_table_count</td><td>异常表长度</td></tr>
 	<tr><td>u2[exception_table_count]</td><td>exception_table</td><td>异常表，列举每一个checked异常（CONSTANT_Class_info）</td></tr>
 </table>
+
+作用域：method
+
+版本：1.0.2+
 
 ## InnerClasses
 
@@ -140,7 +164,11 @@ inner_access_flags掩码如下：
 	<tr><td>ACC_ANNOTATION</td><td>20 00</td><td>annotation</td></tr>
 	<tr><td>ACC_ENUM</td><td>40 00</td><td>enum</td></tr>
 </table>
-	
+
+作用域：class
+
+范围：1.1+
+
 ## LineNumberTable
 
 源码行号与字节码指令的对应关系，用于Code属性。
