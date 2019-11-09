@@ -1,3 +1,6 @@
+# 数字转汉字 - C#
+
+``` C#
 public static string NumberToChinese(int num)
 {
     if (num < 0)
@@ -104,3 +107,4 @@ private static void NumberToChineseInternal(StringBuilder sb, int num)
         sb.Append(Digits[num]);
     }
 }
+```
