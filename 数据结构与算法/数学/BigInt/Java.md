@@ -80,41 +80,6 @@ public class BigInt{
 ```
 
 ## 辅助方法
-
-### BufferedBigInt
-
-BufferedBigInt是一个可变的无符号大整数，用于加速大规模计算。主要协助BigInt进行除法运算。
-
-``` Java
-private class BufferedBigInt{
-    
-    private int[] bits;
-    private int intLen;
-    private int offset;
-    
-    public BufferedBigInt();
-    public BufferedBigInt(int val);
-    public BufferedBigInt(int[] val);
-    public BufferedBigInt(BufferedBigInt val);
-    
-    public void clean();
-    public void clean(int val);
-    public void clean(int[] val);
-    public void clean(BufferedBigInt val);
-    
-    public int[] bits_array();
-    private void normalize();
-    
-    public void divide(BufferedBigInt b, BufferedBigInt quotient, BufferedBigInt remainder);
-    public void leftShift(int n);
-    public void rightShift(int n);
-    
-    public int compare(BufferedBigInt b);
-    
-}
-```
-
-### 辅助运算
 ``` Java
 //无符号32位整数转为long
 private static long uint_to_long(int i) {
@@ -995,5 +960,125 @@ public String toString(int radix, char[] digits) {
         buf.append(digitGroup[i]);
     }
     return buf.toString();
+}
+```
+
+## BufferedBigInt
+
+BufferedBigInt是一个可变的无符号大整数，用于加速大规模计算。主要协助BigInt进行除法运算。
+
+``` Java
+private class BufferedBigInt{
+    
+    private int[] bits;
+    private int intLen;
+    private int offset;
+    
+    public BufferedBigInt(){
+        clean();
+    }
+    
+    public BufferedBigInt(int val){
+        clean(val);
+    }
+    
+    public BufferedBigInt(int[] val){
+        clean(val);
+    }
+    
+    public BufferedBigInt(BufferedBigInt val){
+        clean(val);
+    }
+    
+    public void clean(){
+        this.bits = new int[1];
+        this.intLen = 0;
+        this.offset = 0;
+    }
+    
+    public void clean(int val){
+        this.bits = new int[1];
+        this.intLen = 1;
+        this.offset = 0;
+        this.bits[0] = val;
+    }
+
+    public void clean(int[] val){
+        this.bits = val;
+        this.intLen = val.length;
+        this.offset = 0;
+    }
+    
+    public void clean(BufferedBigInt val){
+        this.intLen = val.intLen;
+        this.offset = 0;
+        this.bits = Arrays.copyOfRange(val.bits, val.offset, val.offset+this.intLen);
+    }
+    
+    public int[] bits_array(){
+        if (this.offset != 0 || this.bits.length != this.intLen){
+            return Arrays.copyOfRange(this.bits, this.offset, this.offset+this.intLen);
+        }
+        return this.bits;
+    }
+    private void normalize();
+    
+    public int compare(BufferedBigInt b);
+    
+    public void divide(BufferedBigInt b, BufferedBigInt quotient, BufferedBigInt remainder);
+    
+    public void leftShift(int n);
+    
+    public void rightShift(int n);
+    
+}
+```
+
+### normalize
+``` Java
+//调整成员结构
+private void normalize(){
+    if (this.intLen == 0) {
+        this.offset = 0;
+        return;
+    }
+
+    int index = this.offset;
+    if (this.bits[index] != 0){
+        return;
+    }
+
+    int indexBound = index+this.intLen;
+    do {
+        index++;
+    } while(index<indexBound && this.bits[index]==0);
+
+    int numZeros = index-this.offset;
+    this.intLen -= numZeros;
+    this.offset = this.intLen==0 ?  0 : this.offset+numZeros;
+}
+```
+
+### compare
+``` Java
+public int compare(BufferedBigInt b){
+    if (this.intLen < b.intLen){
+        return -1;
+    }
+    if (this.intLen > b.intLen){
+       return 1;
+    }
+
+    for (int i = this.offset, j = b.offset; i < this.intLen+this.offset; i++,j++) {
+        int b1 = this.bits[i] + 0x80000000;
+        int b2 = b.bits[j]  + 0x80000000;
+        if (b1 < b2){
+            return -1;
+        }
+        if (b1 > b2){
+            return 1;
+        }
+    }
+    return 0;
 }
 ```
