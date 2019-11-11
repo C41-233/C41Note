@@ -420,7 +420,7 @@ public BigInt(long val) {
 }
 ```
 
-## 运算符
+## 值运算
 
 ### 辅助位运算
 ``` Java
@@ -621,8 +621,273 @@ public BigInt mod(BigInt val) {
 }
 ```
 
+## 位运算
+
+### 最小位数
+二进制补码的最小位数。
+``` Java
+public int bitLength() {
+    if (this.bits.length == 0) {
+        return 0;
+    } 
+    
+    int magBitLength = ((this.bits.length-1) << 5) + Integer.bitLength(this.bits[0]);
+    if (this.signum >= 0){
+        return magBitLength;
+    }
+
+    boolean pow2 = Integer.bitCount(this.bits[0]) == 1;
+    for (int i = 1; i < this.bits.length && pow2; i++){
+        pow2 = this.bits[i]==0;
+    }
+    return pow2 ? magBitLength-1 : magBitLength;
+}
+```
+
+### 与
+``` Java
+public BigInt and(BigInt val) {
+    int[] result = new int[Math.max(this.bits.length, val.bits.length)];
+    for (int i = 0; i < result.length; i++){
+        result[i] = this.get_int_at(result.length-i-1) & val.get_int_at(result.length-i-1);
+    }
+    return new BigInt(result);
+}
+```
+
+### 或
+``` Java
+public BigInt or(BigInt val) {
+    int[] result = new int[Math.max(this.bits.length, val.bits.length)];
+    for (int i=0; i<result.length; i++){
+        result[i] = this.get_int_at(result.length-i-1) | val.get_int_at(result.length-i-1);
+    }
+    return new BigInt(result);
+}
+```
+
+### 异或
+``` Java
+public BigInt xor(BigInt val) {
+    int[] result = new int[Math.max(this.bits.length, val.bits.length)];
+    for (int i = 0; i < result.length; i++){
+        result[i] = this.get_int_at(result.length-i-1) ^ val.get_int_at(result.length-i-1);
+    }
+    return new BigInt(result);
+}
+```
+
+### 非
+``` Java
+public BigInt not() {
+    int[] result = new int[this.bits.length];
+    for (int i = 0; i < result.length; i++){
+        result[i] = ~get_int_at(result.length-i-1);
+    }
+    return new BigInt(result);
+}
+```
+
+### 左移
+``` Java
+public BigInt shiftLeft(int n) {
+    if (this.signum == 0){
+        return ZERO;
+    }
+    if (n==0){
+        return this;
+    }
+    if (n<0) {
+        if (n == Integer.MIN_VALUE) {
+            return shiftRight(Integer.MAX_VALUE).shiftRight(1);
+        } else {
+            return shiftRight(-n);
+        }
+    }
+
+    int nInts = n>>>5;
+    int nBits = n&0x1F;
+    int bits[];
+
+    if (nBits == 0) {
+        bits = new int[this.bits.length+nInts];
+        for (int i=0; i<this.bits.length; i++){
+            bits[i] = this.bits[i];
+        }
+    } 
+    else {
+        int i = 0;
+        int nBits2 = 32-nBits;
+        int highBits = this.bits[0]>>>nBits2;
+        if (highBits != 0) {
+            bits = new int[this.bits.length+nInts+1];
+            bits[i++] = highBits;
+        } 
+        else {
+            bits = new int[this.bits.length+nInts];
+        }
+        int j=0;
+        while (j < this.bits.length-1){
+            bits[i++] = this.bits[j]<<nBits | this.bits[j+1]>>>nBits2;
+            j++;
+        }
+        bits[i] = this.bits[j]<<nBits;
+    }
+
+    return new BigInt(bits, this.signum);
+}
+
+```
+
+### 算术右移
+``` Java
+public BigInt shiftRight(int n) {
+    if (n==0){
+        return this;
+    }
+    if (n<0) {
+        if (n == Integer.MIN_VALUE) {
+            return  shiftLeft(Integer.MAX_VALUE).shiftLeft(1);
+        } 
+        else {
+            return shiftLeft(-n);
+        }
+    }
+
+    int nInts = n >>> 5;
+    int nBits = n & 0x1F;
+    int bits[];
+
+    if (nInts >= this.bits.length){
+        return (this.signum >= 0 ? ZERO : MINUS_ONE);
+    }
+        
+    if (nBits == 0) {
+        int newMagLen = this.bits.length-nInts;
+        bits = new int[newMagLen];
+        for (int i = 0; i<newMagLen; i++){
+            bits[i] = this.bits[i];
+        }
+    } 
+    else {
+        int i = 0;
+        int highBits = this.bits[0]>>>nBits;
+        if (highBits != 0) {
+            bits = new int[this.bits.length-nInts];
+            bits[i++] = highBits;
+        } 
+        else {
+            bits = new int[this.bits.length-nInts-1];
+        }
+
+        int nBits2 = 32-nBits;
+        for (int j=0; j < this.bits.length-nInts-1; j++){
+            bits[i++] = this.bits[j]<<nBits2 | this.bits[j+1]>>>nBits;
+        }
+    }
+
+    if (this.signum < 0) {
+        boolean onesLost = false;
+        for (int i=this.bits.length-1, j=this.bits.length-nInts; i>=j && !onesLost; i--){
+            onesLost = (this.bits[i] != 0);
+        }
+        if (!onesLost && nBits != 0){
+            onesLost = this.bits[this.bits.length-nInts-1]<<(32-nBits) !=0 ;
+        }
+        if (onesLost){
+            bits = bits_expand(bits);
+        }
+    }
+    return new BigInt(bits, this.signum);
+}
+
+//有符号扩展
+private static int[] bits_expand(int[] val) {
+    int lastBit = 0;
+    for (int i=val.length-1; i >= 0 && lastBit==0; i--){
+        lastBit = (val[i] += 1);
+    }
+    if (lastBit == 0) {
+        val = new int[val.length+1];
+        val[0] = 1;
+    }
+    return val;
+}
+```
+
 ## 其他
 
+### 位访问
+
+``` Java
+public boolean getBitAt(int n) {
+    if (n<0){
+        throw new ArithmeticException("Negative bit address");
+    }
+    return (get_int_at(n>>>5) & (1<<(n&31))) != 0;
+}
+
+public BigInt setBit1At(int n) {
+    if (n < 0){
+        throw new ArithmeticException("Negative bit address");
+    }
+        
+    int intNum = n>>>5;
+    int[] result = new int[Math.max(this.bits.length, intNum+2)];
+
+    for (int i = 0; i < result.length; i++){
+        result[result.length-i-1] = get_int_at(i);
+    }
+    result[result.length-intNum-1] |= 1<<(n&31);
+    return new BigInt(result);
+}
+
+public BigInt setBit0At(int n) {
+    if (n < 0){
+        throw new ArithmeticException("Negative bit address");
+    }
+        
+    int intNum = n >>> 5;
+    int[] result = new int[Math.max(this.bits.length, ((n+1)>>>5)+1)];
+
+    for (int i = 0; i < result.length; i++){
+        result[result.length-i-1] = get_int_at(i);
+    }
+        
+    result[result.length-intNum-1] &= ~(1<<(n&31));
+    return new BigInt(result);
+}
+
+public BigInt flipBitAt(int n) {
+    if (n < 0){
+        throw new ArithmeticException("Negative bit address");
+    }
+        
+    int intNum = n >>> 5;
+    int[] result = new int[Math.max(this.bits.length, intNum+2)];
+    for (int i=0; i<result.length; i++){
+        result[result.length-i-1] = get_int_at(i);
+    }
+    result[result.length-intNum-1] ^= (1 << (n&31));
+    return new BigInt(result);
+}
+
+//获取bit数组的第n个int，该方法可以返回超出数组大小的符号位
+private int get_int_at(int n) {
+    if (n >= this.bits.length){
+        return signum<0 ? -1 : 0;
+    }
+    int bit = this.bits[this.bits.length-n-1];
+    if (this.signum >= 0){
+        return bit;
+    }
+    else{
+        return n==this.bits.length-1 ? ~bit : -bit;
+    }
+}
+```
+
+### 比较
 ``` Java
 public int compareTo(BigInt val) {
     if (this.signum == val.signum) {
@@ -653,5 +918,82 @@ private static int bits_compare(int[] x, int[] y) {
         }
     }
     return 0;
+}
+```
+
+### 转换
+``` Java
+public int intValue() {
+    int result = 0;
+    result = get_int_at(0);
+    return result;
+}
+
+public long longValue() {
+    long result = 0;
+    for (int i = 1; i >= 0; i--){
+        result = (result<<32)+Math.uint_to_long(get_int_at(i));
+    }
+    return result;
+}
+
+public byte[] toByteArray() {
+    int byteLen = bitLength()/8 + 1;
+    byte[] byteArray = new byte[byteLen];
+
+    for (int i = byteLen-1, bytesCopied = 4, nextInt = 0, intIndex = 0; i >= 0; i--) {
+        if (bytesCopied == 4) {
+            nextInt = get_int_at(intIndex++);
+            bytesCopied = 1;
+        } 
+        else {
+            nextInt >>>= 8;
+            bytesCopied++;
+        }
+        byteArray[i] = (byte)nextInt;
+    }
+    return byteArray;
+}
+
+public String toString(int radix, char[] digits) {
+    if (this.signum == 0){
+        return String.valueOf(digits[0]);
+    }
+    if (radix < 2 || radix > digits.length){
+        throw new NumberFormatException("Illegal radix");
+    }
+
+    ArrayList<String> digitGroup = new ArrayList<>();
+    BigInt targetRadix = new BigInt(int_radix(radix));
+    int digits_per_int = digits_per_int(radix);
+    
+    BigInt tmp = this.abs();
+    while (tmp.signum != 0) {
+        BufferedBigInt quotient = new BufferedBigInt();
+        BufferedBigInt remainder = new BufferedBigInt();
+        BufferedBigInt divident = new BufferedBigInt(tmp.bits);
+        BufferedBigInt divider = new BufferedBigInt(targetRadix.bits);
+        divident.divide(divider, quotient, remainder);
+           
+        BigInt q2 = new BigInt(quotient.bits_array(), tmp.signum*targetRadix.signum);
+        BigInt r2 = new BigInt(remainder.bits_array(), tmp.signum*targetRadix.signum);
+
+        digitGroup.append(Long.toString(r2.longValue(), radix, digits));
+        tmp = q2;
+    }
+
+    StringBuilder buf = new StringBuilder(digitGroup.size()*digits_per_int+1);
+    if (this.signum<0){
+        buf.append('-');
+    }
+    buf.append(digitGroup[digitGroup.size()-1]);
+    for (int i=digitGroup.size()-2; i>=0; i--) {
+        int numLeadingZeros = digits_per_int-digitGroup[i].length();
+        for(int k = 0; k < numLeadingZeros; k++){
+            buf.append(digits[0]);
+        }
+        buf.append(digitGroup[i]);
+    }
+    return buf.toString();
 }
 ```
