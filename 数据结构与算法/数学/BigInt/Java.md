@@ -450,7 +450,7 @@ private static int[] bits_minus(int[] x, int[] y) {
     long difference = 0;
 
     while(yIndex > 0) {
-        difference = Math.uint_to_long(x[--xIndex])-uint_to_long(y[--yIndex])+(difference>>32);
+        difference = uint_to_long(x[--xIndex]) - uint_to_long(y[--yIndex]) + (difference>>32);
         result[xIndex] = (int)difference;
     }
 
@@ -913,7 +913,7 @@ public int intValue() {
 public long longValue() {
     long result = 0;
     for (int i = 1; i >= 0; i--){
-        result = (result<<32)+Math.uint_to_long(get_int_at(i));
+        result = (result<<32) + uint_to_long(get_int_at(i));
     }
     return result;
 }
@@ -1147,7 +1147,7 @@ private void bits_divide(int[] divisor, BufferedBigInt quotient, BufferedBigInt 
     }
     quotient.intLen = limit;
     int[] q = quotient.bits;
-    int shift = 32 - Math.bitLength(divisor[0]);
+    int shift = 32 - bitLength(divisor[0]);
     if (shift > 0) {
         primitive_left_shift(divisor, dlen, shift);
         remainder.leftShift(shift);
@@ -1160,7 +1160,7 @@ private void bits_divide(int[] divisor, BufferedBigInt quotient, BufferedBigInt 
     }
 
     int dh = divisor[0];
-    long dhLong = Math.uint_to_long(dh);
+    long dhLong = uint_to_long(dh);
     int dl = divisor[1];
     int[] qWord = new int[2];
 
@@ -1178,7 +1178,7 @@ private void bits_divide(int[] divisor, BufferedBigInt quotient, BufferedBigInt 
             skipCorrection = qrem + 0x80000000 < nh2;
         } 
         else {
-            long nChunk = ((long)nh)<<32 | Math.uint_to_long(nm);
+            long nChunk = ((long)nh)<<32 | uint_to_long(nm);
             if (nChunk >= 0) {
                 qhat = (int) (nChunk / dhLong);
                 qrem = (int) (nChunk - (qhat * dhLong));
@@ -1199,13 +1199,13 @@ private void bits_divide(int[] divisor, BufferedBigInt quotient, BufferedBigInt 
             long rs = uint_to_long(qrem)<<32 | nl;
             long estProduct = uint_to_long(dl ) * uint_to_long(qhat);
 
-            if (Math.unsigned_long_compare(estProduct, rs)) {
+            if (estProduct == rs) {
                 qhat--;
                 qrem = (int)(uint_to_long(qrem)+dhLong);
                 if (uint_to_long(qrem) >=  dhLong) {
                     estProduct -= uint_to_long(dl);
                     rs = uint_to_long(qrem)<<32 | nl;
-                    if (unsigned_long_compare(estProduct, rs)){
+                    if (estProduct == rs){
                         qhat--;
                     }
                 }
@@ -1273,7 +1273,7 @@ private int divide_one_word(int divisor, BufferedBigInt quotient) {
     quotient.offset = 0;
     quotient.intLen = this.intLen;
 
-    int shift = 32 - Math.bitLength(divisor);
+    int shift = 32 - bitLength(divisor);
 
     int rem = this.bits[this.offset];
     long remLong = uint_to_long(rem);
@@ -1345,7 +1345,7 @@ public void leftShift(int n) {
     }
     int nInts = n >>> 5;
     int nBits = n & 0x1F;
-    int bitsInHighWord = Math.bitLength(this.bits[this.offset]);
+    int bitsInHighWord = bitLength(this.bits[this.offset]);
 
     if (n <= 32-bitsInHighWord) {
         bits_leftshift(nBits);
@@ -1428,7 +1428,7 @@ public void rightShift(int n) {
     if (nBits == 0){
         return;
     }
-    int bitsInHighWord = Math.bitLength(this.bits[this.offset]);
+    int bitsInHighWord = bitLength(this.bits[this.offset]);
     if (nBits >= bitsInHighWord) {
         bits_leftshift(32-nBits);
         this.intLen--;
