@@ -332,7 +332,7 @@ private static int digits_per_int(int radix){
 
 //最佳存储目标进制
 private static int int_radix(int radix){
-    if(radix==2){
+    if(radix == 2){
         return 0x40000000;
     }
     return Math.pow(radix, digits_per_int(radix));
@@ -356,24 +356,58 @@ private static int parse_int_buffer(String val, int radix, char[] digits){
 
 //x = x*y+z
 private static void bits_multiply_add_buffer(int[] x, int y, int z) {
-    long ylong = Math.uint_to_long(y);
-    long zlong = Math.uint_to_long(z);
+    long ylong = uint_to_long(y);
+    long zlong = uint_to_long(z);
 
     long product = 0;
     long carry = 0;
     for (int i = x.length-1; i >= 0; i--) {
-        product = ylong * Math.uint_to_long(x[i]) + carry;
+        product = ylong * uint_to_long(x[i]) + carry;
         x[i] = (int)product;
         carry = product >>> 32;
     }
 
-    long sum = Math.uint_to_long(x[x.length-1]) + zlong;
+    long sum = uint_to_long(x[x.length-1]) + zlong;
     x[x.length-1] = (int)sum;
     carry = sum >>> 32;
     for (int i = x.length - 2; i >= 0; i--) {
-        sum = Math.uint_to_long(x[i]) + carry;
+        sum = uint_to_long(x[i]) + carry;
         x[i] = (int)sum;
         carry = sum >>> 32;
     }
 }
+
+private static long uint_to_long(int i) {
+    return i & 0xFFFFFFFFL;
+}
 ```
+
+## 基于值的构造
+``` Java
+public BigInt(long val) {
+    if (val == 0){
+        this.signum = 0;
+        this.bits = new int[0];
+        return;
+    }
+    
+    if (val < 0) {
+        val = -val;
+        this.signum = -1;
+    } 
+    else {
+        this.signum = 1;
+    }
+
+    int highWord = (int)(val>>>32);
+    if (highWord==0) {
+        bits = new int[1];
+        bits[0] = (int)val;
+    } 
+    else {
+        bits = new int[2];
+        bits[0] = highWord;
+        bits[1] = (int)val;
+    }
+}
+``
