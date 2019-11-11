@@ -81,9 +81,12 @@ public class BigInt{
 
 ## 辅助方法
 ``` Java
-//无符号32位整数转为long
 private static long uint_to_long(int i) {
     return i & 0xFFFFFFFFL;
+}
+
+private static int ubyte_to_int(byte b) {
+    return b & 0xFF;
 }
 ```
 
@@ -152,7 +155,7 @@ private static int[] strip_leading_zero_bytes(byte bits[]) {
     int[] result = new int[intLength];
     
     for (int i = intLength-1, index = bits.length-1; i >= 0; i--) {
-        result[i] = Math.ubyte_to_int(bits[index--]);
+        result[i] = ubyte_to_int(bits[index--]);
         int bytesToTransfer = Math.min(3, index - keep + 1);
         for (int j = 8; j <= (bytesToTransfer<<3); j+=8){
             result[i] |= Math.byte_to_int(bits[index--])<<j;
@@ -181,13 +184,13 @@ private static int[] cast_to_positive_bits(byte bits[]) {
     int result[] = new int[intLength];
 
     for (int i = intLength-1, index=bits.length-1; i>=0; i--) {
-        result[i] = Math.ubyte_to_int(bits[index--]);
+        result[i] = ubyte_to_int(bits[index--]);
         int numBytesToTransfer = Math.min(3, index-keep+1);
         if (numBytesToTransfer < 0){
             numBytesToTransfer = 0;
         }
         for (int j=8; j<=8*numBytesToTransfer; j+=8){
-            result[i] |= Math.byte_to_int(bits[index--]) << j;
+            result[i] |= ubyte_to_int(bits[index--]) << j;
         }
 
         int mask = -1 >>> (3-numBytesToTransfer)*8;
@@ -402,7 +405,7 @@ private static int[] bits_plus(int[] x, int[] y) {
     long sum = 0;
 
     while (yIndex > 0){
-        sum = Math.uint_to_long(x[--xIndex])+Math.uint_to_long(y[--yIndex])+(sum>>>32);     
+        sum = uint_to_long(x[--xIndex]) + uint_to_long(y[--yIndex]) + (sum>>>32);     
         result[xIndex] = (int)sum;
     }
 
