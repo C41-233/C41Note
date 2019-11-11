@@ -554,16 +554,16 @@ public BigInt multiply(BigInt val) {
         return ZERO;
     }
     int[] result = bits_multiply(this.bits, val.bits);
-    return new BigInt(result, this.signum==val.signum ? 1 : -1);
+    return new BigInt(result, this.signum == val.signum ? 1 : -1);
 }
 
 private int[] bits_multiply(int[] x, int[] y) {
-    int xstart = x.length-1;
-    int ystart = y.length-1;
+    int xstart = x.length - 1;
+    int ystart = y.length - 1;
     int[] z = new int[x.length + y.length];
     
     long carry = 0;
-    for (int i=ystart, j=xstart+ystart+1; i>=0; i--,j--) {
+    for (int i = ystart, j = xstart+ystart+1; i >= 0; i--,j--) {
         long product = uint_to_long(y[i]) * uint_to_long(x[xstart]) + carry;
         z[j] = (int)product;
         carry = product >>> 32;
