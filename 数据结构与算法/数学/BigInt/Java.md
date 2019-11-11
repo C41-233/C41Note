@@ -581,3 +581,77 @@ private int[] bits_multiply(int[] x, int[] y) {
     return z;
 }
 ```
+
+### 除法
+``` Java
+public BigInt divide(BigInt val) {
+    if (val.signum == 0){
+        throw new ArithmeticException("Divide by zero");
+    }
+    BufferedBigInt quotient = new BufferedBigInt();
+    BufferedBigInt remainder = new BufferedBigInt();
+    BufferedBigInt dividend = new BufferedBigInt(this.bits);
+    BufferedBigInt divider = new BufferedBigInt(val.bits);
+                      
+    dividend.divide(divider, quotient, remainder);
+    return new BigInt(quotient.bits_array(), this.signum==val.signum ? 1 : -1);
+}
+```
+
+### 余数、模
+余数是有符号的，模是非负的。
+
+``` Java
+public BigInt remainder(BigInt val) {
+    BufferedBigInt quotient = new BufferedBigInt();
+    BufferedBigInt remainder = new BufferedBigInt();
+    BufferedBigInt dividend = new BufferedBigInt(this.bits);
+    BufferedBigInt divider = new BufferedBigInt(val.bits);
+    
+    dividend.divide(divider, quotient, remainder);
+    return new BigInt(remainder.bits_array(), this.signum);
+}
+  
+public BigInt mod(BigInt val) {
+    if (val.signum <= 0){
+        throw new ArithmeticException("BigInteger: modulus not positive");
+    }   
+    BigInt result = this.remainder(val);
+    return result.signum>=0 ? result : result.add(val);
+}
+```
+
+## 其他
+
+``` Java
+public int compareTo(BigInt val) {
+    if (this.signum == val.signum) {
+        switch (signum) {
+        case 1:
+            return bits_compare(this.bits, val.bits);
+        case -1:
+            return bits_compare(val.bits, this.bits);
+        default:
+            return 0;
+        }
+    }
+    return this.signum > val.signum ? 1 : -1;
+}
+
+private static int bits_compare(int[] x, int[] y) {
+    if (x.length < y.length){
+        return -1;
+    }
+    if (x.length > y.length){
+        return 1;
+    }
+    for (int i=0; i<x.length; i++) {
+        int a = x[i];
+        int b = y[i];
+        if (a != b){
+            return uint_to_long(a) < uint_to_long(b) ? -1 : 1;
+        }
+    }
+    return 0;
+}
+```
