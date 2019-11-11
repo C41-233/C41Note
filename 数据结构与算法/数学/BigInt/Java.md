@@ -1082,3 +1082,355 @@ public int compare(BufferedBigInt b){
     return 0;
 }
 ```
+
+### divide
+``` Java
+public void divide(BufferedBigInt b, BufferedBigInt quotient, BufferedBigInt remainder) {
+    if (this.intLen == 0) {
+        return;
+    }
+
+    int cmp = compareTo(b);
+    if (cmp < 0) {
+        remainder.clean(this);
+        return;
+    }
+    if (cmp == 0) {
+        quotient.bits[0] = 1;
+        quotient.intLen = 1;
+        quotient.offset = 0;
+        return;
+    }
+
+    if (b.intLen == 1) {
+        int r = divide_one_word(b.bits[b.offset], quotient);
+        if (r == 0){
+            return;
+        }
+        remainder.clean(r);
+        return;
+    }
+
+    int[] div = Arrays.copyOfRange(b.bits, b.offset, b.offset+b.intLen);
+    bits_divide(div, quotient, remainder);
+}
+
+private void bits_divide(int[] divisor, BufferedBigInt quotient, BufferedBigInt remainder) {
+    remainder.clean(new int[this.intLen+1]);
+    System.arraycopy(this.bits, this.offset, remainder.bits, 1, this.intLen);
+    remainder.intLen = this.intLen;
+    remainder.offset = 1;
+
+    final int nlen = remainder.intLen;
+    final int dlen = divisor.length;
+    
+    int limit = nlen - dlen + 1;
+    if (quotient.bits.length < limit) {
+        quotient.bits = new int[limit];
+        quotient.offset = 0;
+    }
+    quotient.intLen = limit;
+    int[] q = quotient.bits;
+    int shift = 32 - Math.bitLength(divisor[0]);
+    if (shift > 0) {
+        primitive_left_shift(divisor, dlen, shift);
+        remainder.leftShift(shift);
+    }
+
+    if (remainder.intLen == nlen) {
+        remainder.offset = 0;
+        remainder.bits[0] = 0;
+        remainder.intLen++;
+    }
+
+    int dh = divisor[0];
+    long dhLong = Math.uint_to_long(dh);
+    int dl = divisor[1];
+    int[] qWord = new int[2];
+
+    for(int j = 0; j < limit; j++) {
+        int qhat = 0;
+        int qrem = 0;
+        boolean skipCorrection = false;
+        int nh = remainder.bits[j+remainder.offset];
+        int nh2 = nh + 0x80000000;
+        int nm = remainder.bits[j+1+remainder.offset];
+
+        if (nh == dh) {
+            qhat = ~0;
+            qrem = nh + nm;
+            skipCorrection = qrem + 0x80000000 < nh2;
+        } 
+        else {
+            long nChunk = ((long)nh)<<32 | Math.uint_to_long(nm);
+            if (nChunk >= 0) {
+                qhat = (int) (nChunk / dhLong);
+                qrem = (int) (nChunk - (qhat * dhLong));
+            } 
+            else {
+                div_word(qWord, nChunk, dh);
+                qhat = qWord[0];
+                qrem = qWord[1];
+            }
+        }
+
+        if (qhat == 0){
+            continue;
+        }
+
+        if (!skipCorrection) {
+            long nl = uint_to_long(remainder.bits[j+2+remainder.offset]);
+            long rs = uint_to_long(qrem)<<32 | nl;
+            long estProduct = uint_to_long(dl ) * uint_to_long(qhat);
+
+            if (Math.unsigned_long_compare(estProduct, rs)) {
+                qhat--;
+                qrem = (int)(uint_to_long(qrem)+dhLong);
+                if (uint_to_long(qrem) >=  dhLong) {
+                    estProduct -= uint_to_long(dl);
+                    rs = uint_to_long(qrem)<<32 | nl;
+                    if (unsigned_long_compare(estProduct, rs)){
+                        qhat--;
+                    }
+                }
+            }
+        }
+
+        remainder.bits[j+remainder.offset] = 0;
+        int borrow = bits_muladd(remainder.bits, divisor, qhat, dlen, j+remainder.offset);
+
+        if (borrow+0x80000000 > nh2) {
+            bits_divadd(divisor, remainder.bits, j+1+remainder.offset);
+            qhat--;
+        }
+        q[j] = qhat;
+    }
+
+    if (shift > 0){
+        remainder.rightShift(shift);
+    }
+
+    quotient.normalize();
+    remainder.normalize();
+}
+
+private static int bits_divadd(int[] a, int[] result, int offset) {
+    long carry = 0;
+    for (int j=a.length-1; j >= 0; j--) {
+        long sum = uint_to_long(a[j]) + uint_to_long(result[j+offset])+carry;
+        result[j+offset] = (int)sum;
+        carry = sum>>>32;
+    }
+    return (int)carry;
+}
+
+private static int bits_muladd(int[] q, int[] a, int x, int len, int offset) {
+    long xLong = Math.uint_to_long(x);
+    long carry = 0;
+    offset += len;
+
+    for (int j=len-1; j>= 0; j--) {
+        long product = uint_to_long(a[j])*xLong+carry;
+        long difference = q[offset]-product;
+        q[offset--] = (int)difference;
+        carry = (product>>>32) + ( (difference&0xFFFFFFFFL)>uint_to_long(~(int)product) ? 1:0 );
+    }
+    return (int)carry;
+}
+
+private int divide_one_word(int divisor, BufferedBigInt quotient) {
+    long divisorLong = uint_to_long(divisor);
+    if (this.intLen == 1) {
+        long dividendValue = uint_to_long(this.bits[this.offset]);
+        int q = (int)(dividendValue/divisorLong);
+        int r = (int)(dividendValue-q*divisorLong);
+        quotient.bits[0] = q;
+        quotient.intLen = (q==0) ? 0 : 1;
+        quotient.offset = 0;
+        return r;
+    }
+
+    if (quotient.bits.length < this.intLen){
+        quotient.bits = new int[this.intLen];
+    }
+    quotient.offset = 0;
+    quotient.intLen = this.intLen;
+
+    int shift = 32 - Math.bitLength(divisor);
+
+    int rem = this.bits[this.offset];
+    long remLong = uint_to_long(rem);
+    if (remLong < divisorLong) {
+        quotient.bits[0] = 0;
+    } else {
+        quotient.bits[0] = (int)(remLong/divisorLong);
+        rem = (int)(remLong-quotient.bits[0]*divisorLong);
+        remLong = uint_to_long( rem);
+    }
+
+    int xlen = this.intLen;
+    int[] qWord = new int[2];
+    while (--xlen > 0) {
+        long dividendEstimate = (remLong<<32) | (uint_to_long(this.bits[this.offset+this.intLen-xlen]));
+        if (dividendEstimate >= 0) {
+            qWord[0] = (int)(dividendEstimate/divisorLong);
+            qWord[1] = (int)(dividendEstimate-qWord[0]*divisorLong);
+        } 
+        else {
+            div_word(qWord, dividendEstimate, divisor);
+        }
+        quotient.bits[this.intLen-xlen] = qWord[0];
+        rem = qWord[1];
+        remLong = uint_to_long(rem);
+    }
+
+    quotient.normalize();
+    if (shift > 0){
+        return rem%divisor;
+    }
+    else{
+        return rem;
+    }
+}
+
+private void div_word(int[] result, long n, int d) {
+    long dLong = uint_to_long(d);
+
+    if (dLong == 1) {
+        result[0] = (int)n;
+        result[1] = 0;
+        return;
+    }
+
+    long q = (n >>> 1) / (dLong >>> 1);
+    long r = n - q*dLong;
+
+    while (r < 0) {
+        r += dLong;
+        q--;
+    }
+    while (r >= dLong) {
+        r -= dLong;
+        q++;
+    }
+
+    result[0] = (int)q;
+    result[1] = (int)r;
+}
+```
+
+### leftShift
+``` Java
+
+public void leftShift(int n) {
+	if (this.intLen == 0){
+	   return;
+	}
+	int nInts = n &gt;&gt;&gt; 5;
+	int nBits = n&0x1F;
+	int bitsInHighWord = Math.bitLength(this.bits[this.offset]);
+
+	if (n &lt;= 32-bitsInHighWord) {
+		bits_leftshift(nBits);
+		return;
+	}
+
+	int newLen = this.intLen+nInts+1;
+	if (nBits &lt;= 32-bitsInHighWord){
+		newLen--;
+	}
+	if (this.bits.length &lt; newLen) {
+		int[] result = new int[newLen];
+		for (int i=0; i&lt;this.intLen; i++){
+			result[i] = this.bits[this.offset+i];
+		}
+		clean(result);
+	} 
+	else if (this.bits.length-this.offset &gt;= newLen) {
+		for(int i=0; i&lt;newLen-this.intLen; i++){
+			this.bits[this.offset+this.intLen+i] = 0;
+		}
+	} 
+	else {
+		for (int i=0; i&lt;this.intLen; i++){
+			this.bits[i] = this.bits[this.offset+i];
+		}
+		for (int i=this.intLen; i&lt;newLen; i++){
+			this.bits[i] = 0;
+		}
+		this.offset = 0;
+	}
+	this.intLen = newLen;
+	if (nBits == 0){
+		return;
+	}
+	if (nBits &lt;= 32-bitsInHighWord){
+		bits_leftshift(nBits);
+	}
+	else{
+		bits_rightshift(32-nBits);
+	}
+}
+
+//左移不超过32位
+private void bits_leftshift(int n) {
+	int[] val = this.bits;
+	int n2 = 32 - n;
+	for (int i=this.offset, c=val[i], m=i+this.intLen-1; i&lt;m; i++) {
+		int b = c;
+		c = val[i+1];
+		val[i] = (b &lt;&lt; n) | (c &gt;&gt;&gt; n2);
+	}
+	val[this.offset+this.intLen-1] &lt;&lt;= n;
+}
+
+private static void primitive_left_shift(int[] a, int len, int n) {
+	if (len==0 || n==0){
+		return;
+	}
+
+	int n2 = 32-n;
+	for (int i=0, c=a[i], m=i+len-1; i&lt;m; i++) {
+		int b = c;
+		c = a[i+1];
+		a[i] = (b&lt;&lt;n) | (c&gt;&gt;&gt;n2);
+	}
+	a[len-1] &lt;&lt;= n;
+}
+```
+
+### rightShift
+``` Java
+
+public void rightShift(int n) {
+	if (this.intLen == 0){
+		return;
+	}
+	int nInts = n&gt;&gt;&gt;5;
+	int nBits = n&0x1F;
+	this.intLen -= nInts;
+	if (nBits == 0){
+		return;
+	}
+	int bitsInHighWord = Math.bitLength(this.bits[this.offset]);
+	if (nBits &gt;= bitsInHighWord) {
+		bits_leftshift(32-nBits);
+		this.intLen--;
+	} 
+	else {
+		bits_rightshift(nBits);
+	}
+}
+
+//右移不大于32位
+private void bits_rightshift(int n) {
+	int[] val = this.bits;
+	int n2 = 32 - n;
+	for (int i=this.offset+this.intLen-1, c=val[i]; i&gt;this.offset; i--) {
+		int b = c;
+		c = val[i-1];
+		val[i] = (c&lt;&lt;n2) | (b&gt;&gt;&gt;n);
+	}
+	val[this.offset] &gt;&gt;&gt;= n;
+}
+```
