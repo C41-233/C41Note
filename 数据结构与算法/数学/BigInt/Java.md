@@ -79,7 +79,9 @@ public class BigInt{
 }
 ```
 
-## BufferedBigInt
+## 辅助方法
+
+### BufferedBigInt
 
 BufferedBigInt是一个可变的无符号大整数，用于加速大规模计算。主要协助BigInt进行除法运算。
 
@@ -112,7 +114,17 @@ private class BufferedBigInt{
 }
 ```
 
-## 基于byte数组构造
+### 辅助运算
+``` Java
+//无符号32位整数转为long
+private static long uint_to_long(int i) {
+    return i & 0xFFFFFFFFL;
+}
+```
+
+## 构造
+
+### 基于byte数组构造
 ``` Java
 public static BigInt fromBytes(byte[] val) {
     if (val.length == 0){
@@ -218,7 +230,7 @@ private static int[] cast_to_positive_bits(byte bits[]) {
     }
 
     for (int i=result.length-1; i>=0; i--) {
-        result[i] = (int)(Math.uint_to_long(result[i])+1);
+        result[i] = (int)(uint_to_long(result[i])+1);
         if (result[i] != 0){
             break;
         }
@@ -250,7 +262,7 @@ private static int[] cast_to_positive_bits_buffer(int bits[]) {
 }
 ```
 
-## 基于String构造
+### 基于String构造
 
 ``` Java
 public BigInt(String val, int radix, char[] digits) {
@@ -376,13 +388,9 @@ private static void bits_multiply_add_buffer(int[] x, int y, int z) {
         carry = sum >>> 32;
     }
 }
-
-private static long uint_to_long(int i) {
-    return i & 0xFFFFFFFFL;
-}
 ```
 
-## 基于值的构造
+### 基于值的构造
 ``` Java
 public BigInt(long val) {
     if (val == 0){
@@ -400,7 +408,7 @@ public BigInt(long val) {
     }
 
     int highWord = (int)(val>>>32);
-    if (highWord==0) {
+    if (highWord == 0) {
         bits = new int[1];
         bits[0] = (int)val;
     } 
@@ -410,4 +418,166 @@ public BigInt(long val) {
         bits[1] = (int)val;
     }
 }
-``
+```
+
+## 运算符
+
+### 辅助位运算
+``` Java
+private static int[] bits_plus(int[] x, int[] y) {
+    if (x.length < y.length) {
+        int[] tmp = x;
+        x = y;
+        y = tmp;
+    }
+
+    int xIndex = x.length;
+    int yIndex = y.length;
+    int result[] = new int[x.length];
+    long sum = 0;
+
+    while (yIndex > 0){
+        sum = Math.uint_to_long(x[--xIndex])+Math.uint_to_long(y[--yIndex])+(sum>>>32);     
+        result[xIndex] = (int)sum;
+    }
+
+    boolean carry = sum>>>32 != 0;
+    while (xIndex>0 && carry){
+        xIndex--;
+        result[xIndex] = x[xIndex+1]+1;
+        carry = result[xIndex] == 0;
+    }
+    while (xIndex > 0){
+        result[xIndex-1] = x[xIndex];
+        xIndex--;
+    }
+
+    if (carry) {
+        int bigger[] = new int[result.length+1];
+        System.arraycopy(result, 0, bigger, 1, result.length);
+        bigger[0] = 1;
+        return bigger;
+    }else{
+        return result;
+    }
+}
+
+private static int[] bits_minus(int[] x, int[] y) {
+    int xIndex = x.length;
+    int yIndex = y.length;
+    int result[] = new int[xIndex];
+    long difference = 0;
+
+    while(yIndex > 0) {
+        difference = Math.uint_to_long(x[--xIndex])-Math.uint_to_long(y[--yIndex])+(difference>>32);
+        result[xIndex] = (int)difference;
+    }
+
+    boolean borrow = difference>>32 != 0;
+    while (xIndex > 0 && borrow){
+        xIndex--;
+        result[xIndex] = x[xIndex+1]-1;
+        borrow =result[xIndex] == -1;
+    }
+
+    while (xIndex > 0){
+        result[xIndex-1] = x[xIndex];
+        xIndex--;
+    }
+        
+    return result;
+}
+```
+
+### 加法
+``` Java
+public BigInt add(BigInt val) {
+    if (val.signum == 0){
+        return this;
+    }
+    if (this.signum == 0){
+        return val;
+    }
+    if (val.signum == this.signum){
+        return new BigInt(bits_plus(bits, val.bits), this.signum);
+    }
+    
+    int cmp = bits_compare(this.bits, val.bits);
+    if (cmp == 0){
+        return ZERO;
+    }
+    int[] bits = cmp>0 ? bits_minus(this.bits, val.bits) : bits_minus(val.bits, this.bits);
+    return new BigInt(bits, cmp==this.signum ? 1 : -1);
+}
+```
+
+### 减法
+``` Java
+public BigInt subtract(BigInt val) {
+    if (val.signum == 0){
+        return this;
+    }
+    if (this.signum == 0){
+        return val.negate();
+    }
+    if (val.signum != this.signum){
+        return new BigInt(bits_plus(this.bits, val.bits), this.signum);
+    }
+    
+    int cmp = bits_compare(this.bits, val.bits);
+    if (cmp == 0){
+        return ZERO;
+    }
+    int[] bits = cmp>0 ? bits_minus(this.bits, val.bits) : bits_minus(val.bits, this.bits);
+    return new BigInt(bits, cmp == this.signum ? 1 : -1);
+}
+```
+
+### 取反
+``` Java
+public BigInt negate(){
+    return new BigInt(this.bits, -this.signum);
+}
+```
+
+### 绝对值
+``` Java
+public BigInt abs() {
+    return this.signum>=0 ? this : this.negate();
+}
+```
+
+### 乘法
+``` Java
+public BigInt multiply(BigInt val) {
+    if (val.signum == 0 || this.signum == 0){
+        return ZERO;
+    }
+    int[] result = bits_multiply(this.bits, val.bits);
+    return new BigInt(result, this.signum==val.signum ? 1 : -1);
+}
+
+private int[] bits_multiply(int[] x, int[] y) {
+    int xstart = x.length-1;
+    int ystart = y.length-1;
+    int[] z = new int[x.length + y.length];
+    
+    long carry = 0;
+    for (int i=ystart, j=xstart+ystart+1; i>=0; i--,j--) {
+        long product = uint_to_long(y[i]) * uint_to_long(x[xstart]) + carry;
+        z[j] = (int)product;
+        carry = product >>> 32;
+    }
+    z[xstart] = (int)carry;
+    for (int i = xstart-1; i >= 0; i--) {
+        carry = 0;
+        for (int j = ystart, k = ystart+1+i; j >= 0; j--, k--) {
+            long product = uint_to_long(y[j]) * uint_to_long(x[i]) + uint_to_long(z[k]) + carry;
+            z[k] = (int)product;
+            carry = product >>> 32;
+        }
+        z[i] = (int)carry;
+    }
+    return z;
+}
+```
