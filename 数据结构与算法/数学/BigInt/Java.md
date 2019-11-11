@@ -88,6 +88,19 @@ private static long uint_to_long(int i) {
 private static int ubyte_to_int(byte b) {
     return b & 0xFF;
 }
+
+public static int bitLength(int i) {
+    if (i == 0){
+        return 0;
+    }
+    int n = 1;
+    if (i >>> 16 == 0) { n += 16; i <<= 16; }
+    if (i >>> 24 == 0) { n +=  8; i <<=  8; }
+    if (i >>> 28 == 0) { n +=  4; i <<=  4; }
+    if (i >>> 30 == 0) { n +=  2; i <<=  2; }
+    n -= i >>> 31;
+    return 32 - n;
+}
 ```
 
 ## 构造
@@ -158,7 +171,7 @@ private static int[] strip_leading_zero_bytes(byte bits[]) {
         result[i] = ubyte_to_int(bits[index--]);
         int bytesToTransfer = Math.min(3, index - keep + 1);
         for (int j = 8; j <= (bytesToTransfer<<3); j+=8){
-            result[i] |= Math.byte_to_int(bits[index--])<<j;
+            result[i] |= ubyte_to_int(bits[index--])<<j;
         }
     }
     return result;
