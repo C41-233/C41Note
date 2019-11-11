@@ -169,15 +169,15 @@ private BigInt(int[] val) {
 //去除前导0，返回一个新数组
 private static int[] strip_leading_zero_bytes(byte bits[]) {
     int keep;
-    for (keep=0; keep<bits.length && bits[keep]==0; keep++);
+    for (keep=0; keep < bits.length && bits[keep]==0; keep++);
 
-    int intLength = (bits.length-keep+3) >>> 2;
+    int intLength = (bits.length - keep + 3) >>> 2;
     int[] result = new int[intLength];
     
-    for (int i=intLength-1, index=bits.length-1; i>=0; i--) {
+    for (int i = intLength-1, index = bits.length-1; i >= 0; i--) {
         result[i] = Math.ubyte_to_int(bits[index--]);
-        int bytesToTransfer = Math.min(3, index-keep+1);
-        for (int j=8; j<=(bytesToTransfer<<3); j+=8){
+        int bytesToTransfer = Math.min(3, index - keep + 1);
+        for (int j = 8; j <= (bytesToTransfer<<3); j+=8){
             result[i] |= Math.byte_to_int(bits[index--])<<j;
         }
     }
@@ -203,10 +203,10 @@ private static int[] cast_to_positive_bits(byte bits[]) {
     int intLength = (bits.length-keep+extraByte+3)/4;
     int result[] = new int[intLength];
 
-    for (int i=intLength-1, index=bits.length-1; i>=0; i--) {
+    for (int i = intLength-1, index=bits.length-1; i>=0; i--) {
         result[i] = Math.ubyte_to_int(bits[index--]);
         int numBytesToTransfer = Math.min(3, index-keep+1);
-        if (numBytesToTransfer<0){
+        if (numBytesToTransfer < 0){
             numBytesToTransfer = 0;
         }
         for (int j=8; j<=8*numBytesToTransfer; j+=8){
@@ -247,5 +247,133 @@ private static int[] cast_to_positive_bits_buffer(int bits[]) {
     
     for (int i=result.length-1; ++result[i]==0; i--);
     return result;
+}
+```
+
+## 基于String构造
+
+``` Java
+public BigInt(String val, int radix, char[] digits) {
+    if (radix < 2 || radix > digits.length){
+        throw new NumberFormatException("Radix out of range");
+    }
+    if (val.length() == 0){
+        throw new NumberFormatException("Zero length string");
+    }
+
+    //符号判断
+    int index, sign;
+    if(val[0] == '+'){
+        index = 1;
+        sign = 1;
+        if(val.length() == 1){
+             throw new NumberFormatException("Illegal string"+val);
+        }
+    }
+    else if(val[0] == '-'){
+        index = 1;
+        sign = -1;
+        if(val.length() == 1){
+            throw new NumberFormatException("Illegal string"+val);
+        }
+    }
+    else{
+        index = 0;
+        sign = 1;
+    }
+    
+    //忽略前导0
+    while (index<val.length() && digits[0] == val[index]){
+        index++;
+    }
+    if (index == val.length()) {
+        this.signum = 0;
+        this.bits = ZERO.bits;
+        return;
+    }
+ 
+    int numDigits = val.length() - index; //实际有效位数
+    this.signum = sign;
+
+    long bits_per_digit = bits_per_digit(radix);
+    int numBits = (int)(((numDigits * bits_per_digit) >>> 10) + 1);//存储所需位数
+    int numInts = (numBits + 31) >>> 5; //存储所需int数
+    int digits_per_int = digits_per_int(radix);
+    int targetRadix = int_radix(radix);
+    int[] bits = new int[numInts];
+    
+    int firstGroupLen = numDigits % digits_per_int;
+    if (firstGroupLen == 0){
+        firstGroupLen = digits_per_int;
+    }
+    
+    String group = val.substring(index, index+firstGroupLen); 
+    bits[numInts-1] = parse_int_buffer(group, radix, digits);
+
+    index += firstGroupLen;
+    while (index < val.length()) {
+        group = val.substring(index, index + digits_per_int);
+        int groupVal = parse_int_buffer(group, radix, digits);
+        bits_multiply_add_buffer(bits, targetRadix, groupVal);
+        index += digits_per_int;
+    }
+    this.bits = strip_leading_zero_bytes_buffer(bits);
+}
+
+//一个radix进制数字需要多少二进制位来表示，乘以1024向上取整以防止损失精度
+private static long bits_per_digit(int radix){
+    return (long)Math.ceil(Math.log(radix) / Math.log(2) * 1024);
+}
+
+//一个int最多能完整容纳多少位radix进制数字
+private static int digits_per_int(int radix){
+    return (int)Math.floor(Math.log(2) / Math.log(radix) * 31);
+}
+
+//最佳存储目标进制
+private static int int_radix(int radix){
+    if(radix==2){
+        return 0x40000000;
+    }
+    return Math.pow(radix, digits_per_int(radix));
+}
+
+//简易的字符串转int，不做任何参数验证，并且始终为正数
+//若无法转换，抛出异常
+private static int parse_int_buffer(String val, int radix, char[] digits){
+    int result = 0;
+    for (int i=0; i<val.length(); i++) {
+        int digit = digits.find(val[i]);
+        if (digit < 0) {
+            throw new NumberFormatException("Illegal digit");
+        }
+        result *= radix;
+        result += digit;
+    }
+    return result;
+}
+
+
+//x = x*y+z
+private static void bits_multiply_add_buffer(int[] x, int y, int z) {
+    long ylong = Math.uint_to_long(y);
+    long zlong = Math.uint_to_long(z);
+
+    long product = 0;
+    long carry = 0;
+    for (int i = x.length-1; i >= 0; i--) {
+        product = ylong * Math.uint_to_long(x[i]) + carry;
+        x[i] = (int)product;
+        carry = product >>> 32;
+    }
+
+    long sum = Math.uint_to_long(x[x.length-1]) + zlong;
+    x[x.length-1] = (int)sum;
+    carry = sum >>> 32;
+    for (int i = x.length - 2; i >= 0; i--) {
+        sum = Math.uint_to_long(x[i]) + carry;
+        x[i] = (int)sum;
+        carry = sum >>> 32;
+    }
 }
 ```
