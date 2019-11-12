@@ -4,9 +4,9 @@
 ### 接口
 ``` Java
 //应用程序维护元素与指定索引的映射关系
-public class DisjSet{
+public class DisjointSet{
 
-    public DisjSet(int numElements);
+    public DisjointSet(int numElements);
     //添加等价关系
     public void addEquivalence(int x, int y);
     //判断元素是否等价
@@ -24,7 +24,7 @@ public class DisjSet{
 
 ### 初始化
 ``` Java
-public DisjSet(int numElements){
+public DisjointSet(int numElements){
     this.set = new int[numElements];
     for(int i = 0; i < this.set.length; i++){
         this.set[i] = -1;
