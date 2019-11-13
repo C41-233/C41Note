@@ -1,14 +1,6 @@
-# 最大子数组
+# 最大子数组 - C#
 
-给定一个数组，求出使得元素的和最大的连续子数组。
-
-## 分治策略
-给定一个mid，将问题划分为三个子问题：（1）mid左侧的最大子数组，（2）mid右侧的最大子数组，（3）跨越mid的最大子数组，三者中的最大者即为结果。
-
-求解跨越mid的最大子数组，只需要求出以mid为右边界的左侧最大子数组，以及以mid为左边界的右侧最大子数组，二者合并即可。
-
-时间复杂度为O(nlogn)
-
+## 分治
 ``` C#
 public static void FindMaxSubArray(int[] array, out int left, out int right, out int sum)
 {
@@ -87,5 +79,4 @@ private static Range FindMaxCrossSubArray(int[] array, int from, int mid, int to
     range.Sum = left_sum + right_sum;
     return range;
 }
-
 ```
