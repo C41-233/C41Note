@@ -16,3 +16,7 @@ Bloom filter是由Howard Bloom在1970年提出的二进制向量数据结构，�
 
 add和contains的时间复杂度都为O(k)。
 
+一个元素被误判为存在的概率为![](https://latex.codecogs.com/gif.latex?p={(1-e^{-\frac{nk}{m}})}^k)。当m增大或n减小时，误判率减小。
+
+给定m和n，当满足![](https://latex.codecogs.com/gif.latex?k=\0.7\frac{m}{n})时，误判率最低，此时误判率为![](https://latex.codecogs.com/gif.latex?p=2^{-ln2\frac{m}{n}})。
+
