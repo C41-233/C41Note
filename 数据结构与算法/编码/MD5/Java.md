@@ -11,7 +11,7 @@ public static byte[] digest(byte[] input){
     
     //处理每一个完整分组
     for(int step = 0; step < groupCount; step++){
-        fillGroup(group, input,step*64);
+        fillGroup(group, input, step*64);
         transform(result, group);
     }
 
