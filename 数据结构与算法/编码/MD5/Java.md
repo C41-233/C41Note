@@ -1,5 +1,7 @@
 # MD5 - Java
 
+在Java中可以用long来表示一个32位无符号整数。
+
 ``` Java
 public static byte[] digest(byte[] input){
     int length = input.length; //长度（字节）
