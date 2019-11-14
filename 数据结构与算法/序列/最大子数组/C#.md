@@ -80,3 +80,34 @@ private static Range FindMaxCrossSubArray(int[] array, int from, int mid, int to
     return range;
 }
 ```
+
+## 迭代
+``` C#
+public static void MaxSubArray(int[] array, out int from, out int to, out int sum)
+{
+    from = 0;
+    to = 0;
+    sum = int.MinValue;
+
+    var current = 0;
+    var current_from = 0;
+    for (var i = 0; i < array.Length; i++)
+    {
+        if (array[i] > current + array[i])
+        {
+            current = array[i];
+            current_from = i;
+        }
+        else
+        {
+            current = current + array[i];
+        }
+        if (sum < current)
+        {
+            sum = current;
+            from = current_from;
+            to = i;
+        }
+    }
+}
+```
