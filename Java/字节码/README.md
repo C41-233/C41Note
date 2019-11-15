@@ -133,7 +133,7 @@ field_info结构如下：
 <table>
 	<tr><td>u2</td><td>access_flags</td><td>访问标志</td></tr>
 	<tr><td>u2</td><td>name_index</td><td>字段名称（CONSTANT_Utf8_info）</td></tr>
-	<tr><td>u2</td><td>descriptor_index</td><td>字段签名（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u2</td><td>descriptor_index</td><td>[字段签名](signature.md)（CONSTANT_Utf8_info）</td></tr>
 	<tr><td>u2</td><td>attributes_count</td><td>属性表容量</td></tr>
 	<tr><td>attribute_info[attributes_count]</td><td>attributes</td><td><a href="#属性表">属性表</a></td></tr>
 </table>
@@ -168,7 +168,7 @@ method_info结构如下：
 <table>
 	<tr><td>u2</td><td>access_flags</td><td>访问标志</td></tr>
 	<tr><td>u2</td><td>name_index</td><td>方法名称（CONSTANT_Utf8_info）</td></tr>
-	<tr><td>u2</td><td>descriptor_index</td><td>方法签名（CONSTANT_Utf8_info）</td></tr>
+	<tr><td>u2</td><td>descriptor_index</td><td>[方法签名](signature.md)（CONSTANT_Utf8_info）</td></tr>
 	<tr><td>u2</td><td>attributes_count</td><td>属性表容量</td></tr>
 	<tr><td>attribute_info[attributes_count]</td><td>attributes</td><td><a href="#属性表">属性表</a></td></tr>
 </table>
