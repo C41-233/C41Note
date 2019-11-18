@@ -64,3 +64,12 @@ private static double T(int n, double x)
     return 2 * Pow(x, p) / p; //快速幂
 }
 ```
+
+## 任意底数的对数
+
+``` C#
+public static double Log(double a, double x)
+{
+    return Ln(x) / Ln(a);
+}
+```
