@@ -59,3 +59,6 @@
     - HMODULE 模块
     - HRESULT 接口返回值
     - HWND 窗口
+
+## 布尔
+类型为`BOOL`，存在两个全局常量`TRUE`和`FALSE`。
