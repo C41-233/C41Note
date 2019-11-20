@@ -61,7 +61,9 @@
 
 是一个常数，只需要找到最合适的σ，使得![](6.gif)的拟合效果最佳。
 
+32位浮点数时，k取`0x5f3759df`；64位浮点数时，k取`0x5fe6ec85e7de30da`。
 
+由于是一个近似值，之后再进行一次牛顿迭代来逼近。
 
 ### 实现
 
@@ -95,5 +97,21 @@ public static float RSqrt(float number)
         y = *(float*) &i;
         return y * (threehalfs - (x2 * y * y));
     }
+}
+
+public static double RSqrt(double number)
+{
+    const double threehalfs = 1.5;
+    double x2 = number * 0.5;
+    double y = number;
+
+    unsafe
+    {
+        long i = *(long*) &y;
+        i = 0x5fe6ec85e7de30da - (i >> 1);
+        y = *(double*) &i;
+        return y * (threehalfs - (x2 * y * y));
+    }
+
 }
 ```
