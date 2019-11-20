@@ -30,14 +30,13 @@
 
 ##### C
 ``` C
-//long是32位的
 float RSqrt(float number)
 {
     const float threehalfs = 1.5F;
     float x2 = number * 0.5F;
     float y = number;
 
-    long i = *(long*) &y;
+    int32_t i = *(int32_t*) &y;
     i = 0x5f3759df - (i >> 1);
     y = *(float*) &i;
     return y * (threehalfs - (x2 * y * y));
