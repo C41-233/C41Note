@@ -47,6 +47,16 @@
 
 ![\frac{M_y}{L} + \sigma + E_y - B = -\frac{1}{2}(\frac{M_x}{L} + \sigma + E_x - B)](9.gif)
 
+移项合并后
+
+![\frac{3}{2}L(\sigma - B) + M_y + LE_y = -\frac{1}{2}(M_x + LE_x)](10.gif)
+
+左右两边都有I = M + LE的形式，再次替换回浮点数后，
+
+![I_y = -\frac{1}{2}I_x + \frac{3}{2}L(B-\sigma)](11.gif)
+
+余项
+
 ### 实现
 
 ##### C
