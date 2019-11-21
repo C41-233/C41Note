@@ -124,35 +124,35 @@ F2H
 
 | Mode | R/M | 寻址方式（16位） | 寻址方式（32位） |
 |---|---|---|---|
-| 00 | 000 | [BX + SI] |
-| 00 | 001 | [BX + DI] |
-| 00 | 010 | [BP + SI] |
-| 00 | 011 | [BP + DI] |
-| 00 | 100 | [SI] |
-| 00 | 101 | [DI] |
-| 00 | 110 | disp16 |
-| 00 | 111 | [BX] |
-| 01 | 000 | [BX + SI] + disp8 |
-| 01 | 001 | [BX + DI] + disp8 |
-| 01 | 010 | [BP + SI] + disp8 |
-| 01 | 011 | [BP + DI] + disp8 |
-| 01 | 100 | [SI] + disp8 |
-| 01 | 101 | [DI] + disp8 |
-| 01 | 110 | [BP] + disp8 |
-| 01 | 111 | [BX] + disp8 |
-| 10 | 000 | [BX + SI] + disp16 |
-| 10 | 001 | [BX + DI] + disp16 |
-| 10 | 010 | [BP + SI] + disp16 |
-| 10 | 011 | [BP + DI] + disp16 |
-| 10 | 100 | [SI] + disp16 |
-| 10 | 101 | [DI] + disp16 |
-| 10 | 110 | [BP] + disp16 |
-| 10 | 111 | [BX] + disp16 |
-| 11 | 000 | EAX/AX/AL |
-| 11 | 001 | ECX/CX/CL |
-| 11 | 010 | EDX/DX/DL |
-| 11 | 011 | EBX/BX/BL |
-| 11 | 100 | ESP/SP/AH |
-| 11 | 101 | EBP/BP/CH |
-| 11 | 110 | ESI/SI/DH |
-| 11 | 111 | EDI/DI/BH |
+| 00 | 000 | [BX + SI] | [EAX] |
+| 00 | 001 | [BX + DI] | [ECX] |
+| 00 | 010 | [BP + SI] | [EDX] |
+| 00 | 011 | [BP + DI] | [EBX] |
+| 00 | 100 | [SI] | SIB |
+| 00 | 101 | [DI] | disp32 |
+| 00 | 110 | disp16 | [ESI] |
+| 00 | 111 | [BX] | [EDI] |
+| 01 | 000 | [BX + SI] + disp8 | disp8[EAX] |
+| 01 | 001 | [BX + DI] + disp8 | disp8[ECX] |
+| 01 | 010 | [BP + SI] + disp8 |  |
+| 01 | 011 | [BP + DI] + disp8 |  |
+| 01 | 100 | [SI] + disp8 |  |
+| 01 | 101 | [DI] + disp8 |  |
+| 01 | 110 | [BP] + disp8 |  |
+| 01 | 111 | [BX] + disp8 |  |
+| 10 | 000 | [BX + SI] + disp16 |  |
+| 10 | 001 | [BX + DI] + disp16 |  |
+| 10 | 010 | [BP + SI] + disp16 |  |
+| 10 | 011 | [BP + DI] + disp16 |  |
+| 10 | 100 | [SI] + disp16 |  |
+| 10 | 101 | [DI] + disp16 |  |
+| 10 | 110 | [BP] + disp16 |  |
+| 10 | 111 | [BX] + disp16 |  |
+| 11 | 000 | EAX/AX/AL |  |
+| 11 | 001 | ECX/CX/CL |  |
+| 11 | 010 | EDX/DX/DL |  |
+| 11 | 011 | EBX/BX/BL |  |
+| 11 | 100 | ESP/SP/AH |  |
+| 11 | 101 | EBP/BP/CH |  |
+| 11 | 110 | ESI/SI/DH |  |
+| 11 | 111 | EDI/DI/BH |  |
