@@ -4,15 +4,15 @@
 
 <table>
 	<tr>
-	    <td>1</td>
-	    <td>1,2,3</td>
-	    <td>1</td>
-	    <td>1</td>
-	    <td>1,2,4,8</td>
-	    <td>1,2,4,8</td>
+	    <td>0,1</td>
+	    <td>1,2</td>
+	    <td>0,1</td>
+	    <td>0,1</td>
+	    <td>0,1,2,4</td>
+	    <td>0,1,2,4</td>
     </tr>
     <tr>
-        <td>Prefix</td>
+        <td>Prefixes</td>
         <td>Opcode</td>
 	    <td>ModeR/M</td>
 	    <td>SIB</td>
@@ -29,7 +29,11 @@
     </tr>
 </table>
 
-#### 1. Prefix
+#### 1. Prefixes
+
+指令前缀可以以任意顺序组合使用。
+
+逻辑上冲突的多个前缀组合使用是未定义行为。
 
 ##### LOCK 
 
@@ -37,9 +41,29 @@ F0H
 
 指令在执行时候禁用数据线复用，用在多核的处理器上，一般很少需要手动指定。
 
+支持ADC, ADD, AND, BTC, BTR, BTS, CMPXCHG, CMPXCHG8B, CMPXCHG16B, DEC, INC, NEG, NOT, OR, SBB, SUB, XADD, XCHG, XOR
+
 ##### REP
 
 重复执行指令，由CX（16位）、ECX（32位）、RCX（64位）寄存器计数。
+
+- REP
+
+F3H
+
+当计数寄存器为0时停止执行。
+
+支持INS, LODS, MOVS, OUTS, STOS
+
+- REPE / REPZ
+
+F3H
+
+当ZF=1（相等时，零时）重复执行。
+
+当ZF=0或计数寄存器为0时停止执行。
+
+支持CMPS, CMPSB, CMPSD, CMPSW, SCAS, SCASB, SCASD, SCASW
 
 - REPNE / REPNZ
 
@@ -47,8 +71,88 @@ F2H
 
 当ZF=0时（不相等时，非零时）重复执行。
 
-- REP / REPE / REPZ
+当ZF=1或计数寄存器为0时停止执行。
 
-F3H
+支持CMPS, CMPSB, CMPSD, CMPSW, SCAS, SCASB, SCASD, SCASW
 
-当ZF=1（相等时，零时）重复执行。
+##### Segment Override
+
+段重载。默认为DS。
+
+- CS 2EH
+- SS 36H
+- DS 3EH
+- ES 26H
+- FS 64H
+- GS 65H
+
+在64位模式下，CS、SS、DS、ES重载被忽略。
+
+##### Operand-Size Override & Address-Size Override
+
+指定使用的操作数与地址的位宽。66H修饰操作数位宽，67H修饰地址位宽。
+
+指令实际使用的位宽还与段描述符D-bit有关。
+
+| D-bit | Size Override | Size |
+|---|---|---|
+| 0 | N | 16 |
+| 0 | Y | 32 |
+| 1 | N | 32 |
+| 1 | Y | 16 |
+
+#### 2. ModeR/M
+
+<table>
+    <tr>
+        <td>[7-6]</td>
+        <td>[5-3]</td>
+        <td>[2-0]</td>
+    </tr>
+    <tr>
+        <td>Mod</td>
+        <td>Reg/Opcode</td>
+        <td>R/M</td>
+    </tr>
+</table>
+
+根据具体指令，表示其寻址方式。
+
+##### Mod & R/M
+
+一共5位来表示寻址方式。
+
+| Mode | R/M | 寻址方式（16位） | 寻址方式（32位） |
+|---|---|---|---|
+| 00 | 000 | [BX + SI] |
+| 00 | 001 | [BX + DI] |
+| 00 | 010 | [BP + SI] |
+| 00 | 011 | [BP + DI] |
+| 00 | 100 | [SI] |
+| 00 | 101 | [DI] |
+| 00 | 110 | disp16 |
+| 00 | 111 | [BX] |
+| 01 | 000 |  |
+| 01 | 001 |  |
+| 01 | 010 |  |
+| 01 | 011 |  |
+| 01 | 100 |  |
+| 01 | 101 |  |
+| 01 | 110 |  |
+| 01 | 111 |  |
+| 10 | 000 |  |
+| 10 | 001 |  |
+| 10 | 010 |  |
+| 10 | 011 |  |
+| 10 | 100 |  |
+| 10 | 101 |  |
+| 10 | 110 |  |
+| 10 | 111 |  |
+| 11 | 000 |  |
+| 11 | 001 |  |
+| 11 | 010 |  |
+| 11 | 011 |  |
+| 11 | 100 |  |
+| 11 | 101 |  |
+| 11 | 110 |  |
+| 11 | 111 |  |
