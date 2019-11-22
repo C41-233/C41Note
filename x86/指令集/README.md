@@ -140,19 +140,19 @@ F2H
 | 01 | 101 | [DI] + disp8 | disp8[EBP] |
 | 01 | 110 | [BP] + disp8 | disp8[ESI] |
 | 01 | 111 | [BX] + disp8 | disp8[EDI] |
-| 10 | 000 | [BX + SI] + disp16 |  |
-| 10 | 001 | [BX + DI] + disp16 |  |
-| 10 | 010 | [BP + SI] + disp16 |  |
-| 10 | 011 | [BP + DI] + disp16 |  |
-| 10 | 100 | [SI] + disp16 |  |
-| 10 | 101 | [DI] + disp16 |  |
-| 10 | 110 | [BP] + disp16 |  |
-| 10 | 111 | [BX] + disp16 |  |
-| 11 | 000 | EAX/AX/AL |  |
-| 11 | 001 | ECX/CX/CL |  |
-| 11 | 010 | EDX/DX/DL |  |
-| 11 | 011 | EBX/BX/BL |  |
-| 11 | 100 | ESP/SP/AH |  |
-| 11 | 101 | EBP/BP/CH |  |
-| 11 | 110 | ESI/SI/DH |  |
-| 11 | 111 | EDI/DI/BH |  |
+| 10 | 000 | [BX + SI] + disp16 | disp32[EAX] |
+| 10 | 001 | [BX + DI] + disp16 | disp32[ECX] |
+| 10 | 010 | [BP + SI] + disp16 | disp32[EDX] |
+| 10 | 011 | [BP + DI] + disp16 | disp32[EBX] |
+| 10 | 100 | [SI] + disp16 | disp32[*SIB*] |
+| 10 | 101 | [DI] + disp16 | disp32[EBP] |
+| 10 | 110 | [BP] + disp16 | disp32[ESI] |
+| 10 | 111 | [BX] + disp16 | disp32[EDI] |
+| 11 | 000 | EAX/AX/AL | EAX/AX/AL |
+| 11 | 001 | ECX/CX/CL | ECX/CX/CL |
+| 11 | 010 | EDX/DX/DL | EDX/DX/DL |
+| 11 | 011 | EBX/BX/BL | EBX/BX/BL |
+| 11 | 100 | ESP/SP/AH | ESP/SP/AH |
+| 11 | 101 | EBP/BP/CH | EBP/BP/CH |
+| 11 | 110 | ESI/SI/DH | ESI/SI/DH |
+| 11 | 111 | EDI/DI/BH | EDI/DI/BH |
