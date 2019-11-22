@@ -156,3 +156,20 @@ F2H
 | 11 | 101 | EBP/BP/CH | EBP/BP/CH |
 | 11 | 110 | ESI/SI/DH | ESI/SI/DH |
 | 11 | 111 | EDI/DI/BH | EDI/DI/BH |
+
+##### Reg/Opcode
+
+根据具体的指令（Opcode），可以表示Opcode的补充，也可以表示寄存器操作数。
+
+当表示寄存器时：
+
+| Reg | r8 | r16 | r32 | MM | XMM | 
+|---|---|---|---|---|---|
+| 000 | AL | AX | EAX | MM0 | XMM0 |
+| 001 | CL | CX | ECX | MM1 | XMM1 |
+| 010 | DL | DX | EDX | MM2 | XMM2 |
+| 011 | BL | BX | EBX | MM3 | XMM3 |
+| 100 | AH | SP | ESP | MM4 | XMM4 |
+| 101 | CH | BP | EBP | MM5 | XMM5 |
+| 110 | DH | SI | ESI | MM6 | XMM6 |
+| 111 | BH | DI | EDI | MM7 | XMM7 |
