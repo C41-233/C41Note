@@ -128,18 +128,18 @@ F2H
 | 00 | 001 | [BX + DI] | [ECX] |
 | 00 | 010 | [BP + SI] | [EDX] |
 | 00 | 011 | [BP + DI] | [EBX] |
-| 00 | 100 | [SI] | SIB |
+| 00 | 100 | [SI] | *SIB* |
 | 00 | 101 | [DI] | disp32 |
 | 00 | 110 | disp16 | [ESI] |
 | 00 | 111 | [BX] | [EDI] |
 | 01 | 000 | [BX + SI] + disp8 | disp8[EAX] |
 | 01 | 001 | [BX + DI] + disp8 | disp8[ECX] |
-| 01 | 010 | [BP + SI] + disp8 |  |
-| 01 | 011 | [BP + DI] + disp8 |  |
-| 01 | 100 | [SI] + disp8 |  |
-| 01 | 101 | [DI] + disp8 |  |
-| 01 | 110 | [BP] + disp8 |  |
-| 01 | 111 | [BX] + disp8 |  |
+| 01 | 010 | [BP + SI] + disp8 | disp8[EDX] |
+| 01 | 011 | [BP + DI] + disp8 | disp8[EBX] |
+| 01 | 100 | [SI] + disp8 | disp8[*SIB*] |
+| 01 | 101 | [DI] + disp8 | disp8[EBP] |
+| 01 | 110 | [BP] + disp8 | disp8[ESI] |
+| 01 | 111 | [BX] + disp8 | disp8[EDI] |
 | 10 | 000 | [BX + SI] + disp16 |  |
 | 10 | 001 | [BX + DI] + disp16 |  |
 | 10 | 010 | [BP + SI] + disp16 |  |
