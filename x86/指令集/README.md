@@ -48,7 +48,6 @@
 - ROL 循环左移
 - ROR 循环右移
 - SAL 算术左移
-- SALC
 - SAR 算术右移
 - SHL 逻辑左移
 - SHLD 双精度左移
