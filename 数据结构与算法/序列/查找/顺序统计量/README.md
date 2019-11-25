@@ -18,6 +18,7 @@
 //从数组array中查找第k小的元素，k从1开始计数
 public static T Select<T>(T[] array, int k, Comparison<T> comparator)
 {
+    array = (T[]) array.Clone();
     return Select(array, 0, array.Length - 1, k, comparator);
 }
 
