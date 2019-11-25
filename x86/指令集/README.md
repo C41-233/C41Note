@@ -17,7 +17,8 @@
 - MUL 无符号乘法
 - NEG 相反数
 - SBB 带借位减法
-- SCAS<width>带借位减法
+- SCAS<width> 带借位减法
+- SUB 减法
 
 ##### BCD
 
@@ -39,6 +40,7 @@
 - BTS 位测试置位
 - NOT 按位取反
 - OR 按位或
+- XOR 按位异或
 
 ##### 位移
 - RCL 带进位左移
@@ -65,6 +67,7 @@
 ##### 比较
 
 - CMP 比较
+- TEST 按位与测试
  
 ## 内存操作
 
@@ -87,11 +90,14 @@
 - CMPXCHG 比较交换
 - CMPXCHG486 比较交换486
 - CMPXCHG8B 比较交换8字节
+- XADD 交换加
+- XCHG 交换
 
 ##### 串操作
 - CMPS<width> 串比较
 - LODS<width> 串加载
 - MOVS<width> 串传送
+- STOS<width> 串存储
 
 ## 标志寄存器
 
@@ -107,6 +113,9 @@
 - PUSHFD 32位标志寄存器压栈
 - SAHF 恢复标志寄存器低8位
 - SET<cond> 置位
+- STC 进位置位（CF）
+- STD 方向置位（DF）
+- STI 中断置位（IF）
 
 ## 跳转
 - CALL 过程调用
@@ -163,30 +172,18 @@
 - SIDT 存储中断描述符
 - SLDT 存储局部描述符
 - SMSW 保存状态字
-
-- STC进位置位（CF）
-- STD方向置位（DF）
-- STI中断置位（IF）
-- STOS<width>串存储
-- STR存储任务
-- SUB减法
-- SYSCALL系统调用
-- SYSENTER系统进入
-- SYSEXIT系统退出
-- SYSRET系统返回
-- TEST按位与测试
-- UD0无效0
-- UD1无效1
-- UD2无效2
+- STR 存储任务
+- SYSCALL 系统调用
+- SYSENTER 系统进入
+- SYSEXIT 系统退出
+- SYSRET 系统返回
+- UD0 无效0
+- UD1 无效1
+- UD2 无效2
 - UMOV
-- VERW校验写
-- WAIT等待
-- WBINVD回写无效高速缓存
-- WRMSR写专用模式
+- VERW 校验写
+- WAIT 等待
+- WBINVD 回写无效高速缓存
+- WRMSR 写专用模式
 - WRSHR
-- XADD交换加
-- XBTS
-- XCHG交换
-- XLAT查表
-- XOR按位异或
-- XSTORE
+
