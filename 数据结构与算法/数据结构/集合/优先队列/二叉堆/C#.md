@@ -3,6 +3,10 @@
 ## 以0位基的最小堆
 
 ``` C#
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
 public class PriorityQueue<T> : IEnumerable<T>
 {
 
@@ -62,12 +66,12 @@ public class PriorityQueue<T> : IEnumerable<T>
     private void ShiftUp(int hole)
     {
         var value = buffer[hole];
-		var parent = (hole-1) / 2;
+        var parent = (hole-1) / 2;
         while (hole > 0 && Less(value, buffer[parent]))
         {
             buffer[hole] = buffer[parent];
             hole = parent;
-			parent = (hole-1) / 2;
+            parent = (hole-1) / 2;
         }
 
         buffer[hole] = value;
@@ -126,6 +130,10 @@ public class PriorityQueue<T> : IEnumerable<T>
 ## 以1位基的最小堆
 
 ``` C#
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
 public class PriorityQueue<T> : IEnumerable<T>
 {
 
@@ -151,10 +159,10 @@ public class PriorityQueue<T> : IEnumerable<T>
 
         Array.Copy(data, 0, buffer, 1, Count);
 
-		for (var i = Count / 2; i >= 1; i--)
-		{
-			ShiftDown(i);
-		}
+        for (var i = Count / 2; i >= 1; i--)
+        {
+            ShiftDown(i);
+        }
     }
 
     public void Enqueue(T value)
