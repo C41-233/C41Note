@@ -2,6 +2,8 @@
 
 ## 汇编宏
 - D<width> 位填充
+- REP 无条件重复
+- REP<cond> 条件重复
 
 ## 运算
 
@@ -14,6 +16,8 @@
 - IMUL 有符号乘法
 - MUL 无符号乘法
 - NEG 相反数
+- SBB 带借位减法
+- SCAS<width>带借位减法
 
 ##### BCD
 
@@ -24,7 +28,7 @@
 - DAA 压缩BCD加法调整
 - DAS 压缩BCD减法调整
 
-##### 位运算
+##### 逻辑运算
 
 - AND 按位与
 - BSF 位右扫描
@@ -35,6 +39,19 @@
 - BTS 位测试置位
 - NOT 按位取反
 - OR 按位或
+
+##### 位移
+- RCL 带进位左移
+- RCR 带进位右移
+- ROL 循环左移
+- ROR 循环右移
+- SAL 算术左移
+- SALC
+- SAR 算术右移
+- SHL 逻辑左移
+- SHLD 双精度左移
+- SHR 逻辑右移
+- SHRD 双精度右移
 
 ##### 位扩展
 
@@ -88,6 +105,8 @@
 - POPFD 32位标志寄存器出栈
 - PUSHF 16位标志寄存器压栈
 - PUSHFD 32位标志寄存器压栈
+- SAHF 恢复标志寄存器低8位
+- SET<cond> 置位
 
 ## 跳转
 - CALL 过程调用
@@ -96,6 +115,9 @@
 - JMPE 扩展无条件跳转
 - LOOP 无条件计数循环
 - LOOP<cond> 条件计数循环
+- RET 过程返回
+- RETF 远过程返回
+- RETN 近过程返回
 
 ## 中断
 - IRET 16位中断返回
@@ -132,39 +154,16 @@
 - NOP 空指令
 - OUT 端口输出
 - OUTS<width> 端口输出串
-
-- RCL带进位左移
-- RCR带进位右移
-- RDMSR读专用模式
-- RDPMC读执行监视计数
+- RDMSR 读专用模式
+- RDPMC 读执行监视计数
 - RDSHR
-- RDTSC读时间戳计数
-- REP无条件重复
-- REP<cond>条件重复
-- RET过程返回
-- RETF远过程返回
-- RETN近过程返回
-- ROL循环左移
-- ROR循环右移
-- RSM恢复系统管理
-- SAHF恢复标志寄存器低8位
-- SAL算术左移
-- SALC
-- SAR算术右移
-- SBB带借位减法
-- SCAS<width>带借位减法
-- SET<cond>置位
-- SGDT存储全局描述符
-- SHL逻辑左移
-- SHLD双精度左移
-- SHR逻辑右移
-- SHRD双精度右移
-- SIDT存储中断描述符
-- SLDT存储局部描述符
-- SMI
-- SMINT
-- SMINTOLD
-- SMSW保存状态字
+- RDTSC 读时间戳计数
+- RSM 恢复系统管理
+- SGDT 存储全局描述符
+- SIDT 存储中断描述符
+- SLDT 存储局部描述符
+- SMSW 保存状态字
+
 - STC进位置位（CF）
 - STD方向置位（DF）
 - STI中断置位（IF）
