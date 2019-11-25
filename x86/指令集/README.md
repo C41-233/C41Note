@@ -12,6 +12,8 @@
 - DIV 无符号除法
 - IDIV 有符号除法
 - IMUL 有符号乘法
+- MUL 无符号乘法
+- NEG 相反数
 
 ##### BCD
 
@@ -31,6 +33,8 @@
 - BTC 位测试求反
 - BTR 位测试清零
 - BTS 位测试置位
+- NOT 按位取反
+- OR 按位或
 
 ##### 位扩展
 
@@ -38,6 +42,8 @@
 - CDQ 32位符号扩展为64位
 - CWD 16位符号扩展为32位
 - CWDE 16位扩展
+- MOVSX 符号扩展
+- MOVZX 无符号扩展
 
 ##### 比较
 
@@ -49,6 +55,15 @@
 - CMOV<cond> 条件传送
 - DEC 自减
 - INC 自增
+- MOV 数据传送
+
+##### 栈操作
+- POP 数据出栈
+- POPA 16位寄存器全出栈
+- POPAD 32位寄存器全出栈
+- PUSH 数据压栈
+- PUSHA 16位寄存器全压栈
+- PUSHAD 32位寄存器全压栈
 
 ##### 交换
 - BSWAP 交换字节
@@ -58,6 +73,8 @@
 
 ##### 串操作
 - CMPS<width> 串比较
+- LODS<width> 串加载
+- MOVS<width> 串传送
 
 ## 标志寄存器
 
@@ -67,16 +84,23 @@
 - CLTS 任务清除
 - CMC 进位取反（CF）
 - LAHF 加载低8位标志寄存器
+- POPF 16位标志寄存器出栈
+- POPFD 32位标志寄存器出栈
+- PUSHF 16位标志寄存器压栈
+- PUSHFD 32位标志寄存器压栈
 
 ## 跳转
 - CALL 过程调用
 - J<cond> 条件跳转
 - JMP 无条件跳转
 - JMPE 扩展无条件跳转
+- LOOP 无条件计数循环
+- LOOP<cond> 条件计数循环
 
 ## 中断
 - IRET 16位中断返回
 - IRETD 32位中断返回
+- LIDT 加载中断描述符
 
 ## 其他指令
 - ARPL 调整优先级
@@ -85,52 +109,30 @@
 - ENTER 建立堆栈帧
 - HLT 停机
 - IN 端口输入
-- INS<width>端口输入串
-- INT软中断
+- INS<width> 端口输入串
+- INT 软中断
+- LAR 加载访问权限
+- LDS 加载数据段
+- LEA 加载偏移地址
+- LEAVE 清除过程堆栈
+- LES 加载附加段
+- LFS 加载标志段
+- LGDT 加载全局描述符
+- LGS 加载全局段
+- LLDT 加载局部描述符
+- LMSW 加载状态字
+- LOADALL 加载所有段
+- LOADALL286 加载所有段286
+- LOCK 锁
+- LSL 加载段界限
+- LSS 加载堆栈段
+- LTR 加载任务
+- MONITOR 监视
+- MWAIT 监视器等待
+- NOP 空指令
+- OUT 端口输出
+- OUTS<width> 端口输出串
 
-- LAR加载访问权限
-- LDS加载数据段
-- LEA加载偏移地址
-- LEAVE清除过程堆栈
-- LES加载附加段
-- LFS加载标志段
-- LGDT加载全局描述符
-- LGS加载全局段
-- LIDT加载中断描述符
-- LLDT加载局部描述符
-- LMSW加载状态字
-- LOADALL加载所有段
-- LOADALL286加载所有段286
-- LOCK锁
-- LODS<width>串加载
-- LOOP无条件计数循环
-- LOOP<cond>条件计数循环
-- LSL加载段界限
-- LSS加载堆栈段
-- LTR加载任务
-- MONITOR监视
-- MOV数据传送
-- MOVS<width>串传送
-- MOVSX符号扩展
-- MOVZX无符号扩展
-- MUL无符号乘法
-- MWAIT监视器等待
-- NEG相反数
-- NOP空指令
-- NOT按位取反
-- OR按位或
-- OUT端口输出
-- OUTS<width>端口输出串
-- POP数据出栈
-- POPA16位寄存器全出栈
-- POPAD32位寄存器全出栈
-- POPF16位标志寄存器出栈
-- POPFD32位标志寄存器出栈
-- PUSH数据压栈
-- PUSHA16位寄存器全压栈
-- PUSHAD32位寄存器全压栈
-- PUSHF16位标志寄存器压栈
-- PUSHFD32位标志寄存器压栈
 - RCL带进位左移
 - RCR带进位右移
 - RDMSR读专用模式
