@@ -74,7 +74,7 @@ public class Queue<T>
     {
         if (head == tail)
         {
-            throw new InvalidOperationException("queue");
+            throw new InvalidOperationException("queue empty");
         }
 
         if (tail > 0)
