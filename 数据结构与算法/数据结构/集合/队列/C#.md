@@ -1,3 +1,8 @@
+# 队列 - C#
+
+## 循环数组实现
+
+``` C#
 using System;
 
 public class Queue<T>
@@ -95,3 +100,4 @@ public class Queue<T>
     }
 
 }
+```
