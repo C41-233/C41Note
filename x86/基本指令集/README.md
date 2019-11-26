@@ -76,7 +76,7 @@
 ## 内存操作
 
 ##### 赋值
-- CMOV<cond> 条件传送
+- [CMOV<cond> 条件传送](CMOV.md)
 - DEC 自减
 - INC 自增
 - MOV 数据传送
@@ -108,8 +108,7 @@
 - [CLC 进位清零（CF）](CLC.md)
 - [CLD 方向清零（DF）](CLD.md)
 - [CLI 中断清零（IF）](CLI.md)
-- [CLTS 任务清除](CLTS.md)
-- CMC 进位取反（CF）
+- [CMC 进位取反（CF）](CMC.md)
 - LAHF 加载低8位标志寄存器
 - POPF 16位标志寄存器出栈
 - POPFD 32位标志寄存器出栈
@@ -137,6 +136,9 @@
 - IRET 16位中断返回
 - IRETD 32位中断返回
 - LIDT 加载中断描述符
+
+## 特权
+- [CLTS 任务清除](CLTS.md)
 
 ## 其他指令
 - ARPL 调整优先级
