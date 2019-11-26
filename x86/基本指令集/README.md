@@ -106,8 +106,8 @@
 ## 标志寄存器
 
 - [CLC 进位清零（CF）](CLC.md)
-- CLD 方向清零（DF）
-- CLI 中断清零（IF）
+- [CLD 方向清零（DF）](CLD.md)
+- [CLI 中断清零（IF）](CLI.md)
 - CLTS 任务清除
 - CMC 进位取反（CF）
 - LAHF 加载低8位标志寄存器
