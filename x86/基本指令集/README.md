@@ -2,7 +2,8 @@
 
 ## 指令描述
 
-- <cond> 条件判断
+- [<cond> 条件判断](cond.md)
+- [<width> 位宽](width.md)
 
 ## 汇编宏
 - D<width> 位填充
