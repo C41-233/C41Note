@@ -6,7 +6,7 @@
 - [<width> 位宽](width.md)
 
 ## 汇编宏
-- D<width> 位填充
+- [D<width> 位填充](D.md)
 - REP 无条件重复
 - REP<cond> 条件重复
 
