@@ -36,7 +36,7 @@
 
 ##### 逻辑运算
 
-- AND 按位与
+- [AND 按位与](AND.md)
 - BSF 位右扫描
 - BSR 位左扫描
 - BT 位测试
@@ -122,7 +122,7 @@
 - STI 中断置位（IF）
 
 ## 跳转
-- CALL 过程调用
+- [CALL ACALL LCALL 过程调用](CALL.md)
 - J<cond> 条件跳转
 - JMP 无条件跳转
 - JMPE 扩展无条件跳转
