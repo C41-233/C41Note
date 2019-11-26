@@ -108,7 +108,7 @@
 - [CLC 进位清零（CF）](CLC.md)
 - [CLD 方向清零（DF）](CLD.md)
 - [CLI 中断清零（IF）](CLI.md)
-- CLTS 任务清除
+- [CLTS 任务清除](CLTS.md)
 - CMC 进位取反（CF）
 - LAHF 加载低8位标志寄存器
 - POPF 16位标志寄存器出栈
