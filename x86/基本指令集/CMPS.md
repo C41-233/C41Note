@@ -6,9 +6,7 @@
 
 # 指令格式
 ```
-CMPS8
-CMPS16
-CMPS32
+CMPS<width>
 ```
 
 ## 标志寄存器
