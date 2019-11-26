@@ -30,7 +30,7 @@
 - [AAA 非压BCD加法调整](AAA.md)
 - [AAD 非压BCD除法调整](AAD.md)
 - [AAM 非压BCD乘法调整](AAM.md)
-- AAS 非压BCD减法调整
+- [AAS 非压BCD减法调整](AAS.md)
 - DAA 压缩BCD加法调整
 - DAS 压缩BCD减法调整
 
