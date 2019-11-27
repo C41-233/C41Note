@@ -10,5 +10,5 @@
 
 ## 指令格式
 ```
-CMOV<cond> R/M, R/M/I
+CMOV<cond> r/m, r/m/I
 ```

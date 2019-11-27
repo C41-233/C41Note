@@ -7,6 +7,6 @@
 
 ## 指令格式
 ```
-IN AX/AL, I
+IN AX/AL, i
 IN AX/AL, DX
 ```

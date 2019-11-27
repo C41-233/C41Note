@@ -4,5 +4,5 @@
 
 ## 指令格式
 ```
-D<width> I
+D<width> i
 ```
