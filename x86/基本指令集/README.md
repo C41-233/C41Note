@@ -133,8 +133,7 @@
 
 ## 中断
 - [INT 软中断](INT.md)
-- IRET 16位中断返回
-- IRETD 32位中断返回
+- [IRET IRETD 中断返回](IRET.md)
 - LIDT 加载中断描述符
 
 ## 特权
