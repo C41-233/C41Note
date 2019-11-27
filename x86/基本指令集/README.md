@@ -122,7 +122,7 @@
 
 ## 跳转
 - [CALL ACALL LCALL 过程调用](CALL.md)
-- J<cond> 条件跳转
+- [JCXZ JECXZ 条件跳转](J.md)
 - JMP 无条件跳转
 - JMPE 扩展无条件跳转
 - LOOP 无条件计数循环
