@@ -17,8 +17,8 @@
 - [ADC 带进位加法](ADC.md)
 - [ADD 加法](ADD.md)
 - [DIV 无符号除法](DIV.md)
-- IDIV 有符号除法
-- IMUL 有符号乘法
+- [IDIV 有符号除法](IDIV.md)
+- [IMUL 有符号乘法](IMUL.md)
 - MUL 无符号乘法
 - NEG 相反数
 - SBB 带借位减法
@@ -140,14 +140,18 @@
 ## 特权
 - [CLTS 任务清除](CLTS.md)
 
+## 端口
+- [IN 端口输入](IN.md)
+- INS<width> 端口输入串
+- OUT 端口输出
+- OUTS<width> 端口输出串
+
 ## 其他指令
 - ARPL 调整优先级
 - BOUND 检查数组
 - CPUID CPU标识
 - ENTER 建立堆栈帧
 - [HLT 停机](HLT.md)
-- IN 端口输入
-- INS<width> 端口输入串
 - LAR 加载访问权限
 - LDS 加载数据段
 - LEA 加载偏移地址
@@ -167,8 +171,6 @@
 - MONITOR 监视
 - MWAIT 监视器等待
 - NOP 空指令
-- OUT 端口输出
-- OUTS<width> 端口输出串
 - RDMSR 读专用模式
 - RDPMC 读执行监视计数
 - RDSHR
