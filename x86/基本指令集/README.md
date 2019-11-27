@@ -16,7 +16,7 @@
 
 - [ADC 带进位加法](ADC.md)
 - [ADD 加法](ADD.md)
-- DIV 无符号除法
+- [DIV 无符号除法](DIV.md)
 - IDIV 有符号除法
 - IMUL 有符号乘法
 - MUL 无符号乘法
