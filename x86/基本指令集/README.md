@@ -103,6 +103,9 @@
 - MOVS<width> 串传送
 - STOS<width> 串存储
 
+##### 段页
+- [LDS 加载数据段](LDS.md)
+
 ## 标志寄存器
 
 - [CLC 进位清零（CF）](CLC.md)
@@ -154,7 +157,6 @@
 - ENTER 建立堆栈帧
 - [HLT 停机](HLT.md)
 - LAR 加载访问权限
-- LDS 加载数据段
 - LEA 加载偏移地址
 - LEAVE 清除过程堆栈
 - LES 加载附加段
