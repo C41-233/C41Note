@@ -107,9 +107,9 @@
 - [LDS 加载数据段](LDS.md)
 - [LEA 加载偏移地址](LEA.md)
 - [LES 加载附加段](LES.md)
+- [LGDT 加载全局描述符](LGDT.md)
 
 ## 标志寄存器
-
 - [CLC 进位清零（CF）](CLC.md)
 - [CLD 方向清零（DF）](CLD.md)
 - [CLI 中断清零（IF）](CLI.md)
@@ -161,7 +161,6 @@
 - LAR 加载访问权限
 - LEAVE 清除过程堆栈
 - LFS 加载标志段
-- LGDT 加载全局描述符
 - LGS 加载全局段
 - LLDT 加载局部描述符
 - LMSW 加载状态字
