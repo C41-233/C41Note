@@ -145,7 +145,7 @@
 - BOUND 检查数组
 - CPUID CPU标识
 - ENTER 建立堆栈帧
-- HLT 停机
+- [HLT 停机](HLT.md)
 - IN 端口输入
 - INS<width> 端口输入串
 - LAR 加载访问权限
