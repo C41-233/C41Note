@@ -77,7 +77,7 @@
 
 ##### 赋值
 - [CMOV<cond> 条件传送](CMOV.md)
-- DEC 自减
+- [DEC 自减](DEC.md)
 - INC 自增
 - MOV 数据传送
 
