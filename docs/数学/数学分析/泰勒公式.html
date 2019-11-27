@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<div class="container">
+	<div id="body" class="container">
 		<h1>泰勒公式</h1>
 		<hr/>
 		
@@ -32,14 +32,16 @@
 		<p>$R_n(x)=o(x^n)$时，称为<strong>带皮亚诺余项的麦克劳林公式</strong>。</p>
 		<p>$R_n(x)=\frac{f^{(n+1)}(\theta x)}{(n+1)!}x^{n+1} (0&lt;\theta&lt;1)$时，称为<strong>带拉格朗日余项的麦克劳林公式</strong>。</p>
 
-		<li>特殊麦克劳林公式</li>
-		<p>$$e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + ... + \frac{x^n}{n!} + o(x^n)$$</p>
-		<p>$$sinx = x - \frac{x^3}{3!} + \frac{x^5}{5!} + ... + \frac{(-1)^n}{(2n+1)!}x^{2n+1} + o(x^{2n+1})$$</p>
-		<p>$$cosx = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + ... + \frac{(-1)^n}{(2n)!}x^{2n} + o(x^{2n})$$</p>
-		<p>$$\frac{1}{1-x} = 1 + x + x^2 + ... + x^n + o(x^n)$$</p>
-		<p>$$\frac{1}{1+x} = 1 - x + x^2 + ... + (-1)^nx^n + o(x^n)$$</p>
-		<p>$$ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} + ... + \frac{(-1)^{n-1}}{n}x^n+ o(x^n)$$</p>
-		<p>$$(1+x)^a = 1+ax + \frac{a(a-1)}{2!}x^2 + \frac{a(a-1)(a-2)}{3!}x^3 + ... + \frac{a(a-1)(a-2)...(a-n+1)}{n!}x^n + o(x^n)$$</p>
+		<div class="example">
+			<h6>特定麦克劳林公式</h6>
+			<p>$$e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + ... + \frac{x^n}{n!} + o(x^n)$$</p>
+			<p>$$sinx = x - \frac{x^3}{3!} + \frac{x^5}{5!} + ... + \frac{(-1)^n}{(2n+1)!}x^{2n+1} + o(x^{2n+1})$$</p>
+			<p>$$cosx = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + ... + \frac{(-1)^n}{(2n)!}x^{2n} + o(x^{2n})$$</p>
+			<p>$$\frac{1}{1-x} = 1 + x + x^2 + ... + x^n + o(x^n)$$</p>
+			<p>$$\frac{1}{1+x} = 1 - x + x^2 + ... + (-1)^nx^n + o(x^n)$$</p>
+			<p>$$ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} + ... + \frac{(-1)^{n-1}}{n}x^n+ o(x^n)$$</p>
+			<p>$$(1+x)^a = 1+ax + \frac{a(a-1)}{2!}x^2 + \frac{a(a-1)(a-2)}{3!}x^3 + ... + \frac{a(a-1)(a-2)...(a-n+1)}{n!}x^n + o(x^n)$$</p>
+		</div>
 	</div>
 </body>
 
