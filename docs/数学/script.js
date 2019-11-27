@@ -80,8 +80,11 @@ function require(src){
 	}
 }
 
-require("style.css")
+//css
 require("https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+require("style.css")
+
+//js
 require("https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js")
 require("https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
 require("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML")
