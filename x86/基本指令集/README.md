@@ -108,6 +108,7 @@
 - [LEA 加载偏移地址](LEA.md)
 - [LES 加载附加段](LES.md)
 - [LGDT 加载全局描述符](LGDT.md)
+- [LLDT 加载局部描述符](LLDT.md)
 
 ## 标志寄存器
 - [CLC 进位清零（CF）](CLC.md)
@@ -162,7 +163,6 @@
 - LEAVE 清除过程堆栈
 - LFS 加载标志段
 - LGS 加载全局段
-- LLDT 加载局部描述符
 - LMSW 加载状态字
 - LOADALL 加载所有段
 - LOADALL286 加载所有段286
