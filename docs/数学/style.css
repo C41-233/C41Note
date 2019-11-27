@@ -6,15 +6,23 @@ body{
 	background-color: #e9ecef;
 }
 
-p{
+p, li{
 	font-size: 120%;
 }
 
 h6{
 	font-weight: bold;
-	font-size: 18px;
-	display: list-item;
-	list-style-type: disc;
-	list-style-position: inside;
-	margin-top: 30px;
+	font-size: 20px;
+}
+
+h6:not(:first-of-type){
+	margin-top: 50px;
+}
+
+h6:before{
+	content: '（';
+}
+
+h6:after{
+	content: '）';
 }

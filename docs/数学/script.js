@@ -1,6 +1,21 @@
 (function(){
 
 /* bootstrap */
+let path
+{
+	let scripts = document.getElementsByTagName("script")
+	let thisTag = scripts[scripts.length - 1]
+	path = thisTag.src
+	let iSplit = path.lastIndexOf("/")
+	if(iSplit > 0){
+		path = path.substring(0, iSplit)
+	}
+	else{
+		path = ""
+	}
+}
+
+
 class AsyncQueue{
 	
 	constructor(){
@@ -55,6 +70,10 @@ function require(src){
 		suffix = src.substring(idot)
 	}
 	
+	if(src.indexOf(":") < 0){
+		src = path + src
+	}
+	
 	let node
 	if(suffix === ".js"){
 		node = document.createElement("script")
@@ -82,7 +101,7 @@ function require(src){
 
 //css
 require("https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
-require("style.css")
+require("/style.css")
 
 //js
 require("https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js")
@@ -99,6 +118,7 @@ function initMathJax(){
     showMathMenu: false,
 	messageStyle: "none",
     jax: ["input/TeX", "output/HTML-CSS"],
+	displayAlign: "left",
     tex2jax: {
 		//行内公式选择符
 		inlineMath: [["$", "$"], ["\\(", "\\)"]], 
@@ -115,7 +135,7 @@ function initMathJax(){
 		//可选字体
 		availableFonts: ["STIX", "TeX"], 
 		//关闭右击菜单显示
-		showMathMenu: false 
+		showMathMenu: false
     }
   });
 }

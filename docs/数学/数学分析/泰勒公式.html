@@ -2,16 +2,15 @@
 
 <head>
 	<meta charset="utf8"/>
-	<title>数学分析</title>
-	<script src="script.js" type="text/javascript"></script>
+	<title>泰勒公式</title>
+	<script src="../script.js" type="text/javascript"></script>
 </head>
 
 <body>
 	<div class="container">
-		<h1>数学分析</h1>
+		<h1>泰勒公式</h1>
 		<hr/>
 		
-		<h2>泰勒公式</h2>
 		<h6>泰勒多项式，泰勒系数</h6>
 		<p>若函数$f(x)$在点$x_0$处存在直至n阶的导数，由这些导数构造的n次多项式$$T_n(x)=f(x_0) + f^{'}(x_0)(x-x_0) + \frac{f^{''}(x_0)}{2!}(x-x_0)^2 + \frac{f^{'''}(x_0)}{3!}(x-x_0)^3 + ... + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$$称为<strong>函数f(x)在点$x_0$处的泰勒多项式</strong>。</p>
 		<p>$T_n(x)$的各项系数$\frac{f^{(k)}(x_0)}{k!}, (k \in N_+)$称为<strong>泰勒系数</strong>。</p>
@@ -24,14 +23,23 @@
 		<p>带皮亚诺余项的泰勒公式，定义在$x_0$这一点上，因此也称为<strong>局部泰勒公式</strong>。</p>
 		
 		<h6>泰勒定理，拉格朗日余项，带拉格朗日余项的泰勒公式</h6>
-		<p>若函数$f(x)$在$[a,b]$上存在直至n阶的连续导函数，在$(a,b)$内存在n+1阶导函数，则对$\forall x,x_0 \in [a,b]$，至少存在一点$\epsilon \in (a,b)$，使得$f(x)=T_n(x) + R_n(x)$。其中$T_n(x)$是泰勒多项式，$R_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1} (x&lt;\xi&lt;x_0)$。</p>
+		<p>若函数$f(x)$在$[a,b]$上存在直至n阶的连续导函数，在$(a,b)$内存在n+1阶导函数，则对$\forall x,x_0 \in [a,b]$，至少存在一点$\epsilon \in (a,b)$，使得$f(x)=T_n(x) + R_n(x)$。其中$T_n(x)$是泰勒多项式，$R_n(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$，$\xi=x_0+\theta (x-x_0) (0&lt;\theta&lt;1)$。</p>
 		<p>$R_n(x)$称为<strong>拉格朗日余项</strong>。$f(x)=T_n(x) + R_n(x)$称为<strong>带拉格朗日余项的泰勒公式</strong>。</p>
 		<p>带拉格朗日余项的泰勒公式，定义在一段区间上，因此也称为<strong>整体泰勒公式</strong>。</p>
 		
 		<h6>麦克劳林公式</h6>
 		<p>在泰勒公式中取$x_0=0$，则$$f(x)=f(0) + f^{'}(0)x + \frac{f^{''}(0)}{2!}x^2 + \frac{f^{'''}(0)}{3!}x^3 + ... + \frac{f^{(n)}(0)}{n!}x^n + R_n(x)$$称为<strong>麦克劳林公式</strong>。</p>
-		<p>$R_n(x)=o(x^n)$时，称为带皮亚诺余项的麦克劳林公式。</p>
-		
+		<p>$R_n(x)=o(x^n)$时，称为<strong>带皮亚诺余项的麦克劳林公式</strong>。</p>
+		<p>$R_n(x)=\frac{f^{(n+1)}(\theta x)}{(n+1)!}x^{n+1} (0&lt;\theta&lt;1)$时，称为<strong>带拉格朗日余项的麦克劳林公式</strong>。</p>
+
+		<li>特殊麦克劳林公式</li>
+		<p>$$e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + ... + \frac{x^n}{n!} + o(x^n)$$</p>
+		<p>$$sinx = x - \frac{x^3}{3!} + \frac{x^5}{5!} + ... + \frac{(-1)^n}{(2n+1)!}x^{2n+1} + o(x^{2n+1})$$</p>
+		<p>$$cosx = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + ... + \frac{(-1)^n}{(2n)!}x^{2n} + o(x^{2n})$$</p>
+		<p>$$\frac{1}{1-x} = 1 + x + x^2 + ... + x^n + o(x^n)$$</p>
+		<p>$$\frac{1}{1+x} = 1 - x + x^2 + ... + (-1)^nx^n + o(x^n)$$</p>
+		<p>$$ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} + ... + \frac{(-1)^{n-1}}{n}x^n+ o(x^n)$$</p>
+		<p>$$(1+x)^a = 1+ax + \frac{a(a-1)}{2!}x^2 + \frac{a(a-1)(a-2)}{3!}x^3 + ... + \frac{a(a-1)(a-2)...(a-n+1)}{n!}x^n + o(x^n)$$</p>
 	</div>
 </body>
 
