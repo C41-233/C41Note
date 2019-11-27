@@ -78,7 +78,7 @@
 ##### 赋值
 - [CMOV<cond> 条件传送](CMOV.md)
 - [DEC 自减](DEC.md)
-- INC 自增
+- [INC 自增](INC.md)
 - MOV 数据传送
 
 ##### 栈操作
@@ -138,9 +138,11 @@
 - LIDT 加载中断描述符
 
 ## 特权
+
+##### 特权寄存器
 - [CLTS 任务清除](CLTS.md)
 
-## 端口
+##### 端口
 - [IN 端口输入](IN.md)
 - INS<width> 端口输入串
 - OUT 端口输出
