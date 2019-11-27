@@ -139,7 +139,7 @@
 ## 中断
 - [INT 软中断](INT.md)
 - [IRET IRETD 中断返回](IRET.md)
-- LIDT 加载中断描述符
+- [LIDT 加载中断描述符](LIDT.md)
 
 ## 特权
 
