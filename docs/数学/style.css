@@ -3,7 +3,7 @@
 }
 
 body{
-	background-color: #e9ecef;
+	background-color: #eee;
 }
 
 p, li{
@@ -13,6 +13,7 @@ p, li{
 h6{
 	font-weight: bold;
 	font-size: 20px;
+	counter-increment: num 1;
 }
 
 h6:not(:first-of-type){
@@ -20,9 +21,5 @@ h6:not(:first-of-type){
 }
 
 h6:before{
-	content: '（';
-}
-
-h6:after{
-	content: '）';
+	content: counter(num) ". ";
 }
