@@ -98,8 +98,8 @@
 - XCHG 交换
 
 ##### 串操作
-- [CMPS<width>](CMPS.md) 串比较
-- LODS<width> 串加载
+- [CMPS<width> 串比较](CMPS.md)
+- [LODS<width> 串加载](LODS.md)
 - MOVS<width> 串传送
 - STOS<width> 串存储
 
