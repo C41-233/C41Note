@@ -133,8 +133,8 @@
 - JMPE 扩展无条件跳转
 - [LOOP 无条件计数循环](LOOP.md)
 - [LOOP<cond> 条件计数循环](LOOPx.md)
-- RET 过程返回
-- RETF 远过程返回
+- [RET 过程返回](RET.md)
+- [RETF 远过程返回](RETF.md)
 - RETN 近过程返回
 
 ## 中断
