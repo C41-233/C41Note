@@ -4,11 +4,11 @@
 
 - [<cond> 条件判断](cond.md)
 - [<width> 位宽](width.md)
+- [REP 无条件重复](REP.md)
+- [REP<cond> 条件重复](REP.md)
 
 ## 汇编宏
 - [D<width> 位填充](D.md)
-- REP 无条件重复
-- REP<cond> 条件重复
 
 ## 运算
 
@@ -22,7 +22,6 @@
 - [MUL 无符号乘法](MUL.md)
 - [NEG 相反数](NEG.md)
 - SBB 带借位减法
-- SCAS<width> 带借位减法
 - SUB 减法
 
 ##### BCD
@@ -49,7 +48,7 @@
 
 ##### 移位
 - [RCL 带进位左移](RCL.md)
-- RCR 带进位右移
+- [RCR 带进位右移](RCR.md)
 - ROL 循环左移
 - ROR 循环右移
 - SAL 算术左移
@@ -101,6 +100,7 @@
 - [CMPS<width> 串比较](CMPS.md)
 - [LODS<width> 串加载](LODS.md)
 - [MOVS<width> 串传送](MOVS.md)
+- SCAS<width>
 - STOS<width> 串存储
 
 ##### 段页
