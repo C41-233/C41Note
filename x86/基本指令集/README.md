@@ -82,8 +82,8 @@
 - [MOV 数据传送](MOV.md)
 
 ##### 栈操作
-- POP 数据出栈
-- POPA 16位寄存器全出栈
+- [POP 数据出栈](POP.md)
+- [POPA 16位寄存器全出栈](POPA.md)
 - POPAD 32位寄存器全出栈
 - PUSH 数据压栈
 - PUSHA 16位寄存器全压栈
@@ -151,7 +151,7 @@
 ##### 端口
 - [IN 端口输入](IN.md)
 - INS<width> 端口输入串
-- OUT 端口输出
+- [OUT 端口输出](OUT.md)
 - OUTS<width> 端口输出串
 
 ## 其他指令
