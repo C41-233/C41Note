@@ -79,7 +79,7 @@
 - [CMOV<cond> 条件传送](CMOV.md)
 - [DEC 自减](DEC.md)
 - [INC 自增](INC.md)
-- MOV 数据传送
+- [MOV 数据传送](MOV.md)
 
 ##### 栈操作
 - POP 数据出栈
@@ -100,7 +100,7 @@
 ##### 串操作
 - [CMPS<width> 串比较](CMPS.md)
 - [LODS<width> 串加载](LODS.md)
-- MOVS<width> 串传送
+- [MOVS<width> 串传送](MOVS.md)
 - STOS<width> 串存储
 
 ##### 段页
