@@ -20,7 +20,7 @@
 - [IDIV 有符号除法](IDIV.md)
 - [IMUL 有符号乘法](IMUL.md)
 - [MUL 无符号乘法](MUL.md)
-- NEG 相反数
+- [NEG 相反数](NEG.md)
 - SBB 带借位减法
 - SCAS<width> 带借位减法
 - SUB 减法
@@ -43,8 +43,8 @@
 - BTC 位测试求反
 - BTR 位测试清零
 - BTS 位测试置位
-- NOT 按位取反
-- OR 按位或
+- [NOT 按位取反](NOT.md)
+- [OR 按位或](OR.md)
 - XOR 按位异或
 
 ##### 位移
@@ -172,7 +172,7 @@
 - LSS 加载堆栈段
 - MONITOR 监视
 - MWAIT 监视器等待
-- NOP 空指令
+- [NOP 空指令](NOP.md)
 - RDMSR 读专用模式
 - RDPMC 读执行监视计数
 - RDSHR
