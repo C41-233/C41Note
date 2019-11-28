@@ -118,8 +118,8 @@
 - LAHF 加载低8位标志寄存器
 - [POPF 16位标志寄存器出栈](POPF.md)
 - [POPFD 32位标志寄存器出栈](POPF.md)
-- PUSHF 16位标志寄存器压栈
-- PUSHFD 32位标志寄存器压栈
+- [PUSHF 16位标志寄存器压栈](PUSHF.md)
+- [PUSHFD 32位标志寄存器压栈](PUSHFD.md)
 - SAHF 恢复标志寄存器低8位
 - SET<cond> 置位
 - STC 进位置位（CF）
