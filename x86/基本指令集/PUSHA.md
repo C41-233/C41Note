@@ -1,0 +1,13 @@
+# PUSHA PUSHAD
+
+寄存器全压栈。
+
+PUSHA依次将AX、CX、DX、BX、SP、BP、SI、DI压栈，栈顶由SS:SP确定。
+
+PUSHAD依次将EAX、ECX、EDX、EBX、ESP、EBP、ESI、EDI压栈。
+
+## 指令格式
+```
+PUSHA
+PUSHAD
+```

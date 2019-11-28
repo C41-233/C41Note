@@ -85,9 +85,9 @@
 - [POP 数据出栈](POP.md)
 - [POPA 16位寄存器全出栈](POPA.md)
 - [POPAD 32位寄存器全出栈](POPA.md)
-- PUSH 数据压栈
-- PUSHA 16位寄存器全压栈
-- PUSHAD 32位寄存器全压栈
+- [PUSH 数据压栈](PUSH.md)
+- [PUSHA 16位寄存器全压栈](PUSHA.md)
+- [PUSHAD 32位寄存器全压栈](PUSHAD.md)
 
 ##### 交换
 - BSWAP 交换字节
