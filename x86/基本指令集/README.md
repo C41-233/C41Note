@@ -83,8 +83,7 @@
 
 ##### 栈操作
 - [POP 数据出栈](POP.md)
-- [POPA 16位寄存器全出栈](POPA.md)
-- POPAD 32位寄存器全出栈
+- [POPA POPAD 寄存器全出栈](POPA.md)
 - PUSH 数据压栈
 - PUSHA 16位寄存器全压栈
 - PUSHAD 32位寄存器全压栈
