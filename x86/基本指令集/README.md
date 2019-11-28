@@ -132,7 +132,7 @@
 - [JMP 无条件跳转](JMP.md)
 - JMPE 扩展无条件跳转
 - [LOOP 无条件计数循环](LOOP.md)
-- LOOP<cond> 条件计数循环
+- [LOOP<cond> 条件计数循环](LOOPx.md)
 - RET 过程返回
 - RETF 远过程返回
 - RETN 近过程返回
@@ -144,8 +144,9 @@
 
 ## 特权
 
-##### 特权寄存器
+##### 任务
 - [CLTS 任务清除](CLTS.md)
+- [LTR 加载任务](LTR.md)
 
 ##### 端口
 - [IN 端口输入](IN.md)
@@ -169,7 +170,6 @@
 - LOCK 锁
 - LSL 加载段界限
 - LSS 加载堆栈段
-- LTR 加载任务
 - MONITOR 监视
 - MWAIT 监视器等待
 - NOP 空指令
