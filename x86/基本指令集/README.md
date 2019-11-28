@@ -19,7 +19,7 @@
 - [DIV 无符号除法](DIV.md)
 - [IDIV 有符号除法](IDIV.md)
 - [IMUL 有符号乘法](IMUL.md)
-- MUL 无符号乘法
+- [MUL 无符号乘法](MUL.md)
 - NEG 相反数
 - SBB 带借位减法
 - SCAS<width> 带借位减法
@@ -66,7 +66,7 @@
 - [CWD 16位符号扩展为32位](CWD.md)
 - CWDE 16位扩展
 - MOVSX 符号扩展
-- MOVZX 无符号扩展
+- [MOVZX 无符号扩展](MOVZX.md)
 
 ##### 比较
 
