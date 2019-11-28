@@ -83,7 +83,8 @@
 
 ##### 栈操作
 - [POP 数据出栈](POP.md)
-- [POPA POPAD 寄存器全出栈](POPA.md)
+- [POPA 16位寄存器全出栈](POPA.md)
+- [POPAD 32位寄存器全出栈](POPA.md)
 - PUSH 数据压栈
 - PUSHA 16位寄存器全压栈
 - PUSHAD 32位寄存器全压栈
@@ -115,8 +116,8 @@
 - [CLI 中断清零（IF）](CLI.md)
 - [CMC 进位取反（CF）](CMC.md)
 - LAHF 加载低8位标志寄存器
-- POPF 16位标志寄存器出栈
-- POPFD 32位标志寄存器出栈
+- [POPF 16位标志寄存器出栈](POPF.md)
+- [POPFD 32位标志寄存器出栈](POPF.md)
 - PUSHF 16位标志寄存器压栈
 - PUSHFD 32位标志寄存器压栈
 - SAHF 恢复标志寄存器低8位
