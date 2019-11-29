@@ -101,7 +101,7 @@
 - [LODS<width> 串加载](LODS.md)
 - [MOVS<width> 串传送](MOVS.md)
 - [SCAS<width> 串检索](SCAS.md)
-- STOS<width> 串存储
+- [STOS<width> 串存储](STOS.md)
 
 ##### 段页
 - [LDS 加载数据段](LDS.md)
@@ -125,8 +125,8 @@
 - SAHF 恢复标志寄存器低8位
 - SET<cond> 置位
 - [STC 进位置位（CF）](STC.md)
-- STD 方向置位（DF）
-- STI 中断置位（IF）
+- [STD 方向置位（DF）](STD.md)
+- [STI 中断置位（IF）](STI.md)
 
 ## 跳转
 - [CALL ACALL LCALL 过程调用](CALL.md)
