@@ -53,9 +53,9 @@
 - [ROR 循环右移](ROR.md)
 - [SAL 算术左移](SAL.md)
 - [SAR 算术右移](SAR.md)
-- SHL 逻辑左移
+- [SHL 逻辑左移](SHL.md)
 - SHLD 双精度左移
-- SHR 逻辑右移
+- [SHR 逻辑右移](SHR.md)
 - SHRD 双精度右移
 
 ##### 位扩展
@@ -110,7 +110,7 @@
 - [LGDT 加载全局描述符](LGDT.md)
 - [LLDT 加载局部描述符](LLDT.md)
 - [SGDT 存储全局描述符](SGDT.md)
-- SLDT 存储局部描述符
+- [SLDT 存储局部描述符](SLDT.md)
 
 ## 标志寄存器
 - [CLC 进位清零（CF）](CLC.md)
@@ -124,7 +124,7 @@
 - [PUSHFD 32位标志寄存器压栈](PUSHFD.md)
 - SAHF 恢复标志寄存器低8位
 - SET<cond> 置位
-- STC 进位置位（CF）
+- [STC 进位置位（CF）](STC.md)
 - STD 方向置位（DF）
 - STI 中断置位（IF）
 
@@ -143,7 +143,7 @@
 - [INT 软中断](INT.md)
 - [IRET IRETD 中断返回](IRET.md)
 - [LIDT 加载中断描述符](LIDT.md)
-- SIDT 存储中断描述符
+- [SIDT 存储中断描述符](SIDT.md)
 
 ## 特权
 
