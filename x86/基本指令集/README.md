@@ -94,7 +94,7 @@
 - CMPXCHG486 比较交换486
 - CMPXCHG8B 比较交换8字节
 - XADD 交换加
-- XCHG 交换
+- [XCHG 交换](XCHG.md)
 
 ##### 串操作
 - [CMPS<width> 串比较](CMPS.md)
@@ -102,6 +102,7 @@
 - [MOVS<width> 串传送](MOVS.md)
 - [SCAS<width> 串检索](SCAS.md)
 - [STOS<width> 串存储](STOS.md)
+- [XLAT 查表](XLAT.md)
 
 ##### 段页
 - [LDS 加载数据段](LDS.md)
