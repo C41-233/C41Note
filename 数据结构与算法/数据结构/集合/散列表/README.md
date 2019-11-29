@@ -76,3 +76,24 @@ HashFind(T, value){
     return -1
 }
 ```
+
+##### 线性探查
+
+给定一个辅助散列函数h(k)，线性探查的散列函数为 hash(k, i) = (h(k) + i) mod m。
+
+根据公式，会按照h(k)，h(k)+1，h(k)+2，...，m-1，0，1，...，h(k)-1的顺序探查。
+
+##### 二次探查
+给定一个辅助散列函数h(k)，二次探查的散列函数为 hash(k, i) = (h(k) + c<sub>1</sub>i + c<sub>2</sub>i<sup>2</sup>) mod m，其中c<sub>1</sub>>0，c<sub>2</sub>>0。
+
+根据公式，初始探查位置为h(k)，随后每次加上一个二次偏移量。
+
+##### 双重散列
+
+给定两个辅助散列函数h<sub>1</sub>(k)和h<sub>2</sub>(k)，双重散列的散列函数为 hash(k, i) = (h<sub>1</sub>(k) + ih<sub>2</sub>(k)) mod m。
+
+h<sub>2</sub>(k)必须保证与槽位数m互质。可以采用以下方式：
+- m为2的幂，h<sub>2</sub>(k)产生奇数
+- m为素数
+
+
