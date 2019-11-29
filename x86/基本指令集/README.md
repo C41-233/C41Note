@@ -21,7 +21,7 @@
 - [IMUL 有符号乘法](IMUL.md)
 - [MUL 无符号乘法](MUL.md)
 - [NEG 相反数](NEG.md)
-- SBB 带借位减法
+- [SBB 带借位减法](SBB.md)
 - SUB 减法
 
 ##### BCD
@@ -52,7 +52,7 @@
 - [ROL 循环左移](ROL.md)
 - [ROR 循环右移](ROR.md)
 - [SAL 算术左移](SAL.md)
-- SAR 算术右移
+- [SAR 算术右移](SAR.md)
 - SHL 逻辑左移
 - SHLD 双精度左移
 - SHR 逻辑右移
@@ -100,7 +100,7 @@
 - [CMPS<width> 串比较](CMPS.md)
 - [LODS<width> 串加载](LODS.md)
 - [MOVS<width> 串传送](MOVS.md)
-- SCAS<width>
+- [SCAS<width> 串检索](SCAS.md)
 - STOS<width> 串存储
 
 ##### 段页
@@ -109,6 +109,8 @@
 - [LES 加载附加段](LES.md)
 - [LGDT 加载全局描述符](LGDT.md)
 - [LLDT 加载局部描述符](LLDT.md)
+- [SGDT 存储全局描述符](SGDT.md)
+- SLDT 存储局部描述符
 
 ## 标志寄存器
 - [CLC 进位清零（CF）](CLC.md)
@@ -141,6 +143,7 @@
 - [INT 软中断](INT.md)
 - [IRET IRETD 中断返回](IRET.md)
 - [LIDT 加载中断描述符](LIDT.md)
+- SIDT 存储中断描述符
 
 ## 特权
 
@@ -178,9 +181,6 @@
 - RDSHR
 - RDTSC 读时间戳计数
 - RSM 恢复系统管理
-- SGDT 存储全局描述符
-- SIDT 存储中断描述符
-- SLDT 存储局部描述符
 - SMSW 保存状态字
 - STR 存储任务
 - SYSCALL 系统调用
