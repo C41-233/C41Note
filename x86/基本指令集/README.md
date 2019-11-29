@@ -22,7 +22,7 @@
 - [MUL 无符号乘法](MUL.md)
 - [NEG 相反数](NEG.md)
 - [SBB 带借位减法](SBB.md)
-- SUB 减法
+- [SUB 减法](SUB.md)
 
 ##### BCD
 
@@ -70,7 +70,7 @@
 ##### 比较
 
 - [CMP 比较](CMP.md)
-- TEST 按位与测试
+- [TEST 按位与测试](TEST.md)
  
 ## 内存操作
 
@@ -150,6 +150,7 @@
 ##### 任务
 - [CLTS 任务清除](CLTS.md)
 - [LTR 加载任务](LTR.md)
+- [STR 存储任务](STR.md)
 
 ##### 端口
 - [IN 端口输入](IN.md)
@@ -182,14 +183,13 @@
 - RDTSC 读时间戳计数
 - RSM 恢复系统管理
 - SMSW 保存状态字
-- STR 存储任务
 - SYSCALL 系统调用
 - SYSENTER 系统进入
 - SYSEXIT 系统退出
 - SYSRET 系统返回
 - UD0 无效0
 - UD1 无效1
-- UD2 无效2
+- [UD2 无效2](UD2.md)
 - UMOV
 - VERW 校验写
 - WAIT 等待
