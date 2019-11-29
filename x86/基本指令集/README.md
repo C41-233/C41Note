@@ -44,7 +44,7 @@
 - BTS 位测试置位
 - [NOT 按位取反](NOT.md)
 - [OR 按位或](OR.md)
-- XOR 按位异或
+- [XOR 按位异或](XOR.md)
 
 ##### 移位
 - [RCL 带进位左移](RCL.md)
@@ -145,6 +145,9 @@
 - [IRET IRETD 中断返回](IRET.md)
 - [LIDT 加载中断描述符](LIDT.md)
 - [SIDT 存储中断描述符](SIDT.md)
+- UD0 无效0
+- UD1 无效1
+- [UD2 无效2](UD2.md)
 
 ## 特权
 
@@ -188,9 +191,6 @@
 - SYSENTER 系统进入
 - SYSEXIT 系统退出
 - SYSRET 系统返回
-- UD0 无效0
-- UD1 无效1
-- [UD2 无效2](UD2.md)
 - UMOV
 - VERW 校验写
 - WAIT 等待
