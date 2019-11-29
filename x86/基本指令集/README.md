@@ -49,9 +49,9 @@
 ##### 移位
 - [RCL 带进位左移](RCL.md)
 - [RCR 带进位右移](RCR.md)
-- ROL 循环左移
-- ROR 循环右移
-- SAL 算术左移
+- [ROL 循环左移](ROL.md)
+- [ROR 循环右移](ROR.md)
+- [SAL 算术左移](SAL.md)
 - SAR 算术右移
 - SHL 逻辑左移
 - SHLD 双精度左移
