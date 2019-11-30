@@ -21,6 +21,11 @@ public static double Arcsin(double x)
     return fl * Asr(0, x, F); //辛普森公式
 }
 
+public static double Arccos(double x)
+{
+    return Math.PI / 2 - Arcsin(x);
+}
+        
 private static double F(double x)
 {
     return 1 / Math.Sqrt(1 - x * x);
