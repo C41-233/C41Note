@@ -1,6 +1,5 @@
-# 中缀表达式转后缀表达式 - C#
-
 输入表达式已经过词法分析切割，运算符按照优先级从高到低的顺序在数组operators中表示。
+
 ``` C#
 public static List<string> Transform(List<string> input, string[] operators)
 {

@@ -1,5 +1,3 @@
-# 数字转汉字 - C#
-
 ``` C#
 public static string NumberToChinese(int num)
 {

@@ -1,5 +1,3 @@
-# 最大子数组 - C#
-
 ## 分治
 ``` C#
 public static void FindMaxSubArray(int[] array, out int left, out int right, out int sum)

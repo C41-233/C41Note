@@ -1,5 +1,3 @@
-# 整数转字符串 - C#
-
 ``` C#
 private static readonly char[] DEFAULT_DIGITS = {
     '0','1','2','3','4','5','6','7','8','9',
