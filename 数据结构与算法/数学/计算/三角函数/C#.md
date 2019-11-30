@@ -65,12 +65,12 @@ private static void Adjust(ref double x, ref double sign)
     if (x > Math.PI / 2)
     {
         x -= Math.PI;
-        sign *= -1;
+        sign = -sign;
     }
     else if (x < -Math.PI / 2)
     {
         x += Math.PI;
-        sign *= -1;
+        sign = -sign;
     }
 }
 ```

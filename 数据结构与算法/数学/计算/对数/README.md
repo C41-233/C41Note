@@ -2,17 +2,11 @@
 
 计算对数函数，即log(x, y) = log<sub>x</sub>y。
 
-## 自然对数
+## 一、自然对数
 
 ### 1. 辛普森公式
 
-根据
-
-![lnx = \int_{1}^{x}\frac{1}{t}dt](1.gif)
-
-辛普森公式
-
-![\int_{a}^{b}f(x)dx \approx \frac{b-a}{6}[f(a) + 4f(\frac{a+b}{2}) + f(b)]](2.gif)
+![lnx = \int_{1}^{x}\frac{1}{t}dt](1.gif) 直接代入辛普森公式。
 
 #### 实现
 
@@ -73,7 +67,7 @@ private static double F(double x)
 
 ![ln(u) = \sum_{n-1}^{\infty}\frac{2(\frac{u-1}{u+1})^{2n-1}}{2n-1}](8.gif)
 
-## 任意底数的对数
+## 二、任意底数的对数
 
 应用换底公式即可：
 

@@ -7,31 +7,7 @@
 ``` C#
 public static double Ln(double x)
 {
-    return ASR(1, x, 1e-8);
-}
-
-private static double ASR(double a, double b, double eps)
-{
-    return ASR(a, b, Simpson(a, b), eps);
-}
-
-private static double ASR(double a, double b, double A, double eps)
-{
-    double c = a + (b - a) / 2;
-    double L = Simpson(a, c);
-    double R = Simpson(c, b);
-    if (Math.Abs(L + R - A) <= 15 * eps)
-    {
-        return L + R + (L + R - A) / 15;
-    }
-
-    return ASR(a, c, L, eps/2) + ASR(c, b, R, eps/2);
-}
-
-private static double Simpson(double a, double b)
-{
-    double c = a + (b - a) / 2;
-    return (F(a) + 4 * F(c) + F(b)) * (b - a) / 6;
+    return ASR(1, x, F); //辛普森公式
 }
 
 private static double F(double x)
