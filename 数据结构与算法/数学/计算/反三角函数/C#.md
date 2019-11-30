@@ -1,4 +1,4 @@
-# 反三角函数
+# 反三角函数 - C#
 
 ``` C#
 public static double Arcsin(double x)
