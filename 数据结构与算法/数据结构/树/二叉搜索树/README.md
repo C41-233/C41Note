@@ -45,15 +45,15 @@ TreeSearch(root, element)
 
 ## 查找最大最小元素
 ```
-TreeMin(root)
-    while root.left != NULL
-        root = root.left
-    return root
+TreeMin(node)
+    while node.left != NULL
+        node = node.left
+    return node
     
-TreeMax(root)
-    while root.right != NULL
-        root = root.right
-    return root
+TreeMax(node)
+    while node.right != NULL
+        node = node.right
+    return node
 ```
 
 ## 插入
