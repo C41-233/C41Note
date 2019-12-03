@@ -21,21 +21,21 @@
 
 ##### 递归实现
 ```
-TreeSearch(root, e)
+TreeSearch(root, element)
     if root == NULL
         return NULL
-    if e == root.value
+    if element == root.value
         return root
-    if e < root.value
-        return TreeSearch(root.left, e)
+    if element < root.value
+        return TreeSearch(root.left, element)
     else
-        return TreeSearch(root.right, e)
+        return TreeSearch(root.right, element)
 ```
 
 ##### 迭代实现
 ```
-TreeSearch(root, e)
-    while x != NULL and e != root.value
+TreeSearch(root, element)
+    while x != NULL and element != root.value
         if k < root.value
             root = root.left
         else
@@ -45,12 +45,12 @@ TreeSearch(root, e)
 
 ## 查找最大最小元素
 ```
-TreeMin(root, e)
+TreeMin(root)
     while root.left != NULL
         root = root.left
     return root
     
-TreeMax(root, e)
+TreeMax(root)
     while root.right != NULL
         root = root.right
     return root
@@ -138,7 +138,7 @@ TreeDelete(T, node)
         Transplant(T, node, node.left)
         return
     
-    tmp = TreeMin(T, e)
+    tmp = TreeMin(node)
     if tmp.parent != node
         //先用右子树替代
         Transplant(T, tmp, tmp.right)
