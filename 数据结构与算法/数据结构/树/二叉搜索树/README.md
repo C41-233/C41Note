@@ -138,13 +138,14 @@ TreeDelete(T, node)
         Transplant(T, node, node.left)
         return
     
-    tmp = TreeMin(node)
+    tmp = TreeMin(node.right)
     if tmp.parent != node
         //先用右子树替代
         Transplant(T, tmp, tmp.right)
         //先把被删结点的右子树挂到tmp上
         tmp.right = node.right
         node.right.parent = tmp
+        
     //然后替代被删除结点
     Transplant(T, node, tmp)
     tmp.left = node.left
