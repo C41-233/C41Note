@@ -129,7 +129,7 @@ public class BinarySearchTreeSet<T> : IEnumerable<T>
     {
         if (x.Parent == null)
         {
-            root = x;
+            root = y;
         }
         else if (x == x.Parent.Left)
         {
