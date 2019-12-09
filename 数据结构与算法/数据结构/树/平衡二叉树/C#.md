@@ -51,11 +51,47 @@ public class BinaryBalancedTreeSet<T> : IEnumerable<T>
             parent.Right = newNode;
         }
 
-        RebuildAfterInsertion(parent);
+        RebuildShiftUp(parent);
         return true;
     }
 
-    private void RebuildAfterInsertion(TreeNode node)
+    public bool Remove(T value)
+    {
+        if (!TrySearchValue(value, out var node, out _))
+        {
+            return false;
+        }
+
+        --Count;
+        var parent = node.Parent;
+        if (node.Left == null)
+        {
+            Transplant(node, node.Right);
+        }
+        else if (node.Right == null)
+        {
+            Transplant(node, node.Left);
+        }
+        else
+        {
+            var tmp = FindMin(node.Right);
+            if (tmp.Parent != node)
+            {
+                Transplant(tmp, tmp.Right);
+                tmp.Right = node.Right;
+                node.Right.Parent = tmp;
+            }
+
+            Transplant(node, tmp);
+            tmp.Left = node.Left;
+            node.Left.Parent = tmp;
+        }
+
+        RebuildShiftUp(parent);
+        return true;
+    }
+
+    private void RebuildShiftUp(TreeNode node)
     {
         while (node != null)
         {
@@ -102,6 +138,10 @@ public class BinaryBalancedTreeSet<T> : IEnumerable<T>
         var parent = node.Parent;
         Transplant(parent, node);
         parent.Right = node.Left;
+        if (node.Left != null)
+        {
+            node.Left.Parent = parent;
+        }
         node.Left = parent;
         parent.Parent = node;
 
@@ -114,6 +154,10 @@ public class BinaryBalancedTreeSet<T> : IEnumerable<T>
         var parent = node.Parent;
         Transplant(parent, node);
         parent.Left = node.Right;
+        if (node.Right != null)
+        {
+            node.Right.Parent = parent;
+        }
         node.Right = parent;
         parent.Parent = node;
 
