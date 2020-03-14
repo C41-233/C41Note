@@ -2,35 +2,44 @@
 
 提供有关页面的元信息。
 
+```
+<meta charset="utf-8">
+```
+
 ## 约束
 
 必须在<head>标签中。
 
 空白标签。
 
-## 可选属性
+## 属性
 
-##### charset
+##### 可选
 
-定义文档的字符编码。
+<table>
+<tr>
+    <th>charset</th>
+    <td>charset</td>
+    <td>定义文档的字符编码</td>
+</tr>
+<tr>
+    <th>content</th>
+    <td>string</td>
+    <td>定义与http-equiv或name属性相关的元信息值</td>
+</tr>
+<tr>
+    <th>http-equiv</th>
+    <td>string</td>
+    <td>把content属性关联到HTTP Header</td>
+</tr>
+<tr>
+    <th>name</th>
+    <td>string</td>
+    <td>关联content属性</td>
+</tr>
+</table>
 
-```
-<meta charset="utf-8">
-```
-
-##### content
-
-定义与http-equiv或name属性相关的元信息值。
-
-##### http-equiv属性
-
-把content属性关联到HTTP Header。见下文。
-
-##### name
-
-关联content属性。见下文。
-
-## http-equiv
+## http-equiv属性
 
 ##### content-type
 
