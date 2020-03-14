@@ -10,18 +10,27 @@ HTML文档的根标签。
 
 对称标签。
 
-## 可选属性
+## 属性
 
-##### manifest
+##### 可选
 
-url
+<table>
+<tr>
+    <th>manifest</th>
+    <td>url</td>
+    <td>定义一个URL，在这个URL上描述了文档的缓存信息</td>
+</tr>
+</table>
 
-定义一个URL，在这个URL上描述了文档的缓存信息。
+##### 特殊
 
-## 特殊属性
+<table>
+<tr>
+    <th>xmlns</th>
+    <td>xmlns</td>
+    <td>在XHTML中是必须的属性，在HTML中该属性无效
+    <br/>定义XML namespace属性，该值必须是`http://www.w3.org/1999/xhtml`</td>
+</tr>
+</table>
 
-##### xmlns	
 
-在XHTML中是必须的属性，在HTML中该属性无效。
-
-定义XML namespace属性，该值必须是`http://www.w3.org/1999/xhtml`。
