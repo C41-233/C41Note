@@ -17,8 +17,9 @@
 
 - [address](address.md)	地址
 - article	独立的内容
-- article	其所处内容之外的内容（侧栏）
+- aside	其所处内容之外的内容（侧栏）
 - [blockquote](blockquote.md)	块引用
+- div	文档中的一个分隔区块或者一个区域部分
 
 ##### 补充细节
 - [details](details.md)	用户可见或者隐藏的补充细节
