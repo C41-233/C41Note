@@ -4,6 +4,8 @@
 
 空白标签在HTML中以<tag>的形式单独出现，在XHTML中以<tag/>的形式出现。
 
+属性如果是bool数据类型，HTML中可以按照<tag attr>的形式出现，XHTML中以<tag attr="attr">的形式出现。
+
 ##### 主体
 - [html](html.md)	文档根元素
 - [head](head.md)	HTML文档头部
@@ -17,3 +19,7 @@
 - article	独立的内容
 - article	其所处内容之外的内容（侧栏）
 - [blockquote](blockquote.md)	块引用
+
+##### 补充细节
+- [details](details.md)	用户可见或者隐藏的补充细节
+- summary	为details元素定义可点击标题
