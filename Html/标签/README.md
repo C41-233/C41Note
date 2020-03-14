@@ -20,6 +20,14 @@
 - aside	其所处内容之外的内容（侧栏）
 - [blockquote](blockquote.md)	块引用
 - div	文档中的一个分隔区块或者一个区域部分
+- footer	页脚
+- h1	1级标题
+- h2	2级标题
+- h3	3级标题
+- h4	4级标题
+- h5	5级标题
+- h6	6级标题
+- header>	页眉
 
 ##### details
 - [details](details.md)	用户可见或者隐藏的补充细节
