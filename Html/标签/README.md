@@ -21,6 +21,10 @@
 - [blockquote](blockquote.md)	块引用
 - div	文档中的一个分隔区块或者一个区域部分
 
-##### 补充细节
+##### details
 - [details](details.md)	用户可见或者隐藏的补充细节
 - summary	为details元素定义可点击标题
+
+##### figure
+- figure	独立的流内容（图像、图表、照片、代码等）
+- figcaption	定义figure元素的标题
