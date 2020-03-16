@@ -16,6 +16,7 @@
     <td>url</td>
     <td>指向另外一个文档的URL，该文档解释了文本被插入的原因</td>
 </tr>
+<tr>
     <th>datetime</th>
     <td>datetime</td>
     <td>规定文本被插入的日期和时间
