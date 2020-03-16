@@ -41,6 +41,33 @@
 
 ## http-equiv属性
 
+##### cache-control
+
+控制文档缓存机制。
+
+<table>
+<tr>
+    <th>public</th>
+    <th>客户端和代理服务器都缓存</th>
+</tr>
+<tr>
+    <th>private</th>
+    <th>仅客户端缓存，代理服务器不缓存</th>
+</tr>
+<tr>
+    <th>no-cache</th>
+    <th>不缓存</th>
+</tr>
+<tr>
+    <th>no-store</th>
+    <th>缓存但不归档</th>
+</tr>
+</table>
+
+```
+<meta http-equiv="cache-control" content="no-cache">
+```
+
 ##### content-type
 
 content属性说明所使用的文字以及语言。
