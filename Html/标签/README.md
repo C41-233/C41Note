@@ -14,7 +14,6 @@
 - [titla](title.md)	文档的标题
 
 #### 2、块级标签
-
 - [address](address.md)	地址
 - article	独立的内容
 - aside	其所处内容之外的内容（侧栏）
@@ -29,12 +28,10 @@
 - [pre](pre.md)	预格式化文本
 
 ##### details
-
 - [details](details.md)	用户可见或者隐藏的补充细节
 - summary	为details元素定义可点击标题
 
 ##### figure
-
 - figure	独立的流内容（图像、图表、照片、代码等）
 - figcaption	定义figure元素的标题
 
@@ -46,3 +43,6 @@
 - h5	5级标题
 - h6	6级标题
 - hgroup	对标题进行组合
+
+#### 3、行内标签
+- abbr	缩写
