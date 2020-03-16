@@ -6,14 +6,14 @@
 
 属性如果是bool数据类型，HTML中可以按照<tag attr>的形式出现，XHTML中以<tag attr="attr">的形式出现。
 
-##### 主体
+#### 1、主体
 - [html](html.md)	文档根元素
 - [head](head.md)	HTML文档头部
 - [body](body.md)	HTML文档主体
 - [meta](meta.md)	提供有关页面的元信息
 - [titla](title.md)	文档的标题
 
-##### 块级标签
+#### 2、块级标签
 
 - [address](address.md)	地址
 - article	独立的内容
