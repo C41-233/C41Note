@@ -16,7 +16,7 @@
 #### 2、块级标签
 - [address](address.md)	地址
 - article	独立的内容
-- aside	其所处内容之外的内容（侧栏）
+- aside	侧边栏
 - [blockquote](blockquote.md)	块引用
 - div	文档中的一个分隔区块或者一个区域部分
 - footer	页脚
@@ -45,8 +45,12 @@
 - hgroup	对标题进行组合
 
 #### 3、行内标签
-- abbr	缩写
+- abbr	缩写，简写，缩略语
+- acronym	首字母缩写（废弃）
+
+##### 样式标签
 - b	粗体文本
+- big	放大字体（废弃）
 
 ##### unicode双向字符控制
 - [bdi](bdi.md)	脱离父元素的文本方向设置
