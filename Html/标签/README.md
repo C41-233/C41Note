@@ -71,3 +71,8 @@
 ##### unicode双向字符控制
 - [bdi](bdi.md)	脱离父元素的文本方向设置
 - [bdo](bdo.md)	覆盖默认的文本方向
+
+##### ruby
+- rp	当浏览器不支持ruby元素时显示的内容
+- rt	提供ruby元素的注音
+- [ruby](ruby.md)	字符注音块
