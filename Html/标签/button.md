@@ -18,7 +18,7 @@
 <tr>
 	<th>autofocus</th>
 	<td>bool</td>
-	<td>规定当页面加载时按钮应当自动地获得焦点</td>
+	<td>规定当页面加载时按钮应当自动地获得焦点，在文档中只能有一个元素设置该属性</td>
 </tr>
 <tr>
 	<th>disabled</th>

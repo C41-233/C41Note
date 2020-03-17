@@ -115,3 +115,4 @@
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
 | [button](button.md) | 按钮 | 对称标签 | HTMLButtonElement |
+| command | 用户能够调用的命令 | 对称标签 |  |
