@@ -73,6 +73,6 @@
 - [bdo](bdo.md)	覆盖默认的文本方向
 
 ##### ruby
-- rp	当浏览器不支持ruby元素时显示的内容
-- rt	提供ruby元素的注音
+- [rp](rp.md)	当浏览器不支持ruby元素时显示的内容
+- [rt](rt.md)	提供ruby元素的注音
 - [ruby](ruby.md)	字符注音块
