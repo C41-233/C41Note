@@ -54,6 +54,7 @@
 - mark	带有记号的文本，用于突出显示文本
 - [output](output.md)	计算结果输出显示
 - [progress](progress.md)	进度条
+- [q](q.md)	短引用
 
 ##### 样式标签
 - b	粗体文本
