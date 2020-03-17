@@ -83,7 +83,7 @@
 - [bdi](bdi.md)	脱离父元素的文本方向设置
 - [bdo](bdo.md)	覆盖默认的文本方向
 - br	换行
-- wbr	可被换行的文本
+- [wbr](wbr.md)	可被换行的位置
 
 ##### ruby
 - [rp](rp.md)	当浏览器不支持ruby元素时显示的内容
