@@ -116,3 +116,4 @@
 |---|---|---|---|
 | [button](button.md) | 按钮 | 对称标签 | HTMLButtonElement |
 | command | 用户能够调用的命令 | 对称标签 |  |
+| [datalist](datalist.md) | 定义输入框的选项列表 | 对称标签 | HTMLDataListElement |
