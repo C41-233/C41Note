@@ -16,6 +16,7 @@
     <td>url</td>
     <td>指向另外一个文档的URL，此文档可解释文本被删除的原因</td>
 </tr>
+<tr>
     <th>datetime</th>
     <td>datetime</td>
     <td>定义文本被删除的日期和时间，格式为YYYY-MM-DDThh:mm:ssTZD
