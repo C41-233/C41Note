@@ -119,3 +119,4 @@
 | [datalist](datalist.md) | 定义输入框的选项列表 | 对称标签 | HTMLDataListElement |
 | [dialog](dialog.md) | 对话框或窗口 | 对称标签 | HTMLDialogElement |
 | [fieldset](fieldset.md) | 将表单内的相关元素分组	 | 对称标签 | HTMLFieldSetElement |
+| [form](form.md) | 表单	 | 对称标签 | HTMLFormElement |
