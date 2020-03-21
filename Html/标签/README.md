@@ -120,3 +120,4 @@
 | [dialog](dialog.md) | 对话框或窗口 | 对称标签 | HTMLDialogElement |
 | [fieldset](fieldset.md) | 将表单内的相关元素分组	 | 对称标签 | HTMLFieldSetElement |
 | [form](form.md) | 表单	 | 对称标签 | HTMLFormElement |
+| [input](input.md) | 表单输入组件	 | 空白标签 | HTMLInputElement |

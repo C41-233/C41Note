@@ -56,13 +56,8 @@
 </tr>
 <tr>
 	<th>formtarget</th>
-	<td>enum<br/>id</td>
-	<td>规定如何打开action url，覆盖form元素的target属性
-	<br>_blank：浏览器总在一个新打开、未命名的窗口中载入目标文档
-	<br>_self：目标文档载入并显示在相同的框架或者窗口中作为源文档
-	<br>_parent：这个目标使得文档载入父窗口或者包含来超链接引用的框架的框架集。如果这个引用是在窗口或者在顶级框架中，那么它与目标 _self 等效
-	<br>_top：这个目标使得文档载入包含这个超链接的窗口，用 _top 目标将会清除所有被包含的框架并将文档载入整个浏览器窗口
-	</td>
+	<td>target</td>
+	<td>规定如何打开action url，覆盖form元素的target属性，参见<a href="../参考/target.md">提交目标</a></td>
 </tr>
 <tr>
 	<th>name</th>
