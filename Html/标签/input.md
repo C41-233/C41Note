@@ -6,7 +6,162 @@
 
 空白标签。
 
+## 控件
+
+<table>
+<thead>
+<tr>
+    <th>type</th>
+    <th>控件</th>
+    <th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <th>button</th>
+    <td>可点击按钮</td>
+    <td>规定按钮上的文本</td>
+</tr>
+<tr>
+    <th>checkbox</th>
+    <td>复选框</td>
+    <td>input元素被点击时的结果</td>
+</tr>
+<tr>
+    <th>color</th>
+    <td>颜色</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>date</th>
+    <td>日期</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>datetime</th>
+    <td>日期时间</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>datetime-local</th>
+    <td>本地日期时间</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>email</th>
+    <td>e-mail地址</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>file</th>
+    <td>输入字段和浏览按钮，供文件上传</td>
+    <td>无</td>
+</tr>
+<tr>
+    <th>hidden</th>
+    <td>隐藏的输入字段</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>image</th>
+    <td>图像形式的提交按钮</td>
+    <td>传递到脚本的字段的符号结果</td>
+</tr>
+<tr>
+    <th>month</th>
+    <td>月份</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>number</th>
+    <td>数字</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>password</th>
+    <td>密码字段，该字段中的字符被掩码</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>radio</th>
+    <td>单选按钮</td>
+    <td>input元素被点击时的结果</td>
+</tr>
+<tr>
+    <th>range</th>
+    <td>滑动条</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>reset</th>
+    <td>重置按钮</td>
+    <td>规定按钮上的文本</td>
+</tr>
+<tr>
+    <th>search</th>
+    <td>搜索</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>submit</th>
+    <td>提交按钮，会把表单数据发送到服务器</td>
+    <td>规定按钮上的文本</td>
+</tr>
+<tr>
+    <th>tel</th>
+    <td>电话号码的文本字段</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>text</th>
+    <td>单行的输入字段，用户可在其中输入文本。默认宽度为20个字符</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>time</th>
+    <td>时间</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>url</th>
+    <td>URL的文本字段</td>
+    <td>元素的默认值</td>
+</tr>
+<tr>
+    <th>week</th>
+    <td>星期</td>
+    <td>元素的默认值</td>
+</tr>
+</tbody>
+</table>
+
+
 ## 属性
+
+##### 主要
+
+<table>
+<tr>
+	<th>type</th>
+	<td>enum</td>
+	<td>规定input元素的类型</td>
+</tr>
+<tr>
+	<th>form</th>
+	<td>id</td>
+	<td>规定输入字段所属的一个或多个表单</td>
+</tr>
+<tr>
+	<th>name</th>
+	<td>string</td>
+	<td>用于表示表单提交时的参数名</td>
+</tr>
+<tr>
+	<th>readonly</th>
+	<td>bool</td>
+	<td>规定输入字段为只读</td>
+</tr>
+</table>
 
 ##### 可选
 
@@ -15,42 +170,44 @@
 	<th>accept</th>
 	<td>mime</td>
 	<td>规定通过文件上传来提交的文件的类型</td>
+	<td>file</td>
 </tr>
 <tr>
 	<th>alt</th>
 	<td>string</td>
 	<td>图像输入的替代文本</td>
+	<td>image</td>
 </tr>
 <tr>
 	<th>autocomplete</th>
 	<td>enum</td>
 	<td>规定是否使用输入字段的自动完成功能
 	<br/>on / off</td>
+	<td>text、search、url、tel、email、password、date、datetime、datetime-local、month、time、week、range、color</td>
 </tr>
 <tr>
 	<th>autofocus</th>
 	<td>bool</td>
 	<td>规定输入字段在页面加载时是否获得焦点</td>
+	<td>除hidden外</td>
 </tr>
 <tr>
 	<th>checked</th>
 	<td>bool</td>
 	<td>规定此input元素首次加载时应当被选中</td>
+	<td>checkbox、radio</td>
 </tr>
 <tr>
 	<th>disabled</th>
 	<td>bool</td>
 	<td>当input元素加载时禁用此元素</td>
-</tr>
-<tr>
-	<th>form</th>
-	<td>id</td>
-	<td>规定输入字段所属的一个或多个表单</td>
+	<td>除hidden外</td>
 </tr>
 <tr>
 	<th>formaction</th>
 	<td>url</td>
 	<td>覆盖表单的action属性</td>
+	<td>image、submit</td>
 </tr>
 <tr>
 	<th>formenctype</th>
@@ -59,140 +216,104 @@
 	<br/>application/x-www-form-urlencoded：（默认）在发送前编码所有字符
 	<br/>multipart/form-data：不对字符编码
 	<br/>text/plain：空格转换为 "+" 加号，但不对特殊字符编码</td>
+	<td>image、submit</td>
 </tr>
 <tr>
 	<th>formmethod</th>
 	<td>enum</td>
 	<td>覆盖表单的method属性
 	<br/>post / get</td>
+	<td>image、submit</td>
 </tr>
 <tr>
 	<th>formnovalidate</th>
 	<td>bool</td>
 	<td>覆盖表单的novalidate属性。如果使用该属性，则提交表单时不进行验证</td>
+	<td>text、search、url、tel、email、password、date、datetime、datetime-local、month、time、week、range、color</td>
 </tr>
 <tr>
 	<th>formtarget</th>
 	<td>target</td>
 	<td>规定如何打开action url，覆盖表单的target属性，参见<a href="../参考/target.md">提交目标</a></td>
+	<td>image、submit</td>
 </tr>
 <tr>
 	<th>height</th>
-	<td>像素<br/>百分比</td>
-	<td>HTML5新增<br/>
-	定义input字段的高度</td>
+	<td>number<br/>percent</td>
+	<td>定义高度</td>
+	<td>image</td>
 </tr>
 <tr>
 	<th>list</th>
-	<td>datalist</td>
-	<td>HTML5新增<br/>
-	引用包含输入字段的预定义选项的datalist的id</td>
+	<td>id</td>
+	<td>引用包含输入字段的预定义选项的datalist的id</td>
+	<td>text、search、url、tel、email、password、date、datetime、datetime-local、month、time、week、range、color</td>
 </tr>
 <tr>
 	<th>max</th>
-	<td>整数<br/>日期</td>
-	<td>HTML5新增<br/>
-	规定输入字段的最大值</td>
+	<td>int<br/>date</td>
+	<td>规定输入字段的最大值</td>
+	<td>number、range、date、datetime、datetime-local、month、time、week</td>
 </tr>
 <tr>
 	<th>maxlength</th>
-	<td>整数</td>
+	<td>int</td>
 	<td>输入字段中的字符的最大长度</td>
+	<td>text、search、url、tel、email、password、date、datetime、datetime-local、month、time、week、range、color</td>
 </tr>
 <tr>
 	<th>min</th>
-	<td>整数<br/>日期</td>
-	<td>HTML5新增<br/>
-	规定输入字段的最小值</td>
+	<td>int<br/>date</td>
+	<td>规定输入字段的最小值</td>
+	<td>number、range、date、datetime、datetime-local、month、time、week</td>
 </tr>
 <tr>
 	<th>multiple</th>
-	<td>multiple</td>
-	<td>HTML5新增<br/>
-	如果使用该属性，则允许一个以上的值。只有一个枚举值</td>
-</tr>
-<tr>
-	<th>name</th>
-	<td>id</td>
-	<td>元素名称</td>
+	<td>bool</td>
+	<td>如果使用该属性，则允许一个以上的值</td>
+	<td>file、email</td>
 </tr>
 <tr>
 	<th>pattern</th>
-	<td>正则表达式</td>
-	<td>HTML5新增<br/>规定输入字段的值的模式或格式</td>
+	<td>string</td>
+	<td>规定输入字段的值的匹配模式</td>
+	<td>text、search、url、telephone、email、password</td>
 </tr>
 <tr>
 	<th>placeholder</th>
-	<td>文本</td>
-	<td>HTML5新增<br/>规定帮助用户填写输入字段的提示</td>
-</tr>
-<tr>
-	<th>readonly</th>
-	<td>readonly</td>
-	<td>规定输入字段为只读。只有一个枚举值</td>
+	<td>string</td>
+	<td>规定帮助用户填写输入字段的提示</td>
+	<td>text、search、url、telephone、email、password</td>
 </tr>
 <tr>
 	<th>required</th>
-	<td>required</td>
-	<td>HTML5新增<br/>指示输入字段的值是必需的。只有一个枚举值</td>
+	<td>bool</td>
+	<td>指示输入字段的值是必需的</td>
+	<td>text、search、url、tel、email、password、date、datetime、datetime-local、month、time、week、number、checkbox、radio、file</td>
 </tr>
 <tr>
 	<th>size</th>
-	<td>整数</td>
+	<td>int</td>
 	<td>规定输入字段中的可见字符数</td>
+	<td>text、search、url、tel、email、password、date、datetime、datetime-local、month、time、week、range、color</td>
 </tr>
 <tr>
 	<th>src</th>
-	<td>URL</td>
+	<td>url</td>
 	<td>定义以提交按钮形式显示的图像的URL</td>
+	<td>image</td>
 </tr>
 <tr>
 	<th>step</th>
-	<td>整数</td>
-	<td>HTML新增<br/>规定输入字的的合法数字间隔</td>
-</tr>
-<tr>
-	<th>type</th>
-	<td>枚举</td>
-	<td>
-		规定input元素的类型
-		<br/><b>button：</b>可点击按钮
-		<br/><b>checkbox：</b>复选框
-		<br/><b>color：</b>颜色。HTML5新增
-		<br/><b>date：</b>日期。HTML5新增
-		<br/><b>datetime：</b>日期时间。HTML5新增
-		<br/><b>datetime-local：</b>本地日期时间。HTML5新增
-		<br/><b>email：</b>e-mail地址。HTML5新增
-		<br/><b>file：</b>输入字段和浏览按钮，供文件上传
-		<br/><b>hidden：</b>隐藏的输入字段
-		<br/><b>image：</b>图像形式的提交按钮
-		<br/><b>month：</b>月份。HTML5新增
-		<br/><b>number：</b>数字。HTML5新增
-		<br/><b>password：</b>密码字段，该字段中的字符被掩码
-		<br/><b>radio：</b>单选按钮
-		<br/><b>range：</b>滑动条。HTML5新增
-		<br/><b>reset：</b>重置按钮
-		<br/><b>search：</b>搜索。HTML5新增
-		<br/><b>submit：</b>提交按钮，会把表单数据发送到服务器
-		<br/><b>tel：</b>电话号码的文本字段。HTML5新增
-		<br/><b>text：</b>单行的输入字段，用户可在其中输入文本。默认宽度为20个字符
-		<br/><b>time：</b>时间。HTML5新增
-		<br/><b>url：</b>URL的文本字段。HTML5新增
-		<br/><b>week：</b>星期。HTML5新增
-	</td>
-</tr>
-<tr>
-	<th>value</th>
-	<td>值</td>
-	<td>规定input元素的值
-	<br/>对于按钮：规定按钮上的文本
-	<br/>对于图像按钮：传递到脚本的字段的符号结果
-	<br/>对于复选框和单选按钮：定义 input 元素被点击时的结果
-	<br/>对于隐藏、密码和文本字段：规定元素的默认值</td>
+	<td>int</td>
+	<td>规定输入字的的合法数字间隔</td>
+	<td>number、range、date、datetime、datetime-local、month、time、week</td>
 </tr>
 <tr>
 	<th>width</th>
-	<td>像素<br/>百分比</td>
-	<td>HTML新增<br/>定义input字段的宽度</td>
+	<td>number<br/>percent</td>
+	<td>定义input字段的宽度，只对image元素有效</td>
+	<td>image</td>
 </tr>
 </table>
+
