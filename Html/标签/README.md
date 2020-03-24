@@ -124,6 +124,7 @@
 | [label](label.md) | 控件元素的标签 | 对称标签 | HTMLLabelElement |
 | [option](option.md) | select或datalist的选项 | 对称标签 | HTMLOptionElement |
 | [optgroup](optgroup.md) | 选项组 | 对称标签 | HTMLOptGroupElement |
+| [select](select.md) | 选项菜单 | 对称标签 | HTMLSelectElement |
 
 ##### fieldset
 | [fieldset](fieldset.md) | 将表单内的相关元素分组 | 对称标签 | HTMLFieldSetElement |
