@@ -126,3 +126,8 @@
 ##### fieldset
 | [fieldset](fieldset.md) | 将表单内的相关元素分组 | 对称标签 | HTMLFieldSetElement |
 | legend | 为fieldset元素定义标题 | 对称标签 | HTMLLegendElement |
+
+##### menu
+| menu | 菜单列表 | 对称标签 | HTMLMenuElement |
+| menuitem | 菜单列表的项 | 对称标签 | HTMLMenuItemElement |
+
