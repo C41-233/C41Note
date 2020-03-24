@@ -115,9 +115,10 @@
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
 | [button](button.md) | 按钮 | 对称标签 | HTMLButtonElement |
-| command | 用户能够调用的命令 | 对称标签 |  |
+| command | 用户能够调用的命令 | 对称标签 | HTMLElement |
 | [datalist](datalist.md) | 定义输入框的选项列表 | 对称标签 | HTMLDataListElement |
 | [dialog](dialog.md) | 对话框或窗口 | 对称标签 | HTMLDialogElement |
 | [fieldset](fieldset.md) | 将表单内的相关元素分组	 | 对称标签 | HTMLFieldSetElement |
 | [form](form.md) | 表单	 | 对称标签 | HTMLFormElement |
 | [input](input.md) | 表单输入组件	 | 空白标签 | HTMLInputElement |
+| [keygen](keygen.md) | 密钥对生成器 | 对称标签 | HTMLElement |
