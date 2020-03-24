@@ -143,3 +143,4 @@
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
 | [caption](caption.md) | 表格标题 | 对称标签 | HTMLTableCaptionElement |
+| [col](col.md) | 为表格中多个列定义属性值 | 空白标签 | HTMLTableColElement |
