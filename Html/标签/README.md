@@ -118,8 +118,11 @@
 | command | 用户能够调用的命令 | 对称标签 | HTMLElement |
 | [datalist](datalist.md) | 定义输入框的选项列表 | 对称标签 | HTMLDataListElement |
 | [dialog](dialog.md) | 对话框或窗口 | 对称标签 | HTMLDialogElement |
-| [fieldset](fieldset.md) | 将表单内的相关元素分组	 | 对称标签 | HTMLFieldSetElement |
-| [form](form.md) | 表单	 | 对称标签 | HTMLFormElement |
-| [input](input.md) | 表单输入组件	 | 空白标签 | HTMLInputElement |
+| [form](form.md) | 表单 | 对称标签 | HTMLFormElement |
+| [input](input.md) | 表单输入组件 | 空白标签 | HTMLInputElement |
 | [keygen](keygen.md) | 密钥对生成器 | 对称标签 | HTMLKeygenElement |
 | [label](label.md) | 控件元素的标签 | 对称标签 | HTMLLabelElement |
+
+##### fieldset
+| [fieldset](fieldset.md) | 将表单内的相关元素分组 | 对称标签 | HTMLFieldSetElement |
+| legend | 为fieldset元素定义标题 | 对称标签 | HTMLLegendElement |
