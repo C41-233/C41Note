@@ -122,6 +122,7 @@
 | [input](input.md) | 表单输入组件 | 空白标签 | HTMLInputElement |
 | [keygen](keygen.md) | 密钥对生成器 | 对称标签 | HTMLKeygenElement |
 | [label](label.md) | 控件元素的标签 | 对称标签 | HTMLLabelElement |
+| [option](option.md) | select或datalist的选项 | 对称标签 | HTMLOptionElement |
 
 ##### fieldset
 | [fieldset](fieldset.md) | 将表单内的相关元素分组 | 对称标签 | HTMLFieldSetElement |
