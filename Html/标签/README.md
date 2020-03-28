@@ -1,10 +1,20 @@
 # HTML标签
 
-对称标签是必须<tag>和</tag>成对出现的标签，即使没有body内容也不能写成<tag/>的形式。
+## 标签类型
 
-空白标签在HTML中以<tag>的形式单独出现，在XHTML中以<tag/>的形式出现。
+- 对称标签：必须以`<tag>`和`</tag>`成对出现的标签，即使没有子内容也不能写成`<tag/>`的形式。
 
-属性如果是bool数据类型，HTML中可以按照<tag attr>的形式出现，XHTML中以<tag attr="attr">的形式出现。
+- 空白标签：在HTML中以`<tag>`的形式单独出现，在`XHTML`中以<tag/>的形式出现。
+
+## 属性
+
+如果是bool数据类型，HTML中可以按照`<tag attr>`的形式出现，XHTML中以`<tag attr="attr">`的形式出现。
+
+## 内容模型
+
+[Content Model](../参考/content-model.md)
+
+## 标签
 
 #### 1、主体
 | 标签 | 说明 | 类型 | DOM |

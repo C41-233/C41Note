@@ -12,8 +12,8 @@ tr元素定义表格行，th元素定义表头，td元素定义表格单元。
 
 <table>
 <tr>
-    <th>类型</th>
-    <td>float</td>
+    <th>content</th>
+    <td>flow</td>
 </tr>
 <tr>
     <th>标签</th>
@@ -25,7 +25,7 @@ tr元素定义表格行，th元素定义表头，td元素定义表格单元。
 </tr>
 <tr>
     <th>父元素</th>
-    <td>支持float的元素</td>
+    <td>支持flow的元素</td>
 </tr>
 <tr>
     <th>DOM</th>
