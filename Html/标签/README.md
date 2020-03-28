@@ -145,3 +145,4 @@
 | [caption](caption.md) | 表格标题 | 对称标签 | HTMLTableCaptionElement |
 | [col](col.md) | 为表格中多个列定义属性值 | 空白标签 | HTMLTableColElement |
 | [colgroup](colgroup.md) | 对表格中的列进行组合 | 对称标签 | HTMLTableColElement |
+| [table](table.md) | 表格 | 对称标签 | HTMLTableElement |
