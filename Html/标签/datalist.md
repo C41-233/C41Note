@@ -22,4 +22,25 @@ datalist的选项由option元素提供。选项不会被显示出来，它仅仅
 
 ## 约束
 
-对称标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>flow, phrasing</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>phrasing-content | option*</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>支持phrasing content的元素</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLDataListElement</td>
+</tr>
+</table>
