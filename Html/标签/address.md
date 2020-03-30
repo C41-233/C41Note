@@ -8,7 +8,28 @@
 
 ## 约束
 
-对称标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>flow, palpable</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>flow，但不包括address、heading content、sectioning content、header、footer</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>支持flow的元素，但不包括address</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLElement</td>
+</tr>
+</table>
 
 ## 默认样式
 

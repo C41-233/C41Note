@@ -10,7 +10,7 @@ base、command、link、meta、noscript, script, style、title
 
 文本元素属于flow content。
 
-总是属于flow content的元素有a、abbr、address、article、aside、audio、b>,bdo、bdi、blockquote、br、button、canvas、cite、code、command、data、datalist、del、details、dfn、div、dl、em、embed、fieldset、figure、footer、form、h1、h2、h3、h4、h5、h6、header、hgroup、hr、i、iframe、img、input、ins、kbd、keygen、label、main、map、mark、math、menu、meter、nav、noscript、object、ol、output、p、picture、pre、progress、q、ruby、s、samp、script、section、select、small、span、strong、sub、sup、svg、table、template、textarea、time、ul、var、video、wbr
+总是属于flow content的元素有a、abbr、address、article、aside、audio、b、bdo、bdi、blockquote、br、button、canvas、cite、code、command、data、datalist、del、details、dfn、div、dl、em、embed、fieldset、figure、footer、form、h1、h2、h3、h4、h5、h6、header、hgroup、hr、i、iframe、img、input、ins、kbd、keygen、label、main、map、mark、math、menu、meter、nav、noscript、object、ol、output、p、picture、pre、progress、q、ruby、s、samp、script、section、select、small、span、strong、sub、sup、svg、table、template、textarea、time、ul、var、video、wbr
 
 下列元素在满足条件时属于flow content：
 - area：作为map的子孙元素
