@@ -4,9 +4,28 @@
 
 ## 约束
 
-对称标签。
-
-只能作为table的子元素。
+<table>
+<tr>
+    <th>content</th>
+    <td>none</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>设置span属性：无<br/>未设置span属性：col*</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>table</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLTableColElement</td>
+</tr>
+</table>
 
 ## 属性
 
