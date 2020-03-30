@@ -6,9 +6,24 @@
 
 ## 约束
 
-空白标签。
-
-只能作为table或colgroup的子元素。
+<table>
+<tr>
+    <th>content</th>
+    <td>none</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>空白标签</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>colgroup</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLTableColElement</td>
+</tr>
+</table>
 
 ## 属性
 
