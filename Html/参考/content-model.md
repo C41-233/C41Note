@@ -77,4 +77,4 @@ script、template
 
 ### 3、transparent content model
 
-del、ins
+del、ins的子元素

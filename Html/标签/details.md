@@ -14,9 +14,28 @@ details标签中的可点击标题由summary标签定义。
 
 ## 约束
 
-对称标签。
-
-summary元素必须是details元素的第一个子元素。
+<table>
+<tr>
+    <th>content</th>
+    <td>flow, sectioning root, interactive, palpable</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>summary flow-content*</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>支持flow content的元素</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLDetailsElement</td>
+</tr>
+</table>
 
 ## 可选属性
 
