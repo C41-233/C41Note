@@ -19,11 +19,11 @@
 </tr>
 <tr>
     <th>子元素</th>
-    <td>flow，但不包括address、heading content、sectioning content、header、footer</td>
+    <td>flow content，但不包括address、heading content、sectioning content、header、footer</td>
 </tr>
 <tr>
     <th>父元素</th>
-    <td>支持flow的元素，但不包括address</td>
+    <td>支持flow content的元素，但不包括address</td>
 </tr>
 <tr>
     <th>DOM</th>

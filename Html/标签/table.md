@@ -25,7 +25,7 @@ tr元素定义表格行，th元素定义表头，td元素定义表格单元。
 </tr>
 <tr>
     <th>父元素</th>
-    <td>支持flow的元素</td>
+    <td>支持flow content的元素</td>
 </tr>
 <tr>
     <th>DOM</th>
