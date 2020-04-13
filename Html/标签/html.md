@@ -6,9 +6,28 @@
 
 ## 约束
 
-HTML文档的根标签。
-
-对称标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>none</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>head body</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>无，作为文档根元素</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLHtmlElement</td>
+</tr>
+</table>
 
 ## 属性
 
