@@ -6,7 +6,28 @@ legend标签为fieldset元素定义标题。
 
 ## 约束
 
-对称标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>flow, sectioning root, listed, form, palpable</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>legend? flow-content*</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>支持flow content的元素</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLFieldSetElement</td>
+</tr>
+</table>
 
 ## 属性
 
