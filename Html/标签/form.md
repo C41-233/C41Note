@@ -4,7 +4,28 @@ form标签用于为用户输入创建HTML表单，表单能够包含各种表单
 
 ## 约束
 
-对称标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>flow, palpable</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>flow content（不包括form）</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>支持flow content的元素</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLFormElement</td>
+</tr>
+</table>
 
 ## 属性
 
