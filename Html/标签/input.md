@@ -37,6 +37,7 @@
     <td>可点击按钮</td>
     <td>按钮上的文本</td>
     <td>click</td>
+    <td></td>
 </tr>
 <tr>
     <th>checkbox</th>
@@ -60,19 +61,18 @@
     <td>select、stepDown、stepUp</td>
 </tr>
 <tr>
-    <th>datetime</th>
-    <td>日期时间</td>
-    <td>元素的默认值</td>
-</tr>
-<tr>
     <th>datetime-local</th>
-    <td>本地日期时间</td>
-    <td>元素的默认值</td>
+    <td>日期时间</td>
+    <td>默认值</td>
+    <td>change、input</td>
+    <td>select、stepDown、stepUp</td>
 </tr>
 <tr>
     <th>email</th>
     <td>e-mail地址</td>
-    <td>元素的默认值</td>
+    <td>默认值</td>
+    <td>change、input</td>
+    <td>select</td>
 </tr>
 <tr>
     <th>file</th>
