@@ -27,28 +27,37 @@
     <th>type</th>
     <th>控件</th>
     <th>value</th>
+    <th>event</th>
+    <th>method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
     <th>button</th>
     <td>可点击按钮</td>
-    <td>规定按钮上的文本</td>
+    <td>按钮上的文本</td>
+    <td>click</td>
 </tr>
 <tr>
     <th>checkbox</th>
     <td>复选框</td>
-    <td>input元素被点击时的结果</td>
+    <td>值</td>
+    <td>change、input</td>
+    <td>select</td>
 </tr>
 <tr>
     <th>color</th>
     <td>颜色</td>
-    <td>元素的默认值</td>
+    <td>默认值（#rrggbb）</td>
+    <td>change、input</td>
+    <td>select</td>
 </tr>
 <tr>
     <th>date</th>
     <td>日期</td>
-    <td>元素的默认值</td>
+    <td>默认值（yyyy-mm-dd）</td>
+    <td>change、input</td>
+    <td>select、stepDown、stepUp</td>
 </tr>
 <tr>
     <th>datetime</th>

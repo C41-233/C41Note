@@ -213,6 +213,7 @@
     1. [test 条件测试](test.md)
 - 其他指令
     1. [echo 标准输出](echo.md)
+    1. [sleep 延迟](sleep.md)
 
 ### 软件包
 - 帮助信息
