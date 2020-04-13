@@ -90,7 +90,7 @@
 | b | 粗体文本 | 对称标签 | HTMLElement  |
 |  big | 放大字体（废弃） | 对称标签 |  HTMLElement |
 | font | 规定文本的字体、字体尺寸、字体颜色（废弃） | 对称标签 |  HTMLFontElement |
-| [i](i.md) | 斜体文本 | 对称标签 |  HTMLFontElement |
+| [i](i.md) | 斜体文本 | 对称标签 |  HTMLElement |
 | small | 小型文本和旁注 | 对称标签 | HTMLElement |
 | strike | 加删除线的文本（废弃） | 对称标签 | HTMLElement |
 | tt | 打字机等宽文本（废弃） | 对称标签 | HTMLElement |
