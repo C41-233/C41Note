@@ -4,7 +4,20 @@
 
 ## 约束
 
-空白标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>flow, phrasing, form</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>空白标签</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLInputElement</td>
+</tr>
+</table>
 
 ## 控件
 
@@ -142,9 +155,14 @@
 
 <table>
 <tr>
-	<th>type</th>
-	<td>enum</td>
-	<td>规定input元素的类型</td>
+	<th>autofocus</th>
+	<td>bool</td>
+	<td>规定输入字段在页面加载时是否获得焦点</td>
+</tr>
+<tr>
+	<th>disabled</th>
+	<td>bool</td>
+	<td>当input元素加载时禁用此元素</td>
 </tr>
 <tr>
 	<th>form</th>
@@ -160,6 +178,11 @@
 	<th>readonly</th>
 	<td>bool</td>
 	<td>规定输入字段为只读</td>
+</tr>
+<tr>
+	<th>type</th>
+	<td>enum</td>
+	<td>规定input元素的类型</td>
 </tr>
 </table>
 
@@ -186,22 +209,10 @@
 	<td>text、search、url、tel、email、password、date、datetime、datetime-local、month、time、week、range、color</td>
 </tr>
 <tr>
-	<th>autofocus</th>
-	<td>bool</td>
-	<td>规定输入字段在页面加载时是否获得焦点</td>
-	<td>除hidden外</td>
-</tr>
-<tr>
 	<th>checked</th>
 	<td>bool</td>
 	<td>规定此input元素首次加载时应当被选中</td>
 	<td>checkbox、radio</td>
-</tr>
-<tr>
-	<th>disabled</th>
-	<td>bool</td>
-	<td>当input元素加载时禁用此元素</td>
-	<td>除hidden外</td>
 </tr>
 <tr>
 	<th>formaction</th>
@@ -266,6 +277,12 @@
 	<td>int<br/>date</td>
 	<td>规定输入字段的最小值</td>
 	<td>number、range、date、datetime、datetime-local、month、time、week</td>
+</tr>
+<tr>
+	<th>minlength</th>
+	<td>int</td>
+	<td>输入字段中的字符的最小长度</td>
+	<td>text、search、url、tel、email、password、date、datetime、datetime-local、month、time、week、range、color</td>
 </tr>
 <tr>
 	<th>multiple</th>
