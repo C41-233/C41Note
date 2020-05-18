@@ -37,7 +37,7 @@
     <td>可点击按钮</td>
     <td>按钮上的文本</td>
     <td>click</td>
-    <td></td>
+    <td>无</td>
 </tr>
 <tr>
     <th>checkbox</th>
@@ -77,32 +77,44 @@
 <tr>
     <th>file</th>
     <td>输入字段和浏览按钮，供文件上传</td>
-    <td>无</td>
+    <td>文件路径</td>
+    <td>change、input</td>
+    <td>select</td>
 </tr>
 <tr>
     <th>hidden</th>
     <td>隐藏的输入字段</td>
-    <td>元素的默认值</td>
+    <td>值</td>
+    <td>无</td>
+    <td>无</td>
 </tr>
 <tr>
     <th>image</th>
     <td>图像形式的提交按钮</td>
-    <td>传递到脚本的字段的符号结果</td>
+    <td>无</td>
+    <td>无</td>
+    <td>无</td>
 </tr>
 <tr>
     <th>month</th>
     <td>月份</td>
-    <td>元素的默认值</td>
+    <td>默认值，（yyyy-mm）</td>
+    <td>change、input</td>
+    <td>select、stepDown、stepUp</td>
 </tr>
 <tr>
     <th>number</th>
     <td>数字</td>
-    <td>元素的默认值</td>
+    <td>默认值</td>
+    <td>change、input</td>
+    <td>select、stepDown、stepUp</td>
 </tr>
 <tr>
     <th>password</th>
     <td>密码字段，该字段中的字符被掩码</td>
-    <td>元素的默认值</td>
+    <td>默认值</td>
+    <td>change、input</td>
+    <td>select、setRangeText、setSelectionRange</td>
 </tr>
 <tr>
     <th>radio</th>
