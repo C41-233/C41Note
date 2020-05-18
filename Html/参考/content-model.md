@@ -1,12 +1,12 @@
 # Content Model
 
-### 1、main content categories
+### 1、主要内容类（main content categories）
 
-##### metadata
+##### 元数据（metadata）
 
 base、command、link、meta、noscript, script, style、title
 
-##### flow
+##### 流式元素（flow）
 
 文本元素属于flow content。
 
@@ -18,15 +18,15 @@ base、command、link、meta、noscript, script, style、title
 - meta：设置itemprop属性
 - style：设置scoped属性
 
-##### sectioning
+##### 章节元素（sectioning）
 
 article、aside、nav、section
 
-##### heading
+##### 标题元素（heading）
 
  h1、h2、h3、h4、h5、h6、hgroup
 
-##### phrasing
+##### 短语元素（phrasing）
 
 abbr、audio、b、bdo、br、button、canvas、cite、code、command、data、datalist、dfn、em、embed、i、iframe、img、input、kbd、keygen、label、mark、math、meter、noscript、object、output、picture、progress、q、ruby、samp、script、select、small、span、strong、sub、sup、svg、textarea、time、var、video、wbr 
 
@@ -39,11 +39,11 @@ abbr、audio、b、bdo、br、button、canvas、cite、code、command、data、d
 - map：仅包含phrasing content
 - meta：设置itemprop属性
 
-##### embedded
+##### 嵌入元素（embedded）
 
 audio、canvas、embed、iframe、img、math、object、picture、svg、video
 
-##### interactive
+##### 交互元素（interactive）
 
 a、button、details、embed、iframe、keygen、label、select、textarea
 
@@ -59,7 +59,7 @@ a、button、details、embed、iframe、keygen、label、select、textarea
 
 当元素非空且非隐藏时，属于palpable content。flow content和phrasing content必须至少包含一个palpable结点。
 
-##### form
+##### 表单元素（form）
 
 listed：button、fieldset、input、keygen、object、output、select、textarea
 
