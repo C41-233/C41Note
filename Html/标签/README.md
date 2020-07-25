@@ -161,3 +161,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | [table](table.md) | 表格 | 对称标签 | HTMLTableElement |
 | tbody | 表格的主体内容 | 对称标签 | HTMLTableSectionElement |
 | td | 表格中的标准单元格 | 对称标签 | HTMLTableDataCellElement |
+| tfoot | 表格中的脚注内容  | 对称标签 | HTMLTableSectionElement |
+| th | 表格内的表头单元格 | 对称标签 | HTMLTableDataCellElement |
+| thead | 表格的表头内容 | 对称标签 | HTMLTableSectionElement |
+| tr | 表格中的行 | 对称标签 | HTMLTableRowElement |
