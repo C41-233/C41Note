@@ -44,5 +44,20 @@ iframe元素会创建包含另外一个文档的内联框架（即行内框架�
 	<td>px</td>
 	<td>高度</td>
 </tr>
+<tr>
+	<th>name</th>
+	<td>string</td>
+	<td>用于定位的名称，与a和form元素的target属于，以及input和button元素的formtarget属性配合使用</td>
+</tr>
+<tr>
+	<th>src</th>
+	<td>url</td>
+	<td>在框架中显示的文档的URL</td>
+</tr>
+<tr>
+	<th>width</th>
+	<td>px</td>
+	<td>宽度</td>
+</tr>
 </table>
 
