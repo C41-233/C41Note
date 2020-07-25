@@ -70,6 +70,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 #### 3、行内标签
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
+| a | 锚点 | 对称标签 | HTMLAnchorElement |
 | abbr | 缩写，简写，缩略语 | 对称标签 |  HTMLElement |
 | acronym | 首字母缩写（废弃） | 对称标签 |  HTMLElement |
 | cite | 作品的标题 | 对称标签 | HTMLElement  |
@@ -158,3 +159,5 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | [col](col.md) | 为表格中多个列定义属性值 | 空白标签 | HTMLTableColElement |
 | [colgroup](colgroup.md) | 对表格中的列进行组合 | 对称标签 | HTMLTableColElement |
 | [table](table.md) | 表格 | 对称标签 | HTMLTableElement |
+| tbody | 表格的主体内容 | 对称标签 | HTMLTableSectionElement |
+| td | 表格中的标准单元格 | 对称标签 | HTMLTableDataCellElement |
