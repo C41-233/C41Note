@@ -25,7 +25,7 @@ a标签可定义锚点，可以创建通向其他网页、文件、同一页面�
 </tr>
 <tr>
     <th>子元素</th>
-    <td>可见元素，包括流元素（不包括交互元素）和文本元素</td>
+    <td>透明元素，包括流元素（不包括交互元素）和文本元素</td>
 </tr>
 <tr>
     <th>父元素</th>
@@ -69,18 +69,18 @@ a标签可定义锚点，可以创建通向其他网页、文件、同一页面�
 </tr>
 <tr>
 	<th>rel</th>
-	<td></td>
-	<td></td>
+	<td>string</td>
+	<td>规定当前文档与目标URL之间的关系</td>
 </tr>
 <tr>
 	<th>target</th>
-	<td></td>
-	<td></td>
+	<td>target</td>
+	<td>规定在何处打开链接文档</td>
 </tr>
 <tr>
 	<th>type</th>
-	<td></td>
-	<td></td>
+	<td>MIME</td>
+	<td>规定目标URL的MIME类型</td>
 </tr>
 </table>
 

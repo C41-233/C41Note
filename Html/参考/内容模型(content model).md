@@ -1,6 +1,6 @@
 # Content Model
 
-### 1、主要内容类（main content categories）
+### 1、主分类
 
 ##### 元数据（metadata）
 
@@ -69,12 +69,12 @@ submittable：button、input、keygen、object、select、textarea
 
 resettable：input、keygen、output、select、textarea
 
-### 2、secondary categories
+### 2、二级分类
 
 ##### script
 
 script、template
 
-### 3、可见元素
+### 3、透明元素（transparent）
 
-del、ins的子元素
+即使将该标签本身删除，由其子元素替代，也是合法的HTML5结构。例如del和ins标签。
