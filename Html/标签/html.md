@@ -51,5 +51,3 @@
     <br/>定义XML namespace属性，该值必须是`http://www.w3.org/1999/xhtml`</td>
 </tr>
 </table>
-
-

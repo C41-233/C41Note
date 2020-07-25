@@ -6,9 +6,25 @@
 
 ## 约束
 
-必须在<head>标签中。
-
-每个文档必须有且仅有一个title元素。
-
-对称标签。
-
+<table>
+<tr>
+    <th>content</th>
+    <td>元数据</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>文本</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>head，只能存在一个title</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLTitleElement</td>
+</tr>
+</table>

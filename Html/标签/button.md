@@ -78,7 +78,7 @@
 <tr>
 	<th>formtarget</th>
 	<td>target</td>
-	<td>规定如何打开action url，覆盖form元素的target属性，参见<a href="../参考/target.md">提交目标</a></td>
+	<td>规定如何打开action url，覆盖form元素的target属性</td>
 </tr>
 <tr>
 	<th>name</th>
@@ -87,7 +87,7 @@
 </tr>
 <tr>
 	<th>type</th>
-	<td>枚举</td>
+	<td>enum</td>
 	<td>
 		规定按钮的类型
 		<br/>button：该按钮是可点击的按钮
@@ -101,8 +101,4 @@
 	<td>按钮的初始值</td>
 </tr>
 </table>
-
-## DOM
-
-HTMLButtonElement
 

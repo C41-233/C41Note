@@ -54,17 +54,17 @@ tr元素定义表格行，th元素定义表头，td元素定义表格单元。
 	</tr>
 	<tr>
 		<th>border</th>
-		<td>number</td>
+		<td>px</td>
 		<td>表格的边框宽度</td>
 	</tr>
 	<tr>
 		<th>cellpadding</th>
-		<td>number<br/>percent</td>
+		<td>px</td>
 		<td>规定单元格内边距</td>
 	</tr>
 	<tr>
 		<th>cellspacing</th>
-		<td>number<br/>percent</td>
+		<td>px</td>
 		<td>规定单元格之间的距离</td>
 	</tr>
 	<tr>
@@ -100,7 +100,7 @@ tr元素定义表格行，th元素定义表头，td元素定义表格单元。
 	</tr>
 	<tr>
 		<th>width</th>
-		<td>number<br/>percent</td>
+		<td>px</td>
 		<td>表格的宽度</td>
 	</tr>
 </table>

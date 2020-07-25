@@ -79,7 +79,7 @@ a标签可定义锚点，可以创建通向其他网页、文件、同一页面�
 </tr>
 <tr>
 	<th>type</th>
-	<td>MIME</td>
+	<td>mime</td>
 	<td>规定目标URL的MIME类型</td>
 </tr>
 </table>
