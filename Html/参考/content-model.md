@@ -26,7 +26,7 @@ article、aside、nav、section
 
  h1、h2、h3、h4、h5、h6、hgroup
 
-##### 短语元素（phrasing）
+##### 文本元素（phrasing）
 
 abbr、audio、b、bdo、br、button、canvas、cite、code、command、data、datalist、dfn、em、embed、i、iframe、img、input、kbd、keygen、label、mark、math、meter、noscript、object、output、picture、progress、q、ruby、samp、script、select、small、span、strong、sub、sup、svg、textarea、time、var、video、wbr 
 
@@ -55,7 +55,7 @@ a、button、details、embed、iframe、keygen、label、select、textarea
 - object：设置usemap属性
 - video：设置controls属性
 
-##### palpable
+##### 可触摸元素（palpable）
 
 当元素非空且非隐藏时，属于palpable content。flow content和phrasing content必须至少包含一个palpable结点。
 

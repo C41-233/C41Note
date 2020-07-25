@@ -40,6 +40,3 @@ address {
 }
 ```
 
-## DOM
-
-HTMLElement

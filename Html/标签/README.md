@@ -1,5 +1,7 @@
 # HTML标签
 
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
+
 ## 标签类型
 
 - 对称标签：必须以`<tag>`和`</tag>`成对出现的标签，即使没有子内容也不能写成`<tag/>`的形式。
