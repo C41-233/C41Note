@@ -27,8 +27,18 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | char | 单个字符 |
 | id | 引用其他元素的id |
 | string | 字符串 |
+| url | URL地址 |
+| xmlns | xml namespace |
 
 ##### 引用类型
+
+| 数据类型 | 描述 |
+|---|---|
+| charset | 字符集 |
+| color | 颜色 |
+| language | 语言 |
+| mime | MIME类型 |
+| target | 规定如何打开文档，参见[target](../参考/target.md) |
 
 ### 内容模型
 
