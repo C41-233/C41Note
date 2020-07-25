@@ -12,7 +12,28 @@
 
 ## 约束
 
-对称标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>流元素、文本元素、交互元素、表单元素（listed、labelable、resettable、submittable）</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>文本</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>支持文本元素的元素</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLTextAreaElement</td>
+</tr>
+</table>
 
 ## 属性
 
