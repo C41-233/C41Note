@@ -54,6 +54,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | [body](body.md) | HTML文档主体 | 对称标签 | HTMLBodyElement  |
 | [meta](meta.md) | 提供有关页面的元信息 | 空白标签 | HTMLMetaElement  |
 | [title](title.md) | 文档的标题 | 对称标签 |  HTMLTitleElement |
+| base | 为页面上的所有相对路径定义根URL | 空白标签 | HTMLBaseElement |
 
 #### 2、块级标签
 
@@ -183,16 +184,16 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 #### 5、表格
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
+| [table](table.md) | 表格 | 对称标签 | HTMLTableElement |
+| thead | 表格的表头内容 | 对称标签 | HTMLTableSectionElement |
+| tbody | 表格的主体内容 | 对称标签 | HTMLTableSectionElement |
+| tfoot | 表格中的脚注内容  | 对称标签 | HTMLTableSectionElement |
+| tr | 表格中的行 | 对称标签 | HTMLTableRowElement |
+| [th](th.md) | 表格内的表头单元格 | 对称标签 | HTMLTableDataCellElement |
+| [td](td.md) | 表格中的标准单元格 | 对称标签 | HTMLTableDataCellElement |
 | [caption](caption.md) | 表格标题 | 对称标签 | HTMLTableCaptionElement |
 | [col](col.md) | 为表格中多个列定义属性值 | 空白标签 | HTMLTableColElement |
 | [colgroup](colgroup.md) | 对表格中的列进行组合 | 对称标签 | HTMLTableColElement |
-| [table](table.md) | 表格 | 对称标签 | HTMLTableElement |
-| tbody | 表格的主体内容 | 对称标签 | HTMLTableSectionElement |
-| [td](td.md) | 表格中的标准单元格 | 对称标签 | HTMLTableDataCellElement |
-| tfoot | 表格中的脚注内容  | 对称标签 | HTMLTableSectionElement |
-| [th](th.md) | 表格内的表头单元格 | 对称标签 | HTMLTableDataCellElement |
-| thead | 表格的表头内容 | 对称标签 | HTMLTableSectionElement |
-| tr | 表格中的行 | 对称标签 | HTMLTableRowElement |
 
 #### 6、多媒体
 
