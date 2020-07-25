@@ -5,7 +5,6 @@ function exportAsFile = function(text, fileName) {
     }
     const urlObject = window.URL || window.webkitURL || window;
     const export_blob = new Blob(data);
-    const url = urlObject.createObjectURL(export_blob);
     const save_link = document.createElementNS("http://www.w3.org/1999/xhtml", "a");
     save_link.href = urlObject.createObjectURL(export_blob);
     save_link.download = fileName;
