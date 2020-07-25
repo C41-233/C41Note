@@ -67,7 +67,7 @@
 	</tr>
 	<tr>
 		<th>width</th>
-		<td>number<br/>percent</td>
+		<td>px</td>
 		<td>规定表格单元格的宽度</td>
 	</tr>
 </table>
