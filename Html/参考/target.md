@@ -4,6 +4,7 @@
 
 | 元素 | 属性 |
 |---|---|
+| a | target |
 | input | formtarget |
 
 target可以是一组枚举值，或者框架的id。当指定框架id时，新的文档在该框架内载入。
