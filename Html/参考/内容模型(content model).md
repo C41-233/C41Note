@@ -6,7 +6,7 @@
 
 base、command、link、meta、noscript, script, style、title
 
-##### 流式元素（flow）
+##### 流元素（flow）
 
 文本元素属于flow content。
 
@@ -30,7 +30,7 @@ article、aside、nav、section
 
 abbr、audio、b、bdo、br、button、canvas、cite、code、command、data、datalist、dfn、em、embed、i、iframe、img、input、kbd、keygen、label、mark、math、meter、noscript、object、output、picture、progress、q、ruby、samp、script、select、small、span、strong、sub、sup、svg、textarea、time、var、video、wbr 
 
-下列元素在满足条件时属于phrasing content：
+下列元素在满足条件时属于文本元素：
 - a：仅包含phrasing content
 - area：作为map的子孙元素
 - del：仅包含phrasing content
@@ -75,6 +75,6 @@ resettable：input、keygen、output、select、textarea
 
 script、template
 
-### 3、transparent content model
+### 3、可见元素
 
 del、ins的子元素
