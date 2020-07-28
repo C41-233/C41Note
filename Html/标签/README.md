@@ -195,7 +195,16 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | [col](col.md) | 为表格中多个列定义属性值 | 空白标签 | HTMLTableColElement |
 | [colgroup](colgroup.md) | 对表格中的列进行组合 | 对称标签 | HTMLTableColElement |
 
-#### 6、多媒体
+#### 6、列表
+
+| 标签 | 说明 | 类型 | DOM |
+|---|---|---|---|
+| dd | dl元素中条目的描述部分 | 对称标签 | HTMLElement |
+| dl | 定义列表 | 对称标签 | HTMLDListElement |
+| dt | dl元素中条目的名称部分 | 对称标签 | HTMLElement |
+| [li](li.md) | 定义列表中的项目 | 对称标签 | HTMLLIElement |
+
+#### 7、多媒体
 
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
