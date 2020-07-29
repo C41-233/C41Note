@@ -44,8 +44,8 @@ a标签可定义锚点，可以创建通向其他网页、文件、同一页面�
 <table>
 <tr>
 	<th>download</th>
-	<td></td>
-	<td></td>
+	<td>string</td>
+	<td>浏览器下载资源而非导航到目标文档，值为预设的文件名</td>
 </tr>
 <tr>
 	<th>href</th>

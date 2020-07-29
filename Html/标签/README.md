@@ -37,6 +37,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | charset | 字符集 |
 | color | 颜色 |
 | language | 语言 |
+| media | 媒体类型 |
 | mime | MIME类型 |
 | target | 规定如何打开文档，参见[target](../参考/target.md) |
 
@@ -208,6 +209,13 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 
 #### 7、多媒体
 
+##### 框架
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
 | [iframe](iframe.md) | 定义内联框架 | 对称标签 | HTMLIFrameElement |
+
+##### 图像
+
+| 标签 | 说明 | 类型 | DOM |
+|---|---|---|---|
+| [area](area.md) | 图像映射中的区域 | 空白标签 | HTMLAreaElement |
