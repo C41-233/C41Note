@@ -7,7 +7,7 @@
 <table>
 <tr>
     <th>content</th>
-    <td>流元素<br/>文本元素</td>
+    <td>流元素、文本元素</td>
 </tr>
 <tr>
     <th>标签</th>

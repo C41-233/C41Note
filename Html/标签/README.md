@@ -221,3 +221,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 |---|---|---|---|
 | [img](img.md) | 嵌入图像 | 空白标签 | HTMLImageElement |
 | [area](area.md) | 图像映射中的区域 | 空白标签 | HTMLAreaElement |
+| [map](map.md) | 定义一个客户端图像映射 | 对称标签 | HTMLMapElement |
