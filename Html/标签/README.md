@@ -219,5 +219,5 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
-| [area](area.md) | 图像映射中的区域 | 空白标签 | HTMLAreaElement |
 | [img](img.md) | 嵌入图像 | 空白标签 | HTMLImageElement |
+| [area](area.md) | 图像映射中的区域 | 空白标签 | HTMLAreaElement |

@@ -74,6 +74,6 @@ img元素向网页中嵌入一幅图像。
     <tr>
 		<th>usemap</th>
 		<td>string</td>
-		<td>与元素相关联的map的部分url锚点</td>
+		<td>与元素相关联的map的部分url锚点，包括#部分</td>
 	</tr>
 </table>
