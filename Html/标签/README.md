@@ -40,6 +40,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | language | 语言 |
 | media | 媒体类型 |
 | mime | MIME类型 |
+| rel | 当前文档与目标文档之间的关系 |
 | target | 规定如何打开文档，参见[target](../参考/target.md) |
 
 ### 内容模型
@@ -222,3 +223,9 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | [img](img.md) | 嵌入图像 | 空白标签 | HTMLImageElement |
 | [area](area.md) | 图像映射中的区域 | 空白标签 | HTMLAreaElement |
 | [map](map.md) | 定义一个客户端图像映射 | 对称标签 | HTMLMapElement |
+
+##### 样式
+
+| 标签 | 说明 | 类型 | DOM |
+|---|---|---|---|
+| [link](link.md) | 定义文档与外部资源的关系 | 空白标签 | HTMLLinkElement |

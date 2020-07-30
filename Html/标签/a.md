@@ -69,7 +69,7 @@ a标签可定义锚点，可以创建通向其他网页、文件、同一页面�
 </tr>
 <tr>
 	<th>rel</th>
-	<td>string</td>
+	<td>rel</td>
 	<td>规定当前文档与目标URL之间的关系</td>
 </tr>
 <tr>
