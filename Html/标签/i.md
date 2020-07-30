@@ -9,7 +9,7 @@
 <table>
 <tr>
     <th>content</th>
-    <td>flow, phrasing, palpable</td>
+    <td>流元素、文本元素、可触摸元素</td>
 </tr>
 <tr>
     <th>标签</th>
