@@ -59,13 +59,13 @@ a标签可定义锚点，可以创建通向其他网页、文件、同一页面�
 </tr>
 <tr>
 	<th>ping</th>
-	<td></td>
-	<td></td>
+	<td>url</td>
+	<td>包含一个以空格分隔的url列表，当跟随超链接时，将由浏览器(在后台)发送带有正文PING的POST请求，通常用于跟踪。</td>
 </tr>
 <tr>
 	<th>referrerpolicy</th>
-	<td></td>
-	<td></td>
+	<td>referrer</td>
+	<td>表明在获取URL时发送的referrer</td>
 </tr>
 <tr>
 	<th>rel</th>
