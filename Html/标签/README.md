@@ -40,6 +40,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | language | 语言 |
 | media | 媒体类型 |
 | mime | MIME类型 |
+| referrer | 请求时所带的referrer，参见[referrer](../参考/referrer.md) |
 | rel | 当前文档与目标文档之间的关系 |
 | target | 规定如何打开文档，参见[target](../参考/target.md) |
 
