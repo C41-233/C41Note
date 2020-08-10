@@ -192,7 +192,7 @@ public class BinaryBalancedTreeSet<T> : IEnumerable<T>
         node.Height = Math.Max(node.LeftHeight, node.RightHeight) + 1;
     }
 
-    public bool Contain(T value)
+    public bool Contains(T value)
     {
         return TrySearchValue(value, out _, out _);
     }
