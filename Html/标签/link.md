@@ -45,7 +45,7 @@ link标签最常见的用途是定义样式表。
 <table>
 <tr>
     <th>content</th>
-    <td>元数据<br/>如果存在itemprop属性，则为流元素、文本元素</td>
+    <td>元数据<br/>如果存在itemprop属性，则为流元素、短语元素</td>
 </tr>
 <tr>
     <th>标签</th>
@@ -53,7 +53,7 @@ link标签最常见的用途是定义样式表。
 </tr>
 <tr>
     <th>父元素</th>
-    <td>允许元数据的元素<br/>如果存在itemdrop属性，允许文本元素的元素</td>
+    <td>允许元数据的元素<br/>如果存在itemdrop属性，允许短语元素的元素</td>
 </tr>
 <tr>
     <th>DOM</th>

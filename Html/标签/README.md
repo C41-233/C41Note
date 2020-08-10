@@ -229,3 +229,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
 | [link](link.md) | 定义文档与外部资源的关系 | 空白标签 | HTMLLinkElement |
+| [style](style.md) | 定义文档样式 | 对称标签 | HTMLStyleElement |

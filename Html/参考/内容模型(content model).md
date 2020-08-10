@@ -26,7 +26,7 @@ article、aside、nav、section
 
  h1、h2、h3、h4、h5、h6、hgroup
 
-##### 文本元素（phrasing）
+##### 短语元素（phrasing）
 
 abbr、audio、b、bdo、br、button、canvas、cite、code、command、data、datalist、dfn、em、embed、i、iframe、img、input、kbd、keygen、label、mark、math、meter、noscript、object、output、picture、progress、q、ruby、samp、script、select、small、span、strong、sub、sup、svg、textarea、time、var、video、wbr 
 
