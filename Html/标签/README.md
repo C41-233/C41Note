@@ -234,4 +234,5 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 ##### 嵌入式对象
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
-| [audio](audio.md) | 嵌入式音频 | 对称标签	 | HTMLAudioElement |
+| [audio](audio.md) | 嵌入式音频 | 对称标签 | HTMLAudioElement |
+| [canvas](canvas.md) | 画布 | 对称标签 | HTMLCanvasElement |
