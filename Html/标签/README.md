@@ -236,3 +236,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 |---|---|---|---|
 | [audio](audio.md) | 嵌入式音频 | 对称标签 | HTMLAudioElement |
 | [canvas](canvas.md) | 画布 | 对称标签 | HTMLCanvasElement |
+| [embed](embed.md) | 嵌入式插件 | 空白标签 | HTMLEmbedElement |
