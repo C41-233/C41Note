@@ -226,8 +226,12 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | [map](map.md) | 定义一个客户端图像映射 | 对称标签 | HTMLMapElement |
 
 ##### 样式
-
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
 | [link](link.md) | 定义文档与外部资源的关系 | 空白标签 | HTMLLinkElement |
 | [style](style.md) | 定义文档样式 | 对称标签 | HTMLStyleElement |
+
+##### 嵌入式对象
+| 标签 | 说明 | 类型 | DOM |
+|---|---|---|---|
+| [audio](audio.md) | 嵌入式音频 | 对称标签	 | HTMLAudioElement |
