@@ -238,3 +238,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | [canvas](canvas.md) | 画布 | 对称标签 | HTMLCanvasElement |
 | [embed](embed.md) | 嵌入式插件 | 空白标签 | HTMLEmbedElement |
 | [object](object.md) | 嵌入式多媒体对象 | 对称标签 | HTMLObjectElement |
+| [param](param.md) | 为object设置参数 | 空白标签 | HTMLParamElement |
