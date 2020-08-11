@@ -2,20 +2,28 @@
 
 B树是一棵平衡多叉搜索树，m阶B树是平衡m叉搜索树。
 
-如果B树非空，则满足以下性质：
+m阶B树满足以下性质：
 1. 若根结点的度不为0，则至少为2，至多为m。
 2. 除根结点和叶结点外，所有结点的度至少为⌊m/2⌋，至多为m。
 3. 除根结点和叶结点外，所有结点的关键字个数恰好比度数少1。即，关键字个数至少为⌊m/2⌋-1，至多为m-1。
 4. 所有叶结点深度相同。
 
-对m阶B树的任意非叶结点，T<sub>i</sub>为子树，k<sub>i</sub>为结点的关键字，形成T<sub>0</sub>k<sub>1</sub>T<sub>1</sub>k<sub>2</sub>...</sub>k<sub>n-1</sub>T<sub>n</sub>的排列，满足：
-1. ⌊m/2⌋ ≤ n ≤ m。
-2. 子树T<sub>0</sub>的关键字都小于等于k<sub>1</sub>。
-3. 子树T<sub>n</sub>的关键字都大于k<sub>n-1</sub>。
-4. 子树T<sub>i</sub>(0<i<n)的关键字都大于等于k<sub>i</sub>，小于k<sub>i+1</sub>。
-5. 结点上的关键字k<sub>i</sub>≤k<sub>i+1</sub>(0<i<n)。
+对m阶B树的任意非叶结点，T<sub>i</sub>为子树，k<sub>i</sub>为结点的关键字，形成T<sub>0</sub>k<sub>0</sub>T<sub>1</sub>k<sub>1</sub>...</sub>T<sub>n-2</sub></sub>k<sub>n-2</sub>T<sub>n-1</sub>的排列，满足：
+1. ⌊m/2⌋ ≤ n ≤ m，但根结点满足2 ≤ n ≤ m。
+2. 子树T<sub>0</sub>的关键字都小于等于k<sub>0</sub>。
+3. 子树T<sub>n-1</sub>的关键字都大于k<sub>n-2</sub>。
+4. 子树T<sub>i</sub>(0＜i＜n-1)的关键字都大于k<sub>i-1</sub>，小于等于k<sub>i</sub>。
+5. 结点上的关键字k<sub>i</sub>≤k<sub>i+1</sub>(0＜i＜n)。
 
 以下是一棵7阶B树，非叶结点至少有3棵子树，至多有7棵子树。
 
 ![](0.png)
 
+B树为磁盘存储设备而设计，能有效降低磁盘I/O操作次数。
+
+## 搜索
+
+在m阶B树中查找关键字k，由于B树的结点中存放多个有序的关键字，因此可以从根结点出发，依次递归查找每个结点，找到每个结点满足k<sub>i-1</sub>＜k≤k<sub>i</sub>的i：
+1. 如果k<sub>i</sub>=k，则存在，即k<sub>i</sub>。
+2. 否则，如果是叶结点，则不存在。
+3. 否则，递归查找子树T<sub>i</sub>。
