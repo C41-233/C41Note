@@ -1,6 +1,6 @@
-# audio
+# video
 
-audio标签定义声音，比如音乐或其他音频流。
+=定义视频，比如电影片段或其他视频流。
 
 可以在开始标签和结束标签之间放置文本内容，这样老的浏览器就可以显示出不支持该标签的信息。
 
@@ -25,7 +25,7 @@ audio标签定义声音，比如音乐或其他音频流。
 </tr>
 <tr>
     <th>DOM</th>
-    <td>HTMLAudioElement</td>
+    <td>HTMLVideoElement</td>
 </tr>
 </table>
 
@@ -37,26 +37,51 @@ audio标签定义声音，比如音乐或其他音频流。
 <tr>
 	<th>autoplay</th>
 	<td>bool</td>
-	<td>音频在就绪后马上播放，不会等待整个音频文件下载完成</td>
+	<td>视频在就绪后马上播放</td>
 </tr>
 <tr>
 	<th>controls</th>
 	<td>bool</td>
-	<td>向用户显示交互控件，比如播放按钮</td>
+	<td>向用户显示控件，比如播放按钮</td>
 </tr>
 <tr>
 	<th>crossorigin</th>
-	<td>corps</td>
-	<td>音频资源是否可以通过CROS加载</td>
+	<td>corp</td>
+	<td>指明抓取相关图片是否必须用到CORS</td>
+</tr>
+<tr>
+	<th>height</th>
+	<td>px</td>
+	<td>视频区域的高度</td>
 </tr>
 <tr>
 	<th>loop</th>
 	<td>bool</td>
-	<td>循环播放音频</td>
+	<td>循环播放</td>
+</tr>
+<tr>
+	<th>muted</th>
+	<td>bool</td>
+	<td>初始静音</td>
+</tr>
+<tr>
+	<th>playsinline</th>
+	<td>bool</td>
+	<td>在元素的播放区域内播放</td>
+</tr>
+<tr>
+	<th>poster</th>
+	<td>url</td>
+	<td>指定海报帧的URL</td>
 </tr>
 <tr>
 	<th>src</th>
 	<td>url</td>
-	<td>要播放的音频的URL</td>
+	<td>播放的视频的URL</td>
+</tr>
+<tr>
+	<th>width</th>
+	<td>px</td>
+	<td>视频区域的宽度</td>
 </tr>
 </table>

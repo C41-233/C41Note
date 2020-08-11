@@ -241,3 +241,4 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | [param](param.md) | 为object设置参数 | 空白标签 | HTMLParamElement |
 | source | 为多媒体元素定义资源 | 对称标签 | HTMLSourceElement |
 | track | 为多媒体元素定义字幕 | 对称标签 | HTMLTrackElement |
+| [video](video.md) | 嵌入式视频 | 对称标签 | HTMLVideoElement |
