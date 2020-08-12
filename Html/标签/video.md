@@ -46,7 +46,7 @@
 </tr>
 <tr>
 	<th>crossorigin</th>
-	<td>corp</td>
+	<td>corps</td>
 	<td>指明抓取相关图片是否必须用到CORS</td>
 </tr>
 <tr>
