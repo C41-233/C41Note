@@ -15,7 +15,7 @@ body标签定义文档的主体，即所有内容。
 </tr>
 <tr>
     <th>子元素</th>
-    <td>flow content</td>
+    <td>流元素</td>
 </tr>
 <tr>
     <th>父元素</th>

@@ -7,7 +7,7 @@
 <table>
 <tr>
     <th>content</th>
-    <td>flow, sectioning root, palpable</td>
+    <td>流元素、sectioning root、可触摸元素</td>
 </tr>
 <tr>
     <th>标签</th>
@@ -15,11 +15,11 @@
 </tr>
 <tr>
     <th>子元素</th>
-    <td>flow content</td>
+    <td>流元素</td>
 </tr>
 <tr>
     <th>父元素</th>
-    <td>支持flow content的元素</td>
+    <td>支持流元素的元素</td>
 </tr>
 <tr>
     <th>DOM</th>
