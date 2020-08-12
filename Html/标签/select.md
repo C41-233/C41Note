@@ -4,9 +4,28 @@ select元素可创建单选或多选菜单。
 
 ## 约束
 
-对称标签。
-
-只能包含option标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>流元素、短语元素、交互元素、表单元素</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>(option | optgroup)*</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>允许短语元素的元素</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLSelectElement</td>
+</tr>
+</table>
 
 ## 属性
 
