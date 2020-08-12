@@ -4,9 +4,28 @@
 
 ## 约束
 
-对称标签。
-
-必须在select或datalist标签内。
+<table>
+<tr>
+    <th>content</th>
+    <td>无</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>文本</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>select、optgroup、datalist</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLOptionElement</td>
+</tr>
+</table>
 
 ## 属性
 

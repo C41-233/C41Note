@@ -6,7 +6,28 @@ optgroup元素用于组合选项。当您使用一个长的选项列表时，对
 
 ## 约束
 
-对称标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>无</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>option*</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>select</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLOptGroupElement</td>
+</tr>
+</table>
 
 ## 属性
 
