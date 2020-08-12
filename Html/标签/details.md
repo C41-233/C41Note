@@ -17,7 +17,7 @@ details标签中的可点击标题由summary标签定义。
 <table>
 <tr>
     <th>content</th>
-    <td>flow, sectioning root, interactive, palpable</td>
+    <td>流元素、sectioning root、交互元素、可触摸元素</td>
 </tr>
 <tr>
     <th>标签</th>
@@ -25,11 +25,11 @@ details标签中的可点击标题由summary标签定义。
 </tr>
 <tr>
     <th>子元素</th>
-    <td>summary flow-content*</td>
+    <td>summary 流元素*</td>
 </tr>
 <tr>
     <th>父元素</th>
-    <td>支持flow content的元素</td>
+    <td>支持流元素的元素</td>
 </tr>
 <tr>
     <th>DOM</th>

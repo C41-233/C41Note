@@ -7,7 +7,7 @@
 <table>
 <tr>
     <th>content</th>
-    <td>flow, sectioning root</td>
+    <td>流元素、sectioning root</td>
 </tr>
 <tr>
     <th>标签</th>
@@ -19,7 +19,7 @@
 </tr>
 <tr>
     <th>父元素</th>
-    <td>支持flow content的元素</td>
+    <td>支持流元素的元素</td>
 </tr>
 <tr>
     <th>DOM</th>
@@ -30,7 +30,6 @@
 ## 属性
 
 ##### 可选
-
 
 <table>
 <tr>

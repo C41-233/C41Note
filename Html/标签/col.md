@@ -9,7 +9,7 @@
 <table>
 <tr>
     <th>content</th>
-    <td>none</td>
+    <td>无</td>
 </tr>
 <tr>
     <th>标签</th>

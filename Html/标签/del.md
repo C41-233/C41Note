@@ -7,7 +7,7 @@
 <table>
 <tr>
     <th>content</th>
-    <td>flow, phrasing</td>
+    <td>流元素、短语元素</td>
 </tr>
 <tr>
     <th>标签</th>
@@ -15,11 +15,11 @@
 </tr>
 <tr>
     <th>子元素</th>
-    <td>transparent content</td>
+    <td>透明元素</td>
 </tr>
 <tr>
     <th>父元素</th>
-    <td>支持phrasing content的元素</td>
+    <td>支持短语元素的元素</td>
 </tr>
 <tr>
     <th>DOM</th>

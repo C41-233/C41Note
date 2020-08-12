@@ -7,7 +7,7 @@
 <table>
 <tr>
     <th>content</th>
-    <td>none</td>
+    <td>无</td>
 </tr>
 <tr>
     <th>标签</th>
@@ -15,7 +15,7 @@
 </tr>
 <tr>
     <th>子元素</th>
-    <td>flow content</td>
+    <td>流元素</td>
 </tr>
 <tr>
     <th>父元素</th>

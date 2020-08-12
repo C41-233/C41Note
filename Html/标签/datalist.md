@@ -25,7 +25,7 @@ datalist的选项由option元素提供。选项不会被显示出来，它仅仅
 <table>
 <tr>
     <th>content</th>
-    <td>flow, phrasing</td>
+    <td>流元素、短语元素</td>
 </tr>
 <tr>
     <th>标签</th>
@@ -33,11 +33,11 @@ datalist的选项由option元素提供。选项不会被显示出来，它仅仅
 </tr>
 <tr>
     <th>子元素</th>
-    <td>phrasing-content | option*</td>
+    <td>短语元素 | option*</td>
 </tr>
 <tr>
     <th>父元素</th>
-    <td>支持phrasing content的元素</td>
+    <td>支持短语元素的元素</td>
 </tr>
 <tr>
     <th>DOM</th>
