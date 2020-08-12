@@ -7,11 +7,15 @@
 <table>
 <tr>
     <th>content</th>
-    <td>flow, phrasing, form</td>
+    <td>流元素、短语元素、表单元素</td>
 </tr>
 <tr>
     <th>标签</th>
     <td>空白标签</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>允许短语元素的元素</td>
 </tr>
 <tr>
     <th>DOM</th>

@@ -98,5 +98,3 @@ iframe元素会创建包含另外一个文档的内联框架（即行内框架�
 - allow-storage-access-by-user-activation：允许嵌入的浏览上下文通过 Storage Access API 使用父级浏览上下文的存储功能。
 - allow-top-navigation：允许嵌入的浏览上下文导航（加载）内容到顶级的浏览上下文。
 - allow-top-navigation-by-user-activation：允许嵌入的浏览上下文在经过用户允许后导航（加载）内容到顶级的浏览上下文。
-
-
