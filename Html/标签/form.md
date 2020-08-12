@@ -7,7 +7,7 @@ form标签用于为用户输入创建HTML表单，表单能够包含各种表单
 <table>
 <tr>
     <th>content</th>
-    <td>flow, palpable</td>
+    <td>流元素、可触摸元素</td>
 </tr>
 <tr>
     <th>标签</th>
@@ -15,11 +15,11 @@ form标签用于为用户输入创建HTML表单，表单能够包含各种表单
 </tr>
 <tr>
     <th>子元素</th>
-    <td>flow content（不包括form）</td>
+    <td>流元素（不包括form）</td>
 </tr>
 <tr>
     <th>父元素</th>
-    <td>支持flow content的元素</td>
+    <td>支持流元素的元素</td>
 </tr>
 <tr>
     <th>DOM</th>

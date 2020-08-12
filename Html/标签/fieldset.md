@@ -9,7 +9,7 @@ legend标签为fieldset元素定义标题。
 <table>
 <tr>
     <th>content</th>
-    <td>flow, sectioning root, listed, form, palpable</td>
+    <td>流元素、sectioning root、表单元素（listed）、可触摸元素</td>
 </tr>
 <tr>
     <th>标签</th>

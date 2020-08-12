@@ -7,7 +7,7 @@ head标签用于定义文档的头部，它是所有头部元素的容器。head
 <table>
 <tr>
     <th>content</th>
-    <td>none</td>
+    <td>无</td>
 </tr>
 <tr>
     <th>标签</th>
@@ -15,7 +15,7 @@ head标签用于定义文档的头部，它是所有头部元素的容器。head
 </tr>
 <tr>
     <th>子元素</th>
-    <td>meta content<br/>文档必须有且仅有一个title元素</td>
+    <td>元数据<br/>文档必须有且仅有一个title元素</td>
 </tr>
 <tr>
     <th>父元素</th>
