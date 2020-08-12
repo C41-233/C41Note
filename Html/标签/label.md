@@ -8,7 +8,28 @@ label标签的for属性指定关联控件的id。
 
 ## 约束
 
-对称标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>流元素、短语元素、交互元素、表单元素、可触摸元素</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>对称标签</td>
+</tr>
+<tr>
+    <th>子元素</th>
+    <td>短语元素</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>支持短语元素的元素</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLLabelElement</td>
+</tr>
+</table>
 
 ## 属性
 

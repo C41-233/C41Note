@@ -167,7 +167,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | [dialog](dialog.md) | 对话框或窗口 | 对称标签 | HTMLDialogElement |
 | [form](form.md) | 表单 | 对称标签 | HTMLFormElement |
 | [input](input.md) | 表单输入组件 | 空白标签 | HTMLInputElement |
-| [keygen](keygen.md) | 密钥对生成器 | 对称标签 | HTMLKeygenElement |
+| [keygen](keygen.md) | 密钥对生成器 | 空白标签 | HTMLKeygenElement |
 | [label](label.md) | 控件元素的标签 | 对称标签 | HTMLLabelElement |
 | [option](option.md) | select或datalist的选项 | 对称标签 | HTMLOptionElement |
 | [optgroup](optgroup.md) | 选项组 | 对称标签 | HTMLOptGroupElement |
