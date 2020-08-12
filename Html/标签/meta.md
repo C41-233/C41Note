@@ -8,9 +8,24 @@
 
 ## 约束
 
-必须在<head>标签中。
-
-空白标签。
+<table>
+<tr>
+    <th>content</th>
+    <td>元数据<br/>如果存在itemprop属性，则为流元素、短语元素</td>
+</tr>
+<tr>
+    <th>标签</th>
+    <td>空白标签</td>
+</tr>
+<tr>
+    <th>父元素</th>
+    <td>head</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLMetaElement</td>
+</tr>
+</table>
 
 ## 属性
 

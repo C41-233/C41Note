@@ -4,9 +4,16 @@
 
 ## 约束
 
-空白标签。
+<table>
+<tr>
+    <th>标签</th>
+    <td>空白标签</td>
+</tr>
+<tr>
+    <th>DOM</th>
+    <td>HTMLElement</td>
+</tr>
+</table>
 
-## DOM
 
-HTMLElement
 
