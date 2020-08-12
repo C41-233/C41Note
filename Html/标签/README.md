@@ -114,6 +114,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | [progress](progress.md) | 进度条 | 对称标签 |  HTMLProgressElement |
 | [q](q.md) | 短引用 | 对称标签 |  HTMLQuoteElement |
 | s | 不正确的文本 | 对称标签 | HTMLElement |
+| [slot](slot.md) | Web组件的占位符 | 对称标签 | HTMLSlotElement |
 | span | 行内文本 | 对称标签 | HTMLSpanElement |
 | sub | 下标文本 | 对称标签 | HTMLElement |
 | sup | 上标文本 | 对称标签 | HTMLElement |
@@ -236,6 +237,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | 标签 | 说明 | 类型 | DOM |
 |---|---|---|---|
 | [script](script.md) | 客户端脚本 | 对称标签 | HTMLScriptElement |
+| noscript | 不支持脚本显示的内容 | 对称标签 | HTMLElement |
 
 ##### 嵌入式对象
 | 标签 | 说明 | 类型 | DOM |
