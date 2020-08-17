@@ -1,3 +1,7 @@
+# C#
+
+## 定义
+
 ``` C#
 public class BTree<T>
 {
@@ -21,6 +25,43 @@ public class BTree<T>
     public BTree(int m) : this(m, Comparer<T>.Default)
     {
     }
+
+    private class BTreeNode
+    {
+
+        //父结点
+        public BTreeNode Parent;
+
+        //元素
+        public readonly T[] Values;
+        //子树
+        public readonly BTreeNode[] Children;
+
+        //元素个数，子树个数为Count+1
+        public int Count;
+
+        //是否为叶结点，叶结点的Children为空
+        public readonly bool IsLeaf;
+
+        public BTreeNode(int m, bool isLeaf, int count)
+        {
+            Parent = null;
+            Values = new T[m-1];
+            Children = new BTreeNode[m];
+            Count = count;
+            IsLeaf = isLeaf;
+        }
+
+    }
+
+}
+```
+
+## 实现（带回溯）
+
+``` C#
+public class BTree<T>
+{
 
     public bool Contains(T value)
     {
@@ -172,15 +213,7 @@ public class BTree<T>
         Array.Clear(src, srcFrom, length);
     }
 
-    private static void PlantMove(BTreeNode src, int srcFrom, BTreeNode dest, int destFrom, int length)
-    {
-        Move(src.Children, srcFrom, dest.Children, destFrom, length);
-        for (var i=0; i<length; i++)
-        {
-            dest.Children[destFrom + i].Parent = dest;
-        }
-    }
-
+    // 将子树child直接挂到parent的index位置。
     private static void Plant(BTreeNode parent, BTreeNode child, int index)
     {
         parent.Children[index] = child;
@@ -190,32 +223,14 @@ public class BTree<T>
         }
     }
 
-    private class BTreeNode
+    // 将子树src的[srcFrom, srcFrom+length)子树全到转移到子树dest的[dest, destFrom+length]。
+    private static void PlantMove(BTreeNode src, int srcFrom, BTreeNode dest, int destFrom, int length)
     {
-
-        //父结点
-        public BTreeNode Parent;
-
-        //元素
-        public readonly T[] Values;
-        //子树
-        public readonly BTreeNode[] Children;
-
-        //元素个数，子树个数为Count+1
-        public int Count;
-
-        //是否为叶结点，叶结点的Children为空
-        public readonly bool IsLeaf;
-
-        public BTreeNode(int m, bool isLeaf, int count)
+        Move(src.Children, srcFrom, dest.Children, destFrom, length);
+        for (var i=0; i<length; i++)
         {
-            Parent = null;
-            Values = new T[m-1];
-            Children = new BTreeNode[m];
-            Count = count;
-            IsLeaf = isLeaf;
+            dest.Children[destFrom + i].Parent = dest;
         }
-
     }
 
 }
