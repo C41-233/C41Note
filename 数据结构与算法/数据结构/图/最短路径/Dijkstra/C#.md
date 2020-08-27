@@ -4,7 +4,7 @@
 /// <summary>
 /// 计算到每个顶点的最短路径，负数表示不可达
 /// </summary>
-/// <param name="map">邻接表形式的带权有向图</param>
+/// <param name="map">邻接矩阵形式的带权有向图</param>
 /// <param name="start">起始顶点</param>
 /// <param name="n">顶点数</param>
 /// <returns>各个顶点的反向最短路径</returns>
