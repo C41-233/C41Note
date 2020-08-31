@@ -241,6 +241,7 @@ public class BinaryBalancedTreeSet<T> : IEnumerable<T>
 
         return node;
     }
+	
     private bool TrySearchValue(T value, out TreeNode node, out bool leftChild)
     {
         TreeNode parent = null;
@@ -332,5 +333,6 @@ public class BinaryBalancedTreeSet<T> : IEnumerable<T>
     {
         return GetEnumerator();
     }
+
 }
 ```
