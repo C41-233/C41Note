@@ -101,6 +101,6 @@ class TreeNode<T>{
     - [B树](B树)
     - [B+树](B+树)
 - 哈希树
-    - 哈希树（Merkle树）
+    - [Merkle树](Merkle树)
     - 字典树（Trie树）
     - 哈夫曼树（Huffman树，最优二叉树）
