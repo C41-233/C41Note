@@ -121,7 +121,7 @@ Array.prototype.first = function(pred){
 		}
 		return undefined;
 	}
-	return firstInternal.apply(this, pred);
+	return firstInternal.apply(this, arguments);
 }
 
 define("first", firstInternal);
@@ -162,7 +162,7 @@ Array.prototype.count = function(pred){
 	if(!pred){
 		return this.length;
 	}
-	return countInternal.apply(this, pred);
+	return countInternal.apply(this, arguments);
 }
 
 define("count", countInternal);
