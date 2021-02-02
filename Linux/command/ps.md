@@ -78,34 +78,48 @@
 - `--Group <gid>`	此参数的效果和指定"-G"参数相同。
 - `--User <uid>`	此参数的效果和指定"-U"参数相同。
 
-## format
-`-o <format>`
+## 输出
 
-可以自定义列名，如`-o ruser=RealUser`。
+`-o <format>`可以自定义列名，如`-o ruser=RealUser`。
 
-- `args`    （COMMAND）进程参数。
-- `blocked` （BLOCKED）blocked signal。
-- `bsdstart` （START）进程启动时间，如果在24小时内格式为`HH:MM`，否则格式为`Mmm:SS`。
-- `bsdtime` （TIME）累计cpu时间，`MMM:SS`。
-- `caught`  （CAUGHT）caught signal。
-- `cgname`  （CGNAME）control group name。
-- `cgroup`  （CGROUP）control group。
-- `cmd` （CMD）同`args`。
-- `comm`    （COMMAND）command name。
-- `command` （COMMAND）同`args`。
-- `cputime` （TIME）累计cpu时间，`[DD-]hh:mm:ss`。
-- `eip` （EIP）eip。
-- `esp` （ESP）esp。
-- `etime`   （ELAPSED）进程启动至今的时间，`[[DD-]hh:]mm:ss`。
-- `etimes`  （ELAPSED）进程启动至今的时间（秒）。
-- `ignored` （IGNORED）ignored signal。
-- `lstart`  （STARTED）同`bsdstart`。
-- `pid` （PID）pid。
-- `wchan` （WCHAN）进程正在sleep的内核函数。`-`表示进程不在sleep；`*`表示进程存在多线程，但没有指定线程。
+| 默认列名 | 定义 | 描述 |
+|---|---|---|
+| BLOCKED | blocked | blocked signal |
+| C | | 进程所在的CPU |
+| CAUGHT | caught | caught signal |
+| CGNAME | cgname | control group name |
+| CGROUP | cgroup | control group |
+| COMMAND | args comm command cmd | 进程的启动参数 |
+| CPU | | CPU开销 |
+| EIP | eip | eip寄存器 |
+| ESP | esp | esp寄存器 |
+| ELAPSED |  etime | 进程启动至今的时间，`[[DD-]hh:]mm:ss`。 |
+| ELAPSED |  etimes | 进程启动至今的时间（秒） |
+| IGNORED | ignored | ignored signal |
+| NAME | | 进程名称 |
+| NI | | nice值 |
+| PC | | pc寄存器 |
+| PCY | | 进程状态 |
+| PID | pid | 进程pid |
+| PPID | | 父进程pid |
+| PRIO | | 优先级 |
+| PSR | | 进程所在的CPU核心 |
+| RSS | | 进程占用的物理内存大小 |
+| RTPRI | | 实时优先级 |
+| SCHED | | 调度策略 |
+| START | bsdstart | 进程启动时间，如果在24小时内格式为`HH:MM`，否则格式为`Mmm:SS` |\
+| STAT | | 进程状态 |
+| STIME | | 进程启动的时间 |
+| TIME | bsdtime | 累计cpu时间，`MMM:SS` |
+| TIME | cputime | 累计cpu时间，`[DD-]hh:mm:ss` |
+| USER | | 进程当前用户 |
+| VSIZE | | 进程虚拟地址空间大小 |
+| VSZ | | 虚拟内存集 |
+| WCHAN | wchan | 进程正在sleep的内核函数。`-`表示进程不在sleep；`*`表示进程存在多线程，但没有指定线程 |
 
 ## 示例
 - `ps aux`  
-显示所有进程。
+显示所有进程，包含USER、PID、%CPU、%MEM、VSZ、RSS、TTY、STAT、START、TIME、COMMAND。
 
 - `ps -T -p 42`  
 显示pid为42的进程的所有线程。
