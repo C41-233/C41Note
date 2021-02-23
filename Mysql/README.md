@@ -19,6 +19,14 @@
 1. [系统状态](variable/system-status-value.md)
 1. [日志](log.md)
 
+## 存储引擎
+- [存储引擎](engine/)
+	1. [INNODB](engine/innodb-engine.md)
+	1. [MERGE](engine/merge-engine.md)
+	1. [SHOW ENGINE语句](grammar/show-engine-statement.md)
+	1. [SHOW ENGINES语句](grammar/show-engines-statement.md)
+
+
 ## 表达式与数据类型
 1. [字面直接量](expression/literal.md)
 	1. [数值型直接量](expression/literal.md#数值型直接量)
@@ -145,12 +153,6 @@
 	1. [REPAIR TABLE语句](grammar/repair-table-statement.md)
 	1. [RESTORE TABLE语句](grammar/restore-table-statement.md)
 	
-1. [存储引擎](engine/)
-	1. [INNODB](engine/innodb-engine.md)
-	1. [MERGE](engine/merge-engine.md)
-	1. [SHOW ENGINE语句](grammar/show-engine-statement.md)
-	1. [SHOW ENGINES语句](grammar/show-engines-statement.md)
-
 ## 索引
 1. [CREATE INDEX语句](grammar/create-index-statement.md)
 1. [DROP INDEX语句](grammar/drop-index-statement.md)
