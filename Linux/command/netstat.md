@@ -158,7 +158,7 @@ Slash-separated pair of the process id (PID) and process name of the process tha
 
 ## 示例
 
-`netstat -tunlpe | grep :<port>`
+`netstat -tunlpe | grep <port>`
 
 查看指定端口占用情况。
 
