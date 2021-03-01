@@ -73,7 +73,13 @@
 ## 示例
 
 ```
+<!-- 视频 -->
 <object data="video.swf" height="200" width="200"></object>
+```
+
+```
+<!-- 音频 -->
+<object height="100" width="100" data="song.mp3"></object>
 ```
 
 ##### QucikTime
@@ -81,6 +87,13 @@
 ```
 <object width="420" height="360" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
 	<param name="src" value="video.mp4" />
+	<param name="controller" value="true" />
+</object>
+```
+
+```
+<object width="420" height="360" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+	<param name="src" value="audio.wav" />
 	<param name="controller" value="true" />
 </object>
 ```

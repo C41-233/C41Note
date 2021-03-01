@@ -60,3 +60,12 @@ audio标签定义声音，比如音乐或其他音频流。
 	<td>要播放的音频的URL</td>
 </tr>
 </table>
+
+## 示例
+
+```
+<audio controls="controls">
+	<source src="audio.mp3" type="audio/mp3" />
+	<source src="audio.ogg" type="audio/ogg" />
+</audio>
+```

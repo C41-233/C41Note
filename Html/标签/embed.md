@@ -53,5 +53,11 @@
 ## 示例
 
 ```
+<!-- 视频 -->
 <embed src="video.swf" height="200" width="200"/>
+```
+
+```
+<!-- 音频 -->
+<embed height="100" width="100" src="audio.mp3" />
 ```
