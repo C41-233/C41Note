@@ -38,11 +38,11 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element
 | color | 颜色 |
 | corps | 跨域类型 |
 | language | 语言 |
-| media | 媒体类型 |
+| [media](../参考/media.md) | 媒体类型 |
 | mime | MIME类型 |
-| referrer | 请求时所带的referrer，参见[referrer](../参考/referrer.md) |
+| [referrer](../参考/referrer.md) | 请求时所带的referrer |
 | rel | 当前文档与目标文档之间的关系 |
-| target | 规定如何打开文档，参见[target](../参考/target.md) |
+| [target](../参考/target.md) | 规定如何打开文档 |
 
 ### 内容模型
 

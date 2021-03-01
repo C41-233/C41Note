@@ -1,4 +1,4 @@
-#referrer
+# referrer
 
 表示获取目标文档时如何发送referrer头部。
 
