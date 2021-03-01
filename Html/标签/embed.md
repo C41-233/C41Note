@@ -49,3 +49,9 @@
     <td>资源宽度</td>
 </tr>
 </table>
+
+## 示例
+
+```
+<embed src="video.swf" height="200" width="200"/>
+```

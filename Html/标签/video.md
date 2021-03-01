@@ -85,3 +85,13 @@
 	<td>视频区域的宽度</td>
 </tr>
 </table>
+
+## 示例
+
+```
+<video width="320" height="240" controls="controls">
+	<source src="video.mp4" type="video/mp4" />
+	<source src="video.ogg" type="video/ogg" />
+	<source src="video.webm" type="video/webm" />
+</video>
+```
