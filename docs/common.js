@@ -2,16 +2,14 @@
 
 let queue = [];
 
-function pushNode(node){
-	queue.push(node);
+function enqueue(promise){
+	queue.push(promise);
 	if(queue.length === 1){
-		next(node);
+		next(promise);
 	}
 	
-	function next(node){
-		node.onload = () => move();
-		node.onerror = () => move();
-		document.head.insertBefore(node, document.head.lastElementChild);
+	function next(promise){
+		promise(() => move());
 	}
 	
 	function move(){
@@ -21,6 +19,14 @@ function pushNode(node){
 			next(node);
 		}
 	}
+}
+
+function pushNode(node){
+	enqueue(done => {
+		node.onload = () => done();
+		node.onerror = () => done();
+		document.head.insertBefore(node, document.head.lastElementChild);
+	});
 }
 
 let Common = global.Common = {};
@@ -65,6 +71,13 @@ Common.import = function(path){
 	pushNode(node);
 }
 
+global.$ = function(action){
+	enqueue(done => {
+		action();
+		done();
+	});
+}
+
 })(window);
 
 
@@ -74,3 +87,6 @@ Common.import("lib/jquery/jquery.min.js");
 //bootstrap
 Common.import("lib/bootstrap-3.3.7-dist/css/bootstrap.min.css");
 Common.import("lib/bootstrap-3.3.7-dist/js/bootstrap.min.js");
+
+//vue
+Common.import("lib/vue/vue.min.js");
