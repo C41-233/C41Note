@@ -94,3 +94,24 @@ private static <T> Node<T> merge(Node<T> h1, Node<T> h2) {
 	return small;
 }
 ```
+
+## 插入
+
+``` Java
+public void insert(T e) {
+	this.root = merge(root, new Node<T>(e));
+}
+```
+
+## 删除最小元
+
+``` Java
+public T deleteMin() {
+	if(this.root == null) {
+		throw new UnderFlowException();
+	}
+	T min = this.root.element;
+	this.root = merge(this.root.left, this.root.right);
+	return min;
+}
+```
