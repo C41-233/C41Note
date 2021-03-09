@@ -1,1 +1,26 @@
-/var/log/messages 系统日志
+## 系统日志
+
+/var/log/messages 
+
+## 硬件设备
+
+Linux设备以文件形式存在于`/dev`目录中。
+
+设备命名规则为：`<type><number><partition>`
+
+type表示设备类型。
+- hd：硬盘，IDE设备。
+- sd：SATA、USB、SCSI设备。
+- cdrom：光盘。
+
+number表示设备编号，从字母a开始。
+
+计算机一般有两个IDE接口，每个接口连接两块硬盘。IDE1主盘是hda，从盘是hdb，IDE2主盘是hdc，从盘是hdd。
+
+partition表示分区号（从1开始）。
+
+硬盘主分区分别占用1、2、3、4，逻辑分区从5开始。
+
+`/dev/console`表示控制台，`/dev/tty`表示虚拟终端，`/dev/null`表示空设备。
+
+通常把磁盘挂在到`/mnt`目录中，系统自动挂载到`/media`目录中。
