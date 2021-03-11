@@ -60,6 +60,28 @@ typedef struct elf64_hdr {
 	        <p>[EI_MAG0]：0x7F</p>
 	        <p>[EI_MAG1]、[EI_MAG2]、[EI_MAG3]：“ELF”三个字符（45 4C 46）</p>
 	        <p>[EI_CLASS]：1表示32位格式，2表示64位格式</p>
+			<p>[EI_DATA]：标识从e_type开始的结构的字节序。1表示小端序，2表示大端序</p>
+			<p>[EI_VERSION]：版本号，设为1</p>
+			<p>[EI_OSABI]：标识目标操作系统的ABI类型
+                <br/>0x00：System V
+                <br/>0x01：HP-UX
+                <br/>0x02：NetBSD
+                <br/>0x03：Linux
+                <br/>0x04：GNU Hurd
+                <br/>0x06：Solaris
+                <br/>0x07：AIX
+                <br/>0x08：IRIX
+                <br/>0x09：FreeBSD
+                <br/>0x0A：Tru64
+                <br/>0x0B：Novell Modesto
+                <br/>0x0C：OpenBSD
+                <br/>0x0D：OpenVMS
+                <br/>0x0E：NonStop Kernel
+                <br/>0x0F：AROS
+                <br/>0x10：Fenix OS
+                <br/>0x11：CloudABI
+                <br/>0x12：Stratus Technologies OpenVOS
+			</p>
         </td>
 	</tr>
 </table>
