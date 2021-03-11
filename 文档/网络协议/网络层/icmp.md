@@ -4,7 +4,7 @@ Internet Control Message Protocol
 
 网际控制报文协议
 
-允许主机或路由器报告差错情况和提供有关异常情况的报告。
+ICMP用于IP协议中发送控制消息，报告差错情况和提供有关异常情况的报告，在RFC792中定义。ping和traceroute直接使用ICMP协议。Ipv4中的ICMP称作ICMPv4，IPv6中的ICMP称作ICMPv6。
 
 ICMP报文分为查询报文和差错报文。
 
