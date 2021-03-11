@@ -1,4 +1,4 @@
-# C#
+# Dijkstra - C#
 
 ``` C#
 /// <summary>
