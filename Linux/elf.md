@@ -82,6 +82,8 @@ typedef struct elf64_hdr {
                 <br/>0x11：CloudABI
                 <br/>0x12：Stratus Technologies OpenVOS
 			</p>
+			<p>[EI_ABIVERSION]：为ABI版本号预留，目前还未使用，设为0。glibc 2.12+在e_ident[EI_OSABI]=3的情况下，将该字段用于设置feature level。</p>
+			<p>[EI_PAD]（7字节）：设为0。</p>
         </td>
 	</tr>
 </table>
