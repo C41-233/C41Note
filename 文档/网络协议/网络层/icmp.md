@@ -4,9 +4,9 @@ Internet Control Message Protocol
 
 网际控制报文协议
 
-ICMP用于IP协议中发送控制消息，报告差错情况和提供有关异常情况的报告，在RFC792中定义。ping和traceroute直接使用ICMP协议。Ipv4中的ICMP称作ICMPv4，IPv6中的ICMP称作ICMPv6。
+ICMP用于在IP协议中发送控制消息，报告差错情况和提供有关异常情况的报告，在RFC792中定义。ping和traceroute直接使用ICMP协议。Ipv4中的ICMP称作ICMPv4，IPv6中的ICMP称作ICMPv6。
 
-ICMP报文分为查询报文和差错报文。
+ICMP报文分为信息报文和差错报文。
 
 以下报文不会产生ICMP差错报文：
 1. ICMP差错报文
@@ -38,6 +38,8 @@ ICMP报文被封装在IP数据报的数据部分。
 
 ##### 类型和代码
 
+类型字段标识ICMP报文的类型。ICMP报文分差错报文和信息报文。
+
 <table>
 	<thead>
 		<tr><th>类型字段</th><th>代码字段</th><th>描述</th><th>报文类型</th></tr>
@@ -45,8 +47,8 @@ ICMP报文被封装在IP数据报的数据部分。
 	<tr>
 		<td>0</td>
 		<td>0</td>
-		<td>回显请求</td>
-		<td>查询</td>
+		<td>回显应答</td>
+		<td>信息</td>
 	</tr>
 	<tr>
 		<td rowspan="16">3</td>
@@ -159,20 +161,20 @@ ICMP报文被封装在IP数据报的数据部分。
 	<tr>
 		<td>8</td>
 		<td>0</td>
-		<td>回显应答</td>
-		<td>查询</td>
+		<td>回显请求</td>
+		<td>信息</td>
 	</tr>
 	<tr>
 		<td>9</td>
 		<td>0</td>
 		<td>路由器通告</td>
-		<td>查询</td>
+		<td>信息</td>
 	</tr>
 	<tr>
 		<td>10</td>
 		<td>0</td>
 		<td>路由器请求</td>
-		<td>查询</td>
+		<td>信息</td>
 	</tr>
 	<tr>
 		<td rowspan="2">11</td>
@@ -200,37 +202,37 @@ ICMP报文被封装在IP数据报的数据部分。
 		<td>13</td>
 		<td>0</td>
 		<td>时间戳请求</td>
-		<td>查询</td>
+		<td>信息</td>
 	</tr>
 	<tr>
 		<td>14</td>
 		<td>0</td>
 		<td>时间戳应答</td>
-		<td>查询</td>
+		<td>信息</td>
 	</tr>
 	<tr>
 		<td>15</td>
 		<td>0</td>
 		<td>信息请求</td>
-		<td>查询</td>
+		<td>信息</td>
 	</tr>
 	<tr>
 		<td>16</td>
 		<td>0</td>
 		<td>信息应答</td>
-		<td>查询</td>
+		<td>信息</td>
 	</tr>
 	<tr>
 		<td>17</td>
 		<td>0</td>
 		<td>掩码请求</td>
-		<td>查询</td>
+		<td>信息</td>
 	</tr>
 	<tr>
 		<td>18</td>
 		<td>0</td>
 		<td>掩码应答</td>
-		<td>查询</td>
+		<td>信息</td>
 	</tr>
 </table>
 
@@ -248,6 +250,8 @@ ICMP报文被封装在IP数据报的数据部分。
 
 ##### 回显报文
 
+回显报文包括回显请求报文（类型为8）和回显应答报文（类型为0）。主机向节点发送回显请求报文，如果能够到达目标节点（途中没有被路由丢弃、目标不回应或者传输失败等），目标节点返回回显应答报文，说明目标主机存在。
+
 <table>
 	<tr>
 		<th>字节</th>
@@ -259,7 +263,7 @@ ICMP报文被封装在IP数据报的数据部分。
 	</tr>
 	<tr>
 		<th>字段</th>
-		<td>类型（0或8）</td>
+		<td>类型<br/>0：应答<br/>8：请求</td>
 		<td>代码（0）</td>
 		<td>标识符</td>
 		<td>序列号</td>
