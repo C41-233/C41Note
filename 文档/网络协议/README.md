@@ -12,3 +12,4 @@
 	- [ARP](网络层/arp.md) 地址解析协议
 	- [RARP](网络层/rarp.md) 逆地址解析协议
 	- [ICMP](网络层/icmp.md)  网际控制报文协议
+	- [IGMP](网络层/igmp.md) 网际组管理协议
