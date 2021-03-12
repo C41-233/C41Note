@@ -4,7 +4,7 @@ Internet Control Message Protocol
 
 网际控制报文协议
 
-ICMP用于在IP协议中发送控制消息，报告差错情况和提供有关异常情况的报告，在RFC792中定义。ping和traceroute直接使用ICMP协议。Ipv4中的ICMP称作ICMPv4，IPv6中的ICMP称作ICMPv6。
+ICMP用于发送控制消息，辅助IP协议报告差错情况和提供有关异常情况的报告，在RFC792中定义。ping和traceroute直接使用ICMP协议。Ipv4中的ICMP称作ICMPv4，IPv6中的ICMP称作ICMPv6，所有IP软件都必须支持ICMP协议。
 
 ICMP报文分为信息报文和差错报文。
 
@@ -17,7 +17,7 @@ ICMP报文分为信息报文和差错报文。
 
 ## ICMP报文
 
-ICMP报文被封装在IP数据报的数据部分。
+ICMP报文被封装在IP数据报的数据部分，实际上属于IP协议的上层协议，因为分担了IP协议的部分功能，因此也归类为网络层协议。
 
 <table>
 	<tr>
@@ -179,7 +179,7 @@ ICMP报文被封装在IP数据报的数据部分。
 		<td>检验和</td>
 		<td>0</td>
 		<td>IP首部</td>
-		<td>IP数据前几个字节</td>
+		<td>IP数据报首部+8字节</td>
 	</tr>
 </table>
 
@@ -202,7 +202,7 @@ ICMP报文被封装在IP数据报的数据部分。
 		<td>0</td>
 		<td>MTU</td>
 		<td>IP首部</td>
-		<td>IP数据前几个字节</td>
+		<td>IP数据报首部+8字节</td>
 	</tr>
 </table>
 
@@ -245,7 +245,7 @@ ICMP报文被封装在IP数据报的数据部分。
 		<td>检验和</td>
 		<td>0</td>
 		<td>IP首部</td>
-		<td>IP数据前几个字节</td>
+		<td>IP数据报首部+8字节</td>
 	</tr>
 </table>
 
@@ -280,7 +280,7 @@ ICMP报文被封装在IP数据报的数据部分。
 		<td>检验和</td>
 		<td>应该使用的路由器IP地址</td>
 		<td>IP首部</td>
-		<td>IP数据前几个字节</td>
+		<td>IP数据报首部+8字节</td>
 	</tr>
 </table>
 
@@ -357,7 +357,7 @@ ICMP报文被封装在IP数据报的数据部分。
 		<td>检验和</td>
 		<td>0</td>
 		<td>IP首部</td>
-		<td>IP数据前几个字节</td>
+		<td>IP数据报首部+8字节</td>
 	</tr>
 </table>
 
@@ -382,7 +382,7 @@ ICMP报文被封装在IP数据报的数据部分。
 		<td>检验和</td>
 		<td>指针</td>
 		<td>0</td>
-		<td>IP数据前几个字节</td>
+		<td>IP数据报首部+8字节</td>
 	</tr>
 </table>
 
