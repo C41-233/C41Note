@@ -42,120 +42,80 @@ ICMP报文被封装在IP数据报的数据部分。
 
 <table>
 	<thead>
-		<tr><th>类型字段</th><th>代码字段</th><th>描述</th><th>报文类型</th></tr>
+		<tr><th>类型字段</th><th>描述</th><th>报文类型</th></tr>
 	</thead>
 	<tr>
-		<td>0</td>
 		<td>0</td>
 		<td>回显应答</td>
 		<td>信息</td>
 	</tr>
 	<tr>
 		<td>3</td>
-		<td>0-15</td>
 		<td>目标不可达</td>
 		<td>差错</td>
 	</tr>
 	<tr>
 		<td>4</td>
-		<td>0</td>
 		<td>源站抑制</td>
 		<td>差错</td>
 	</tr>
 	<tr>
-		<td rowspan="4">5</td>
-		<td>0</td>
-		<td>网络重定向</td>
-		<td>差错</td>
-	</tr>
-	<tr>
-		<td>1</td>
-		<td>主机重定向</td>
-		<td>差错</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>服务类型和网络重定向</td>
-		<td>差错</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>服务类型和主机重定向</td>
+		<td>5</td>
+		<td>重定向</td>
 		<td>差错</td>
 	</tr>
 	<tr>
 		<td>8</td>
-		<td>0</td>
 		<td>回显请求</td>
 		<td>信息</td>
 	</tr>
 	<tr>
 		<td>9</td>
-		<td>0</td>
 		<td>路由器通告</td>
 		<td>信息</td>
 	</tr>
 	<tr>
 		<td>10</td>
-		<td>0</td>
 		<td>路由器请求</td>
 		<td>信息</td>
 	</tr>
 	<tr>
 		<td>11</td>
-		<td>0</td>
 		<td>超时</td>
 		<td>差错</td>
 	</tr>
 	<tr>
-		<td>1</td>
-		<td>数据报组装期间生存时间为0</td>
-		<td>差错</td>
-	</tr>
-	<tr>
-		<td rowspan="2">12</td>
-		<td>0</td>
+		<td>12</td>
 		<td>IP首部错误</td>
 		<td>差错</td>
 	</tr>
 	<tr>
-		<td>1</td>
-		<td>缺失选项</td>
-		<td>差错</td>
-	</tr>
-	<tr>
 		<td>13</td>
-		<td>0</td>
 		<td>时间戳请求</td>
 		<td>信息</td>
 	</tr>
 	<tr>
 		<td>14</td>
-		<td>0</td>
 		<td>时间戳应答</td>
 		<td>信息</td>
 	</tr>
 	<tr>
 		<td>15</td>
-		<td>0</td>
 		<td>信息请求</td>
 		<td>信息</td>
 	</tr>
 	<tr>
 		<td>16</td>
-		<td>0</td>
 		<td>信息应答</td>
 		<td>信息</td>
 	</tr>
 	<tr>
 		<td>17</td>
-		<td>0</td>
 		<td>掩码请求</td>
 		<td>信息</td>
 	</tr>
 	<tr>
 		<td>18</td>
-		<td>0</td>
 		<td>掩码应答</td>
 		<td>信息</td>
 	</tr>
@@ -402,6 +362,33 @@ ICMP报文被封装在IP数据报的数据部分。
 </table>
 
 代码字段0表示传输超时，1表示分段重组超时。
+
+##### 参数错误报文
+
+<table>
+	<tr>
+		<th>字节</th>
+		<th>1</th>
+		<th>1</th>
+		<th>2</th>
+		<th>1</th>
+		<th>3</th>
+		<th>不定长</th>
+	</tr>
+	<tr>
+		<th>字段</th>
+		<td>类型（12）</td>
+		<td>代码（0）</td>
+		<td>检验和</td>
+		<td>指针</td>
+		<td>0</td>
+		<td>IP数据前几个字节</td>
+	</tr>
+</table>
+
+代码字段：
+- 0 IP首部错误
+- 1 缺失选项
 
 ##### 时间戳请求/应答报文
 
