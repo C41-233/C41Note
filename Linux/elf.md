@@ -86,4 +86,185 @@ typedef struct elf64_hdr {
 			<p>[EI_PAD]（7字节）：目前未使用，设为0</p>
         </td>
 	</tr>
+	<tr>
+	    <th>e_type</th>
+	    <td>2</td>
+	    <td><p>标识文件类型</p>
+	        <table>
+	            <tr>
+	                <td>ET_NONE</td>
+	                <td>0x0000</td>
+	                <td>无</td>
+	            </tr>
+	            <tr>
+	                <td>ET_REL</td>
+	                <td>0x0001</td>
+	                <td>可重定位文件</td>
+	            </tr>
+	            <tr>
+	                <td>ET_EXEC</td>
+	                <td>0x0002</td>
+	                <td>可执行文件</td>
+	            </tr>
+	            <tr>
+	                <td>ET_DYN</td>
+	                <td>0x0003</td>
+	                <td>共享目标文件</td>
+	            </tr>
+	            <tr>
+	                <td>ET_CORE</td>
+	                <td>0x0004</td>
+	                <td>内核文件</td>
+	            </tr>
+	            <tr>
+	                <td>ET_LOOS</td>
+	                <td>0xFE00</td>
+	                <td></td>
+	            </tr>
+	            <tr>
+	                <td>ET_HIOS</td>
+	                <td>0xFEFF</td>
+	                <td></td>
+	            </tr>
+	            <tr>
+	                <td>ET_LOPROC</td>
+	                <td>0xFF00</td>
+	                <td>由处理器定义</td>
+	            </tr>
+	            <tr>
+	                <td>ET_HIPROC</td>
+	                <td>0xFFFF</td>
+	                <td>由处理器定义</td>
+	            </tr>
+	        </table>
+	    </td>
+	</tr>
+	<tr>
+	    <th>e_machine</th>
+		<td>2</td>
+		<td><p>运行该文件需要的指令集架构</p>
+			<table>
+				<tr>
+					<td>EM_NONE</td>
+					<td>0x0000</td>
+					<td>无</td>
+				</tr>
+				<tr>
+					<td>EM_M32</td>
+					<td>0x0001</td>
+					<td>AT&T WE 32100</td>
+				</tr>
+				<tr>
+					<td>EM_SPARC</td>
+					<td>0x0002</td>
+					<td>SPARC</td>
+				</tr>
+				<tr>
+					<td>EM_386</td>
+					<td>0x0003</td>
+					<td>x86</td>
+				</tr>
+				<tr>
+					<td>EM_68K</td>
+					<td>0x0004</td>
+					<td>Motorola 68000 (M68k)</td>
+				</tr>
+				<tr>
+					<td>EM_88K</td>
+					<td>0x0005</td>
+					<td>Motorola 88000 (M88k)</td>
+				</tr>
+				<tr>
+					<td>EM_860</td>
+					<td>0x0007</td>
+					<td>Intel 80860</td>
+				</tr>
+				<tr>
+					<td>EM_MIPS</td>
+					<td>0x0008</td>
+					<td>MIPS RS3000</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x0009</td>
+					<td>IBM_System/370</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x000A</td>
+					<td>MIPS RS3000 Little-endian</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x000E</td>
+					<td>Hewlett-Packard PA-RISC</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x0013</td>
+					<td>Intel 80960</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x0014</td>
+					<td>PowerPC</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x0015</td>
+					<td>PowerPC (64-bit)</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x0016</td>
+					<td>S390, including S390x</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x0028</td>
+					<td>ARM (up to ARMv7/Aarch32)</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x002A</td>
+					<td>SuperH</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x0032</td>
+					<td>IA-64</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x003E</td>
+					<td>amd64</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x008C</td>
+					<td>TMS320C6000 Family</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x00B7</td>
+					<td>ARM 64-bits (ARMv8/Aarch64)</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x00F3</td>
+					<td>RISC-V</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x00F7</td>
+					<td>Berkeley Packet Filter</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0x0101</td>
+					<td>WDC 65C816</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
 </table>
