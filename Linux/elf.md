@@ -4,12 +4,12 @@ ELF是可执行与可链接格式（Executable and Linkable Format），是一�
 
 ## 格式
 
-ELF格式依次包含一个ELF header和数据。数据可以依次包含：
-1. program header table，包含0个或多个段。
-2. section header table，包含0个或多个段。
-3. program header table和section header table项引用的数据。
+ELF格式依次包含一个ELF头和数据。数据可以依次包含：
+1. 程序头表（program header table），包含0个或多个段。
+2. 节头表（section header table），包含0个或多个段。
+3. 程序头表和节头表项引用的数据。
 
-## ELF header
+## ELF头
 
 ```
 typedef struct{
@@ -266,5 +266,30 @@ typedef struct elf64_hdr {
 				</tr>
 			</table>
 		</td>
+	</tr>
+	<tr>
+		<th>e_version</th>
+		<td>4</td>
+		<td>文件版本号，设为1</td>
+	</tr>
+	<tr>
+		<th>e_entry</th>
+		<td>4/8</td>
+		<td>程序入口地址，没有则为0</td>
+	</tr>
+	<tr>
+		<th>e_phoff</th>
+		<td>4/8</td>
+		<td>程序头表在文件中的偏移量（字节）<br/>通常程序头表紧跟在ELF头之后，则32位下该值为0x34，64位下该值为0x40</td>
+	</tr>
+	<tr>
+		<th>e_shoff</th>
+		<td>4/8</td>
+		<td>节头表在文件中的偏移量（字节）</td>
+	</tr>
+	<tr>
+		<th>e_flags</th>
+		<td>4</td>
+		<td>标志位，与特定处理器相关</td>
 	</tr>
 </table>
