@@ -292,4 +292,34 @@ typedef struct elf64_hdr {
 		<td>4</td>
 		<td>标志位，与特定处理器相关</td>
 	</tr>
+	<tr>
+		<th>e_ehsize</th>
+		<td>2</td>
+		<td>ELF头的大小（字节）<br/>32位下该值为0x0034，64位下该值为0x0040</td>
+	</tr>
+	<tr>
+		<th>e_phentsize</th>
+		<td>2</td>
+		<td>ELF程序头表每一项的大小（字节）<br/>32位下该值为0x0020</td>
+	</tr>
+	<tr>
+		<th>e_phnum</th>
+		<td>2</td>
+		<td>ELF程序头表的项数</td>
+	</tr>
+	<tr>
+		<th>e_shentsize</th>
+		<td>2</td>
+		<td>ELF节头表每一项的大小（字节）</td>
+	</tr>
+	<tr>
+		<th>e_shnum</th>
+		<td>2</td>
+		<td>ELF节头表的项数</td>
+	</tr>
+	<tr>
+		<th>e_shstrndx</th>
+		<td>2</td>
+		<td>包含节名称的字符串表的节头表项索引</td>
+	</tr>
 </table>
