@@ -10,6 +10,7 @@
 | 1112 | 1989.8 | Host Extensions for IP Multicasting | IGMPv1 | 2236 更新 |
 | 1122 | 1989.10 | Requirements for Internet Hosts -- Communication Layers |  |  1349,4379,5884,6093,6298,6633,6864,8029 更新 |
 | 1144 | 1990.2 | Compressing TCP/IP Headers for Low-Speed Serial Links | CSLIP 压缩串行线路网际协议 | | 
+| 1191 | 1990.11 | Path MTU Discovery | MTU | |
 | 1812 | 1995.6 | Requirements for IP Version 4 Routers | IPv4 | 2644,6633 更新 |
 | 2113 | 1997.2 | IP Router Alert Option | | 5350,6398 更新 |
 | 2236 | 1997.11 | Internet Group Management Protocol, Version 2 | IGMPv2 | 3376 更新 |
