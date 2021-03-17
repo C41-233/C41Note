@@ -24,3 +24,5 @@
 				- [OSPF](网络层/OSPF.md) 开放最短路径优先
 				- [IGRP](网络层/IGRP.md) 内部网关路由协议
 				- [EIGRP](网络层/EIGRP.md) 增强内部网关路由协议
+				- IS-IS 中间系统路由交换协议
+			- [EGP](网络层/EGP.md) 外部网关协议
