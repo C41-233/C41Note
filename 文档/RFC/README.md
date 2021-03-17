@@ -14,7 +14,9 @@
 | 2113 | 1997.2 | IP Router Alert Option | | 5350,6398 更新 |
 | 2236 | 1997.11 | Internet Group Management Protocol, Version 2 | IGMPv2 | 3376 更新 |
 | 2373 | 1998.7 | IP Version 6 Addressing Architecture | IPv6 | 3513 废止 |
+| 2374 | 1998.7 | An IPv6 Aggregatable Global Unicast Address Format | IPv6 | 3587 废止 |
 | 3376 | 2002.10 | Internet Group Management Protocol, Version 3 | IGMPv3 | 4604 更新 |
 | 3513 | 2003.4 | Internet Protocol Version 6 (IPv6) Addressing Architecture | IPv6 | 4291 废止 |
+| 3587 | 2003.8 | IPv6 Global Unicast Address Format | IPv6 | |
 | 4291 | 2006.2 | IP Version 6 Addressing Architecture | IPv6 | 5952,6052,7136,7346,7371,8064 更新 |
 | 4604 | 2006.8 | Using Internet Group Management Protocol Version 3 (IGMPv3) and Multicast Listener Discovery Protocol Version 2 (MLDv2) for Source-Specific Multicast | IGMPv3 MLDv2 | |
