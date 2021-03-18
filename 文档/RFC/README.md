@@ -2,6 +2,7 @@
 
 | 编号 | 时间 | 标题 | 备注 | 修订 |
 |---|---|---|---|---|
+| 768 | 1980.8 | User Datagram Protocol | UDP | |
 | 792 | 1981.9 | INTERNET CONTROL MESSAGE PROTOCOL | ICMP 网际控制报文协议 | 950,4884,6633,6918 更新|
 | 826 | 1982.11 | An Ethernet Address Resolution Protocol or Converting Network Protocol Addresses to 48.bit Ethernet Address for Transmission on Ethernet Hardware | ARP | 5227,5494更新 | 
 | 966 | 1985.12 | Host Groups: A Multicast Extension to the Internet Protocol | IGMPv0 | 988 废止 |
@@ -24,7 +25,9 @@
 | 2373 | 1998.7 | IP Version 6 Addressing Architecture | IPv6 | 3513 废止 |
 | 2374 | 1998.7 | An IPv6 Aggregatable Global Unicast Address Format | IPv6 | 3587 废止 |
 | 2453 | 1998.11 | RIP Version 2 | RIPv2 | 4822 更新 |
+| 2460 | 1998.12 | Internet Protocol, Version 6 (IPv6) Specification | IPv6 | 5095,5722,5871,6437,6564,6935,6946,7045,7112 更新<br/>8200 废止 |
 | 2663 | 1999.8 | IP Network Address Translator (NAT) Terminology and Considerations | NAT | |
+| 2675 | 1999.8 | IPv6 Jumbograms | | |
 | 3376 | 2002.10 | Internet Group Management Protocol, Version 3 | IGMPv3 | 4604 更新 |
 | 3513 | 2003.4 | Internet Protocol Version 6 (IPv6) Addressing Architecture | IPv6 | 4291 废止 |
 | 3587 | 2003.8 | IPv6 Global Unicast Address Format | IPv6 | |
@@ -32,3 +35,4 @@
 | 4291 | 2006.2 | IP Version 6 Addressing Architecture | IPv6 | 5952,6052,7136,7346,7371,8064 更新 |
 | 4604 | 2006.8 | Using Internet Group Management Protocol Version 3 (IGMPv3) and Multicast Listener Discovery Protocol Version 2 (MLDv2) for Source-Specific Multicast | IGMPv3 MLDv2 | |
 | 4822 | 2007.2 | RIPv2 Cryptographic Authentication | RIPv2 | |
+| 8200 | 2017.7 | Internet Protocol, Version 6 (IPv6) Specification | IPv6 | |
