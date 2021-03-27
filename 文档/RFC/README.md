@@ -20,12 +20,14 @@
 | 1723 | 1994.11 | RIP Version 2 Carrying Additional Information | RIPv2 | 2453 废止 |
 | 1771 | 1995.3 | A Border Gateway Protocol 4 (BGP-4) | BGPv4 | 4271 废止 |
 | 1812 | 1995.6 | Requirements for IP Version 4 Routers | IPv4 | 2644,6633 更新 |
+| 2001 | 1997.1 | TCP Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery Algorithms | TCP拥塞控制 | 2581 废止 |
 | 2113 | 1997.2 | IP Router Alert Option | | 5350,6398 更新 |
 | 2236 | 1997.11 | Internet Group Management Protocol, Version 2 | IGMPv2 | 3376 更新 |
 | 2373 | 1998.7 | IP Version 6 Addressing Architecture | IPv6 | 3513 废止 |
 | 2374 | 1998.7 | An IPv6 Aggregatable Global Unicast Address Format | IPv6 | 3587 废止 |
 | 2453 | 1998.11 | RIP Version 2 | RIPv2 | 4822 更新 |
 | 2460 | 1998.12 | Internet Protocol, Version 6 (IPv6) Specification | IPv6 | 5095,5722,5871,6437,6564,6935,6946,7045,7112 更新<br/>8200 废止 |
+| 2581 | 1999.4 | TCP Congestion Control | TCP拥塞控制 | 5681 废止 |
 | 2663 | 1999.8 | IP Network Address Translator (NAT) Terminology and Considerations | NAT | |
 | 2675 | 1999.8 | IPv6 Jumbograms | | |
 | 3376 | 2002.10 | Internet Group Management Protocol, Version 3 | IGMPv3 | 4604 更新 |
@@ -35,4 +37,5 @@
 | 4291 | 2006.2 | IP Version 6 Addressing Architecture | IPv6 | 5952,6052,7136,7346,7371,8064 更新 |
 | 4604 | 2006.8 | Using Internet Group Management Protocol Version 3 (IGMPv3) and Multicast Listener Discovery Protocol Version 2 (MLDv2) for Source-Specific Multicast | IGMPv3 MLDv2 | |
 | 4822 | 2007.2 | RIPv2 Cryptographic Authentication | RIPv2 | |
+| 5681 | 2009.9 | TCP Congestion Control | TCP拥塞控制 | |
 | 8200 | 2017.7 | Internet Protocol, Version 6 (IPv6) Specification | IPv6 | |
