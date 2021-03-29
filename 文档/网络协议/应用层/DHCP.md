@@ -77,7 +77,7 @@ DHCP基于UDP传输，服务端端口号为68，客户端端口号为67。
 	</tr>
 	<tr>
 		<th>字节</th>
-		<th colspan="4">4</th>
+		<th colspan="4">16</th>
 	</tr>
 	<tr>
 		<th>字段</th>
@@ -85,7 +85,7 @@ DHCP基于UDP传输，服务端端口号为68，客户端端口号为67。
 	</tr>
 	<tr>
 		<th>字节</th>
-		<th colspan="4">4</th>
+		<th colspan="4">64</th>
 	</tr>
 	<tr>
 		<th>字段</th>
@@ -93,7 +93,7 @@ DHCP基于UDP传输，服务端端口号为68，客户端端口号为67。
 	</tr>
 	<tr>
 		<th>字节</th>
-		<th colspan="4">4</th>
+		<th colspan="4">128</th>
 	</tr>
 	<tr>
 		<th>字段</th>
