@@ -22,6 +22,7 @@
 | 1771 | 1995.3 | A Border Gateway Protocol 4 (BGP-4) | BGPv4 | 4271 废止 |
 | 1812 | 1995.6 | Requirements for IP Version 4 Routers | IPv4 | 2644,6633 更新 |
 | 2001 | 1997.1 | TCP Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery Algorithms | TCP拥塞控制 | 2581 废止 |
+| 2068 | 1997.1 | Hypertext Transfer Protocol -- HTTP/1.1 | HTTP/1.1 | 2616 废止 |
 | 2113 | 1997.2 | IP Router Alert Option | | 5350,6398 更新 |
 | 2236 | 1997.11 | Internet Group Management Protocol, Version 2 | IGMPv2 | 3376 更新 |
 | 2373 | 1998.7 | IP Version 6 Addressing Architecture | IPv6 | 3513 废止 |
@@ -29,6 +30,7 @@
 | 2453 | 1998.11 | RIP Version 2 | RIPv2 | 4822 更新 |
 | 2460 | 1998.12 | Internet Protocol, Version 6 (IPv6) Specification | IPv6 | 5095,5722,5871,6437,6564,6935,6946,7045,7112 更新<br/>8200 废止 |
 | 2581 | 1999.4 | TCP Congestion Control | TCP拥塞控制 | 5681 废止 |
+| 2616 | 1999.6 | Hypertext Transfer Protocol -- HTTP/1.1 | HTTP/1.1 | 7230,7231,7232,7233,7234,7235 废止 |
 | 2663 | 1999.8 | IP Network Address Translator (NAT) Terminology and Considerations | NAT | |
 | 2675 | 1999.8 | IPv6 Jumbograms | | |
 | 3376 | 2002.10 | Internet Group Management Protocol, Version 3 | IGMPv3 | 4604 更新 |
