@@ -56,28 +56,11 @@
 
 ## http-equiv属性
 
+http-equiv相当于对HTTP请求设置Header。
+
 ##### cache-control
 
-控制文档缓存机制。
-
-<table>
-<tr>
-    <th>public</th>
-    <th>客户端和代理服务器都缓存</th>
-</tr>
-<tr>
-    <th>private</th>
-    <th>仅客户端缓存，代理服务器不缓存</th>
-</tr>
-<tr>
-    <th>no-cache</th>
-    <th>不缓存</th>
-</tr>
-<tr>
-    <th>no-store</th>
-    <th>缓存但不归档</th>
-</tr>
-</table>
+控制文档缓存机制，参见HTTP的Cache-Control头。
 
 ```
 <meta http-equiv="cache-control" content="no-cache">
