@@ -1,0 +1,52 @@
+# IO多路复用
+
+## select、poll、epoll
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>select</th>
+            <th>poll</th>
+            <th>epoll</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>数据结构</th>
+            <td>数组（fd_set）</td>
+            <td>链表（pollfd）</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>拷贝</th>
+            <td>每次调用都需要把fd_set从用户态拷贝到内核态</td>
+            <td>每次调用都需要把pollfd从用户态拷贝到内核态</td>
+            <td>不需要拷贝，使用mmap</td>
+        </tr>
+        <tr>
+            <th>遍历</th>
+            <td>每次调用需要遍历fd_set</td>
+            <td>每次调用需要遍历pollfd</td>
+            <td>无须遍历全部文件描述符</td>
+        </tr>
+        <tr>
+            <th>数量限制</th>
+            <td>存在限制，一般为1024（内核宏）</td>
+            <td>无</td>
+            <td>无</td>
+        </tr>
+        <tr>
+            <th>可移植性</th>
+            <td>好</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>超时精度</th>
+            <td>高</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
