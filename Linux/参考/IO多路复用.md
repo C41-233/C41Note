@@ -16,25 +16,31 @@
             <th>数据结构</th>
             <td>数组（fd_set）</td>
             <td>链表（pollfd）</td>
-            <td></td>
+            <td>红黑树</td>
         </tr>
         <tr>
             <th>拷贝</th>
             <td>每次调用都需要把fd_set从用户态拷贝到内核态</td>
             <td>每次调用都需要把pollfd从用户态拷贝到内核态</td>
-            <td>不需要拷贝，使用mmap</td>
+            <td>只拷贝一次（epoll_ctl），之后调用epoll_wait不需要拷贝（mmap）</td>
         </tr>
         <tr>
             <th>遍历</th>
             <td>每次调用需要遍历fd_set</td>
             <td>每次调用需要遍历pollfd</td>
-            <td>无须遍历全部文件描述符</td>
+            <td>无须遍历全部文件描述符，每当fd就绪，系统注册的回调函数就会被调用，将就绪fd放到readyList里面</td>
         </tr>
         <tr>
             <th>数量限制</th>
-            <td>存在限制，一般为1024（内核宏）</td>
+            <td>存在限制，一般为1024/2048（x86/x64，内核宏）</td>
             <td>无</td>
             <td>无</td>
+        </tr>
+        <tr>
+            <th>触发方式</th>
+            <td>水平触发</td>
+            <td>水平触发</td>
+            <td>水平触发<br/>边缘触发</td>
         </tr>
         <tr>
             <th>可移植性</th>
