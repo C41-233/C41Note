@@ -415,4 +415,9 @@ typedef struct elf64_hdr {
 		<td>4/8</td>
 		<td>在物理地址定位有关联的系统中，该成员是为该段的物理地址而保留的</td>
 	</tr>
+	<tr>
+		<td>p_filesz</td>
+		<td>4/8</td>
+		<td>段在文件中的长度（字节）</td>
+	</tr>
 </table>
