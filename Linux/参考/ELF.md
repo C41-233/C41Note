@@ -4,12 +4,12 @@ ELF是可执行与可链接格式（Executable and Linkable Format），是一�
 
 ## 格式
 
-ELF格式依次包含一个ELF头和数据。数据可以依次包含：
-1. 程序头表（program header table），包含0个或多个段。
-2. 节头表（section header table），包含0个或多个段。
+ELF格式依次包含一个ELF头（ELF header）和数据。数据可以依次包含：
+1. 程序头表（program header table），包含0个或多个项。
+2. 节头表（section header table），包含0个或多个项。
 3. 程序头表和节头表项引用的数据。
 
-## ELF头
+## ELF头（ELF header）
 
 ```
 typedef struct{
@@ -321,5 +321,79 @@ typedef struct elf64_hdr {
 		<th>e_shstrndx</th>
 		<td>2</td>
 		<td>包含节名称的字符串表的节头表项索引</td>
+	</tr>
+</table>
+
+## 程序头表（program header table）
+
+程序头表包含0个或多个程序头表项，程序头表项的数量由ELF头中的e_phnum定义，没一项的大小为e_phentsize。
+
+
+<table>
+	<tr>
+		<th>字段</th>
+		<th>字节（32/64）</th>
+		<th>描述</th>
+	</tr>
+	<tr>
+		<td>p_type</td>
+		<td>4</td>
+		<td><p>程序头表项的类型</p>
+			<table>
+				<tr>
+					<td>PT_NULL</td>
+					<td>0x00000000</td>
+					<td>未使用</td>
+				</tr>
+				<tr>
+					<td>PT_LOAD</td>
+					<td>0x00000001</td>
+					<td>Loadable segment</td>
+				</tr>
+				<tr>
+					<td>PT_DYNAMIC</td>
+					<td>0x00000002</td>
+					<td>动态链接信息</td>
+				</tr>
+				<tr>
+					<td>PT_INTERP</td>
+					<td>0x00000003</td>
+					<td>编译器信息</td>
+				</tr>
+				<tr>
+					<td>PT_SHLIB</td>
+					<td>0x00000005</td>
+					<td>保留</td>
+				</tr>
+				<tr>
+					<td>PT_PHDR</td>
+					<td>0x00000006</td>
+					<td>程序头表自身</td>
+				</tr>
+				<tr>
+					<td>PT_TLS</td>
+					<td>0x00000007</td>
+					<td>Thread-Local Storage template</td>
+				</tr>
+				<tr>
+					<td>PT_LOOS</td>
+					<td>0x60000000</td>
+					<td rowspan="2">该范围由操作系统定义</td>
+				</tr>
+				<tr>
+					<td>PT_HIOS</td>
+					<td>0x6FFFFFFF</td>
+				</tr>
+				<tr>
+					<td>PT_LOPROC</td>
+					<td>0x70000000</td>
+					<td rowspan="2">该范围由操作系统定义</td>
+				</tr>
+				<tr>
+					<td>PT_HIPROC</td>
+					<td>0x7FFFFFFF</td>
+				</tr>
+			</table>
+		</td>
 	</tr>
 </table>
