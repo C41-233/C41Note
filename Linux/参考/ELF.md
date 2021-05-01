@@ -326,8 +326,7 @@ typedef struct elf64_hdr {
 
 ## 程序头表（program header table）
 
-程序头表包含0个或多个程序头表项，程序头表项的数量由ELF头中的e_phnum定义，没一项的大小为e_phentsize。
-
+程序头表包含0个或多个程序头表项，程序头表项的数量由ELF头中的e_phnum定义，没一项的大小为e_phentsize。程序头表用于描述段（segment）。
 
 <table>
 	<tr>
@@ -338,7 +337,7 @@ typedef struct elf64_hdr {
 	<tr>
 		<td>p_type</td>
 		<td>4</td>
-		<td><p>程序头表项的类型</p>
+		<td><p>段类型</p>
 			<table>
 				<tr>
 					<td>PT_NULL</td>
@@ -395,5 +394,25 @@ typedef struct elf64_hdr {
 				</tr>
 			</table>
 		</td>
+	</tr>
+	<tr>
+		<td>p_flags</td>
+		<td>0/4</td>
+		<td>段相关的标志位（64位）</td>
+	</tr>
+	<tr>
+		<td>p_offset</td>
+		<td>4/8</td>
+		<td>段在文件中的偏移量</td>
+	</tr>
+	<tr>
+		<td>p_vaddr</td>
+		<td>4/8</td>
+		<td>段在内存中的虚拟地址</td>
+	</tr>
+	<tr>
+		<td>p_paddr</td>
+		<td>4/8</td>
+		<td>在物理地址定位有关联的系统中，该成员是为该段的物理地址而保留的</td>
 	</tr>
 </table>
