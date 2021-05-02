@@ -326,7 +326,7 @@ typedef struct elf64_hdr {
 
 ## 程序头表（program header table）
 
-程序头表包含0个或多个程序头表项，程序头表项的数量由ELF头中的e_phnum定义，没一项的大小为e_phentsize。程序头表用于描述段（segment）。
+程序头表包含0个或多个程序头表项，程序头表项的数量由ELF头中的e_phnum定义，每一项的大小为e_phentsize。程序头表用于描述段（segment）。
 
 <table>
 	<tr>
@@ -398,7 +398,7 @@ typedef struct elf64_hdr {
 	<tr>
 		<td>p_flags</td>
 		<td>0/4</td>
-		<td>段相关的标志位（64位）</td>
+		<td>段相关的标志位（仅64位）</td>
 	</tr>
 	<tr>
 		<td>p_offset</td>
@@ -419,5 +419,42 @@ typedef struct elf64_hdr {
 		<td>p_filesz</td>
 		<td>4/8</td>
 		<td>段在文件中的长度（字节）</td>
+	</tr>
+	<tr>
+		<td>p_memsz</td>
+		<td>4/8</td>
+		<td>段在内存中的大小（字节）</td>
+	</tr>
+	<tr>
+		<td>p_flags</td>
+		<td>4/0</td>
+		<td>与段有关的标志位（仅32位）</td>
+	</tr>
+	<tr>
+		<td>p_align</td>
+		<td>4/8</td>
+		<td>段对齐，必须为2的幂，且p_vaddr%p_align与p_offset%p_align相等。0或1表示不需要对齐。</td>
+	</tr>
+</table>
+
+## 节头表（section header）
+
+节头表包含0个或多个节头表项，节头表项的数量由ELF头中的e_shnum定义，每一项的大小为e_shnum。节头表用于描述节（section）。
+
+<table>
+	<tr>
+		<th>字段</th>
+		<th>字节（32/64）</th>
+		<th>描述</th>
+	</tr>
+	<tr>
+		<td>sh_name</td>
+		<td>4</td>
+		<td>节的名称在.shstrtab中的索引</td>
+	</tr>
+	<tr>
+		<td>sh_type</td>
+		<td>4</td>
+		<td>节的类型</td>
 	</tr>
 </table>
