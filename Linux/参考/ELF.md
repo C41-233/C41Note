@@ -549,4 +549,17 @@ typedef struct elf64_hdr {
 			</tr>
 		</table></td>
 	</tr>
+	<tr>
+		<td>sh_flags</td>
+		<td>4/8</td>
+		<td><p>节的属性</p>
+			<table>
+				<tr>
+					<td>SHF_WRITE</td>
+					<td>0x1</td>
+					<td>可写</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
 </table>
