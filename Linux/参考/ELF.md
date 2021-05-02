@@ -497,6 +497,56 @@ typedef struct elf64_hdr {
 				<td>0x7</td>
 				<td>Notes</td>
 			</tr>
+			<tr>
+				<td>SHT_NOBITS</td>
+				<td>0x8</td>
+				<td>Program space with no data (bss)</td>
+			</tr>
+			<tr>
+				<td>SHT_REL</td>
+				<td>0x9</td>
+				<td>Relocation entries, no addends</td>
+			</tr>
+			<tr>
+				<td>SHT_SHLIB</td>
+				<td>0x0A</td>
+				<td>保留</td>
+			</tr>
+			<tr>
+				<td>SHT_INIT_ARRAY</td>
+				<td>0x0E</td>
+				<td>构造数组</td>
+			</tr>
+			<tr>
+				<td>SHT_FINI_ARRAY</td>
+				<td>0x0F</td>
+				<td>析构数组</td>
+			</tr>
+			<tr>
+				<td>SHT_PREINIT_ARRAY</td>
+				<td>0x10</td>
+				<td>pre-constructor数组</td>
+			</tr>
+			<tr>
+				<td>SHT_GROUP</td>
+				<td>0x11</td>
+				<td>Section group</td>
+			</tr>
+			<tr>
+				<td>SHT_SYMTAB_SHNDX</td>
+				<td>0x12</td>
+				<td>Extended section indices</td>
+			</tr>
+			<tr>
+				<td>SHT_NUM</td>
+				<td>0x13</td>
+				<td>defined types数量</td>
+			</tr>
+			<tr>
+				<td>SHT_LOOS</td>
+				<td>0x60000000</td>
+				<td>此范围开始由操作系统定义</td>
+			</tr>
 		</table></td>
 	</tr>
 </table>
