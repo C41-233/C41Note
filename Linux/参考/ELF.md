@@ -7,7 +7,7 @@ ELF是可执行与可链接格式（Executable and Linkable Format），是一�
 ELF格式依次包含一个ELF头（ELF header）和数据。数据可以依次包含：
 1. 程序头表（program header table），包含0个或多个项。
 2. 节头表（section header table），包含0个或多个项。
-3. 程序头表和节头表项引用的数据。
+3. 数据，包含程序头表项描述的段（segment）和节头表项描述的节（section）。
 
 ## ELF头（ELF header）
 
@@ -341,37 +341,37 @@ typedef struct elf64_hdr {
 			<table>
 				<tr>
 					<td>PT_NULL</td>
-					<td>0x00000000</td>
+					<td>0x0</td>
 					<td>未使用</td>
 				</tr>
 				<tr>
 					<td>PT_LOAD</td>
-					<td>0x00000001</td>
+					<td>0x1</td>
 					<td>Loadable segment</td>
 				</tr>
 				<tr>
 					<td>PT_DYNAMIC</td>
-					<td>0x00000002</td>
+					<td>0x2</td>
 					<td>动态链接信息</td>
 				</tr>
 				<tr>
 					<td>PT_INTERP</td>
-					<td>0x00000003</td>
+					<td>0x3</td>
 					<td>编译器信息</td>
 				</tr>
 				<tr>
 					<td>PT_SHLIB</td>
-					<td>0x00000005</td>
+					<td>0x5</td>
 					<td>保留</td>
 				</tr>
 				<tr>
 					<td>PT_PHDR</td>
-					<td>0x00000006</td>
+					<td>0x6</td>
 					<td>程序头表自身</td>
 				</tr>
 				<tr>
 					<td>PT_TLS</td>
-					<td>0x00000007</td>
+					<td>0x7</td>
 					<td>Thread-Local Storage template</td>
 				</tr>
 				<tr>
@@ -455,6 +455,48 @@ typedef struct elf64_hdr {
 	<tr>
 		<td>sh_type</td>
 		<td>4</td>
-		<td>节的类型</td>
+		<td><p>节的类型</p>
+		<table>
+			<tr>
+				<td>SHT_NULL</td>
+				<td>0x0</td>
+				<td>未使用</td>
+			</tr>
+			<tr>
+				<td>SHT_PROGBITS</td>
+				<td>0x1</td>
+				<td>Program data</td>
+			</tr>
+			<tr>
+				<td>SHT_SYMTAB</td>
+				<td>0x2</td>
+				<td>符号表</td>
+			</tr>
+			<tr>
+				<td>SHT_STRTAB</td>
+				<td>0x3</td>
+				<td>字符串表</td>
+			</tr>
+			<tr>
+				<td>SHT_RELA</td>
+				<td>0x4</td>
+				<td>Relocation entries with addends</td>
+			</tr>
+			<tr>
+				<td>SHT_HASH</td>
+				<td>0x5</td>
+				<td>Symbol hash table</td>
+			</tr>
+			<tr>
+				<td>SHT_DYNAMIC</td>
+				<td>0x6</td>
+				<td>动态链接信息</td>
+			</tr>
+			<tr>
+				<td>SHT_NOTE</td>
+				<td>0x7</td>
+				<td>Notes</td>
+			</tr>
+		</table></td>
 	</tr>
 </table>
