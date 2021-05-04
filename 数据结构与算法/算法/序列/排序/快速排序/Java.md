@@ -2,8 +2,6 @@
 
 ### 选取第一个数为基准
 
-递归版本
-
 ``` Java
 public static <T> void quickSort(T[] array, Comparator<T> comparator){
     quick_sort(array, 0, array.length-1, comparator);
@@ -36,8 +34,6 @@ private static <T> void quick_sort(T[] array, int start, int end, Comparator<T> 
 ```
 
 ### 三数中值（与最后一个数交换）
-
-递归版本
 
 ``` Java
 public static <T> void quickSort(T[] array, Comparator<T> comparator)

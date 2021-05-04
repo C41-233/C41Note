@@ -2,8 +2,6 @@
 
 ### 三路快速排序
 
-递归版本
-
 ``` C++
 template <typename T>
 void quick_sort(T* arr, const int len) {
