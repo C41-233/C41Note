@@ -1,6 +1,10 @@
+# 快速排序 - C#
+
 ### 选取第一个数为基准
 
-``` C#
+递归版本
+
+``` CSharp
 public static void QuickSort<T>(T[] array, Comparison<T> comparator)
 {
     QuickSort(array, 0, array.Length - 1, comparator);
@@ -41,7 +45,9 @@ private static void QuickSort<T>(T[] array, int start, int end, Comparison<T> co
 
 ### Lomuto partition scheme
 
-``` C#
+递归版本
+
+``` CSharp
 public static void QuickSort<T>(T[] array, Comparison<T> comparator)
 {
     QuickSort(array, 0, array.Length - 1, comparator);
@@ -77,7 +83,9 @@ private static int Partition<T>(T[] array, int start, int end, Comparison<T> com
 
 ### Hoare partition scheme
 
-``` C#
+递归版本
+
+``` CSharp
 public static void QuickSort<T>(T[] array, Comparison<T> comparator)
 {
     QuickSort(array, 0, array.Length - 1, comparator);
@@ -118,7 +126,9 @@ private static int Partition<T>(T[] array, int start, int end, Comparison<T> com
 
 ### 三数中值（与最后一个数交换）
 
-``` C#
+递归版本
+
+``` CSharp
 public static void QuickSort<T>(T[] array, Comparison<T> comparator)
 {
     QuickSort(array, 0, array.Length - 1, comparator);

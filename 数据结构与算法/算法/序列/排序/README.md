@@ -42,7 +42,7 @@
 | 希尔排序 | |  |
 | 冒泡排序 | O(n)（最好）<br/>O(n<sup>2</sup>)（最坏）<br/>O(n<sup>2</sup>)（平均） | O(1) | 稳定 |
 | 鸡尾酒排序 | |  | 
-| 快速排序 | |  | 不稳定 |
+| 快速排序 | O(nlogn)（最好）<br/>O(n<sup>2</sup>)（最坏）<br/>O(nlogn)（平均） |  | 不稳定 |
 | 选择排序 | O(n<sup>2</sup>) | O(1) | 不稳定 |
 | 堆排序 | |  | 不稳定 |
 | 归并排序 | |  | 稳定 |
@@ -65,11 +65,21 @@ private static <T> void swap(T[] array, int left, int right)
 }
 ```
 
-``` C#
+``` CSharp
 private static void Swap<T>(ref T x, ref T y)
 {
     var tmp = x;
     x = y;
     y = tmp;
+}
+```
+
+``` C++
+template <typename T>
+void swap(T& x, T& y) noexcept
+{
+	T tmp = x;
+	x = y;
+	y = tmp;
 }
 ```
