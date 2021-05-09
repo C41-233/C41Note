@@ -632,4 +632,34 @@ typedef struct elf64_hdr {
 		<td>4/8</td>
 		<td>节在内存中的虚拟地址</td>
 	</tr>
+	<tr>
+		<td>sh_offset</td>
+		<td>4/8</td>
+		<td>节在文件中的偏移量</td>
+	</tr>
+	<tr>
+		<td>sh_size</td>
+		<td>4/8</td>
+		<td>节在文件中的大小（字节）</td>
+	</tr>
+	<tr>
+		<td>sh_link</td>
+		<td>4</td>
+		<td>关联的节的索引</td>
+	</tr>
+	<tr>
+		<td>sh_info</td>
+		<td>4</td>
+		<td>额外信息</td>
+	</tr>
+	<tr>
+		<td>sh_addralign</td>
+		<td>4/8</td>
+		<td>节对齐，必须为2的幂</td>
+	</tr>
+	<tr>
+		<td>sh_entsize</td>
+		<td>4/8</td>
+		<td>Contains the size, in bytes, of each entry, for sections that contain fixed-size entries. Otherwise, this field contains zero.</td>
+	</tr>
 </table>
