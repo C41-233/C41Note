@@ -559,6 +559,72 @@ typedef struct elf64_hdr {
 					<td>0x1</td>
 					<td>可写</td>
 				</tr>
+				<tr>
+					<td>SHF_ALLOC</td>
+					<td>0x2</td>
+					<td>Occupies memory during  execution</td>
+				</tr>
+				<tr>
+					<td>SHF_EXECINSTR</td>
+					<td>0x4</td>
+					<td>可执行</td>
+				</tr>
+				<tr>
+					<td>SHF_MERGE</td>
+					<td>0x10</td>
+					<td>Might be merged</td>
+				</tr>
+				<tr>
+					<td>SHF_STRINGS</td>
+					<td>0x20</td>
+					<td>包含以NULL结尾的字符串</td>
+				</tr>
+				<tr>
+					<td>SHF_INFO_LINK</td>
+					<td>0x40</td>
+					<td>包含SHT index</td>
+				</tr>
+				<tr>
+					<td>SHF_LINK_ORDER</td>
+					<td>0x80</td>
+					<td>合并后保留顺序</td>
+				</tr>
+				<tr>
+					<td>SHF_OS_NONCONFORMING</td>
+					<td>0x100</td>
+					<td>Non-standard OS specific handling required</td>
+				</tr>
+				<tr>
+					<td>SHF_GROUP</td>
+					<td>0x200</td>
+					<td>Section is member of a group</td>
+				</tr>
+				<tr>
+					<td>SHF_TLS</td>
+					<td>0x400</td>
+					<td>Section hold thread-local data</td>
+				</tr>
+				<tr>
+					<td>SHF_MASKOS</td>
+					<td>0x0ff00000</td>
+					<td>操作系统特定</td>
+				</tr>
+				<tr>
+					<td>SHF_MASKPROC</td>
+					<td>0xf0000000</td>
+					<td>处理器特定</td>
+				</tr>
+				<tr>
+					<td>SHF_ORDERED</td>
+					<td>0x4000000</td>
+					<td>Special ordering requirement (Solaris)</td>
+				</tr>
+				<tr>
+					<td>SHF_EXCLUDE</td>
+					<td>0x8000000</td>
+					<td>Section is excluded unless referenced or allocated (Solaris)
+</td>
+				</tr>
 			</table>
 		</td>
 	</tr>
