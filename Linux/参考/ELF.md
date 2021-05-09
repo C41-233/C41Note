@@ -622,10 +622,14 @@ typedef struct elf64_hdr {
 				<tr>
 					<td>SHF_EXCLUDE</td>
 					<td>0x8000000</td>
-					<td>Section is excluded unless referenced or allocated (Solaris)
-</td>
+					<td>Section is excluded unless referenced or allocated (Solaris)</td>
 				</tr>
 			</table>
 		</td>
+	</tr>
+	<tr>
+		<td>sh_addr</td>
+		<td>4/8</td>
+		<td>节在内存中的虚拟地址</td>
 	</tr>
 </table>
