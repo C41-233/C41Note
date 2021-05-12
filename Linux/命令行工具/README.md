@@ -199,6 +199,7 @@
     1. sar 性能分析
     1. setup 文本模式配置工具
     1. uname 显示系统信息
+    1. lscpu 查看CPU信息
 
 - 对话
     1. [write 发送消息](write.md)
