@@ -105,6 +105,18 @@
 		<td>G,S</td>
 	</tr>
 	<tr>
+		<th>default_storage_engine</th>
+		<td>默认存储引擎，默认值为<code>InnoDB</code></td>
+		<td>STRING</td>
+		<td>G,S</td>
+	</tr>
+	<tr>
+		<th>foreign_key_checks</th>
+		<td>是否开启外键约束检查</td>
+		<td>BOOL</td>
+		<td>G,S</td>
+	</tr>
+	<tr>
 		<th>ft_boolean_syntax</th>
 		<td>可以和布尔查找一起用的运算符</td>
 		<td>STRING</td>
@@ -314,17 +326,5 @@
 		<td>是否开启调度器</td>
 		<td>BOOL</td>
 		<td>G</td>
-	</tr>
-	<tr>
-		<th>foreign_key_checks</th>
-		<td>是否开启外键约束检查</td>
-		<td>BOOL</td>
-		<td>G,S</td>
-	</tr>
-	<tr>
-		<th>default_storage_engine</th>
-		<td>默认存储引擎，默认值为<code>InnoDB</code></td>
-		<td>STRING</td>
-		<td>G,S</td>
 	</tr>
 </table>

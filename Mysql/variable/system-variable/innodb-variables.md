@@ -33,4 +33,10 @@
 		<td>INTEGER</td>
 		<td>G,S</td>
 	</tr>
+	<tr>
+		<th>innodb_thread_concurrency</th>
+		<td>线程池最大并发线程数，0表示不限制</td>
+		<td>INTEGER</td>
+		<td>G</td>
+	</tr>
 </table>
