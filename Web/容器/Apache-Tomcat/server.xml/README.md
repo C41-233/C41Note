@@ -8,7 +8,7 @@
 
 - [Connector](Connector.md) 连接器
 - [GlobalNamingResources](GlobalNamingResources.md) JNDI resources
-Listener代表Tomcat事件监听器。
+- [Listener](Listener.md) 代表Tomcat事件监听器。
 Service处理请求的Service。
 容器
 Context代表一个Web应用。
