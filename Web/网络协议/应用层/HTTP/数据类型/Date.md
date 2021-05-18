@@ -1,8 +1,6 @@
-# 数据格式
+# Date
 
-## 时间
-
-时间类型在Date、If-Modified-Since、If-Unmodified-Since、Expires、Last-Modified等头部中使用。
+日期时间类型在Date、If-Modified-Since、If-Unmodified-Since、Expires、Last-Modified等头部中使用。
 
 ```
 <day-name>, <day> <month> <year> <hour>:<minute>:<second> GMT
