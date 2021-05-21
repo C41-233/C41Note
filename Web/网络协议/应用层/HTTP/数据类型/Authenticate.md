@@ -1,6 +1,6 @@
 # Authenticate
 
-HTTP身份验证机制，在`Authorization`、`Proxy-Authenticate`等头部中使用。
+HTTP身份验证机制，在`Authorization`、`Proxy-Authenticate`、`Proxy-Authorization`等头部中使用。
 
 支持验证类型包括：
 - Basic：RFC7617
