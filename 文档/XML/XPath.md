@@ -1,5 +1,7 @@
 # XPath
 
+http://www.w3school.com.cn/xpath/index.asp
+
 XPath是对XML文档进行查询的语言。
 
 ### 路径表达式
@@ -26,12 +28,12 @@ child::*/child::price
 
 | 表达式 | 描述 | 等价表达式 |
 |---|---|---|
-| nodename | 当前节点的所有nodename直接子节点 | child::nodename |
-| / | 从根节点开始，即绝对路径 |  |
-| // | 当前节点及其所有子孙节点 | descendant-or-self::node() |
-| . | 当前节点 | self::node() |
-| .. | 当前节点的直接父节点 | parent::node() |
-| @attr | 属性 | attribute::attr |
+| \<nodename\> | 当前结点的所有名称为nodename的直接子元素结点 | child::nodename |
+| / | 从根结点开始，即绝对路径 |  |
+| // | 当前结点及其所有子孙结点 | descendant-or-self::node() |
+| . | 当前结点 | self::node() |
+| .. | 当前结点的父结点 | parent::node() |
+| @attr | 当前结点的属性结点 | attribute::attr |
 
 ### 结点
 
@@ -46,4 +48,22 @@ child::*/child::price
 | node() | 匹配任何类型的结点 |
 
 ### 轴
+
+| 表达式 | 描述 |
+|---|---|
+| ancestor | 当前结点的所有祖先结点 |
+| ancestor-or-self | 当前结点及其所有祖先结点 |
+| attribute | 当前结点的所有属性结点 |
+| child | 当前结点的所有子元素结点 |
+| descendant | 当前结点的所有子孙元素结点 |
+| descendant-or-self | 当前结点及其所有子孙元素结点 |
+| following | 当前结点的结束标签之后的所有结点 |
+| following-sibling | 当前结点之后的所有兄弟结点 |
+| namespace | 当前结点的命名空间结点 |
+| parent | 当前结点的父结点 |
+| preceding | 当前结点的开始标签之前的所有结点 |
+| preceding-sibling | 当前结点之前的所有兄弟结点 |
+| self | 当前结点 |
+
+### 谓词
 
