@@ -1,0 +1,225 @@
+<html>
+
+<head>
+    <title>XPath验证器</title>
+    <script src="../common.js"></script>
+    <style>
+        .select{
+            background-color: #50bfff;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+    <template>
+        <h1>XPath验证器</h1>
+        <hr/>
+        <el-row>
+            <el-col :span="12">
+                <el-input
+                    type="textarea"
+                    :autosize="{ minRows: 20 }"
+                    v-model="Input"
+                    resize="none"
+                    @input="Update"
+                >
+                </el-input>
+
+            </el-col>
+            <el-col :span="12">
+                <el-row>
+                    <el-input v-model="Expression" @input="Update" clearable/>
+                </el-row>
+                <el-row>{{Error}}</el-row>
+                <div v-html="Output"></div>
+            </el-col>
+        </el-row>
+    </template>
+</main>
+</body>
+
+<script>
+
+const DefaultInput = 
+`<library>
+    <book>
+        <chapter id="prefix"></chapter>
+        <chapter>
+            <section>
+                <paragraph>1</paragraph>
+                <paragraph>2</paragraph>
+            </section>
+        </chapter>
+    </book>
+</library>`
+
+$(function(){
+    let app = new Vue({
+        el: "main",
+        data(){
+            return {
+                Input: DefaultInput,
+                Expression: "/library/book/chapter",
+                Error: null,
+                Output: null
+            };
+        },
+        created(){
+            this.Update();
+        },
+        methods: {
+            Update(){
+                let input = this.Input;
+                let expression = this.Expression;
+
+                let doc;
+                try{
+                    doc = CreateDocument(input);
+                }
+                catch(e){
+                    this.Error = e;
+                    return;
+                }
+                this.Error = null;
+                
+                result = CreateResult(expression, doc);
+                this.Output = CreateOutput(doc, result);
+            }
+        }
+    });
+});
+
+function CreateDocument(input){
+    let parser = new DOMParser();
+    let doc = parser.parseFromString(input, "application/xml");
+    
+    let errors = doc.getElementsByTagName("parsererror");
+    if(errors.length > 0){
+        throw errors[0].getElementsByTagName("div")[0].innerText;
+    }
+    return doc;
+}
+
+function CreateResult(expression, doc){
+    let xpath = new XPathEvaluator();
+    xpath = xpath.createExpression(expression);
+    let result = xpath.evaluate(doc);
+    let found = [];
+    let res;
+    while(res = result.iterateNext()){
+        found.push(res);
+    }
+    return found;
+}
+
+class OutputString {
+
+    constructor(){
+        this.buffer = "";
+    }
+
+    append(s){
+        this.buffer += s;
+    }
+
+    toString(){
+        return this.buffer;
+    }
+
+}
+
+function CreateOutput(doc, result){
+    let os = new OutputString();
+    os.append("<div>");
+    FormatDoc(doc);
+    os.append("</div>");
+    return os.toString();
+
+    function FormatDoc(doc){
+        if(result.contains(doc)){
+            os.append(`<div class='select'>[#document]</div>`)
+        }
+        else{
+            os.append(`<div>[#document]</div>`)
+        }
+
+        let childs = doc.childNodes;
+        for(let i=0; i<childs.length; i++){
+            FormatChild(childs[i], 0);
+        }
+    }
+
+    function FormatChild(child, pad){
+        if(child.nodeType === 1){ //element
+            return FormatElement(child, pad);
+        }
+    }
+
+    function FormatElement(child, pad){
+        os.append(`<div>`)
+        os.append(`${Pad(pad)}&lt;`);
+        if(result.contains(child)){
+            os.append(`<span class='select'>`);
+        }
+        else{
+            os.append(`<span>`);
+        }
+        os.append(`${child.nodeName}`);
+        os.append(`</span>`);
+
+        FormatAttributes(child);
+
+        let childs = child.childNodes;
+
+        //简单结点
+        if(childs.length === 0){
+            os.append(`&gt;`);
+            os.append(`&lt;/${child.nodeName}&gt;`);
+            os.append(`</div>`)
+        }
+        //复杂结点
+        else{
+            os.append(`&gt;`);
+            os.append(`</div>`)
+            for(let i=0; i<childs.length; i++){
+                FormatChild(childs[i], pad+1);
+            }
+
+            os.append(`<div>`)
+            os.append(`${Pad(pad)}&lt;/${child.nodeName}&gt;`);
+            os.append(`</div>`)
+        }
+    }
+
+    function FormatAttributes(child){
+        let attributes = child.attributes;
+        for(let i=0; i<attributes.length; i++){
+            let attribute = attributes[i];
+            os.append(" ");
+            os.append(attribute.nodeName);
+            os.append("=");
+            os.append("\"");
+            os.append(Encode(attribute.nodeValue));
+            os.append("\"");
+        }
+    }
+}
+
+function Pad(pad){
+    let s = "";
+    for(let i=0; i<pad; i++){
+        s += "&nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+    return s;
+}
+
+function Encode(s){
+    return s.replace(/"/g, "&amp;quot;")
+        .replace("<", "&amp;lt;")
+        .replace(">", "&amp;gt;");
+}
+
+</script>
+
+</html>

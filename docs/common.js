@@ -82,11 +82,18 @@ global.$ = function(action){
 
 
 //jquery
-Common.import("lib/jquery/jquery.min.js");
+Common.import("lib/thirdparty/jquery/jquery.min.js");
 
 //bootstrap
-Common.import("lib/bootstrap-3.3.7-dist/css/bootstrap.min.css");
-Common.import("lib/bootstrap-3.3.7-dist/js/bootstrap.min.js");
+Common.import("lib/thirdparty/bootstrap-3.3.7-dist/css/bootstrap.min.css");
+Common.import("lib/thirdparty/bootstrap-3.3.7-dist/js/bootstrap.min.js");
 
 //vue
-Common.import("lib/vue/vue.min.js");
+Common.import("lib/thirdparty/vue/vue.min.js");
+
+//element-ui
+Common.import("lib/thirdparty/element-ui/index.css");
+Common.import("lib/thirdparty/element-ui/index.js");
+
+
+Common.import("lib/array.js");
