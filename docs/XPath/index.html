@@ -31,7 +31,7 @@
                 <el-row>
                     <el-input v-model="Expression" @input="Update" clearable/>
                 </el-row>
-                <el-row>{{Error}}</el-row>
+                <el-row style="color: red">{{Error}}</el-row>
                 <div v-html="Output"></div>
             </el-col>
         </el-row>
@@ -40,6 +40,7 @@
 </body>
 
 <script>
+Common.import("../lib/jquery-extend/enable-tab.js");
 
 const DefaultInput = 
 `<library>
@@ -68,8 +69,15 @@ $(function(){
         created(){
             this.Update();
         },
+        mounted(){
+            let area = $(this.$el).find("textarea");
+            area.enableTab();
+        },
         methods: {
             Update(){
+                this.Error = null;
+                this.Output = null;
+
                 let input = this.Input;
                 let expression = this.Expression;
 
@@ -81,9 +89,16 @@ $(function(){
                     this.Error = e;
                     return;
                 }
-                this.Error = null;
                 
-                result = CreateResult(expression, doc);
+                let result;
+                try{
+                    result = CreateResult(expression, doc);
+                }
+                catch(e){
+                    this.Error = e;
+                    return;
+                }
+                
                 this.Output = CreateOutput(doc, result);
             }
         }
@@ -138,16 +153,18 @@ function CreateOutput(doc, result){
 
     function FormatDoc(doc){
         if(result.contains(doc)){
-            os.append(`<div class='select'>[#document]</div>`)
+            os.append(`<div class='select'>[document]</div>`)
         }
         else{
-            os.append(`<div>[#document]</div>`)
+            os.append(`<div>[document]</div>`)
         }
 
         let childs = doc.childNodes;
         for(let i=0; i<childs.length; i++){
-            FormatChild(childs[i], 0);
+            FormatChild(childs[i], 1);
         }
+        
+        os.append(`<div>[/document]</div>`)
     }
 
     function FormatChild(child, pad){
@@ -196,12 +213,20 @@ function CreateOutput(doc, result){
         let attributes = child.attributes;
         for(let i=0; i<attributes.length; i++){
             let attribute = attributes[i];
+            
             os.append(" ");
+            if(result.contains(attribute)){
+                os.append(`<span class='select'>`);
+            }
+            else{
+                os.append(`<span>`);
+            }
             os.append(attribute.nodeName);
             os.append("=");
             os.append("\"");
             os.append(Encode(attribute.nodeValue));
             os.append("\"");
+            os.append(`</span>`);
         }
     }
 }
