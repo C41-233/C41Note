@@ -42,19 +42,23 @@ Common.getBaseDirectory = function(){
 	return exePath;
 }
 
+const RootDirectory = Common.getBaseDirectory();
+
 Common.import = function(path){
-	let base = this.getBaseDirectory();
+	let src;
 	if(path.startsWith('/')){
-		path = path.substring(1);
+		src = RootDirectory + path;
 	}
-	
-	let src = base + path;
+	else{
+		src = this.getBaseDirectory() + path;
+	}
 	
 	let node;
 	//js
 	if(src.endsWith(".js")){
 		node = document.createElement("script");
 		node.src = src;
+		node.type = "text/javascript";
 	}
 	//css
 	else if(src.endsWith(".css")){
@@ -82,18 +86,18 @@ global.$ = function(action){
 
 
 //jquery
-Common.import("lib/thirdparty/jquery/jquery.min.js");
+Common.import("/lib/thirdparty/jquery/jquery.min.js");
 
 //bootstrap
-Common.import("lib/thirdparty/bootstrap-3.3.7-dist/css/bootstrap.min.css");
-Common.import("lib/thirdparty/bootstrap-3.3.7-dist/js/bootstrap.min.js");
+Common.import("/lib/thirdparty/bootstrap-3.3.7-dist/css/bootstrap.min.css");
+Common.import("/lib/thirdparty/bootstrap-3.3.7-dist/js/bootstrap.min.js");
 
 //vue
-Common.import("lib/thirdparty/vue/vue.min.js");
+Common.import("/lib/thirdparty/vue/vue.min.js");
 
 //element-ui
-Common.import("lib/thirdparty/element-ui/index.css");
-Common.import("lib/thirdparty/element-ui/index.js");
+Common.import("/lib/thirdparty/element-ui/index.css");
+Common.import("/lib/thirdparty/element-ui/index.js");
 
 
-Common.import("lib/array.js");
+Common.import("/lib/array.js");

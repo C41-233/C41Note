@@ -40,7 +40,7 @@
 </body>
 
 <script>
-Common.import("../lib/jquery-extend/enable-tab.js");
+Common.import("/lib/jquery-extend/enable-tab.js");
 
 const DefaultInput = 
 `<library>
@@ -168,8 +168,13 @@ function CreateOutput(doc, result){
     }
 
     function FormatChild(child, pad){
-        if(child.nodeType === 1){ //element
+        //element
+        if(child.nodeType === 1){
             return FormatElement(child, pad);
+        }
+        //comment
+        else if(child.nodeType === 8){
+            return FormatComment(child, pad);
         }
     }
 
@@ -229,6 +234,22 @@ function CreateOutput(doc, result){
             os.append(`</span>`);
         }
     }
+
+    function FormatComment(child, pad){
+        os.append(`<div>${Pad(pad)}&lt;`);
+        if(result.contains(child)){
+            os.append(`<span class='select'>`);
+        }
+        else{
+            os.append(`<span>`);
+        }
+        os.append(`!--`);
+        os.append(Encode(child.nodeValue));
+        os.append(`--`);
+        os.append(`</span>`);
+        os.append(`&gt;`);
+        os.append(`</div>`);
+    }
 }
 
 function Pad(pad){
@@ -240,9 +261,11 @@ function Pad(pad){
 }
 
 function Encode(s){
-    return s.replace(/"/g, "&amp;quot;")
-        .replace("<", "&amp;lt;")
-        .replace(">", "&amp;gt;");
+    return s.replace("&", "&amp;amp;")
+        .replace(/"/g, "&amp;quot;")
+        .replace(/</g, "&amp;lt;")
+        .replace(/>/g, "&amp;gt;")
+        .replace(/ /g, "&nbsp;");
 }
 
 </script>
