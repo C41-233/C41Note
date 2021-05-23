@@ -176,6 +176,10 @@ function CreateOutput(doc, result){
         else if(child.nodeType === 8){
             return FormatComment(child, pad);
         }
+        //processing instruction
+        else if(child.nodeType === 7){
+            return FormatInstruction(child, pad);
+        }
     }
 
     function FormatElement(child, pad){
@@ -250,6 +254,23 @@ function CreateOutput(doc, result){
         os.append(`&gt;`);
         os.append(`</div>`);
     }
+    
+    function FormatInstruction(child, pad){
+        os.append(`<div>${Pad(pad)}&lt;`);
+        if(result.contains(child)){
+            os.append(`<span class='select'>`);
+        }
+        else{
+            os.append(`<span>`);
+        }
+        os.append(`?`);
+        os.append(child.nodeName);
+        os.append(` ${Encode(child.nodeValue)}`);
+        os.append(`?`);
+        os.append(`</span>`);
+        os.append(`&gt;`);
+        os.append(`</div>`);
+    }
 }
 
 function Pad(pad){
@@ -261,7 +282,7 @@ function Pad(pad){
 }
 
 function Encode(s){
-    return s.replace("&", "&amp;amp;")
+    return s.replace(/&/g, "&amp;amp;")
         .replace(/"/g, "&amp;quot;")
         .replace(/</g, "&amp;lt;")
         .replace(/>/g, "&amp;gt;")

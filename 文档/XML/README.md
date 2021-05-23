@@ -2,23 +2,6 @@
 
 参考资料：http://www.w3school.com.cn/xml/index.asp
 
-## 注释
-以`<--`开头，以`-->`结尾。
-``` XML
-<!-- 这是注释 -->
-```
-
-## 格式
-
-头部指令包含版本和编码信息。
-``` XML
-<?xml encoding="utf-8" standalone="yes" version="1.0"?>
-```
-
-- encoding	编码
-- standalone	是否是独立文档，`yes|no`
-- version	版本，`1.0`
-
 形式良好的XML文档必须满足：
 - 文档必须有唯一根元素
 - 文档必须有关闭标签
@@ -26,17 +9,45 @@
 - 元素必须被正确的嵌套
 - 属性必须加引号
 
-## CDATA
+## 一、结点（Node）
 
-CDATA指不应由 XML 解析器进行解析的文本数据。
+#### 注释结点（Comment） 
 
-CDATA 部分由`<![CDATA[`开始，由`]]>`结束。
+以`<--`开头，以`-->`结尾。
 
-CDATA 部分不能包含字符串 `]]>`。也不允许嵌套的CDATA部分。
+``` XML
+<!-- 这是注释 -->
+```
 
-标记 CDATA 部分结尾的 ]]> 不能包含空格或折行。
+#### 处理指令结点（Processing Instruction）
 
-## Namespace
+处理指令结点以`<?`开头，以`?>`结尾。
+
+##### xml
+
+表示头部指令，包含XML文档版本和编码信息。
+
+``` XML
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+```
+
+- encoding	编码
+- standalone	是否是独立文档，`yes|no`
+- version	版本，`1.0`
+
+## 二、内容
+
+#### CDATA
+
+CDATA指不应由XML解析器进行解析的文本数据。
+
+CDATA部分由`<![CDATA[`开始，由`]]>`结束。
+
+CDATA部分不能包含字符串`]]>`。也不允许嵌套的CDATA部分。
+
+标记CDATA部分结尾的`]]>`不能包含空格或折行。
+
+#### 命名空间（Namespace）
 
 元素使用前缀声明所属的名字空间，并通过`xmlns:prefix`属性定义一个与某个命名空间相关联的限定名称。
 
