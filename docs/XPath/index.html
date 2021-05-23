@@ -7,6 +7,9 @@
         .select{
             background-color: #50bfff;
         }
+        .text{
+            white-space: pre;
+        }
     </style>
 </head>
 
@@ -100,6 +103,9 @@ $(function(){
                 }
                 
                 this.Output = CreateOutput(doc, result);
+                for(let r of result){
+                    console.error(r);
+                }
             }
         }
     });
@@ -152,7 +158,7 @@ function CreateOutput(doc, result){
     return os.toString();
 
     function FormatDoc(doc){
-        if(result.contains(doc)){
+        if(result.remove(doc)){
             os.append(`<div class='select'>[document]</div>`)
         }
         else{
@@ -161,31 +167,35 @@ function CreateOutput(doc, result){
 
         let childs = doc.childNodes;
         for(let i=0; i<childs.length; i++){
-            FormatChild(childs[i], 1);
+            FormatChild(childs[i]);
         }
         
         os.append(`<div>[/document]</div>`)
     }
 
-    function FormatChild(child, pad){
+    function FormatChild(child){
         //element
         if(child.nodeType === 1){
-            return FormatElement(child, pad);
+            return FormatElement(child);
         }
         //comment
         else if(child.nodeType === 8){
-            return FormatComment(child, pad);
+            return FormatComment(child);
         }
         //processing instruction
         else if(child.nodeType === 7){
-            return FormatInstruction(child, pad);
+            return FormatInstruction(child);
+        }
+        //text
+        else if(child.nodeType === 3){
+            return FormatText(child);
         }
     }
 
-    function FormatElement(child, pad){
-        os.append(`<div>`)
-        os.append(`${Pad(pad)}&lt;`);
-        if(result.contains(child)){
+    function FormatElement(child){
+        os.append(`<span>`)
+        os.append(`&lt;`);
+        if(result.remove(child)){
             os.append(`<span class='select'>`);
         }
         else{
@@ -202,19 +212,19 @@ function CreateOutput(doc, result){
         if(childs.length === 0){
             os.append(`&gt;`);
             os.append(`&lt;/${child.nodeName}&gt;`);
-            os.append(`</div>`)
+            os.append(`</span>`)
         }
         //复杂结点
         else{
             os.append(`&gt;`);
-            os.append(`</div>`)
+            os.append(`</span>`)
             for(let i=0; i<childs.length; i++){
-                FormatChild(childs[i], pad+1);
+                FormatChild(childs[i]);
             }
 
-            os.append(`<div>`)
-            os.append(`${Pad(pad)}&lt;/${child.nodeName}&gt;`);
-            os.append(`</div>`)
+            os.append(`<span>`)
+            os.append(`&lt;/${child.nodeName}&gt;`);
+            os.append(`</span>`)
         }
     }
 
@@ -224,7 +234,7 @@ function CreateOutput(doc, result){
             let attribute = attributes[i];
             
             os.append(" ");
-            if(result.contains(attribute)){
+            if(result.remove(attribute)){
                 os.append(`<span class='select'>`);
             }
             else{
@@ -239,9 +249,9 @@ function CreateOutput(doc, result){
         }
     }
 
-    function FormatComment(child, pad){
-        os.append(`<div>${Pad(pad)}&lt;`);
-        if(result.contains(child)){
+    function FormatComment(child){
+        os.append(`<span>&lt;`);
+        if(result.remove(child)){
             os.append(`<span class='select'>`);
         }
         else{
@@ -252,12 +262,12 @@ function CreateOutput(doc, result){
         os.append(`--`);
         os.append(`</span>`);
         os.append(`&gt;`);
-        os.append(`</div>`);
+        os.append(`</span>`);
     }
     
-    function FormatInstruction(child, pad){
-        os.append(`<div>${Pad(pad)}&lt;`);
-        if(result.contains(child)){
+    function FormatInstruction(child){
+        os.append(`<span>&lt;`);
+        if(result.remove(child)){
             os.append(`<span class='select'>`);
         }
         else{
@@ -269,16 +279,19 @@ function CreateOutput(doc, result){
         os.append(`?`);
         os.append(`</span>`);
         os.append(`&gt;`);
-        os.append(`</div>`);
+        os.append(`</span>`);
     }
-}
 
-function Pad(pad){
-    let s = "";
-    for(let i=0; i<pad; i++){
-        s += "&nbsp;&nbsp;&nbsp;&nbsp;";
+    function FormatText(child){
+        if(result.remove(child)){
+            os.append("<span class='text select'>");
+        }
+        else{
+            os.append("<span class='text'>");
+        }
+        os.append(Encode(child.nodeValue));
+        os.append("</span>");
     }
-    return s;
 }
 
 function Encode(s){

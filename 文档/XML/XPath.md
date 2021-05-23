@@ -33,7 +33,7 @@ child::*/child::price
 | // | 当前结点及其所有子孙结点 | descendant-or-self::node() |
 | . | 当前结点 | self::node() |
 | .. | 当前结点的父结点 | parent::node() |
-| @attr | 当前结点的属性结点 | attribute::attr |
+| @\<attr\> | 当前结点的属性结点 | attribute::\<attr\> |
 
 ### 结点
 
@@ -59,7 +59,7 @@ child::*/child::price
 | descendant-or-self | 当前结点及其所有子孙元素结点 |
 | following | 当前结点的结束标签之后的所有结点 |
 | following-sibling | 当前结点之后的所有兄弟结点 |
-| namespace | 当前结点的命名空间结点 |
+| namespace | 当前结点的命名空间 |
 | parent | 当前结点的父结点 |
 | preceding | 当前结点的开始标签之前的所有结点 |
 | preceding-sibling | 当前结点之前的所有兄弟结点 |
@@ -67,17 +67,79 @@ child::*/child::price
 
 ### 谓词
 
-谓词用来查找某个特定的结点集合。谓词嵌套在方括号中。
+谓词用来查找某个特定的结点集合，谓词嵌套在方括号中。
+
+谓词可以是一个下标，也可以是一个测试表达式。
+
+``` XML
+<bookstore>
+
+<book category="COOKING">
+  <title lang="en">Everyday Italian</title>
+  <author>Giada De Laurentiis</author>
+  <year>2005</year>
+  <price>30.00</price>
+</book>
+
+<book category="CHILDREN">
+  <title lang="en">Harry Potter</title>
+  <author>J K. Rowling</author>
+  <year>2005</year>
+  <price>29.99</price>
+</book>
+
+<book category="WEB">
+  <title lang="en">XQuery Kick Start</title>
+  <author>James McGovern</author>
+  <author>Per Bothner</author>
+  <author>Kurt Cagle</author>
+  <author>James Linn</author>
+  <author>Vaidyanathan Nagarajan</author>
+  <year>2003</year>
+  <price>49.99</price>
+</book>
+
+<book category="WEB">
+  <title lang="en">Learning XML</title>
+  <author>Erik T. Ray</author>
+  <year>2003</year>
+  <price>39.95</price>
+</book>
+
+</bookstore>
+```
+
+#### 谓词下标
+
+谓词为一个整数时表示匹配元素在父结点中的下标，下标从1开始（IE浏览器中下标从0开始）。
+
+```
+# 选择第二个book结点
+/bookstore/book[2]
+```
+
+#### 谓词测试表达式
+
+测试表达式用于从集合中筛选符合条件的结点。
+
+测试表达式中的结点名\<nodename\>，表示其子结点的文本结点。
+
+```
+# 选择价格高于35的所有book的price
+/bookstore/book[price>35]/price
+```
 
 ##### 下标
 
-匹配元素集合的下标，下标从1开始（IE浏览器中下标从0开始）。
-
 | 表达式 | 描述 |
 |---|---|
-| \<n\> | 下标为n |
-| last() | 最后一个匹配结点下标 |
-| position() | 匹配结点的下标 |
+| last() | 父结点中的最后一个匹配结点的下标 |
+| position() | 当前结点在父结点中的下标 |
+
+```
+# 选择最后一个book结点
+/bookstore/book[last()]
+```
 
 ##### 运算符
 
