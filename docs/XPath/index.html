@@ -10,15 +10,20 @@
         .text{
             white-space: pre;
         }
+        .output{
+            border: 1px solid #C0C4CC; 
+            border-radius: 4px;
+            padding: 5px 15px;
+        }
     </style>
 </head>
 
 <body>
-<main>
+<main class="container">
     <template>
         <h1>XPath验证器</h1>
         <hr/>
-        <el-row>
+        <el-row :gutter="20">
             <el-col :span="12">
                 <el-input
                     type="textarea"
@@ -31,11 +36,11 @@
 
             </el-col>
             <el-col :span="12">
-                <el-row>
+                <el-row style="margin-bottom:4px">
                     <el-input v-model="Expression" @input="Update" clearable/>
                 </el-row>
                 <el-row style="color: red">{{Error}}</el-row>
-                <div v-html="Output"></div>
+                <div v-if="Output" v-html="Output" class="output"></div>
             </el-col>
         </el-row>
     </template>
