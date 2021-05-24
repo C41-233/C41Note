@@ -1,6 +1,8 @@
 # XPath
 
-http://www.w3school.com.cn/xpath/index.asp
+参考文档：http://www.w3school.com.cn/xpath/index.asp
+
+XPath验证器：https://c41-233.github.io/C41Note/XPath/
 
 XPath是对XML文档进行查询的语言。
 
