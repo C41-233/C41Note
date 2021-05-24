@@ -1,0 +1,133 @@
+<html>
+
+<head>
+<title>正则表达式</title>
+<script src="../common.js"></script>
+<style>
+    .input-regex .el-checkbox{
+        margin-right: 5px;
+        margin-bottom: 0;
+    }
+    .input-regex .el-checkbox .el-checkbox__label{
+        padding-left: 5px;
+    }
+</style>
+</head>
+
+<body>
+<main class="container">
+<template>
+    <h1>正则表达式</h1>
+    <hr/>
+    <el-row>
+        <el-input v-model="regex" clearable @input="Update" class="input-regex">
+            <template slot="prepend">/</template>
+            <template slot="append">
+                <span>/</span>
+                <el-checkbox v-model="g" @change="Update">g</el-checkbox>
+                <el-checkbox v-model="i" @change="Update">i</el-checkbox>
+                <el-checkbox v-model="m" @change="Update">m</el-checkbox>
+                <el-checkbox v-model="s" @change="Update">s</el-checkbox>
+                <el-checkbox v-model="u" @change="Update">u</el-checkbox>
+                <el-checkbox v-model="y" @change="Update">y</el-checkbox>
+            </template>
+        </el-input>
+    </el-row>
+    <el-row>
+        <el-input 
+            type="textarea" 
+            v-model="text" 
+            resize="none" 
+            :autoSize="{minRows:12, maxRows:12}"
+            @input="Update"
+        />
+    </el-row>
+    <el-row v-if="error" style="color: red">{{error}}</el-row>
+    <el-row v-else>
+        <template v-if="!output || output.length === 0">未匹配</template>
+        <template v-else>
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <td>index</td>
+                        <td>group</td>
+                        <td>length</td>
+                    </tr>
+                </thead>
+                <tr v-for="(item, i) in output">
+                    <td>{{i}}</td>
+                    <td>{{item}}</td>
+                    <td>{{item.length}}</td>
+                </tr>
+            </table>
+        </template>
+    </el-row>
+</template>
+</main>
+
+<script>
+$(function(){
+    let app = new Vue({
+        el: "main",
+        data(){
+            return {
+                regex: "",
+                text: "",
+                g: true,
+                i: false,
+                m: false,
+                s: false,
+                u: false,
+                y: false,
+                output: null,
+                error: null
+            }
+        },
+        mounted(){
+            this.Update();
+        },
+        methods: {
+            Update(){
+                this.output = null;
+                this.error = null;
+
+                let flags = "";
+                if(this.g){
+                    flags += "g";
+                }
+                if(this.i){
+                    flags += "i";
+                }
+                if(this.m){
+                    flags += "m";
+                }
+                if(this.s){
+                    flags += "s";
+                }
+                if(this.u){
+                    flags += "u";
+                }
+                if(this.y){
+                    flags += "y";
+                }
+                let pattern;
+                try{
+                    pattern  = new RegExp(this.regex, flags);
+                }
+                catch(e){
+                    this.error = e;
+                    return;
+                }
+                let match = this.text.match(pattern);
+                if(!match){
+                    return;
+                }
+                this.output = match;
+            }
+        }
+    });
+})
+</script>
+</body>
+
+</html>
