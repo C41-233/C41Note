@@ -104,3 +104,12 @@ HTTP响应报文分为三个部分：状态行、响应报头、响应正文。
 
 [响应头部](响应头部.md)
 
+### 3、响应正文
+
+响应正文与响应头部之间空一行。
+
+## 三、报文实体类型
+
+- [application/x-www-form-urlencoded](数据类型/MIME/x-www-form-urlencoded.md)
+
+
