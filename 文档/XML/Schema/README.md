@@ -15,8 +15,10 @@ xsi:schemaLocation="<namespace> <schema>..."
 
 - [schema](schema.md) 所有Schema都以schema元素作为根结点。
 
-元素/属性
-element定义元素。
+##### 元素/属性
+
+- [element](element.md) 定义元素。
+
 attribute定义一个属性。
 key指定属性或元素值（或一组值）必须是指定范围内的键。
 keyref规定属性或元素值（或一组值）对应指定的 key 或 unique 元素的值。
