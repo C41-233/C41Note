@@ -21,12 +21,16 @@ function enqueue(promise){
 	}
 }
 
-function pushNode(node){
+function pushNodeAsync(node){
 	enqueue(done => {
 		node.onload = () => done();
 		node.onerror = () => done();
-		document.head.insertBefore(node, document.head.lastElementChild);
+		pushNode(node);
 	});
+}
+
+function pushNode(node){
+	document.head.insertBefore(node, document.head.lastElementChild);
 }
 
 let Common = global.Common = {};
@@ -66,13 +70,15 @@ Common.import = function(path){
 		node.href = src;
 		node.rel = "stylesheet";
 		node.type = "text/css";
+		//css不需要排队
+		return pushNode(node);
 	}
 	else{
 		node = document.createElement("script");
 		node.src = src;
 	}
 	
-	pushNode(node);
+	pushNodeAsync(node);
 }
 
 global.$ = function(action){
