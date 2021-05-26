@@ -111,5 +111,5 @@ HTTP响应报文分为三个部分：状态行、响应报头、响应正文。
 ## 三、报文实体类型
 
 - [application/x-www-form-urlencoded](数据类型/MIME/x-www-form-urlencoded.md)
-
+- [multipart/form-data](数据类型/MIME/form-data)
 
