@@ -19,11 +19,13 @@ xsi:schemaLocation="<namespace> <schema>..."
 
 - [element](element.md) 定义元素。
 - [attribute](attribute.md) 定义属性。
-key指定属性或元素值（或一组值）必须是指定范围内的键。
-keyref规定属性或元素值（或一组值）对应指定的 key 或 unique 元素的值。
-unique指定属性或元素值（或者属性或元素值的组合）在指定范围内必须是唯一的。
-数据类型
-complexContent定义对复杂类型（包含混合内容或仅包含元素）的扩展或限制。
+- key 指定属性或元素值（或一组值）必须是指定范围内的键。
+- keyref 规定属性或元素值（或一组值）对应指定的 key 或 unique 元素的值。
+- unique 指定属性或元素值（或者属性或元素值的组合）在指定范围内必须是唯一的。
+
+##### 数据类型
+
+- [complexContent](complexContent.md) 定义对复杂类型（包含混合内容或仅包含元素）的扩展或限制。
 complexType定义复杂类型。
 extension扩展已有的 simpleType 或 complexType 元素。
 list把简单类型定义为指定数据类型的值的一个列表。
