@@ -18,8 +18,7 @@ xsi:schemaLocation="<namespace> <schema>..."
 ##### 元素/属性
 
 - [element](element.md) 定义元素。
-
-attribute定义一个属性。
+- [attribute](attribute.md) 定义属性。
 key指定属性或元素值（或一组值）必须是指定范围内的键。
 keyref规定属性或元素值（或一组值）对应指定的 key 或 unique 元素的值。
 unique指定属性或元素值（或者属性或元素值的组合）在指定范围内必须是唯一的。
