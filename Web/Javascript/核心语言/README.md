@@ -3,6 +3,7 @@
 ##### 全局对象
 
 - [\<global\>](global.md) 全局对象
+- [Object](Object.md) 基类对象
 
 ##### 函数
 

@@ -20,24 +20,53 @@ Array对象可以通过`[value,value...]`语法构造。
 [new] Array(object elements...)
 ```
 
+## 对象函数
+
+| 函数 | 描述 |
+|---|---|
+| from | 从可迭代对象中创建一个新数组 |
+| isArray | 判断对象是否是Array |
+| of | 根据给定元素创建数组 |
+
 ## 原型属性
 
 | 名称 | 类型 | 描述 | 属性 |
 |---|---|---|---|
 | length | number | 数组大小 | - |
+| @@iterator | \<iterator\> | 迭代器 | - |
+| @@species | Function | 构造函数 | - |
+| @@unscopable | Array | 被with语句排除的属性名称列表 | configurable |
 
 ## 原型函数
 | 函数 | 描述 |
 |---|---|
 | concat | 合并多个数组 |
+| copyWithin | 复制数组的一部分到另一个位置 |
+| entries | 键值对索引 |
+| every | 检测是否每个元素都满足条件 |
+| fill | 填充元素 |
+| filter | 返回符合条件元素的新数组 |
+| find | 返回满足条件的元素 |
+| findIndex | 返回满足条件的元素索引 |
+| flat | 将嵌套的数组平铺 |
+| flatMap | 先flat再map |
+| forEach | 对数组的每个元素执行一次给定的函数 |
+| includes | 判断一个数组是否包含指定值 |
+| indexOf | 返回数组中指定元素的第一个索引 |
 | join | 数组中的所有元素合并成字符串 |
+| keys | 返回索引键的迭代器 |
+| lastIndexOf | 返回指定元素的最后一个索引 |
+| map | 对每个元素进行映射后返回新数组 |
 | pop | 删除并返回数组的最后一个元素 |
 | push | 向数组的末尾添加元素 |
+| reduce | 对元素进行聚合 |
+| reduceRight | 对元素逆序聚合 |
 | reverse | 颠倒数组中元素的顺序 |
 | shift | 删除数组的第一个元素并返回该元素 |
 | slice | 从数组中返回子数组 |
 | sort | 对数组排序 |
 | unshift | 向数组的开头添加元素 |
+| values | 返回数组每个值的迭代器 |
 
 ---
 ##### concat
