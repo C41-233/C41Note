@@ -8,4 +8,4 @@ Arguments对象是每个函数中的参数数组，绑定到对象`arguments`中
 |---|---|---|---|
 | callee | Function | 当前被调用的函数 | - |
 | length | number | 参数个数 | - |
-| [@@iterator] | iterator | 迭代器 | - |
+| @@iterator | iterator | 迭代器 | - |
