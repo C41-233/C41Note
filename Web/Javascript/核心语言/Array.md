@@ -1,8 +1,12 @@
 # Array
 
-Array对象用于在单个的变量中存储多个值，表示关联数组。
+Array对象用于在单个的变量中存储多个值。
 
 Array对象可以通过`[value,value...]`语法构造。
+
+## 继承
+
+[Object](Object.md) / Array
 
 ## 构造函数
 
@@ -33,6 +37,7 @@ Array对象可以通过`[value,value...]`语法构造。
 | shift | 删除数组的第一个元素并返回该元素 |
 | slice | 从数组中返回子数组 |
 | sort | 对数组排序 |
+| unshift | 向数组的开头添加元素 |
 
 ---
 ##### concat
@@ -124,3 +129,10 @@ splice从start开始删除deleteCount个元素，随后在start的位置依次�
 - items 要添加的元素。
 
 ---
+
+##### unshift	
+```
+number unshift(object items...)	
+```
+
+向数组的开头添加元素，并返回新的长度。

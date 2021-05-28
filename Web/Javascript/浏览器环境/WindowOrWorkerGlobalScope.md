@@ -1,6 +1,4 @@
-# WindowOrWorkerGlobalScope
-
-mixin
+# \<WindowOrWorkerGlobalScope\>
 
 ## 原型函数
 

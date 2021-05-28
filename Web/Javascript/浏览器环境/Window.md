@@ -2,4 +2,4 @@
 
 ## 继承
 
-[WindowOrWorkerGlobalScope](WindowOrWorkerGlobalScope.md) / Window
+[\<WindowOrWorkerGlobalScope\>](WindowOrWorkerGlobalScope.md) / Window
