@@ -37,8 +37,8 @@ xsi:schemaLocation="<namespace> <schema>..."
 
 ##### 数值限定
 - [fractionDigits](fractionDigits.md) 定义所允许的最大的小数位数。
-- [maxExclusive](maxExclusive.md) 定义数值的上限。
-maxInclusive定义数值的上限。所允许的值必须小于或等于此值。
+- [maxExclusive](maxExclusive.md) 定义数值的开区间上限。
+- [maxInclusive](maxInclusive.md) 定义数值的闭区间上限。
 minExclusive定义数值的下限。所允许的值必需大于此值。
 minInclusive定义数值的下限。所允许的值必需大于或等于此值。
 totalDigits定义所允许的阿拉伯数字的精确位数。必须大于0。
