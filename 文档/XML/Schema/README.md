@@ -51,11 +51,13 @@ xsi:schemaLocation="<namespace> <schema>..."
 ##### 模式限定
 - [enumeration](enumeration.md) 定义可接受值的一个列表。
 - [whiteSpace](whiteSpace.md) 定义空白字符的处理方式。
-pattern定义可接受的字符的精确序列。
-顺序指示器
-all规定子元素能够以任意顺序出现，每个子元素可出现零次或一次。
-choice仅允许在 声明中包含一个元素出现在包含元素中。
-sequence要求子元素必须按顺序出现。每个子元素可出现 0 到任意次数。
+- [pattern](pattern.md) 定义可接受的字符的精确序列。
+
+##### 顺序指示器
+- all 规定子元素能够以任意顺序出现，每个子元素可出现零次或一次。
+- choice 仅允许在声明中包含一个元素出现在包含元素中。
+- [sequence](sequence.md) 要求子元素必须按顺序出现。每个子元素可出现0到任意次数。
+
 组指示器
 group定义在复杂类型定义中使用的元素组。
 attributeGroup定义在复杂类型定义中使用的属性组。
