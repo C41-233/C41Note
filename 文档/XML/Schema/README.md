@@ -32,10 +32,11 @@ xsi:schemaLocation="<namespace> <schema>..."
 - redefine 重新定义从外部架构文件中获取的简单和复杂类型、组和属性组。
 - [restriction](restriction.md) 定义对simpleType、simpleContent或complexContent的约束。
 - [simpleContent](simpleContent.md) 包含对complexType元素的扩展或限制且不包含任何元素。
-simpleType定义一个简单类型，规定约束以及关于属性或仅含文本的元素的值的信息。
-union定义多个 simpleType 定义的集合。
-数值限定
-fractionDigits定义所允许的最大的小数位数。必须大于等于0。
+- [simpleType](simpleType.md) 定义一个简单类型，规定约束以及关于属性或仅含文本的元素的值的信息。
+- union 定义多个simpleType定义的集合。
+
+##### 数值限定
+- [fractionDigits](fractionDigits.md) 定义所允许的最大的小数位数。
 maxExclusive定义数值的上限。所允许的值必须小于此值。
 maxInclusive定义数值的上限。所允许的值必须小于或等于此值。
 minExclusive定义数值的下限。所允许的值必需大于此值。
