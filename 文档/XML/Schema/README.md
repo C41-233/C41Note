@@ -41,7 +41,7 @@ xsi:schemaLocation="<namespace> <schema>..."
 - [maxInclusive](maxInclusive.md) 定义数值的闭区间上限。
 - [minExclusive](minExclusive.md) 定义数值的开区间下限。
 - [minInclusive](minInclusive.md) 定义数值的闭区间下限。
-totalDigits定义所允许的阿拉伯数字的精确位数。必须大于0。
+- [totalDigits](totalDigits.md) 定义所允许的阿拉伯数字的精确位数。
 长度限定
 length定义所允许的字符或者列表项目的精确数目。必须大于或等于0。
 maxLength定义所允许的字符或者列表项目的最大数目。必须大于或等于0。
