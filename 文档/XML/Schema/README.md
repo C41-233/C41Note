@@ -58,17 +58,18 @@ xsi:schemaLocation="<namespace> <schema>..."
 - choice 仅允许在声明中包含一个元素出现在包含元素中。
 - [sequence](sequence.md) 要求子元素必须按顺序出现。每个子元素可出现0到任意次数。
 
-组指示器
-group定义在复杂类型定义中使用的元素组。
-attributeGroup定义在复杂类型定义中使用的属性组。
-其它
-annotationannotation 元素是一个顶层元素，规定 schema 的注释。
-any使创作者可以通过未被 schema 规定的元素来扩展 XML 文档。
-anyAttribute使创作者可以通过未被 schema 规定的属性来扩展 XML 文档。
-appInfo规定annotation元素中应用程序要使用的信息。
-documentation定义schema中的文本注释。
-field规定 XPath 表达式，该表达式规定用于定义标识约束的值。
-import向一个文档添加带有不同目标命名空间的多个 schema。
-include向一个文档添加带有相同目标命名空间的多个 schema。
-notation描述XML文档中非XML数据的格式。
-selector指定XPath表达式，该表达式为标识约束选择一组元素。
+##### 组指示器
+- group 定义在复杂类型定义中使用的元素组。
+- attributeGroup 定义在复杂类型定义中使用的属性组。
+
+##### 其它
+- annotationannotation 元素是一个顶层元素，规定schema的注释。
+- any 使创作者可以通过未被schema规定的元素来扩展 XML 文档。
+- anyAttribute 使创作者可以通过未被schema规定的属性来扩展 XML 文档。
+- appInfo 规定annotation元素中应用程序要使用的信息。
+- documentation 定义schema中的文本注释。
+- field 规定XPath表达式，该表达式规定用于定义标识约束的值。
+- import 向一个文档添加带有不同目标命名空间的多个schema。
+- include 向一个文档添加带有相同目标命名空间的多个schema。
+- notation 描述XML文档中非XML数据的格式。
+- selector 指定XPath表达式，该表达式为标识约束选择一组元素。
