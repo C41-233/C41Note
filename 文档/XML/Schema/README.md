@@ -47,9 +47,10 @@ xsi:schemaLocation="<namespace> <schema>..."
 - [length](length.md) 定义所允许的字符或者列表项目的精确数目。
 - [maxLength](maxLength.md) 定义所允许的字符或者列表项目的最大数目。
 - [minLength](minLength.md) 定义所允许的字符或者列表项目的最小数目。
-模式限定
-enumeration定义可接受值的一个列表
-whiteSpace定义空白字符（换行、回车、空格以及制表符）的处理方式。
+
+##### 模式限定
+- [enumeration](enumeration.md) 定义可接受值的一个列表。
+- [whiteSpace](whiteSpace.md) 定义空白字符的处理方式。
 pattern定义可接受的字符的精确序列。
 顺序指示器
 all规定子元素能够以任意顺序出现，每个子元素可出现零次或一次。
