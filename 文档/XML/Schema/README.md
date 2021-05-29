@@ -42,10 +42,11 @@ xsi:schemaLocation="<namespace> <schema>..."
 - [minExclusive](minExclusive.md) 定义数值的开区间下限。
 - [minInclusive](minInclusive.md) 定义数值的闭区间下限。
 - [totalDigits](totalDigits.md) 定义所允许的阿拉伯数字的精确位数。
-长度限定
-length定义所允许的字符或者列表项目的精确数目。必须大于或等于0。
-maxLength定义所允许的字符或者列表项目的最大数目。必须大于或等于0。
-minLength定义所允许的字符或者列表项目的最小数目。必须大于或等于0。
+
+##### 长度限定
+- [length](length.md) 定义所允许的字符或者列表项目的精确数目。
+- [maxLength](maxLength.md) 定义所允许的字符或者列表项目的最大数目。
+- [minLength](minLength.md) 定义所允许的字符或者列表项目的最小数目。
 模式限定
 enumeration定义可接受值的一个列表
 whiteSpace定义空白字符（换行、回车、空格以及制表符）的处理方式。
