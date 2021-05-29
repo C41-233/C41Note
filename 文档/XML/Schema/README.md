@@ -27,7 +27,7 @@ xsi:schemaLocation="<namespace> <schema>..."
 
 - [complexContent](complexContent.md) 定义对复杂类型（包含混合内容或仅包含元素）的扩展或限制。
 - [complexType](complexType.md) 定义复杂类型。
-extension扩展已有的 simpleType 或 complexType 元素。
+- [extension](extension.md) 扩展已有的simpleType或complexType元素。
 list把简单类型定义为指定数据类型的值的一个列表。
 redefine重新定义从外部架构文件中获取的简单和复杂类型、组和属性组。
 restriction定义对 simpleType、simpleContent 或 complexContent 的约束。
