@@ -85,10 +85,92 @@ Array Array.prototype.concat(object/Array... arr)
 ```
 boolean Array.prototype.every(Function test, object self)
 ```
+检测是否每个元素都满足条件。
 
-test定义为：
+- test 测试函数。
 ```
-boolean Function(object element, number index, Array self)
+boolean function(object element, number index, object self)
+```
+
+- self 传递给测试函数的self参数。
+
+---
+##### fill
+```
+Array Array.prototype.fill(object value)
+Array Array.prototype.fill(object value, number start)
+Array Array.prototype.fill(object value, number start, number end)
+```
+---
+
+##### filter
+```
+Array Array.prototype.filter(Function test)
+Array Array.prototype.filter(Function test, object self)
+```
+
+返回符合条件元素的新数组。
+
+- test 测试函数。
+```
+boolean function(object element, number index, object self)
+```
+
+- self 传递给测试函数的self参数。
+
+---
+
+##### find
+```
+object Array.prototype.find(Function test)
+object Array.prototype.find(Function test, object self)
+```
+
+```
+boolean function(object element, number index, object self)
+```
+
+---
+##### findIndex
+```
+number Array.prototype.findIndex(Function test)
+number Array.prototype.findIndex(Function test, object self)
+```
+
+```
+boolean function(object element, number index, object self)
+```
+
+---
+##### flat
+```
+Array Array.prototype.flat()
+Array Array.prototype.flat(number depth)
+```
+---
+##### flatMap
+```
+Array Array.prototype.flatMap(Function map)
+Array Array.prototype.flatMap(Function map, object self)
+```
+
+```
+object function(object element)
+object function(object element, number index)
+object function(object element, number index, object self)
+```
+
+---
+##### forEach
+```
+undefined Array.prototype.forEach(Function action)
+undefined Array.prototype.forEach(Function action, object self)
+```
+
+```
+undefined function(object element)
+undefined function(object element, number index)
+undefined function(object element, number index, object self)
 ```
 
 ---
@@ -114,6 +196,20 @@ string Array.prototype.join(string separator)
 数组中的所有元素合并成字符串。
 ---
 
+##### includes
+```
+boolean Array.prototype.includes(object value)
+boolean Array.prototype.includes(object value, number from)
+```
+
+---
+##### indexOf
+```
+number Array.prototype.indexOf(object value)
+number Array.prototype.indexOf(object value, number from)
+```
+
+---
 ##### of
 
 ```
