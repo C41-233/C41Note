@@ -71,23 +71,59 @@ Array对象可以通过`[value,value...]`语法构造。
 ---
 ##### concat
 ```
-Array concat(object/Array... arr)
+Array Array.prototype.concat(object/Array... arr)
 ```
 合并多个数组。
+---
+##### entries
+```
+<iterator> Array.prototype.entries()
+```
+---
+
+##### every
+```
+boolean Array.prototype.every(Function test, object self)
+```
+
+test定义为：
+```
+boolean Function(object element, number index, Array self)
+```
+
+---
+##### from
+```
+Array Array.from(<array-like> values)
+Array Array.from(<array-like> values, Function map)
+Array Array.from(<array-like> values, Function map, object self)
+```
+---
+##### isArray
+```
+boolean Array.isArray(obj)
+```
 
 ---
 ##### join	
 ```
-string join()	
-string join(string separator)	
+string Array.prototype.join()	
+string Array.prototype.join(string separator)	
 ```
 
 数组中的所有元素合并成字符串。
+---
+
+##### of
+
+```
+Array Array.of(object values...)
+```
 
 ---
 ##### pop	
 ```
-object pop()	
+object Array.prototype.pop()	
 ```
 
 删除并返回数组的最后一个元素。
@@ -97,7 +133,7 @@ object pop()
 ---
 ##### push	
 ```
-number push(object item...)	
+number Array.prototype.push(object item...)	
 ```
 
 向数组的末尾添加元素，返回新的数组长度。
@@ -105,7 +141,7 @@ number push(object item...)
 ---
 ##### reverse	
 ```
-Array reverse()	
+Array Array.prototype.reverse()	
 ```
 
 颠倒数组中元素的顺序，返回数组本身。该函数会修改数组本身。
@@ -113,7 +149,7 @@ Array reverse()
 ---
 ##### shift	
 ```
-object shift()
+object Array.prototype.shift()
 ```	
 
 删除数组的第一个元素并返回该元素。
@@ -121,9 +157,9 @@ object shift()
 ---
 ##### slice
 ```
-Array slice()
-Array slice(number begin)
-Array slice(number bgein, number end)
+Array Array.prototype.slice()
+Array Array.prototype.slice(number begin)
+Array Array.prototype.slice(number bgein, number end)
 ```
 
 从数组中返回子数组。
@@ -137,7 +173,7 @@ end表示终止下标（不包括），负数表示倒数。例如，`slice(-3, 
 ---
 ##### sort	
 ```
-Array sort()
+Array Array.prototype.sort()
 ```
 	
 对数组的元素进行排序。会修改原数组。
@@ -145,8 +181,8 @@ Array sort()
 ---
 ##### splice
 ```
-Array splice(number start, number deleteCount)
-Array splice(number start, number deleteCount, object items...)
+Array Array.prototype.splice(number start, number deleteCount)
+Array Array.prototype.splice(number start, number deleteCount, object items...)
 ```
 
 删除、替换、添加数组的元素，以数组的形式返回被修改的元素。
@@ -161,7 +197,7 @@ splice从start开始删除deleteCount个元素，随后在start的位置依次�
 
 ##### unshift	
 ```
-number unshift(object items...)	
+number Array.prototype.unshift(object items...)	
 ```
 
 向数组的开头添加元素，并返回新的长度。
