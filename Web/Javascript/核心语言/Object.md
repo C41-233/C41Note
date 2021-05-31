@@ -15,7 +15,10 @@ Object对象可以通过`{key:value, key:value...}`的形式构造。
 
 | 函数 | 描述 |
 |---|---|
+| assign | 将属性从一个对象复制到另一个对象 |
+| defineProperties | 配置对的多个属性 |
 | defineProperty | 配置对象的属性 |
+| entries | 返回对象的可枚举属性 |
 | getOwnPropertyNames | 获取对象所有的属性 |
 | getPrototypeOf | 	获取对象原型 |
 | preventExtensions | 使对象不可扩展 |
@@ -44,13 +47,29 @@ Object()
 new Object()
 ```
 
+---
+##### assign
+```
+object Object.assign(object target, object sources...)
+```
+
+将一个或多个对象sources的所有可枚举属性（包括String属性和Symbol属性）复制到目标对象target中，并返回target。相同名称的属性按照参数顺序从右向左覆盖。
+
 --- 
 ##### create	
 ```
-object Object.create(object prototype)
+Object Object.create(object prototype)
 ```
 
 从原型创建对象。
+
+---
+##### entries
+```
+<iterator> Object.entries(object obj)
+```
+
+返回对象自身的可枚举属性的键值对。
 
 ---
 ##### defineProperty	
