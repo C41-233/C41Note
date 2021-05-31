@@ -33,6 +33,9 @@ Object对象可以通过`{key:value, key:value...}`的形式构造。
 |---|---|
 | hasOwnProperty | 判断对象是否有某个特定的属性 |
 | isPrototypeOf | 判断该对象是否为另一个对象的原型 |
+| propertyIsEnumerable | 判断指定的属性是否可枚举 |
+| toString | 返回对象的字符串表示 |
+| valueOf | 返回最适合该对象的基础类型值 |
 
 ## 构造函数
 
@@ -104,9 +107,34 @@ boolean Object.prototype.isPrototypeOf(object object)
 判断该对象是否为另一个对象的原型。
 
 ---
+
+##### propertyIsEnumerable	
+```
+boolean Object.prototype.propertyIsEnumerable(string property)	
+boolean Object.prototype.propertyIsEnumerable(number property)	
+```
+
+判断给定的属性是否可以枚举。
+
+---
 ##### preventExtensions	
 ```
 undefined Object.preventExtensions(object obj)
 ```
 
 使对象不可扩展，永远不能再添加新的属性，但属性仍然可能被删除。
+
+---
+##### toString
+```
+string Object.prototype.toString()
+```
+
+---
+##### valueOf
+```
+object Object.prototype.valueOf()
+```
+
+返回最适合该对象的基础类型值。
+
