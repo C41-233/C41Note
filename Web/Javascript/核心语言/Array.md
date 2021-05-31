@@ -261,6 +261,28 @@ number Array.prototype.push(object item...)
 向数组的末尾添加元素，返回新的数组长度。
 
 ---
+##### reduce
+```
+object Array.prototype.reduce(Function action)
+object Array.prototype.reduce(Function action, object initialValue)
+```
+
+```
+object function(object accumulator, object currentValue, number index, Array array)
+```
+
+---
+##### reduceRight
+```
+object Array.prototype.reduceRight(Function action)
+object Array.prototype.reduceRight(Function action, object initialValue)
+```
+
+```
+object function(object accumulator, object currentValue, number index, Array array)
+```
+
+---
 ##### reverse	
 ```
 Array Array.prototype.reverse()	
@@ -330,3 +352,11 @@ number Array.prototype.unshift(object items...)
 ```
 
 向数组的开头添加元素，并返回新的长度。
+
+---
+
+##### values
+
+```
+<iterator> Array.prototype.values()
+```
