@@ -83,13 +83,13 @@ Array Array.prototype.concat(object/Array... arr)
 
 ##### every
 ```
-boolean Array.prototype.every(Function test, object self)
+boolean Array.prototype.every(Function test, object this)
 ```
 检测是否每个元素都满足条件。
 
 - test 测试函数。
 ```
-boolean function(object element, number index, object self)
+boolean function(object element, number index, Array array)
 ```
 
 - self 传递给测试函数的self参数。
@@ -106,14 +106,14 @@ Array Array.prototype.fill(object value, number start, number end)
 ##### filter
 ```
 Array Array.prototype.filter(Function test)
-Array Array.prototype.filter(Function test, object self)
+Array Array.prototype.filter(Function test, object this)
 ```
 
 返回符合条件元素的新数组。
 
 - test 测试函数。
 ```
-boolean function(object element, number index, object self)
+boolean function(object element, number index, Array array)
 ```
 
 - self 传递给测试函数的self参数。
@@ -123,22 +123,22 @@ boolean function(object element, number index, object self)
 ##### find
 ```
 object Array.prototype.find(Function test)
-object Array.prototype.find(Function test, object self)
+object Array.prototype.find(Function test, object this)
 ```
 
 ```
-boolean function(object element, number index, object self)
+boolean function(object element, number index, Array array)
 ```
 
 ---
 ##### findIndex
 ```
 number Array.prototype.findIndex(Function test)
-number Array.prototype.findIndex(Function test, object self)
+number Array.prototype.findIndex(Function test, object this)
 ```
 
 ```
-boolean function(object element, number index, object self)
+boolean function(object element, number index, Array self)
 ```
 
 ---
@@ -151,26 +151,26 @@ Array Array.prototype.flat(number depth)
 ##### flatMap
 ```
 Array Array.prototype.flatMap(Function map)
-Array Array.prototype.flatMap(Function map, object self)
+Array Array.prototype.flatMap(Function map, object this)
 ```
 
 ```
 object function(object element)
 object function(object element, number index)
-object function(object element, number index, object self)
+object function(object element, number index, Array array)
 ```
 
 ---
 ##### forEach
 ```
 undefined Array.prototype.forEach(Function action)
-undefined Array.prototype.forEach(Function action, object self)
+undefined Array.prototype.forEach(Function action, object this)
 ```
 
 ```
 undefined function(object element)
 undefined function(object element, number index)
-undefined function(object element, number index, object self)
+undefined function(object element, number index, Array array)
 ```
 
 ---
@@ -178,22 +178,13 @@ undefined function(object element, number index, object self)
 ```
 Array Array.from(<array-like> values)
 Array Array.from(<array-like> values, Function map)
-Array Array.from(<array-like> values, Function map, object self)
+Array Array.from(<array-like> values, Function map, object this)
 ```
 ---
 ##### isArray
 ```
 boolean Array.isArray(obj)
 ```
-
----
-##### join	
-```
-string Array.prototype.join()	
-string Array.prototype.join(string separator)	
-```
-
-数组中的所有元素合并成字符串。
 
 ---
 
@@ -208,6 +199,40 @@ boolean Array.prototype.includes(object value, number from)
 ```
 number Array.prototype.indexOf(object value)
 number Array.prototype.indexOf(object value, number from)
+```
+---
+##### join	
+```
+string Array.prototype.join()	
+string Array.prototype.join(string separator)	
+```
+
+数组中的所有元素合并成字符串。
+
+---
+##### keys
+```
+<iterator> Array.prototype.keys()
+```
+
+---
+##### lastIndexOf
+```
+number Array.prototype.lastIndexOf(object value)
+number Array.prototype.lastIndexOf(object value, number from)
+```
+---
+##### map
+
+```
+Array Array.prototype.map(Function map)
+Array Array.prototype.map(Function map, object this)
+```
+
+```
+object function(object element)
+object function(object element, number index)
+object function(object element, number index, Array array)
 ```
 
 ---
