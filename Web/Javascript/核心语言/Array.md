@@ -194,6 +194,7 @@ string Array.prototype.join(string separator)
 ```
 
 数组中的所有元素合并成字符串。
+
 ---
 
 ##### includes
@@ -260,9 +261,13 @@ Array Array.prototype.slice(number bgein, number end)
 
 从数组中返回子数组。
 
-begin表示起始下标，负数表示倒数。例如，`slice(-2)`表示返回倒数第二个元素开始的子数组。
+- begin 起始下标，负数表示倒数。
 
-end表示终止下标（不包括），负数表示倒数。例如，`slice(-3, -1)`表示返回倒数第三个元素到倒数第一个元素（不包括）的子数组。
+例如，`slice(-2)`表示返回倒数第二个元素开始的子数组。
+
+- end 终止下标（不包括），负数表示倒数。
+
+例如，`slice(-3, -1)`表示返回倒数第三个元素到倒数第一个元素（不包括）的子数组。
 
 如果省略begin和end，则返回原始数组。
 
@@ -285,7 +290,10 @@ Array Array.prototype.splice(number start, number deleteCount, object items...)
 
 splice从start开始删除deleteCount个元素，随后在start的位置依次插入items。
 
-- start 修改开始的位置。超出数组长度则从数组末尾开始添加内容；负数表示倒数；负数的绝对值大于数组长度，则表示0。
+- start 修改开始的位置。
+
+超出数组长度则从数组末尾开始添加内容；负数表示倒数；负数的绝对值大于数组长度，则表示0。
+
 - deleteCount 要删除的数量，0表示不删除元素。
 - items 要添加的元素。
 
