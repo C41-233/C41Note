@@ -15,6 +15,8 @@ Object对象可以通过`{key:value, key:value...}`的形式构造。
 
 | 函数 | 描述 |
 |---|---|
+| defineProperty | 配置对象的属性 |
+| getOwnPropertyNames | 获取对象所有的属性 |
 
 ## 原型属性
 
@@ -51,3 +53,12 @@ object defineProperty(object obj, string attr, object config)
 | writable | boolean | 是否可修改 |
 | get | function()->object | getter函数 |
 | set | function(object value) | setter函数 |
+
+---
+
+##### getOwnPropertyNames	
+```
+Array getOwnPropertyNames(object obj)
+```
+
+获取对象的所有属性名称，包括不可枚举的属性，但不包括Symbol属性。
