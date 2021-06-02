@@ -1,32 +1,14 @@
 (function(global){
 
-let queue = [];
-
-function enqueue(promise){
-	queue.push(promise);
-	if(queue.length === 1){
-		next(promise);
-	}
-	
-	function next(promise){
-		promise(() => move());
-	}
-	
-	function move(){
-		queue.shift();
-		if(queue.length > 0){
-			let node = queue[0];
-			next(node);
-		}
-	}
-}
+let waited = [];
 
 function pushNodeAsync(node){
-	enqueue(done => {
-		node.onload = () => done();
-		node.onerror = () => done();
-		pushNode(node);
+	let promise = new Promise((resolve, reject) => {
+		node.onload = () => resolve();
+		node.onerror = e => reject(e);
 	});
+	waited.push(promise);
+	return promise;
 }
 
 function pushNode(node){
@@ -48,7 +30,7 @@ Common.getBaseDirectory = function(){
 
 const RootDirectory = Common.getBaseDirectory();
 
-Common.import = function(path){
+Common.import = async function(path, deps){
 	let src;
 	if(path.startsWith('/')){
 		src = RootDirectory + path;
@@ -78,32 +60,38 @@ Common.import = function(path){
 		node.src = src;
 	}
 	
-	pushNodeAsync(node);
+	return await pushNodeAsync(node, deps);
 }
 
 global.$ = function(action){
-	enqueue(done => {
-		action();
-		done();
-	});
+	let len = waited.length;
+	let promise = (async () => {
+		for(let i=0; i<len; i++){
+			await waited[i];
+		}
+		await action();
+	})();
+	waited.push(promise);
+	return promise;
 }
 
 })(window);
 
-
-//jquery
-Common.import("/lib/thirdparty/jquery/jquery.min.js");
-
-//bootstrap
-Common.import("/lib/thirdparty/bootstrap-3.3.7-dist/css/bootstrap.min.css");
-Common.import("/lib/thirdparty/bootstrap-3.3.7-dist/js/bootstrap.min.js");
-
-//vue
-Common.import("/lib/thirdparty/vue/vue.min.js");
-
-//element-ui
-Common.import("/lib/thirdparty/element-ui/index.css");
-Common.import("/lib/thirdparty/element-ui/index.js");
-
-
-Common.import("/lib/array.js");
+{
+	//jquery
+	let jq = Common.import("/lib/thirdparty/jquery/jquery.min.js");
+	
+	//bootstrap
+	Common.import("/lib/thirdparty/bootstrap-3.3.7-dist/css/bootstrap.min.css");
+	Common.import("/lib/thirdparty/bootstrap-3.3.7-dist/js/bootstrap.min.js", [jq]);
+	
+	//vue
+	let vue = Common.import("/lib/thirdparty/vue/vue.min.js");
+	
+	//element-ui
+	Common.import("/lib/thirdparty/element-ui/index.css");
+	Common.import("/lib/thirdparty/element-ui/index.js", [vue]);
+	
+	Common.import("/lib/array.js");
+	Common.import("/lib/url.js");
+}
