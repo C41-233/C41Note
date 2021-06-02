@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<title>English</title>
+<script src="../common.js"></script>
+<script src="index.js"></script>
+</head>
+
+<body>
+    <main>
+        <template>
+            <el-menu 
+                :default-active="component" 
+                mode="horizontal" 
+            >
+                <el-menu-item index="基本单词">基本单词</el-menu-item>
+                <el-menu-item index="动意词组">动意词组</el-menu-item>
+                <el-menu-item index="介副词组">介副词组</el-menu-item>
+                <el-menu-item index="名词词组">名词词组</el-menu-item>
+                <el-menu-item index="俗语谚语">俗语谚语</el-menu-item>
+                <el-submenu index="专项单词" :show-timeout="0" :hide-timeout="0">
+                  <template slot="title">专项单词</template>
+                  <el-menu-item index="地区">地区</el-menu-item>
+                  <el-menu-item index="节日">节日</el-menu-item>
+                  <el-menu-item index="人名">人名</el-menu-item>
+                  <el-menu-item index="物种">物种</el-menu-item>
+                  <el-menu-item index="食物">食物</el-menu-item>
+                </el-submenu>
+                <el-submenu index="专业英语" :show-timeout="0" :hide-timeout="0">
+                  <template slot="title">专业英语</template>
+                  <el-menu-item index="天文">天文</el-menu-item>
+                  <el-menu-item index="物理">物理</el-menu-item>
+                </el-submenu>
+              </el-menu>
+        </template>
+    </main>
+</body>
+
+</html>
