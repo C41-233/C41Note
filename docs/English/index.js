@@ -1,18 +1,22 @@
+Common.import("/lib/url.js");
+
 $(function(){
+
+let defaultAction = Common.URL.getParameter("action");
+if(!defaultAction){
+    defaultAction = "基本单词";
+}
 
 let app = new Vue({
     el: "main",
     data(){
         return {
-            component: "基本单词"
+            defaultAction: defaultAction
         }
     },
-    watch:{
-        component: {
-            immediate: true,
-            handler(val){
-                console.error(val);
-            }
+    methods: {
+        Select(value){
+            Common.URL.setParameter("action", value);
         }
     }
 });
