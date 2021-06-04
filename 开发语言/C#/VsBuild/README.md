@@ -31,8 +31,6 @@
 
 csproj文件的格式为XML，根元素是Project。
 
----
-
 ## PropertyGroup
 
 
@@ -54,28 +52,8 @@ PropertyGroup元素定义Project的属性，Project可以包含多个具有不�
 | [OutputType](OutputType.md) | 输出文件的格式 | `Exe` |
 | [Platforms](Platforms.md) | 指定目标平台 | `AnyCPU;x64` |
 | SatelliteResourceLanguages | 指定生成的多语言文件 | `en-US` |
-
----
-
-##### TargetFramework
-
-指定构建使用的SDK版本，例如`netstandard2.0`、`net5.0`、`netcoreapp3.1`。
-
-``` XML
-<TargetFramework>netstandard2.0</TargetFramework>
-```
-
----
-
-##### TreatWarningsAsErrors
-
-是否将warning视为error。
-
-``` XML
-<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-```
-
----
+| [TargetFramework](TargetFramework.md) | 指定构建使用的SDK版本 | `netstandard2.0` |
+| TreatWarningsAsErrors | 是否将warning视为error | `true` |
 
 ## 宏
 
