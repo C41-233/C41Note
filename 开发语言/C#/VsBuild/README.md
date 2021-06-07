@@ -56,6 +56,7 @@ PropertyGroup元素定义Project的属性，Project可以包含多个具有不�
 | TreatWarningsAsErrors | 是否将warning视为error | `true` |
 | DebugType | 编译调试级别<br/>`full`、`pdbonly`、`portable`、`embedded`、`none` | `full` |
 | DebugSymbols | 是否生成PDB符号文件 | `true` |
+| DefineConstants | 定义条件编译宏 | `DEBUG;TRACE` |
 
 ## 宏
 
