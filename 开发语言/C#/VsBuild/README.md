@@ -39,7 +39,11 @@ csproj中的宏以`$(...)`的形式引用。
 |---|---|
 | $(Configuration) | 当前的配置 |
 | $(Platform) | 当前的平台 |
-
+| $(ProjectDir) | csproj目录的路径 |
+| $(OS) | 当前操作系统，`'Unix'`、`'Windows'` |
+| $(OutDir) | 输出目录的路径 |
+| $(TargetName) | 输出文件的名称 |
+| $(TargetPath) | 输出文件的路径 |
 
 ## PropertyGroup
 
