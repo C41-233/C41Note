@@ -22,6 +22,9 @@ Object对象可以通过`{key:value, key:value...}`的形式构造。
 | getOwnPropertyNames | 获取对象所有的属性 |
 | getPrototypeOf | 	获取对象原型 |
 | preventExtensions | 使对象不可扩展 |
+| seal | 封闭对象 |
+| setPrototypeOf | 设置对的原型 |
+| values | 返回一个给定对象自身的所有可枚举属性值的数组 |
 
 ## 原型属性
 
@@ -38,6 +41,7 @@ Object对象可以通过`{key:value, key:value...}`的形式构造。
 | isPrototypeOf | 判断该对象是否为另一个对象的原型 |
 | propertyIsEnumerable | 判断指定的属性是否可枚举 |
 | toString | 返回对象的字符串表示 |
+| toLocaleString | 返回对象特定语言下的字符串表示 |
 | valueOf | 返回最适合该对象的基础类型值 |
 
 ## 构造函数
@@ -144,6 +148,22 @@ undefined Object.preventExtensions(object obj)
 使对象不可扩展，永远不能再添加新的属性，但属性仍然可能被删除。
 
 ---
+##### seal
+```
+undefined Object.seal(object obj)
+```
+
+封闭一个对象，阻止添加新属性并将所有现有属性标记为不可配置，但可写属性的值仍然可以修改。
+
+---
+
+##### setPrototypeOf
+```
+undefined Object.setPrototypeOf(object obj, object prototype)
+```
+
+---
+
 ##### toString
 ```
 string Object.prototype.toString()
@@ -157,3 +177,8 @@ object Object.prototype.valueOf()
 
 返回最适合该对象的基础类型值。
 
+---
+##### values
+```
+Array Object.values(object obj)
+```
