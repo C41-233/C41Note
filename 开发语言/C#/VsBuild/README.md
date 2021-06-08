@@ -93,9 +93,31 @@ ImportGroup的子元素是一类Import元素。
 | [ProjectReference](ProjectReference.md) | 指定要引用的另一个项目 |
 | [Reference](Reference.md) | 指定要引用的库文件 |
 
+## Target
+
+定义构建目标。
+
+| 属性 | 描述 |
+|---|---|
+| AfterTargets | 要晚于执行的目标，逗号分隔 |
+| BeforeTargets | 要早于执行的目标，逗号分隔 |
+| Condition | 条件 |
+| Name | （必须）构建目标的名称 |
+
+Target的子元素是一类Task元素。
+
+| Task | 描述 |
+|---|---|
+| [Exec](Exec.md) | 执行命令 |
+
+``` XML
+<Target Name="Name" AfterTargets="Target1;Target2">
+    <Task1 />
+    <Task2 />
+</Target>
+```
 ## 其他元素
 
 | 元素 | 描述 |
 |---|---|
 | [Import](Import.md) | 导入另一个csproj文件 |
-| [Target](Target.md) | 构建目标 |
