@@ -169,6 +169,10 @@ undefined Object.setPrototypeOf(object obj, object prototype)
 string Object.prototype.toString()
 ```
 
+返回对象的字符串表示。
+
+子类没有Override的情况下返回`[object Object]`。
+
 ---
 ##### valueOf
 ```
