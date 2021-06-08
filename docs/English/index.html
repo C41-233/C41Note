@@ -7,40 +7,45 @@
 </head>
 
 <body>
-    <main>
+    <main class="max-height">
         <template>
-            <el-menu 
-                :default-active="defaultAction"
-                mode="horizontal" 
-                @select="Select"
-            >
-                <el-menu-item index="基本单词">基本单词</el-menu-item>
-                <el-menu-item index="动意词组">动意词组</el-menu-item>
-                <el-menu-item index="介副词组">介副词组</el-menu-item>
-                <el-menu-item index="名词词组">名词词组</el-menu-item>
-                <el-menu-item index="俗语谚语">俗语谚语</el-menu-item>
-                <el-submenu index="专项单词" :show-timeout="0" :hide-timeout="0">
-                  <template slot="title">专项单词</template>
-                  <el-menu-item index="地区">地区</el-menu-item>
-                  <el-menu-item index="节日">节日</el-menu-item>
-                  <el-menu-item index="人名">人名</el-menu-item>
-                  <el-menu-item index="物种">物种</el-menu-item>
-                  <el-menu-item index="食物">食物</el-menu-item>
-                </el-submenu>
-                <el-submenu  index="专业英语" :show-timeout="0" :hide-timeout="0">
-                  <template slot="title">专业英语</template>
-                  <el-menu-item index="计算机">计算机</el-menu-item>
-                  <el-menu-item index="数学">数学</el-menu-item>
-                  <el-menu-item index="物理">物理</el-menu-item>
-                  <el-menu-item index="化学">化学</el-menu-item>
-                  <el-menu-item index="生物">生物</el-menu-item>
-                  <el-menu-item index="天文">天文</el-menu-item>
-                  <el-menu-item index="法律">法律</el-menu-item>
-                  <el-menu-item index="政史">政史</el-menu-item>
-                  <el-menu-item index="航空">航空</el-menu-item>
-                  <el-menu-item index="经济">经济</el-menu-item>
-                </el-submenu>
-              </el-menu>
+			<el-row style="height: 61px">
+				<el-menu 
+					:default-active="defaultAction"
+					mode="horizontal" 
+					@select="Select"
+				>
+					<el-menu-item index="基本单词">基本单词</el-menu-item>
+					<el-menu-item index="动意词组">动意词组</el-menu-item>
+					<el-menu-item index="介副词组">介副词组</el-menu-item>
+					<el-menu-item index="名词词组">名词词组</el-menu-item>
+					<el-menu-item index="俗语谚语">俗语谚语</el-menu-item>
+					<el-submenu index="专项单词" :show-timeout="0" :hide-timeout="0">
+						<template slot="title">专项单词</template>
+						<el-menu-item index="地区">地区</el-menu-item>
+						<el-menu-item index="节日">节日</el-menu-item>
+						<el-menu-item index="人名">人名</el-menu-item>
+						<el-menu-item index="物种">物种</el-menu-item>
+						<el-menu-item index="食物">食物</el-menu-item>
+					</el-submenu>
+					<el-submenu  index="专业英语" :show-timeout="0" :hide-timeout="0">
+						<template slot="title">专业英语</template>
+						<el-menu-item index="计算机">计算机</el-menu-item>
+						<el-menu-item index="数学">数学</el-menu-item>
+						<el-menu-item index="物理">物理</el-menu-item>
+						<el-menu-item index="化学">化学</el-menu-item>
+						<el-menu-item index="生物">生物</el-menu-item>
+						<el-menu-item index="天文">天文</el-menu-item>
+						<el-menu-item index="法律">法律</el-menu-item>
+						<el-menu-item index="政史">政史</el-menu-item>
+						<el-menu-item index="航空">航空</el-menu-item>
+						<el-menu-item index="经济">经济</el-menu-item>
+					</el-submenu>
+				</el-menu>
+			</el-row>
+			<el-row style="height: calc(100% - 61px);">
+				<word-base/>
+			</el-row>
         </template>
     </main>
 </body>

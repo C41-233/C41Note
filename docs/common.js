@@ -1,14 +1,29 @@
 (function(global){
 
-const waited = [];
+const Common = global.Common = {};
 
-function enqueue(action){
-	const promise = (async () => await action())();
-	waited.push(promise);
-	return promise;
+Common.http = {
+	get(url){
+		return new Promise((resolve, reject) => {
+			$.get(url, function(data){
+				resolve(data);
+			});
+		});
+	}
 }
 
-const Common = global.Common = {};
+Common.vue = function(name, vue){
+	let options = Object.assign({
+		template: $(`template[name="${name}"]`)[0]
+	}, vue);
+	return Vue.component(name, options);
+}
+
+Common.wait = function(time = 0){
+	return new Promise((resolve) => {
+		global.setTimeout(resolve, time);
+	});
+}
 
 Common.getBaseDirectory = function(){
 	const scriptNodes = document.querySelectorAll("script");
@@ -23,68 +38,83 @@ Common.getBaseDirectory = function(){
 
 const RootDirectory = Common.getBaseDirectory();
 
-Common.import = function(path, deps){
-	function pushNode(node){
-		document.head.insertBefore(node, document.head.lastElementChild);
-	}
+{
+	const waited = [];
 
-	function pushNodeAsync(node){
-		let promise = new Promise((resolve, reject) => {
-			node.onload = () => resolve();
-			node.onerror = e => reject(e);
-		});
-		pushNode(node);
+	function enqueue(name, action){
+		const promise = (async () => await action())();
+		promise.name = name;
+		waited.push(promise);
 		return promise;
 	}
 	
-	let src;
-	if(path.startsWith('/')){
-		src = RootDirectory + path;
-	}
-	else{
-		src = this.getBaseDirectory() + path;
-	}
-
-	return enqueue(async () =>{
-		if(deps){
-			for(let wait of deps){
-				await wait;
+	Common.import = function(path, deps){
+		function pushNode(node){
+			document.head.insertBefore(node, document.head.lastElementChild);
+		}
+	
+		function pushNodeAsync(node){
+			let promise = new Promise((resolve, reject) => {
+				node.onload = () => resolve();
+				node.onerror = e => reject(e);
+			});
+			pushNode(node);
+			return promise;
+		}
+		
+		let src;
+		if(path.startsWith('/')) {
+			src = RootDirectory + path;
+		}
+		else {
+			src = this.getBaseDirectory() + path;
+		}
+	
+		return enqueue(src, async () =>{
+			if(deps){
+				for(let wait of deps){
+					await wait;
+				}
 			}
+			let node;
+			//js
+			if(src.endsWith(".js")){
+				node = document.createElement("script");
+				node.src = src;
+				node.type = "text/javascript";
+			}
+			//css
+			else if(src.endsWith(".css")){
+				node = document.createElement("link");
+				node.href = src;
+				node.rel = "stylesheet";
+				node.type = "text/css";
+				//css不需要排队
+				return pushNode(node);
+			}
+			//vue
+			else if(src.endsWith(".vue")){
+				node = $(await Common.http.get(src));
+				$(document.head).append(node);
+				return;
+			}
+			else{
+				node = document.createElement("script");
+				node.src = src;
+			}
+			return await pushNodeAsync(node);
+		});
+	}
+	
+	global.$ = async function(action){
+		for(let wait of waited){
+			await wait;
 		}
-		let node;
-		//js
-		if(src.endsWith(".js")){
-			node = document.createElement("script");
-			node.src = src;
-			node.type = "text/javascript";
-		}
-		//css
-		else if(src.endsWith(".css")){
-			node = document.createElement("link");
-			node.href = src;
-			node.rel = "stylesheet";
-			node.type = "text/css";
-			//css不需要排队
-			return pushNode(node);
-		}
-		else{
-			node = document.createElement("script");
-			node.src = src;
-		}
-		return await pushNodeAsync(node, deps);
-	});
+		return await enqueue("<action>", async () => {
+			await action();
+		});
+	}
 }
-
-global.$ = function(action){
-	const len = waited.length;
-	return enqueue(async () => {
-		for(let i=0; i<len; i++){
-			await waited[i];
-		}
-		await action();
-	});
-}
-
 })(window);
 
 {
@@ -103,4 +133,6 @@ global.$ = function(action){
 	Common.import("/lib/thirdparty/element-ui/index.js", [vue]);
 	
 	Common.import("/lib/array.js");
+
+	Common.import("/lib/style/common.css");
 }
