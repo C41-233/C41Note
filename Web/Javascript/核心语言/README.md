@@ -8,7 +8,8 @@
 
 ##### 函数
 
-- [\<arguments\>](arguments.md) 参数数组
+- [\<arguments\>](arguments.md) 函数参数数组
+- [Function](Function.md) 函数
 
 ##### 集合
 
