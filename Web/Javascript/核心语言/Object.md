@@ -7,9 +7,9 @@ object对象的包装类型。
 Object对象可以通过`{key:value, key:value...}`的形式构造。
 
 ## 对象属性
-| 名称 | 类型 | 描述 | 属性 |
-|---|---|---|---|
-| length | number | 值为1 | - |
+| 名称 | 类型 | 描述 | writable | enumerable | configurable |
+|---|---|---|---|---|---|
+| length | number | 值为1 | - | - | - |
 
 ## 对象函数
 
@@ -28,10 +28,10 @@ Object对象可以通过`{key:value, key:value...}`的形式构造。
 
 ## 原型属性
 
-| 名称 | 类型 | 描述 | 属性 |
-|---|---|---|---|
-| constructor | Function | 对象的构造函数 |
-| prototype | Object | 对象的原型 |
+| 名称 | 类型 | 描述 | writable | enumerable | configurable |
+|---|---|---|---|---|---|
+| constructor | Function | 对象的构造函数 | - | - | - |
+| prototype | Object | 对象的原型 | - | - | - |
 
 ## 原型函数
 

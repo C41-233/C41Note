@@ -30,12 +30,12 @@ Array对象可以通过`[value,value...]`语法构造。
 
 ## 原型属性
 
-| 名称 | 类型 | 描述 | 属性 |
-|---|---|---|---|
-| length | number | 数组大小 | - |
-| @@iterator | \<iterator\> | 迭代器 | - |
-| @@species | Function | 构造函数 | - |
-| @@unscopable | Array | 被with语句排除的属性名称列表 | configurable |
+| 名称 | 类型 | 描述 |  writable | enumerable | configurable |
+|---|---|---|---|---|---|
+| length | number | 数组大小 | - | - | - |
+| @@iterator | \<iterator\> | 迭代器 | - | - | - |
+| @@species | Function | 构造函数 | - | - | - |
+| @@unscopable | Array | 被with语句排除的属性名称列表 | - | - | √ |
 
 ## 原型函数
 | 函数 | 描述 |

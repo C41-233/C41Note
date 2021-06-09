@@ -10,6 +10,19 @@
 
 [Object](Object.md) / Function
 
+## 原型属性
+
+| 名称 | 类型 | 描述 | writable | enumerable | configurable |
+|---|---|---|---|---|---|
+| length | number | 函数形参个数 | - | - | √ |
+| name | string | 函数名称 | - | - | √ |
+
+## 原型函数
+
+| 函数 | 描述 |
+|---|---|
+| toString | 获取函数源代码字符串 |
+
 ## 构造函数
 
 ```
