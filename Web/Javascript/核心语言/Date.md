@@ -32,6 +32,7 @@ Date对象用于处理日期和时间，基于Unix时间戳，单位为毫秒。
 | toLocaleTimeString | 返回地区相关的时间部分的字符串描述 |
 | toTimeString | 返回时间部分的字符串描述 |
 | toUTCString | 返回UTC日期时间的字符串描述 |
+| valueOf | 返回时间戳 |
 | @@toPrimitive | 转换到基本类似 |
 
 ##### Local日期时间
