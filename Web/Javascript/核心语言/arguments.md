@@ -1,4 +1,4 @@
-# \<arguments\>
+# @arguments
 
 Arguments对象是每个函数中的参数数组，绑定到对象`arguments`中。
 

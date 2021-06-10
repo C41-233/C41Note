@@ -33,7 +33,7 @@ Array对象可以通过`[value,value...]`语法构造。
 | 名称 | 类型 | 描述 |  writable | enumerable | configurable |
 |---|---|---|---|---|---|
 | length | number | 数组大小 | - | - | - |
-| @@iterator | \<iterator\> | 迭代器 | - | - | - |
+| @@iterator | @iterator | 迭代器 | - | - | - |
 | @@species | Function | 构造函数 | - | - | - |
 | @@unscopable | Array | 被with语句排除的属性名称列表 | - | - | √ |
 
@@ -77,7 +77,7 @@ Array Array.prototype.concat(object/Array... arr)
 ---
 ##### entries
 ```
-<iterator> Array.prototype.entries()
+@iterator Array.prototype.entries()
 ```
 ---
 
@@ -176,9 +176,9 @@ undefined function(object element, number index, Array array)
 ---
 ##### from
 ```
-Array Array.from(<array-like> values)
-Array Array.from(<array-like> values, Function map)
-Array Array.from(<array-like> values, Function map, object this)
+Array Array.from(@array values)
+Array Array.from(@array values, Function map)
+Array Array.from(@array values, Function map, object this)
 ```
 ---
 ##### isArray
@@ -212,7 +212,7 @@ string Array.prototype.join(string separator)
 ---
 ##### keys
 ```
-<iterator> Array.prototype.keys()
+@iterator Array.prototype.keys()
 ```
 
 ---
@@ -358,5 +358,5 @@ number Array.prototype.unshift(object items...)
 ##### values
 
 ```
-<iterator> Array.prototype.values()
+@iterator Array.prototype.values()
 ```

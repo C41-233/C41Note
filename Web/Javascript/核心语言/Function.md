@@ -21,6 +21,9 @@
 
 | 函数 | 描述 |
 |---|---|
+| apply | 调用函数，数组参数形式 |
+| bind | 生成一个新函数，绑定this和预置参数 |
+| call | 调用函数，不定参数形式 |
 | toString | 获取函数源代码字符串 |
 
 ## 构造函数
@@ -33,3 +36,27 @@ new Function(string params..., string body)
 
 - params 参数名称
 - body 函数体
+
+---
+
+##### apply
+
+```
+object Function.prototype.apply(object this, @array args)
+```
+
+---
+
+##### bind
+
+```
+Function Function.prototype.bind(object this, object args...)
+```
+
+---
+
+##### call
+
+```
+object Function.prototype.call(object this, object args...)
+```

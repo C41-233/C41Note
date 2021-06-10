@@ -1,4 +1,4 @@
-# \<global\>
+# @global
 
 全局对象依赖于宿主环境，在浏览器下为`window`，在nodejs中为`global`。
 

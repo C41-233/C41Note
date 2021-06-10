@@ -70,7 +70,7 @@ Object Object.create(object prototype)
 ---
 ##### entries
 ```
-<iterator> Object.entries(object obj)
+@iterator Object.entries(object obj)
 ```
 
 返回对象自身的可枚举属性的键值对。
