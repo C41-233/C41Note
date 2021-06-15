@@ -22,3 +22,34 @@ Number对象是原始数值number类型的包装对象。这种类型底层是IE
 | NaN | number | 非数字值 | - | - | - |
 | NEGATIVE_INFINITY | number | 负无穷大 | - | - | - |
 | POSITIVE_INFINITY | number | 正无穷大 | - | - | - |
+
+## 对象函数
+
+| 函数 | 描述 |
+|---|---|
+| isFinite | 是否是一个有限数 |
+| isInteger | 判断是否是一个整数 |
+| isNaN | 判断是否是NaN |
+| isSafeInteger | 判断是否是一个安全整数 |
+| parseFloat | 将字符串转换为浮点数 |
+| parseInt | 将字符串转换为整数 |
+
+## 原型函数
+
+| 函数 | 描述 |
+|---|---|
+| toExponential | 转换成指数计数法字符串 |
+| toFixed | 转换成定点小数字符串 |
+| toLocaleString | 转换成本地格式字符串 |
+| toPrecision | 转换成指定精度的字符串 |
+| toString | 转换字符串 |
+| valueOf | 返回number |
+
+## 构造函数
+
+```
+number Number(object size)
+new Number(object obj)
+```
+---
+

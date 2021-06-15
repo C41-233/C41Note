@@ -8,18 +8,6 @@ Array对象可以通过`[value,value...]`语法构造。
 
 [Object](Object.md) / Array
 
-## 构造函数
-
-```
-[new] Array(number size)
-```
-
-创建大小为size的数组，每个元素都为undefined。
-
-```
-[new] Array(object elements...)
-```
-
 ## 对象函数
 
 | 函数 | 描述 |
@@ -67,6 +55,18 @@ Array对象可以通过`[value,value...]`语法构造。
 | sort | 对数组排序 |
 | unshift | 向数组的开头添加元素 |
 | values | 返回数组每个值的迭代器 |
+
+## 构造函数
+
+```
+[new] Array(number size)
+```
+
+创建大小为size的数组，每个元素都为undefined。
+
+```
+[new] Array(object elements...)
+```
 
 ---
 ##### concat
