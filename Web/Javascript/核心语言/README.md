@@ -18,4 +18,5 @@
 ##### 其他
 
 - [Date](Date.md) 日期时间
+- [Math](Math.md) 数学库
 - [JSON](JSON.md) JSON
