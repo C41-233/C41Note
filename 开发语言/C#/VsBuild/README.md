@@ -85,6 +85,9 @@ PropertyGroup的子元素是一类Property元素。
 | 属性 | 描述 | 示例 |
 |---|---|---|
 | ApplicationIcon | 窗口图标 | `app.ico` |
+| ExtrasEnableWinFormsProjectSetup | 引用WinForms依赖 | `true` |
+| UseWindowsForms | 是否使用WinForms | `true` |
+| UseWPF | 是否使用WPF | `true` |
 
 ## ImportGroup
 
