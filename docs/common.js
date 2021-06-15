@@ -110,9 +110,7 @@ const RootDirectory = Common.getBaseDirectory();
 		for(let wait of waited){
 			await wait;
 		}
-		return await enqueue("<action>", async () => {
-			await action();
-		});
+		return await enqueue("<action>", async () => await action());
 	}
 }
 })(window);
