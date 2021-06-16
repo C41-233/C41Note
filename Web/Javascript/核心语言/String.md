@@ -44,6 +44,22 @@ String对象是基本类型string的包装。
 | padEnd | 填充右侧 |
 | padStart | 填充左侧 |
 | repeat | 重复字符串 |
+| replace | 替换一次 |
+| replaceAll | 替换全部 |
+| search | 正则搜索 |
+| slice | 提取子串 |
+| split | 分割字符串 |
+| startsWith | 判断是否以对应字符串开头 |
+| substring | 返回子串 |
+| toLocaleLowerCase | 转换为本地小写形式 |
+| toLocaleUpperCase | 转换为本地大写形式 |
+| toLowerCase | 转换为小写形式 |
+| toString | 返回基本类型字符串 |
+| toUpperCase | 转换为大写形式 |
+| trim | 删除两侧空白字符 |
+| trimRight | 删除右侧空白字符 |
+| trimStart | 删除右左侧空白字符 |
+| valueOf | 返回基本类型字符串 |
 
 ## 构造函数
 
@@ -195,3 +211,72 @@ string String.prototype.repeat(number count)
 ```
 
 将字符串重复count次。
+
+---
+
+##### replace
+
+```
+string String.prototype.replace(Regexp regexp, string newString)
+string String.prototype.replace(Regexp regexp, Function replacer)
+string String.prototype.replace(string subString, string newString)
+string String.prototype.replace(string subString, Function replacer)
+```
+
+---
+
+##### replaceAll
+
+```
+string String.prototype.replaceAll(Regexp regexp, string newString)
+string String.prototype.replaceAll(Regexp regexp, Function replacer)
+string String.prototype.replaceAll(string subString, string newString)
+string String.prototype.replaceAll(string subString, Function replacer)
+```
+
+---
+
+##### search
+
+```
+number String.prototype.search(Regexp regexp)
+```
+
+---
+
+##### slice
+
+```
+string String.prototype.slice(number begin)
+string String.prototype.slice(number begin, number end)
+```
+
+---
+
+##### split
+
+```
+Array<string> String.prototype.split(string separator)
+Array<string> String.prototype.split(string separator, number limit)
+Array<string> String.prototype.split(Regexp separator)
+Array<string> String.prototype.split(Regexp separator, number limit)
+```
+
+分割字符串。
+
+---
+
+##### startsWith
+
+```
+boolean String.prototype.startsWith(string search)
+```
+
+---
+
+##### substring
+
+```
+string String.prototype.substring(number begin)
+string String.prototype.substring(number begin, number end)
+```
