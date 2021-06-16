@@ -10,9 +10,6 @@
 - [Number](Number.md) 数值对象
 - [Object](Object.md) 基类对象
 
-##### 函数
-
-
 ##### 集合
 
 - [Array](Array.md) 数组
@@ -22,3 +19,4 @@
 - [Date](Date.md) 日期时间
 - [Math](Math.md) 数学库
 - [JSON](JSON.md) JSON
+- [RegExp](RegExp.md) 正则表达式

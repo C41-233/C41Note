@@ -24,12 +24,12 @@
             <template slot="prepend">/</template>
             <template slot="append">
                 <span>/</span>
-                <el-checkbox v-model="g" @change="Update">g</el-checkbox>
-                <el-checkbox v-model="i" @change="Update">i</el-checkbox>
-                <el-checkbox v-model="m" @change="Update">m</el-checkbox>
-                <el-checkbox v-model="s" @change="Update">s</el-checkbox>
-                <el-checkbox v-model="u" @change="Update">u</el-checkbox>
-                <el-checkbox v-model="y" @change="Update">y</el-checkbox>
+                <el-checkbox v-model="g" @change="Update" title="全局匹配">g</el-checkbox>
+                <el-checkbox v-model="i" @change="Update" title="大小写不敏感">i</el-checkbox>
+                <el-checkbox v-model="m" @change="Update" title="多行匹配">m</el-checkbox>
+                <el-checkbox v-model="s" @change="Update" title="允许.匹配换行符">s</el-checkbox>
+                <el-checkbox v-model="u" @change="Update" title="使用Unicode模式">u</el-checkbox>
+                <el-checkbox v-model="y" @change="Update" title="粘性匹配">y</el-checkbox>
             </template>
         </el-input>
     </el-row>
