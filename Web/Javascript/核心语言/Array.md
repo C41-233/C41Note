@@ -164,14 +164,14 @@ object function(object element, number index, Array array)
 ---
 ##### forEach
 ```
-undefined Array.prototype.forEach(Function action)
-undefined Array.prototype.forEach(Function action, object this)
+void Array.prototype.forEach(Function action)
+void Array.prototype.forEach(Function action, object this)
 ```
 
 ```
-undefined function(object element)
-undefined function(object element, number index)
-undefined function(object element, number index, Array array)
+void function(object element)
+void function(object element, number index)
+void function(object element, number index, Array array)
 ```
 
 ---

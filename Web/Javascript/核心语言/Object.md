@@ -142,7 +142,7 @@ boolean Object.prototype.propertyIsEnumerable(number property)
 ---
 ##### preventExtensions	
 ```
-undefined Object.preventExtensions(object obj)
+void Object.preventExtensions(object obj)
 ```
 
 使对象不可扩展，永远不能再添加新的属性，但属性仍然可能被删除。
@@ -150,7 +150,7 @@ undefined Object.preventExtensions(object obj)
 ---
 ##### seal
 ```
-undefined Object.seal(object obj)
+void Object.seal(object obj)
 ```
 
 封闭一个对象，阻止添加新属性并将所有现有属性标记为不可配置，但可写属性的值仍然可以修改。
@@ -159,7 +159,7 @@ undefined Object.seal(object obj)
 
 ##### setPrototypeOf
 ```
-undefined Object.setPrototypeOf(object obj, object prototype)
+void Object.setPrototypeOf(object obj, object prototype)
 ```
 
 ---
