@@ -18,6 +18,10 @@
     display: inline-block;
     vertical-align: top;
     border-top: 1px dotted black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 </style>
 
@@ -31,10 +35,12 @@
             </template>
         </ul>
     </el-col>
-    <el-col :span="22" v-if="Document !== null" class="max-height">
+    <el-col :span="22" v-if="Document !== null" class="max-height" style="padding-left:10px; padding-right:10px;">
         <div v-for="word in Document" class="word-base__word-card">
             <el-row v-for="item in word.elements">
-                <el-col :span="8">{{item.attributes.value}}</el-col>
+                <el-col :span="8" style="font-weight:bold">{{item.attributes.value}}</el-col>
+                <el-col :span="8">{{item.name}}</el-col>
+                <el-col :span="8">{{item.elements[0].text}}</el-col>
             </el-row>
         </div>
     </el-col>
