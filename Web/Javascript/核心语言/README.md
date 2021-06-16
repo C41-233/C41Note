@@ -9,6 +9,7 @@
 - [Function](Function.md) 函数
 - [Number](Number.md) 数值对象
 - [Object](Object.md) 基类对象
+- [String](String.md) 字符串对象
 
 ##### 集合
 
