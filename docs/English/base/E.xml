@@ -1,0 +1,402 @@
+<words>
+	<word>
+		<noun value="east">东方</noun>
+		<adj value="east">东方的</adj>
+		<adj value="eastern">东方的</adj>
+		<adv value="east">向东方；在东方</adv>
+	</word>
+	<word>
+		<noun value="economist">经济学家</noun>
+		<noun value="economy">经济</noun>
+		<adj value="economic">经济的</adj>
+	</word>
+	<word>
+		<noun value="ecosystem">生态系统</noun>
+	</word>
+	<word>
+		<noun value="effect">影响</noun>
+		<adj value="efficient">有效率的</adj>
+		<adv value="efficiently">高效地</adv>
+	</word>
+	<word>
+		<verb value="elaborate">精心制作；详细阐述</verb>
+		<noun value="elaboration">苦心经营，精巧；详细阐述</noun>
+	</word>
+	<word>
+		<verb value="elect">选举，选择</verb>
+		<noun value="elective">选修课程</noun>
+		<noun value="elector">选举人</noun>
+		<adj value="elective">选修的</adj>
+	</word>
+	<word>
+		<noun value="electricity">电，电流</noun>
+		<noun value="electron">电子</noun>
+		<adj value="electric">用电的；导电的</adj>
+		<adj value="electrical">有关电的</adj>
+		<adj value="electronic">电子的</adj>
+	</word>
+	<word>
+		<noun value="elegance">典雅，高雅</noun>
+		<adj value="elegant">高雅的，优雅的</adj>
+	</word>
+	<word>
+		<noun value="element">素，要素，成分</noun>
+		<adj value="elemental">基本的，主要的；自然力的；要素的</adj>
+		<adj value="elementary">基本的，初级的；元素的</adj>
+	</word>
+	<word>
+		<verb value="elicit">抽出；引出，引起</verb>
+		<noun value="elicitation">引出，诱出；抽出</noun>
+	</word>
+	<word>
+		<verb value="elide">省略，不予考虑删节；取消；删去</verb>
+		<noun value="elision">元音省略</noun>
+	</word>
+	<word>
+		<noun value="eligibility">合格</noun>
+		<noun value="eligible">合格者</noun>
+		<adj value="eligible">合格的</adj>
+	</word>
+	<word>
+		<verb value="eliminate">消除，排除</verb>
+		<noun value="elimination">消除，淘汰，除去</noun>
+		<noun value="eliminator">消除器，消除者</noun>
+	</word>
+	<word>
+		<noun value="ellipsoid">椭球</noun>
+	</word>
+	<word>
+		<adv value="elsewhere">在别处</adv>
+	</word>
+	<word>
+		<verb value="elucidate">阐明，说明</verb>
+	</word>
+	<word>
+		<verb value="elude">逃避，躲避</verb>
+		<noun value="elusion">逃避；回避</noun>
+		<adj value="elusive">难懂的；易忘的；逃避的；难捉摸的</adj>
+	</word>
+	<word>
+		<verb value="embellish">装饰，修饰，润色</verb>
+		<noun value="embellishment">装饰，修饰，润色</noun>
+	</word>
+	<word>
+		<verb value="embody">体现</verb>
+	</word>
+	<word>
+		<verb value="embrace">包含，拥抱</verb>
+	</word>
+	<word>
+		<verb value="emerge">浮现，暴露</verb>
+		<noun value="emergence">出现，浮现</noun>
+		<noun value="emergency">紧急情况</noun>
+		<adj value="emergent">紧急的，意外的；浮现的</adj>
+	</word>
+	<word>
+		<verb value="emigrate">移民</verb>
+		<noun value="emigration">移民</noun>
+	</word>
+	<word>
+		<noun value="eminence">显赫；卓越；高处</noun>
+		<adj value="eminent">杰出的；有名的；明显的</adj>
+		<adv value="eminently">突出地；显著地</adv>
+	</word>
+	<word>
+		<noun value="emission">排放</noun>
+	</word>
+	<word>
+		<verb value="emit">发出，放射；发行；发表</verb>
+		<noun value="emitter">发射器，发射体</noun>
+	</word>
+	<word>
+		<noun value="emotion">情感，情绪</noun>
+	</word>
+	<word>
+		<verb value="emphasise">强调</verb>
+		<verb value="emphasize">强调</verb>
+		<noun value="emphasis">重点</noun>
+	</word>
+	<word>
+		<noun value="empiric">经验主义者；江湖医生</noun>
+		<noun value="empiricism">经验主义；经验论</noun>
+		<noun value="empiricist">经验主义者；使用观察实验法的人；庸医</noun>
+		<adj value="empiric">经验主义的</adj>
+		<adj value="empirical">经验主义的，完全根据经验的；实证的</adj>
+		<adv value="empirically">以经验为主地</adv>
+	</word>
+	<word>
+		<verb value="encapsulate">压缩；将…装入胶囊</verb>
+		<noun value="encapsulation">封装；包装</noun>
+		<adj value="encapsulated">密封的</adj>
+	</word>
+	<word>
+		<verb value="enclose">围绕；装入；放入封套</verb>
+	</word>
+	<word>
+		<verb value="encompass">包围，包含，环绕</verb>
+	</word>
+	<word>
+		<verb value="encounter">遭遇，邂逅</verb>
+		<noun value="encounter">遭遇，邂逅</noun>
+	</word>
+	<word>
+		<verb value="encourage">鼓励，激励</verb>
+		<noun value="encouragement">鼓励</noun>
+		<adj value="encouraged">受到鼓舞的</adj>
+	</word>
+	<word>
+		<verb value="encrypt">加密</verb>
+		<noun value="encryption">加密</noun>
+	</word>
+	<word>
+		<verb value="endeavor">竭力；企图</verb>
+		<verb value="endeavour">竭力；企图</verb>
+		<noun value="endeavor">尽力，竭力</noun>
+		<noun value="endeavour">尽力，竭力</noun>
+	</word>
+	<word>
+		<verb value="endow">赋予，捐赠，天生具有</verb>
+	</word>
+	<word>
+		<noun value="endpoint">端点</noun>
+	</word>
+	<word>
+		<noun value="engage">吸引，占用，参加，从事，订婚，交战</noun>
+	</word>
+	<word>
+		<noun value="engineer">工程师</noun>
+		<noun value="engineering">工程学</noun>
+	</word>
+	<word>
+		<noun value="England">英格兰；英国</noun>
+		<noun value="English">英语；英国人；英格兰人</noun>
+		<adj value="English">英国的</adj>
+	</word>
+	<word>
+		<verb value="enhance">提高，加强</verb>
+		<noun value="enhancement">增加，放大</noun>
+		<noun value="enhancing">优化，增强</noun>
+	</word>
+	<word>
+		<noun value="enormity">巨大</noun>
+		<adj value="enormous">庞大的，巨大的</adj>
+		<adv value="enormously">在极大程度上</adv>
+	</word>
+	<word>
+		<verb value="enrich">使富足</verb>
+	</word>
+	<word>
+		<verb value="enrol">注册；参军</verb>
+		<noun value="enrolment">登记，注册；入学</noun>
+	</word>
+	<word>
+		<verb value="ensure">保证，确保</verb>
+	</word>
+	<word>
+		<noun value="enterprise">企业；事业</noun>
+		<noun value="enterpriser">企业家</noun>
+		<adj value="enterprising">有事业心的；有进取心的；有魄力的，有胆量的</adj>
+		<adv value="enterprisingly">有企业心地</adv>
+	</word>
+	<word>
+		<noun value="envelope">信封，封皮</noun>
+	</word>
+	<word>
+		<verb value="envision">想象，预想</verb>
+	</word>
+	<word>
+		<noun value="epidemic">传染病，流行病</noun>
+		<noun value="epidemiology">流行病学，传染病学</noun>
+		<adj value="epidemic">流行的，传染性的</adj>
+		<adj value="epidemical">传染病的，流行性的</adj>
+	</word>
+	<word>
+		<adj value="epigenetic">后生的，外成的</adj>
+	</word>
+	<word>
+		<noun value="epsilon">希腊字母E ε</noun>
+	</word>
+	<word>
+		<verb value="equalise">使相等</verb>
+		<verb value="equalize">使相等</verb>
+		<noun value="equality">平等；等式</noun>
+		<noun value="equation">方程式，等式</noun>
+		<adj value="equal">平等的，相等的</adj>
+		<adv value="equally">相等地，公平地</adv>
+	</word>
+	<word>
+		<noun value="equilibrium">均衡，平衡</noun>
+	</word>
+	<word>
+		<noun value="equivalence">等值，相等</noun>
+		<adj value="equivalent">等价的</adj>
+	</word>
+	<word>
+		<noun value="era">时代</noun>
+	</word>
+	<word>
+		<noun value="escalator">自动扶梯</noun>
+	</word>
+	<word>
+		<verb value="escape">逃脱，溜走；避开</verb>
+		<noun value="escape">逃跑，逃亡</noun>
+		<noun value="escapee">逃避者；逃亡者，逃犯</noun>
+		<noun value="escapement">脱逃；逃亡的出口</noun>
+		<noun value="escapism">逃避现实，空想；逃避主义</noun>
+		<noun value="escapist">逃避现实者</noun>
+		<adj value="escapable">可逃脱的，可以避免的</adj>
+		<adj value="escaped">逃走的，逸出的</adj>
+		<adj value="escapist">逃避现实的</adj>
+	</word>
+	<word>
+		<noun value="esoterica">秘传的事物</noun>
+		<adj value="esoteric">秘传的；限于圈内人的；难懂的</adj>
+	</word>
+	<word>
+		<noun value="essence">本质，实质</noun>
+		<noun value="essential">要点，要素</noun>
+		<adj value="essential">基本的，必要的，本质的</adj>
+		<adv value="essentially">本质上</adv>
+	</word>
+	<word>
+		<verb value="establish">建立，创办；安置</verb>
+		<noun value="establishment">确立；公司；设施</noun>
+		<adj value="established">已制定的，确定的</adj>
+	</word>
+	<word>
+		<noun value="estate">房地产，财产，身份</noun>
+	</word>
+	<word>
+		<adj value="esthetic">审美的</adj>
+	</word>
+	<word>
+		<verb value="estimate">估计</verb>
+	</word>
+	<word>
+		<noun value="ethnography">民族志，人种志；人种学</noun>
+	</word>
+	<word>
+		<noun value="eukarya">真核生物</noun>
+	</word>
+	<word>
+		<noun value="Europe">欧洲</noun>
+		<noun value="European">欧洲人</noun>
+		<adj value="European">欧洲的</adj>
+	</word>
+	<word>
+		<verb value="evaluate">评价；估价</verb>
+		<noun value="evaluation">评估；估价；求值</noun>
+		<adj value="evaluative">可估价的</adj>
+	</word>
+	<word>
+		<verb value="evolve">进化，演化</verb>
+		<noun value="evolution">演变</noun>
+		<adj value="evolutionary">进化的，演化的</adj>
+	</word>
+	<word>
+		<verb value="except">反对，排除</verb>
+		<noun value="exception">例外，异议，异常</noun>
+		<adj value="exceptional">异常的，例外的</adj>
+		<adv value="exceptionally">异常地；特殊地</adv>
+	</word>
+	<word>
+		<verb value="exclude">排除</verb>
+	</word>
+	<word>
+		<verb value="exert">应用，发挥，施加</verb>
+		<noun value="exertion">发挥，应用；努力</noun>
+	</word>
+	<word>
+		<verb value="exhibit">展览，显示</verb>
+		<noun value="exhibition">展览，显示；展览会；展览品</noun>
+	</word>
+	<word>
+		<verb value="exist">存在</verb>
+		<noun value="existence">存在，实在</noun>
+	</word>
+	<word>
+		<verb value="expand">扩张，扩大</verb>
+		<noun value="expandability">可扩展性；膨胀性；伸延性</noun>
+		<noun value="expansion">膨胀，扩张</noun>
+	</word>
+	<word>
+		<verb value="expect">期待；预期</verb>
+		<noun value="expectant">期待者；候选人</noun>
+		<adj value="expectant">期待的；怀孕的</adj>
+	</word>
+	<word>
+		<verb value="experiment">尝试；进行实验</verb>
+		<noun value="experiment">实验，试验；尝试</noun>
+		<adj value="experimental">实验的，试验性的</adj>
+	</word>
+	<word>
+		<noun value="expert">专家</noun>
+		<noun value="expertise">专业知识</noun>
+		<adj value="expert">内行的，老练的</adj>
+	</word>
+	<word>
+		<verb value="expire">终止，死亡；呼气</verb>
+		<noun value="expiry">逾期，终结；呼气</noun>
+	</word>
+	<word>
+		<noun value="explicitness">直言不讳；明确性</noun>
+		<adj value="explicit">明确的，清楚的，详述的；直率的</adj>
+		<adv value="explicitly">明确地，明白地</adv>
+	</word>
+	<word>
+		<verb value="explode">爆炸</verb>
+		<noun value="explosion">爆炸；爆发</noun>
+		<noun value="explosive">炸药，爆炸物</noun>
+		<adj value="explosive">爆炸的；爆发性的</adj>
+	</word>
+	<word>
+		<verb value="exploit">开发，开拓</verb>
+		<noun value="exploit">勋绩，功绩</noun>
+		<noun value="exploitation">开发，开采；利用</noun>
+		<noun value="exploiter">开拓者；剥削者</noun>
+		<adj value="exploitative">剥削的；利用的；开发资源的</adj>
+		<adj value="exploitive">剥削的；开发资源的</adj>
+	</word>
+	<word>
+		<verb value="explore">探索，探测，探险</verb>
+		<noun value="exploration">探险，探测</noun>
+		<noun value="explorer">探险家，探测器</noun>
+		<adj value="explorative">探险的，探测的，探究的</adj>
+		<adj value="exploratory">勘探的，探究的，考察的</adj>
+	</word>
+	<word>
+		<noun value="exponent">指数</noun>
+		<adj value="exponential">指数的</adj>
+		<adv value="exponentially">以指数方式地</adv>
+	</word>
+	<word>
+		<verb value="extend">扩大，延伸</verb>
+		<noun value="extension">延期</noun>
+	</word>
+	<word>
+		<verb value="externalise">外部化，具体化</verb>
+		<verb value="externalize">外部化，具体化</verb>
+		<adj value="external">外部的，表面的</adj>
+	</word>
+	<word>
+		<verb value="extinct">使熄灭</verb>
+		<noun value="extinction">消灭，灭绝</noun>
+		<adj value="extinct">灭绝的，熄灭的</adj>
+	</word>
+	<word>
+		<verb value="extract">提取；取出；摘录；榨取</verb>
+		<noun value="extract">汁；摘录；榨出物；选粹</noun>
+		<noun value="extraction">取出，抽出，拔出；抽出物；出身</noun>
+		<noun value="extractor">提取器；抽出者</noun>
+		<adj value="extractable">可抽出的，可榨出的；可推断出的</adj>
+		<adj value="extractible">可提取的；可榨出的；可摘录的</adj>
+	</word>
+	<word>
+		<noun value="extraterrestrial">天外来客</noun>
+		<adj value="extraterrestrial">地球外的</adj>
+	</word>
+	<word>
+		<noun value="extreme">极端，末端，最大程度</noun>
+		<adj value="extreme">极端的</adj>
+	</word>
+</words>

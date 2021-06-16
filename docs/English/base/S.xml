@@ -1,0 +1,706 @@
+<words>
+	<word>
+		<verb value="saber">军刀，佩剑；骑士；亚瑟王</verb>
+	</word>
+	<word>
+		<verb value="saddle">承受，负担；装上马鞍</verb>
+		<noun value="saddle">鞍座</noun>
+	</word>
+	<word>
+		<verb value="satisfy">满足</verb>
+		<noun value="satisfaction">满意，满足</noun>
+		<adj value="satisfactory">令人满意的，符合要求的</adj>
+		<adj value="satisfied">感到满意的</adj>
+		<adj value="satisfying">令人满意的</adj>
+	</word>
+	<word>
+		<verb value="scale">测量</verb>
+		<noun value="scalability">可扩展性</noun>
+		<noun value="scale">规模，比例</noun>
+		<adj value="scalable">可攀登的，可称量的</adj>
+	</word>
+	<word>
+		<adj value="scarce">缺乏的，不足的</adj>
+		<adv value="scarcely">几乎不</adv>
+	</word>
+	<word>
+		<verb value="scatter">分散，散开；散射</verb>
+		<noun value="scatter">分散；散播，撒播</noun>
+	</word>
+	<word>
+		<noun value="scenario">方案；情节；剧本</noun>
+		<noun value="scene">场面；情景；景象；事件</noun>
+	</word>
+	<word>
+		<noun value="scheme">计划，方案</noun>
+	</word>
+	<word>
+		<noun value="science">科学</noun>
+		<noun value="scientist">科学家</noun>
+		<adj value="scientific">科学的</adj>
+		<adv value="scientifically">科学地</adv>
+	</word>
+	<word>
+		<noun value="scoop">勺子</noun>
+	</word>
+	<word>
+		<verb value="scope">审视</verb>
+		<noun value="scope">范围；余地；视野；眼界；导弹射程</noun>
+	</word>
+	<word>
+		<verb value="scrutinise">详细检查；细看</verb>
+		<verb value="scrutinize">详细检查；细看</verb>
+	</word>
+	<word>
+		<noun value="secretary">秘书，书记，部长，大臣</noun>
+	</word>
+	<word>
+		<noun value="section">截面；地区；章节</noun>
+	</word>
+	<word>
+		<verb value="secure">保护</verb>
+		<noun value="security">安全</noun>
+		<adj value="security">安全的</adj>
+	</word>
+	<word>
+		<verb value="seed">播种；结实</verb>
+		<noun value="seed">种子；萌芽</noun>
+	</word>
+	<word>
+		<verb value="seem">似乎，好像</verb>
+		<adv value="seemingly">似乎</adv>
+	</word>
+	<word>
+		<verb value="segment">分割</verb>
+		<noun value="segment">段，部分</noun>
+	</word>
+	<word>
+		<noun value="semanticist">语义学者</noun>
+		<noun value="semantics">语义学；语义论</noun>
+		<noun value="semasiology">语义学；符号学</noun>
+		<adj value="semantic">语义的；语义学的</adj>
+	</word>
+	<word>
+		<noun value="semicolon">分号</noun>
+	</word>
+	<word>
+		<noun value="senior">上司；毕业班学生</noun>
+		<adj value="senior">高级的，资深的</adj>
+	</word>
+	<word>
+		<verb value="sentence">判决，宣判</verb>
+		<noun value="sentence">句子；命题；宣判，判决</noun>
+		<adj value="sentential">句子的；判决的</adj>
+	</word>
+	<word>
+		<noun value="sequence">序列</noun>
+		<adj value="sequential">连续的，相继的</adj>
+		<adv value="sequentially">顺序地</adv>
+	</word>
+	<word>
+		<noun value="Serbia">塞尔维亚</noun>
+		<noun value="Serbian">塞尔维亚人，塞尔维亚语</noun>
+		<adj value="Serbian">塞尔维亚的</adj>
+	</word>
+	<word>
+		<adj value="serial">连续的；串行的</adj>
+	</word>
+	<word>
+		<verb value="serve">服务</verb>
+		<noun value="server">服务器</noun>
+		<noun value="service">服务</noun>
+	</word>
+	<word>
+		<noun value="servlet">伺服小程式；小服务程序</noun>
+	</word>
+	<word>
+		<noun value="setback">挫折；倒退；失败</noun>
+	</word>
+	<word>
+		<adj value="severe">严重的，严厉的，严峻的</adj>
+		<adv value="severely">严重地，严格地</adv>
+	</word>
+	<word>
+		<noun value="shaddock">柚子，文旦</noun>
+	</word>
+	<word>
+		<noun value="shampoo">洗发水</noun>
+	</word>
+	<word>
+		<verb value="shatter">粉碎，打碎，破坏</verb>
+		<noun value="shatter">碎片</noun>
+	</word>
+	<word>
+		<noun value="sheet">薄片；纸张；床单</noun>
+		<noun value="sheeting">护板</noun>
+	</word>
+	<word>
+		<verb value="shelve">放置在架子上，搁置</verb>
+	</word>
+	<word>
+		<verb value="shield">遮蔽；包庇；避开；保卫</verb>
+		<noun value="shield">盾；防护物；保护者</noun>
+	</word>
+	<word>
+		<verb value="shift">移动；转变</verb>
+		<noun value="shift">移动；变化</noun>
+		<noun value="shifter">移动装置；搬移东西者；移位器</noun>
+	</word>
+	<word>
+		<noun value="shortcoming">缺点</noun>
+	</word>
+	<word>
+		<noun value="shorthand">速记；速记法</noun>
+		<adj value="shorthand">速记法的</adj>
+	</word>
+	<word>
+		<noun value="shower">淋浴</noun>
+	</word>
+	<word>
+		<verb value="shrink">收缩；畏缩</verb>
+		<noun value="shrink">收缩</noun>
+	</word>
+	<word>
+		<verb value="sigh">叹气</verb>
+		<noun value="sigh">叹气</noun>
+	</word>
+	<word>
+		<verb value="sign">签名</verb>
+		<noun value="sign">符号，标志</noun>
+		<noun value="signal">信号</noun>
+	</word>
+	<word>
+		<noun value="significance">重要，重要性</noun>
+		<adj value="significant">重要的</adj>
+	</word>
+	<word>
+		<noun value="silicon">硅</noun>
+	</word>
+	<word>
+		<noun value="silk">丝绸；蚕丝</noun>
+		<adj value="silk">丝绸的，丝质的</adj>
+	</word>
+	<word>
+		<noun value="similarity">类似，相似点</noun>
+		<adj value="similar">相似的</adj>
+		<adv value="similarly">相似地</adv>
+	</word>
+	<word>
+		<adj value="simplex">单纯的，单一的</adj>
+	</word>
+	<word>
+		<verb value="simplify">简化</verb>
+		<noun value="simplicity">朴素，简易</noun>
+		<adj value="simple">简单的</adj>
+	</word>
+	<word>
+		<verb value="simulate">模拟</verb>
+		<noun value="simulation">仿真，模拟</noun>
+		<noun value="simulator">模拟器</noun>
+		<adj value="simulate">模拟的</adj>
+	</word>
+	<word>
+		<verb value="simulcast">同时联播</verb>
+		<noun value="simulcast">同时联播</noun>
+	</word>
+	<word>
+		<adj value="simultaneous">同时的</adj>
+		<adv value="simultaneously">同时地</adv>
+	</word>
+	<word>
+		<noun value="sincerity">真实，诚挚</noun>
+		<adj value="sincere">真诚的，诚挚的，真实的</adj>
+		<adv value="sincerely">真诚地，由衷地，诚恳地</adv>
+	</word>
+	<word>
+		<verb value="singularize">使单一化</verb>
+		<noun value="single">一个</noun>
+		<adj value="single">单一的</adj>
+	</word>
+	<word>
+		<verb value="skate">滑冰，溜冰</verb>
+		<noun value="skate">滑冰，溜冰</noun>
+	</word>
+	<word>
+		<verb value="skateboard">用滑板滑行</verb>
+		<noun value="skateboard">滑板</noun>
+	</word>
+	<word>
+		<noun value="skeleton">骨架，骨骼</noun>
+		<adj value="skeleton">骨骼的</adj>
+	</word>
+	<word>
+		<noun value="skew">斜交；歪斜</noun>
+		<adj value="skew">斜交的；歪斜的</adj>
+	</word>
+	<word>
+		<verb value="ski">滑雪</verb>
+		<noun value="ski">滑雪</noun>
+	</word>
+	<word>
+		<noun value="skyscraper">摩天大楼</noun>
+	</word>
+	<word>
+		<noun value="sleepyhead">懒鬼，贪睡者</noun>
+	</word>
+	<word>
+		<verb value="slide">滑动</verb>
+		<noun value="slide">滑动；幻灯片</noun>
+		<noun value="slider">滑块</noun>
+	</word>
+	<word>
+		<verb value="slight">轻视，忽略；怠慢</verb>
+		<noun value="slight">怠慢；轻蔑</noun>
+		<adj value="slight">轻微的，少量的</adj>
+		<adv value="slightly">些微地，轻微地</adv>
+	</word>
+	<word>
+		<verb value="slip">滑动，滑倒</verb>
+		<noun value="slip">滑，滑倒；片，纸片</noun>
+		<noun value="slippage">滑移，滑动；下降</noun>
+		<adj value="slip">滑动的</adj>
+	</word>
+	<word>
+		<noun value="slogan">标语，口号</noun>
+	</word>
+	<word>
+		<noun value="snippet">片断</noun>
+	</word>
+	<word>
+		<noun value="snowboard">单板滑雪；滑雪板</noun>
+	</word>
+	<word>
+		<adj value="so-called">所谓的，号称的</adj>
+	</word>
+	<word>
+		<noun value="soccer">足球</noun>
+	</word>
+	<word>
+		<noun value="socialist">社会主义者</noun>
+		<noun value="society">社会</noun>
+		<adj value="social">社会的</adj>
+		<adj value="socialist">社会主义的</adj>
+	</word>
+	<word>
+		<noun value="soil">土地，土壤</noun>
+	</word>
+	<word>
+		<verb value="solarise">过度曝光</verb>
+		<verb value="solarize">过度曝光</verb>
+		<adj value="solar">太阳的</adj>
+	</word>
+	<word>
+		<verb value="solicit">征求，乞求</verb>
+		<noun value="solicitor">律师</noun>
+	</word>
+	<word>
+		<noun value="solicitor">律师</noun>
+	</word>
+	<word>
+		<verb value="solidify">团结，凝固</verb>
+		<noun value="solid">固体</noun>
+		<adj value="solid">固体的，可靠的</adj>
+	</word>
+	<word>
+		<verb value="solo">单独表演</verb>
+		<noun value="solo">独唱，独奏，独唱曲</noun>
+		<adj value="solo">单独的，独唱的</adj>
+		<adv value="solo">单独地</adv>
+	</word>
+	<word>
+		<adv value="somehow">以某种方法；莫名其妙地</adv>
+	</word>
+	<word>
+		<verb value="sophisticate">诡辩，弄复杂</verb>
+		<adj value="sophisticated">复杂的，精致的</adj>
+	</word>
+	<word>
+		<verb value="sound">听起来，回响</verb>
+		<noun value="sound">声音，语音，噪音</noun>
+	</word>
+	<word>
+		<adj value="sound">健全的，健康的，合理的，可靠的，彻底地</adj>
+		<adv value="sound">彻底地，充分地</adv>
+	</word>
+	<word>
+		<noun value="south">南方</noun>
+		<adj value="south">南方的</adj>
+		<adj value="southern">南方的</adj>
+		<adv value="south">向南方；在南方</adv>
+	</word>
+	<word>
+		<noun value="Spain">西班牙</noun>
+		<noun value="Spanish">西班牙语；西班牙人</noun>
+		<adj value="Spanish">西班牙的</adj>
+	</word>
+	<word>
+		<verb value="sparkle">闪光，闪耀</verb>
+	</word>
+	<word>
+		<noun value="sparrow">麻雀；矮小的人</noun>
+	</word>
+	<word>
+		<noun value="sparsity">稀疏，稀少；贫乏</noun>
+		<adj value="sparse">稀疏的；稀少的</adj>
+	</word>
+	<word>
+		<adj value="spatial">空间的</adj>
+		<adv value="spatially">空间地</adv>
+	</word>
+	<word>
+		<verb value="spawn">产卵；酿成，造成；大量生产</verb>
+		<noun value="spawn">卵；菌丝；产物</noun>
+	</word>
+	<word>
+		<verb value="specialise">专门从事，使特别化</verb>
+		<verb value="specialize">专门从事，使特别化</verb>
+		<noun value="specialization">专业化，特殊化</noun>
+		<noun value="specification">规格，说明书，详述</noun>
+		<adj value="special">特别的</adj>
+		<adj value="specific">特殊的，特定的</adj>
+		<adv value="specifically">特别地，明确地</adv>
+	</word>
+	<word>
+		<noun value="spectrum">光谱；频谱；范围</noun>
+	</word>
+	<word>
+		<verb value="sphere">包围；放入球内；使…成球形</verb>
+		<noun value="sphere">范围；球体</noun>
+		<adj value="sphere">球体的</adj>
+		<adj value="spherical">球形的，球面的；天体的</adj>
+	</word>
+	<word>
+		<verb value="spite">刁难，欺侮</verb>
+		<noun value="spite">恶意，怨恨</noun>
+		<adj value="spiteful">怀恨的，恶意的</adj>
+	</word>
+	<word>
+		<verb value="splash">溅，泼</verb>
+	</word>
+	<word>
+		<verb value="spoil">掠夺，溺爱</verb>
+		<noun value="spoil">战利品</noun>
+		<noun value="spoiler">掠夺者</noun>
+	</word>
+	<word>
+		<verb value="sponge">用湿海绵擦</verb>
+		<noun value="sponge">海绵</noun>
+	</word>
+	<word>
+		<noun value="spontaneity">自发性</noun>
+		<adj value="spontaneous">自发的，自然的，无意识的</adj>
+	</word>
+	<word>
+		<adj value="sporadic">零星的，分散的</adj>
+		<adv value="sporadically">零星地；偶发地</adv>
+	</word>
+	<word>
+		<noun value="spouse">配偶</noun>
+	</word>
+	<word>
+		<verb value="spray">喷射</verb>
+		<noun value="spray">喷雾</noun>
+		<noun value="sprayer">喷雾器；洒水车</noun>
+	</word>
+	<word>
+		<verb value="spread">传播，散布</verb>
+	</word>
+	<word>
+		<verb value="spring">生长；涌出</verb>
+		<noun value="spring">春天</noun>
+	</word>
+	<word>
+		<noun value="sprite">妖精，精灵</noun>
+	</word>
+	<word>
+		<verb value="square">使成方形</verb>
+		<adj value="square">平方的</adj>
+	</word>
+	<word>
+		<verb value="squash">镇压；把…压扁；使沉默</verb>
+		<noun value="squash">壁球；挤压</noun>
+	</word>
+	<word>
+		<verb value="stabilise">稳定</verb>
+		<verb value="stabilize">稳定</verb>
+		<noun value="stability">稳定性</noun>
+		<adj value="stable">稳定的；牢固的；坚定的</adj>
+		<adv value="stably">平稳地</adv>
+	</word>
+	<word>
+		<noun value="stagflation">滞涨，停滞性通货膨胀</noun>
+	</word>
+	<word>
+		<noun value="staircase">楼梯</noun>
+	</word>
+	<word>
+		<noun value="stance">立场，姿态，位置</noun>
+	</word>
+	<word>
+		<verb value="standardise">使标准化</verb>
+		<verb value="standardize">使标准化</verb>
+		<noun value="standard">标准</noun>
+		<noun value="standardization">标准化，规格化</noun>
+	</word>
+	<word>
+		<noun value="standish">墨水壶</noun>
+	</word>
+	<word>
+		<noun value="star">星星，恒星；明星</noun>
+	</word>
+	<word>
+		<verb value="startle">使吃惊</verb>
+		<noun value="startle">惊愕，惊恐</noun>
+		<adj value="startled">受惊讶的</adj>
+		<adj value="startling">让人吃惊的</adj>
+	</word>
+	<word>
+		<noun value="statistic">资料；统计数值</noun>
+		<noun value="statistician">统计员</noun>
+		<noun value="statistics">统计学</noun>
+		<adj value="statistical">统计的；统计学的</adj>
+	</word>
+	<word>
+		<noun value="status">地位；状态；情形；重要身份</noun>
+	</word>
+	<word>
+		<verb value="steel">钢化；使冷酷</verb>
+		<noun value="steel">钢铁；钢制品；坚固</noun>
+		<adj value="steel">钢制的；钢铁业的；坚强的</adj>
+	</word>
+	<word>
+		<verb value="steep">泡；沉浸</verb>
+		<noun value="steep">峭壁；浸渍</noun>
+		<adj value="steep">陡峭的；不合理的；夸大的；急剧升降的</adj>
+	</word>
+	<word>
+		<noun value="stereo">立体声</noun>
+		<adj value="stereo">立体声的</adj>
+		<adj value="stereophonic">立体声的</adj>
+	</word>
+	<word>
+		<verb value="stereotype">使用铅版；套用老套，使一成不变</verb>
+		<noun value="stereotype">陈腔滥调，老套；铅版</noun>
+	</word>
+	<word>
+		<verb value="steward">当服务员；当管事；管理</verb>
+		<noun value="steward">管家；乘务员；膳务员；工会管事</noun>
+		<noun value="stewardess">女管家，女干事，女乘务员</noun>
+	</word>
+	<word>
+		<verb value="stick">刺，戳；伸出；粘贴</verb>
+		<noun value="stick">棍，手杖</noun>
+		<adj value="sticky">粘的，粘性的</adj>
+	</word>
+	<word>
+		<noun value="stillness">静止</noun>
+		<adj value="still">静止的</adj>
+	</word>
+	<word>
+		<verb value="stimulate">刺激；鼓舞，激励</verb>
+		<noun value="stimulus">刺激；激励；刺激物</noun>
+		<noun value="stimuluses">刺激；激励；刺激物（复数）</noun>
+		<noun value="stimuli">刺激；激励；刺激物（复数）</noun>
+	</word>
+	<word>
+		<adj value="stochastic">随机的；猜测的</adj>
+	</word>
+	<word>
+		<noun value="stock">股票</noun>
+	</word>
+	<word>
+		<noun value="stockroom">仓库，商品储藏室</noun>
+	</word>
+	<word>
+		<noun value="storm">暴风雨</noun>
+	</word>
+	<word>
+		<noun value="storyboard">情节串连图板，分镜</noun>
+	</word>
+	<word>
+		<noun value="strategist">战略家，军事家</noun>
+		<noun value="strategy">战略，策略</noun>
+		<adj value="strategic">战略的</adj>
+	</word>
+	<word>
+		<verb value="stretch">伸展</verb>
+		<noun value="stretch">伸展，延伸</noun>
+		<adj value="stretch">可伸缩的</adj>
+	</word>
+	<word>
+		<verb value="strip">剥夺</verb>
+	</word>
+	<word>
+		<verb value="structure">建造，构成</verb>
+		<noun value="struct">结构，结构体</noun>
+		<noun value="structure">结构，构造</noun>
+	</word>
+	<word>
+		<noun value="stuff">东西，材料</noun>
+	</word>
+	<word>
+		<verb value="subordinate">使服从，使居于下位</verb>
+	</word>
+	<word>
+		<adj value="subsequent">后来的，随后的</adj>
+	</word>
+	<word>
+		<noun value="subsidiary">子公司，辅助者</noun>
+		<adj value="subsidiary">附属的，辅助的</adj>
+	</word>
+	<word>
+		<verb value="substantiate">证实，实体化</verb>
+		<noun value="substantiation">证实，实体化</noun>
+		<adj value="substantial">大量的，实质的</adj>
+	</word>
+	<word>
+		<verb value="subtilize">使稀薄；使精细</verb>
+		<adj value="subtle">微妙的；精细的；敏感的；狡猾的；稀薄的</adj>
+	</word>
+	<word>
+		<verb value="succeed">成功；继承</verb>
+		<noun value="success">成功，成就</noun>
+		<noun value="succession">连续；继承权</noun>
+		<noun value="successor">继承者</noun>
+		<adj value="successful">成功的</adj>
+		<adj value="successive">连续的，依次的</adj>
+		<adv value="successfully">成功地</adv>
+		<adv value="successively">相继地，接连地</adv>
+	</word>
+	<word>
+		<adj value="succinct">简洁的，简明的</adj>
+	</word>
+	<word>
+		<verb value="suffice">足够，有能力</verb>
+		<adj value="sufficient">足够的，充分的</adj>
+	</word>
+	<word>
+		<noun value="sugarcane">甘蔗</noun>
+	</word>
+	<word>
+		<verb value="sum">概括，总结</verb>
+		<noun value="sum">总数</noun>
+	</word>
+	<word>
+		<noun value="summary">概要，摘要</noun>
+		<adj value="summary">简易的，扼要的</adj>
+	</word>
+	<word>
+		<noun value="superiority">优越，优势</noun>
+		<adj value="super">特级的，极好的</adj>
+		<adj value="superior">优秀的，出众的</adj>
+	</word>
+	<word>
+		<noun value="supermarket">超市</noun>
+	</word>
+	<word>
+		<verb value="supervise">监督，管理；指导</verb>
+		<noun value="supervision">监督，管理</noun>
+		<noun value="supervisor">监督人</noun>
+	</word>
+	<word>
+		<verb value="suppress">抑制；镇压</verb>
+		<noun value="suppression">抑制；镇压；压抑</noun>
+		<noun value="suppressor">抑制器，抑制剂</noun>
+		<adj value="suppressive">抑制的；镇压的</adj>
+	</word>
+	<word>
+		<adj value="supreme">最高的，至高的</adj>
+	</word>
+	<word>
+		<adj value="sure">确信的，可靠的</adj>
+		<adv value="sure">当然，的确</adv>
+	</word>
+	<word>
+		<noun value="surface">表面</noun>
+	</word>
+	<word>
+		<verb value="surpass">胜过，超越</verb>
+	</word>
+	<word>
+		<verb value="surveil">使受监视；对…实施监视</verb>
+		<noun value="surveillance">监督；监视</noun>
+	</word>
+	<word>
+		<verb value="survey">调查；勘测</verb>
+		<noun value="survey">调查；测量；审视</noun>
+	</word>
+	<word>
+		<verb value="survive">幸存</verb>
+		<noun value="survival">幸存；幸存者</noun>
+	</word>
+	<word>
+		<verb value="suspect">怀疑；猜想</verb>
+		<noun value="suspect">嫌疑犯</noun>
+		<noun value="suspicion">嫌疑</noun>
+	</word>
+	<word>
+		<verb value="suspend">延缓，推迟，暂停；使悬浮</verb>
+		<noun value="suspension">悬浮；暂停；停职</noun>
+	</word>
+	<word>
+		<verb value="sweat">出汗</verb>
+		<noun value="sweater">毛衣</noun>
+	</word>
+	<word>
+		<verb value="sweep">打扫</verb>
+		<adj value="sweeping">广泛的</adj>
+	</word>
+	<word>
+		<noun value="Swiss">瑞士人</noun>
+		<noun value="Switzerland">瑞士</noun>
+		<adj value="Swiss">瑞士的</adj>
+	</word>
+	<word>
+		<verb value="switch">转换</verb>
+		<noun value="switch">开关</noun>
+	</word>
+	<word>
+		<verb value="syllable">划分音节，按音节发音</verb>
+		<noun value="syllable">音节</noun>
+	</word>
+	<word>
+		<noun value="syllabus">教学大纲，课程表</noun>
+	</word>
+	<word>
+		<verb value="symbolise">采用象征</verb>
+		<verb value="symbolize">采用象征</verb>
+		<noun value="symbol">象征；符号，标志</noun>
+		<adj value="symbolic">象征的；符号的</adj>
+	</word>
+	<word>
+		<verb value="symmetrize">使对称，使均匀</verb>
+		<noun value="symmetry">对称，均匀</noun>
+		<adj value="symmetric">对称的，均匀的</adj>
+		<adj value="symmetrical">对称的，均匀的</adj>
+	</word>
+	<word>
+		<verb value="synchronise">同步，同时发生</verb>
+		<verb value="synchronize">同步，同时发生</verb>
+		<adj value="synchronized">同步化的</adj>
+	</word>
+	<word>
+		<noun value="synergism">合作</noun>
+		<adj value="synergetic">协同作用的，协作的，合作的</adj>
+	</word>
+	<word>
+		<noun value="synonymy">同义词</noun>
+		<adj value="synonymous">同义的</adj>
+	</word>
+	<word>
+		<noun value="synopsis">概要，大纲</noun>
+		<noun value="synopses">概要，大纲（复数）</noun>
+	</word>
+	<word>
+		<noun value="syntax">语法，句法</noun>
+		<adj value="syntactic">句法的，语法的</adj>
+		<adv value="syntactically">依照句法地；在语句构成上</adv>
+	</word>
+	<word>
+		<verb value="synthesise">合成；综合</verb>
+		<verb value="synthesize">合成；综合</verb>
+		<noun value="synthesis">综合，综合物</noun>
+		<noun value="synthetic">合成物</noun>
+		<adj value="synthetic">综合的；合成的，人造的</adj>
+	</word>
+</words>

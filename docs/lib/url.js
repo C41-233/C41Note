@@ -22,8 +22,13 @@
 
     function toSearch(array){
         let s = "?";
+        let and = false;
         for(let name in array){
             for(let value of array[name]){
+                if(and){
+                    s += '&';
+                }
+                and = true;
                 s += `${name}=${value}`;
             }
         }
@@ -48,6 +53,9 @@
                 return array[name][0];
             }
             return undefined;
+        },
+        clearParameters(){
+            history.pushState(null, 0, location.pathname);
         }
     };
 })();

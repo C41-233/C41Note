@@ -1,0 +1,196 @@
+<words>
+	<word>
+		<verb value="object">反对，拒绝</verb>
+		<noun value="objection">异议，反对，缺陷，妨碍</noun>
+	</word>
+	<word>
+		<noun value="object">物体；客体；宾语</noun>
+		<noun value="objective">目标，目的</noun>
+		<adj value="objective">客观的</adj>
+	</word>
+	<word>
+		<noun value="obligation">义务，职责，债务</noun>
+	</word>
+	<word>
+		<verb value="obsolete">淘汰，废弃</verb>
+		<noun value="obsolete">废词；陈腐的人</noun>
+		<noun value="obsoleteness">废弃</noun>
+		<adj value="obsolescent">荒废的，即将过时的，逐渐被废弃的</adj>
+		<adj value="obsolete">废弃的，老式的</adj>
+	</word>
+	<word>
+		<noun value="obstacle">障碍，干扰；妨害物</noun>
+	</word>
+	<word>
+		<verb value="obtain">获得；流行</verb>
+	</word>
+	<word>
+		<noun value="occasion">时机，机会</noun>
+		<adj value="occasional">偶然的</adj>
+	</word>
+	<word>
+		<verb value="occlude">封闭；挡住；咬合</verb>
+		<noun value="occlusion">闭塞；吸收；咬合；包藏</noun>
+	</word>
+	<word>
+		<verb value="occur">发生，出现</verb>
+		<noun value="occurrence">发生，出现</noun>
+		<adj value="occurrent">正在发生的，偶然发生的</adj>
+	</word>
+	<word>
+		<noun value="omission">疏忽，遗漏；省略；冗长</noun>
+		<adj value="omissible">可删节的；可省略的</adj>
+		<adj value="omissive">遗漏的；省略的</adj>
+	</word>
+	<word>
+		<verb value="omit">省略</verb>
+	</word>
+	<word>
+		<adj value="omnipotent">无所不能的</adj>
+	</word>
+	<word>
+		<adj value="omniscient">无所不知的</adj>
+	</word>
+	<word>
+		<adj value="on-the-job">在职的</adj>
+	</word>
+	<word>
+		<noun value="ongoging">前进，行为，举止</noun>
+		<adj value="ongoging">不间断的，前进的</adj>
+	</word>
+	<word>
+		<verb value="operate">操作；经营；动手术</verb>
+		<noun value="operand">操作数</noun>
+		<noun value="operation">操作；经营；手术；运算</noun>
+		<noun value="operator">经营者；操作员；运算符</noun>
+	</word>
+	<word>
+		<verb value="oppose">反对</verb>
+		<adj value="opposite">相反的，对立的</adj>
+	</word>
+	<word>
+		<noun value="optimality">最佳性</noun>
+		<noun value="optimization">最优化</noun>
+		<adj value="optimal">最佳的，最理想的</adj>
+	</word>
+	<word>
+		<noun value="optional">可选项</noun>
+		<adj value="optional">可选择的，随意的</adj>
+	</word>
+	<word>
+		<noun value="orange">橙子；橙色</noun>
+		<adj value="orange">橙色的</adj>
+	</word>
+	<word>
+		<noun value="orangutan">猩猩</noun>
+	</word>
+	<word>
+		<verb value="orchestrate">编管弦乐曲；精心安排</verb>
+		<noun value="orchestration">管弦乐编曲；和谐的结合</noun>
+	</word>
+	<word>
+		<noun value="ordinary">普通人</noun>
+		<adj value="ordinary">普通的，平凡的</adj>
+		<adv value="ordinarily">通常地，一般地</adv>
+	</word>
+	<word>
+		<verb value="organise">组织</verb>
+		<verb value="organize">组织</verb>
+		<noun value="organisation">组织，团体</noun>
+		<noun value="organization">组织，团体</noun>
+		<adj value="organised">有组织的</adj>
+		<adj value="organizational">组织的</adj>
+		<adj value="organized">有组织的</adj>
+	</word>
+	<word>
+		<verb value="originate">发生，引起</verb>
+		<noun value="origin">起源；原点</noun>
+		<adj value="original">原始的；最初的</adj>
+	</word>
+	<word>
+		<noun value="orthogon">长方形，矩形</noun>
+		<noun value="orthogonal">正交直线</noun>
+		<noun value="orthogonality">正交性；相互垂直</noun>
+		<adj value="orthogonal">正交的；直角的</adj>
+	</word>
+	<word>
+		<adj value="orthonormal">标准正交的；正规化的</adj>
+	</word>
+	<word>
+		<noun value="oscillation">振荡，摆动</noun>
+	</word>
+	<word>
+		<noun value="outage">中断供应</noun>
+	</word>
+	<word>
+		<noun value="outcome">结果</noun>
+	</word>
+	<word>
+		<verb value="outgo">支出；外出；出口</verb>
+		<adj value="outgoing">外出的</adj>
+	</word>
+	<word>
+		<verb value="outline">概述，略述，描画</verb>
+		<noun value="outline">轮廓；大纲，概要，略图</noun>
+	</word>
+	<word>
+		<verb value="outlive">比…活得久</verb>
+	</word>
+	<word>
+		<adj value="outrageous">粗暴的；可恶的；令人吃惊的</adj>
+		<adv value="outrageously">凶残地，残暴地</adv>
+	</word>
+	<word>
+		<verb value="overcome">克服；胜过</verb>
+	</word>
+	<word>
+		<verb value="overemphasize">过分强调</verb>
+	</word>
+	<word>
+		<verb value="overestimate">高估</verb>
+		<noun value="overestimate">高估</noun>
+	</word>
+	<word>
+		<verb value="overflow">溢出；泛滥</verb>
+		<noun value="overflow">溢出；泛滥</noun>
+	</word>
+	<word>
+		<noun value="overhead">开销；天花板</noun>
+		<adj value="overhead">高架的；在头上的</adj>
+		<adv value="overhead">在头顶上；在空中；在高处</adv>
+	</word>
+	<word>
+		<verb value="overlap">重叠</verb>
+		<noun value="overlap">重叠；重复</noun>
+		<adj value="overlapping">重叠的，覆盖的</adj>
+	</word>
+	<word>
+		<verb value="overlay">在表面上铺一薄层，镀</verb>
+		<noun value="overlay">覆盖图，覆盖物</noun>
+		<adj value="overlying">上覆盖的</adj>
+	</word>
+	<word>
+		<verb value="overlook">忽视；眺望</verb>
+		<noun value="overlook">忽视；眺望</noun>
+	</word>
+	<word>
+		<adj value="overseas">海外的</adj>
+		<adv value="overseas">在海外</adv>
+	</word>
+	<word>
+		<verb value="oversee">监督；审查；俯瞰；偷看到</verb>
+	</word>
+	<word>
+		<noun value="oversight">监督，照管；疏忽</noun>
+	</word>
+	<word>
+		<noun value="overview">综述，概观</noun>
+	</word>
+	<word>
+		<verb value="overwhelm">压倒；淹没；受打击</verb>
+		<adj value="overwhelmed">受宠若惊的</adj>
+	</word>
+	<word>
+		<noun value="owl">猫头鹰</noun>
+	</word>
+</words>

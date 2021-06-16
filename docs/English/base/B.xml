@@ -1,0 +1,231 @@
+<words>
+	<word>
+		<noun value="bachelor">学士学位；单身汉</noun>
+	</word>
+	<word>
+		<verb value="backup">备份</verb>
+		<noun value="backup">备份</noun>
+	</word>
+	<word>
+		<noun value="backwater">回水，死水</noun>
+	</word>
+	<word>
+		<verb value="backwordack">追踪，循迹调查；由原路返回</verb>
+	</word>
+	<word>
+		<noun value="bacteria">细菌</noun>
+	</word>
+	<word>
+		<noun value="badminton">羽毛球</noun>
+	</word>
+	<word>
+		<noun value="bakery">面包店</noun>
+	</word>
+	<word>
+		<noun value="balcony">阳台</noun>
+	</word>
+	<word>
+		<noun value="banana">香蕉</noun>
+	</word>
+	<word>
+		<verb value="bar">阻拦，封锁</verb>
+		<noun value="bar">酒吧；条，杆，栅栏</noun>
+	</word>
+	<word>
+		<noun value="barbecue">烧烤</noun>
+	</word>
+	<word>
+		<verb value="barrel">快速移动；把…装入桶内</verb>
+		<noun value="barrel">桶；枪管，炮管</noun>
+	</word>
+	<word>
+		<verb value="barrier">把…关入栅栏</verb>
+		<noun value="barrier">障碍物，屏障；界线</noun>
+	</word>
+	<word>
+		<noun value="base">基地</noun>
+	</word>
+	<word>
+		<noun value="basic">基础，要素</noun>
+		<noun value="basis">基本原理</noun>
+		<adj value="basic">基本的，基础的</adj>
+		<adv value="basically">基本上</adv>
+	</word>
+	<word>
+		<noun value="bathtub">浴缸</noun>
+	</word>
+	<word>
+		<verb value="bear">容忍，负担；刻印</verb>
+		<noun value="bear">熊</noun>
+	</word>
+	<word>
+		<verb value="beautify">美化</verb>
+		<noun value="beauty">美丽；美人</noun>
+		<adj value="beautiful">美丽的</adj>
+		<adv value="beautifully">美好地</adv>
+	</word>
+	<word>
+		<noun value="bed">床</noun>
+	</word>
+	<word>
+		<verb value="behave">表现，运转</verb>
+		<noun value="behaviour">行为，习性</noun>
+		<adj value="behavioural">行为的，动作的</adj>
+	</word>
+	<word>
+		<noun value="belt">腰带，皮带；区</noun>
+	</word>
+	<word>
+		<verb value="benefit">受益，对…有好处</verb>
+		<noun value="benefit">利益，好处</noun>
+		<adj value="beneficial">有利的</adj>
+	</word>
+	<word>
+		<noun value="berserker">狂战士</noun>
+		<adv value="berserker">狂暴的</adv>
+	</word>
+	<word>
+		<adv value="besides">此外，而且</adv>
+	</word>
+	<word>
+		<noun value="beverage">饮料</noun>
+	</word>
+	<word>
+		<verb value="bias">对…有偏见</verb>
+		<noun value="bias">偏见</noun>
+		<adj value="biased">有偏见的</adj>
+	</word>
+	<word>
+		<noun value="billiards">台球</noun>
+		<adj value="billiards">台球的</adj>
+	</word>
+	<word>
+		<noun value="biography">传记</noun>
+	</word>
+	<word>
+		<noun value="biology">生物，生物学</noun>
+		<adj value="biological">生物的；生物学的</adj>
+		<adv value="biologically">生物学上，生物学地</adv>
+	</word>
+	<word>
+		<noun value="blackberry">黑莓</noun>
+	</word>
+	<word>
+		<verb value="blind">失失明</verb>
+		<noun value="blind">借口，掩饰；百叶窗</noun>
+		<adj value="blind">盲目地，瞎的</adj>
+		<adv value="blindly">盲目地，轻率地</adv>
+	</word>
+	<word>
+		<noun value="blower">吹风机</noun>
+	</word>
+	<word>
+		<noun value="blueberry">蓝莓</noun>
+	</word>
+	<word>
+		<verb value="blueprint">计划；制成蓝图</verb>
+		<noun value="blueprint">蓝图，设计图；计划</noun>
+	</word>
+	<word>
+		<noun value="boathouse">船屋</noun>
+	</word>
+	<word>
+		<adj value="bolt-on">螺栓紧固的；附加的</adj>
+	</word>
+	<word>
+		<verb value="bond">使结合</verb>
+	</word>
+	<word>
+		<verb value="bother">打扰</verb>
+		<noun value="bother">麻烦，焦急</noun>
+	</word>
+	<word>
+		<verb value="bound">限制，束缚；弹起，使跳跃</verb>
+		<noun value="bound">范围；跳跃</noun>
+		<noun value="boundary">边界</noun>
+		<adj value="bound">有义务的；受约束的；装有封面的</adj>
+	</word>
+	<word>
+		<noun value="bowling">保龄球</noun>
+	</word>
+	<word>
+		<verb value="bracket">括在一起，归为一类</verb>
+		<noun value="bracket">支架，括号</noun>
+	</word>
+	<word>
+		<noun value="brain">头脑；智力</noun>
+	</word>
+	<word>
+		<verb value="brainstorm">集体讨论</verb>
+		<noun value="brainstorm">头脑风暴</noun>
+	</word>
+	<word>
+		<noun value="branch">树枝；支流，分叉；分部，分科</noun>
+	</word>
+	<word>
+		<noun value="Brazil">巴西</noun>
+		<noun value="Brazilian">巴西人</noun>
+		<adj value="Brazilian">巴西的</adj>
+	</word>
+	<word>
+		<verb value="breach">违反，破坏，打破</verb>
+		<noun value="breach">违背，违反；缺口</noun>
+	</word>
+	<word>
+		<verb value="breadboard">制作模拟板</verb>
+		<noun value="breadboard">擀面板，案板；电路试验板</noun>
+	</word>
+	<word>
+		<verb value="brief">做…的题要</verb>
+		<adj value="brief">简短的</adj>
+	</word>
+	<word>
+		<verb value="brighten">使变亮</verb>
+		<adj value="bright">明亮的</adj>
+	</word>
+	<word>
+		<noun value="brittleness">脆性，脆弱性；脆度</noun>
+		<adj value="brittle">易碎的，脆弱的；易生气的</adj>
+	</word>
+	<word>
+		<adj value="broad">宽的，辽阔的，显著的</adj>
+	</word>
+	<word>
+		<verb value="browse">随意翻阅，浏览；（牛羊）吃草</verb>
+	</word>
+	<word>
+		<noun value="brutality">无情，残忍</noun>
+	</word>
+	<word>
+		<verb value="bubble">冒泡，沸腾</verb>
+		<noun value="bubble">气泡，泡沫</noun>
+	</word>
+	<word>
+		<verb value="build">建造</verb>
+		<noun value="building">建筑物</noun>
+	</word>
+	<word>
+		<noun value="bulk">容量；大部分</noun>
+		<adj value="bulky">体积大的；庞大的；笨重的</adj>
+	</word>
+	<word>
+		<verb value="burden">使负担</verb>
+		<noun value="burden">负担</noun>
+	</word>
+	<word>
+		<verb value="burrow">挖地洞</verb>
+	</word>
+	<word>
+		<noun value="bus">公共汽车；总线</noun>
+	</word>
+	<word>
+		<noun value="busboy">餐馆工</noun>
+	</word>
+	<word>
+		<noun value="buster">小家伙</noun>
+	</word>
+	<word>
+		<verb value="button">扣紧</verb>
+		<noun value="button">扣子，按钮</noun>
+	</word>
+</words>

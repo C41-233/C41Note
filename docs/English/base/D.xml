@@ -1,0 +1,441 @@
+<words>
+	<word>
+		<verb value="damp">使潮湿，使沮丧，抑制，阻尼</verb>
+		<noun value="damp">潮湿，湿气</noun>
+		<adj value="damp">潮湿的</adj>
+	</word>
+	<word>
+		<verb value="dangle">摇晃地悬挂</verb>
+		<adj value="dangling">悬挂的，摇摆的</adj>
+	</word>
+	<word>
+		<noun value="datum">数据，资料</noun>
+		<noun value="data">数据，资料（复数）</noun>
+	</word>
+	<word>
+		<verb value="daunt">使气馁，使畏缩</verb>
+		<adj value="daunting">令人畏缩的，令人气馁的</adj>
+	</word>
+	<word>
+		<noun value="deadline">截止期限，最后期限</noun>
+	</word>
+	<word>
+		<verb value="debate">辩论，争论</verb>
+		<noun value="debate">辩论，争论</noun>
+	</word>
+	<word>
+		<noun value="decade">十年</noun>
+	</word>
+	<word>
+		<noun value="decency">体面，庄重</noun>
+		<adj value="decent">像样的，体面的，得体的</adj>
+	</word>
+	<word>
+		<verb value="decline">下降；衰落；委婉拒绝</verb>
+		<noun value="decline">下降；衰落；委婉拒绝</noun>
+	</word>
+	<word>
+		<verb value="decompose">分解，腐烂</verb>
+		<noun value="decomposition">分解，腐烂，变质</noun>
+	</word>
+	<word>
+		<verb value="dedicate">致力，献身</verb>
+		<noun value="dedication">奉献，献身</noun>
+		<adj value="dedicated">专用的；专注的；献身的</adj>
+	</word>
+	<word>
+		<verb value="deduce">推断，演绎出</verb>
+		<verb value="deduct">演绎；扣除，减去</verb>
+		<noun value="deduction">演绎；推论</noun>
+	</word>
+	<word>
+		<verb value="defect">变节；叛变</verb>
+		<noun value="defect">缺点，缺陷</noun>
+	</word>
+	<word>
+		<verb value="defend">辩护；保卫</verb>
+		<noun value="defence">防卫</noun>
+		<noun value="defense">防卫</noun>
+	</word>
+	<word>
+		<verb value="defer">推迟，延期；顺从</verb>
+		<noun value="deference">顺从，尊重</noun>
+		<noun value="deferral">延期</noun>
+	</word>
+	<word>
+		<verb value="define">定义</verb>
+		<noun value="definition">定义</noun>
+		<adj value="definite">一定的，确切的</adj>
+	</word>
+	<word>
+		<verb value="deform">变形</verb>
+		<noun value="deformation">变形</noun>
+		<adj value="deformed">畸形的；丑陋的；残废的</adj>
+	</word>
+	<word>
+		<verb value="degrade">降级；降低；退化</verb>
+		<noun value="degradation">退化；降格，降级；堕落</noun>
+		<adj value="degradation">退化；降级；降解</adj>
+	</word>
+	<word>
+		<verb value="delegate">委派</verb>
+		<noun value="delegate">代表</noun>
+		<noun value="delegation">代表团；授权；委托</noun>
+	</word>
+	<word>
+		<verb value="deliberate">仔细考虑，商议</verb>
+		<adj value="deliberate">故意的，深思熟虑的，从容的</adj>
+	</word>
+	<word>
+		<noun value="delicatessen">熟食</noun>
+	</word>
+	<word>
+		<verb value="delight">使高兴</verb>
+		<noun value="delight">高兴</noun>
+		<adj value="delighted">高兴的；欣喜的</adj>
+	</word>
+	<word>
+		<verb value="delimit">划界；定界限</verb>
+	</word>
+	<word>
+		<verb value="deliver">释放；递送</verb>
+		<noun value="delivery">交付；分娩；递送</noun>
+	</word>
+	<word>
+		<adj value="deluxe">高级的；豪华的</adj>
+	</word>
+	<word>
+		<verb value="demand">需要，请求</verb>
+		<noun value="demand">需求</noun>
+	</word>
+	<word>
+		<verb value="demonstrate">证明，展示</verb>
+		<noun value="demonstration">证明</noun>
+	</word>
+	<word>
+		<noun value="denizen">居民</noun>
+	</word>
+	<word>
+		<verb value="denote">表面，表示</verb>
+		<noun value="denotation">符号，意义，表示</noun>
+	</word>
+	<word>
+		<noun value="denseness">密集，稠密，浓厚</noun>
+		<noun value="density">密度</noun>
+		<adj value="dense">稠密的，密集的，浓厚的；愚钝的</adj>
+		<adv value="densely">浓密地，密集地</adv>
+	</word>
+	<word>
+		<verb value="deny">否认，拒绝</verb>
+		<noun value="denial">否认，拒绝</noun>
+	</word>
+	<word>
+		<verb value="depart">离开，启程</verb>
+		<noun value="departure">离开</noun>
+	</word>
+	<word>
+		<verb value="depend">依赖</verb>
+		<noun value="dependence">依赖，信任</noun>
+		<adj value="dependent">依靠的</adj>
+	</word>
+	<word>
+		<verb value="depict">描述，描画</verb>
+		<noun value="depiction">描写，叙述</noun>
+		<adj value="depictive">描写的，描述的</adj>
+	</word>
+	<word>
+		<verb value="deploy">部署</verb>
+		<noun value="deployment">调度，部署</noun>
+	</word>
+	<word>
+		<noun value="depression">沮丧</noun>
+	</word>
+	<word>
+		<verb value="derive">起源，源于</verb>
+		<noun value="derivative">衍生物，派生物；导数</noun>
+		<adj value="derivative">派生的</adj>
+	</word>
+	<word>
+		<verb value="desert">遗弃</verb>
+		<noun value="desertion">遗弃</noun>
+		<noun value="desert">沙漠</noun>
+	</word>
+	<word>
+		<verb value="designate">指定，指派；标出</verb>
+		<noun value="designation">指定，选派；名称</noun>
+		<adj value="designative">指定的，指明的</adj>
+	</word>
+	<word>
+		<verb value="desire">渴望</verb>
+		<noun value="desire">渴望</noun>
+		<adj value="desirable">令人满意的</adj>
+	</word>
+	<word>
+		<noun value="dessert">甜点</noun>
+	</word>
+	<word>
+		<noun value="destination">目的地，终点站</noun>
+	</word>
+	<word>
+		<verb value="determine">确定，决定</verb>
+		<noun value="determination">决心；果断</noun>
+		<adj value="deterministic">确定的，决定的</adj>
+	</word>
+	<word>
+		<verb value="detract">转移，使分心；贬低，减去</verb>
+		<noun value="detractor">贬低者，诽谤者</noun>
+	</word>
+	<word>
+		<noun value="detrimental">有害的人</noun>
+		<adj value="detrimental">不利的；有害的</adj>
+	</word>
+	<word>
+		<noun value="deviant">不正常者；偏移值；变异物</noun>
+		<noun value="deviation">偏差</noun>
+		<adj value="deviant">不正常的；离经叛道的</adj>
+	</word>
+	<word>
+		<noun value="device">装置</noun>
+	</word>
+	<word>
+		<verb value="devise">设计；想出；发明</verb>
+		<noun value="devise">遗赠</noun>
+	</word>
+	<word>
+		<verb value="devote">奉献</verb>
+		<noun value="devotion">奉献</noun>
+	</word>
+	<word>
+		<noun value="diagnostic">诊断结论</noun>
+		<adj value="diagnostic">诊断的，特征的</adj>
+	</word>
+	<word>
+		<noun value="dialect">方言</noun>
+		<adj value="dialect">方言的</adj>
+	</word>
+	<word>
+		<noun value="diary">日记，日志</noun>
+	</word>
+	<word>
+		<verb value="dictate">命令；口述；听写</verb>
+		<noun value="dictation">命令；口述；听写</noun>
+		<noun value="dictator">独裁者，命令者</noun>
+	</word>
+	<word>
+		<verb value="differ">不同，有差异</verb>
+		<verb value="differentiate">区分</verb>
+		<noun value="difference">差异</noun>
+		<noun value="differentiation">变异</noun>
+		<adj value="different">不同的</adj>
+	</word>
+	<word>
+		<verb value="diffuse">扩散，传播</verb>
+		<noun value="diffusion">扩散，传播；漫射</noun>
+	</word>
+	<word>
+		<noun value="digit">数字</noun>
+		<adj value="digital">数码的，数字的</adj>
+	</word>
+	<word>
+		<verb value="digress">离题</verb>
+		<noun value="digression">离题；脱轨</noun>
+	</word>
+	<word>
+		<noun value="dilemma">困境，进退两难</noun>
+	</word>
+	<word>
+		<noun value="dimension">尺寸，维度</noun>
+	</word>
+	<word>
+		<verb value="diminish">减少</verb>
+	</word>
+	<word>
+		<verb value="direct">管理，指挥</verb>
+		<noun value="directive">指示，指令</noun>
+		<noun value="director">导演</noun>
+		<adj value="direct">直接的</adj>
+		<adj value="directive">指导的，管理的</adj>
+	</word>
+	<word>
+		<noun value="disadvantage">缺点；不利条件</noun>
+	</word>
+	<word>
+		<verb value="discard">抛弃</verb>
+	</word>
+	<word>
+		<verb value="discern">识别</verb>
+	</word>
+	<word>
+		<verb value="discipline">训练，训导</verb>
+		<noun value="discipline">纪律</noun>
+		<adj value="disciplinary">规律的，训练的</adj>
+	</word>
+	<word>
+		<verb value="discontent">使不满</verb>
+		<noun value="discontent">不满</noun>
+		<adj value="discontent">不满意的</adj>
+	</word>
+	<word>
+		<verb value="discover">发现</verb>
+		<noun value="discovery">发现</noun>
+	</word>
+	<word>
+		<noun value="discrepancy">不符，矛盾</noun>
+	</word>
+	<word>
+		<noun value="discretion">谨慎</noun>
+		<adj value="discrete">离散的</adj>
+	</word>
+	<word>
+		<verb value="discriminate">歧视，区别</verb>
+		<noun value="discrimination">歧视</noun>
+	</word>
+	<word>
+		<adj value="disembodied">空洞的，无实质的，无实体的</adj>
+	</word>
+	<word>
+		<noun value="dish">菜；盘子</noun>
+	</word>
+	<word>
+		<verb value="dismantle">拆除；取消；解散</verb>
+	</word>
+	<word>
+		<verb value="dispatch">派遣，分派</verb>
+		<noun value="dispatch">派遣；急件</noun>
+		<noun value="dispatcher">调度员；调度程序；分配器</noun>
+	</word>
+	<word>
+		<adj value="dispensable">非必要的</adj>
+	</word>
+	<word>
+		<verb value="displace">取代，置换</verb>
+		<noun value="displacement">位移；取代</noun>
+	</word>
+	<word>
+		<verb value="display">展示，显示</verb>
+		<noun value="display">展示，显示</noun>
+	</word>
+	<word>
+		<verb value="dispose">处理</verb>
+		<noun value="disposal">处理</noun>
+		<adj value="disposable">一次性的</adj>
+	</word>
+	<word>
+		<verb value="disprove">证伪</verb>
+	</word>
+	<word>
+		<verb value="disrupt">破坏</verb>
+		<noun value="disruption">破坏，分裂，瓦解</noun>
+		<adj value="disruptive">破坏的，分裂性的</adj>
+	</word>
+	<word>
+		<verb value="dissatisfy">不满足</verb>
+		<noun value="dissatisfaction">不满</noun>
+		<adj value="dissatisfied">不满意的</adj>
+	</word>
+	<word>
+		<verb value="disseminate">散布，传播</verb>
+		<noun value="dissemination">宣传，传播，传染</noun>
+		<noun value="disseminator">传播者</noun>
+		<adj value="disseminative">散布的，传播的</adj>
+	</word>
+	<word>
+		<noun value="distance">距离</noun>
+		<adj value="distant">遥远的</adj>
+	</word>
+	<word>
+		<verb value="distinguish">区分，辨别</verb>
+		<noun value="distinction">区别，差别</noun>
+		<adj value="distinct">明显的；有区别的</adj>
+	</word>
+	<word>
+		<verb value="distort">变形，扭曲</verb>
+		<noun value="distortion">变形，扭曲</noun>
+	</word>
+	<word>
+		<verb value="distribute">分布，散布</verb>
+		<noun value="distribution">分布</noun>
+	</word>
+	<word>
+		<verb value="disturb">打扰</verb>
+		<noun value="disturbance">干扰</noun>
+		<adj value="disturbing">令人不安的</adj>
+		<adj value="disturbed">扰乱的</adj>
+	</word>
+	<word>
+		<verb value="diversify">使多样化</verb>
+		<noun value="diversity">多样性，差异</noun>
+		<adj value="diverse">不同的，多种多样的</adj>
+	</word>
+	<word>
+		<verb value="divorce">离婚</verb>
+		<noun value="divorce">离婚</noun>
+	</word>
+	<word>
+		<noun value="domain">领域</noun>
+	</word>
+	<word>
+		<verb value="domesticate">驯养；教化</verb>
+		<adj value="domestic">国内的；家庭的</adj>
+	</word>
+	<word>
+		<verb value="dominate">占优势</verb>
+		<adj value="dominant">主要的</adj>
+	</word>
+	<word>
+		<noun value="doom">厄运；末日</noun>
+		<noun value="doomsayer">灾难预言者</noun>
+	</word>
+	<word>
+		<noun value="door">门</noun>
+	</word>
+	<word>
+		<verb value="doubt">怀疑</verb>
+		<noun value="doubt">怀疑，疑问</noun>
+		<adj value="doubtful">可疑的</adj>
+		<adj value="doubting">持怀疑态度的</adj>
+		<adj value="doubtless">无疑的</adj>
+		<adv value="doubtfully">怀疑地</adv>
+	</word>
+	<word>
+		<verb value="dramatise">编写剧本</verb>
+		<verb value="dramatize">编写剧本</verb>
+		<noun value="drama">戏剧</noun>
+		<adj value="dramatic">戏剧的</adj>
+		<adv value="dramatically">戏剧地</adv>
+	</word>
+	<word>
+		<noun value="drastic">烈性泻药</noun>
+		<adj value="drastic">激烈的，猛烈的</adj>
+	</word>
+	<word>
+		<noun value="drawback">缺点</noun>
+	</word>
+	<word>
+		<verb value="dry">弄干</verb>
+		<adj value="dry">干的；口渴的</adj>
+	</word>
+	<word>
+		<noun value="duet">二重奏</noun>
+	</word>
+	<word>
+		<verb value="duplicate">复制</verb>
+		<noun value="duplicate">副本</noun>
+		<adj value="duplicable">可复制的</adj>
+	</word>
+	<word>
+		<noun value="duration">持续时间</noun>
+		<noun value="durative">持续性</noun>
+		<adj value="durative">持续的</adj>
+	</word>
+	<word>
+		<verb value="dust">拂去灰尘，打扫</verb>
+		<noun value="dust">灰尘；尘埃；尘土</noun>
+	</word>
+	<word>
+		<verb value="dwell">居住，存在</verb>
+	</word>
+	<word>
+		<adj value="dynamic">有活力的</adj>
+	</word>
+</words>

@@ -1,0 +1,27 @@
+<words>
+	<word>
+		<verb value="job-hunt">求职，找工作</verb>
+		<noun value="job-hunting">求职，找工作</noun>
+	</word>
+	<word>
+		<verb value="jog">慢跑</verb>
+		<noun value="jogger">慢跑者</noun>
+		<noun value="jogging">慢跑</noun>
+	</word>
+	<word>
+		<noun value="journal">日报，杂志</noun>
+		<noun value="journalese">新闻文体</noun>
+		<noun value="journalism">新闻业；新闻学</noun>
+		<noun value="journalist">新闻工作者</noun>
+		<adj value="journalistic">新闻业的；新闻工作者的</adj>
+	</word>
+	<word>
+		<verb value="judge">判断；审判</verb>
+		<noun value="judge">法官；裁判员</noun>
+		<noun value="judgement">判断；审判</noun>
+	</word>
+	<word>
+		<verb value="justify">证明合法，辩护</verb>
+		<noun value="justification">理由，辩护</noun>
+	</word>
+</words>

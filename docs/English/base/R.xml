@@ -1,0 +1,435 @@
+<words>
+	<word>
+		<noun value="race">种族</noun>
+	</word>
+	<word>
+		<noun value="radar">雷达</noun>
+	</word>
+	<word>
+		<verb value="radiate">放射，辐射</verb>
+	</word>
+	<word>
+		<noun value="radical">基础；激进分子</noun>
+		<adj value="radical">根本的，彻底的，激进的</adj>
+		<adv value="radically">根本上，彻底地，极端地</adv>
+	</word>
+	<word>
+		<noun value="radio">收音机</noun>
+	</word>
+	<word>
+		<noun value="radius">半径</noun>
+	</word>
+	<word>
+		<verb value="rat">捕鼠；背叛，告密</verb>
+		<noun value="rat">大老鼠；卑鄙小人，叛徒</noun>
+	</word>
+	<word>
+		<verb value="rate">认为；估价；责骂</verb>
+		<noun value="rate">比率，率；速度；价格；等级</noun>
+		<noun value="ratio">比率，比例</noun>
+	</word>
+	<word>
+		<verb value="rationalise">使……合理化</verb>
+		<verb value="rationalize">使……合理化</verb>
+		<noun value="rational">有理数</noun>
+		<noun value="rationale">基本原理</noun>
+		<adj value="rational">合理的，理性的</adj>
+	</word>
+	<word>
+		<verb value="raw">擦伤</verb>
+		<noun value="raw">擦伤处</noun>
+		<noun value="rawness">生；无经验</noun>
+		<adj value="raw">生的，未加工的</adj>
+	</word>
+	<word>
+		<verb value="react">反应</verb>
+		<noun value="reaction">反应</noun>
+		<noun value="reactivity">反应性，活动性</noun>
+	</word>
+	<word>
+		<noun value="reaper">收割者，死神</noun>
+	</word>
+	<word>
+		<verb value="reason">推理</verb>
+		<noun value="reason">理由</noun>
+		<adj value="reasonable">合理的</adj>
+	</word>
+	<word>
+		<verb value="rebel">反叛，反抗</verb>
+		<noun value="rebellion">叛乱，反抗</noun>
+	</word>
+	<word>
+		<verb value="recall">召回，回忆</verb>
+	</word>
+	<word>
+		<verb value="recapture">夺回</verb>
+	</word>
+	<word>
+		<noun value="receipt">收据，发票</noun>
+	</word>
+	<word>
+		<verb value="receive">接受</verb>
+		<noun value="reception">接待；接受</noun>
+		<noun value="recipient">接受者</noun>
+	</word>
+	<word>
+		<noun value="recession">衰退，不景气</noun>
+	</word>
+	<word>
+		<noun value="recipe">食谱</noun>
+	</word>
+	<word>
+		<noun value="reciprocal">倒数；互相起作用的事物</noun>
+		<adj value="reciprocal">互惠的；相互的；倒数的，彼此相反的</adj>
+		<adv value="reciprocally">相互地；相反地；互惠地</adv>
+	</word>
+	<word>
+		<verb value="reconcile">使和解，调停</verb>
+	</word>
+	<word>
+		<verb value="recreate">娱乐；再创建</verb>
+		<noun value="recreation">娱乐</noun>
+	</word>
+	<word>
+		<verb value="recruit">补充；聘用；征募</verb>
+		<noun value="recruit">招聘；新兵</noun>
+	</word>
+	<word>
+		<noun value="rectangle">长方形，矩形</noun>
+	</word>
+	<word>
+		<verb value="recur">复发，重现，循环，递归</verb>
+		<noun value="recursion">递归，循环</noun>
+		<adj value="recurring">循环的；复发的</adj>
+		<adj value="recursive">递归的，循环的</adj>
+	</word>
+	<word>
+		<verb value="reduce">减少</verb>
+		<noun value="reduction">减少</noun>
+		<adj value="reducible">可约的，可化简的</adj>
+	</word>
+	<word>
+		<verb value="refine">精炼，提纯；改善；使…文雅</verb>
+		<noun value="refinement">精制；文雅；提纯</noun>
+	</word>
+	<word>
+		<verb value="reflect">反射，反映</verb>
+		<noun value="reflection">反射</noun>
+	</word>
+	<word>
+		<verb value="reform">改革</verb>
+	</word>
+	<word>
+		<verb value="refract">使折射</verb>
+		<noun value="refraction">折射</noun>
+	</word>
+	<word>
+		<verb value="refrain">节制，克制，避免，制止</verb>
+		<noun value="refrain">叠句，副歌；重复</noun>
+	</word>
+	<word>
+		<noun value="refutation">反驳，辩驳</noun>
+	</word>
+	<word>
+		<noun value="regime">政权，政体，社会制度</noun>
+	</word>
+	<word>
+		<noun value="region">地区</noun>
+		<adj value="regional">地区的，局部的</adj>
+	</word>
+	<word>
+		<verb value="register">注册，登记</verb>
+		<noun value="register">寄存器</noun>
+		<noun value="registrant">登记者</noun>
+		<noun value="registrar">登记员</noun>
+		<noun value="registration">登记，注册；挂号</noun>
+	</word>
+	<word>
+		<verb value="regulate">调节，控制</verb>
+		<noun value="regulation">管理；规则；校准</noun>
+		<adj value="regulative">调整的，调节的</adj>
+	</word>
+	<word>
+		<noun value="reification">具体化；物化</noun>
+	</word>
+	<word>
+		<verb value="reinforce">加强</verb>
+		<noun value="reinforcement">加固</noun>
+	</word>
+	<word>
+		<verb value="reject">拒绝，排斥</verb>
+		<noun value="rejection">拒绝，抛弃</noun>
+		<adj value="rejective">拒绝的，排斥的</adj>
+	</word>
+	<word>
+		<verb value="relate">使有联系</verb>
+		<noun value="relation">关系</noun>
+		<noun value="relationship">关系</noun>
+		<noun value="relative">亲戚</noun>
+		<adj value="related">有关系的</adj>
+		<adj value="relational">相关的，亲属的</adj>
+		<adj value="relative">相对的</adj>
+	</word>
+	<word>
+		<verb value="relay">转播，接替</verb>
+	</word>
+	<word>
+		<verb value="relocate">重新安置；调动</verb>
+		<noun value="relocation">重定位；重新布置</noun>
+	</word>
+	<word>
+		<noun value="reluctance">勉强，不情愿</noun>
+		<adj value="reluctant">不情愿的，勉强的</adj>
+		<adv value="reluctantly">不情愿地</adv>
+	</word>
+	<word>
+		<verb value="rely">依靠；信赖</verb>
+		<noun value="reliability">可靠性</noun>
+		<noun value="reliable">可靠的人</noun>
+		<adj value="reliable">可靠的，可信赖的</adj>
+		<adv value="reliably">可靠地；确实地</adv>
+	</word>
+	<word>
+		<verb value="remain">保持，剩余</verb>
+		<noun value="remain">遗迹，残骸</noun>
+		<noun value="remainder">余数</noun>
+		<noun value="remnant">剩余</noun>
+		<adj value="remnant">剩余的</adj>
+	</word>
+	<word>
+		<verb value="remark">评论</verb>
+		<noun value="remark">评论，言辞</noun>
+		<adj value="remarkable">卓越的，非凡的</adj>
+		<adv value="remarkably">显著地</adv>
+	</word>
+	<word>
+		<noun value="reminiscent">回忆者</noun>
+		<adj value="reminiscent">怀旧的</adj>
+	</word>
+	<word>
+		<verb value="remodel">改造；重建</verb>
+		<noun value="remodeling">重塑，重构</noun>
+	</word>
+	<word>
+		<verb value="render">致使；提出；实施；着色；回报</verb>
+		<noun value="render">打底；交纳；粉刷</noun>
+		<noun value="rendering">翻译；表现；表演；描写；渲染；透视图</noun>
+	</word>
+	<word>
+		<verb value="renew">更新，复兴，重建，续存</verb>
+		<adj value="renewable">可再生的，可更新的</adj>
+	</word>
+	<word>
+		<verb value="rent">出租；租用；租借</verb>
+		<noun value="rental">租金收入，租金；租赁</noun>
+		<adj value="rental">租赁的；收取租金的</adj>
+	</word>
+	<word>
+		<verb value="repeat">重复；复制；背诵</verb>
+		<noun value="repeat">重复；副本</noun>
+		<noun value="repetition">重复；背诵；副本</noun>
+	</word>
+	<word>
+		<verb value="replicate">复制；折叠</verb>
+		<noun value="replica">复制品，复制物</noun>
+		<noun value="replication">复制；回答，反响</noun>
+	</word>
+	<word>
+		<verb value="reply">回答，回复</verb>
+		<noun value="reply">回答，回复</noun>
+	</word>
+	<word>
+		<verb value="reposit">贮藏；使复位</verb>
+		<noun value="repository">贮藏室，仓库；知识库</noun>
+	</word>
+	<word>
+		<verb value="repress">抑制，镇压</verb>
+		<noun value="repression">压抑；镇压</noun>
+		<noun value="repressor">镇压者；阻遏物</noun>
+	</word>
+	<word>
+		<verb value="reproduce">复制，再生，繁殖</verb>
+	</word>
+	<word>
+		<noun value="reptile">爬行动物</noun>
+	</word>
+	<word>
+		<verb value="repudiate">拒绝；否定；批判</verb>
+		<noun value="repudiation">否认，拒绝；抛弃，断绝关系</noun>
+	</word>
+	<word>
+		<noun value="reputation">名声，名誉，声望</noun>
+	</word>
+	<word>
+		<verb value="reserve">保留</verb>
+		<noun value="reservation">预定；保留</noun>
+		<adj value="reserved">保留的；预定的</adj>
+	</word>
+	<word>
+		<verb value="reside">住，居住；属于</verb>
+		<noun value="residence">住宅，住处；居住</noun>
+		<noun value="resident">居民</noun>
+		<adj value="resident">居住的，定居的</adj>
+	</word>
+	<word>
+		<verb value="resile">恢复原状</verb>
+		<noun value="resiliency">弹性；跳回</noun>
+		<adj value="resilient">有弹力的</adj>
+	</word>
+	<word>
+		<verb value="resist">抵抗</verb>
+		<noun value="resistant">抵抗者</noun>
+		<adj value="resistant">抵抗的</adj>
+		<adj value="resistless">无法抗拒的</adj>
+	</word>
+	<word>
+		<verb value="resolve">决定；溶解；使…分解</verb>
+		<noun value="resolution">分辨率；决议；解决；决心</noun>
+		<noun value="resolve">坚决；决定要做的事</noun>
+		<noun value="resolvent">溶剂；分解物；消肿药</noun>
+		<adj value="resolute">坚决的；果断的</adj>
+		<adj value="resolvable">可分解的；可解决的；可溶解的</adj>
+		<adj value="resolvent">分解的；有溶解力的；消散的</adj>
+	</word>
+	<word>
+		<verb value="resonate">共鸣；共振</verb>
+	</word>
+	<word>
+		<adj value="respective">分别的，各自的</adj>
+		<adv value="respectively">分别地，各自地，独自地</adv>
+	</word>
+	<word>
+		<verb value="respond">回答，作出反应；承担责任</verb>
+		<noun value="respondent">应答者；被告</noun>
+		<noun value="response">响应，回答</noun>
+		<adj value="responsible">有责任的</adj>
+	</word>
+	<word>
+		<noun value="restaurant">餐馆</noun>
+	</word>
+	<word>
+		<verb value="restrain">抑制，制止，遏制</verb>
+		<noun value="restraint">抑制，克制；约束</noun>
+	</word>
+	<word>
+		<verb value="restructure">调整，重组</verb>
+		<noun value="restructuring">调整，改组</noun>
+	</word>
+	<word>
+		<noun value="resume">简历</noun>
+	</word>
+	<word>
+		<verb value="retail">零售；转述</verb>
+		<noun value="retail">零售</noun>
+		<adj value="retail">零售的</adj>
+	</word>
+	<word>
+		<verb value="retain">保持</verb>
+		<noun value="retainer">保持者</noun>
+	</word>
+	<word>
+		<verb value="retract">缩回，撤消；缩进</verb>
+		<noun value="retract">收缩核</noun>
+		<noun value="retraction">撤回，撤销，收回</noun>
+	</word>
+	<word>
+		<verb value="retrieve">检索</verb>
+		<noun value="retrieval">检索</noun>
+		<adj value="retrievable">可检索的；可恢复的</adj>
+	</word>
+	<word>
+		<verb value="reunite">使重聚，使再结合</verb>
+	</word>
+	<word>
+		<verb value="reverb">混响</verb>
+		<noun value="reverb">混响</noun>
+	</word>
+	<word>
+		<verb value="reverse">翻转；相反</verb>
+		<noun value="reverse">反面</noun>
+		<adj value="reverse">反面的</adj>
+	</word>
+	<word>
+		<verb value="review">回顾，复习；评论</verb>
+		<noun value="review">回顾，复习；检讨</noun>
+		<noun value="reviewer">评论者</noun>
+	</word>
+	<word>
+		<verb value="revise">修正，校订；复习</verb>
+		<noun value="revise">修订，校订</noun>
+		<noun value="revision">修正；复习；修订本</noun>
+	</word>
+	<word>
+		<verb value="revoke">撤回，取消，废除</verb>
+		<adj value="revokable">可取消的，可废止的，可撤回的</adj>
+	</word>
+	<word>
+		<verb value="revolve">旋转，循环出现，反复考虑</verb>
+		<noun value="revolution">革命；公转</noun>
+	</word>
+	<word>
+		<verb value="reward">奖励，奖赏</verb>
+		<noun value="reward">报答，奖赏</noun>
+	</word>
+	<word>
+		<adj value="rich">富有的</adj>
+	</word>
+	<word>
+		<noun value="rider">骑手</noun>
+	</word>
+	<word>
+		<noun value="ridiculousness">荒谬，滑稽</noun>
+		<adj value="ridiculous">可笑的；荒谬的</adj>
+	</word>
+	<word>
+		<noun value="rigor">严厉，苛刻</noun>
+		<adj value="rigorous">严格的，严厉的</adj>
+	</word>
+	<word>
+		<verb value="roar">咆哮</verb>
+		<noun value="roar">咆哮，轰鸣</noun>
+	</word>
+	<word>
+		<noun value="robustness">鲁棒性，稳健性；健壮性</noun>
+		<adj value="robust">强健的；健康的；粗野的；粗鲁的</adj>
+		<adv value="robustly">粗鲁地；坚定地</adv>
+	</word>
+	<word>
+		<noun value="rocket">火箭</noun>
+	</word>
+	<word>
+		<verb value="root">生根</verb>
+		<noun value="root">根</noun>
+	</word>
+	<word>
+		<verb value="rope">捆，绑</verb>
+		<noun value="rope">绳，绳索</noun>
+	</word>
+	<word>
+		<verb value="rotate">旋转；循环</verb>
+		<noun value="rotation">旋转</noun>
+		<adj value="rotate">辐状的</adj>
+	</word>
+	<word>
+		<noun value="rottenness">腐败，腐烂</noun>
+		<adj value="rotten">腐烂的，极坏的</adj>
+	</word>
+	<word>
+		<adj value="rough">粗糙地，粗野的，艰苦的</adj>
+	</word>
+	<word>
+		<noun value="rugby">橄榄球</noun>
+	</word>
+	<word>
+		<verb value="rumor">谣传，传说</verb>
+		<noun value="rumor">谣言，传闻</noun>
+	</word>
+	<word>
+		<adj value="rural">农村的，乡下的</adj>
+	</word>
+	<word>
+		<noun value="Russia">俄罗斯</noun>
+		<noun value="Russian">俄国人；俄语</noun>
+		<adj value="Russian">俄国的</adj>
+	</word>
+</words>

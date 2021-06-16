@@ -1,0 +1,81 @@
+<words>
+	<word>
+		<verb value="wage">进行，发动，从事</verb>
+		<noun value="wage">工资，代价，报偿</noun>
+	</word>
+	<word>
+		<verb value="warehouse">把…存入仓库</verb>
+		<noun value="warehouse">仓库；货栈；大商店</noun>
+	</word>
+	<word>
+		<verb value="warrant">保证；担保；批准；辩解</verb>
+		<noun value="warrant">根据；证明；正当理由；委任状</noun>
+	</word>
+	<word>
+		<noun value="watermelon">西瓜</noun>
+	</word>
+	<word>
+		<verb value="wear">穿著；用旧；耗损；面露</verb>
+		<noun value="wear">穿著；磨损；耐久性</noun>
+	</word>
+	<word>
+		<verb value="weasel">逃避；含糊其辞</verb>
+		<noun value="weasel">鼬鼠；狡猾的人</noun>
+	</word>
+	<word>
+		<noun value="weather">天气</noun>
+		<noun value="weatherman">气象员</noun>
+	</word>
+	<word>
+		<noun value="weird">命运；预言</noun>
+		<adj value="weird">怪异的；不可思议的</adj>
+	</word>
+	<word>
+		<noun value="welfare">福利</noun>
+		<adj value="welfare">福利的</adj>
+	</word>
+	<word>
+		<noun value="west">西方</noun>
+		<adj value="west">西方的</adj>
+		<adj value="western">西方的</adj>
+		<adv value="west">向西方，在西方</adv>
+	</word>
+	<word>
+		<verb value="wholesale">批发</verb>
+		<noun value="wholesale">批发</noun>
+		<noun value="wholesaler">批发商</noun>
+		<adj value="wholesale">批发的</adj>
+	</word>
+	<word>
+		<noun value="wiener">法兰克福香肠</noun>
+	</word>
+	<word>
+		<noun value="wildcard">通配符</noun>
+	</word>
+	<word>
+		<noun value="will">意志，决心</noun>
+		<adj value="willing">乐意的，自愿的</adj>
+	</word>
+	<word>
+		<noun value="wing">翅膀</noun>
+	</word>
+	<word>
+		<noun value="witch">女巫</noun>
+	</word>
+	<word>
+		<adj value="workaday">工作日的，日常的，普通的</adj>
+	</word>
+	<word>
+		<noun value="workshop">车间；研讨会；工场；讲习班</noun>
+	</word>
+	<word>
+		<verb value="wrestle">摔跤；斗争</verb>
+		<noun value="wrestling">摔跤；格斗</noun>
+	</word>
+	<word>
+		<verb value="wrong">委屈；无理地对待；诽谤</verb>
+		<noun value="wrong">坏事；不公正</noun>
+		<adj value="wrong">错误的；失常的；不适当的</adj>
+		<adj value="wrongful">不正当的；不讲道理的；不合法的</adj>
+	</word>
+</words>

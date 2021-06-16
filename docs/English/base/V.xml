@@ -1,0 +1,126 @@
+<words>
+	<word>
+		<noun value="vacuum">真空，空间</noun>
+		<adj value="vacuum">真空的</adj>
+	</word>
+	<word>
+		<noun value="vagueness">模糊；含糊；暧昧；茫然</noun>
+		<adj value="vague">模糊的；含糊的；不明确的；暧昧的</adj>
+		<adv value="vaguely">含糊地；暧昧地；茫然地</adv>
+	</word>
+	<word>
+		<verb value="valuate">估价</verb>
+		<noun value="value">价值</noun>
+		<adj value="valuable">有价值的，贵重的，宝贵的</adj>
+	</word>
+	<word>
+		<noun value="vampire">吸血鬼</noun>
+	</word>
+	<word>
+		<verb value="vanish">消失；突然不见</verb>
+		<noun value="vanish">弱化音</noun>
+	</word>
+	<word>
+		<verb value="variegate">使多样化，使丰富多彩</verb>
+		<noun value="variegation">彩色，上色</noun>
+	</word>
+	<word>
+		<verb value="vary">变化</verb>
+		<noun value="variable">变量</noun>
+		<noun value="variant">变体；转化</noun>
+		<noun value="variation">变化，变种</noun>
+		<noun value="variety">多样；种类</noun>
+		<adj value="variable">变量的；多变的</adj>
+		<adj value="variant">不同的；多样的</adj>
+		<adj value="varied">各式各样的</adj>
+		<adj value="various">各种各样的，多方面的</adj>
+	</word>
+	<word>
+		<noun value="velocity">速度</noun>
+	</word>
+	<word>
+		<noun value="vendor">供应商</noun>
+	</word>
+	<word>
+		<verb value="venture">敢于，冒险</verb>
+		<noun value="venture">风险，冒险</noun>
+	</word>
+	<word>
+		<verb value="verify">核实，查证</verb>
+		<noun value="verifiability">可验证性；能证明</noun>
+		<noun value="verification">确认，查证，核实</noun>
+		<noun value="verifier">检验者，核实者；校对机</noun>
+		<adj value="verified">已查清的，已证实的</adj>
+	</word>
+	<word>
+		<adj value="versa">反的</adj>
+	</word>
+	<word>
+		<noun value="verse">诗</noun>
+	</word>
+	<word>
+		<adj value="viable">可行的；能养活的；能生育的</adj>
+	</word>
+	<word>
+		<verb value="vibrate">振动</verb>
+		<noun value="vibration">振动</noun>
+		<adj value="vibrant">振动的</adj>
+	</word>
+	<word>
+		<noun value="vicissitude">变迁</noun>
+	</word>
+	<word>
+		<noun value="video">视频，录像</noun>
+	</word>
+	<word>
+		<noun value="Vietnam">越南</noun>
+		<noun value="Vietnamese">越南人；越南语</noun>
+		<adj value="Vietnamese">越南的</adj>
+	</word>
+	<word>
+		<verb value="vindicate">维护；证明</verb>
+		<noun value="vindication">辩护</noun>
+	</word>
+	<word>
+		<verb value="violate">违反，侵犯，妨碍，亵渎</verb>
+		<noun value="violation">违反，妨碍，侵害；强奸</noun>
+	</word>
+	<word>
+		<verb value="vision">想象；显现；梦见</verb>
+		<verb value="visualise">形象化；想像，设想；显现</verb>
+		<verb value="visualize">形象化；想像，设想；显现</verb>
+		<noun value="vision">视力；美景；眼力；幻象；想象力；愿景</noun>
+		<adj value="visual">视觉的，视力的；栩栩如生的；可视化的</adj>
+		<adj value="visualized">直观的；直视的</adj>
+		<adv value="visually">形象化地；外表上，看得见地</adv>
+	</word>
+	<word>
+		<verb value="vitalize">激发，使有生气</verb>
+		<adj value="vital">至关重要的</adj>
+	</word>
+	<word>
+		<adj value="vivid">生动的</adj>
+	</word>
+	<word>
+		<verb value="vocalise">发声；喊叫</verb>
+		<verb value="vocalize">发声；喊叫</verb>
+		<noun value="vocal">声乐作品；元音</noun>
+		<adj value="vocal">歌唱的；声音的，有声的</adj>
+	</word>
+	<word>
+		<noun value="volatile">挥发物</noun>
+		<noun value="volatility">挥发性，波动性，易变，活泼</noun>
+		<adj value="volatile">挥发性的，不稳定的</adj>
+	</word>
+	<word>
+		<noun value="volcano">火山</noun>
+	</word>
+	<word>
+		<noun value="volume">音量</noun>
+	</word>
+	<word>
+		<noun value="vulnerability">易损性；弱点</noun>
+		<adj value="vulnerable">易受攻击的</adj>
+		<adv value="vulnerably">脆弱地；易受伤害地</adv>
+	</word>
+</words>

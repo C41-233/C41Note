@@ -1,0 +1,28 @@
+<words>
+	<word>
+		<noun value="quadratic">二次方程</noun>
+		<noun value="quadric">二次曲面</noun>
+		<adj value="quadratic">二次的</adj>
+		<adj value="quadric">二次的</adj>
+	</word>
+	<word>
+		<verb value="qualify">取得…资格，作为…合适</verb>
+		<noun value="quality">质量，品质</noun>
+		<adj value="qualitative">定性的，质的</adj>
+	</word>
+	<word>
+		<verb value="quantify">量化，定量</verb>
+		<noun value="quantifier">量词</noun>
+		<adj value="quantified">量化的，定量的</adj>
+		<adj value="quantitative">定量的，数量的</adj>
+	</word>
+	<word>
+		<verb value="quarter">住宿，驻扎，四等分</verb>
+		<noun value="quarter">四分之一，地区，季度，一刻钟</noun>
+		<noun value="quartile">四分位数；四分点</noun>
+	</word>
+	<word>
+		<verb value="quiver">颤抖；振动</verb>
+		<noun value="quiver">颤抖，震动</noun>
+	</word>
+</words>

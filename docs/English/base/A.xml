@@ -1,0 +1,778 @@
+<words>
+	<word>
+		<verb value="abandon">抛弃，遗弃；放弃</verb>
+	</word>
+	<word>
+		<verb value="abide">忍受，容忍；停留；遵守</verb>
+	</word>
+	<word>
+		<adj value="abnormal">不正常的</adj>
+	</word>
+	<word>
+		<adv value="aboard">在车、船、飞机上</adv>
+	</word>
+	<word>
+		<adv value="abroad">在国外</adv>
+	</word>
+	<word>
+		<noun value="absence">缺席</noun>
+		<adj value="absent">缺席的</adj>
+	</word>
+	<word>
+		<adj value="absolute">绝对的</adj>
+		<adv value="absolutely">绝对地</adv>
+	</word>
+	<word>
+		<verb value="absorb">吸收；吸引；使…全神贯注</verb>
+		<noun value="absorption">吸收；全神贯注，专心致志</noun>
+	</word>
+	<word>
+		<noun value="abstract">抽象；摘要</noun>
+		<adj value="abstract">抽象的</adj>
+	</word>
+	<word>
+		<noun value="abundance">充裕，丰富</noun>
+		<adj value="abundant">丰富的</adj>
+	</word>
+	<word>
+		<verb value="abuse">滥用；虐待；辱骂</verb>
+		<noun value="abuse">滥用；虐待；辱骂；弊端；恶习，陋习</noun>
+	</word>
+	<word>
+		<noun value="academia">学术界，学术生涯</noun>
+		<noun value="academy">学院，研究院，专科院校</noun>
+		<adj value="academic">学术的，理论的，学院的</adj>
+	</word>
+	<word>
+		<verb value="accelerate">促进，加快</verb>
+		<noun value="acceleration">加速，促进；加速度</noun>
+	</word>
+	<word>
+		<noun value="accent">口音</noun>
+	</word>
+	<word>
+		<verb value="accept">接受，承认</verb>
+		<noun value="acceptance">接受</noun>
+		<adj value="acceptable">可接受的</adj>
+		<adv value="acceptably">可接受地</adv>
+	</word>
+	<word>
+		<noun value="accessory">配件；从犯</noun>
+		<adj value="accessory">副的；同谋的</adj>
+	</word>
+	<word>
+		<noun value="accident">事故，意外</noun>
+		<adj value="accidental">偶然的；非本质的</adj>
+	</word>
+	<word>
+		<verb value="accommodate">容纳；供应，供给</verb>
+		<noun value="accommodation">住处，膳宿</noun>
+	</word>
+	<word>
+		<verb value="accompany">陪伴</verb>
+		<noun value="accompany">陪伴</noun>
+		<noun value="accompanier">同伴</noun>
+	</word>
+	<word>
+		<verb value="accomplish">完成，实现，达到</verb>
+		<noun value="accomplishment">成就；完成；技艺，技能</noun>
+	</word>
+	<word>
+		<verb value="accord">符合，一致</verb>
+		<noun value="accordance">一致，和谐</noun>
+		<adj value="according">相符的</adj>
+		<adv value="accordingly">因此，于是</adv>
+	</word>
+	<word>
+		<verb value="accredit">授权；信任</verb>
+		<noun value="accreditation">认证，信赖</noun>
+	</word>
+	<word>
+		<verb value="accumulate">积累</verb>
+		<noun value="accumulation">积累；堆积物</noun>
+	</word>
+	<word>
+		<noun value="accuracy">准确性，精确度</noun>
+		<adj value="accurate">准确的</adj>
+	</word>
+	<word>
+		<verb value="accustom">使习惯于</verb>
+		<noun value="accustomed">习惯的，通常的</noun>
+	</word>
+	<word>
+		<noun value="acid">酸</noun>
+		<adj value="acid">酸性的</adj>
+	</word>
+	<word>
+		<verb value="acknowledge">承认；答谢；报偿</verb>
+		<noun value="acknowledgement">承认；确认；感谢</noun>
+	</word>
+	<word>
+		<verb value="acquaint">使熟悉，使认识</verb>
+		<noun value="acquaintance">相识，熟人</noun>
+	</word>
+	<word>
+		<verb value="acquire">获得</verb>
+		<noun value="acquirement">成就；取得</noun>
+	</word>
+	<word>
+		<noun value="acquisition">获得物，获得</noun>
+		<adj value="acquisitive">贪得的；想获得的；可学到的；可获得的</adj>
+	</word>
+	<word>
+		<noun value="acre">土地；地产</noun>
+		<noun value="acreage">面积；英亩数</noun>
+	</word>
+	<word>
+		<noun value="acronym">首字母缩略词</noun>
+	</word>
+	<word>
+		<verb value="act">表演；行动；见效</verb>
+		<noun value="act">行为，法令，（一）幕</noun>
+		<adj value="active">积极的，活跃的，主动的</adj>
+	</word>
+	<word>
+		<verb value="activate">激活；刺激</verb>
+		<noun value="activation">激活；活化作用</noun>
+	</word>
+	<word>
+		<verb value="actualise">实施，实现</verb>
+		<verb value="actualize">实施，实现</verb>
+		<adj value="actual">真实的</adj>
+		<adv value="actually">实际上，事实上</adv>
+	</word>
+	<word>
+		<verb value="actuate">开动；促使，驱使</verb>
+		<noun value="actuator">执行器，驱动器</noun>
+	</word>
+	<word>
+		<adj value="acute">严重的，急性的，敏锐的，激烈的，尖声的</adj>
+	</word>
+	<word>
+		<verb value="adapt">改编；使适应</verb>
+		<noun value="adaptability">适应性，可变性，适合性</noun>
+		<noun value="adaptation">适应；改编；改编本，改写本</noun>
+		<noun value="adapter">适配器，接合器；改编者；适应者</noun>
+		<noun value="adaption">适应</noun>
+		<noun value="adaptor">适配器，转接器；改编者</noun>
+		<adj value="adaptable">适合的；能适应的；可修改的</adj>
+		<adj value="adaptive">适应的，适合的</adj>
+	</word>
+	<word>
+		<verb value="add">加</verb>
+		<noun value="addition">添加；加法</noun>
+		<adj value="additional">附加的，额外的</adj>
+	</word>
+	<word>
+		<verb value="address">写地址；在…面前发言，演讲，称呼，对付</verb>
+		<noun value="address">地址；演说，谈吐</noun>
+	</word>
+	<word>
+		<adj value="adequate">充足的</adj>
+	</word>
+	<word>
+		<verb value="adhere">坚持；依附；粘着</verb>
+		<noun value="adherence">坚持；依附；忠诚</noun>
+	</word>
+	<word>
+		<adj value="adjacent">临近的，毗邻的</adj>
+	</word>
+	<word>
+		<noun value="adjective">形容词</noun>
+	</word>
+	<word>
+		<verb value="adjust">调整</verb>
+		<noun value="adjustment">调整，调节</noun>
+	</word>
+	<word>
+		<verb value="administer">掌管，实施，派给</verb>
+		<noun value="administration">行政机构</noun>
+	</word>
+	<word>
+		<verb value="admit">承认；准许进入</verb>
+		<noun value="admission">承认；许可；入场费</noun>
+		<adj value="admitted">公认的</adj>
+		<adv value="admittedly">无可否认地</adv>
+	</word>
+	<word>
+		<verb value="adopt">采取；收养</verb>
+		<noun value="adoption">采取；收养</noun>
+	</word>
+	<word>
+		<noun value="adult">成年人</noun>
+	</word>
+	<word>
+		<verb value="advance">前进；提高；发展</verb>
+		<noun value="advance">发展</noun>
+	</word>
+	<word>
+		<noun value="advantage">优点；有利条件</noun>
+	</word>
+	<word>
+		<verb value="adventure">冒险</verb>
+		<noun value="adventure">冒险</noun>
+	</word>
+	<word>
+		<noun value="adverb">副词</noun>
+	</word>
+	<word>
+		<verb value="advert">注意；谈到</verb>
+		<adj value="advertent">留意的；注意的</adj>
+	</word>
+	<word>
+		<verb value="advertise">做广告</verb>
+		<verb value="advertize">做广告</verb>
+		<noun value="advertisement">广告</noun>
+		<noun value="advertising">广告业</noun>
+		<adj value="advertising">广告的；广告业的</adj>
+	</word>
+	<word>
+		<verb value="advise">建议，劝告</verb>
+		<noun value="advisability">明智</noun>
+		<adj value="advisable">明智的，可取的</adj>
+	</word>
+	<word>
+		<verb value="advocate">提倡，拥护</verb>
+		<noun value="advocator">提倡者，拥护者</noun>
+	</word>
+	<word>
+		<verb value="aerify">充气；气化</verb>
+		<noun value="aerial">天线</noun>
+		<adj value="aerial">空中的，航空的；空气的；空想的</adj>
+	</word>
+	<word>
+		<noun value="aeroplane">飞机</noun>
+	</word>
+	<word>
+		<noun value="affair">事务</noun>
+	</word>
+	<word>
+		<verb value="affect">影响</verb>
+		<noun value="affection">喜爱；感情</noun>
+		<adj value="affectional">情感上的</adj>
+	</word>
+	<word>
+		<verb value="affiliate">参加，发生联系</verb>
+		<noun value="affiliation">友好关系；加入，联盟</noun>
+		<adj value="affiliated">附属的，有关联的</adj>
+	</word>
+	<word>
+		<noun value="affine">姻亲；仿射</noun>
+		<adj value="affine">仿射的</adj>
+	</word>
+	<word>
+		<verb value="afford">买得起；提供</verb>
+		<adj value="affordable">负担得起</adj>
+	</word>
+	<word>
+		<noun value="Africa">非洲</noun>
+		<noun value="African">非洲人</noun>
+		<adj value="African">非洲的</adj>
+	</word>
+	<word>
+		<verb value="age">使变老</verb>
+		<noun value="age">年龄，时代</noun>
+	</word>
+	<word>
+		<noun value="agency">代理，中介</noun>
+		<noun value="agent">代理人，代理商</noun>
+		<adj value="agent">代理的</adj>
+	</word>
+	<word>
+		<noun value="agenda">议程</noun>
+	</word>
+	<word>
+		<verb value="aggregate">集合，聚合</verb>
+		<noun value="aggregate">集合体</noun>
+		<adj value="aggregate">集合的，聚合的</adj>
+	</word>
+	<word>
+		<verb value="aggress">挑衅，攻击</verb>
+		<noun value="aggression">侵略，侵害</noun>
+		<noun value="aggressor">侵略者</noun>
+		<adj value="aggressive">侵略的，好斗的</adj>
+	</word>
+	<word>
+		<noun value="agility">敏捷</noun>
+		<adj value="agile">敏捷的</adj>
+	</word>
+	<word>
+		<noun value="agony">苦恼，极大的痛苦，临死的挣扎</noun>
+	</word>
+	<word>
+		<verb value="aid">援助</verb>
+		<noun value="aid">援助</noun>
+	</word>
+	<word>
+		<verb value="air">晾干，通风</verb>
+		<noun value="air">空气；神情</noun>
+	</word>
+	<word>
+		<noun value="aircraft">飞机，航空器</noun>
+	</word>
+	<word>
+		<noun value="airport">机场</noun>
+	</word>
+	<word>
+		<verb value="alarm">警告；使惊恐</verb>
+		<noun value="alarm">警报；警报器；惊慌</noun>
+	</word>
+	<word>
+		<noun value="album">相册</noun>
+	</word>
+	<word>
+		<noun value="albumen">蛋白；胚乳</noun>
+	</word>
+	<word>
+		<noun value="alcohol">酒精，乙醇</noun>
+		<noun value="alcoholic">酒鬼</noun>
+		<adj value="alcoholic">酒精的</adj>
+	</word>
+	<word>
+		<noun value="algebra">代数</noun>
+		<adj value="algebraic">代数的</adj>
+		<adj value="algebraical">代数学的</adj>
+	</word>
+	<word>
+		<noun value="algorithm">算法</noun>
+		<adj value="algorithmic">算法的</adj>
+	</word>
+	<word>
+		<verb value="alleviate">减轻，缓和</verb>
+		<noun value="alleviation">缓和；镇痛物</noun>
+	</word>
+	<word>
+		<verb value="allocate">分配</verb>
+		<noun value="allocation">分配，配置</noun>
+	</word>
+	<word>
+		<noun value="alphabet">字母表；字母系统</noun>
+	</word>
+	<word>
+		<verb value="alter">改变</verb>
+		<noun value="alteration">修改，改变，变更</noun>
+	</word>
+	<word>
+		<verb value="alternate">交替；轮流</verb>
+		<noun value="alternate">替换物</noun>
+		<noun value="alternative">替换物</noun>
+		<adj value="alternate">可选的，供选择的</adj>
+		<adj value="alternative">交替的；轮流的</adj>
+	</word>
+	<word>
+		<noun value="altitude">高度，海拔</noun>
+	</word>
+	<word>
+		<adv value="altogether">总共</adv>
+	</word>
+	<word>
+		<verb value="amaze">使吃惊</verb>
+		<noun value="amazement">惊异，惊愕</noun>
+		<adj value="amazed">吃惊的</adj>
+		<adj value="amazing">令人吃惊的</adj>
+	</word>
+	<word>
+		<noun value="ambience">气氛，周围环境</noun>
+		<noun value="ambient">周围环境</noun>
+		<adj value="ambient">周围的，外界的</adj>
+	</word>
+	<word>
+		<noun value="ambiguity">含糊，不明确</noun>
+		<adj value="ambiguous">模糊不清的，有歧义的</adj>
+		<adv value="ambiguously">含糊不清地</adv>
+	</word>
+	<word>
+		<noun value="ambition">野心，抱负，雄心</noun>
+	</word>
+	<word>
+		<noun value="ambulance">救护车</noun>
+	</word>
+	<word>
+		<verb value="amend">修正，修订</verb>
+		<noun value="amendment">修正，改正；修正案</noun>
+	</word>
+	<word>
+		<noun value="America">美洲；美国</noun>
+		<noun value="American">美国人</noun>
+		<adj value="American">美国的</adj>
+	</word>
+	<word>
+		<noun value="amnesia">健忘症，失忆症</noun>
+		<adj value="amnesiac">遗忘的</adj>
+		<adj value="amnestic">遗忘的</adj>
+	</word>
+	<word>
+		<noun value="amount">数额，总量</noun>
+	</word>
+	<word>
+		<noun value="amperage">安培数</noun>
+		<noun value="ampere">安培</noun>
+	</word>
+	<word>
+		<verb value="amplify">放大，增强</verb>
+	</word>
+	<word>
+		<verb value="amuse">使娱乐，逗乐</verb>
+		<noun value="amusement">娱乐</noun>
+		<adj value="amused">愉快的</adj>
+		<adj value="amusing">有趣的</adj>
+	</word>
+	<word>
+		<adj value="analogous">类似的</adj>
+	</word>
+	<word>
+		<verb value="analyse">分析</verb>
+		<noun value="analysis">分析</noun>
+		<noun value="analyses">分析（复数）</noun>
+		<adj value="analytical">分析的，解析的；善于分析的</adj>
+		<adj value="analytically">分析地，解析地</adj>
+	</word>
+	<word>
+		<noun value="ancestor">始祖，祖先</noun>
+	</word>
+	<word>
+		<noun value="ancillary">助手；附件</noun>
+		<adj value="ancillary">辅助的，副的，从属的</adj>
+	</word>
+	<word>
+		<noun value="anecdote">轶事，奇闻</noun>
+		<noun value="anecdotist">讲轶事的人</noun>
+		<adj value="anecdotal">轶事的</adj>
+	</word>
+	<word>
+		<noun value="angle">角度；角</noun>
+	</word>
+	<word>
+		<verb value="animate">鼓舞，推动</verb>
+		<noun value="animation">活泼，生气，激励；动画</noun>
+	</word>
+	<word>
+		<noun value="ankle">踝关节</noun>
+	</word>
+	<word>
+		<verb value="announce">宣布</verb>
+		<noun value="announcement">宣布</noun>
+		<noun value="announcer">广播员</noun>
+	</word>
+	<word>
+		<verb value="annoy">惹恼</verb>
+		<adj value="annoying">恼人的</adj>
+	</word>
+	<word>
+		<adj value="annual">每年的</adj>
+	</word>
+	<word>
+		<noun value="anomaly">异常，不规则</noun>
+		<adj value="anomalous">异常的，不规则的</adj>
+	</word>
+	<word>
+		<noun value="anonymity">匿名</noun>
+		<adj value="anonymous">匿名的，无名的</adj>
+	</word>
+	<word>
+		<verb value="antagonise">引起反抗，使敌对</verb>
+		<verb value="antagonize">引起反抗，使敌对</verb>
+		<noun value="antagonism">对抗，对立</noun>
+		<noun value="antagonist">敌手</noun>
+		<adj value="antagonistic">敌对的，反对的</adj>
+	</word>
+	<word>
+		<noun value="antecedent">前情，先行词</noun>
+		<adj value="antecedent">先行的，前驱的，先前的</adj>
+	</word>
+	<word>
+		<adj value="antepenultimate">倒数第三的</adj>
+	</word>
+	<word>
+		<verb value="anticipate">预期，期望</verb>
+		<noun value="anticipation">希望，预感</noun>
+	</word>
+	<word>
+		<noun value="anxiety">焦虑；渴望</noun>
+		<adj value="anxious">焦虑的；渴望的，急切的</adj>
+	</word>
+	<word>
+		<adv value="anyway">无论如何，总之</adv>
+	</word>
+	<word>
+		<noun value="apartment">公寓</noun>
+	</word>
+	<word>
+		<adj value="aperiodic">不定期的，非周期性的</adj>
+	</word>
+	<word>
+		<noun value="aperture">光圈</noun>
+	</word>
+	<word>
+		<verb value="apologise">道歉</verb>
+		<verb value="apologize">道歉</verb>
+		<noun value="apology">道歉</noun>
+	</word>
+	<word>
+		<noun value="apparatus">装置，设备，仪器</noun>
+	</word>
+	<word>
+		<adj value="apparent">明显的，显然的</adj>
+		<adv value="apparently">显然地</adv>
+	</word>
+	<word>
+		<verb value="appeal">吸引；呼吁</verb>
+		<adj value="appealing">吸引人的</adj>
+	</word>
+	<word>
+		<verb value="appear">出现</verb>
+		<noun value="appearance">外貌</noun>
+	</word>
+	<word>
+		<verb value="append">附加</verb>
+		<noun value="appendix">附录</noun>
+	</word>
+	<word>
+		<noun value="appetite">食欲；爱好</noun>
+	</word>
+	<word>
+		<verb value="apply">申请；应用</verb>
+		<noun value="appliance">器具，器械</noun>
+		<noun value="application">申请；运用</noun>
+		<adj value="applicable">合适的</adj>
+	</word>
+	<word>
+		<verb value="appoint">任命，委派</verb>
+		<noun value="appointment">任命；约会</noun>
+	</word>
+	<word>
+		<verb value="appreciate">欣赏；感激</verb>
+	</word>
+	<word>
+		<verb value="approach">接近；解决</verb>
+		<noun value="approach">方法；接近</noun>
+	</word>
+	<word>
+		<verb value="appropriate">占用；拨出</verb>
+		<adj value="appropriate">恰当的</adj>
+		<adv value="appropriately">恰当地</adv>
+	</word>
+	<word>
+		<verb value="approve">批准，赞成</verb>
+		<noun value="approval">批准，赞成</noun>
+	</word>
+	<word>
+		<noun value="approximation">近似值</noun>
+		<adj value="approximate">近似的</adj>
+		<adj value="approximative">近似的</adj>
+		<adv value="approximately">大约</adv>
+	</word>
+	<word>
+		<noun value="arbitrariness">任意，恣意；专断，霸道</noun>
+		<adj value="arbitrary">武断的，专制的</adj>
+		<adv value="arbitrarily">武断地</adv>
+	</word>
+	<word>
+		<verb value="arbitrate">仲裁</verb>
+		<noun value="arbitration">仲裁</noun>
+	</word>
+	<word>
+		<verb value="arch">使成拱形</verb>
+		<noun value="arch">拱门，拱形</noun>
+		<adj value="arch">调皮的，淘气的</adj>
+	</word>
+	<word>
+		<noun value="archaea">古生菌</noun>
+	</word>
+	<word>
+		<noun value="archer">弓箭手，弓兵</noun>
+	</word>
+	<word>
+		<noun value="area">区域，地区；面积</noun>
+	</word>
+	<word>
+		<verb value="argue">争论</verb>
+		<noun value="argument">论据</noun>
+		<adj value="arguable">可论证的，可争辩的</adj>
+		<adv value="arguably">可论证地，可争辩地</adv>
+	</word>
+	<word>
+		<noun value="arrogance">自大，傲慢态度</noun>
+		<adj value="arrogant">自大的，傲慢的</adj>
+		<adv value="arrogantly">傲慢地，自大地</adv>
+	</word>
+	<word>
+		<noun value="artefact">人工制品，加工品</noun>
+	</word>
+	<word>
+		<verb value="arterialize">化为动脉血</verb>
+		<noun value="artery">动脉；干道</noun>
+	</word>
+	<word>
+		<noun value="article">文章；物品；冠词；条款</noun>
+	</word>
+	<word>
+		<noun value="articulate">明确表达，发音</noun>
+		<adj value="articulate">发音清晰的，口才好的</adj>
+	</word>
+	<word>
+		<noun value="artifact">人工制品，手工艺品</noun>
+	</word>
+	<word>
+		<noun value="Asia">亚洲</noun>
+		<noun value="Asian">亚洲人</noun>
+		<adj value="Asian">亚洲的</adj>
+	</word>
+	<word>
+		<noun value="aspect">方面</noun>
+	</word>
+	<word>
+		<noun value="assassin">刺客，暗杀者</noun>
+	</word>
+	<word>
+		<verb value="assault">攻击，袭击</verb>
+		<noun value="assault">攻击，袭击</noun>
+	</word>
+	<word>
+		<verb value="assemble">集合，聚集；装配</verb>
+		<noun value="assemblage">装配；集合</noun>
+		<noun value="assembly">装配；集会</noun>
+		<adj value="assembled">组合的，安装的</adj>
+	</word>
+	<word>
+		<verb value="assess">评定；估价</verb>
+		<noun value="assessment">评定；估价</noun>
+	</word>
+	<word>
+		<noun value="asset">资产；优点；有用的东西</noun>
+	</word>
+	<word>
+		<verb value="assign">分配，赋值</verb>
+	</word>
+	<word>
+		<verb value="assist">帮助</verb>
+		<noun value="assist">助攻</noun>
+		<noun value="assistance">帮助</noun>
+	</word>
+	<word>
+		<verb value="assume">假设</verb>
+		<noun value="assumption">假设</noun>
+	</word>
+	<word>
+		<verb value="assure">确保</verb>
+		<noun value="assurance">保证</noun>
+	</word>
+	<word>
+		<noun value="astronaut">宇航员</noun>
+	</word>
+	<word>
+		<noun value="astronomer">天文学家</noun>
+		<noun value="astronomy">天文学</noun>
+		<adj value="astronomic">天文学的</adj>
+	</word>
+	<word>
+		<noun value="asymmetry">不对称</noun>
+		<adj value="asymmetric">非对称的，不均匀的</adj>
+		<adj value="asymmetrical">非对称的，不均匀的</adj>
+	</word>
+	<word>
+		<adj value="asynchronous">异步的</adj>
+		<adv value="asynchronously">异步地</adv>
+	</word>
+	<word>
+		<noun value="atom">原子</noun>
+		<noun value="atomicity">原子性</noun>
+		<adj value="atomic">原子的</adj>
+	</word>
+	<word>
+		<verb value="attach">贴上，使附上</verb>
+	</word>
+	<word>
+		<verb value="attain">获得，达到</verb>
+		<noun value="attain">成就</noun>
+	</word>
+	<word>
+		<verb value="attend">出席；专心，致力于；照顾，护理</verb>
+	</word>
+	<word>
+		<noun value="attitude">态度</noun>
+		<adj value="attitudinal">态度的</adj>
+	</word>
+	<word>
+		<noun value="attorney">律师；代理人</noun>
+	</word>
+	<word>
+		<verb value="attribute">把…功归于</verb>
+		<noun value="attribute">属性</noun>
+		<noun value="attribution">归因，归属，属性</noun>
+	</word>
+	<word>
+		<verb value="augment">增加，增大</verb>
+		<noun value="augment">增加，增大</noun>
+		<noun value="augmentation">增加，增大；增加物</noun>
+		<adj value="augmentative">扩大的；增大意义的</adj>
+	</word>
+	<word>
+		<noun value="Australia">澳大利亚；澳洲</noun>
+		<noun value="Australian">澳大利亚人</noun>
+		<adj value="Australian">澳大利亚的</adj>
+	</word>
+	<word>
+		<noun value="author">作者，作家</noun>
+		<noun value="authoress">女作者，女作家</noun>
+	</word>
+	<word>
+		<verb value="authorize">批准，授权</verb>
+		<noun value="authority">权威，当局</noun>
+	</word>
+	<word>
+		<noun value="autobiography">自传</noun>
+	</word>
+	<word>
+		<verb value="automate">使自动化</verb>
+		<verb value="automatise">使自动化</verb>
+		<verb value="automatize">使自动化</verb>
+		<noun value="automaton">自动机，机器人</noun>
+		<noun value="automata">自动机，机器人（复数）</noun>
+		<adj value="automated">自动化的，机械化的</adj>
+		<adj value="automatic">自动的</adj>
+		<adv value="automatically">自动地</adv>
+	</word>
+	<word>
+		<noun value="automobile">汽车</noun>
+	</word>
+	<word>
+		<noun value="autonomy">自治，自治权</noun>
+		<adj value="autonomic">自律的；自治的</adj>
+		<adj value="autonomous">自治的；自主的；自发的</adj>
+	</word>
+	<word>
+		<noun value="auxiliary">助动词；辅助者，辅助物；附属机构</noun>
+		<adj value="auxiliary">辅助的，副的，附加的</adj>
+	</word>
+	<word>
+		<verb value="avail">有用，有利</verb>
+		<noun value="avail">效用，利益</noun>
+		<noun value="availability">可用性；有效性；实用性</noun>
+		<adj value="available">有效的，可得的；可利用的；空闲的</adj>
+	</word>
+	<word>
+		<noun value="avatar">化身，具体化</noun>
+	</word>
+	<word>
+		<noun value="aviation">航空，飞机制造业</noun>
+	</word>
+	<word>
+		<verb value="awake">唤醒</verb>
+		<verb value="awaken">唤醒；唤起</verb>
+		<adj value="awake">醒着的</adj>
+	</word>
+	<word>
+		<noun value="awareness">意识，知道</noun>
+		<adj value="aware">意识到的，知道的</adj>
+	</word>
+	<word>
+		<verb value="axiomatise">公理化</verb>
+		<verb value="axiomatize">公理化</verb>
+		<noun value="axiomatization">公理化</noun>
+		<adj value="axiomatic">公理的，自明的</adj>
+	</word>
+	<word>
+		<noun value="axis">轴</noun>
+	</word>
+</words>

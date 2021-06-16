@@ -1,0 +1,258 @@
+<words>
+	<word>
+		<verb value="fabricate">制造；伪造；装配</verb>
+		<noun value="fabric">织物，布；组织，构造；建筑物</noun>
+		<noun value="fabrication">制造，建造；装配；伪造物</noun>
+	</word>
+	<word>
+		<verb value="face">面对；面向；承认；抹盖</verb>
+		<noun value="facade">正面；表面；外观</noun>
+		<noun value="face">脸；表面；面子；面容；外观；威信</noun>
+		<noun value="facial">美容，美颜</noun>
+		<adj value="facial">面部的，表面的；脸的，面部用的</adj>
+	</word>
+	<word>
+		<verb value="facilitate">促进；帮助</verb>
+		<noun value="facilitation">简易化；助长</noun>
+		<noun value="facility">设施，设备</noun>
+		<adj value="facilitative">使便利的</adj>
+	</word>
+	<word>
+		<verb value="factor">分解</verb>
+		<noun value="factor">因素</noun>
+		<noun value="factory">工厂</noun>
+	</word>
+	<word>
+		<noun value="fairness">公平；美好</noun>
+		<adj value="fair">公平的；美丽的</adj>
+		<adv value="fairly">相当地，简直；公平地</adv>
+	</word>
+	<word>
+		<noun value="faith">信仰，信念</noun>
+		<adj value="faithful">忠诚的，可靠的</adj>
+		<adj value="faithless">不忠的，无信的</adj>
+	</word>
+	<word>
+		<verb value="fake">假装</verb>
+		<noun value="fake">假货；骗子</noun>
+		<adj value="fake">伪造的</adj>
+	</word>
+	<word>
+		<verb value="fall">下降，落下</verb>
+		<noun value="fall">下降，秋天</noun>
+		<noun value="falls">瀑布</noun>
+		<adj value="fall">秋天的</adj>
+	</word>
+	<word>
+		<adj value="false">错误的；伪造的</adj>
+	</word>
+	<word>
+		<noun value="familarity">亲密</noun>
+	</word>
+	<word>
+		<verb value="familiarise">使熟悉</verb>
+		<verb value="familiarize">使熟悉</verb>
+		<noun value="familiarity">熟悉</noun>
+		<noun value="familiarization">熟悉</noun>
+		<adj value="familiar">熟悉的</adj>
+	</word>
+	<word>
+		<noun value="family">家庭；家族；家属</noun>
+		<adj value="family">家庭的；家族的</adj>
+	</word>
+	<word>
+		<noun value="famine">饥荒，饥饿</noun>
+	</word>
+	<word>
+		<verb value="fancy">幻想；想象</verb>
+		<noun value="fancy">幻想；想像力；爱好</noun>
+		<adj value="fancy">想象的；奇特的</adj>
+	</word>
+	<word>
+		<verb value="fashion">使用；改变</verb>
+		<noun value="fashion">时尚；时装；样式</noun>
+	</word>
+	<word>
+		<noun value="fax">传真</noun>
+	</word>
+	<word>
+		<noun value="feasibility">可行性，可能性</noun>
+		<adj value="feasible">可行的，可能的，可实行的</adj>
+	</word>
+	<word>
+		<verb value="feature">以…为特色；由…主演</verb>
+		<noun value="feature">特色，特征；故事片</noun>
+	</word>
+	<word>
+		<noun value="feebleness">微弱，虚弱</noun>
+		<adj value="feeble">虚弱的，无力的</adj>
+	</word>
+	<word>
+		<noun value="ferry">渡轮</noun>
+	</word>
+	<word>
+		<noun value="festival">节日；庆祝，纪念活动</noun>
+		<adj value="festival">节日的，喜庆的，快乐的</adj>
+	</word>
+	<word>
+		<verb value="fetch">取来；接来；到达；吸引</verb>
+		<noun value="fetch">取得；诡计</noun>
+		<adj value="fetching">迷人的，吸引人的；动人的</adj>
+	</word>
+	<word>
+		<noun value="fiction">小说，虚构，编造</noun>
+		<adj value="fictitious">虚构的，编造的，假装的</adj>
+	</word>
+	<word>
+		<verb value="fill">装满，充满</verb>
+		<noun value="fill">装填物</noun>
+	</word>
+	<word>
+		<verb value="finance">供给…经费</verb>
+		<noun value="finance">财政；金融</noun>
+		<adj value="financial">金融的；财政的</adj>
+	</word>
+	<word>
+		<verb value="fire">点燃，着火；解雇，开除；激动；开火</verb>
+		<noun value="fire">火灾；热情；磨难</noun>
+	</word>
+	<word>
+		<verb value="firm">使坚定；使牢固</verb>
+		<noun value="firm">公司</noun>
+		<adj value="firm">坚定的；牢固的；严格的；结实的</adj>
+	</word>
+	<word>
+		<noun value="firmware">固件，韧件</noun>
+	</word>
+	<word>
+		<adj value="first-order">一级，一阶</adj>
+	</word>
+	<word>
+		<noun value="flashback">闪回</noun>
+	</word>
+	<word>
+		<noun value="flat">公寓</noun>
+		<adj value="flat">平坦的</adj>
+	</word>
+	<word>
+		<verb value="flaw">使无效；使破裂，使有缺陷</verb>
+		<noun value="flaw">瑕疵，裂纹；缺点</noun>
+		<adj value="flawless">完美的；无瑕疵的；无裂缝的</adj>
+		<adv value="flawlessly">完美无瑕地</adv>
+	</word>
+	<word>
+		<verb value="flex">弯曲；收缩</verb>
+		<noun value="flexibility">灵活性；弹性</noun>
+		<adj value="flexible">灵活的</adj>
+	</word>
+	<word>
+		<verb value="float">浮动；飘动</verb>
+	</word>
+	<word>
+		<noun value="floor">地板，地面；楼层</noun>
+	</word>
+	<word>
+		<verb value="flow">流动</verb>
+		<noun value="flow">流动；流量</noun>
+		<noun value="flowage">流动；泛滥</noun>
+		<adj value="flowing">流动的</adj>
+	</word>
+	<word>
+		<noun value="fluctuation">起伏，波动</noun>
+	</word>
+	<word>
+		<noun value="folk">民族，人们</noun>
+		<adj value="folk">民间的</adj>
+	</word>
+	<word>
+		<verb value="follow">符合，遵循；跟随</verb>
+		<noun value="follower">跟随者</noun>
+	</word>
+	<word>
+		<verb value="forbear">忍耐，克制</verb>
+		<noun value="forbear">祖先</noun>
+	</word>
+	<word>
+		<verb value="forbid">禁止</verb>
+		<verb value="forbad">禁止（过去式）</verb>
+		<verb value="forbidden">禁止（过去分词）</verb>
+		<adj value="forbidden">被禁止的</adj>
+	</word>
+	<word>
+		<verb value="force">促使，强迫</verb>
+		<noun value="force">力；力量，武力；军队</noun>
+	</word>
+	<word>
+		<noun value="foreigner">外国人</noun>
+	</word>
+	<word>
+		<verb value="formulate">提出，明确表达</verb>
+		<noun value="formula">公式</noun>
+		<noun value="formulation">规划；公式化</noun>
+	</word>
+	<word>
+		<verb value="fortune">给予财富；偶然发生</verb>
+		<noun value="fortune">财富；命运；运气</noun>
+		<adj value="fortuitous">偶然的，意外的；幸运的</adj>
+		<adj value="fortunate">幸运的；侥幸的</adj>
+		<adv value="fortunately">幸运地</adv>
+	</word>
+	<word>
+		<verb value="fractionate">分别，分离；分馏</verb>
+		<noun value="fraction">分数；部分，小部分，碎片；稍微</noun>
+		<adj value="fractional">部分的；分数的，小数的</adj>
+	</word>
+	<word>
+		<noun value="fragility">脆弱，易碎性</noun>
+		<adj value="fragile">易碎的；体弱的</adj>
+	</word>
+	<word>
+		<noun value="France">法国</noun>
+		<noun value="French">法国人；法语</noun>
+		<adj value="French">法国的</adj>
+	</word>
+	<word>
+		<noun value="fraud">欺骗；骗子</noun>
+	</word>
+	<word>
+		<noun value="frenemy">腹黑友，友敌</noun>
+	</word>
+	<word>
+		<noun value="frequency">频率</noun>
+		<adj value="frequent">频繁的</adj>
+		<adv value="frequently">频繁地</adv>
+	</word>
+	<word>
+		<noun value="front">前面</noun>
+		<noun value="frontier">前沿</noun>
+	</word>
+	<word>
+		<verb value="fruit">结果实</verb>
+		<noun value="fruit">水果</noun>
+	</word>
+	<word>
+		<verb value="function">行使职责</verb>
+		<noun value="function">功能，函数</noun>
+		<adj value="functional">功能的</adj>
+	</word>
+	<word>
+		<noun value="fundamental">基本原理，基本准则</noun>
+		<adj value="fundamental">基本的，根本的</adj>
+	</word>
+	<word>
+		<verb value="funnel">通过漏斗或烟囱；使成漏斗形</verb>
+		<adj value="funneled">漏斗形的；有漏斗的；有烟囱的</adj>
+	</word>
+	<word>
+		<verb value="furnish">供应提供</verb>
+	</word>
+	<word>
+		<noun value="furniture">家具</noun>
+	</word>
+	<word>
+		<verb value="further">促进，增进</verb>
+		<adj value="further">深层的</adj>
+		<adv value="further">进一步地</adv>
+		<adv value="furthermore">此外，而且</adv>
+	</word>
+</words>

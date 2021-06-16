@@ -1,0 +1,81 @@
+<words>
+	<word>
+		<adj value="naive">天真的，幼稚的</adj>
+	</word>
+	<word>
+		<adj value="narrow">狭窄的，有限的</adj>
+	</word>
+	<word>
+		<adj value="near">附近的</adj>
+		<adj value="nearby">附近的</adj>
+		<adv value="nearby">在附近</adv>
+	</word>
+	<word>
+		<verb value="neglect">疏忽，忽视；忽略</verb>
+		<noun value="neglect">疏忽，忽视；怠慢</noun>
+		<adj value="negligible">微不足道的，可以忽略的</adj>
+	</word>
+	<word>
+		<verb value="negotiate">谈判，商议</verb>
+		<noun value="negotiation">谈判</noun>
+	</word>
+	<word>
+		<noun value="neighbor">邻居</noun>
+		<noun value="neighborhood">附近，街坊</noun>
+		<noun value="neighbour">邻居</noun>
+	</word>
+	<word>
+		<noun value="nervous">紧张的</noun>
+	</word>
+	<word>
+		<verb value="nest">筑巢；嵌套</verb>
+		<noun value="nest">巢，窝；安乐窝；温床</noun>
+		<adj value="nested">嵌套的，内装的</adj>
+	</word>
+	<word>
+		<noun value="net">网络</noun>
+		<noun value="network">网络</noun>
+	</word>
+	<word>
+		<noun value="nomad">游牧民；流浪者</noun>
+		<adj value="nomadic">游牧的；流浪的</adj>
+	</word>
+	<word>
+		<verb value="normalise">使正常</verb>
+		<verb value="normalize">使正常</verb>
+		<noun value="normalization">标准化，规范化</noun>
+		<adj value="normal">正常的</adj>
+	</word>
+	<word>
+		<noun value="north">北方</noun>
+		<adj value="north">北方的</adj>
+		<adj value="northern">北方的</adj>
+		<adv value="north">向北方；在北方</adv>
+	</word>
+	<word>
+		<verb value="note">注意；记录</verb>
+		<noun value="note">笔记；便笺</noun>
+		<noun value="notebook">笔记本</noun>
+		<adj value="notable">显著的</adj>
+	</word>
+	<word>
+		<verb value="notify ">通知</verb>
+		<noun value="notification">通知</noun>
+	</word>
+	<word>
+		<noun value="notion">概念</noun>
+		<adj value="notional">概念性的</adj>
+	</word>
+	<word>
+		<noun value="noun">名词</noun>
+	</word>
+	<word>
+		<verb value="novate">用新事物代替</verb>
+		<noun value="novel">小说</noun>
+		<noun value="novelty">新奇，新颖</noun>
+		<adj value="novel">新奇的，异常的</adj>
+	</word>
+	<word>
+		<noun value="nursery">苗圃，托儿所，温床</noun>
+	</word>
+</words>

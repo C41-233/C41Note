@@ -1,0 +1,358 @@
+<words>
+	<word>
+		<noun value="machine">机械，机器</noun>
+		<noun value="machinery">机械，机器，机械装置</noun>
+	</word>
+	<word>
+		<noun value="macroeconomic">宏观经济</noun>
+		<adj value="macroeconomic">宏观经济的</adj>
+	</word>
+	<word>
+		<noun value="magic">魔法；魔术</noun>
+		<adj value="magic">有魔力的；不可思议的</adj>
+		<adj value="magical">魔术的</adj>
+	</word>
+	<word>
+		<noun value="magnitude">大小；量级</noun>
+	</word>
+	<word>
+		<noun value="mail">邮件</noun>
+	</word>
+	<word>
+		<noun value="mainstay">支柱，中流砥柱</noun>
+	</word>
+	<word>
+		<noun value="mainstream">主流</noun>
+	</word>
+	<word>
+		<verb value="maintain">维持</verb>
+		<noun value="maintainability">可维护性；可维修性</noun>
+		<noun value="maintenance">维持</noun>
+	</word>
+	<word>
+		<adj value="malicious">恶意的，蓄意的</adj>
+	</word>
+	<word>
+		<adj value="man-made">人造的</adj>
+	</word>
+	<word>
+		<noun value="mandarin">普通话；柑橘</noun>
+	</word>
+	<word>
+		<verb value="mandate">授权；托管；命令</verb>
+		<noun value="mandatary">受托者，代理人</noun>
+		<adj value="mandatory">强制的</adj>
+	</word>
+	<word>
+		<verb value="manifest">证明，表明；显示</verb>
+		<noun value="manifest">载货单，货单；旅客名单</noun>
+		<noun value="manifestation">表现；显示</noun>
+		<adj value="manifest">显然的，明显的；明白的</adj>
+	</word>
+	<word>
+		<verb value="manifold">复写，复印；增多，使多样化</verb>
+		<noun value="manifold">多种，复印本</noun>
+		<adj value="manifold">多方面的，各式各样的</adj>
+	</word>
+	<word>
+		<verb value="manipulate">操作；篡改</verb>
+		<noun value="manipulation">操作，处理；篡改</noun>
+	</word>
+	<word>
+		<noun value="mansion">大厦；宅邸</noun>
+	</word>
+	<word>
+		<noun value="manual">手册，指南</noun>
+		<adj value="manual">手工的，体力的</adj>
+	</word>
+	<word>
+		<verb value="manufacture">制造，加工</verb>
+		<noun value="manufacturer">制造商</noun>
+	</word>
+	<word>
+		<verb value="marathon">参加马拉松</verb>
+		<noun value="marathon">马拉松</noun>
+	</word>
+	<word>
+		<noun value="margin">边缘</noun>
+	</word>
+	<word>
+		<verb value="mark">做记号；标志着</verb>
+		<noun value="mark">标志，符号</noun>
+		<adj value="marked">有记号的</adj>
+	</word>
+	<word>
+		<noun value="markup">涨价；利润；审定；标记</noun>
+	</word>
+	<word>
+		<verb value="marry">结婚，嫁，娶</verb>
+		<noun value="marriage">婚姻</noun>
+		<adj value="married">已婚的</adj>
+	</word>
+	<word>
+		<noun value="mashup">混搭程式；混搭网站；混合</noun>
+	</word>
+	<word>
+		<noun value="mass">大量，众多</noun>
+		<adj value="mass">大众的</adj>
+		<adj value="massive">大量的，巨大的</adj>
+	</word>
+	<word>
+		<verb value="mat">缠结</verb>
+		<noun value="mat">垫子；衬边</noun>
+		<noun value="matting">修边</noun>
+		<adj value="mat">无光泽的</adj>
+	</word>
+	<word>
+		<noun value="material">材料，原料</noun>
+	</word>
+	<word>
+		<verb value="maturate">成熟；化脓</verb>
+		<verb value="mature">成熟，到期</verb>
+		<adj value="mature">成熟的，成年人的</adj>
+		<noun value="maturity">成熟；到期；完备</noun>
+	</word>
+	<word>
+		<verb value="maximise">最大化</verb>
+		<verb value="maximize">最大化</verb>
+		<noun value="maximum">最大值</noun>
+		<adj value="maximal">最大的，最高的</adj>
+		<adj value="maximum">最大的，最高的</adj>
+		<adv value="maximally">最大地；最高地</adv>
+	</word>
+	<word>
+		<noun value="mayfly">蜉蝣</noun>
+	</word>
+	<word>
+		<noun value="meagerness">贫乏，枯瘦</noun>
+		<adj value="meager">贫乏的，瘦的</adj>
+	</word>
+	<word>
+		<adv value="meanwhile">同时</adv>
+	</word>
+	<word>
+		<verb value="mechanise">使……用机械装置；使机械化</verb>
+		<verb value="mechanize">使……用机械装置；使机械化</verb>
+		<noun value="mechanism">机制；原理，途径；进程；机械装置；技巧</noun>
+		<adj value="mechanical">机械的；力学的；呆板的；无意识的；手工操作的</adj>
+	</word>
+	<word>
+		<noun value="medium">媒体</noun>
+		<noun value="media">媒体（复数）</noun>
+		<adj value="medium">中间的</adj>
+	</word>
+	<word>
+		<verb value="mellow">使柔和</verb>
+		<adj value="mellow">圆润的，柔和的</adj>
+	</word>
+	<word>
+		<noun value="melody">旋律；歌曲；美妙的音乐</noun>
+	</word>
+	<word>
+		<noun value="memo">备忘录，便笺</noun>
+	</word>
+	<word>
+		<adj value="mental">精神的，脑力的</adj>
+		<adj value="mentalistic">精神作用的，心灵主义的</adj>
+	</word>
+	<word>
+		<verb value="mention">提及，涉及</verb>
+	</word>
+	<word>
+		<verb value="mentor">指导</verb>
+		<noun value="mentor">指导者，良师益友</noun>
+	</word>
+	<word>
+		<adj value="mere">仅仅，只不过</adj>
+		<adv value="merely">仅仅，只不过</adv>
+	</word>
+	<word>
+		<noun value="metal">金属</noun>
+		<adj value="metallic">金属的，含金的</adj>
+	</word>
+	<word>
+		<verb value="metastasize">转移；迁徙</verb>
+		<noun value="metastasis">转移；新陈代谢</noun>
+		<adj value="metastatic">转移性的；新陈代谢的</adj>
+	</word>
+	<word>
+		<noun value="meteorite">陨石</noun>
+	</word>
+	<word>
+		<noun value="method">方法</noun>
+		<noun value="methodology">方法学，方法论</noun>
+	</word>
+	<word>
+		<verb value="metricate">采用公制</verb>
+		<noun value="metric">度量标准</noun>
+		<noun value="metrics">度量，指标</noun>
+		<adj value="metric">公制的</adj>
+		<adj value="metrical">测量的</adj>
+	</word>
+	<word>
+		<noun value="metronome">节拍器</noun>
+	</word>
+	<word>
+		<noun value="Mexican">墨西哥人；墨西哥语</noun>
+		<noun value="Mexico">墨西哥</noun>
+		<adj value="Mexican">墨西哥的</adj>
+	</word>
+	<word>
+		<noun value="mid">中间的</noun>
+		<noun value="middle">中间的</noun>
+	</word>
+	<word>
+		<noun value="mile">英里</noun>
+		<noun value="mileage">英里数</noun>
+	</word>
+	<word>
+		<noun value="milestone">里程碑</noun>
+	</word>
+	<word>
+		<noun value="milieu">环境；周围；出身背景</noun>
+	</word>
+	<word>
+		<verb value="mimic">模仿，模拟</verb>
+		<noun value="mimic">模仿者，仿制品</noun>
+	</word>
+	<word>
+		<verb value="mind">介意</verb>
+		<noun value="mind">理智；精神；意见；智力；记忆力</noun>
+		<adj value="mindless">愚蠢的</adj>
+	</word>
+	<word>
+		<noun value="mindset">心态；倾向，习惯；精神状态</noun>
+	</word>
+	<word>
+		<verb value="minimise">最小化</verb>
+		<verb value="minimize">最小化</verb>
+		<noun value="minimum">最小值</noun>
+		<adj value="minimal">最小的，最低的</adj>
+		<adj value="minimum">最小的，最低的</adj>
+		<adv value="minimally">最小地，最低地</adv>
+	</word>
+	<word>
+		<adj value="miserable">悲惨的，痛苦的，卑鄙的</adj>
+	</word>
+	<word>
+		<noun value="misperception">错觉</noun>
+	</word>
+	<word>
+		<noun value="mist">迷雾</noun>
+	</word>
+	<word>
+		<verb value="mistake">弄错</verb>
+		<noun value="mistake">错误，过失</noun>
+		<adj value="mistakable">易弄错的</adj>
+	</word>
+	<word>
+		<verb value="mitigate">减轻，缓和</verb>
+		<noun value="mitigation">减轻；缓和；平静</noun>
+	</word>
+	<word>
+		<noun value="modality">形式，形态，方式</noun>
+		<adj value="modal">模式的，情态的，形式的</adj>
+	</word>
+	<word>
+		<verb value="model">做模型；做模特；模拟</verb>
+		<noun value="model">模型；模范；模特</noun>
+		<noun value="modeling">建模</noun>
+		<adj value="model">模范的</adj>
+	</word>
+	<word>
+		<verb value="moderate">变缓和，变弱；节制；减轻</verb>
+		<adj value="moderate">稳健的，温和的；适度的，中等的；有节制的</adj>
+	</word>
+	<word>
+		<verb value="modify">修饰</verb>
+		<noun value="modification">修改，修正</noun>
+		<noun value="modifier">修饰语</noun>
+		<adj value="model">模范的</adj>
+	</word>
+	<word>
+		<noun value="molecule">分子</noun>
+		<adj value="molecular">分子的</adj>
+	</word>
+	<word>
+		<adj value="monetary">货币的，财政的</adj>
+	</word>
+	<word>
+		<noun value="mono">单声道</noun>
+		<adj value="monaural">单声道的</adj>
+		<adj value="mono">单声道的</adj>
+	</word>
+	<word>
+		<noun value="monolithic">单片电路</noun>
+		<adj value="monolithic">整体的；巨石的，庞大的；完全统一的</adj>
+	</word>
+	<word>
+		<verb value="monopolise">垄断；独占</verb>
+		<verb value="monopolize">垄断；独占</verb>
+		<noun value="monopoly">垄断；垄断者</noun>
+	</word>
+	<word>
+		<noun value="monorail">单轨铁路；单轨列车</noun>
+	</word>
+	<word>
+		<verb value="monotone">单调地读</verb>
+		<noun value="monotone">单调</noun>
+		<adj value="monotonic">单调的；无变化的</adj>
+	</word>
+	<word>
+		<noun value="mood">情绪</noun>
+	</word>
+	<word>
+		<adj value="more">更多的</adj>
+		<adv value="moreover">而且，此外</adv>
+	</word>
+	<word>
+		<noun value="mortal">凡人</noun>
+		<noun value="mortality">死亡率，死亡</noun>
+		<adj value="mortal">凡人的，终有一死的</adj>
+	</word>
+	<word>
+		<verb value="mortgage">抵押</verb>
+		<noun value="mortgage">抵押</noun>
+	</word>
+	<word>
+		<verb value="motivate">刺激，激励</verb>
+		<verb value="motive">使产生动机，激起</verb>
+		<noun value="motion">动作；移动；手势</noun>
+		<noun value="motive">动机，目的；主题</noun>
+		<adj value="motive">发动的；成为动机的</adj>
+	</word>
+	<word>
+		<verb value="motorize">使摩托化，使机动化</verb>
+		<noun value="motorbike">摩托车</noun>
+	</word>
+	<word>
+		<noun value="motto">座右铭，格言</noun>
+	</word>
+	<word>
+		<adj value="multidisciplinary">有关各种学问的，多学科的</adj>
+	</word>
+	<word>
+		<noun value="multimedia">多媒体</noun>
+	</word>
+	<word>
+		<verb value="multiply">乘；繁殖；增加</verb>
+		<noun value="multiple">倍数；并联</noun>
+		<noun value="multiplicity">多样性；多重性</noun>
+		<adj value="multiple">多重的；多样的；许多的</adj>
+		<adj value="multiply">多层的；多样的</adj>
+		<adv value="multiply">多样地；复合地</adv>
+	</word>
+	<word>
+		<adj value="multitiered">多层次的</adj>
+	</word>
+	<word>
+		<adj value="mundane">世俗的，平凡的，世界的，宇宙的</adj>
+	</word>
+	<word>
+		<adj value="mutual">共同的，彼此的</adj>
+	</word>
+	<word>
+		<noun value="mystic">神秘主义者</noun>
+		<adj value="mystic">神秘的，神秘主义的</adj>
+	</word>
+</words>

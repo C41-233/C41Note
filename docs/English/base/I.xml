@@ -1,0 +1,444 @@
+<words>
+	<word>
+		<verb value="idealise">使理想化</verb>
+		<verb value="idealize">使理想化</verb>
+		<noun value="idea">想法；概念</noun>
+		<adj value="ideal">理想的，完美的</adj>
+	</word>
+	<word>
+		<verb value="identify">确定，识别</verb>
+		<noun value="identification">身份证明</noun>
+		<noun value="identifier">标识符</noun>
+		<noun value="identity">身份；一致性</noun>
+		<adj value="identical">相同的，同一的</adj>
+		<adj value="identified">被识别的</adj>
+	</word>
+	<word>
+		<noun value="idiom">成语，习语；土话</noun>
+	</word>
+	<word>
+		<verb value="ignite">点燃，点火</verb>
+		<noun value="ignition">点火，点燃</noun>
+		<adj value="ignitable">可燃性的</adj>
+	</word>
+	<word>
+		<verb value="illuminate">阐明，说明；照亮</verb>
+		<noun value="illumination">照明</noun>
+	</word>
+	<word>
+		<verb value="illustrate">阐明，举例说明</verb>
+		<noun value="illustration">说明，插图，图解</noun>
+		<adj value="illustrative">说明的，作例证的</adj>
+	</word>
+	<word>
+		<verb value="imagine">想象</verb>
+		<noun value="image">图像，肖像</noun>
+		<adj value="imaginary">虚构的，想象的</adj>
+		<adj value="imaginative">富有想象力的</adj>
+	</word>
+	<word>
+		<verb value="imitate">模仿，仿造，仿制</verb>
+		<noun value="imitation">模仿，仿造；仿制品</noun>
+		<adj value="imitation">人造的，仿制的</adj>
+	</word>
+	<word>
+		<noun value="imminence">迫切；急迫，危急</noun>
+		<adj value="imminent">即将来临的；迫近的</adj>
+	</word>
+	<word>
+		<verb value="immortalise">使不朽</verb>
+		<verb value="immortalize">使不朽</verb>
+		<adj value="immortal">不朽的，长生的</adj>
+	</word>
+	<word>
+		<verb value="impact">影响；撞击，冲击</verb>
+		<noun value="impact">影响，效果；碰撞；冲击力</noun>
+	</word>
+	<word>
+		<verb value="impair">损害；削弱；减少</verb>
+		<noun value="impairer">损害者</noun>
+		<noun value="impairment">损伤，损害</noun>
+		<adj value="impaired">受损的</adj>
+	</word>
+	<word>
+		<noun value="imperialism">帝国主义</noun>
+		<noun value="imperialist">帝国主义者</noun>
+		<adj value="imperial">帝国的；皇帝的</adj>
+		<adj value="imperialist">帝国主义的</adj>
+	</word>
+	<word>
+		<verb value="implement">实现</verb>
+		<noun value="implementation">实现</noun>
+	</word>
+	<word>
+		<verb value="implicate">涉及，暗示</verb>
+		<noun value="implication">含义；暗示；牵连，卷入；可能的结果，影响</noun>
+		<adj value="implicated">有牵连的</adj>
+		<adj value="implicational">启发的，启示的</adj>
+		<adj value="implicative">含蓄的，连带的</adj>
+		<adj value="implicit">含蓄的，暗示的；盲从的</adj>
+	</word>
+	<word>
+		<verb value="impose">利用；施加影响</verb>
+		<noun value="imposition">征收；强加</noun>
+		<noun value="imposture">欺骗，欺诈，冒牌</noun>
+	</word>
+	<word>
+		<adj value="impressive">感人的，令人钦佩的</adj>
+	</word>
+	<word>
+		<adj value="inanimate">无生命的，无生气的</adj>
+	</word>
+	<word>
+		<adj value="incapable">不能胜任的</adj>
+	</word>
+	<word>
+		<noun value="incident">事变</noun>
+	</word>
+	<word>
+		<verb value="include">包含，包括</verb>
+	</word>
+	<word>
+		<verb value="incorporate">包含，吸收；合并；混合</verb>
+		<noun value="incorporation">公司；合并</noun>
+	</word>
+	<word>
+		<verb value="increase">增加，提高</verb>
+		<noun value="increase">增加，提高</noun>
+		<noun value="increment">增量</noun>
+	</word>
+	<word>
+		<noun value="incredibility">不可信</noun>
+		<adj value="incredible">难以置信的，惊人的</adj>
+		<adv value="incredibly">难以置信地</adv>
+	</word>
+	<word>
+		<verb value="indebt">使负债；使受恩惠</verb>
+		<adj value="indebted">负债的；感激的；受惠的</adj>
+	</word>
+	<word>
+		<adv value="indeed">真正地，的确</adv>
+	</word>
+	<word>
+		<verb value="indent">缩排，缩进</verb>
+	</word>
+	<word>
+		<noun value="independence">独立性，自主</noun>
+		<adj value="independent">独立的</adj>
+	</word>
+	<word>
+		<noun value="India">印度</noun>
+		<noun value="Indian">印度人；印第安语</noun>
+		<adj value="Indian">印度的；印第安的</adj>
+	</word>
+	<word>
+		<adj value="indirect">间接的</adj>
+	</word>
+	<word>
+		<adj value="indispensable">不可缺少的</adj>
+	</word>
+	<word>
+		<noun value="individual">个人；个体</noun>
+		<adj value="individual">个人的</adj>
+		<adv value="individually">单独地</adv>
+	</word>
+	<word>
+		<verb value="induce">诱导，引诱</verb>
+		<noun value="inducement">诱因</noun>
+		<noun value="induction">感应；归纳法</noun>
+		<adj value="inductive">归纳的；感应的；诱导的</adj>
+	</word>
+	<word>
+		<adj value="inert">惰性的；呆滞的；迟缓的；无效的</adj>
+	</word>
+	<word>
+		<adj value="inescapable">不可避免的，逃脱不了的</adj>
+	</word>
+	<word>
+		<noun value="infancy">初期；婴儿期；幼年</noun>
+		<noun value="infant">婴儿</noun>
+		<noun value="infantilism">婴儿症，幼稚症</noun>
+		<adj value="infantile">婴儿的；初期的</adj>
+	</word>
+	<word>
+		<verb value="infect">感染，传染</verb>
+		<noun value="infection">感染；传染；传染病</noun>
+	</word>
+	<word>
+		<verb value="infer">推断；推论</verb>
+		<noun value="inference">推理；推论；推断</noun>
+	</word>
+	<word>
+		<noun value="inflation">膨胀</noun>
+	</word>
+	<word>
+		<noun value="infrastructure">基础设施</noun>
+	</word>
+	<word>
+		<noun value="ingredient">原料；要素，组成部分</noun>
+	</word>
+	<word>
+		<adj value="inherent">固有地，内在地，遗传的</adj>
+		<adv value="inherently">内在地，固有地，天性地</adv>
+	</word>
+	<word>
+		<verb value="inherit">继承</verb>
+		<noun value="inheritance">继承；遗传；遗产</noun>
+	</word>
+	<word>
+		<verb value="inhibit">抑制，禁止</verb>
+		<noun value="inhibition">抑制，禁止</noun>
+	</word>
+	<word>
+		<verb value="initialise">初始化</verb>
+		<verb value="initialize">初始化</verb>
+		<noun value="init">初始化</noun>
+		<noun value="initialization">初始化</noun>
+		<noun value="initiative">首创精神，主动权</noun>
+		<adj value="initiative">主动的，自发的</adj>
+	</word>
+	<word>
+		<noun value="inkling">暗示，迹象</noun>
+	</word>
+	<word>
+		<noun value="innocence">清白，无罪，天真</noun>
+		<noun value="innocent">天真的人，笨蛋</noun>
+		<adj value="innocent">无辜的，无罪的，无知的</adj>
+	</word>
+	<word>
+		<verb value="innovate">创新；改革；革新</verb>
+		<noun value="innovation">创新，革新</noun>
+		<adj value="innovative">革新的，创新的</adj>
+	</word>
+	<word>
+		<verb value="inquire">询问；查究；问明</verb>
+		<noun value="inquiry">探究；调查；质询</noun>
+	</word>
+	<word>
+		<noun value="inscription">题词；铭文</noun>
+	</word>
+	<word>
+		<noun value="insect">昆虫</noun>
+	</word>
+	<word>
+		<noun value="insight">洞察力；洞悉</noun>
+	</word>
+	<word>
+		<verb value="inspect">检查；视察；检阅</verb>
+		<noun value="inspection">视察，检查</noun>
+	</word>
+	<word>
+		<verb value="inspire">激发；鼓舞</verb>
+		<noun value="inspiration">灵感；鼓舞</noun>
+	</word>
+	<word>
+		<adj value="instable">不稳定的；不牢固的</adj>
+	</word>
+	<word>
+		<adj value="instant">立即的；紧急的</adj>
+		<adj value="instantaneous">瞬时的，即时的</adj>
+	</word>
+	<word>
+		<verb value="instantiate">举例说明，实例化</verb>
+		<noun value="instance">实例；情况</noun>
+	</word>
+	<word>
+		<noun value="institution">制度</noun>
+	</word>
+	<word>
+		<verb value="instruct">指示，教育</verb>
+		<noun value="instruction">指示，命令</noun>
+		<noun value="instructor">教员，指导者</noun>
+	</word>
+	<word>
+		<verb value="insure">确保，投保</verb>
+		<noun value="insurance">保险</noun>
+	</word>
+	<word>
+		<noun value="intangibility">无形；不能把握；不确定</noun>
+		<adj value="intangible">无形的，触摸不到的；难以理解的</adj>
+	</word>
+	<word>
+		<verb value="integrate">使完整；积分；成为一体</verb>
+		<noun value="integration">集成，综合</noun>
+		<noun value="integrity">完整性；正直</noun>
+	</word>
+	<word>
+		<noun value="intellect">智力，才智</noun>
+		<noun value="intellectual">知识分子</noun>
+		<noun value="intellectualism">智力活动；知性主义</noun>
+		<noun value="intelligence">智力，智能</noun>
+		<adj value="intellectual">智力的</adj>
+		<adj value="intelligent">智能的</adj>
+		<adv value="intellectually">智性上地，智力上地</adv>
+	</word>
+	<word>
+		<verb value="intensify">增强，强化</verb>
+		<noun value="intension">强度，烈度；加强，加剧；紧张</noun>
+		<adj value="intense">强烈的，紧张的，热情的</adj>
+		<adj value="intensive">加强的；集中的；透彻的</adj>
+	</word>
+	<word>
+		<noun value="intention">意图，目的，意向</noun>
+		<adj value="intentional">故意的，蓄意的</adj>
+	</word>
+	<word>
+		<verb value="interact">互相影响</verb>
+		<noun value="interact">幕间剧，幕间休息</noun>
+		<noun value="interaction">相互作用</noun>
+	</word>
+	<word>
+		<verb value="interconnect">互连</verb>
+	</word>
+	<word>
+		<noun value="interface">接口；接触面</noun>
+		<adj value="interfacial">界面的</adj>
+	</word>
+	<word>
+		<verb value="interfere">干扰，妨碍，介入</verb>
+		<noun value="interference">干扰，冲突，干涉</noun>
+	</word>
+	<word>
+		<verb value="interleave">交错，交叉</verb>
+		<adj value="interleaved">交错的</adj>
+	</word>
+	<word>
+		<verb value="intern">拘留，软禁</verb>
+		<noun value="intern">实习生</noun>
+		<noun value="interne">实习医师</noun>
+		<noun value="internee">被拘留者</noun>
+		<noun value="internment">实习期</noun>
+		<noun value="internship">拘留；收容</noun>
+		<adj value="internal">内部的，内在的</adj>
+	</word>
+	<word>
+		<verb value="interplay">相互影响，相互作用</verb>
+		<noun value="interplay">相互影响，相互作用</noun>
+	</word>
+	<word>
+		<noun value="interoperability">互操作性；互用性</noun>
+		<noun value="interoperate">交互操作</noun>
+	</word>
+	<word>
+		<verb value="interpret">解释；口译</verb>
+		<noun value="interpretation">解释；翻译</noun>
+		<noun value="interpreter">口译者</noun>
+		<adj value="interpretable">可解释的，可翻译的</adj>
+		<adj value="interpretative">解释的，作为说明的</adj>
+		<adj value="interpretive">解释的，作为说明的</adj>
+	</word>
+	<word>
+		<verb value="intersect">相交</verb>
+		<noun value="intersection">十字路口；交叉；交集</noun>
+	</word>
+	<word>
+		<adj value="interstellar">星际的</adj>
+	</word>
+	<word>
+		<noun value="interval">间隔；间距；幕间休息</noun>
+	</word>
+	<word>
+		<verb value="intervene">干涉；调停；插入</verb>
+		<noun value="intervention">介入；调停；妨碍</noun>
+	</word>
+	<word>
+		<verb value="intimate">暗示</verb>
+		<noun value="intimacy">亲密</noun>
+		<noun value="intimate">知己</noun>
+		<adj value="intimate">亲密的</adj>
+	</word>
+	<word>
+		<adj value="intractable">棘手的，倔强的，难治的</adj>
+	</word>
+	<word>
+		<adj value="intricate">复杂的</adj>
+		<adv value="intricately">杂乱地</adv>
+	</word>
+	<word>
+		<adj value="intrinsic">本质的，固有的</adj>
+		<adv value="intrinsically">本质地；内在地；固有地</adv>
+	</word>
+	<word>
+		<verb value="intrude">侵入；闯入</verb>
+		<noun value="intrusion">侵入；闯入</noun>
+	</word>
+	<word>
+		<verb value="intuit">凭直觉知道</verb>
+		<noun value="intuition">直觉</noun>
+		<adj value="intuitive">直观的；直觉的</adj>
+		<adv value="intuitively">直观地</adv>
+	</word>
+	<word>
+		<verb value="invade">侵略；侵袭</verb>
+		<noun value="invasion">入侵，侵略</noun>
+	</word>
+	<word>
+		<verb value="invent">发明</verb>
+		<noun value="invention">发明；发明物</noun>
+		<noun value="inventor">发明人；发明家</noun>
+	</word>
+	<word>
+		<noun value="inventory">存货，存货清单；详细目录；财产清册</noun>
+	</word>
+	<word>
+		<verb value="inverse">使倒转，使颠倒</verb>
+		<noun value="inverse">相反，倒转</noun>
+		<noun value="inversion">倒置，反向，倒转</noun>
+		<adj value="inverse">相反的，倒转的</adj>
+	</word>
+	<word>
+		<verb value="invert">转化；颠倒，反转</verb>
+		<noun value="invert">颠倒的事物，倒置物，倒悬者</noun>
+		<adj value="invert">转化的</adj>
+		<adj value="invertible">可逆的；倒转的</adj>
+	</word>
+	<word>
+		<verb value="invest">投资，入股；包围</verb>
+		<noun value="investment">投资，投入；封锁</noun>
+	</word>
+	<word>
+		<verb value="investigate">调查，研究</verb>
+		<noun value="investigation">调查，研究</noun>
+	</word>
+	<word>
+		<verb value="invocate">祈求；援引；引起</verb>
+		<noun value="invocation">祈祷；符咒；调用</noun>
+	</word>
+	<word>
+		<verb value="invoice">开发票；记清单</verb>
+		<noun value="invoice">发票；货物；发货单</noun>
+	</word>
+	<word>
+		<noun value="iron">铁；熨斗</noun>
+		<adj value="irony">铁的，含铁的</adj>
+	</word>
+	<word>
+		<noun value="irony">讽刺，反语</noun>
+		<adj value="ironic">讽刺的</adj>
+		<adj value="ironical">讽刺的</adj>
+		<adv value="ironically">讽刺地</adv>
+	</word>
+	<word>
+		<adj value="irreconcilable">矛盾的，不可调和的</adj>
+	</word>
+	<word>
+		<adj value="irrespective">无关的，不考虑的，不顾的</adj>
+	</word>
+	<word>
+		<verb value="isolate">使隔离，使孤立</verb>
+		<noun value="isolation">孤立，隔离</noun>
+		<adj value="isolate">隔离的，孤立的</adj>
+	</word>
+	<word>
+		<noun value="issue">议题</noun>
+	</word>
+	<word>
+		<noun value="Italy">意大利</noun>
+		<noun value="Italia">意大利</noun>
+		<noun value="Italian">意大利人；意大利语</noun>
+		<adj value="Italian">意大利的</adj>
+	</word>
+	<word>
+		<noun value="ivory">象牙</noun>
+	</word>
+</words>

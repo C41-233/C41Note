@@ -1,0 +1,515 @@
+<words>
+	<word>
+		<noun value="palace">宫殿</noun>
+	</word>
+	<word>
+		<noun value="palindrome">回文</noun>
+	</word>
+	<word>
+		<noun value="pamphlet">小册子</noun>
+	</word>
+	<word>
+		<noun value="panacea">灵丹妙药，万能药</noun>
+	</word>
+	<word>
+		<noun value="pants">裤子</noun>
+	</word>
+	<word>
+		<noun value="paradigm">范例</noun>
+	</word>
+	<word>
+		<noun value="paradise">天堂</noun>
+	</word>
+	<word>
+		<noun value="paradox">悖论</noun>
+		<adj value="paradoxical">矛盾的</adj>
+	</word>
+	<word>
+		<verb value="parallel">使平行</verb>
+		<noun value="parallel">平行线；对比</noun>
+		<noun value="parallelism">平行；类似，对应；排比；并行</noun>
+		<adj value="parallel">平行的；类似的，相同的</adj>
+	</word>
+	<word>
+		<verb value="paralyze">使麻痹，使瘫痪</verb>
+		<adj value="paralyzed">麻痹的，瘫痪的</adj>
+	</word>
+	<word>
+		<noun value="parameter">参数</noun>
+		<adj value="parametric">参数的</adj>
+	</word>
+	<word>
+		<noun value="parfait">冻糕；冷甜点</noun>
+	</word>
+	<word>
+		<noun value="parity">平价，同等，相等；奇偶性</noun>
+	</word>
+	<word>
+		<noun value="parliament">议会，国会</noun>
+	</word>
+	<word>
+		<verb value="participate">参与；分担</verb>
+		<noun value="participation">参与；分享</noun>
+		<adj value="participative">分担的</adj>
+	</word>
+	<word>
+		<noun value="party">聚会；党</noun>
+	</word>
+	<word>
+		<noun value="passion">激情；热情；酷爱；盛怒</noun>
+		<adj value="passionate">热情的；热烈的，激昂的；易怒的</adj>
+		<adj value="passionless">不热情的，冷淡的；冷静的</adj>
+		<adv value="passionately">热情地；强烈地；激昂地</adv>
+	</word>
+	<word>
+		<adj value="passive">被动的</adj>
+	</word>
+	<word>
+		<noun value="passport">护照</noun>
+	</word>
+	<word>
+		<verb value="pave">铺设；安排</verb>
+	</word>
+	<word>
+		<noun value="pawpaw">木瓜</noun>
+	</word>
+	<word>
+		<verb value="pay">支付，付出</verb>
+		<noun value="pay">工资，薪水；付款</noun>
+		<noun value="payoff">报酬，回报</noun>
+		<adj value="payoff">支付的；决定性的；产生结果的</adj>
+	</word>
+	<word>
+		<noun value="peach">桃子</noun>
+	</word>
+	<word>
+		<noun value="pear">梨</noun>
+	</word>
+	<word>
+		<noun value="peculiar">特权；特有财产</noun>
+		<noun value="peculiarity">特性；特质</noun>
+		<adj value="peculiar">特殊的；独特的</adj>
+	</word>
+	<word>
+		<verb value="pedal">踩踏板；骑车</verb>
+		<noun value="pedal">踏板；脚蹬子</noun>
+	</word>
+	<word>
+		<noun value="pedestrian">行人；步行者</noun>
+		<adj value="pedestrian">徒步的；缺乏想像力的</adj>
+	</word>
+	<word>
+		<noun value="penultimate">倒数第二的</noun>
+	</word>
+	<word>
+		<verb value="perceive">察觉，感觉；理解，认知</verb>
+		<noun value="perception">知觉，感觉</noun>
+		<adj value="perceptual">知觉的；感知的；有知觉的</adj>
+	</word>
+	<word>
+		<verb value="perform">执行；完成；表演</verb>
+		<noun value="performance">性能；绩效；表演；执行</noun>
+		<adj value="performing">表演的；履行的</adj>
+	</word>
+	<word>
+		<noun value="period">周期；时期</noun>
+		<adj value="periodic">周期的，定期的</adj>
+	</word>
+	<word>
+		<noun value="peripheral">外部设备</noun>
+		<adj value="peripheral">外围的，次要的</adj>
+		<adv value="peripherally">周边地；外围地；次要地</adv>
+	</word>
+	<word>
+		<verb value="perish">死亡；毁灭；腐烂；枯萎</verb>
+		<adj value="perishable">易腐坏的；易毁灭的；会枯萎的</adj>
+	</word>
+	<word>
+		<adj value="permanent">永久的，永恒的</adj>
+	</word>
+	<word>
+		<verb value="permit">许可，允许</verb>
+		<noun value="permission">允许，许可</noun>
+		<noun value="permit">许可证，执照</noun>
+	</word>
+	<word>
+		<noun value="perpendicular">垂线</noun>
+		<noun value="perpendicularity">垂直；正交性</noun>
+		<adj value="perpendicular">垂直的，正交的</adj>
+	</word>
+	<word>
+		<verb value="persist">坚持，固执</verb>
+		<adj value="persistent">固执的，坚持的，稳固的</adj>
+	</word>
+	<word>
+		<noun value="person">人</noun>
+		<noun value="people">人（复数）；民族</noun>
+		<noun value="personnel">人事部分；全体人员</noun>
+		<adj value="personal">个人的</adj>
+		<adj value="personnel">人员的；有关人事的</adj>
+	</word>
+	<word>
+		<noun value="perspective">观点；远景；透视图</noun>
+		<adj value="perspective">透视的</adj>
+	</word>
+	<word>
+		<noun value="Peru">秘鲁</noun>
+		<noun value="Peruvian">秘鲁人</noun>
+		<adj value="Peruvian">秘鲁的</adj>
+	</word>
+	<word>
+		<noun value="petal">花瓣</noun>
+	</word>
+	<word>
+		<noun value="phantom">幽灵；幻影；虚位</noun>
+		<adj value="phantom">幽灵的；幻觉的；有名无实的</adj>
+	</word>
+	<word>
+		<noun value="phenomenon">现象</noun>
+		<noun value="phenomena">现象（复数）</noun>
+	</word>
+	<word>
+		<noun value="physician">内科医师</noun>
+		<noun value="physicist">物理学家</noun>
+		<noun value="physics">物理学</noun>
+		<adj value="physical">物理的；身体的；物质的</adj>
+	</word>
+	<word>
+		<noun value="pineapple">菠萝</noun>
+	</word>
+	<word>
+		<verb value="pioneer">开辟，倡导，作先驱</verb>
+		<noun value="pioneer">先锋，拓荒者</noun>
+		<adj value="pioneering">首创的，先驱的</adj>
+	</word>
+	<word>
+		<verb value="pipe">吹笛；尖叫；用管道输送</verb>
+		<noun value="pipe">管；烟斗；笛</noun>
+		<noun value="piper">吹笛者，风笛手；管道工；绿鳍鱼；气喘的马</noun>
+	</word>
+	<word>
+		<noun value="pipeline">管道，输油管；流水线；传递途径</noun>
+	</word>
+	<word>
+		<noun value="plaintiff">原告</noun>
+	</word>
+	<word>
+		<verb value="plan">计划；设计；打算</verb>
+		<noun value="plan">计划；平面</noun>
+		<noun value="planeness">平面度；平整度</noun>
+		<adj value="planar">平面的；二维的；平坦的</adj>
+	</word>
+	<word>
+		<noun value="planet">行星</noun>
+		<adj value="planetary">行星的</adj>
+	</word>
+	<word>
+		<verb value="plasticise">塑化</verb>
+		<verb value="plasticize">塑化</verb>
+		<noun value="plastic">塑料制品</noun>
+		<noun value="plastics">塑料</noun>
+		<adj value="plastic">塑料的</adj>
+	</word>
+	<word>
+		<noun value="plausibility">善辩；似乎有理；貌似可信</noun>
+		<adj value="plausible">貌似可信的，花言巧语的</adj>
+		<adj value="plausive">喝采的；似乎真实可信的</adj>
+	</word>
+	<word>
+		<noun value="plea">恳求；辩护；托辞</noun>
+	</word>
+	<word>
+		<verb value="plot">绘图；密谋</verb>
+		<noun value="plot">情节；阴谋</noun>
+	</word>
+	<word>
+		<noun value="plugin">插件</noun>
+	</word>
+	<word>
+		<verb value="plumb">使垂直；探测，探索</verb>
+		<noun value="plumb">垂直；铅锤</noun>
+		<noun value="plumbing">水管设施；管道</noun>
+		<adj value="plumb">垂直的</adj>
+	</word>
+	<word>
+		<verb value="plummet">垂直落下，骤然下跌</verb>
+		<noun value="plummet">铅锤，坠子</noun>
+	</word>
+	<word>
+		<noun value="poem">试</noun>
+		<noun value="poet">诗人</noun>
+		<noun value="poetry">诗意，诗歌</noun>
+	</word>
+	<word>
+		<noun value="polar">极线；极面</noun>
+		<adj value="polar">极地的，两极的</adj>
+	</word>
+	<word>
+		<noun value="polynomial">多项式</noun>
+		<adj value="polynomial">多项式的</adj>
+	</word>
+	<word>
+		<noun value="pomelo">柚子，文旦</noun>
+	</word>
+	<word>
+		<verb value="ponder">思考</verb>
+	</word>
+	<word>
+		<verb value="populate">居住于；填充</verb>
+		<noun value="population">人口；种群</noun>
+	</word>
+	<word>
+		<noun value="portability">可移植性；轻便；可携带性</noun>
+		<noun value="portable">手提式打字机</noun>
+		<adj value="portable">手提的，便携式的；轻便的</adj>
+	</word>
+	<word>
+		<verb value="portion">分配</verb>
+		<noun value="portion">部分；一份；命运</noun>
+	</word>
+	<word>
+		<noun value="portrait">肖像；描写</noun>
+		<noun value="portray">描绘；扮演</noun>
+	</word>
+	<word>
+		<verb value="possess">控制，持有，掌握</verb>
+		<noun value="possession">拥有，财产</noun>
+	</word>
+	<word>
+		<verb value="post">张贴；公布；邮递；布置</verb>
+		<noun value="post">岗位；邮件；标杆</noun>
+		<noun value="postal">明信片</noun>
+		<adj value="postal">邮政的；邮局的</adj>
+	</word>
+	<word>
+		<noun value="postgraduate">研究生</noun>
+		<adj value="postgraduate">大学毕业后的</adj>
+	</word>
+	<word>
+		<noun value="potential">潜能，可能性</noun>
+		<adj value="potential">潜在的，可能的</adj>
+	</word>
+	<word>
+		<noun value="poverty">贫穷</noun>
+	</word>
+	<word>
+		<noun value="practitioner">开业者，从业者</noun>
+	</word>
+	<word>
+		<noun value="pragmatism">实用主义；独断</noun>
+		<noun value="pragmatist">实用主义者；爱管闲事的人</noun>
+		<adj value="pragmatic">实际的；实用主义的；国事的</adj>
+	</word>
+	<word>
+		<verb value="precede">领先，在前面；优于，高于</verb>
+		<noun value="precedence">优先，居先</noun>
+		<noun value="precedent">先例；前例</noun>
+		<adj value="precedent">在前的，在先的</adj>
+		<adj value="preceding">在前的；前述的</adj>
+	</word>
+	<word>
+		<noun value="precision">精度</noun>
+		<adj value="precise">精确的，明确的，严格的</adj>
+		<adv value="precisely">精确地；恰恰</adv>
+	</word>
+	<word>
+		<verb value="preclude">排除；妨碍，阻止</verb>
+		<noun value="preclusion">排除，阻止，妨碍，预防</noun>
+		<adj value="precludable">能预防的</adj>
+		<adj value="preclusive">妨碍的，除外的，预防的</adj>
+	</word>
+	<word>
+		<verb value="predetermine">预先确定，预先决定</verb>
+	</word>
+	<word>
+		<verb value="predict">预报，预言，预知</verb>
+		<noun value="predictability">可预测性；可预言</noun>
+		<noun value="prediction">预报，预言</noun>
+		<adj value="predictable">可预言的</adj>
+	</word>
+	<word>
+		<verb value="preempt">先占；先取；以先买权获得</verb>
+		<noun value="preemption">优先购买；强制收购；抢先占有；取代</noun>
+		<adj value="preemptive">优先购买的；先发制人的</adj>
+	</word>
+	<word>
+		<noun value="preface">序言</noun>
+	</word>
+	<word>
+		<verb value="prefer">更好，宁愿</verb>
+		<adj value="preferable">更好的，更可取的</adj>
+		<adv value="preferably">较好，宁愿，更适宜</adv>
+	</word>
+	<word>
+		<verb value="prefetch">预取</verb>
+	</word>
+	<word>
+		<noun value="prefix">前缀</noun>
+		<adj value="prefix">前缀的</adj>
+	</word>
+	<word>
+		<noun value="prelim">预备考试</noun>
+		<noun value="preliminary">预赛；初步措施</noun>
+		<adj value="preliminary">初步的，开始的，预备的</adj>
+	</word>
+	<word>
+		<noun value="premier">总理，首相</noun>
+		<adj value="premier">首位的，第一的</adj>
+	</word>
+	<word>
+		<verb value="prepend">预先考虑；预谋</verb>
+	</word>
+	<word>
+		<noun value="preposition">介词</noun>
+	</word>
+	<word>
+		<noun value="prerequisite">先决条件</noun>
+		<adj value="prerequisite">必备的</adj>
+	</word>
+	<word>
+		<verb value="prescribe">规定；开药方</verb>
+		<adj value="prescribed">规定的</adj>
+		<adj value="prescriptive">规定的，规范的</adj>
+	</word>
+	<word>
+		<verb value="present">提出，介绍，赠送</verb>
+		<noun value="presence">存在，出席，参加；风度，仪态</noun>
+		<noun value="present">现在；礼物</noun>
+		<adj value="present">现在的，出席的</adj>
+	</word>
+	<word>
+		<verb value="presume">假定，推测</verb>
+		<noun value="presumption">推测</noun>
+		<adj value="presumptive">假定的，根据推测的</adj>
+		<adv value="presumably">大概，推测起来</adv>
+	</word>
+	<word>
+		<verb value="prevail">盛行，流行；战胜，获胜</verb>
+		<adj value="prevalent">流行的，普遍的</adj>
+	</word>
+	<word>
+		<verb value="price">给…定价</verb>
+		<noun value="price">价格</noun>
+		<adj value="priceless">无价的，极珍贵的</adj>
+	</word>
+	<word>
+		<adj value="primary">初级的；主要的；基本的</adj>
+		<adv value="primarily">首先；主要地</adv>
+	</word>
+	<word>
+		<noun value="primate">大主教；灵长类的动物；首领</noun>
+		<adj value="primate">灵长目动物的；首要的</adj>
+	</word>
+	<word>
+		<noun value="proactiveness">积极性</noun>
+		<adj value="proactive">有前瞻性的，积极主动的</adj>
+	</word>
+	<word>
+		<noun value="proattitude">赞成态度</noun>
+	</word>
+	<word>
+		<noun value="probability">可能性，几率</noun>
+		<adj value="probable">可能的</adj>
+		<adv value="probably">可能</adv>
+	</word>
+	<word>
+		<noun value="procedure">程序，过程，步骤，手续</noun>
+		<adj value="procedural">程序上的</adj>
+		<adj value="procedurally">程序上地</adj>
+	</word>
+	<word>
+		<verb value="proceed">开始，进行</verb>
+		<noun value="proceeding">进程；议程</noun>
+	</word>
+	<word>
+		<verb value="process">处理，加工</verb>
+		<noun value="process">过程</noun>
+	</word>
+	<word>
+		<verb value="produce">生产；引起；创作</verb>
+		<noun value="produce">农产品，产品</noun>
+		<noun value="producer">制作人，制片人；生产者；发生器</noun>
+		<noun value="production">成果；产品；生产；作品</noun>
+		<noun value="productivity">生产力；生产率；生产能力</noun>
+		<adj value="productive">能生产的，多产的；生产的</adj>
+	</word>
+	<word>
+		<noun value="profession">职业</noun>
+		<noun value="professional">专业人员</noun>
+		<noun value="professor">教授</noun>
+		<adj value="professional">专业的，职业的</adj>
+	</word>
+	<word>
+		<noun value="proficient">精通，专家</noun>
+		<adj value="proficient">熟练的，精通的</adj>
+	</word>
+	<word>
+		<adj value="progenitor">祖先，原著，起源</adj>
+	</word>
+	<word>
+		<verb value="progress">前进，进步</verb>
+		<noun value="progress">进步，发展</noun>
+	</word>
+	<word>
+		<noun value="projection">投影</noun>
+		<adj value="projective">投影的；投射的</adj>
+	</word>
+	<word>
+		<verb value="promise">许诺，允诺；有前途，有希望</verb>
+		<noun value="promise">允诺，许诺</noun>
+		<adj value="promising">有希望的，有前途的</adj>
+	</word>
+	<word>
+		<verb value="promote">促进，提升；推销</verb>
+		<noun value="promotion">促进，提升；推销</noun>
+	</word>
+	<word>
+		<noun value="pronoun">代词</noun>
+		<adj value="pronominal">代词的；代词性质的</adj>
+	</word>
+	<word>
+		<verb value="propagate">传播；传送；繁殖；宣传</verb>
+		<noun value="propagation">传播；繁殖，增殖</noun>
+	</word>
+	<word>
+		<verb value="propel">推进，激励，驱使</verb>
+	</word>
+	<word>
+		<verb value="proportion">使成比例</verb>
+		<noun value="proportion">比例</noun>
+	</word>
+	<word>
+		<verb value="propose">建议；求婚；打算</verb>
+		<noun value="proposal">提议，建议；求婚</noun>
+		<adj value="proposed">被提议的，所推荐的</adj>
+	</word>
+	<word>
+		<verb value="proposition">提议</verb>
+		<noun value="proposition">命题，主题，议题</noun>
+		<adj value="propositional">命题的，建议的</adj>
+	</word>
+	<word>
+		<noun value="proprietary">所有权；所有人</noun>
+		<noun value="proprietor">业主；所有者</noun>
+		<noun value="proprietorship">所有权</noun>
+		<noun value="proprietress">女业主；女所有者</noun>
+	</word>
+	<word>
+		<verb value="prove">证明</verb>
+		<noun value="proof">证明</noun>
+	</word>
+	<word>
+		<noun value="proverb">谚语，格言</noun>
+		<adj value="proverbial">谚语的，众所周知的，谚语式的</adj>
+	</word>
+	<word>
+		<verb value="punch">用拳头揍</verb>
+	</word>
+	<word>
+		<verb value="pursue">继续；从事；追赶；纠缠</verb>
+	</word>
+	<word>
+		<verb value="puzzle">迷惑；冥思苦想</verb>
+		<noun value="puzzle">难题；拼图</noun>
+	</word>
+</words>

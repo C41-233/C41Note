@@ -1,0 +1,132 @@
+<words>
+	<word>
+		<noun value="galaxy">银河系</noun>
+		<adj value="galactic">银河的</adj>
+	</word>
+	<word>
+		<noun value="garage">车库</noun>
+	</word>
+	<word>
+		<verb value="garner">获得；存储</verb>
+	</word>
+	<word>
+		<noun value="gas">气体；瓦斯；汽油</noun>
+		<noun value="gasoline">汽油</noun>
+	</word>
+	<word>
+		<verb value="gaze">凝视；注视</verb>
+		<noun value="gaze">凝视；注视</noun>
+	</word>
+	<word>
+		<verb value="generalise">概括；归纳；普及</verb>
+		<verb value="generalize">概括；归纳；普及</verb>
+		<adj value="generic">一般的，普通的；通用的</adj>
+	</word>
+	<word>
+		<verb value="generate">生成</verb>
+		<noun value="generation">一代人；产生</noun>
+		<noun value="generator">发电机，发生器</noun>
+	</word>
+	<word>
+		<noun value="genesis">发生，起源</noun>
+		<noun value="geneses">发生，起源（复数）</noun>
+		<noun value="geneticist">遗传学家</noun>
+		<noun value="genetics">遗传学</noun>
+		<adj value="genetic">遗传的，基因的；起源的</adj>
+		<adj value="genetical">遗传的；起源的，创始的</adj>
+		<adj value="genic">由基因引起的；遗传学的</adj>
+	</word>
+	<word>
+		<noun value="genius">天才，天赋</noun>
+	</word>
+	<word>
+		<noun value="genuineness">真诚，真挚</noun>
+		<adj value="genuine">真诚的，真实的</adj>
+		<adv value="genuinely">真诚地，真实地</adv>
+	</word>
+	<word>
+		<noun value="geographer">地理学家</noun>
+		<noun value="geography">地理</noun>
+		<adj value="geographical">地理的</adj>
+	</word>
+	<word>
+		<noun value="geologist">地质学家</noun>
+		<noun value="geology">地质学</noun>
+		<adj value="geologic">地质的</adj>
+	</word>
+	<word>
+		<noun value="German">德语；德国人</noun>
+		<noun value="Germany">德国</noun>
+		<adj value="German">德国的</adj>
+	</word>
+	<word>
+		<verb value="gesture">做手势，动作示意</verb>
+		<noun value="gesture">姿态，手势</noun>
+	</word>
+	<word>
+		<noun value="geyser">间歇喷泉</noun>
+	</word>
+	<word>
+		<noun value="ghetto">贫民区</noun>
+	</word>
+	<word>
+		<noun value="gigantism">巨大</noun>
+		<adj value="gigantic">巨大的，庞大的</adj>
+	</word>
+	<word>
+		<verb value="glitter">闪光，闪烁</verb>
+	</word>
+	<word>
+		<adj value="global">全球的</adj>
+	</word>
+	<word>
+		<noun value="glossary">术语表；词汇表；专业词典</noun>
+	</word>
+	<word>
+		<verb value="gossip">说长道短</verb>
+		<noun value="gossip">爱说长道短的人</noun>
+	</word>
+	<word>
+		<verb value="grace">使优美</verb>
+		<noun value="grace">优雅</noun>
+		<adj value="graceful">优雅的，优美的</adj>
+	</word>
+	<word>
+		<noun value="graciousness">亲切，和蔼</noun>
+		<adj value="gracious">亲切的</adj>
+	</word>
+	<word>
+		<noun value="gradient">梯度；坡度；倾斜度</noun>
+		<adj value="gradient">倾斜的；步行的</adj>
+	</word>
+	<word>
+		<verb value="graduate">授予…学位；分等级；标上刻度；毕业</verb>
+		<noun value="graduate">研究生；毕业生</noun>
+		<adj value="graduate">毕业的；研究生的</adj>
+	</word>
+	<word>
+		<verb value="granulate">成为粒状；表面变粗糙</verb>
+		<noun value="granularity">粒度</noun>
+		<adj value="granular">颗粒的；粒状的</adj>
+	</word>
+	<word>
+		<noun value="grape">葡萄</noun>
+	</word>
+	<word>
+		<verb value="grasp">抓住；领会，理解</verb>
+		<noun value="grasp">抓住；理解；控制</noun>
+		<adj value="graspable">可抓住的；能理解的</adj>
+		<adj value="grasping">贪婪的；紧紧抓住的</adj>
+	</word>
+	<word>
+		<verb value="grieve">悲痛，哀悼</verb>
+		<noun value="grief">悲痛，忧伤</noun>
+	</word>
+	<word>
+		<noun value="grumpy">脾气坏的人，爱抱怨的人</noun>
+		<adj value="grumpy">脾气暴躁的，性情乖戾的</adj>
+	</word>
+	<word>
+		<noun value="guideline">指导方针，参考</noun>
+	</word>
+</words>

@@ -1,6 +1,7 @@
 Common.import("/lib/url.js");
 
 $(function(){
+    Common.import("/lib/thirdparty/xml-js/xml-js.min.js");
     Common.import("base/index.vue");
 });
 
@@ -21,6 +22,7 @@ let app = new Vue({
     },
     methods: {
         Select(value){
+            Common.URL.clearParameters();
             Common.URL.setParameter("action", value);
             this.action = value;
         }
