@@ -102,6 +102,27 @@ RegExp对象表示正则表达式，是正则表达式字面量的类型。
 
 [Object](Object.md) / RegExp
 
+## 对象属性
+
+| 名称 | 类型 | 描述 |  writable | enumerable | configurable |
+|---|---|---|---|---|---|
+| @@species | Function | 构造器 | - | - | - |	
+
+## 原型属性
+
+| 名称 | 类型 | 描述 |  writable | enumerable | configurable |
+|---|---|---|---|---|---|
+| dotAll | boolean | s修饰符是否设置 | - | - | true |	
+| flags | string | 所有修饰符组成的字符串 | - | - | true |	
+| global | boolean | g修饰符是否设置 | - | - | - |	
+| hasIndices | boolean  | d修饰符是否设置 | - | - | - |	
+| ignoreCase | boolean | i修饰符是否设置 | - | - | - |	
+| lastIndex | number | 下次匹配的起始位置 | true | - | - |	
+| multiline | boolean | m修饰符是否设置 | - | - | - |	
+| source | string | 正则表达式pattern字符串 | - | - | - |	
+| sticky | boolean | s修饰符是否设置 | - | - | - |	
+| unicode | boolean | u修饰符是否设置 | - | - | - |	
+
 ## 构造函数
 
 ```
