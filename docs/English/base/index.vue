@@ -28,7 +28,7 @@
 
 <template name="word-base">
 <el-row class="max-height">
-    <el-col :span="2" class="max-height">
+    <el-col :span="2" class="max-height" v-loading="Loading">
         <ul class="list-group">
             <template v-for="item in Keys">
                 <li class="list-group-item word-base__list-item active" v-if="item === Key">{{item}}</li>
@@ -40,8 +40,8 @@
         <div v-for="word in Document" class="word-base__word-card">
             <el-row v-for="item in word.elements">
                 <el-col :span="8" style="font-weight:bold">{{item.attributes.value}}</el-col>
-                <el-col :span="8">{{item.name}}</el-col>
-                <el-col :span="8">{{item.elements[0].text}}</el-col>
+                <el-col :span="4">{{item.name}}</el-col>
+                <el-col :span="12">{{item.elements[0].text}}</el-col>
             </el-row>
         </div>
     </el-col>
@@ -54,7 +54,8 @@ Common.vue("word-base", {
         return {
             Keys: Array.sequence("A", "Z"),
             Key: "A",
-            Document: null
+            Document: null,
+            Loading: 0
         }
     },
     created(){
@@ -63,12 +64,18 @@ Common.vue("word-base", {
     },
     methods: {
         async Change(key){
-            this.Key = key;
-            Common.URL.setParameter("key", key); 
+            try{
+                this.Loading++;
+                this.Key = key;
+                Common.URL.setParameter("key", key); 
 
-            let body = await Common.http.get(`base/${key}.xml`);
-            doc = xml2js(body);
-            this.Document = doc.elements[0].elements;
+                let body = await Common.http.get(`base/${key}.xml`);
+                doc = xml2js(body);
+                this.Document = doc.elements[0].elements;
+            }
+            finally{
+                this.Loading--;
+            }
         }
     }
 });
