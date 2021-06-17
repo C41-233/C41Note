@@ -1,4 +1,14 @@
-# \<WindowOrWorkerGlobalScope\>
+# @WindowOrWorkerGlobalScope
+
+## 继承
+
+Object / @WindowOrWorkerGlobalScope
+
+## 原型属性
+
+| 名称 | 类型 | 描述 |  writable | enumerable | configurable |
+|---|---|---|---|---|---|
+| indexedDB | IDBFactory | 索引数据库 | - | - | - |
 
 ## 原型函数
 
