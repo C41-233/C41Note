@@ -22,6 +22,7 @@
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
+    font-size: 16px;
 }
 </style>
 

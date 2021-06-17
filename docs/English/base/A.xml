@@ -104,8 +104,8 @@
 		<adj value="acid">酸性的</adj>
 	</word>
 	<word>
-		<verb value="acknowledge">承认；答谢；报偿</verb>
-		<noun value="acknowledgement">承认；确认；感谢</noun>
+		<verb value="acknowledge">承认；答谢，报偿</verb>
+		<noun value="acknowledgement">承认，确认；感谢</noun>
 	</word>
 	<word>
 		<verb value="acquaint">使熟悉，使认识</verb>
@@ -114,14 +114,12 @@
 	<word>
 		<verb value="acquire">获得</verb>
 		<noun value="acquirement">成就；取得</noun>
-	</word>
-	<word>
 		<noun value="acquisition">获得物，获得</noun>
 		<adj value="acquisitive">贪得的；想获得的；可学到的；可获得的</adj>
 	</word>
 	<word>
 		<noun value="acre">土地；地产</noun>
-		<noun value="acreage">面积；英亩数</noun>
+		<noun value="acreage">面积，英亩数</noun>
 	</word>
 	<word>
 		<noun value="acronym">首字母缩略词</noun>
@@ -129,11 +127,11 @@
 	<word>
 		<verb value="act">表演；行动；见效</verb>
 		<noun value="act">行为，法令，（一）幕</noun>
-		<adj value="active">积极的，活跃的，主动的</adj>
 	</word>
 	<word>
 		<verb value="activate">激活；刺激</verb>
 		<noun value="activation">激活；活化作用</noun>
+		<adj value="active">积极的，活跃的，主动的</adj>
 	</word>
 	<word>
 		<verb value="actualise">实施，实现</verb>
