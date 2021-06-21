@@ -17,3 +17,4 @@ Object / @AbstractView / Window
 | console | Console | 获取控制台对象 | - | - | - |
 | crypto | Crypto | 获取加密服务对象 | - | - | - |
 | customElements | CustomElementRegistry | 获取CustomElementRegistry对象 | - | - | - |
+| devicePixelRatio | number | 当前显示设备的物理像素分辨率与CSS像素分辨率之比 | - | - | - |
