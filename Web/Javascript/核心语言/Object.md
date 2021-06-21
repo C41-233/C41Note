@@ -31,7 +31,8 @@ Object对象可以通过`{key:value, key:value...}`的形式构造。
 | 名称 | 类型 | 描述 | writable | enumerable | configurable |
 |---|---|---|---|---|---|
 | constructor | Function | 对象的构造函数 | - | - | - |
-| prototype | Object | 对象的原型 | - | - | - |
+| prototype | Object | 对象的显式原型 | - | - | - |
+| \_\_proto\_\_ | Object | 对象的隐式原型 | - | - | - |
 
 ## 原型函数
 

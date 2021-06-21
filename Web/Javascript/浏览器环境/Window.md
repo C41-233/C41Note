@@ -18,3 +18,7 @@ Object / @AbstractView / Window
 | crypto | Crypto | 获取加密服务对象 | - | - | - |
 | customElements | CustomElementRegistry | 获取CustomElementRegistry对象 | - | - | - |
 | devicePixelRatio | number | 当前显示设备的物理像素分辨率与CSS像素分辨率之比 | - | - | - |
+| document | Document | 文档对象 | - | - | - |
+| frameElement | HTMLElement | 嵌入当前窗口的元素 | - | - | - |
+| frames | @array\<Window\> | 当前窗口的所有子窗口对象的数组 | - | - | - |
+| history | History | History对象 | - | - | - |
