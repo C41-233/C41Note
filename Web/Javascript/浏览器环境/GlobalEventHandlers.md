@@ -14,3 +14,8 @@ GlobalEventHandlers接口定义了Window、Document、HTMLElement都包含的事
 | click | onclick | 当鼠标单击时 | MouseEvent |
 | contextmenu | oncontextmenu | 当打开上下文菜单时 | 	MouseEvent |
 | dblclick | ondblclick | 当鼠标双击时 | MouseEvent | 
+| durationchange | ondurationchange | 当多媒体长度改变时 | Event |
+| ended | onended | 当多媒体已抵达结尾时 | Event |
+| error | onerror | 资源加载出错时 | Event/UIEvent |
+| focus | onfocus | 元素获得焦点时 | FocusEvent |
+| formdata | onformdata | 当表单发送前 | Event |

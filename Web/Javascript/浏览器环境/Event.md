@@ -56,10 +56,7 @@
 | datasetchanged | | 
 | datasetcomplete | | 
 | deactivate | | 
-| dblclick | 当鼠标双击时 |
-| durationchange | 当媒介长度改变时 |
 | emptied | 当媒介资源元素突然为空时 |
-| ended | 当媒介已抵达结尾时 |
 | errorupdate | | 
 | filterchange | | 
 | focusin | | 
