@@ -6,7 +6,6 @@
 
 | 事件 | 描述 | 接口 | 冒泡 | 取消默认行为 |
 |---|---|---|---|---|
-| click | 当鼠标单击时 | MouseEvent | true | true |
 | mousedown | 当鼠标按钮被按下时 | MouseEvent | true | true |
 | mousemove | 当鼠标指针移动时 | MouseEvent | true | true |
 | mouseout | 当鼠标指针移出时 | MouseEvent | true | true |
@@ -21,12 +20,6 @@
 | keydown | 当键盘被按下时 | KeyboardEvent | true | true |
 | keypress | 当键盘被按下后又松开时 | KeyboardEvent | true | true |
 | keyup | 当键盘被松开时 |
-
-##### 交互事件
-
-| 事件 | 描述 |
-|---|---|
-| change | 当元素的值改变时 |
 
 ##### 拖拽事件
 
@@ -45,8 +38,6 @@
 | 事件 | 描述 | 接口 | 冒泡 | 取消默认行为 |
 |---|---|---|---|---|
 | abort | 当加载中断时 | Event | - | - |
-| canplay | 当浏览器能够开始播放多媒体缓冲时，此时可能还未全部加载完毕 |
-| canplaythrough | 当浏览器可播放多媒体至结尾而无需缓冲时 |
 
 | 事件 | 描述 |
 |---|---|
@@ -60,7 +51,6 @@
 | beforepaste	 | | 
 | beforeupdate | | 
 | cellchange | | 
-| contextmenu	当触发上下文菜单时 |
 | controlselect |
 | dataavailable | | 
 | datasetchanged | | 

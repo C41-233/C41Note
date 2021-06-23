@@ -9,6 +9,7 @@ Window对象表示DOM文档窗口，是全局属性`window`的类型。
 Object / [@WindowOrWorkerGlobalScope](WindowOrWorkerGlobalScope.md) / Window  
 Object / @AbstractView / Window  
 Object / [EventTarget](EventTarget.md) / Window
+Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 
 ## 原型属性
 
@@ -45,7 +46,6 @@ Object / [EventTarget](EventTarget.md) / Window
 | beforeprint | onbeforeprint | 当用户确认打印时 | Event |
 | beforeunload | onbeforeunload | 当窗口关闭或者刷新时 | Event | 
 | blur | onblur | 当窗口失去焦点时 | FocusEvent |
-| cancel | oncancel | 当用户离开dialog元素时 | Event |
 | copy | oncopy | 当复制时 | ClipboardEvent |
 | cut | oncut | 当剪切时 | ClipboardEvent |
 | error | onerror | 当资源加载错误时 | Event/UIEvent |
