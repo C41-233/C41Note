@@ -39,49 +39,33 @@ Object / [EventTarget](EventTarget.md) / Window
 
 ## 事件
 
-##### 焦点事件
-
 | 事件 | 函数 | 描述 | 类型 |
-|---|---|---|---|
-| blur | onblur | 当窗口失去焦点时 | FocusEvent |
-| focus | onfocus | 当窗口获得焦点时 | FocusEvent |
-
-##### 加载事件
-
-| 事件 | 函数 | 描述 | 类型 |
-|---|---|---|---|
-| error | onerror | 当资源加载错误时 | Event/UIEvent |
-| beforeunload | onbeforeunload | 当窗口关闭或者刷新时 | Event | 
-| hashchange | onhashchange | 当URL的hash部分修改时 | HashChangeEvent |
-| load | onload | 当文档及资源被载入完成时 | Event |
-
-##### 打印事件
-
-| 事件 | 函数 | 描述 | 类型 | 
 |---|---|---|---|
 | afterprint | onafterprint | 打印页面送往打印缓冲时 | Event | 
 | beforeprint | onbeforeprint | 当用户确认打印时 | Event |
-
-##### 文档事件
-
-| 事件 | 函数 | 描述 | 类型 |
-|---|---|---|---|
-| copy | oncopy | 当进行复制时 | ClipboardEvent |
-| cut | oncut | 当用户进行剪切时 | ClipboardEvent |
-
-##### 消息事件
-
-| 事件 | 函数 | 描述 | 类型 |
-|---|---|---|---|
+| beforeunload | onbeforeunload | 当窗口关闭或者刷新时 | Event | 
+| blur | onblur | 当窗口失去焦点时 | FocusEvent |
+| cancel | oncancel | 当用户离开dialog元素时 | Event |
+| copy | oncopy | 当复制时 | ClipboardEvent |
+| cut | oncut | 当剪切时 | ClipboardEvent |
+| error | onerror | 当资源加载错误时 | Event/UIEvent |
+| focus | onfocus | 当窗口获得焦点时 | FocusEvent |
+| hashchange | onhashchange | 当URL的hash部分修改时 | HashChangeEvent |
+| load | onload | 当文档及资源被载入完成时 | Event |
+| orientationchange | onorientationchange | 当设备纵横改变时 | Event |
+| pagehide | onpagehide | 当当前页面窗口隐藏时 | 	PageTransitionEvent |
+| pageshow | onpageshow | 当当前页面窗口可见时 | 	PageTransitionEvent |
+| paste | onpaste | 当粘贴时 | ClipboardEvent |
 | message | onmessage | 当触发消息时 | MessageEvent |
 | messageerror | onmessageerror | 当触发消息被解序列化失败时 | MessageEvent |
-
-##### 其他事件
-
-| 事件 | 函数 | 描述 | 类型 |
-|---|---|---|---|
-| cancel | oncancel | 当用户离开dialog元素时 | Event |
+| popstate | onpopstate | 当活动历史记录改变时 | PopStateEvent |
 | offline | onoffline | 当浏览器失去网络连接时 | Event |
+| online | ononline | 当浏览器恢复网络连接时 | Event |
+| rejectionhandled | onrejectionhandled | 当Promise被reject且存在处理器时，全局触发该事件 | PromiseRejectionEvent |
+| storage | onstorage | 在存储区域的数据被修改时 | StorageEvent |
+| unhandledrejection | onunhandledrejection | 当Promise被reject且没有处理器时，全局触发该事件 | PromiseRejectionEvent |
+| unload | onunload | 当文档或资源被卸载时 | 	Event |
+
 ---
 
 ##### innerHeight

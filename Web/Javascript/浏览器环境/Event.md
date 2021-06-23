@@ -88,14 +88,9 @@
 | move | | 
 | moveend | | 
 | movestart | | 
-| online | 当文档上线时 |
-| pagehide | 当窗口隐藏时 |
-| pageshow | 当窗口可见时 |
-| paste | 当粘贴时，return false阻止粘贴 |
 | pause | 当媒介数据暂停时 |
 | play | 当媒介数据将要开始播放时 |
 | playing | 当媒介数据已开始播放时 |
-| popstate | 当窗口历史记录改变时 |
 | progress | 当浏览器正在取媒介数据时 |
 | propertychange | | 
 | ratechange | 当媒介数据的播放速率改变时 |
@@ -115,12 +110,10 @@
 | select | 当元素被选取时 |
 | stalled | 当取回媒介数据过程中（延迟）存在错误时 |
 | selectstart | | 
-| storage | 当存储空间中的数据发生变化时 |
 | submit | 当表单被提交时，return true继续提交，return false阻止表单提交 |
 | suspend | 当浏览器已在取媒介数据但在取回整个媒介文件之前停止时 |
 | timeupdate | 当媒介改变其播放位置时 |
 | undo | 当文档撤销时 |
-| unload | 当文档被卸载时 |
 | volumechange | 当媒介改变音量亦或当音量被设置为静音时	 |
 | waiting | 当媒介已停止播放但打算继续播放时 |
 
