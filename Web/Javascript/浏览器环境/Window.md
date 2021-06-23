@@ -53,6 +53,7 @@ Object / [EventTarget](EventTarget.md) / Window
 | error | onerror | 当资源加载错误时 | Event/UIEvent |
 | beforeunload | onbeforeunload | 当窗口关闭或者刷新时 | Event | 
 | hashchange | onhashchange | 当URL的hash部分修改时 | HashChangeEvent |
+| load | onload | 当文档及资源被载入完成时 | Event |
 
 ##### 打印事件
 
@@ -68,12 +69,19 @@ Object / [EventTarget](EventTarget.md) / Window
 | copy | oncopy | 当进行复制时 | ClipboardEvent |
 | cut | oncut | 当用户进行剪切时 | ClipboardEvent |
 
+##### 消息事件
+
+| 事件 | 函数 | 描述 | 类型 |
+|---|---|---|---|
+| message | onmessage | 当触发消息时 | MessageEvent |
+| messageerror | onmessageerror | 当触发消息被解序列化失败时 | MessageEvent |
+
 ##### 其他事件
 
 | 事件 | 函数 | 描述 | 类型 |
 |---|---|---|---|
 | cancel | oncancel | 当用户离开dialog元素时 | Event |
-
+| offline | onoffline | 当浏览器失去网络连接时 | Event |
 ---
 
 ##### innerHeight

@@ -81,16 +81,13 @@
 | input | 当元素获得用户输入时 |
 | invalid | 当元素无效时 |
 | layoutcomplete | |
-| load | 当文档或图像被载入时 |
 | loadeddata | 当加载媒介数据时 |
 | loadedmetadata | 当媒介元素的持续时间以及其他媒介数据已加载时 |
 | loadstart | 当浏览器开始加载媒介数据时 |
 | losecapture | | 
-| message | 当触发消息时 |
 | move | | 
 | moveend | | 
 | movestart | | 
-| offline | 当文档离线时 |
 | online | 当文档上线时 |
 | pagehide | 当窗口隐藏时 |
 | pageshow | 当窗口可见时 |
