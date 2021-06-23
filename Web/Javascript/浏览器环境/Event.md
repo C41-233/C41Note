@@ -25,6 +25,12 @@ Window、Document、Element对象可以注册对应的事件函数，当对应�
 | keypress | 当键盘被按下后又松开时 |
 | keyup | 当键盘被松开时 |
 
+##### 交互事件
+
+| 事件 | 描述 |
+|---|---|
+| change | 当元素的值改变时 |
+
 ##### 焦点事件
 
 | 事件 | 描述 |
@@ -54,9 +60,16 @@ Window、Document、Element对象可以注册对应的事件函数，当对应�
 
 ##### 多媒体事件 
 
-
+| 事件 | 描述 |
+|---|---|
+| canplay | 当浏览器能够开始播放多媒体缓冲时，此时可能还未全部加载完毕 |
+| canplaythrough | 当浏览器可播放多媒体至结尾而无需缓冲时 |
 
 ##### 其他事件
+
+| 事件 | 描述 |
+|---|---|
+| cancel | 当用户离开dialog元素时 |
 
 | 事件 | 描述 |
 |---|---|
@@ -73,11 +86,7 @@ Window、Document、Element对象可以注册对应的事件函数，当对应�
 | beforepaste	 | | 
 | beforeunload | 当卸载或替换当前页面时 |
 | beforeupdate | | 
-| cancel | 当用户离开dialog元素时 |
-| canplay | 当媒介能够开始播放但可能因缓冲而需要停止时 |
-| canplaythrough | 当媒介能够无需因缓冲而停止即可播放至结尾时 |
 | cellchange | | 
-| change | 当元素改变时 |
 | click | 当鼠标单击时 |
 | contextmenu	当触发上下文菜单时 |
 | controlselect |
