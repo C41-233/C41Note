@@ -19,3 +19,11 @@ GlobalEventHandlers接口定义了Window、Document、HTMLElement都包含的事
 | error | onerror | 资源加载出错时 | Event/UIEvent |
 | focus | onfocus | 元素获得焦点时 | FocusEvent |
 | formdata | onformdata | 当表单发送前 | Event |
+| input | oninput | 当元素获得用户输入时 | 	InputEvent |
+| invalid | oninvalid | 当元素无效时 | Event |
+| keydown | onkeydown | 当键盘被按下时 | KeyboardEvent |
+| keypress | onkeypress | 当键盘被按下后又松开时 | KeyboardEvent |
+| keyup | onkeyup | 当键盘被松开时 | KeyboardEvent |
+| load | onload | 当资源被载入完成时 | Event |
+| loadeddata | onloadeddata | 当加载多媒体数据时 | Event | 
+| loadedmetadata | onloadedmetadata | 当多媒体元素的持续时间以及其他多媒体数据已加载时 | Event |

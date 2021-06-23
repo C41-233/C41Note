@@ -17,9 +17,6 @@
 
 | 事件 | 描述 | 接口 | 冒泡 | 取消默认行为 |
 |---|---|---|---|---|
-| keydown | 当键盘被按下时 | KeyboardEvent | true | true |
-| keypress | 当键盘被按下后又松开时 | KeyboardEvent | true | true |
-| keyup | 当键盘被松开时 |
 
 ##### 拖拽事件
 
@@ -65,11 +62,7 @@
 | forminput | 当表单获得用户输入时 |
 | haschange	当文档改变时 |
 | help | 激活帮助信息时，return false阻止默认处理 |
-| input | 当元素获得用户输入时 |
-| invalid | 当元素无效时 |
 | layoutcomplete | |
-| loadeddata | 当加载媒介数据时 |
-| loadedmetadata | 当媒介元素的持续时间以及其他媒介数据已加载时 |
 | loadstart | 当浏览器开始加载媒介数据时 |
 | losecapture | | 
 | move | | 
