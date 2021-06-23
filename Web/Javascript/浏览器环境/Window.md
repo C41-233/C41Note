@@ -7,7 +7,8 @@ Window对象表示DOM文档窗口，是全局属性`window`的类型。
 ## 继承
 
 Object / [@WindowOrWorkerGlobalScope](WindowOrWorkerGlobalScope.md) / Window  
-Object / @AbstractView / Window
+Object / @AbstractView / Window  
+Object / [EventTarget](EventTarget.md) / Window
 
 ## 原型属性
 
@@ -35,6 +36,43 @@ Object / @AbstractView / Window
 | length | number | 当前窗口中包含的框架数量 | - | - | - |
 | locationbar | object | 地址栏对象 | - | - | - | menubar | object | 菜单栏对象 | - | - | - |
 | name | string | 窗口名称 | - | - | - |
+
+## 事件
+
+##### 焦点事件
+
+| 事件 | 函数 | 描述 | 类型 |
+|---|---|---|---|
+| blur | onblur | 当窗口失去焦点时 | FocusEvent |
+| focus | onfocus | 当窗口获得焦点时 | FocusEvent |
+
+##### 加载事件
+
+| 事件 | 函数 | 描述 | 类型 |
+|---|---|---|---|
+| error | onerror | 当资源加载错误时 | Event/UIEvent |
+| beforeunload | onbeforeunload | 当窗口关闭或者刷新时 | Event | 
+| hashchange | onhashchange | 当URL的hash部分修改时 | HashChangeEvent |
+
+##### 打印事件
+
+| 事件 | 函数 | 描述 | 类型 | 
+|---|---|---|---|
+| afterprint | onafterprint | 打印页面送往打印缓冲时 | Event | 
+| beforeprint | onbeforeprint | 当用户确认打印时 | Event |
+
+##### 文档事件
+
+| 事件 | 函数 | 描述 | 类型 |
+|---|---|---|---|
+| copy | oncopy | 当进行复制时 | ClipboardEvent |
+| cut | oncut | 当用户进行剪切时 | ClipboardEvent |
+
+##### 其他事件
+
+| 事件 | 函数 | 描述 | 类型 |
+|---|---|---|---|
+| cancel | oncancel | 当用户离开dialog元素时 | Event |
 
 ---
 
