@@ -61,6 +61,15 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | toolbar | object | 工具栏对象，只有一个visible属性 | - | - | - |
 | top | Window | 最顶层的窗口 | - | - | - |
 
+## 原型函数
+
+| 函数 | 描述 |
+|---|---|
+| alert | 显示带有一条指定消息和一个确定按钮的警告框 |
+| blur | 使窗口失去焦点 |
+| close | 关闭浏览器窗口 |
+| confirm | 显示一个带有指定消息和确定及取消按钮的对话框 |
+
 ## 事件
 
 | 事件 | 函数 | 描述 | 类型 |
@@ -87,6 +96,34 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | unload | onunload | 当文档或资源被卸载时 | 	Event |
 
 ---
+
+##### alert
+
+```
+void alert(string message)
+```
+
+##### blur
+
+```
+void blur()
+```
+
+##### close
+
+```
+void close()
+```
+
+##### confirm
+
+```
+boolean confirm(string message)
+```
+
+显示一个带有指定消息和确定及取消按钮的对话框。
+
+选择确定按钮，返回true；选择取消按钮或者关闭对话框，返回false。
 
 ##### innerHeight
 
