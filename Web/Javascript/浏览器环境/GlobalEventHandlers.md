@@ -4,6 +4,7 @@ GlobalEventHandlers接口定义了Window、Document、HTMLElement都包含的事
 
 | 事件 | 函数 | 描述 | 类型 |
 |---|---|---|---|
+| abort | onabort | 当加载中断时 | Event |
 | animationcancel | onanimationcancel | 当动画被中断时 | AnimationEvent |
 | animationend | onanimationend | 当动画完成时 | AnimationEvent |
 | blur | onblur | 当元素失去焦点时 | FocusEvent |
@@ -27,3 +28,12 @@ GlobalEventHandlers接口定义了Window、Document、HTMLElement都包含的事
 | load | onload | 当资源被载入完成时 | Event |
 | loadeddata | onloadeddata | 当加载多媒体数据时 | Event | 
 | loadedmetadata | onloadedmetadata | 当多媒体元素的持续时间以及其他多媒体数据已加载时 | Event |
+| loadstart | onloadstart | 当浏览器开始加载多媒体数据时 | Event |
+| mousedown | onmousedown | 当鼠标按钮被按下时 | MouseEvent |
+| mousemove | onmousemove | 当鼠标指针移动时 | MouseEvent | 
+| mouseout | onmouseout | 当鼠标指针移出时 | MouseEvent |
+| mouseover | onmouseover | 当鼠标指针经过时 | MouseEvent |
+| mouseup | onmouseup | 当鼠标按钮松开时 | MouseEvent |
+| pause | onpause | 当多媒体数据暂停时 | Event |
+| play | onplay | 当多媒体数据将要开始播放时 |
+| wheel | onwheel | 当转动鼠标滚轮时 | WheelEvent |

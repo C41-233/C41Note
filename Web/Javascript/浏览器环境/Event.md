@@ -2,22 +2,6 @@
 
 表示一个DOM事件。
 
-##### 鼠标事件
-
-| 事件 | 描述 | 接口 | 冒泡 | 取消默认行为 |
-|---|---|---|---|---|
-| mousedown | 当鼠标按钮被按下时 | MouseEvent | true | true |
-| mousemove | 当鼠标指针移动时 | MouseEvent | true | true |
-| mouseout | 当鼠标指针移出时 | MouseEvent | true | true |
-| mouseover | 当鼠标指针经过时 | MouseEvent | true | true |
-| mouseup | 当鼠标按钮松开时 | MouseEvent | true | true |
-| wheel | 当转动鼠标滚轮时 | WheelEvent | true | true |
-
-##### 键盘事件
-
-| 事件 | 描述 | 接口 | 冒泡 | 取消默认行为 |
-|---|---|---|---|---|
-
 ##### 拖拽事件
 
 | 事件 | 描述 |
@@ -29,12 +13,6 @@
 | dragover | 当元素被拖动至有效拖放目标上方时 |
 | dragstart | 当拖动操作开始时 |
 | drop | 被拖动元素正在被拖放时 |
-
-##### 多媒体事件 
-
-| 事件 | 描述 | 接口 | 冒泡 | 取消默认行为 |
-|---|---|---|---|---|
-| abort | 当加载中断时 | Event | - | - |
 
 | 事件 | 描述 |
 |---|---|
@@ -68,7 +46,6 @@
 | move | | 
 | moveend | | 
 | movestart | | 
-| pause | 当媒介数据暂停时 |
 | play | 当媒介数据将要开始播放时 |
 | playing | 当媒介数据已开始播放时 |
 | progress | 当浏览器正在取媒介数据时 |
