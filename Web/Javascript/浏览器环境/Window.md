@@ -58,6 +58,7 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | pageshow | onpageshow | 当当前页面窗口可见时 | 	PageTransitionEvent |
 | popstate | onpopstate | 当活动历史记录改变时 | PopStateEvent |
 | rejectionhandled | onrejectionhandled | 当Promise被reject且存在处理器时，全局触发该事件 | PromiseRejectionEvent |
+| resize | onresize | 当窗口大小改变时 | UIEvent |
 | storage | onstorage | 在存储区域的数据被修改时 | StorageEvent |
 | unhandledrejection | onunhandledrejection | 当Promise被reject且没有处理器时，全局触发该事件 | PromiseRejectionEvent |
 | unload | onunload | 当文档或资源被卸载时 | 	Event |
