@@ -69,6 +69,13 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | blur | 使窗口失去焦点 |
 | close | 关闭浏览器窗口 |
 | confirm | 显示一个带有指定消息和确定及取消按钮的对话框 |
+| focus | 使窗口获得焦点 |
+| getComputedStyle | 获得全局CSS属性对象 |
+| getSelection | 获取当前用户选择的范围 |
+| matchMedia | 媒体查询 |
+| minimize | 最小化窗口 |
+| moveBy | 按偏移移动窗口 |
+| moveTo | 移动窗口 |
 
 ## 事件
 
@@ -124,6 +131,12 @@ boolean confirm(string message)
 显示一个带有指定消息和确定及取消按钮的对话框。
 
 选择确定按钮，返回true；选择取消按钮或者关闭对话框，返回false。
+
+##### focus
+
+```
+void focus()
+```
 
 ##### innerHeight
 
