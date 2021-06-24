@@ -24,6 +24,8 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | localStorage | Storage | 浏览器本地存储对象 | - | - | - |
 | location | Location | Location对象 | - | - | - |
 | navigator | Navigator | 浏览器对象 | - | - | - |
+| performance | Performance | 性能度量工具 | - | - | - |
+| screen | Screen | 屏幕对象 | - | - | - |
 
 ##### 窗口属性
 
@@ -36,6 +38,17 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | length | number | 当前窗口中包含的框架数量 | - | - | - |
 | locationbar | object | 地址栏对象 | - | - | - | menubar | object | 菜单栏对象 | - | - | - |
 | name | string | 窗口名称 | - | - | - |
+| opener | Window | 打开该窗口的窗口 | - | - | - |
+| outerHeight | number | 整个浏览器窗口的高度 | - | - | - |
+| outerWidth | number | 整个浏览器窗口的宽度 | - | - | - |
+| pageXOffset | number | 页面水平滚动距离 | - | - | - |
+| pageYOffset | number | 页面垂直滚动距离 | - | - | - |
+| parent | Window | 父窗口 | - | - | - |
+| personalbar | object | 个人工具栏 | - | - | - |
+| screenLeft | number | 浏览器窗口左边框到屏幕左边缘的距离 | - | - | - | 
+| screenTop | number | 浏览器窗口上边框到屏幕上边缘的距离 | - | - | - |
+| screenX | number | 浏览器窗口左边框到系统桌面左边缘的距离 | - | - | - |
+| screenY | number | 浏览器窗口上边框到系统桌面上边缘的距离 | - | - | - |
 
 ## 事件
 
