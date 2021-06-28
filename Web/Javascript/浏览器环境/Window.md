@@ -67,10 +67,10 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 
 | 函数 | 描述 |
 |---|---|
-| alert | 显示带有一条指定消息和一个确定按钮的警告框 |
+| alert | 弹出警告对话框 |
 | blur | 使窗口失去焦点 |
 | close | 关闭浏览器窗口 |
-| confirm | 显示一个带有指定消息和确定及取消按钮的对话框 |
+| confirm | 弹出确认对话框 |
 | focus | 使窗口获得焦点 |
 | getComputedStyle | 获得全局CSS属性对象 |
 | getSelection | 获取当前用户选择的范围 |
@@ -79,6 +79,9 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | moveBy | 按偏移移动窗口 |
 | moveTo | 移动窗口 |
 | open | 打开新窗口 |
+| postMessage | 发送窗口消息 |
+| print | 发起打印 |
+| prompt | 弹出输入对话框 |
 
 ## 事件
 
@@ -113,6 +116,8 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 void alert(string message)
 ```
 
+显示带有一条指定消息和一个确定按钮的警告对话框。
+
 ##### blur
 
 ```
@@ -131,7 +136,7 @@ void close()
 boolean confirm(string message)
 ```
 
-显示一个带有指定消息和确定及取消按钮的对话框。
+显示一个带有指定消息和确定及取消按钮的确认对话框。
 
 选择确定按钮，返回true；选择取消按钮或者关闭对话框，返回false。
 
@@ -189,3 +194,15 @@ Window open(string url, string name, string features)
 | toolbar | yes\|no\|1\|0 | 是否显示浏览器的工具栏。默认是yes |
 | top | pixels | 窗口的y坐标 |
 | width | pixels | 窗口的文档显示区的宽度 |
+
+---
+
+##### prompt
+
+```
+string prompt(string text, string defaultText)
+```
+
+显示可提示用户进行输入的对话框。
+
+返回用户输入的内容，如果用户关闭了窗口则返回null。
