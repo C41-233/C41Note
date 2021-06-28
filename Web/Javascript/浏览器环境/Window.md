@@ -4,6 +4,8 @@ Window对象表示DOM文档窗口，是全局属性`window`的类型。
 
 在有标签页功能的浏览器中，每个标签页都有自己的Window对象。
 
+![](https://developer.mozilla.org/@api/deki/files/210/=FirefoxChromeToolbarsDescription7a.gif)
+
 ## 继承
 
 Object / [@WindowOrWorkerGlobalScope](WindowOrWorkerGlobalScope.md) / Window  
@@ -76,6 +78,7 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | minimize | 最小化窗口 |
 | moveBy | 按偏移移动窗口 |
 | moveTo | 移动窗口 |
+| open | 打开新窗口 |
 
 ## 事件
 
@@ -156,3 +159,33 @@ number innerWidth
 
 获取浏览器的视口（viewport）宽度，单位为像素。如果存在垂直滚动条，也包括垂直滚动条的高度。
 
+##### open
+
+```
+Window open(string url)
+Window open(string url, string name)
+Window open(string url, string name, string features)
+```
+
+打开新窗口。如果指定name的窗口已存在，则不再打开新的窗口，而是将URL加载到该窗口。
+
+- url 新窗口加载的URL。
+- name 新窗口的名称。
+- features 新窗口的特征。特征以`name=value`的形式表示，各特征之间用逗号分隔。
+
+| 特征名称 | 特征值 | 描述 |
+|---|---|---|
+| channelmode | yes\|no\|1\|0 | 是否使用剧院模式显示窗口。默认为no |
+| directories | yes\|no\|1\|0 | 是否添加目录按钮。默认为yes |
+| fullscreen | yes\|no\|1\|0 | 是否使用全屏模式显示浏览器。默认是no |
+| height | pixels | 窗口文档显示区的高度 |
+| left | pixels | 窗口的x坐标 |
+| location | yes\|no\|1\|0 | 是否显示地址字段。默认是yes |
+| menubar | yes\|no\|1\|0 | 是否显示菜单栏。默认是yes |
+| resizable | yes\|no\|1\|0 | 窗口是否可调节尺寸。默认是yes |
+| scrollbars | yes\|no\|1\|0 | 是否显示滚动条。默认是yes |
+| status | yes\|no\|1\|0 | 是否添加状态栏。默认是yes |
+| titlebar | yes\|no\|1\|0 | 是否显示标题栏。默认是yes |
+| toolbar | yes\|no\|1\|0 | 是否显示浏览器的工具栏。默认是yes |
+| top | pixels | 窗口的y坐标 |
+| width | pixels | 窗口的文档显示区的宽度 |
