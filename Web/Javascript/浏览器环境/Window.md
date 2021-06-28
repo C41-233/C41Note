@@ -82,6 +82,13 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | postMessage | 发送窗口消息 |
 | print | 发起打印 |
 | prompt | 弹出输入对话框 |
+| requestAnimationFrame | 在下次渲染之前回调 |
+| requestIdleCallback | 向空闲队列压入任务 |
+| resizeBy | 以偏移量调整窗口大小 |
+| resizeTo | 设置窗口大小 |
+| scroll | 滚动窗口至特定位置 |
+| scrollBy | 以偏移量滚动窗口 |
+| scrollTo | 滚动窗口至特定位置 |
 
 ## 事件
 
@@ -206,3 +213,63 @@ string prompt(string text, string defaultText)
 显示可提示用户进行输入的对话框。
 
 返回用户输入的内容，如果用户关闭了窗口则返回null。
+
+---
+
+##### requestAnimationFrame
+
+```
+number requestAnimationFrame(Function callback)
+```
+
+---
+
+##### requestIdleCallback
+
+```
+number requestIdleCallback(Function callback)
+number requestIdleCallback(Function callback, number timeout)
+```
+
+---
+
+##### resizeBy
+
+```
+void resizeBy(number width, number height)
+```
+
+---
+
+##### resizeTo
+
+```
+void resizeTo(number width, number height)
+```
+
+---
+
+##### scroll
+
+```
+void scroll(number x, number y)
+void scroll(@ScrollToOptions options)
+```
+
+---
+
+##### scrollBy
+
+```
+void scrollBy(number x, number y)
+void scrollBy(@ScrollToOptions options)
+```
+
+---
+
+##### scrollTo
+
+```
+void scrollTo(number x, number y)
+void scrollTo(@ScrollToOptions options)
+```
