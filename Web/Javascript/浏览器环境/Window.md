@@ -92,6 +92,7 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | showDirectoryPicker | 弹出目录选择对话框 |
 | showOpenFilePicker | 弹出文件选择对话框 |
 | showSaveFilePicker | 弹出文件保存对话框 |
+| stop | 停止窗口加载 |
 
 ## 事件
 
@@ -123,7 +124,7 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 ##### alert
 
 ```
-void alert(string message)
+void Window.prototype.alert(string message)
 ```
 
 显示带有一条指定消息和一个确定按钮的警告对话框。
@@ -131,19 +132,19 @@ void alert(string message)
 ##### blur
 
 ```
-void blur()
+void Window.prototype.blur()
 ```
 
 ##### close
 
 ```
-void close()
+void Window.prototype.close()
 ```
 
 ##### confirm
 
 ```
-boolean confirm(string message)
+boolean Window.prototype.confirm(string message)
 ```
 
 显示一个带有指定消息和确定及取消按钮的确认对话框。
@@ -153,13 +154,13 @@ boolean confirm(string message)
 ##### focus
 
 ```
-void focus()
+void Window.prototype.focus()
 ```
 
 ##### innerHeight
 
 ```
-number innerHeight
+number Window.prototype.innerHeight
 ```
 
 获取浏览器的视口（viewport）高度，单位为像素。如果存在水平滚动条，也包括水平滚动条的高度。
@@ -169,7 +170,7 @@ number innerHeight
 ##### innerWidth
 
 ```
-number innerWidth
+number Window.prototype.innerWidth
 ```
 
 获取浏览器的视口（viewport）宽度，单位为像素。如果存在垂直滚动条，也包括垂直滚动条的高度。
@@ -177,9 +178,9 @@ number innerWidth
 ##### open
 
 ```
-Window open(string url)
-Window open(string url, string name)
-Window open(string url, string name, string features)
+Window Window.prototype.open(string url)
+Window Window.prototype.open(string url, string name)
+Window Window.prototype.open(string url, string name, string features)
 ```
 
 打开新窗口。如果指定name的窗口已存在，则不再打开新的窗口，而是将URL加载到该窗口。
@@ -210,7 +211,7 @@ Window open(string url, string name, string features)
 ##### prompt
 
 ```
-string prompt(string text, string defaultText)
+string Window.prototype.prompt(string text, string defaultText)
 ```
 
 显示可提示用户进行输入的对话框。
@@ -222,7 +223,7 @@ string prompt(string text, string defaultText)
 ##### requestAnimationFrame
 
 ```
-number requestAnimationFrame(Function callback)
+number Window.prototype.requestAnimationFrame(Function callback)
 ```
 
 ---
@@ -230,8 +231,8 @@ number requestAnimationFrame(Function callback)
 ##### requestIdleCallback
 
 ```
-number requestIdleCallback(Function callback)
-number requestIdleCallback(Function callback, number timeout)
+number Window.prototype.requestIdleCallback(Function callback)
+number Window.prototype.requestIdleCallback(Function callback, number timeout)
 ```
 
 ---
@@ -239,7 +240,7 @@ number requestIdleCallback(Function callback, number timeout)
 ##### resizeBy
 
 ```
-void resizeBy(number width, number height)
+void Window.prototype.resizeBy(number width, number height)
 ```
 
 ---
@@ -247,7 +248,7 @@ void resizeBy(number width, number height)
 ##### resizeTo
 
 ```
-void resizeTo(number width, number height)
+void Window.prototype.resizeTo(number width, number height)
 ```
 
 ---
@@ -255,8 +256,8 @@ void resizeTo(number width, number height)
 ##### scroll
 
 ```
-void scroll(number x, number y)
-void scroll(@ScrollToOptions options)
+void Window.prototype.scroll(number x, number y)
+void Window.prototype.scroll(@ScrollToOptions options)
 ```
 
 ---
@@ -264,8 +265,8 @@ void scroll(@ScrollToOptions options)
 ##### scrollBy
 
 ```
-void scrollBy(number x, number y)
-void scrollBy(@ScrollToOptions options)
+void Window.prototype.scrollBy(number x, number y)
+void Window.prototype.scrollBy(@ScrollToOptions options)
 ```
 
 ---
@@ -273,8 +274,8 @@ void scrollBy(@ScrollToOptions options)
 ##### scrollTo
 
 ```
-void scrollTo(number x, number y)
-void scrollTo(@ScrollToOptions options)
+void Window.prototype.scrollTo(number x, number y)
+void Window.prototype.scrollTo(@ScrollToOptions options)
 ```
 
 ---
@@ -282,7 +283,7 @@ void scrollTo(@ScrollToOptions options)
 ##### showDirectoryPicker
 
 ```
-Promise<FileSystemDirectoryHandle> showDirectoryPicker()
+Promise<FileSystemDirectoryHandle> Window.prototype.showDirectoryPicker()
 ```
 
 ---
@@ -290,8 +291,8 @@ Promise<FileSystemDirectoryHandle> showDirectoryPicker()
 ##### showOpenFilePicker
 
 ```
-Promise<Array<FileSystemDirectoryHandle>> showOpenFilePicker()
-Promise<Array<FileSystemDirectoryHandle>> showOpenFilePicker(object options)
+Promise<Array<FileSystemDirectoryHandle>> Window.prototype.showOpenFilePicker()
+Promise<Array<FileSystemDirectoryHandle>> Window.prototype.showOpenFilePicker(object options)
 ```
 
 - options 选项参数
@@ -308,8 +309,8 @@ Promise<Array<FileSystemDirectoryHandle>> showOpenFilePicker(object options)
 ##### showSaveFilePicker
 
 ```
-Promise<Array<FileSystemDirectoryHandle>> showSaveFilePicker()
-Promise<Array<FileSystemDirectoryHandle>> showSaveFilePicker(object options)
+Promise<Array<FileSystemDirectoryHandle>> Window.prototype.showSaveFilePicker()
+Promise<Array<FileSystemDirectoryHandle>> Window.prototype.showSaveFilePicker(object options)
 ```
 
 - options 选项参数
@@ -319,3 +320,11 @@ Promise<Array<FileSystemDirectoryHandle>> showSaveFilePicker(object options)
     | types | Array\<object\> | 文件类型过滤，每项都包含下列属性：<br/>description：string类型，描述<br/>accept：Array\<string\>类型，文件MIME类型数组  | null |
 
 用户放弃保存文件时，抛出AbortError。
+
+---
+
+##### stop
+
+```
+void Window.prototype.stop()
+```
