@@ -89,6 +89,9 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | scroll | 滚动窗口至特定位置 |
 | scrollBy | 以偏移量滚动窗口 |
 | scrollTo | 滚动窗口至特定位置 |
+| showDirectoryPicker | 弹出目录选择对话框 |
+| showOpenFilePicker | 弹出文件选择对话框 |
+| showSaveFilePicker | 弹出文件保存对话框 |
 
 ## 事件
 
@@ -185,22 +188,22 @@ Window open(string url, string name, string features)
 - name 新窗口的名称。
 - features 新窗口的特征。特征以`name=value`的形式表示，各特征之间用逗号分隔。
 
-| 特征名称 | 特征值 | 描述 |
-|---|---|---|
-| channelmode | yes\|no\|1\|0 | 是否使用剧院模式显示窗口。默认为no |
-| directories | yes\|no\|1\|0 | 是否添加目录按钮。默认为yes |
-| fullscreen | yes\|no\|1\|0 | 是否使用全屏模式显示浏览器。默认是no |
-| height | pixels | 窗口文档显示区的高度 |
-| left | pixels | 窗口的x坐标 |
-| location | yes\|no\|1\|0 | 是否显示地址字段。默认是yes |
-| menubar | yes\|no\|1\|0 | 是否显示菜单栏。默认是yes |
-| resizable | yes\|no\|1\|0 | 窗口是否可调节尺寸。默认是yes |
-| scrollbars | yes\|no\|1\|0 | 是否显示滚动条。默认是yes |
-| status | yes\|no\|1\|0 | 是否添加状态栏。默认是yes |
-| titlebar | yes\|no\|1\|0 | 是否显示标题栏。默认是yes |
-| toolbar | yes\|no\|1\|0 | 是否显示浏览器的工具栏。默认是yes |
-| top | pixels | 窗口的y坐标 |
-| width | pixels | 窗口的文档显示区的宽度 |
+    | 特征名称 | 特征值 | 描述 |
+    |---|---|---|
+    | channelmode | yes\|no\|1\|0 | 是否使用剧院模式显示窗口。默认为no |
+    | directories | yes\|no\|1\|0 | 是否添加目录按钮。默认为yes |
+    | fullscreen | yes\|no\|1\|0 | 是否使用全屏模式显示浏览器。默认是no |
+    | height | pixels | 窗口文档显示区的高度 |
+    | left | pixels | 窗口的x坐标 |
+    | location | yes\|no\|1\|0 | 是否显示地址字段。默认是yes |
+    | menubar | yes\|no\|1\|0 | 是否显示菜单栏。默认是yes |
+    | resizable | yes\|no\|1\|0 | 窗口是否可调节尺寸。默认是yes |
+    | scrollbars | yes\|no\|1\|0 | 是否显示滚动条。默认是yes |
+    | status | yes\|no\|1\|0 | 是否添加状态栏。默认是yes |
+    | titlebar | yes\|no\|1\|0 | 是否显示标题栏。默认是yes |
+    | toolbar | yes\|no\|1\|0 | 是否显示浏览器的工具栏。默认是yes |
+    | top | pixels | 窗口的y坐标 |
+    | width | pixels | 窗口的文档显示区的宽度 |
 
 ---
 
@@ -273,3 +276,46 @@ void scrollBy(@ScrollToOptions options)
 void scrollTo(number x, number y)
 void scrollTo(@ScrollToOptions options)
 ```
+
+---
+
+##### showDirectoryPicker
+
+```
+Promise<FileSystemDirectoryHandle> showDirectoryPicker()
+```
+
+---
+
+##### showOpenFilePicker
+
+```
+Promise<Array<FileSystemDirectoryHandle>> showOpenFilePicker()
+Promise<Array<FileSystemDirectoryHandle>> showOpenFilePicker(object options)
+```
+
+- options 选项参数
+    | 选项 | 类型 | 描述 | 默认值 |
+    |---|---|---|---|
+    | multiple | boolean | 是否可以选择多个文件 | false |
+    | excludeAcceptAllOption | boolean | 是否隐藏选择所有文件的选项 | false |
+    | types | Array\<object\> | 文件类型过滤，每项都包含下列属性：<br/>description：string类型，描述<br/>accept：Array\<string\>类型，文件MIME类型数组  | null |
+
+用户放弃选择文件时，抛出AbortError。
+
+---
+
+##### showSaveFilePicker
+
+```
+Promise<Array<FileSystemDirectoryHandle>> showSaveFilePicker()
+Promise<Array<FileSystemDirectoryHandle>> showSaveFilePicker(object options)
+```
+
+- options 选项参数
+    | 选项 | 类型 | 描述 | 默认值 |
+    |---|---|---|---|
+    | excludeAcceptAllOption | boolean | 是否隐藏选择所有文件的选项 | false |
+    | types | Array\<object\> | 文件类型过滤，每项都包含下列属性：<br/>description：string类型，描述<br/>accept：Array\<string\>类型，文件MIME类型数组  | null |
+
+用户放弃保存文件时，抛出AbortError。
