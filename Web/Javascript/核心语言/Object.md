@@ -19,7 +19,11 @@ Object对象可以通过`{key:value, key:value...}`的形式构造。
 | defineProperties | 配置对的多个属性 |
 | defineProperty | 配置对象的属性 |
 | entries | 返回对象的可枚举属性 |
-| getOwnPropertyNames | 获取对象所有的属性 |
+| fromEntries | 根据键值对创建对象 |
+| getOwnPropertyDescriptor | 获取对象属性的描述 |
+| getOwnPropertyDescriptors | 获取对象所有属性的描述 |
+| getOwnPropertyNames | 获取对象所有的具名属性 |
+| getOwnPropertySymbols | 获取对象的所有Symbol属性 |
 | getPrototypeOf | 	获取对象原型 |
 | preventExtensions | 使对象不可扩展 |
 | seal | 封闭对象 |
@@ -97,6 +101,26 @@ object Object.defineProperty(object obj, string attr, object config)
 | writable | boolean | 是否可修改 |
 | get | function()->object | getter函数 |
 | set | function(object value) | setter函数 |
+
+---
+
+##### getOwnPropertyDescriptor
+
+```
+object Object.getOwnPropertyDescriptor(object obj, string property)
+```
+
+获取对象属性的描述，描述符对象结构参见defineProperty。
+
+---
+
+##### getOwnPropertyDescriptors
+
+```
+object Object.getOwnPropertyDescriptors(object obj)
+```
+
+获取对象所有属性的描述，以键值对的形式表示，key为属性名称，value为描述符对象，结构参见defineProperty。
 
 ---
 
