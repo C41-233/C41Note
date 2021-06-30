@@ -23,6 +23,21 @@
         <td>"developer.mozilla.org"</td>
         <td>"developer.mozilla.org"</td>
     </tr>
+    <tr>
+        <th>port</th>
+        <td>""</td>
+        <td>"8080"</td>
+    </tr>
+    <tr>
+        <th>protocol</th>
+        <td>"https:"</td>
+        <td>"https:"</td>
+    </tr>
+    <tr>
+        <th>search</th>
+        <td>""</td>
+        <td>"?q=query"</td>
+    </tr>
 </table>
 
 ## 继承
@@ -36,3 +51,6 @@ Object / Location
 | hash | string | 当前URL的hash部分 | true | true | - |
 | host | string | 当前URL的主机部分 | true | true | - |
 | hostname | string | 当前URL的域名 | true | true | - |
+| port | string | 当前URL的端口 | true | true | - |
+| protocol | string | 当前URL的协议部分 | true | true | - |
+| search | string | 当前URL的参数部分 | true | true | - |
