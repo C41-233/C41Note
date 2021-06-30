@@ -18,50 +18,50 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 
 | 名称 | 类型 | 描述 |  writable | enumerable | configurable |
 |---|---|---|---|---|---|
-| console | Console | 获取控制台对象 | - | - | - |
-| crypto | Crypto | 获取加密服务对象 | - | - | - |
-| customElements | CustomElementRegistry | 获取CustomElementRegistry对象 | - | - | - |
-| document | Document | 文档对象 | - | - | - |
-| history | History | History对象 | - | - | - |
-| localStorage | Storage | 本地存储对象 | - | - | - |
-| location | Location | Location对象 | - | - | - |
-| navigator | Navigator | 浏览器对象 | - | - | - |
-| performance | Performance | 性能度量工具 | - | - | - |
-| screen | Screen | 屏幕对象 | - | - | - |
-| sessionStorage | Storage | 会话存储对象 | - | - | - |
-| window | Window | 窗口自身 | - | - | - |
+| console | Console | 获取控制台对象 | - | true | - |
+| crypto | Crypto | 获取加密服务对象 | - | true | - |
+| customElements | CustomElementRegistry | 获取CustomElementRegistry对象 | - | true | - |
+| document | Document | 文档对象 | - | true | - |
+| history | History | History对象 | - | true | - |
+| localStorage | Storage | 本地存储对象 | - | true | - |
+| location | Location | Location对象 | - | true | - |
+| navigator | Navigator | 浏览器对象 | - | true | - |
+| performance | Performance | 性能度量工具 | - | true | - |
+| screen | Screen | 屏幕对象 | - | true | - |
+| sessionStorage | Storage | 会话存储对象 | - | true | - |
+| window | Window | 窗口自身 | - | true | - |
 
 ##### 窗口属性
 
 | 名称 | 类型 | 描述 |  writable | enumerable | configurable |
 |---|---|---|---|---|---|
-| closed | boolean | 窗口是否关闭 | - | - | - | 
-| devicePixelRatio | number | 当前显示设备的物理像素分辨率与CSS像素分辨率之比 | - | - | - |
-| innerHeight | number | 窗口的视口高度 | - | - | - |
-| innerWidth | number | 窗口的视口宽度 | - | - | - |
-| length | number | 当前窗口中包含的框架数量 | - | - | - |
-| locationbar | object | 地址栏对象，只有一个visible属性 | - | - | - | 
-| menubar | object | 菜单栏对象，只有一个visible属性 | - | - | - |
-| name | string | 窗口名称 | - | - | - |
-| opener | Window | 打开该窗口的窗口 | - | - | - |
-| outerHeight | number | 整个浏览器窗口的高度 | - | - | - |
-| outerWidth | number | 整个浏览器窗口的宽度 | - | - | - |
-| pageXOffset | number | 页面水平滚动距离 | - | - | - |
-| pageYOffset | number | 页面垂直滚动距离 | - | - | - |
-| parent | Window | 父窗口 | - | - | - |
-| personalbar | object | 个人工具栏，只有一个visible属性 | - | - | - |
-| screenLeft | number | 浏览器窗口左边框到屏幕左边缘的距离 | - | - | - | 
-| screenTop | number | 浏览器窗口上边框到屏幕上边缘的距离 | - | - | - |
-| screenX | number | 浏览器窗口左边框到系统桌面左边缘的距离 | - | - | - |
-| screenY | number | 浏览器窗口上边框到系统桌面上边缘的距离 | - | - | - |
-| scrollbars | object | 滚动条对象，只有一个visible属性 | - | - | - |
-| scrollX | number | 页面水平滚动距离 | - | - | - |
-| scrollY | number | 页面垂直滚动距离 | - | - | - |
-| self | Window | 指向自身 | - | - | - |
-| status | string | 状态栏中的文本 | - | - | - |
-| statusbar | object | 状态栏对象，只有一个visible属性 | - | - | - |
-| toolbar | object | 工具栏对象，只有一个visible属性 | - | - | - |
-| top | Window | 最顶层的窗口 | - | - | - |
+| closed | boolean | 窗口是否关闭 | - | true | - | 
+| devicePixelRatio | number | 当前显示设备的物理像素分辨率与CSS像素分辨率之比 | - | true | - |
+| innerHeight | number | 窗口的视口高度 | - | true | - |
+| innerWidth | number | 窗口的视口宽度 | - | true | - |
+| length | number | 当前窗口中包含的框架数量 | - | true | - |
+| locationbar | object | 地址栏对象，只有一个visible属性 | - | true | - | 
+| menubar | object | 菜单栏对象，只有一个visible属性 | - | true | - |
+| name | string | 窗口名称 | - | true | - |
+| opener | Window | 打开该窗口的窗口 | - | true | - |
+| outerHeight | number | 整个浏览器窗口的高度 | - | true | - |
+| outerWidth | number | 整个浏览器窗口的宽度 | - | true | - |
+| pageXOffset | number | 页面水平滚动距离 | - | true | - |
+| pageYOffset | number | 页面垂直滚动距离 | - | true | - |
+| parent | Window | 父窗口 | - | true | - |
+| personalbar | object | 个人工具栏，只有一个visible属性 | - | true | - |
+| screenLeft | number | 浏览器窗口左边框到屏幕左边缘的距离 | - | true | - | 
+| screenTop | number | 浏览器窗口上边框到屏幕上边缘的距离 | - | true | - |
+| screenX | number | 浏览器窗口左边框到系统桌面左边缘的距离 | - | true | - |
+| screenY | number | 浏览器窗口上边框到系统桌面上边缘的距离 | - | true | - |
+| scrollbars | object | 滚动条对象，只有一个visible属性 | - | true | - |
+| scrollX | number | 页面水平滚动距离 | - | true | - |
+| scrollY | number | 页面垂直滚动距离 | - | true | - |
+| self | Window | 指向自身 | - | true | - |
+| status | string | 状态栏中的文本 | - | true | - |
+| statusbar | object | 状态栏对象，只有一个visible属性 | - | true | - |
+| toolbar | object | 工具栏对象，只有一个visible属性 | - | true | - |
+| top | Window | 最顶层的窗口 | - | true | - |
 
 ## 原型函数
 
