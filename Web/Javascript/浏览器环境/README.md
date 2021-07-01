@@ -7,6 +7,7 @@
 - [Console](Console.md) 控制台对象
 - [History](History.md) 历史记录对象
 - [Location](Location.md) 链接对象
+- [Navigator](Navigator.md) 浏览器对象
 - [Screen](Screen.md) 屏幕对象
 - [Storage](Storage.md) 本地存储对象
 - [Window](Window.md) 窗口对象
