@@ -7,6 +7,7 @@
 - [Console](Console.md) 控制台对象
 - [History](History.md) 历史记录对象
 - [Location](Location.md) 链接对象
+- [Storage](Storage.md) 本地存储对象
 - [Window](Window.md) 窗口对象
 - [@WindowOrWorkerGlobalScope](WindowOrWorkerGlobalScope) 全局对象接口
 
