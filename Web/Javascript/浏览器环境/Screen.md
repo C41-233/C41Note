@@ -14,3 +14,5 @@ Object / Screen
 | availWidth | number | 浏览器窗口在屏幕上可占用的最大宽度 | - | true | - |
 | colorDepth | number | 屏幕的颜色深度 | - | true | - |
 | height | number | 屏幕高度 | - | true | - |
+| pixelDepth | number | 屏幕的位深度 | - | true | - |
+| width | number | 屏幕宽度 | - | true | - |
