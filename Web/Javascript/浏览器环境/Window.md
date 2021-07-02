@@ -185,9 +185,9 @@ Window Window.prototype.open(string url, string name, string features)
 
 打开新窗口。如果指定name的窗口已存在，则不再打开新的窗口，而是将URL加载到该窗口。
 
-- url 新窗口加载的URL。
-- name 新窗口的名称。
-- features 新窗口的特征。特征以`name=value`的形式表示，各特征之间用逗号分隔。
+- url：新窗口加载的URL。
+- name：新窗口的名称。
+- features：新窗口的特征。特征以`name=value`的形式表示，各特征之间用逗号分隔。
 
     | 特征名称 | 特征值 | 描述 |
     |---|---|---|
@@ -295,7 +295,7 @@ Promise<Array<FileSystemDirectoryHandle>> Window.prototype.showOpenFilePicker()
 Promise<Array<FileSystemDirectoryHandle>> Window.prototype.showOpenFilePicker(object options)
 ```
 
-- options 选项参数
+- options：选项参数
     | 选项 | 类型 | 描述 | 默认值 |
     |---|---|---|---|
     | multiple | boolean | 是否可以选择多个文件 | false |
@@ -313,7 +313,7 @@ Promise<Array<FileSystemDirectoryHandle>> Window.prototype.showSaveFilePicker()
 Promise<Array<FileSystemDirectoryHandle>> Window.prototype.showSaveFilePicker(object options)
 ```
 
-- options 选项参数
+- options：选项参数
     | 选项 | 类型 | 描述 | 默认值 |
     |---|---|---|---|
     | excludeAcceptAllOption | boolean | 是否隐藏选择所有文件的选项 | false |
