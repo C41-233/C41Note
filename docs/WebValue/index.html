@@ -4,6 +4,14 @@
 <title>WebValue</title>
 <meta charset="utf-8"/>
 <script src="../common.js"></script>
+<style>
+	.value-style{
+		max-height: 160px;
+		overflow-y: auto; 
+		word-break: break-all;
+		overflow-x: hidden;
+	}
+</style>
 </head>
 
 <body>
@@ -14,18 +22,38 @@
 				<el-table-column label="name">
 					<template slot-scope="scope">{{scope.row.name}}</template>
 				</el-table-column>
-				<el-table-column label="value">
+				<el-table-column label="type">
 					<template slot-scope="scope">
+						{{Typeof(scope.row.value)}}
+					</template>
+				</el-table-column>
+				<el-table-column label="value">
+					<div slot-scope="scope" class="value-style">
 						<template v-if="scope.row.value === undefined">
 							undefined
 						</template>
 						<template v-else-if="scope.row.value === null">
 							null
 						</template>
+						<template v-else-if="scope.row.value.constructor === Object">
+							Object
+						</template>
+						<template v-else-if="typeof(scope.row.value) === 'function'">
+							Function
+						</template>
 						<template v-else>
 							{{scope.row.value}}
 						</template>
-					</template>
+					</div>
+				</el-table-column>
+				<el-table-column label="enumerable">
+					<template slot-scope="scope">{{scope.row.enumerable}}</template>
+				</el-table-column>
+				<el-table-column label="writable">
+					<template slot-scope="scope">{{scope.row.writable}}</template>
+				</el-table-column>
+				<el-table-column label="configurable">
+					<template slot-scope="scope">{{scope.row.configurable}}</template>
 				</el-table-column>
 			</el-table>
 		</div>
@@ -58,13 +86,36 @@ $(function (){
 			Set(obj){
 				let table = [];
 				for(let key in obj){
-					table.push({
+					if(key === "$" || key === "Common" || key === "Vue"){
+						continue;
+					}
+					let descriptor = Object.getOwnPropertyDescriptor(obj, key);
+					let blob = {
 						name: key,
-						value: obj[key]
-					});
+						value: obj[key],
+						enumerable: false,
+						writable: false,
+						configurable: false
+					};
+					if(descriptor){
+						blob.enumerable = !!descriptor.enumerable;
+						blob.writable = !!descriptor.writable;
+						blob.configurable = !!descriptor.configurable;
+					}
+					table.push(blob);
 				}
 				table.sort((x, y) => compare(x.name, y.name));
 				this.Table = table;
+			},
+			Typeof(value){
+				let type = typeof(value);
+				if(value === null){
+					return "null";
+				}
+				if(type === "object"){
+					return value.constructor.name;
+				}
+				return type;
 			}
 		}
 	});
