@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<title>WebValue</title>
+<meta charset="utf-8"/>
+<script src="../common.js"></script>
+</head>
+
+<body>
+<main>
+	<template>
+		<div class="container">
+			<el-table :data="Table">
+				<el-table-column label="name">
+					<template slot-scope="scope">{{scope.row.name}}</template>
+				</el-table-column>
+				<el-table-column label="value">
+					<template slot-scope="scope">
+						<template v-if="scope.row.value === undefined">
+							undefined
+						</template>
+						<template v-else-if="scope.row.value === null">
+							null
+						</template>
+						<template v-else>
+							{{scope.row.value}}
+						</template>
+					</template>
+				</el-table-column>
+			</el-table>
+		</div>
+	</template>
+</main>
+
+<script>
+function compare(x, y){
+	if(x > y){
+		return 1;
+	}
+	if(x < y){
+		return -1;
+	}
+	return 0;
+}
+
+$(function (){
+	let app = new Vue({
+		el: "main",
+		data(){
+			return {
+				Table: []
+			}
+		},
+		created(){
+			this.Set(window);
+		},
+		methods: {
+			Set(obj){
+				let table = [];
+				for(let key in obj){
+					table.push({
+						name: key,
+						value: obj[key]
+					});
+				}
+				table.sort((x, y) => compare(x.name, y.name));
+				this.Table = table;
+			}
+		}
+	});
+});	
+</script>
+</body>
+
+</html>

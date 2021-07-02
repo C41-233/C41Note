@@ -153,6 +153,14 @@ number String.prototype.lastIndexOf(string search, number from)
 
 ---
 
+##### localeCompare
+
+```
+number String.prototype.localeCompare(string str)
+```
+
+---
+
 ##### match
 
 ```
