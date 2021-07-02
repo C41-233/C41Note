@@ -46,14 +46,17 @@
 						</template>
 					</div>
 				</el-table-column>
-				<el-table-column label="enumerable">
+				<el-table-column label="enumerable" width="120">
 					<template slot-scope="scope">{{scope.row.enumerable}}</template>
 				</el-table-column>
-				<el-table-column label="writable">
+				<el-table-column label="writable" width="120">
 					<template slot-scope="scope">{{scope.row.writable}}</template>
 				</el-table-column>
-				<el-table-column label="configurable">
+				<el-table-column label="configurable" width="120">
 					<template slot-scope="scope">{{scope.row.configurable}}</template>
+				</el-table-column>
+				<el-table-column label="setter" width="120">
+					<template slot-scope="scope">{{scope.row.set}}</template>
 				</el-table-column>
 			</el-table>
 		</div>
@@ -95,12 +98,14 @@ $(function (){
 						value: obj[key],
 						enumerable: false,
 						writable: false,
-						configurable: false
+						configurable: false,
+						set: false
 					};
 					if(descriptor){
 						blob.enumerable = !!descriptor.enumerable;
 						blob.writable = !!descriptor.writable;
 						blob.configurable = !!descriptor.configurable;
+						blob.set = !!descriptor.set;
 					}
 					table.push(blob);
 				}
