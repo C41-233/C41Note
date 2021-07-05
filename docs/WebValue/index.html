@@ -18,47 +18,62 @@
 <main>
 	<template>
 		<div class="container">
-			<el-table :data="Table">
-				<el-table-column label="name">
-					<template slot-scope="scope">{{scope.row.name}}</template>
-				</el-table-column>
-				<el-table-column label="type">
-					<template slot-scope="scope">
-						{{Typeof(scope.row.value)}}
-					</template>
-				</el-table-column>
-				<el-table-column label="value">
-					<div slot-scope="scope" class="value-style">
-						<template v-if="scope.row.value === undefined">
-							undefined
+			<el-row>
+				<el-select v-model="Current" placeholder="请选择">
+					<el-option
+						v-for="(item, i) in Options"
+						:key="i"
+						:label="item.name"
+						:value="i">
+					</el-option>
+				</el-select>
+			</el-row>
+			<el-row>
+				<el-table :data="Table">
+					<el-table-column label="name">
+						<template slot-scope="scope">{{scope.row.name}}</template>
+					</el-table-column>
+					<el-table-column label="type">
+						<template slot-scope="scope">
+							{{Typeof(scope.row.value)}}
 						</template>
-						<template v-else-if="scope.row.value === null">
-							null
-						</template>
-						<template v-else-if="scope.row.value.constructor === Object">
-							Object
-						</template>
-						<template v-else-if="typeof(scope.row.value) === 'function'">
-							Function
-						</template>
-						<template v-else>
-							{{scope.row.value}}
-						</template>
-					</div>
-				</el-table-column>
-				<el-table-column label="enumerable" width="120">
-					<template slot-scope="scope">{{scope.row.enumerable}}</template>
-				</el-table-column>
-				<el-table-column label="writable" width="120">
-					<template slot-scope="scope">{{scope.row.writable}}</template>
-				</el-table-column>
-				<el-table-column label="configurable" width="120">
-					<template slot-scope="scope">{{scope.row.configurable}}</template>
-				</el-table-column>
-				<el-table-column label="setter" width="120">
-					<template slot-scope="scope">{{scope.row.set}}</template>
-				</el-table-column>
-			</el-table>
+					</el-table-column>
+					<el-table-column label="value">
+						<div slot-scope="scope" class="value-style">
+							<template v-if="scope.row.value === undefined">
+								undefined
+							</template>
+							<template v-else-if="scope.row.value === null">
+								null
+							</template>
+							<template v-else-if="scope.row.value.constructor === Object">
+								Object
+							</template>
+							<template v-else-if="typeof(scope.row.value) === 'function'">
+								Function
+							</template>
+							<template v-else>
+								{{scope.row.value}}
+							</template>
+						</div>
+					</el-table-column>
+					<el-table-column label="enumerable" width="120">
+						<template slot-scope="scope">{{scope.row.enumerable | bool}}</template>
+					</el-table-column>
+					<el-table-column label="writable" width="120">
+						<template slot-scope="scope">{{scope.row.writable | bool}}</template>
+					</el-table-column>
+					<el-table-column label="configurable" width="120">
+						<template slot-scope="scope">{{scope.row.configurable | bool}}</template>
+					</el-table-column>
+					<el-table-column label="get" width="80">
+						<template slot-scope="scope">{{scope.row.get | bool}}</template>
+					</el-table-column>
+					<el-table-column label="set" width="80">
+						<template slot-scope="scope">{{scope.row.set | bool}}</template>
+					</el-table-column>
+				</el-table>
+			</el-row>
 		</div>
 	</template>
 </main>
@@ -74,38 +89,78 @@ function compare(x, y){
 	return 0;
 }
 
+function getDescriptor(obj, name){
+	while(obj !== undefined){
+		let descriptor = Object.getOwnPropertyDescriptor(obj, name);
+		if(descriptor){
+			return descriptor;
+		}
+		obj = obj.__proto__;
+	}
+	
+}
+
 $(function (){
 	let app = new Vue({
 		el: "main",
 		data(){
 			return {
-				Table: []
+				Table: [],
+				Options: [
+					{
+						name: "window", 
+						value: window
+					},
+					{
+						name: "document",
+						value: window.document
+					},
+					{
+						name: "location",
+						value: window.location
+					},
+					{
+						name: "navigator",
+						value: window.navigator
+					}
+				],
+				Current: 0
 			}
 		},
 		created(){
-			this.Set(window);
+			this.Update();
+		},
+		watch: {
+			Current(){
+				this.Update();
+			}
 		},
 		methods: {
+			Update(){
+				this.Set(this.Options[this.Current].value);	
+			},
 			Set(obj){
 				let table = [];
 				for(let key in obj){
-					if(key === "$" || key === "Common" || key === "Vue"){
+					if(obj[key] === window.$ || obj[key] === window.Common || obj[key] === window.Vue){
 						continue;
 					}
-					let descriptor = Object.getOwnPropertyDescriptor(obj, key);
+					let descriptor = getDescriptor(obj, key);
 					let blob = {
 						name: key,
 						value: obj[key],
 						enumerable: false,
 						writable: false,
 						configurable: false,
-						set: false
+						set: false,
+						get: false
 					};
 					if(descriptor){
 						blob.enumerable = !!descriptor.enumerable;
 						blob.writable = !!descriptor.writable;
 						blob.configurable = !!descriptor.configurable;
 						blob.set = !!descriptor.set;
+						blob.get = !!descriptor.get;
 					}
 					table.push(blob);
 				}
@@ -121,6 +176,11 @@ $(function (){
 					return value.constructor.name;
 				}
 				return type;
+			}
+		},
+		filters: {
+			bool(v){
+				return !!v ? "true" : "-";
 			}
 		}
 	});
