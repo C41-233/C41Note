@@ -18,7 +18,7 @@ Number对象是原始数值number类型的包装对象。这种类型底层是IE
 | MAX_SAFE_INTEGER  | number | 可表示的最大整数 | - | - | - |
 | MAX_VALUE | number | 可表示的最大的数 | - | - | - |
 | MIN_SAFE_INTEGER |  number | 可表示的最小整数 | - | - | - |
-| MIN_VALUE | number | 可表示的最小的数 | - | - | - |
+| MIN_VALUE | number | 可表示的最小的正数 | - | - | - |
 | NaN | number | 非数字值 | - | - | - |
 | NEGATIVE_INFINITY | number | 负无穷大 | - | - | - |
 | POSITIVE_INFINITY | number | 正无穷大 | - | - | - |

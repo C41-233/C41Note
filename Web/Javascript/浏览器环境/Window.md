@@ -16,7 +16,7 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 
 ##### 全局对象
 
-| 名称 | 类型 | 描述 |  writable | enumerable | configurable |
+| 名称 | 类型 | 描述 | writable | enumerable | configurable |
 |---|---|---|---|---|---|
 | console | Console | 获取控制台对象 | - | true | - |
 | crypto | Crypto | 获取加密服务对象 | - | true | - |
