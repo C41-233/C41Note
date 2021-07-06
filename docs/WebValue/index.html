@@ -29,7 +29,7 @@
 				</el-select>
 			</el-row>
 			<el-row>
-				<el-table :data="Table">
+				<el-table :data="Table" height="875">
 					<el-table-column label="name">
 						<template slot-scope="scope">{{scope.row.name}}</template>
 					</el-table-column>
@@ -122,6 +122,10 @@ $(function (){
 					{
 						name: "navigator",
 						value: window.navigator
+					},
+					{
+						name: "history",
+						value: window.history
 					}
 				],
 				Current: 0
