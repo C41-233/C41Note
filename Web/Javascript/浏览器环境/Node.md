@@ -46,3 +46,42 @@ Object / [EventTarget](EventTarget.md) / Node
 
 | 函数 | 描述 |
 |---|---|
+| appendChild | 添加子结点 |
+| cloneNode | 复制结点 |
+| compareDocumentPosition | 比较结点位置关系 |
+| contains | 是否为自身或者后代结点 |
+
+---
+
+##### appendChild
+
+```
+Node Node.prototype.appendChild(Node node)
+```
+
+将当前结点作为父结点，添加一个子结点到子结点列表末尾。如果结点已经存在父结点，则首先从父结点中移除。
+
+返回被添加的结点。
+
+---
+
+#####
+
+```
+Node Node.prototype.cloneNode()
+Node Node.prototype.cloneNode(boolean deep)
+```
+
+- deep：是否深拷贝，深拷贝导致所有后代结点都被复制。
+
+复制当前结点。
+
+---
+
+##### contains
+
+```
+boolean Node.prototype.contains(Node node)
+```
+
+判断指定结点是否为当前结点的后代结点。如果node为自身，也返回true。
