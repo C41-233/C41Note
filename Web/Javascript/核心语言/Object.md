@@ -24,7 +24,7 @@ Object对象可以通过`{key:value, key:value...}`的形式构造。
 | getOwnPropertyDescriptors | 获取对象所有属性的描述 |
 | getOwnPropertyNames | 获取对象所有的具名属性 |
 | getOwnPropertySymbols | 获取对象的所有Symbol属性 |
-| getPrototypeOf | 	获取对象原型 |
+| getPrototypeOf | 	获取对象的隐式原型 |
 | preventExtensions | 使对象不可扩展 |
 | seal | 封闭对象 |
 | setPrototypeOf | 设置对的原型 |

@@ -35,4 +35,4 @@ Object / [EventTarget](EventTarget.md) / Node
 | nextSibling | Node | 返回该结点之后的紧邻兄弟结点 | - | true | - |
 | nodeName | string | 结点的名称 | - | true | - |
 | nodeType | number | 结点类型 | - | true | - |
-| nodeValue | string | 结点的值 | true | true | - |
+| nodeValue | string | 结点的值 | true | true | true |
