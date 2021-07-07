@@ -14,3 +14,4 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandler
 
 | 名称 | 类型 | 描述 |  writable | enumerable | configurable |
 |---|---|---|---|---|---|
+| body | HTMLBodyElement | 文档的body元素 | - | true | true |
