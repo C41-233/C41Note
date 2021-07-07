@@ -50,6 +50,14 @@ Object / [EventTarget](EventTarget.md) / Node
 | cloneNode | 复制结点 |
 | compareDocumentPosition | 比较结点位置关系 |
 | contains | 是否为自身或者后代结点 |
+| getRootNode | 返回根结点 |
+| hasChildNodes | 是否有子结点 |
+| insertBefore | 在子结点前插入结点 |
+| isDefaultNamespace | 对应URI是否为结点的默认命名空间 |
+| isEqualNode | 判断结点相等 |
+| normalize | 将结点规范化 |
+| removeChild | 删除子结点 |
+| replaceChild | 替换子结点 |
 
 ---
 
@@ -85,3 +93,41 @@ boolean Node.prototype.contains(Node node)
 ```
 
 判断指定结点是否为当前结点的后代结点。如果node为自身，也返回true。
+
+---
+
+##### hasChildNodes
+
+```
+boolean Node.prototype.hasChildNodes()
+```
+
+---
+
+##### insertBefore
+
+```
+Node Node.prototype.insertBefore(Node newNode, Node referenceNode)
+```
+
+在指定的子结点referenceNode之前插入一个新结点newNode。如果newNode已经在文档中，会首先被删除。
+
+如果referenceNode为null，则插入到子结点的末尾。
+
+返回被插入的结点。
+
+---
+
+##### removeChild
+
+```
+Node Node.prototype.removeChild(Node node)
+```
+
+---
+
+##### replaceChild
+
+```
+void Node.prototype.replaceChild(Node newChild, Node oldChild)
+```
