@@ -27,3 +27,10 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandler
 | doctype | DocumentType | 文档DTD | - | true | true |
 | documentElement | Element | 文档根元素结点 | - | true | true |
 | documentURI | string | 文档URI | - | true | true |
+| embeds | HTMLCollection | 文档的所有embed元素的集合 | - | true | true |
+| firstElementChild | Element | 文档的第一个元素结点 | - | true | true |
+| forms | HTMLCollection | 文档的所有form元素的集合 | - | true | true |
+| fullscreenElement | Element | 文档中正在以全屏模式显示的结点 | - | true | true |
+| fullScreenEnabled | boolean | 是否支持全屏模式 | - | true | true |
+| head | HTMLHeadElement | 文档的head元素 | - | true | true |
+| hidden | boolean | 页面是否隐藏 | - | true | true |
