@@ -34,3 +34,7 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandler
 | fullScreenEnabled | boolean | 是否支持全屏模式 | - | true | true |
 | head | HTMLHeadElement | 文档的head元素 | - | true | true |
 | hidden | boolean | 页面是否隐藏 | - | true | true |
+| images | HTMLCollection | 文档的所有imgs元素的集合 | - | true | true |
+| implementation | DOMImplementation | 文档关联的DOMImplementation对象 | - | true | true |
+| lastElementChild  | Element | 文档的最后一个子元素结点 | - | true | true |
+| lastModified | string | 文档最后修改日期时间 | - | true | true |
