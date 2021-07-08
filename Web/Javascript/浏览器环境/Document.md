@@ -72,6 +72,16 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandler
 | getElementById | 根据ID查找元素 |
 | getElementsByClassName | 根据类名查找元素 |
 | getElementsByName | 根据name查找元素 |
+| getElementsByTagName | 根据元素名称查找元素 |
+| getElementsByTagNameNS | 根据元素名称和命名空间查找元素 |
+| hasFocus | 文档是否获得焦点 |
+| importNode | 拷贝外部文档的结点至当前文档 |
+| open | 打开要写入的文档 |
+| querySelector | 查找第一个匹配的元素 |
+| querySelectorAll | 查找所有匹配的元素 |
+| releaseCapture | 释放鼠标捕获 |
+| write | 将文本字符串写入打开的文档流 |
+| writeln | 将文本字符串写入打开的文档流，并换行 |
 
 ## 事件
 
@@ -219,7 +229,7 @@ Element Document.prototype.getElementById(string id)
 ##### getElementsByClassName
 
 ```
-NodeList Document.prototype.getElementsByClassName(string names)
+HTMLCollection Document.prototype.getElementsByClassName(string names)
 ```
 
 - names：CSS类名，多个类名之间用空格分隔。
@@ -229,8 +239,68 @@ NodeList Document.prototype.getElementsByClassName(string names)
 ##### getElementsByName
 
 ```
-NodeList Document.prototype.getElementsByName(string name)
+HTMLCollection Document.prototype.getElementsByName(string name)
 ```
+
+---
+
+##### getElementsByTagName
+
+```
+HTMLCollection Document.prototype.getElementsByTagName(string name)
+```
+
+- name：元素的tag名称，`"*"`表示所有元素。
+
+---
+
+##### getElementsByTagNameNS
+
+```
+HTMLCollection Document.prototype.getElementsByTagNameNS(string ns, string name)
+```
+
+---
+
+##### hasFocus
+
+```
+boolean Document.prototype.hasFocus()
+```
+
+---
+
+##### importNode
+
+```
+Node Document.prototype.importNode(Node node, boolean deep)
+```
+
+---
+
+##### querySelector
+
+```
+HTMLElement Document.prototype.querySelector(string selector)
+```
+
+---
+
+##### querySelectorAll
+
+```
+NodeList Document.prototype.querySelectorAll(string selector)
+```
+
+---
+
+##### open
+
+```
+void Document.prototype.open()
+```
+
+打开要写入的文档。该方法会导致所有结点及已注册的事件被清除。
 
 ---
 
@@ -245,3 +315,19 @@ string Document.prototype.readyState
 - `loading`：正在加载。
 - `interactive`：文档已被加载并解析，但是资源还在加载，此时处于可交互状态。
 - `complete`：文档及所有资源都已完成加载。
+
+---
+
+##### write
+
+```
+void Document.prototype.write(string text)
+```
+
+---
+
+##### writeln
+
+```
+void Document.prototype.writeln(string text)
+```
