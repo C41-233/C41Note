@@ -10,8 +10,6 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandler
 
 ## 原型属性
 
-##### 全局对象
-
 | 名称 | 类型 | 描述 |  writable | enumerable | configurable |
 |---|---|---|---|---|---|
 | body | HTMLBodyElement | 文档的body元素 | - | true | true |
@@ -38,3 +36,36 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandler
 | implementation | DOMImplementation | 文档关联的DOMImplementation对象 | - | true | true |
 | lastElementChild  | Element | 文档的最后一个子元素结点 | - | true | true |
 | lastModified | string | 文档最后修改日期时间 | - | true | true |
+| links | HTMLCollection | 文档所有area和a元素的集合 | - | true | true |
+| location | Location | 文档的Location对象 | - | true | true |
+| plugins | HTMLCollection | 文档的所有embed元素的集合 | - | true | true |
+| readyState | string | 文档的加载状态 | - | true | true |
+| referrer | string | 文档从该URI跳转而来 | - | true | true |
+| scripts | HTMLCollection | 文档的所有script元素的结婚 | - | true | true |
+| scrollingElement | Element | 滚动文档的对象 | - | true | true |
+| title | string | 文档的标题 | true | true | true |
+| visibilityState | boolean | 文档的可见性 | - | true | true |
+| URL | string | 当前文档的URL | - | true | true |
+
+## 事件
+
+| 事件 | 函数 | 描述 | 类型 |
+|---|---|---|---|
+| readystatechange  | onreadystatechange | readystate变化时 | Event |
+| scroll | onscroll | 当滚动文档滚动条时 | Event |
+| visibilitychange | onvisibilitychange | 当文档选项卡内容可见或者隐藏时 | Event |
+| DOMContentLoaded  | - | 文档加载完成后（无需等待资源加载） | Event |
+
+---
+
+##### readyState
+
+```
+string Document.prototype.readyState
+```
+
+文档的加载状态。
+
+- `loading`：正在加载。
+- `interactive`：文档已被加载并解析，但是资源还在加载，此时处于可交互状态。
+- `complete`：文档及所有资源都已完成加载。

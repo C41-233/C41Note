@@ -61,14 +61,19 @@ GlobalEventHandlers接口定义了Window、Document、HTMLElement都可以监听
 | volumechange | onvolumechange | 当多媒体改变音量亦或当音量被设置为静音时 | Event |
 | waiting | onwaiting | 当多媒体已停止播放但打算继续播放时 | Event |
 
+##### 动画事件
+
+| 事件 | 函数 | 描述 | 类型 |
+|---|---|---|---|
+| animationcancel | onanimationcancel | 当动画被中断时 | AnimationEvent |
+| animationend | onanimationend | 当动画完成时 | AnimationEvent |
+| animationstart | onanimationstart | 当动画开始时 | AnimationEvent |
+
 ##### 其他事件
 
 | 事件 | 函数 | 描述 | 类型 |
 |---|---|---|---|
 | abort | onabort | 当加载中断时 | Event |
-| animationcancel | onanimationcancel | 当动画被中断时 | AnimationEvent |
-| animationend | onanimationend | 当动画完成时 | AnimationEvent |
-| animationstart | onanimationstart | 当动画开始时 | AnimationEvent |
 | blur | onblur | 当元素失去焦点时 | FocusEvent |
 | cancel | oncancel | 当用户离开dialog元素时 | Event |
 | change | onchange | 当元素的值改变时 | Event |
@@ -86,4 +91,4 @@ GlobalEventHandlers接口定义了Window、Document、HTMLElement都可以监听
 | selectionchange | onselectionchange | 当选择文本区域时 | Event |
 | selectstart | onselectstart | 当开始选择文本时 | Event | 
 | submit | onsubmit | 当表单被提交时 | SubmitEvent |
-| toggle | ontoggle | 当\<detail\>元素切换开关时 | Event |
+| toggle | ontoggle | 当detail元素切换开关时 | Event |
