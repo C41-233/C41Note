@@ -61,6 +61,17 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandler
 | createElementNS | 创建具有命名空间的元素 |
 | createEvent | 创建事件对象 |
 | createExpression | 创建XPath表达式 |
+| createNodeIterator | 创建NodeIterator对象 |
+| createNSResolver | 创建XPathNSResolver对象 |
+| createProcessingInstruction | 创建指令结点 |
+| createRange | 创建Range对象 |
+| createTextNode | 创建文本结点 |
+| createTreeWalker | 创建TreeWalker对象 |
+| evaluate | 执行XPath |
+| exitFullscreen | 退出全屏模式 |
+| getElementById | 根据ID查找元素 |
+| getElementsByClassName | 根据类名查找元素 |
+| getElementsByName | 根据name查找元素 |
 
 ## 事件
 
@@ -143,6 +154,82 @@ Event Document.prototype.createEvent(string type)
 ```
 XPathExpression Document.prototype.createExpression(string xpath)
 XPathExpression Document.prototype.createExpression(string xpath, function namespaceMapper)
+```
+
+---
+
+##### createNodeIterator
+
+```
+NodeIterator Document.prototype.createNodeIterator(Node root)
+NodeIterator Document.prototype.createNodeIterator(Node root, number mask)
+NodeIterator Document.prototype.createNodeIterator(Node root, number mask, object filter)
+```
+
+---
+
+##### createProcessingInstruction
+
+```
+ProcessingInstruction Document.prototype.createProcessingInstruction(string target, string data)
+```
+
+---
+
+##### createRange
+
+```
+Range Document.prototype.createRange()
+```
+
+---
+
+##### createTextNode
+
+```
+Text Document.prototype.createTextNode(string data)
+```
+
+---
+
+##### evaluate
+
+```
+XPathResult Document.prototype.evaluate(string xpath, Node contextNode, function namespaceResolver, number resultType, XPathResult result)
+```
+
+执行XPath查询。
+
+- xpath：xpath表达式。
+- contextNode： 查询的上下文结点，通常是document。
+- namespaceResolver 命名空间前缀到命名空间的映射，可以为null。
+- resultType 返回的XPathResult类型。
+- result 储存结果的XPathResult对象。null表示创建新的XPathResult对象。
+
+---
+
+##### getElementById
+
+```
+Element Document.prototype.getElementById(string id)
+```
+
+---
+
+##### getElementsByClassName
+
+```
+NodeList Document.prototype.getElementsByClassName(string names)
+```
+
+- names：CSS类名，多个类名之间用空格分隔。
+
+---
+
+##### getElementsByName
+
+```
+NodeList Document.prototype.getElementsByName(string name)
 ```
 
 ---
