@@ -47,6 +47,18 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandler
 | visibilityState | boolean | 文档的可见性 | - | true | true |
 | URL | string | 当前文档的URL | - | true | true |
 
+## 原型函数
+
+| 函数 | 描述 |
+|---|---|
+| adoptNode | 从其他文档获取一个结点 |
+| close | 结束对文档的写入 |
+| createAttribute | 创建属性结点 |
+| createCDATASection | 创建CDATA结点 |
+| createComment | 创建注释结点 |
+| createDocumentFragment | 创建文档片段结点 |
+| createElement | 创建元素结点 |
+
 ## 事件
 
 | 事件 | 函数 | 描述 | 类型 |
@@ -55,6 +67,54 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandler
 | scroll | onscroll | 当滚动文档滚动条时 | Event |
 | visibilitychange | onvisibilitychange | 当文档选项卡内容可见或者隐藏时 | Event |
 | DOMContentLoaded  | - | 文档加载完成后（无需等待资源加载） | Event |
+
+---
+
+##### close
+
+```
+void Document.prototype.close()
+```
+---
+
+##### createAttribute
+
+```
+Attr Document.prototype.createAttribute(string name)
+```
+
+---
+
+##### createCDATASection
+
+```
+CDATASection Document.prototype.createCDATASection(string data)
+```
+
+---
+
+##### createComment
+
+```
+Comment Document.prototype.createComment(string data)
+```
+
+---
+
+##### createDocumentFragment
+
+```
+DocumentFragment Document.prototype.createDocumentFragment()
+```
+
+---
+
+##### createElement
+
+```
+Element Document.prototype.createElement(string tagName)
+Element Document.prototype.createElement(string tagName, object options)
+```
 
 ---
 

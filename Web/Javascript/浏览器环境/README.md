@@ -85,4 +85,5 @@
             - HTMLTitleElement title
             - HTMLTrackElement track
             - HTMLUListElement ul
+            - HTMLUnknownElement 未知结点
             - HTMLVideoElement video
