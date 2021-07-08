@@ -58,6 +58,9 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandler
 | createComment | 创建注释结点 |
 | createDocumentFragment | 创建文档片段结点 |
 | createElement | 创建元素结点 |
+| createElementNS | 创建具有命名空间的元素 |
+| createEvent | 创建事件对象 |
+| createExpression | 创建XPath表达式 |
 
 ## 事件
 
@@ -114,6 +117,32 @@ DocumentFragment Document.prototype.createDocumentFragment()
 ```
 Element Document.prototype.createElement(string tagName)
 Element Document.prototype.createElement(string tagName, object options)
+```
+
+---
+
+##### createElementNS
+
+```
+Element Document.prototype.createElementNS(string ns, string qualifiedName)
+Element Document.prototype.createElementNS(string ns, string qualifiedName, object options)
+```
+
+---
+
+##### createEvent
+
+```
+Event Document.prototype.createEvent(string type)
+```
+
+---
+
+##### createExpression
+
+```
+XPathExpression Document.prototype.createExpression(string xpath)
+XPathExpression Document.prototype.createExpression(string xpath, function namespaceMapper)
 ```
 
 ---

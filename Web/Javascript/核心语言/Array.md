@@ -84,7 +84,7 @@ Array Array.prototype.concat(object/Array... arr)
 
 ##### every
 ```
-boolean Array.prototype.every(Function test, object this)
+boolean Array.prototype.every(function test, object this)
 ```
 检测是否每个元素都满足条件。
 
@@ -106,8 +106,8 @@ Array Array.prototype.fill(object value, number start, number end)
 
 ##### filter
 ```
-Array Array.prototype.filter(Function test)
-Array Array.prototype.filter(Function test, object this)
+Array Array.prototype.filter(function test)
+Array Array.prototype.filter(function test, object this)
 ```
 
 返回符合条件元素的新数组。
@@ -123,8 +123,8 @@ boolean function(object element, number index, Array array)
 
 ##### find
 ```
-object Array.prototype.find(Function test)
-object Array.prototype.find(Function test, object this)
+object Array.prototype.find(function test)
+object Array.prototype.find(function test, object this)
 ```
 
 ```
@@ -134,8 +134,8 @@ boolean function(object element, number index, Array array)
 ---
 ##### findIndex
 ```
-number Array.prototype.findIndex(Function test)
-number Array.prototype.findIndex(Function test, object this)
+number Array.prototype.findIndex(function test)
+number Array.prototype.findIndex(function test, object this)
 ```
 
 ```
@@ -151,8 +151,8 @@ Array Array.prototype.flat(number depth)
 ---
 ##### flatMap
 ```
-Array Array.prototype.flatMap(Function map)
-Array Array.prototype.flatMap(Function map, object this)
+Array Array.prototype.flatMap(function map)
+Array Array.prototype.flatMap(function map, object this)
 ```
 
 ```
@@ -164,8 +164,8 @@ object function(object element, number index, Array array)
 ---
 ##### forEach
 ```
-void Array.prototype.forEach(Function action)
-void Array.prototype.forEach(Function action, object this)
+void Array.prototype.forEach(function action)
+void Array.prototype.forEach(function action, object this)
 ```
 
 ```
@@ -178,8 +178,8 @@ void function(object element, number index, Array array)
 ##### from
 ```
 Array Array.from(@array values)
-Array Array.from(@array values, Function map)
-Array Array.from(@array values, Function map, object this)
+Array Array.from(@array values, function map)
+Array Array.from(@array values, function map, object this)
 ```
 ---
 ##### isArray
@@ -226,8 +226,8 @@ number Array.prototype.lastIndexOf(object value, number from)
 ##### map
 
 ```
-Array Array.prototype.map(Function map)
-Array Array.prototype.map(Function map, object this)
+Array Array.prototype.map(function map)
+Array Array.prototype.map(function map, object this)
 ```
 
 ```
@@ -264,8 +264,8 @@ number Array.prototype.push(object item...)
 ---
 ##### reduce
 ```
-object Array.prototype.reduce(Function action)
-object Array.prototype.reduce(Function action, object initialValue)
+object Array.prototype.reduce(function action)
+object Array.prototype.reduce(function action, object initialValue)
 ```
 
 ```
@@ -275,8 +275,8 @@ object function(object accumulator, object currentValue, number index, Array arr
 ---
 ##### reduceRight
 ```
-object Array.prototype.reduceRight(Function action)
-object Array.prototype.reduceRight(Function action, object initialValue)
+object Array.prototype.reduceRight(function action)
+object Array.prototype.reduceRight(function action, object initialValue)
 ```
 
 ```
