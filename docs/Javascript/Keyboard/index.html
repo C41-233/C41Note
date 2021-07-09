@@ -1,0 +1,90 @@
+<html>
+
+<head>
+<title>Js键盘事件查询</title>
+<meta charset="utf-8"/>
+<script src="../../common.js"></script>
+<style>
+	.input{
+		width: 250px;
+		height: 250px;
+		display: inline-block;
+		background-color: #67C23A;
+		margin-top: 20px;
+		border: 1px solid white;
+		outline: none;
+	}
+	.input:focus{
+		border: 1px solid black;
+	}
+	.input:before{
+		content: "点此输入";
+		vertical-align: middle;
+		line-height: 250px;
+		font-size: 48px;
+	}
+	.output{
+		padding-left: 500px; 
+		padding-right: 500px;
+	}
+	.output .el-form-item__label,
+	.output .el-form-item__content{
+		font-size: 20px;
+	}
+</style>
+</head>
+
+<body>
+<main>
+	<template>
+		<div class="container">
+			<h1>Js键盘事件查询</h1>
+			<hr/>
+			<div class="text-center">
+				<div class="input" tabindex="-1" @keydown="Key" ref="div"></div>
+			</div>
+			<div class="output">
+				<table class="table" v-if="e !== null">
+					<tr>
+						<th>charCode</th>
+						<td>{{e.charCode}}</td>
+					</tr>
+					<tr>
+						<th>code</th>
+						<td>{{e.code}}</td>
+					</tr>
+					<tr>
+						<th>key</th>
+						<td>{{e.key}}</td>
+					</tr>
+				</table>
+			</el-form>
+			</div>
+		</div>
+	</template>
+</main>
+
+<script>
+$(function (){
+	let app = new Vue({
+		el: "main",
+		data(){
+			return {
+				e: null
+			}
+		},
+		methods:{
+			Key(e){
+				e.preventDefault();
+				e.stopPropagation();
+				console.error(e);
+				this.e = e;
+				return false;
+			}
+		}
+	});
+});	
+</script>
+</body>
+
+</html>
