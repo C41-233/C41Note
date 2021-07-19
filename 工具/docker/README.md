@@ -2,13 +2,19 @@
 
 ## 命令
 
+- 仓库
+    - [pull 下载镜像](command/pull.md)
+    - [push 上传镜像](command/push.md)
+    - [search 搜索远端镜像](command/search.md)
 - 镜像
     - [commit 创建镜像](command/commit.md)
     - [images 列出本地镜像](command/images.md)
     - [inspect 查看镜像详细信息](command/inspect.md)
-    - [pull 下载镜像](command/pull.md)
+    - [load 从本地文件加载镜像](command/load.md)
     - [rmi 删除镜像](command/rmi.md)
-    - [search 搜索远端镜像](command/search.md)
     - [save 镜像保存到本地文件](command/save.md)
 - 容器
+    - [create 创建容器](command/create.md)
+    - [logs 查看容器输出](command/logs.md)
     - [ps 查看容器](command/ps.md)
+    - [run 创建并启动容器](command/run.md)
