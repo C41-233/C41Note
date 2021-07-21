@@ -18,6 +18,7 @@
     - [create 创建容器](command/create.md)
     - [exec 在容器内执行](command/exec.md)
     - [export 导出容器](command/export.md)
+    - [import 导入容器](command/import.md)
     - [kill 强制终止容器](command/kill.md)
     - [logs 查看容器输出](command/logs.md)
     - [ps 查看容器](command/ps.md)
