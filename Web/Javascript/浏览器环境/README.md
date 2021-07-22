@@ -103,5 +103,6 @@
 
 ##### 集合
 
+- DOMTokenList
 - HTMLCollection
 - NamedNodeMap
