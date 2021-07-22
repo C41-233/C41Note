@@ -4,11 +4,21 @@
 
 ##### 浏览器对象
 
+- Clipboard 剪贴板对象
 - [Console](Console.md) 控制台对象
+- Crypto 加密对象
+- CustomElementRegistry
+- Geolocation 地理信息对象
 - [History](History.md) 历史记录对象
+- IDBFactory
 - [Location](Location.md) 链接对象
+- MediaDevices 设备对象
+- MediaSession 设备会话对象
 - [Navigator](Navigator.md) 浏览器对象
+- NetworkInformation 网络连接信息对象
+- Performance 性能度量工具
 - [Screen](Screen.md) 屏幕对象
+- ServiceWorkerContainer
 - [Storage](Storage.md) 本地存储对象
 - [Window](Window.md) 窗口对象
 - [@WindowOrWorkerGlobalScope](WindowOrWorkerGlobalScope) 全局对象接口
@@ -16,14 +26,16 @@
 ##### 事件
 
 - [Event](Event.md) 事件对象
+- [EventTarget](EventTarget.md) 事件目标接口
 - [@GlobalEventHandlers](GlobalEventHandlers) 全局事件接口
 - [@DocumentEventHandlers](DocumentEventHandlers) 元素事件接口
 
 ##### DOM
 
+- DOMImplementation
 - [Node](Node.md) 结点对象
     - [Document](Document.md) 文档对象
-    - Element
+    - [Element](Element.md) 文档元素
         - HTMLElement
             - HTMLAnchorElement a
             - HTMLAreaElement area
@@ -87,3 +99,9 @@
             - HTMLUListElement ul
             - HTMLUnknownElement 未知结点
             - HTMLVideoElement video
+        - SVGElement
+
+##### 集合
+
+- HTMLCollection
+- NamedNodeMap
