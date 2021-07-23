@@ -36,7 +36,7 @@
 - [Node](Node.md) 结点对象
     - [Document](Document.md) 文档对象
     - [Element](Element.md) 文档元素
-        - HTMLElement
+        - [HTMLElement](HTMLElement.md) HTML文档元素
             - HTMLAnchorElement a
             - HTMLAreaElement area
             - HTMLAudioElement audio
