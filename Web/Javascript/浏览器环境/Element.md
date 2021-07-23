@@ -29,6 +29,13 @@ Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 | nextElementSibling | Element | 后一个紧邻兄弟元素结点 | - | true | - |
 | outerHTML | Element | 元素的序列化片段（包括元素本身） | true | true | - |
 | prefix | string | 元素的命名空间前缀 | - | true | - | 
+| previousElementSibling | Element | 前一个紧邻兄弟元素结点 | - | true | - |
+| scrollHeight | number | 元素的内容高度 | - | true | - |
+| scrollLeft | number | 水平滚动条的滚动距离 | true | true | - |
+| scrollLeft | number | 垂直滚动条的滚动距离 | true | true | - |
+| scrollWidth | number | 元素的内容宽度 | - | true | - |
+| slot | string | 已插入元素所在的Shadow DOM slot的名称 | true | true | - |
+| tagName | string | 元素的标签名 | - | true | - |
 
 ---
 
@@ -53,3 +60,39 @@ number Element.prototype.clientWidth
 元素的内部宽度，包含内边距，但不包括垂直滚动条、边框和外边距。
 
 html元素的clientWidth等于viewport的宽度。
+
+---
+
+##### scrollHeight
+
+```
+number Element.prototype.scrollHeight
+```
+
+元素的内容高度，包括内边距和由于溢出导致的不可见内容，但不包括边框、外边距和垂直滚动条。即，元素在不使用滚动条的情况下为了适应视口中所用内容所需的最小高度。
+
+scrollHeight包括`::before`和`::after`伪元素的高度。
+
+---
+
+##### scrollWidth
+
+```
+number Element.prototype.scrollWidth
+```
+
+元素的内容宽度，包括内边距和由于溢出导致的不可见内容，但不包括边框、外边距和垂直滚动条。即，元素在不使用滚动条的情况下为了适应视口中所用内容所需的最小宽度。
+
+scrollWidth包括`::before`和`::after`伪元素的高度。
+
+---
+
+##### tagName
+
+```
+string Element.prototype.tagName
+```
+
+元素的标签名。HTML文档的标签名称不区分大小写，因此HTML文档的tagName总是返回大写形式。
+
+tagName的值等于nodeName的值。
