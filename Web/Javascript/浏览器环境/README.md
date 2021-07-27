@@ -34,9 +34,14 @@
 
 - DOMImplementation
 - [Node](Node.md) 结点对象
-    - [Document](Document.md) 文档对象
-    - [Element](Element.md) 文档元素
-        - [HTMLElement](HTMLElement.md) HTML文档元素
+    - Attr 属性结点
+    - CDATASection CDATA结点
+    - Comment 注释结点
+    - [Document](Document.md) 文档结点
+    - DocumentFragment 文档片段结点
+    - DocumentType 文档类型结点
+    - [Element](Element.md) 元素结点
+        - [HTMLElement](HTMLElement.md) HTML文档元素结点
             - HTMLAnchorElement a
             - HTMLAreaElement area
             - HTMLAudioElement audio
@@ -100,6 +105,8 @@
             - HTMLUnknownElement 未知结点
             - HTMLVideoElement video
         - SVGElement
+    - ProcessingInstruction 文档指令结点
+    - Text 文本结点
 
 ##### 集合
 

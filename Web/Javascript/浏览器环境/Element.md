@@ -37,6 +37,45 @@ Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 | slot | string | 已插入元素所在的Shadow DOM slot的名称 | true | true | - |
 | tagName | string | 元素的标签名 | - | true | - |
 
+## 原型函数
+
+| 函数 | 描述 |
+|---|---|
+| after | 将多个结点插入到该元素结点的后面，作为紧邻兄弟结点 |
+| append | 将多个结点插入到该元素结点子结点列表的最后 |
+| before | 将多个结点插入到该元素结点的前面，作为紧邻兄弟结点 |
+| closest | 匹配离当前元素结点最近的祖先元素（包括当前元素结点本身） |
+| getAttribute | 获取元素的特定属性值 |
+| getAttributeNames | 获取元素的所有属性值 |
+| getAttributeNode | 获取元素的特定属性结点 |
+| getAttributeNodeNS | 根据命名空间获取元素的特定属性结点 |
+| getAttributeNS | 根据命名空间获取元素的特定属性值 |
+| getBoundingClientRect | 获取元素的大小和位置 |
+
+---
+
+##### after
+
+```
+void Element.prototype.after(Node/string... nodes)
+```
+
+---
+
+##### append
+
+```
+void Element.prototype.append(Node/string... nodes)
+```
+
+---
+
+##### before
+
+```
+void Element.prototype.before(Node/string... nodes)
+```
+
 ---
 
 ###### clientHeight
@@ -60,6 +99,62 @@ number Element.prototype.clientWidth
 元素的内部宽度，包含内边距，但不包括垂直滚动条、边框和外边距。
 
 html元素的clientWidth等于viewport的宽度。
+
+---
+
+##### closest
+
+```
+Element Element.prototype.closest(string selector)
+```
+
+---
+
+##### getAttribute
+
+```
+string Element.prototype.getAttribute(string name)
+```
+
+---
+
+##### getAttributeNames
+
+```
+Array<string> Element.prototype.getAttributeNames()
+```
+
+---
+
+##### getAttributeNode
+
+```
+Attr Element.prototype.getAttributeNode(string name)
+```
+
+---
+
+##### getAttributeNodeNS
+
+```
+Attr Element.prototype.getAttributeNodeNS(string ns, string name)
+```
+
+---
+
+##### getAttributeNS
+
+```
+string Element.prototype.getAttributeNS(string ns, string name)
+```
+
+---
+
+##### getBoundingClientRect
+
+```
+DOMRect Element.prototype.getBoundingClientRect()
+```
 
 ---
 
