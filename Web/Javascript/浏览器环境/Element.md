@@ -40,31 +40,57 @@ Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 
 | 函数 | 描述 |
 |---|---|
-| after | 将多个结点插入到该元素结点的后面，作为紧邻兄弟结点 |
-| append | 将多个结点插入到该元素子结点列表的最后 |
-| before | 将多个结点插入到该元素结点的前面，作为紧邻兄弟结点 |
-| closest | 匹配离当前元素结点最近的祖先元素（包括当前元素结点本身） |
+| getBoundingClientRect | 获取元素的大小和位置 |
+| getClientRects | 获取每个边框的大小和位置 |
+| requestFullscreen | 元素进入全屏模式 |
+| scroll | 滚动到指定位置 |
+| scrollBy | 滚动偏移距离 |
+| scrollIntoView | 滚动父元素，使该元素可见 |
+| scrollTo | 滚动到指定位置 |
+
+##### 属性
+
+| 函数 | 描述 |
+|---|---|
 | getAttribute | 获取元素的特定属性值 |
 | getAttributeNames | 获取元素的所有属性值 |
 | getAttributeNode | 获取元素的特定属性结点 |
 | getAttributeNodeNS | 根据命名空间获取元素的特定属性结点 |
 | getAttributeNS | 根据命名空间获取元素的特定属性值 |
-| getBoundingClientRect | 获取元素的大小和位置 |
-| getClientRects | 获取每个边框的大小和位置 |
+| hasAttribute | 判断元素是否具有指定属性 |
+| hasAttributeNS | 判断元素是否具有指定命名空间的属性 |
+| removeAttribute | 删除属性 |
+| removeAttributeNode | 删除属性 |
+| removeAttributeNS | 删除属性 |
+| setAttribute | 设置属性 |
+| setAttributeNode | 设置属性结点 |
+
+##### 选择器
+
+| 函数 | 描述 |
+|---|---|
+| closest | 匹配离当前元素结点最近的祖先元素（包括当前元素结点本身） |
 | getElementsByClassName | 根据class获取子元素 |
 | getElementsByTagName | 根据标签获取子元素 |
 | getElementsByTagNameNS | 根据命名空间和标签获取子元素 |
-| hasAttribute | 判断元素是否具有指定属性 |
-| hasAttributeNS | 判断元素是否具有指定命名空间的属性 |
+| matches | 判断元素是否匹配选择器 |
+| querySelector | 查找第一个匹配的后代元素 |
+| querySelectorAll | 查找所有匹配的后代元素 |
+
+##### DOM操作
+
+| 函数 | 描述 |
+|---|---|
+| after | 将多个结点插入到该元素结点的后面，作为紧邻兄弟结点 |
+| append | 将多个结点插入到该元素子结点列表的最后 |
+| before | 将多个结点插入到该元素结点的前面，作为紧邻兄弟结点 |
 | insertAdjacentElement | 将元素结点插入相对于当前元素的指定位置 |
 | insertAdjacentHTML | 将文本解析为元素结点，并插入相对于当前元素的指定位置 |
 | insertAdjacentText | 将本文结点插入相对于当前元素的指定位置 |
-| matches | 判断元素是否匹配选择器 |
 | prepend | 将多个结点插入到该元素子结点列表的前面 |
-| querySelector | 查找第一个匹配的后代元素 |
-| querySelectorAll | 查找所有匹配的后代元素 |
 | remove | 从父结点中移除 |
-| removeAttribute | 删除属性 |
+| replaceChildren | 替换子结点 |
+| replaceWith | 替换当前元素结点 |
 
 ---
 
@@ -337,6 +363,67 @@ void Element.prototype.removeAttribute(string name)
 
 ---
 
+##### removeAttributeNode
+
+```
+void Element.prototype.removeAttributeNode(Attr attr)
+```
+
+---
+
+##### removeAttributeNS
+
+```
+void Element.prototype.removeAttributeNS(string ns, string name)
+```
+
+---
+
+##### replaceChildren
+
+```
+void Element.prototype.replaceChildren(Node/string... nodes)
+```
+
+将该元素的后代全部替换为nodes。特别地，当参数为空时，元素的后代被清空。
+
+---
+
+##### replaceWith
+
+```
+void Element.prototype.replaceWith(Node/string... nodes)
+```
+
+---
+
+##### requestFullscreen
+
+```
+Promise Element.prototype.requestFullscreen()
+Promise Element.prototype.requestFullscreen(@FullscreenOptions options)
+```
+
+---
+
+##### scroll
+
+```
+void Element.prototype.scroll(number x, number y)
+void Element.prototype.scroll(@ScrollToOptions options)
+```
+
+---
+
+##### scrollBy
+
+```
+void Element.prototype.scrollBy(number x, number y)
+void Element.prototype.scrollBy(@ScrollToOptions options)
+```
+
+---
+
 ##### scrollHeight
 
 ```
@@ -349,6 +436,25 @@ scrollHeight包括`::before`和`::after`伪元素的高度。
 
 ---
 
+##### scrollIntoView
+
+```
+void Element.prototype.scrollIntoView()
+void Element.prototype.scrollIntoView(boolean alignToTop)
+void Element.prototype.scrollIntoView(object options)
+```
+
+---
+
+##### scrollTo
+
+```
+void Element.prototype.scrollTo(number x, number y)
+void Element.prototype.scrollTo(@ScrollToOptions options)
+```
+
+---
+
 ##### scrollWidth
 
 ```
@@ -358,6 +464,22 @@ number Element.prototype.scrollWidth
 元素的内容宽度，包括内边距和由于溢出导致的不可见内容，但不包括边框、外边距和垂直滚动条。即，元素在不使用滚动条的情况下为了适应视口中所用内容所需的最小宽度。
 
 scrollWidth包括`::before`和`::after`伪元素的高度。
+
+---
+
+##### setAttribute
+
+```
+void Element.prototype.setAttribute(string name, string value)
+```
+
+---
+
+##### setAttributeNode
+
+```
+void Element.prototype.setAttributeNode(Attr attr)
+```
 
 ---
 

@@ -114,3 +114,9 @@
 - DOMTokenList
 - HTMLCollection
 - NamedNodeMap
+
+##### 选项
+
+- BarProp
+- @FullscreenOptions
+- @ScrollToOptions

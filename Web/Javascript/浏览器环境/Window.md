@@ -40,8 +40,8 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | innerHeight | number | 窗口的视口高度 | - | true | - |
 | innerWidth | number | 窗口的视口宽度 | - | true | - |
 | length | number | 当前窗口中包含的框架数量 | - | true | - |
-| locationbar | object | 地址栏对象，只有一个visible属性 | - | true | - | 
-| menubar | object | 菜单栏对象，只有一个visible属性 | - | true | - |
+| locationbar | BarProp | 地址栏对象，只有一个visible属性 | - | true | - | 
+| menubar | BarProp | 菜单栏对象，只有一个visible属性 | - | true | - |
 | name | string | 窗口名称 | - | true | - |
 | opener | Window | 打开该窗口的窗口 | - | true | - |
 | outerHeight | number | 整个浏览器窗口的高度 | - | true | - |
@@ -49,18 +49,18 @@ Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / Window
 | pageXOffset | number | 页面水平滚动距离 | - | true | - |
 | pageYOffset | number | 页面垂直滚动距离 | - | true | - |
 | parent | Window | 父窗口 | - | true | - |
-| personalbar | object | 个人工具栏，只有一个visible属性 | - | true | - |
+| personalbar | BarProp | 个人工具栏，只有一个visible属性 | - | true | - |
 | screenLeft | number | 浏览器窗口左边框到屏幕左边缘的距离 | - | true | - | 
 | screenTop | number | 浏览器窗口上边框到屏幕上边缘的距离 | - | true | - |
 | screenX | number | 浏览器窗口左边框到系统桌面左边缘的距离 | - | true | - |
 | screenY | number | 浏览器窗口上边框到系统桌面上边缘的距离 | - | true | - |
-| scrollbars | object | 滚动条对象，只有一个visible属性 | - | true | - |
+| scrollbars | BarProp | 滚动条对象，只有一个visible属性 | - | true | - |
 | scrollX | number | 页面水平滚动距离 | - | true | - |
 | scrollY | number | 页面垂直滚动距离 | - | true | - |
 | self | Window | 指向自身 | - | true | - |
 | status | string | 状态栏中的文本 | - | true | - |
-| statusbar | object | 状态栏对象，只有一个visible属性 | - | true | - |
-| toolbar | object | 工具栏对象，只有一个visible属性 | - | true | - |
+| statusbar | BarProp | 状态栏对象，只有一个visible属性 | - | true | - |
+| toolbar | BarProp | 工具栏对象，只有一个visible属性 | - | true | - |
 | top | Window | 最顶层的窗口 | - | true | - |
 
 ## 原型函数
