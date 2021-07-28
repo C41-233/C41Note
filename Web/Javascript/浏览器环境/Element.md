@@ -62,6 +62,9 @@ Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 | matches | 判断元素是否匹配选择器 |
 | prepend | 将多个结点插入到该元素子结点列表的前面 |
 | querySelector | 查找第一个匹配的后代元素 |
+| querySelectorAll | 查找所有匹配的后代元素 |
+| remove | 从父结点中移除 |
+| removeAttribute | 删除属性 |
 
 ---
 
@@ -306,6 +309,30 @@ void Element.prototype.prepend(Node/string... nodes)
 
 ```
 Element Element.prototype.querySelector(string selector)
+```
+
+---
+
+##### querySelectorAll
+
+```
+NodeList Element.prototype.querySelectorAll(string selector)
+```
+
+---
+
+##### remove
+
+```
+void Element.prototype.remove()
+```
+
+---
+
+##### removeAttribute
+
+```
+void Element.prototype.removeAttribute(string name)
 ```
 
 ---
