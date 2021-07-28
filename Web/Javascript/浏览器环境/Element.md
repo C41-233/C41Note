@@ -41,7 +41,7 @@ Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 | 函数 | 描述 |
 |---|---|
 | after | 将多个结点插入到该元素结点的后面，作为紧邻兄弟结点 |
-| append | 将多个结点插入到该元素结点子结点列表的最后 |
+| append | 将多个结点插入到该元素子结点列表的最后 |
 | before | 将多个结点插入到该元素结点的前面，作为紧邻兄弟结点 |
 | closest | 匹配离当前元素结点最近的祖先元素（包括当前元素结点本身） |
 | getAttribute | 获取元素的特定属性值 |
@@ -59,6 +59,8 @@ Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 | insertAdjacentElement | 将元素结点插入相对于当前元素的指定位置 |
 | insertAdjacentHTML | 将文本解析为元素结点，并插入相对于当前元素的指定位置 |
 | insertAdjacentText | 将本文结点插入相对于当前元素的指定位置 |
+| matches | 判断元素是否匹配选择器 |
+| prepend | 将多个结点插入到该元素子结点列表的前面 |
 
 ---
 
@@ -75,6 +77,10 @@ void Element.prototype.after(Node/string... nodes)
 ```
 void Element.prototype.append(Node/string... nodes)
 ```
+
+将多个结点插入到该元素子结点列表的最后。
+
+- nodes：插入的多个子结点。其中，string类型作为文本结点。
 
 ---
 
@@ -272,6 +278,26 @@ void Element.prototype.insertAdjacentText(string position, string text)
 - text：插入的文本。
 
 如果插入的位置无法识别，抛出`SyntaxError`。
+
+---
+
+##### matches
+
+```
+boolean Element.prototype.matches(string selector)
+```
+
+---
+
+##### prepend
+
+```
+void Element.prototype.prepend(Node/string... nodes)
+```
+
+将多个结点插入到该元素子结点列表的前面。
+
+- nodes：插入的多个子结点。其中，string类型作为文本结点。
 
 ---
 
