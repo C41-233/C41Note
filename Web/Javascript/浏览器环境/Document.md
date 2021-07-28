@@ -281,7 +281,7 @@ Node Document.prototype.importNode(Node node, boolean deep)
 ##### querySelector
 
 ```
-HTMLElement Document.prototype.querySelector(string selector)
+Element Document.prototype.querySelector(string selector)
 ```
 
 ---

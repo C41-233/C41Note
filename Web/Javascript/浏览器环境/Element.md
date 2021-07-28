@@ -61,6 +61,7 @@ Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 | insertAdjacentText | 将本文结点插入相对于当前元素的指定位置 |
 | matches | 判断元素是否匹配选择器 |
 | prepend | 将多个结点插入到该元素子结点列表的前面 |
+| querySelector | 查找第一个匹配的后代元素 |
 
 ---
 
@@ -298,6 +299,14 @@ void Element.prototype.prepend(Node/string... nodes)
 将多个结点插入到该元素子结点列表的前面。
 
 - nodes：插入的多个子结点。其中，string类型作为文本结点。
+
+---
+
+##### querySelector
+
+```
+Element Element.prototype.querySelector(string selector)
+```
 
 ---
 
