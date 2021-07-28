@@ -57,6 +57,8 @@ Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 | hasAttribute | 判断元素是否具有指定属性 |
 | hasAttributeNS | 判断元素是否具有指定命名空间的属性 |
 | insertAdjacentElement | 将元素结点插入相对于当前元素的指定位置 |
+| insertAdjacentHTML | 将文本解析为元素结点，并插入相对于当前元素的指定位置 |
+| insertAdjacentText | 将本文结点插入相对于当前元素的指定位置 |
 
 ---
 
@@ -232,6 +234,44 @@ foo
 返回被插入的元素。
 
 如果插入的位置无法识别，抛出`SyntaxError`。如果插入的元素不是有效元素，抛出`TypeError`。
+
+---
+
+##### insertAdjacentHTML
+
+```
+void Element.prototype.insertAdjacentHTML(string position, string element)
+```
+
+将文本解析为元素结点，并插入相对于当前元素的指定位置。
+
+- position：位置。
+    - `'beforebegin'`：在该元素本身的前面。
+    - `'afterbegin`： 在该元素第一个子结点前面。
+    - `'beforeend`：在该元素最后一个子结点后面。
+    - `'afterend`：在该元素本身的后面。
+- element：被插入元素。
+
+如果插入的位置无法识别，抛出`SyntaxError`。
+
+---
+
+##### insertAdjacentText
+
+```
+void Element.prototype.insertAdjacentText(string position, string text)
+```
+
+将本文结点插入相对于当前元素的指定位置。
+
+- position：位置。
+    - `'beforebegin'`：在该元素本身的前面。
+    - `'afterbegin`： 在该元素第一个子结点前面。
+    - `'beforeend`：在该元素最后一个子结点后面。
+    - `'afterend`：在该元素本身的后面。
+- text：插入的文本。
+
+如果插入的位置无法识别，抛出`SyntaxError`。
 
 ---
 
