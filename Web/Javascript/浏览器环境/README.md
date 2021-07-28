@@ -33,6 +33,7 @@
 ##### DOM
 
 - DOMImplementation
+- DOMRect 大小和位置
 - [Node](Node.md) 结点对象
     - Attr 属性结点
     - CDATASection CDATA结点

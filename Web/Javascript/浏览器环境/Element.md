@@ -6,7 +6,6 @@
 
 Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 
-
 ## 原型属性
 
 | 名称 | 类型 | 描述 |  writable | enumerable | configurable |
@@ -51,6 +50,13 @@ Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 | getAttributeNodeNS | 根据命名空间获取元素的特定属性结点 |
 | getAttributeNS | 根据命名空间获取元素的特定属性值 |
 | getBoundingClientRect | 获取元素的大小和位置 |
+| getClientRects | 获取每个边框的大小和位置 |
+| getElementsByClassName | 根据class获取子元素 |
+| getElementsByTagName | 根据标签获取子元素 |
+| getElementsByTagNameNS | 根据命名空间和标签获取子元素 |
+| hasAttribute | 判断元素是否具有指定属性 |
+| hasAttributeNS | 判断元素是否具有指定命名空间的属性 |
+| insertAdjacentElement | 将元素结点插入相对于当前元素的指定位置 |
 
 ---
 
@@ -155,6 +161,77 @@ string Element.prototype.getAttributeNS(string ns, string name)
 ```
 DOMRect Element.prototype.getBoundingClientRect()
 ```
+
+---
+
+##### getElementsByClassName
+
+```
+HTMLCollection Element.prototype.getElementsByClassName(string className)
+```
+
+---
+
+##### getElementsByTagName
+
+```
+HTMLCollection Element.prototype.getElementsByTagName(string tagName)
+```
+
+---
+
+##### getElementsByTagNameNS
+
+```
+HTMLCollection Element.prototype.getElementsByTagNameNS(string ns, string localName)
+```
+
+---
+
+##### hasAttribute
+
+```
+boolean Element.prototype.hasAttribute(string name)
+```
+
+---
+
+##### hasAttributeNS
+
+```
+boolean Element.prototype.hasAttributeNS(string ns, string localName)
+```
+
+---
+
+##### insertAdjacentElement
+
+```
+Element Element.prototype.insertAdjacentElement(string position, Element element)
+```
+
+将元素结点插入相对于当前元素的指定位置。
+
+- position：位置。
+    - `'beforebegin'`：在该元素本身的前面。
+    - `'afterbegin`： 在该元素第一个子结点前面。
+    - `'beforeend`：在该元素最后一个子结点后面。
+    - `'afterend`：在该元素本身的后面。
+- element：被插入元素。
+
+``` HTML
+<!-- beforebegin -->
+<p>
+<!-- afterbegin -->
+foo
+<!-- beforeend -->
+</p>
+<!-- afterend -->
+```
+
+返回被插入的元素。
+
+如果插入的位置无法识别，抛出`SyntaxError`。如果插入的元素不是有效元素，抛出`TypeError`。
 
 ---
 
