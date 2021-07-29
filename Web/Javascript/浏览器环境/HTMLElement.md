@@ -4,11 +4,13 @@
 
 ## 继承
 
-Object / [EventTarget](EventTarget.md) / [Node](Node.md) / [Element](Element.md) / HTMLElement
+Object / [Node](Node.md) / [Element](Element.md) / HTMLElement
 
-Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / HTMLElement
+## 接口
 
-Object / [@DocumentEventHandlers](DocumentEventHandlers.md) / HTMLElement
+- [EventTarget](EventTarget.md)
+- [@DocumentEventHandlers](DocumentEventHandlers.md)
+- [@GlobalEventHandlers](GlobalEventHandlers.md)
 
 ## 原型属性
 

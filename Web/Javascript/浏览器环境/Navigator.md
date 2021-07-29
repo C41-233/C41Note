@@ -6,7 +6,6 @@ Navigator对象包含有关浏览器的信息。
 
 Object / Navigator
 
-
 ## 原型属性
 
 | 名称 | 类型 | 描述 |  writable | enumerable | configurable |

@@ -4,7 +4,7 @@ Node代表一个DOM中的结点，是一个接口。
 
 ## 继承
 
-Object / [EventTarget](EventTarget.md) / Node
+Object / Node
 
 ## Node各属性的含义
 

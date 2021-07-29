@@ -1,9 +1,5 @@
 # @WindowOrWorkerGlobalScope
 
-## 继承
-
-Object / @WindowOrWorkerGlobalScope
-
 ## 原型属性
 
 | 名称 | 类型 | 描述 |  writable | enumerable | configurable |

@@ -1,6 +1,6 @@
 # EventTarget
 
-EventTarget定义了可以接收事件的对象，HTMLElement、Document、Window都是EventTarget。
+EventTarget接口定义了可以接收事件的对象，HTMLElement、Document、Window都是EventTarget。
 
 ## 原型函数
 

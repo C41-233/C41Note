@@ -4,7 +4,7 @@
 
 ## 继承
 
-Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
+Object / [Node](Node.md) / Element
 
 ## 原型属性
 

@@ -4,9 +4,13 @@
 
 ## 继承
 
-Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Document
+Object / [Node](Node.md) / Document
 
-Object / [@GlobalEventHandlers](GlobalEventHandlers.md) / [@DocumentEventHandlers](DocumentEventHandlers.md) / Document
+## 接口
+
+- [EventTarget](EventTarget.md)
+- [@GlobalEventHandlers](GlobalEventHandlers.md)
+- [@DocumentEventHandlers](DocumentEventHandlers.md)
 
 ## 原型属性
 
