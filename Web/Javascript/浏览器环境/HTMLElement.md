@@ -37,6 +37,30 @@ Object / [@DocumentEventHandlers](DocumentEventHandlers.md) / HTMLElement
 | tabindex | number | tabindex | true | true | - |
 | title | string | title | true | true | - |
 
+## 原型函数
+
+| 函数 | 描述 |
+|---|---|
+| blur | 使元素失去焦点 |
+| click | 模拟鼠标左键单击当前元素 |
+| focus | 使元素获得焦点 |
+
+---
+
+##### blur
+
+```
+void HTMLElement.prototype.blur()
+```
+
+---
+
+##### click
+
+```
+void HTMLElement.prototype.click()
+```
+
 ---
 
 ##### contentEditable
@@ -50,3 +74,19 @@ boolean HTMLElement.prototype.contentEditable
 - `true` 可编辑。
 - `false` 不可编辑。
 - `inherit` 继承父元素的值。
+
+---
+
+##### focus
+
+```
+void HTMLElement.prototype.focus()
+void HTMLElement.prototype.focus(object options)
+```
+
+使元素获得焦点。
+
+- options：选项
+    | 名称 | 类型 | 描述 |
+    |---|---|---|
+    | preventScroll | boolean | 滚动条是否不要定位到该元素 |
