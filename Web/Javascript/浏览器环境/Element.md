@@ -64,6 +64,9 @@ Object / [EventTarget](EventTarget.md) / [Node](Node.md) / Element
 | removeAttributeNS | 删除属性 |
 | setAttribute | 设置属性 |
 | setAttributeNode | 设置属性结点 |
+| setAttributeNodeNS | 设置命名空间的属性结点 |
+| setAttributeNS | 设置命名空间的属性 |
+| toggleAttribute | 切换布尔属性的值 |
 
 ##### 选择器
 
@@ -483,6 +486,22 @@ void Element.prototype.setAttributeNode(Attr attr)
 
 ---
 
+##### setAttributeNodeNS
+
+```
+void Element.prototype.setAttributeNodeNS(Attr attr)
+```
+
+---
+
+##### setAttributeNS
+
+```
+void Element.prototype.setAttributeNS(string ns, string name, string value)
+```
+
+---
+
 ##### tagName
 
 ```
@@ -492,3 +511,12 @@ string Element.prototype.tagName
 元素的标签名。HTML文档的标签名称不区分大小写，因此HTML文档的tagName总是返回大写形式。
 
 tagName的值等于nodeName的值。
+
+---
+
+##### toggleAttribute
+
+```
+void Element.prototype.toggleAttribute(string name)
+void Element.prototype.toggleAttribute(string name, boolean force)
+```
