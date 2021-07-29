@@ -32,6 +32,7 @@
 
 ##### DOM
 
+- CSSStyleDeclaration 样式对象
 - DOMImplementation
 - DOMRect 大小和位置
 - [Node](Node.md) 结点对象
@@ -111,6 +112,7 @@
 
 ##### 集合
 
+- DOMStringMap
 - DOMTokenList
 - HTMLCollection
 - NamedNodeMap
