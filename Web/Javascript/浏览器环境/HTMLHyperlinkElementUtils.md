@@ -1,6 +1,11 @@
 # @HTMLHyperlinkElementUtils
 
-代表可以超链接的元素，即HTMLAnchorElement和HTMLAreaElement。
+代表可以超链接的元素。
+
+## 派生
+
+- [HTMLAnchorElement](HTMLAnchorElement.md)
+- [HTMLAreaElement](HTMLAreaElement.md)
 
 ## 原型属性
 

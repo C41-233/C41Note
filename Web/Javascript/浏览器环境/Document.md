@@ -6,49 +6,25 @@
 
 Object / [Node](Node.md) / Document
 
-## 接口
-
-- [EventTarget](EventTarget.md)
-- [@GlobalEventHandlers](GlobalEventHandlers.md)
-- [@DocumentEventHandlers](DocumentEventHandlers.md)
-
 ## 原型属性
 
 | 名称 | 类型 | 描述 |  writable | enumerable | configurable |
 |---|---|---|---|---|---|
-| body | HTMLBodyElement | 文档的body元素 | - | true | true |
 | characterSet | string | 当前文档的字符编码 | - | true | true |
 | childElementCount | number | 子元素结点的个数 | - | true | true |
 | children | HTMLCollection | 子元素结点集合 | - | true | true |
 | compatMode | string | 文档渲染的模式 | - | true | true |
 | contentType | string | 文档的MIME类型 | - | true | true |
-| currentScript | HTMLScriptElement | 当前正在运行的脚本所属script元素 | - | true | true |
-| defaultView | Window | 文档关联的Window对象 | - | true | true |
 | designMode | string | 文档编辑模式 | - | true | true |
-| dir | string | 文档文字朝向 | - | true | true |
 | doctype | DocumentType | 文档DTD | - | true | true |
 | documentElement | Element | 文档根元素结点 | - | true | true |
 | documentURI | string | 文档URI | - | true | true |
-| embeds | HTMLCollection | 文档的所有embed元素的集合 | - | true | true |
 | firstElementChild | Element | 文档的第一个元素结点 | - | true | true |
-| forms | HTMLCollection | 文档的所有form元素的集合 | - | true | true |
-| fullscreenElement | Element | 文档中正在以全屏模式显示的结点 | - | true | true |
-| fullScreenEnabled | boolean | 是否支持全屏模式 | - | true | true |
-| head | HTMLHeadElement | 文档的head元素 | - | true | true |
-| hidden | boolean | 页面是否隐藏 | - | true | true |
-| images | HTMLCollection | 文档的所有imgs元素的集合 | - | true | true |
 | implementation | DOMImplementation | 文档关联的DOMImplementation对象 | - | true | true |
 | lastElementChild  | Element | 文档的最后一个子元素结点 | - | true | true |
 | lastModified | string | 文档最后修改日期时间 | - | true | true |
-| links | HTMLCollection | 文档所有area和a元素的集合 | - | true | true |
-| location | Location | 文档的Location对象 | - | true | true |
-| plugins | HTMLCollection | 文档的所有embed元素的集合 | - | true | true |
 | readyState | string | 文档的加载状态 | - | true | true |
-| referrer | string | 文档从该URI跳转而来 | - | true | true |
-| scripts | HTMLCollection | 文档的所有script元素的结婚 | - | true | true |
-| scrollingElement | Element | 滚动文档的对象 | - | true | true |
 | title | string | 文档的标题 | true | true | true |
-| visibilityState | boolean | 文档的可见性 | - | true | true |
 | URL | string | 当前文档的URL | - | true | true |
 
 ## 原型函数
@@ -72,29 +48,17 @@ Object / [Node](Node.md) / Document
 | createTextNode | 创建文本结点 |
 | createTreeWalker | 创建TreeWalker对象 |
 | evaluate | 执行XPath |
-| exitFullscreen | 退出全屏模式 |
 | getElementById | 根据ID查找元素 |
 | getElementsByClassName | 根据类名查找元素 |
 | getElementsByName | 根据name查找元素 |
 | getElementsByTagName | 根据元素名称查找元素 |
 | getElementsByTagNameNS | 根据元素名称和命名空间查找元素 |
-| hasFocus | 文档是否获得焦点 |
 | importNode | 拷贝外部文档的结点至当前文档 |
 | open | 打开要写入的文档 |
 | querySelector | 查找第一个匹配的元素 |
 | querySelectorAll | 查找所有匹配的元素 |
-| releaseCapture | 释放鼠标捕获 |
 | write | 将文本字符串写入打开的文档流 |
 | writeln | 将文本字符串写入打开的文档流，并换行 |
-
-## 事件
-
-| 事件 | 函数 | 描述 | 类型 |
-|---|---|---|---|
-| readystatechange  | onreadystatechange | readystate变化时 | Event |
-| scroll | onscroll | 当滚动文档滚动条时 | Event |
-| visibilitychange | onvisibilitychange | 当文档选项卡内容可见或者隐藏时 | Event |
-| DOMContentLoaded  | - | 文档加载完成后（无需等待资源加载） | Event |
 
 ---
 
@@ -262,14 +226,6 @@ HTMLCollection Document.prototype.getElementsByTagName(string name)
 
 ```
 HTMLCollection Document.prototype.getElementsByTagNameNS(string ns, string name)
-```
-
----
-
-##### hasFocus
-
-```
-boolean Document.prototype.hasFocus()
 ```
 
 ---

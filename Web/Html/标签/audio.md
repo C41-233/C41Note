@@ -55,6 +55,11 @@ audio标签定义声音，比如音乐或其他音频流。
 	<td>循环播放音频</td>
 </tr>
 <tr>
+	<th>muted</th>
+	<td>bool</td>
+	<td>初始静音</td>
+</tr>
+<tr>
 	<th>src</th>
 	<td>url</td>
 	<td>要播放的音频的URL</td>

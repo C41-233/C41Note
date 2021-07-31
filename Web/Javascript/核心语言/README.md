@@ -15,7 +15,12 @@
 
 - [Array](Array.md) 数组
 
-##### 其他
+##### 异常
+
+- SyntaxError
+- TypeError
+
+##### 工具
 
 - [Date](Date.md) 日期时间
 - [Math](Math.md) 数学库

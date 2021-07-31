@@ -1,10 +1,10 @@
-# HTMLAnchorElement
+# HTMLAreaElement
 
-代表a元素。
+代表area元素。
 
 ## 继承
 
-Object / [Node](Node.md) / [Element](Element.md) / [HTMLElement](HTMLElement.md) / HTMLAnchorElement
+Object / [Node](Node.md) / [Element](Element.md) / [HTMLElement](HTMLElement.md) / HTMLAreaElement
 
 ## 接口
 
@@ -16,6 +16,5 @@ Object / [Node](Node.md) / [Element](Element.md) / [HTMLElement](HTMLElement.md)
 
 | 名称 | 类型 | 描述 | writable | enumerable | configurable |
 |---|---|---|---|---|---|
-| download | string | download | true | true | - |
 | rel | string | rel | true | true | - |
 | relList | DOMTokenList | rel列表 | - | true | - |

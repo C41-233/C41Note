@@ -47,8 +47,7 @@
     - [Element](Element.md) 元素结点
         - [HTMLElement](HTMLElement.md) HTML文档元素结点
             - [HTMLAnchorElement](HTMLAnchorElement.md) a
-            - HTMLAreaElement area
-            - HTMLAudioElement audio
+            - [HTMLAreaElement](HTMLAreaElement.md) area
             - HTMLBaseElement base
             - HTMLBodyElement body
             - HTMLBRElement br
@@ -74,6 +73,9 @@
             - HTMLLegendElement legend
             - HTMLLinkElement link
             - HTMLMapElement map
+            - [HTMLMediaElement](HTMLMediaElement.md) 多媒体元素
+                - HTMLAudioElement audio
+                - HTMLVideoElement video
             - HTMLMenuElement menu
             - HTMLMenuItemElement menuitem
             - HTMLMetaElement meta
@@ -107,7 +109,6 @@
             - HTMLTrackElement track
             - HTMLUListElement ul
             - HTMLUnknownElement 未知结点
-            - HTMLVideoElement video
         - SVGElement
     - ProcessingInstruction 文档指令结点
     - Text 文本结点
@@ -125,3 +126,12 @@
 - BarProp
 - @FullscreenOptions
 - @ScrollToOptions
+
+##### 多媒体
+
+- MediaError
+- TextTrack
+- TextTrackList
+- TimeRanges
+- VideoTrack
+- VideoTrackList

@@ -1,6 +1,12 @@
 # @GlobalEventHandlers
 
-GlobalEventHandlers接口定义了Window、Document、HTMLElement都可以监听的事件。这些事件可能由内部元素冒泡传递上来，而非必须由当前元素自己触发。
+GlobalEventHandlers接口定义HTML结点可以监听的事件。这些事件可能由内部元素冒泡传递上来，而非必须由当前元素自己触发。
+
+## 派生
+
+- [HTMLDocument](HTMLDocument.md)
+- [HTMLElement](HTMLElement.md)
+- [Window](Window.md)
 
 ##### 鼠标事件
 

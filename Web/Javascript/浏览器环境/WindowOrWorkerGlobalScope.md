@@ -1,5 +1,11 @@
 # @WindowOrWorkerGlobalScope
 
+该接口描述了浏览器环境下全局对象的公共属性。
+
+## 派生
+
+- [Window](window.md)
+
 ## 原型属性
 
 | 名称 | 类型 | 描述 |  writable | enumerable | configurable |
