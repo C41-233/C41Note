@@ -44,8 +44,11 @@ gcc/g++ [options] <files>...
 - `-std=<value>`    指定语言标准。
 
 ##### 代码生成选项
+- `-fomit-frame-pointer -fno-omit-frame-pointer`    开关优化函数调用时的栈帧指针。
 - `-fno-builtin -fno-builtin-<function>`    不将非以__builtin_为前缀的函数作为内置函数优化。
-- `-fno-stack-protector`	不生成堆栈保护的代码。
+- `-fstack-protector -fno-stack-protector`	开关生成堆栈保护的代码。
+- `-fsanitize=<value>`  生成Sanitizer代码。
+- `-fsanitize-recover=<value>`  从特定Sanitizer错误中恢复。
 - `-fPIC`	产生与位置无关代码。产生的代码中，不使用绝对地址，全部使用相对地址。
 
 ##### x86选项
