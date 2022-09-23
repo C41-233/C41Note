@@ -186,6 +186,10 @@
     1. lpr 文件打印
 
 ### 系统
+- 动态库
+    1. [ldconfig 配置动态库](ldconfig.md)
+    1. [ldd 输出依赖的动态库](ldd.md)
+
 - 运行级别
     1. halt 关机
     1. [init 修改运行级别](telinit.md)
@@ -203,7 +207,7 @@
 
 - 对话
     1. [write 发送消息](write.md)
-    2. [wall 广播消息](wall.md)
+    1. [wall 广播消息](wall.md)
 
 - 时间
     1. [cal 显示日历](cal.md)
