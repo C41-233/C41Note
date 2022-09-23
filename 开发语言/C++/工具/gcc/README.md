@@ -33,14 +33,15 @@ gcc/g++ [options] <files>...
 - `-MM`	输出头文件依赖，但不包括库路径造成的依赖关系
 - `-MMD`	同`-MM`，输出信息导入到.d文件中
 
-##### 语法选项
-- `-ansi`	严格按照ANSI C的语法，禁用GNU C的特性
-- `-fcond-mismatch`	允许条件表达式第二和第三参数类型不匹配，此时表达式的类型为void
-- `-fno-asm`	不把asm，inline，typeof用作关键字
-- `-fno-signed-char`	把char当作unsigned char
-- `-fno-unsigned-char`	把char当作signed char
-- `-fsigned-char`	把char当作signed char
-- `-funsigned-char`	把char当作unsigned char
+##### 语言选项
+- `-ansi`	严格按照ANSI C的语法，禁用GNU C的特性。
+- `-fcond-mismatch`	允许条件表达式第二和第三参数类型不匹配，此时表达式的类型为void。（C++不支持该选项）
+- `-fno-asm`	不把asm，inline，typeof用作关键字。
+- `-fno-signed-char`	把char当作unsigned char。
+- `-fno-unsigned-char`	把char当作signed char。
+- `-fsigned-char`	把char当作signed char。
+- `-funsigned-char`	把char当作unsigned char。
+- `-std=<value>`    指定语言标准。
 
 ##### 代码生成选项
 - `-fno-stack-protector`	不生成堆栈保护的代码
