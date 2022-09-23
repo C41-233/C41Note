@@ -16,6 +16,7 @@
     1. [ls 查看文件信息](ls.md)
     1. [more 分屏显示文件](more.md)
     1. [sort 文件排序](sort.md)
+    1. [strings 查看文件中的可打印字符](strings.md)
     1. tail 显示文件结尾
     1. [wc 计算字数](wc.md)
 
